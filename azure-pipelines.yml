@@ -18,18 +18,17 @@ steps:
 
 - task: NuGetCommand@2
   inputs:
-    restoreSolution: 'IAC/Prosegur.Global.GesEfectivo.IAC/Prosegur.Global.GesEfectivo.IAC.Web.vbproj'
+    restoreSolution: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/Prosegur.Global.GesEfectivo.NuevoSaldos.Web.vbproj'
 
 - task: VSBuild@1
   inputs:
-    solution: 'IAC/Prosegur.Global.GesEfectivo.IAC/Prosegur.Global.GesEfectivo.IAC.Web.vbproj'
+    solution: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/Prosegur.Global.GesEfectivo.NuevoSaldos.Web.vbproj'
     msbuildArgs: '/p:Configuration=$(buildConfiguration) /p:TargetFrameworkVersion=v4.8'
     platform: 'Any CPU'
     configuration: '$(buildConfiguration)'
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'IAC/Prosegur.Global.GesEfectivo.IAC/Web/bin/Release'
+    SourceFolder: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/bin/Release'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/iac_build'
-
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/ns_build'
