@@ -8,27 +8,41 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  solutionPath: 'IAC/Prosegur.Global.GesEfectivo.IAC/Web/Prosegur.Global.GesEfectivo.IAC.Web.sln'
+  buildOutput: '$(Build.ArtifactStagingDirectory)/output'
 
 steps:
 - checkout: self
   persistCredentials: true
   fetchDepth: 1
-
-- task: NuGetToolInstaller@1
+  clean: true
 
 - task: NuGetCommand@2
   inputs:
-    restoreSolution: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/Prosegur.Global.GesEfectivo.NuevoSaldos.Web.vbproj'
+    restoreSolution: '$(solutionPath)'
 
 - task: VSBuild@1
   inputs:
-    solution: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/Prosegur.Global.GesEfectivo.NuevoSaldos.Web.vbproj'
+    solution: '$(solutionPath)'
     msbuildArgs: '/p:Configuration=$(buildConfiguration) /p:TargetFrameworkVersion=v4.8'
     platform: 'Any CPU'
     configuration: '$(buildConfiguration)'
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/bin/Release'
+    SourceFolder: '$(Build.SourcesDirectory)/IAC/Prosegur.Global.GesEfectivo.IAC/Web/bin/$(buildConfiguration)'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/ns_build'
+    TargetFolder: '$(buildOutput)'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(buildOutput)'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/build_output.zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/build_output.zip'
+    ArtifactName: 'build_output'
