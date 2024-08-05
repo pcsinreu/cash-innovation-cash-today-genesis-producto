@@ -1,34 +1,51 @@
-# ASP.NET Core (.NET Framework)
-# Build and test ASP.NET Core projects targeting the full .NET Framework.
-# Add steps that publish symbols, save build artifacts, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
 trigger:
-- main
+  branches:
+    include:
+      - develop
 
 pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
 steps:
+- checkout: self
+  persistCredentials: true
+  fetchDepth: 1
+
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
   inputs:
-    restoreSolution: '$(solution)'
+    restoreSolution: 'IAC/Prosegur.Global.GesEfectivo.IAC/Prosegur.Global.GesEfectivo.IAC.Web.vbproj'
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/Prosegur.Global.GesEfectivo.NuevoSaldos.Web.vbproj'
 
 - task: VSBuild@1
   inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
-    platform: '$(buildPlatform)'
+    solution: 'IAC/Prosegur.Global.GesEfectivo.IAC/Prosegur.Global.GesEfectivo.IAC.Web.vbproj'
+    msbuildArgs: '/p:Configuration=$(buildConfiguration) /p:TargetFrameworkVersion=v4.8'
+    platform: 'Any CPU'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
+- task: VSBuild@1
   inputs:
-    platform: '$(buildPlatform)'
+    solution: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/Prosegur.Global.GesEfectivo.NuevoSaldos.Web.vbproj'
+    msbuildArgs: '/p:Configuration=$(buildConfiguration) /p:TargetFrameworkVersion=v4.8'
+    platform: 'Any CPU'
     configuration: '$(buildConfiguration)'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'IAC/Prosegur.Global.GesEfectivo.IAC/Web/bin/Release'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/iac_build'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'NuevoSaldos/Prosegur.Global.GesEfectivo.NS.Web/bin/Release'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/ns_build'
