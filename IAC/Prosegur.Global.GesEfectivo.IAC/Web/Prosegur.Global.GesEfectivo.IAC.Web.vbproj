@@ -1,0 +1,2057 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34B3A6CF-DF4E-4BC3-A112-1283BCD51127}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Global.GesEfectivo.IAC.Web</RootNamespace>
+    <AssemblyName>Prosegur.Global.GesEfectivo.IAC.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Prosegur.Global.GesEfectivo.IAC.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Prosegur.Global.GesEfectivo.IAC.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30930.28736, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Genesis\.Referencias\AjaxControlToolkit.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="AjaxPro.2, Version=7.7.31.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Genesis\.Referencias\AjaxPro.2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Bugsnag, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Bugsnag\Bugsnag.dll</HintPath>
+    </Reference>
+    <Reference Include="Bugsnag.AspNet, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Bugsnag\Bugsnag.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Bugsnag.ConfigurationSection, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Bugsnag\Bugsnag.ConfigurationSection.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\DevExpress\v13.2\DevExpress.Data.v13.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\DevExpress\v13.2\DevExpress.Printing.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\DevExpress\v13.2\DevExpress.RichEdit.v13.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\DevExpress\v13.2\DevExpress.Utils.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Genesis\.Referencias\DevExpress\v13.2\DevExpress.Web.ASPxThemes.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\DevExpress\v13.2\DevExpress.Web.v13.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\DevExpress\v13.2\DevExpress.XtraPrinting.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalyticsTracker.Core">
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Bugsnag\GoogleAnalyticsTracker.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalyticsTracker.Simple">
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Bugsnag\GoogleAnalyticsTracker.Simple.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Genesis\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.BugsnagHelper">
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Bugsnag\Prosegur.BugsnagHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Framework.Dicionario, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=6bb1f230141d8049, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Framework.Dicionario.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.GoogleAnalyticsHelper">
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Bugsnag\Prosegur.GoogleAnalyticsHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Web, Version=3.1.1503.502, Culture=neutral, PublicKeyToken=a8a76e1d318ac1f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\Genesis\Prosegur.Genesis.Web\_Scripts\genesis_menu.js">
+      <Link>JS\genesis_menu.js</Link>
+    </Content>
+    <Content Include="..\..\..\Genesis\Prosegur.Genesis.Web\_Styles\genesis_menu.css">
+      <Link>Css\genesis_menu.css</Link>
+    </Content>
+    <Content Include="App_Themes\Padrao\css\default.css" />
+    <Content Include="App_Themes\Padrao\css\dhtmlgoodies_calendar.css" />
+    <Content Include="App_Themes\Padrao\css\estilo.css" />
+    <Content Include="App_Themes\Padrao\css\genesis.css" />
+    <Content Include="App_Themes\Padrao\css\genesis_customization_theme.css" />
+    <Content Include="App_Themes\Padrao\css\genesis_layout.css" />
+    <Content Include="App_Themes\Padrao\css\genesis_primefaces.css" />
+    <Content Include="App_Themes\Padrao\css\genesis_theme.css" />
+    <Content Include="App_Themes\Padrao\css\images\alert.png" />
+    <Content Include="App_Themes\Padrao\css\images\animated-overlay.gif" />
+    <Content Include="App_Themes\Padrao\css\images\download.png" />
+    <Content Include="App_Themes\Padrao\css\images\error.png" />
+    <Content Include="App_Themes\Padrao\css\images\ico_reloj.png" />
+    <Content Include="App_Themes\Padrao\css\images\loading\1.gif" />
+    <Content Include="App_Themes\Padrao\css\images\loading\2.gif" />
+    <Content Include="App_Themes\Padrao\css\images\loading\3.gif" />
+    <Content Include="App_Themes\Padrao\css\images\loading\4.gif" />
+    <Content Include="App_Themes\Padrao\css\images\loading\5.gif" />
+    <Content Include="App_Themes\Padrao\css\images\loading\6.gif" />
+    <Content Include="App_Themes\Padrao\css\images\loading\7.gif" />
+    <Content Include="App_Themes\Padrao\css\images\loading\Wait.GIF" />
+    <Content Include="App_Themes\Padrao\css\images\notice.png" />
+    <Content Include="App_Themes\Padrao\css\images\success.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\active_geral.png" />
+    <Content Include="App_Themes\Padrao\css\img\adjunto.png" />
+    <Content Include="App_Themes\Padrao\css\img\ajax-loader.gif" />
+    <Content Include="App_Themes\Padrao\css\img\arrowslect.png" />
+    <Content Include="App_Themes\Padrao\css\img\bg_menu_left.png" />
+    <Content Include="App_Themes\Padrao\css\img\bg_trans.png" />
+    <Content Include="App_Themes\Padrao\css\img\body.png" />
+    <Content Include="App_Themes\Padrao\css\img\box.png" />
+    <Content Include="App_Themes\Padrao\css\img\box_prosegur.png" />
+    <Content Include="App_Themes\Padrao\css\img\button.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\adicionar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\back.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\borrar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\buscar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\calendar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\confirmar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\edit.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\exportacion.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\foward.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\gravar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\icon_download.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\nuevo.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\pdf.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\rechazar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\sustituir.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\traduccion.png" />
+    <Content Include="App_Themes\Padrao\css\img\button\xls.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_buscar2.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_check.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_configurar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_delete.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_geral.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_gerar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_limpar.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_limpar2.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_nova.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_off.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_save.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_sync.png" />
+    <Content Include="App_Themes\Padrao\css\img\button_voltar.png" />
+    <Content Include="App_Themes\Padrao\css\img\calendar.png" />
+    <Content Include="App_Themes\Padrao\css\img\carregando.gif" />
+    <Content Include="App_Themes\Padrao\css\img\consultas.gif" />
+    <Content Include="App_Themes\Padrao\css\img\content.jpg" />
+    <Content Include="App_Themes\Padrao\css\img\documents.gif" />
+    <Content Include="App_Themes\Padrao\css\img\exportar1.png" />
+    <Content Include="App_Themes\Padrao\css\img\exportar2.png" />
+    <Content Include="App_Themes\Padrao\css\img\exportar3.png" />
+    <Content Include="App_Themes\Padrao\css\img\favicon.ico" />
+    <Content Include="App_Themes\Padrao\css\img\grid\borrar.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\deletar.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\edit.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\exportacion.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\grabar.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\hay_detalle.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\icon_download.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\nuevo.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\search.png" />
+    <Content Include="App_Themes\Padrao\css\img\grid\traduccion.png" />
+    <Content Include="App_Themes\Padrao\css\img\header.png" />
+    <Content Include="App_Themes\Padrao\css\img\header2.png" />
+    <Content Include="App_Themes\Padrao\css\img\hover_geral.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\add.JPG" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\add_all.JPG" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\adicionar.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\atajo1.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\atajo3.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\atajo4.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\atajo5.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\atajo6.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\atajo_general.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\atajo_personas.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\double-arrow-down.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\double-arrow-up.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\Globe.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon-gestionPermisos.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon2.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon3.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone1.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_calendario.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_calendario2.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_check1.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_check1_p.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_check2.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_cop.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_cos.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_ferramenta1.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_ferramenta2.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_ferramenta2_p.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_ferramenta3.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_globo.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_hora.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icone_sco.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\iconomapa.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_acordo.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_active.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_close.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_default.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_default2.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_default3.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_default4.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_dicionario.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_geografica.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_geografica2.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_geral.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_gestion-solicitude-toolbar.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_h1.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_home.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_mandatry.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_menu.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_menu2.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_menu_collapse.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_menu_off.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_menu_on.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_pontos.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_produto.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_usuario.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_veiculo.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\icon_version.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\institution.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\marcador_funcionalidades.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\parametro.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\remove.JPG" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\remove_all.JPG" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\set.png" />
+    <Content Include="App_Themes\Padrao\css\img\iconos\sub.png" />
+    <Content Include="App_Themes\Padrao\css\img\input.png" />
+    <Content Include="App_Themes\Padrao\css\img\input1.png" />
+    <Content Include="App_Themes\Padrao\css\img\input2.png" />
+    <Content Include="App_Themes\Padrao\css\img\input_mandatory.png" />
+    <Content Include="App_Themes\Padrao\css\img\input_search.png" />
+    <Content Include="App_Themes\Padrao\css\img\loader.gif" />
+    <Content Include="App_Themes\Padrao\css\img\login_barra.png" />
+    <Content Include="App_Themes\Padrao\css\img\login_box.png" />
+    <Content Include="App_Themes\Padrao\css\img\logo.png" />
+    <Content Include="App_Themes\Padrao\css\img\logo\favicon.ico" />
+    <Content Include="App_Themes\Padrao\css\img\logo\logotipo_prosegur.png" />
+    <Content Include="App_Themes\Padrao\css\img\logo\logotipo_sol.png" />
+    <Content Include="App_Themes\Padrao\css\img\menu.png" />
+    <Content Include="App_Themes\Padrao\css\img\menu_geral.png" />
+    <Content Include="App_Themes\Padrao\css\img\notificationbar.png" />
+    <Content Include="App_Themes\Padrao\css\img\obrigatorio_geral.png" />
+    <Content Include="App_Themes\Padrao\css\img\pag05.JPG" />
+    <Content Include="App_Themes\Padrao\css\img\pag05.png" />
+    <Content Include="App_Themes\Padrao\css\img\pag06.JPG" />
+    <Content Include="App_Themes\Padrao\css\img\pag06.png" />
+    <Content Include="App_Themes\Padrao\css\img\pag07.JPG" />
+    <Content Include="App_Themes\Padrao\css\img\pag07.png" />
+    <Content Include="App_Themes\Padrao\css\img\pag08.JPG" />
+    <Content Include="App_Themes\Padrao\css\img\pag08.png" />
+    <Content Include="App_Themes\Padrao\css\img\pag09.jpg" />
+    <Content Include="App_Themes\Padrao\css\img\pag09.png" />
+    <Content Include="App_Themes\Padrao\css\img\pag10.jpg" />
+    <Content Include="App_Themes\Padrao\css\img\pag10.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon1.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon11.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon12.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon13.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon14.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon15.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon16.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon17.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon2.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon3.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon4.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon5.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon7.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon8.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon9.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icone_cop.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icone_cos.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icone_ferramenta1.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icone_ferramenta2.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icone_ferramenta3.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icone_gestaoDePermisos.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icone_sco.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon_gestion-solicitude.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel\icon_panel.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_button.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_button2.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_buttons.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_button_left.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_button_left_2.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_button_right.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_button_right_2.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_left_main_template.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_simple_main_template.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_simple_one_buttons_template.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_simple_three_buttons_template.png" />
+    <Content Include="App_Themes\Padrao\css\img\panel_simple_two_buttons_template.png" />
+    <Content Include="App_Themes\Padrao\css\img\parametro.png" />
+    <Content Include="App_Themes\Padrao\css\img\RemoverOff.png" />
+    <Content Include="App_Themes\Padrao\css\img\RemoverOn.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_flat_0_2d5972_40x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_flat_0_4f4f4f_40x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_flat_100_ffffff_40x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_highlight-hard_80_85b2cb_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_highlight-hard_80_c4c4c4_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_highlight-hard_80_e3e3e3_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_highlight-soft_100_c4c4c4_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_highlight-soft_75_85b2cb_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_inset-hard_65_85b2cb_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_inset-hard_65_c4c4c4_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-icons_2d5972_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-icons_38667f_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-icons_3a6983_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-icons_616161_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-icons_898989_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces-aristo\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\breadcrumb\Chevron.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\charts\charts.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\charts\charts.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\charts\jqplot.txt" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\colorpicker.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\colorpicker.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_background.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_hex.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_hsb_b.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_hsb_h.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_hsb_s.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_indic.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_overlay.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_rgb_b.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_rgb_g.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_rgb_r.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_select.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\colorpicker\images\colorpicker_submit.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\confirmdialog\confirmdialog.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\dock\assets\iepngfix.htc" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\dock\dock.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\dock\dock.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\editor\editor.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\editor\editor.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\editor\images\buttons.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\editor\images\toolbar.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\fileupload\fileupload.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\fileupload\fileupload.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\fileupload\ie-anim.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\fileupload\readme.txt" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\galleria\galleria.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\galleria\galleria.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\gmap\gmap.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\growl\images\error.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\growl\images\fatal.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\growl\images\info.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\growl\images\warn.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\hotkey\hotkey.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\idlemonitor\idlemonitor.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\imagecompare\handle.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\imagecompare\imagecompare.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\imagecompare\lt-small.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\imagecompare\rt-small.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\imagecropper\crop.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\imagecropper\imagecropper.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\imagecropper\imagecropper.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\imageswitch\imageswitch.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\jquery\jquery.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\keyboard\keyboard.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\keyboard\keyboard.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\layout\layout.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\layout\layout.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\lightbox\images\loading.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\log\icons.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\log\log.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\log\log.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\log\panel.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\messages\messages.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\mousewheel\jquery.mousewheel.min.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\password\jpassword-leftbottom.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\password\jpassword-lefttop.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\password\jpassword-meter.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\password\jpassword-rightbottom.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\password\jpassword-righttop.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\password\password.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\password\password.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\photocam\jscam.swf" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\photocam\photocam.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\photocam\photocam.swf" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\primefaces.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\primefaces.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\printer\printer.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\rating\delete.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\rating\rating.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\rating\rating.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\rating\star.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\ring\ring.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\ring\ring.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\schedule\schedule.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\schedule\schedule.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\sheet\sheet.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\sheet\sheet.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\spacer\dot_clear.gif" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\stack\stack.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\stack\stack.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\terminal\terminal.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\terminal\terminal.js" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\treetable\images\toggle-collapse-dark.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\treetable\images\toggle-collapse-light.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\treetable\images\toggle-expand-dark.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\treetable\images\toggle-expand-light.png" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\watermark\watermark.css" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\watermark\watermark.js" />
+    <Content Include="App_Themes\Padrao\css\img\SelecionarOff.png" />
+    <Content Include="App_Themes\Padrao\css\img\SelecionarOn.png" />
+    <Content Include="App_Themes\Padrao\css\img\slider_handle.gif" />
+    <Content Include="App_Themes\Padrao\css\img\tab_center_active.gif" />
+    <Content Include="App_Themes\Padrao\css\img\tab_left_active.gif" />
+    <Content Include="App_Themes\Padrao\css\img\tab_left_inactive.gif" />
+    <Content Include="App_Themes\Padrao\css\img\tab_right_active.gif" />
+    <Content Include="App_Themes\Padrao\css\img\tab_right_inactive.gif" />
+    <Content Include="App_Themes\Padrao\css\img\vacio.png" />
+    <Content Include="App_Themes\Padrao\css\jquery-ui.custom.min.css" />
+    <Content Include="App_Themes\Padrao\css\js_color_picker_v2.css" />
+    <Content Include="AprobadorDatosBancariosPopup.aspx" />
+    <Content Include="BusquedaAprobacionCuentasBancariasHistorico.aspx" />
+    <Content Include="BusquedaAprobacionCuentasBancarias.aspx" />
+    <Content Include="BusquedaClientes.aspx" />
+    <Content Include="BusquedaDatosBancariosComentarioPopup.aspx" />
+    <Content Include="BusquedaDatosBancariosComentariosDetallesPopUp.aspx" />
+    <Content Include="BusquedaDatosBancariosPopup.aspx" />
+    <Content Include="BusquedaCamposExtraModal.aspx" />
+    <Content Include="BusquedaDatosBancariosPopupComparativo.aspx" />
+    <Content Include="BusquedaPeriodosAcreditacion.aspx" />
+    <Content Include="BusquedaPlanificaciones.aspx" />
+    <Content Include="BusquedaMAE.aspx" />
+    <Content Include="BusquedaNivelSaldoPopup.aspx" />
+    <Content Include="BusquedaMAEPopup.aspx" />
+    <Content Include="OrdenesDeServicioBillingPopup.aspx" />
+    <Content Include="OrdenesDeServicioNotificacionPopup.aspx" />
+    <Content Include="BusquedaPlanificacionPopup.aspx" />
+    <Content Include="BusquedaPuntoServicio.aspx" />
+    <Content Include="BusquedaRoles.aspx" />
+    <Content Include="BusquedaSubClientes.aspx" />
+    <Content Include="BusquedaTipoPuntoServicio.aspx" />
+    <Content Include="BusquedaCanales.aspx" />
+    <Content Include="BusquedaDelegaciones.aspx" />
+    <Content Include="BusquedaGrupoCliente.aspx" />
+    <Content Include="BusquedaParametros.aspx" />
+    <Content Include="BusquedaPlanta.aspx" />
+    <Content Include="BusquedaPuestos.aspx" />
+    <Content Include="BusquedaAgrupacionesParametros.aspx" />
+    <Content Include="BusquedaSector.aspx" />
+    <Content Include="BusquedaSimplesSectores.aspx" />
+    <Content Include="BusquedaTipoCliente.aspx" />
+    <Content Include="BusquedaTipoSector.aspx" />
+    <Content Include="BusquedaTipoSubcliente.aspx" />
+    <Content Include="BusquedaTransaccionesPopup.aspx" />
+    <Content Include="BusquedaUsuarios.aspx" />
+    <Content Include="Controles\Helpers\Popup2.ascx" />
+    <Content Include="Controles\Helpers\ucCliente.ascx" />
+    <Content Include="Controles\Helpers\ucDeviceID.ascx" />
+    <Content Include="Controles\Helpers\ucPlanificacion.ascx" />
+    <Content Include="Controles\Helpers\ucHelperBusquedaAvanzada.ascx" />
+    <Content Include="Controles\Helpers\ucHelperBusquedaAvanzadaSector.ascx" />
+    <Content Include="Controles\Helpers\ucHelperAvanzadoBusquedaDatos.ascx" />
+    <Content Include="Controles\Helpers\ucHelperBusquedaDatosSector.ascx" />
+    <Content Include="Controles\Helpers\ucHelperBusquedaDatos.ascx" />
+    <Content Include="Controles\Helpers\ucInfAdicionales.ascx" />
+    <Content Include="Controles\Helpers\ucPuntoServicio.ascx" />
+    <Content Include="Controles\Helpers\ucRadioButtonList.ascx" />
+    <Content Include="Controles\Helpers\ucCanal.ascx" />
+    <Content Include="Controles\Helpers\ucSector.ascx" />
+    <Content Include="BusquedaTipoProcedencia.aspx" />
+    <Content Include="BusquedaProcedencias.aspx" />
+    <Content Include="Controles\Helpers\ucUsuario.ascx" />
+    <Content Include="Controles\ucDatosBanc.ascx" />
+    <Content Include="Controles\ucDivisa.ascx" />
+    <Content Include="Controles\ucLimite.ascx" />
+    <Content Include="Controles\ucMovimiento.ascx" />
+    <Content Include="Controles\ucReloj.ascx" />
+    <Content Include="Controles\ucTotSaldo.ascx" />
+    <Content Include="Css\bootstrap-theme.css" />
+    <Content Include="Css\bootstrap.css" />
+    <Content Include="Css\popover.css" />
+    <Content Include="Dicionarios\Dicionario.de.txt" />
+    <Content Include="Dicionarios\Dicionario.en-CN.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.en-IN.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.en-US.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.en-ZA.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.en.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.es-AR.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.es-PE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.es.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.fr.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.pt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.pt-PT.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.zh.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dicionarios\Dicionario.zh-HK.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Downloads.aspx" />
+    <Content Include="Imagenes\Calendar.png" />
+    <Content Include="Imagenes\comentario_icon.png" />
+    <Content Include="Imagenes\config.png" />
+    <Content Include="Imagenes\contain01.png" />
+    <Content Include="Imagenes\contain_disabled.png" />
+    <Content Include="Imagenes\contain_pending.png" />
+    <Content Include="Imagenes\facturacion.png" />
+    <Content Include="Imagenes\group-key-icon.png" />
+    <Content Include="Imagenes\group.gif" />
+    <Content Include="Imagenes\icon_history.png" />
+    <Content Include="Imagenes\icon_success.png" />
+    <Content Include="Imagenes\ic_planificacion.png" />
+    <Content Include="Imagenes\Info_Icon.png" />
+    <Content Include="Imagenes\institution.png" />
+    <Content Include="Imagenes\integraciones.png" />
+    <Content Include="Imagenes\key-icon.png" />
+    <Content Include="Imagenes\lock-icon.png" />
+    <Content Include="Imagenes\MAE.png" />
+    <Content Include="Imagenes\minus_square.png" />
+    <Content Include="Imagenes\nocontain01.png" />
+    <Content Include="Imagenes\pag005.JPG" />
+    <Content Include="Imagenes\pag006.JPG" />
+    <Content Include="Imagenes\pag007.JPG" />
+    <Content Include="Imagenes\pag008.JPG" />
+    <Content Include="Imagenes\pag01.png" />
+    <Content Include="Imagenes\pag02.png" />
+    <Content Include="Imagenes\pag03.png" />
+    <Content Include="Imagenes\pag04.png" />
+    <Content Include="Imagenes\pag05.png" />
+    <Content Include="Imagenes\pag06.png" />
+    <Content Include="Imagenes\pag07.png" />
+    <Content Include="Imagenes\pag08.png" />
+    <Content Include="Imagenes\periodosAcreditacion.png" />
+    <Content Include="Imagenes\plus-square.png" />
+    <Content Include="Imagenes\Quitar.png" />
+    <Content Include="Imagenes\search.png" />
+    <Content Include="InformacionIAC.aspx" />
+    <Content Include="JS\bootstrap.js" />
+    <Content Include="JS\jquery.min.js" />
+    <Content Include="JS\jquery.mask.min.js" />
+    <Content Include="JS\Master\date-en-US.js" />
+    <Content Include="JS\Master\Funcoes.js" />
+    <Content Include="JS\Master\genesis.js" />
+    <Content Include="JS\Master\ie10fix.js" />
+    <Content Include="JS\Master\jquery.min.js" />
+    <Content Include="JS\Master\jquery-ui.custom.min.js" />
+    <Content Include="JS\Master\jquery-ui-timepicker-addon.js" />
+    <Content Include="JS\Master\shortcut.js" />
+    <Content Include="JS\Planificaciones.js" />
+    <Content Include="JS\Scripts\bootstrap.js" />
+    <Content Include="JS\Scripts\bootstrap.min.js" />
+    <Content Include="MantenimientoAccionesEnLote.aspx" />
+    <Content Include="MantenimientoCamposExtra.aspx" />
+    <Content Include="MantenimientoCodigosAjenosBancoPlanificacion.aspx" />
+    <Content Include="MantenimientoCodigosAjenosMAE.aspx" />
+    <Content Include="MantenimientoImporteMaximo.aspx" />
+    <Content Include="MantenimientoMensajes.aspx" />
+    <Content Include="MantenimientoProcedencia.aspx" />
+    <Content Include="MantenimientoNivelesSaldos.aspx" />
+    <Content Include="Imagenes\Procedencia.png" />
+    <Content Include="MantenimientoPuntoServicio.aspx" />
+    <Content Include="MantenimientoSubClientes.aspx" />
+    <Content Include="MantenimientoTipoProcedencia.aspx" />
+    <Content Include="MantenimientoCliente.aspx" />
+    <Content Include="MantenimientoCodigosAjenos.aspx" />
+    <Content Include="Imagenes\031.png" />
+    <Content Include="Imagenes\delegaciones.gif" />
+    <Content Include="Imagenes\Clientes.gif" />
+    <Content Include="Imagenes\help_parametros.png" />
+    <Content Include="Imagenes\ParametroConfiguracao.jpg" />
+    <Content Include="Imagenes\People.png" />
+    <Content Include="Imagenes\ponto.png" />
+    <Content Include="Imagenes\Puesto.gif" />
+    <Content Include="Imagenes\Parametro.gif" />
+    <Content Include="Imagenes\sector.gif" />
+    <Content Include="Imagenes\servicio.png" />
+    <Content Include="Imagenes\sincronizar.png" />
+    <Content Include="Imagenes\subclientes.png" />
+    <Content Include="Imagenes\tipo.jpg" />
+    <Content Include="LoginUnificado.aspx" />
+    <Content Include="MantenimientoDireccion.aspx" />
+    <Content Include="MantenimientoTipoPuntoServicio.aspx" />
+    <Content Include="MantenimientoTipoSubcliente.aspx" />
+    <Content Include="MantenimientoAgrupacionParametro.aspx" />
+    <Content Include="MantenimientoDelegaciones.aspx" />
+    <Content Include="MantenimientoGrupoCliente.aspx" />
+    <Content Include="MantenimientoOpcionesParametro.aspx" />
+    <Content Include="MantenimientoPlanta.aspx" />
+    <Content Include="MantenimientoPuestos.aspx" />
+    <Content Include="MantenimientoConfiguracionParametro.aspx" />
+    <Content Include="Css\css.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dicionarios\Dicionario.pt-BR.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\ATM.gif" />
+    <Content Include="Imagenes\bg.jpg" />
+    <Content Include="Imagenes\bt01.jpg" />
+    <Content Include="Imagenes\bt02.jpg" />
+    <Content Include="Imagenes\bt03.jpg" />
+    <Content Include="Imagenes\BtnGrafico_old.gif" />
+    <Content Include="Imagenes\btPadrao.jpg" />
+    <Content Include="Imagenes\cross.PNG" />
+    <Content Include="Imagenes\crossOFF.png" />
+    <Content Include="Imagenes\erro.ico" />
+    <Content Include="Imagenes\grid_linha_01.jpg" />
+    <Content Include="Imagenes\grid_linha_destaque.jpg" />
+    <Content Include="Imagenes\grid_titulo_bg.jpg" />
+    <Content Include="Imagenes\ico01.gif" />
+    <Content Include="Imagenes\ico01.jpg" />
+    <Content Include="Imagenes\ico02.jpg" />
+    <Content Include="Imagenes\morfologia.gif" />
+    <Content Include="Imagenes\pag01.jpg" />
+    <Content Include="Imagenes\pag02.jpg" />
+    <Content Include="Imagenes\pag03.jpg" />
+    <Content Include="Imagenes\pag04.jpg" />
+    <Content Include="Imagenes\pencil.PNG" />
+    <Content Include="Imagenes\pencilOFF.png" />
+    <Content Include="Imagenes\titulo01_bg.jpg" />
+    <Content Include="Imagenes\topo01.jpg" />
+    <Content Include="Imagenes\topo02.jpg" />
+    <Content Include="Imagenes\topo03.jpg" />
+    <Content Include="JS\Funcoes.js" />
+    <Content Include="MantenimientoCanales.aspx" />
+    <Content Include="MantenimientoParametro.aspx" />
+    <Content Include="MantenimientoSector.aspx" />
+    <Content Include="MantenimientoTipoCliente.aspx" />
+    <Content Include="MantenimientoTipoSector.aspx" />
+    <Content Include="OrdenesDeServicio.aspx" />
+    <Content Include="OrdenesDeServicioPopup.aspx" />
+    <Content Include="Version.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Genesis\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="AprobadorDatosBancariosPopup.aspx.designer.vb">
+      <DependentUpon>AprobadorDatosBancariosPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AprobadorDatosBancariosPopup.aspx.vb">
+      <DependentUpon>AprobadorDatosBancariosPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Base\Base.aspx.designer.vb">
+      <DependentUpon>Base.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base.aspx.vb">
+      <DependentUpon>Base.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Base\PopupBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\UcBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\UcHelperAvanzadoBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\UcHelperBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaAprobacionCuentasBancariasHistorico.aspx.designer.vb">
+      <DependentUpon>BusquedaAprobacionCuentasBancariasHistorico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaAprobacionCuentasBancariasHistorico.aspx.vb">
+      <DependentUpon>BusquedaAprobacionCuentasBancariasHistorico.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaAprobacionCuentasBancarias.aspx.designer.vb">
+      <DependentUpon>BusquedaAprobacionCuentasBancarias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaAprobacionCuentasBancarias.aspx.vb">
+      <DependentUpon>BusquedaAprobacionCuentasBancarias.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaClientes.aspx.designer.vb">
+      <DependentUpon>BusquedaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaClientes.aspx.vb">
+      <DependentUpon>BusquedaClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaDatosBancariosComentarioPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaDatosBancariosComentarioPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaDatosBancariosComentarioPopup.aspx.vb">
+      <DependentUpon>BusquedaDatosBancariosComentarioPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaDatosBancariosComentariosDetallesPopUp.aspx.designer.vb">
+      <DependentUpon>BusquedaDatosBancariosComentariosDetallesPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaDatosBancariosComentariosDetallesPopUp.aspx.vb">
+      <DependentUpon>BusquedaDatosBancariosComentariosDetallesPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaDatosBancariosPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaDatosBancariosPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaDatosBancariosPopup.aspx.vb">
+      <DependentUpon>BusquedaDatosBancariosPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaCamposExtraModal.aspx.designer.vb">
+      <DependentUpon>BusquedaCamposExtraModal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaCamposExtraModal.aspx.vb">
+      <DependentUpon>BusquedaCamposExtraModal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaDatosBancariosPopupComparativo.aspx.designer.vb">
+      <DependentUpon>BusquedaDatosBancariosPopupComparativo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaDatosBancariosPopupComparativo.aspx.vb">
+      <DependentUpon>BusquedaDatosBancariosPopupComparativo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaPeriodosAcreditacion.aspx.designer.vb">
+      <DependentUpon>BusquedaPeriodosAcreditacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPeriodosAcreditacion.aspx.vb">
+      <DependentUpon>BusquedaPeriodosAcreditacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaPlanificaciones.aspx.designer.vb">
+      <DependentUpon>BusquedaPlanificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPlanificaciones.aspx.vb">
+      <DependentUpon>BusquedaPlanificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaMAE.aspx.designer.vb">
+      <DependentUpon>BusquedaMAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaMAE.aspx.vb">
+      <DependentUpon>BusquedaMAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaNivelSaldoPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaNivelSaldoPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaNivelSaldoPopup.aspx.vb">
+      <DependentUpon>BusquedaNivelSaldoPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaMAEPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaMAEPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaMAEPopup.aspx.vb">
+      <DependentUpon>BusquedaMAEPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeServicioBillingPopup.aspx.designer.vb">
+      <DependentUpon>OrdenesDeServicioBillingPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeServicioBillingPopup.aspx.vb">
+      <DependentUpon>OrdenesDeServicioBillingPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeServicioNotificacionPopup.aspx.designer.vb">
+      <DependentUpon>OrdenesDeServicioNotificacionPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeServicioNotificacionPopup.aspx.vb">
+      <DependentUpon>OrdenesDeServicioNotificacionPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaPlanificacionPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaPlanificacionPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPlanificacionPopup.aspx.vb">
+      <DependentUpon>BusquedaPlanificacionPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaPuntoServicio.aspx.designer.vb">
+      <DependentUpon>BusquedaPuntoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPuntoServicio.aspx.vb">
+      <DependentUpon>BusquedaPuntoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaRoles.aspx.designer.vb">
+      <DependentUpon>BusquedaRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaRoles.aspx.vb">
+      <DependentUpon>BusquedaRoles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaSubClientes.aspx.designer.vb">
+      <DependentUpon>BusquedaSubClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaSubClientes.aspx.vb">
+      <DependentUpon>BusquedaSubClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaTipoPuntoServicio.aspx.designer.vb">
+      <DependentUpon>BusquedaTipoPuntoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTipoPuntoServicio.aspx.vb">
+      <DependentUpon>BusquedaTipoPuntoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaDelegaciones.aspx.designer.vb">
+      <DependentUpon>BusquedaDelegaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaDelegaciones.aspx.vb">
+      <DependentUpon>BusquedaDelegaciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaGrupoCliente.aspx.designer.vb">
+      <DependentUpon>BusquedaGrupoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaGrupoCliente.aspx.vb">
+      <DependentUpon>BusquedaGrupoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaParametros.aspx.designer.vb">
+      <DependentUpon>BusquedaParametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaParametros.aspx.vb">
+      <DependentUpon>BusquedaParametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaPlanta.aspx.designer.vb">
+      <DependentUpon>BusquedaPlanta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPlanta.aspx.vb">
+      <DependentUpon>BusquedaPlanta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaSector.aspx.designer.vb">
+      <DependentUpon>BusquedaSector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaSector.aspx.vb">
+      <DependentUpon>BusquedaSector.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaSimplesSectores.aspx.designer.vb">
+      <DependentUpon>BusquedaSimplesSectores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaSimplesSectores.aspx.vb">
+      <DependentUpon>BusquedaSimplesSectores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaTipoCliente.aspx.designer.vb">
+      <DependentUpon>BusquedaTipoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTipoCliente.aspx.vb">
+      <DependentUpon>BusquedaTipoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaTipoSector.aspx.designer.vb">
+      <DependentUpon>BusquedaTipoSector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTipoSector.aspx.vb">
+      <DependentUpon>BusquedaTipoSector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaTiposProcesado.aspx.designer.vb">
+      <DependentUpon>BusquedaTiposProcesado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTiposProcesado.aspx.vb">
+      <DependentUpon>BusquedaTiposProcesado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaCanales.aspx.designer.vb">
+      <DependentUpon>BusquedaCanales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaCanales.aspx.vb">
+      <DependentUpon>BusquedaCanales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaIac.aspx.designer.vb">
+      <DependentUpon>BusquedaIac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaIac.aspx.vb">
+      <DependentUpon>BusquedaIac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaTipoSubcliente.aspx.designer.vb">
+      <DependentUpon>BusquedaTipoSubcliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTipoSubcliente.aspx.vb">
+      <DependentUpon>BusquedaTipoSubcliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaTransaccionesPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaTransaccionesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTransaccionesPopup.aspx.vb">
+      <DependentUpon>BusquedaTransaccionesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaUsuarios.aspx.designer.vb">
+      <DependentUpon>BusquedaUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaUsuarios.aspx.vb">
+      <DependentUpon>BusquedaUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Clases\BugsnagHelper.vb" />
+    <Compile Include="Clases\ControleEventArgs.vb" />
+    <Compile Include="Clases\Enumeradores.vb" />
+    <Compile Include="Clases\ErroEventArgs.vb" />
+    <Compile Include="Clases\ExcepcionEventArgs.vb" />
+    <Compile Include="Clases\GoogleAnalyticsHelper.vb" />
+    <Compile Include="Clases\IHelperAvanzado.vb" />
+    <Compile Include="Clases\IHelper.vb" />
+    <Compile Include="Clases\Negocio\ATM.vb" />
+    <Compile Include="Clases\Negocio\Cliente.vb" />
+    <Compile Include="Clases\Negocio\CajeroXMorfologia.vb" />
+    <Compile Include="Clases\Negocio\Canal.vb" />
+    <Compile Include="Clases\Negocio\Aplicacion.vb" />
+    <Compile Include="Clases\Negocio\Denominacion.vb" />
+    <Compile Include="Clases\Negocio\TerminoMedioPago.vb" />
+    <Compile Include="Clases\Negocio\Divisa.vb" />
+    <Compile Include="Clases\Negocio\InformacionAdicional.vb" />
+    <Compile Include="Clases\Negocio\Modalidad.vb" />
+    <Compile Include="Clases\Negocio\Producto.vb" />
+    <Compile Include="Clases\Negocio\SubCanal.vb" />
+    <Compile Include="Clases\Negocio\Proceso.vb" />
+    <Compile Include="Clases\Negocio\Grupo.vb" />
+    <Compile Include="Clases\Negocio\ModeloCajero.vb" />
+    <Compile Include="Clases\Negocio\Red.vb" />
+    <Compile Include="Clases\Negocio\PuntoServicio.vb" />
+    <Compile Include="Clases\Negocio\Subcliente.vb" />
+    <Compile Include="Clases\BaseEntidade.vb" />
+    <Compile Include="Clases\InicializarException.vb" />
+    <Compile Include="Clases\Negocio\Componente.vb" />
+    <Compile Include="Clases\Negocio\MedioPago.vb" />
+    <Compile Include="Clases\Negocio\Morfologia.vb" />
+    <Compile Include="Clases\Negocio\Objecto.vb" />
+    <Compile Include="Clases\Negocio\TipoMedioPago.vb" />
+    <Compile Include="Clases\PantallaProceso\MedioPago.vb" />
+    <Compile Include="Clases\PantallaProceso\MedioPagoColeccion.vb" />
+    <Compile Include="Clases\PantallaProceso\TerminoMedioPago.vb" />
+    <Compile Include="Clases\PantallaProceso\TerminoMedioPagoColeccion.vb" />
+    <Compile Include="Clases\PantallaProceso\ToleranciaMedioPago.vb" />
+    <Compile Include="Clases\PantallaProceso\ToleranciaMedioPagoColeccion.vb" />
+    <Compile Include="Clases\PantallaProceso\ToleranciaAgrupacion.vb" />
+    <Compile Include="Clases\PantallaProceso\ToleranciaAgrupacionColeccion.vb" />
+    <Compile Include="Clases\PopupBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\PopupEventArgs.vb" />
+    <Compile Include="Clases\ProsegurTreeNode.vb" />
+    <Compile Include="Clases\TreeViewHelper.vb" />
+    <Compile Include="Clases\UserControlBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clases\Utilidad.vb" />
+    <Compile Include="BusquedaDivisas.aspx.designer.vb">
+      <DependentUpon>BusquedaDivisas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaDivisas.aspx.vb">
+      <DependentUpon>BusquedaDivisas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaAgrupaciones.aspx.designer.vb">
+      <DependentUpon>BusquedaAgrupaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaAgrupaciones.aspx.vb">
+      <DependentUpon>BusquedaAgrupaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaTerminos.aspx.designer.vb">
+      <DependentUpon>BusquedaTerminos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTerminos.aspx.vb">
+      <DependentUpon>BusquedaTerminos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaValoresPosibles.aspx.designer.vb">
+      <DependentUpon>BusquedaValoresPosibles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaValoresPosibles.aspx.vb">
+      <DependentUpon>BusquedaValoresPosibles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaClientesPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaClientesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaClientesPopup.aspx.vb">
+      <DependentUpon>BusquedaClientesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Clases\ValidacaoAcesso.vb">
+    </Compile>
+    <Compile Include="Controles\Cabecalho.ascx.designer.vb">
+      <DependentUpon>Cabecalho.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Cabecalho.ascx.vb">
+      <DependentUpon>Cabecalho.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaMediosPago.aspx.designer.vb">
+      <DependentUpon>BusquedaMediosPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaMediosPago.aspx.vb">
+      <DependentUpon>BusquedaMediosPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaSubClientesPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaSubClientesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaSubClientesPopup.aspx.vb">
+      <DependentUpon>BusquedaSubClientesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaPuntosServicioPopup.aspx.designer.vb">
+      <DependentUpon>BusquedaPuntosServicioPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPuntosServicioPopup.aspx.vb">
+      <DependentUpon>BusquedaPuntosServicioPopup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaProcesos.aspx.designer.vb">
+      <DependentUpon>BusquedaProcesos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaProcesos.aspx.vb">
+      <DependentUpon>BusquedaProcesos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaCaracteristicas.aspx.designer.vb">
+      <DependentUpon>BusquedaCaracteristicas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaCaracteristicas.aspx.vb">
+      <DependentUpon>BusquedaCaracteristicas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaATM.aspx.designer.vb">
+      <DependentUpon>BusquedaATM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaATM.aspx.vb">
+      <DependentUpon>BusquedaATM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helper.ascx.designer.vb">
+      <DependentUpon>Helper.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helper.ascx.vb">
+      <DependentUpon>Helper.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaPuestos.aspx.designer.vb">
+      <DependentUpon>BusquedaPuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPuestos.aspx.vb">
+      <DependentUpon>BusquedaPuestos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaAgrupacionesParametros.aspx.designer.vb">
+      <DependentUpon>BusquedaAgrupacionesParametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaAgrupacionesParametros.aspx.vb">
+      <DependentUpon>BusquedaAgrupacionesParametros.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\Popup2.ascx.designer.vb">
+      <DependentUpon>Popup2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\Popup2.ascx.vb">
+      <DependentUpon>Popup2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucCliente.ascx.designer.vb">
+      <DependentUpon>ucCliente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucCliente.ascx.vb">
+      <DependentUpon>ucCliente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucDeviceID.ascx.designer.vb">
+      <DependentUpon>ucDeviceID.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucDeviceID.ascx.vb">
+      <DependentUpon>ucDeviceID.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucPlanificacion.ascx.designer.vb">
+      <DependentUpon>ucPlanificacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucPlanificacion.ascx.vb">
+      <DependentUpon>ucPlanificacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperBusquedaAvanzada.ascx.designer.vb">
+      <DependentUpon>ucHelperBusquedaAvanzada.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperBusquedaAvanzada.ascx.vb">
+      <DependentUpon>ucHelperBusquedaAvanzada.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperBusquedaAvanzadaSector.ascx.designer.vb">
+      <DependentUpon>ucHelperBusquedaAvanzadaSector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperBusquedaAvanzadaSector.ascx.vb">
+      <DependentUpon>ucHelperBusquedaAvanzadaSector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperAvanzadoBusquedaDatos.ascx.designer.vb">
+      <DependentUpon>ucHelperAvanzadoBusquedaDatos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperAvanzadoBusquedaDatos.ascx.vb">
+      <DependentUpon>ucHelperAvanzadoBusquedaDatos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperBusquedaDatosSector.ascx.designer.vb">
+      <DependentUpon>ucHelperBusquedaDatosSector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperBusquedaDatosSector.ascx.vb">
+      <DependentUpon>ucHelperBusquedaDatosSector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperBusquedaDatos.ascx.designer.vb">
+      <DependentUpon>ucHelperBusquedaDatos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucHelperBusquedaDatos.ascx.vb">
+      <DependentUpon>ucHelperBusquedaDatos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucInfAdicionales.ascx.designer.vb">
+      <DependentUpon>ucInfAdicionales.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucInfAdicionales.ascx.vb">
+      <DependentUpon>ucInfAdicionales.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucPuntoServicio.ascx.designer.vb">
+      <DependentUpon>ucPuntoServicio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucPuntoServicio.ascx.vb">
+      <DependentUpon>ucPuntoServicio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucRadioButtonList.ascx.designer.vb">
+      <DependentUpon>ucRadioButtonList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucRadioButtonList.ascx.vb">
+      <DependentUpon>ucRadioButtonList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucCanal.ascx.designer.vb">
+      <DependentUpon>ucCanal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucCanal.ascx.vb">
+      <DependentUpon>ucCanal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucSector.ascx.designer.vb">
+      <DependentUpon>ucSector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucSector.ascx.vb">
+      <DependentUpon>ucSector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaTipoProcedencia.aspx.designer.vb">
+      <DependentUpon>BusquedaTipoProcedencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaTipoProcedencia.aspx.vb">
+      <DependentUpon>BusquedaTipoProcedencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaProcedencias.aspx.designer.vb">
+      <DependentUpon>BusquedaProcedencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaProcedencias.aspx.vb">
+      <DependentUpon>BusquedaProcedencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucUsuario.ascx.designer.vb">
+      <DependentUpon>ucUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Helpers\ucUsuario.ascx.vb">
+      <DependentUpon>ucUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucDatosBanc.ascx.designer.vb">
+      <DependentUpon>ucDatosBanc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucDatosBanc.ascx.vb">
+      <DependentUpon>ucDatosBanc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucDivisa.ascx.designer.vb">
+      <DependentUpon>ucDivisa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucDivisa.ascx.vb">
+      <DependentUpon>ucDivisa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucLimite.ascx.designer.vb">
+      <DependentUpon>ucLimite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucLimite.ascx.vb">
+      <DependentUpon>ucLimite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucMovimiento.ascx.designer.vb">
+      <DependentUpon>ucMovimiento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucMovimiento.ascx.vb">
+      <DependentUpon>ucMovimiento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucReloj.ascx.designer.vb">
+      <DependentUpon>ucReloj.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucReloj.ascx.vb">
+      <DependentUpon>ucReloj.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ucTotSaldo.ascx.designer.vb">
+      <DependentUpon>ucTotSaldo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucTotSaldo.ascx.vb">
+      <DependentUpon>ucTotSaldo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Downloads.aspx.designer.vb">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Downloads.aspx.vb">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="InformacionIAC.aspx.designer.vb">
+      <DependentUpon>InformacionIAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionIAC.aspx.vb">
+      <DependentUpon>InformacionIAC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoAccionesEnLote.aspx.designer.vb">
+      <DependentUpon>MantenimientoAccionesEnLote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoAccionesEnLote.aspx.vb">
+      <DependentUpon>MantenimientoAccionesEnLote.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCamposExtra.aspx.designer.vb">
+      <DependentUpon>MantenimientoCamposExtra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCamposExtra.aspx.vb">
+      <DependentUpon>MantenimientoCamposExtra.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCodigosAjenosBancoPlanificacion.aspx.designer.vb">
+      <DependentUpon>MantenimientoCodigosAjenosBancoPlanificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCodigosAjenosBancoPlanificacion.aspx.vb">
+      <DependentUpon>MantenimientoCodigosAjenosBancoPlanificacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCodigosAjenosMAE.aspx.designer.vb">
+      <DependentUpon>MantenimientoCodigosAjenosMAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCodigosAjenosMAE.aspx.vb">
+      <DependentUpon>MantenimientoCodigosAjenosMAE.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoImporteMaximo.aspx.designer.vb">
+      <DependentUpon>MantenimientoImporteMaximo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoImporteMaximo.aspx.vb">
+      <DependentUpon>MantenimientoImporteMaximo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoMensajes.aspx.designer.vb">
+      <DependentUpon>MantenimientoMensajes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoMensajes.aspx.vb">
+      <DependentUpon>MantenimientoMensajes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoProcedencia.aspx.designer.vb">
+      <DependentUpon>MantenimientoProcedencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoProcedencia.aspx.vb">
+      <DependentUpon>MantenimientoProcedencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoNivelesSaldos.aspx.designer.vb">
+      <DependentUpon>MantenimientoNivelesSaldos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoNivelesSaldos.aspx.vb">
+      <DependentUpon>MantenimientoNivelesSaldos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoPuntoServicio.aspx.designer.vb">
+      <DependentUpon>MantenimientoPuntoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoPuntoServicio.aspx.vb">
+      <DependentUpon>MantenimientoPuntoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoSubClientes.aspx.designer.vb">
+      <DependentUpon>MantenimientoSubClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoSubClientes.aspx.vb">
+      <DependentUpon>MantenimientoSubClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTipoProcedencia.aspx.designer.vb">
+      <DependentUpon>MantenimientoTipoProcedencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTipoProcedencia.aspx.vb">
+      <DependentUpon>MantenimientoTipoProcedencia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCliente.aspx.designer.vb">
+      <DependentUpon>MantenimientoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCliente.aspx.vb">
+      <DependentUpon>MantenimientoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCodigosAjenos.aspx.designer.vb">
+      <DependentUpon>MantenimientoCodigosAjenos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCodigosAjenos.aspx.vb">
+      <DependentUpon>MantenimientoCodigosAjenos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginUnificado.aspx.designer.vb">
+      <DependentUpon>LoginUnificado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUnificado.aspx.vb">
+      <DependentUpon>LoginUnificado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoDireccion.aspx.designer.vb">
+      <DependentUpon>MantenimientoDireccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoDireccion.aspx.vb">
+      <DependentUpon>MantenimientoDireccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTipoPuntoServicio.aspx.designer.vb">
+      <DependentUpon>MantenimientoTipoPuntoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTipoPuntoServicio.aspx.vb">
+      <DependentUpon>MantenimientoTipoPuntoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTipoSubcliente.aspx.designer.vb">
+      <DependentUpon>MantenimientoTipoSubcliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTipoSubcliente.aspx.vb">
+      <DependentUpon>MantenimientoTipoSubcliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoAgrupacionParametro.aspx.designer.vb">
+      <DependentUpon>MantenimientoAgrupacionParametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoAgrupacionParametro.aspx.vb">
+      <DependentUpon>MantenimientoAgrupacionParametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoDelegaciones.aspx.designer.vb">
+      <DependentUpon>MantenimientoDelegaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoDelegaciones.aspx.vb">
+      <DependentUpon>MantenimientoDelegaciones.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoGrupoCliente.aspx.designer.vb">
+      <DependentUpon>MantenimientoGrupoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoGrupoCliente.aspx.vb">
+      <DependentUpon>MantenimientoGrupoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoOpcionesParametro.aspx.designer.vb">
+      <DependentUpon>MantenimientoOpcionesParametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoOpcionesParametro.aspx.vb">
+      <DependentUpon>MantenimientoOpcionesParametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoPlanta.aspx.designer.vb">
+      <DependentUpon>MantenimientoPlanta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoPlanta.aspx.vb">
+      <DependentUpon>MantenimientoPlanta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoPuestos.aspx.designer.vb">
+      <DependentUpon>MantenimientoPuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoPuestos.aspx.vb">
+      <DependentUpon>MantenimientoPuestos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoConfiguracionParametro.aspx.designer.vb">
+      <DependentUpon>MantenimientoConfiguracionParametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoConfiguracionParametro.aspx.vb">
+      <DependentUpon>MantenimientoConfiguracionParametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoGrupo.aspx.designer.vb">
+      <DependentUpon>MantenimientoGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoGrupo.aspx.vb">
+      <DependentUpon>MantenimientoGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoATM.aspx.designer.vb">
+      <DependentUpon>MantenimientoATM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoATM.aspx.vb">
+      <DependentUpon>MantenimientoATM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCaracteristicas.aspx.designer.vb">
+      <DependentUpon>MantenimientoCaracteristicas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCaracteristicas.aspx.vb">
+      <DependentUpon>MantenimientoCaracteristicas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoParametro.aspx.designer.vb">
+      <DependentUpon>MantenimientoParametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoParametro.aspx.vb">
+      <DependentUpon>MantenimientoParametro.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoSector.aspx.designer.vb">
+      <DependentUpon>MantenimientoSector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoSector.aspx.vb">
+      <DependentUpon>MantenimientoSector.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTerminoMedioPagoProcesso.aspx.designer.vb">
+      <DependentUpon>MantenimientoTerminoMedioPagoProcesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTerminoMedioPagoProcesso.aspx.vb">
+      <DependentUpon>MantenimientoTerminoMedioPagoProcesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTipoCliente.aspx.designer.vb">
+      <DependentUpon>MantenimientoTipoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTipoCliente.aspx.vb">
+      <DependentUpon>MantenimientoTipoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTipoSector.aspx.designer.vb">
+      <DependentUpon>MantenimientoTipoSector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTipoSector.aspx.vb">
+      <DependentUpon>MantenimientoTipoSector.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTolerancias.aspx.designer.vb">
+      <DependentUpon>MantenimientoTolerancias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTolerancias.aspx.vb">
+      <DependentUpon>MantenimientoTolerancias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoProceso.aspx.designer.vb">
+      <DependentUpon>MantenimientoProceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoProceso.aspx.vb">
+      <DependentUpon>MantenimientoProceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoValoresTerminoMediosPago.aspx.designer.vb">
+      <DependentUpon>MantenimientoValoresTerminoMediosPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoValoresTerminoMediosPago.aspx.vb">
+      <DependentUpon>MantenimientoValoresTerminoMediosPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTerminoMediosPago.aspx.designer.vb">
+      <DependentUpon>MantenimientoTerminoMediosPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTerminoMediosPago.aspx.vb">
+      <DependentUpon>MantenimientoTerminoMediosPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoMediosPago.aspx.designer.vb">
+      <DependentUpon>MantenimientoMediosPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoMediosPago.aspx.vb">
+      <DependentUpon>MantenimientoMediosPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErroNaoTratado.aspx.designer.vb">
+      <DependentUpon>ErroNaoTratado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErroNaoTratado.aspx.vb">
+      <DependentUpon>ErroNaoTratado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTerminos.aspx.designer.vb">
+      <DependentUpon>MantenimientoTerminos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTerminos.aspx.vb">
+      <DependentUpon>MantenimientoTerminos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoValoresPosibles.aspx.designer.vb">
+      <DependentUpon>MantenimientoValoresPosibles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoValoresPosibles.aspx.vb">
+      <DependentUpon>MantenimientoValoresPosibles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoAgrupaciones.aspx.designer.vb">
+      <DependentUpon>MantenimientoAgrupaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoAgrupaciones.aspx.vb">
+      <DependentUpon>MantenimientoAgrupaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoDenominaciones.aspx.designer.vb">
+      <DependentUpon>MantenimientoDenominaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoDenominaciones.aspx.vb">
+      <DependentUpon>MantenimientoDenominaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoDivisas.aspx.designer.vb">
+      <DependentUpon>MantenimientoDivisas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoDivisas.aspx.vb">
+      <DependentUpon>MantenimientoDivisas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empty.aspx.designer.vb">
+      <DependentUpon>Empty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empty.aspx.vb">
+      <DependentUpon>Empty.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Erro.ascx.designer.vb">
+      <DependentUpon>Erro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Erro.ascx.vb">
+      <DependentUpon>Erro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoCanales.aspx.designer.vb">
+      <DependentUpon>MantenimientoCanales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoCanales.aspx.vb">
+      <DependentUpon>MantenimientoCanales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoIac.aspx.designer.vb">
+      <DependentUpon>MantenimientoIac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoIac.aspx.vb">
+      <DependentUpon>MantenimientoIac.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoSubCanales.aspx.designer.vb">
+      <DependentUpon>MantenimientoSubCanales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoSubCanales.aspx.vb">
+      <DependentUpon>MantenimientoSubCanales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTiposProcesado.aspx.designer.vb">
+      <DependentUpon>MantenimientoTiposProcesado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoTiposProcesado.aspx.vb">
+      <DependentUpon>MantenimientoTiposProcesado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaquinaDelProducto.aspx.designer.vb">
+      <DependentUpon>MaquinaDelProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaquinaDelProducto.aspx.vb">
+      <DependentUpon>MaquinaDelProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\IMaster.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Master.Master.designer.vb">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Master.Master.vb">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterModal.Master.designer.vb">
+      <DependentUpon>MasterModal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterModal.Master.vb">
+      <DependentUpon>MasterModal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\MetodosExtendidos.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OrdenesDeServicio.aspx.designer.vb">
+      <DependentUpon>OrdenesDeServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeServicio.aspx.vb">
+      <DependentUpon>OrdenesDeServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdenesDeServicioPopup.aspx.designer.vb">
+      <DependentUpon>OrdenesDeServicioPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenesDeServicioPopup.aspx.vb">
+      <DependentUpon>OrdenesDeServicioPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.vb">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Master.vb">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaProductos.aspx.designer.vb">
+      <DependentUpon>BusquedaProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaProductos.aspx.vb">
+      <DependentUpon>BusquedaProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Version.aspx.designer.vb">
+      <DependentUpon>Version.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Version.aspx.vb">
+      <DependentUpon>Version.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Master.Master" />
+    <Content Include="Master\MasterModal.Master" />
+    <Content Include="App_Themes\Padrao\css\img\resources\primefaces\dynamiccontent" />
+    <Content Include="App_Themes\Padrao\Skin1.skin" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\IAC_Publisher.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Base\Base.aspx" />
+    <Content Include="Controles\Cabecalho.ascx" />
+    <Content Include="BusquedaMediosPago.aspx" />
+    <Content Include="BusquedaSubClientesPopup.aspx" />
+    <Content Include="BusquedaPuntosServicioPopup.aspx" />
+    <Content Include="BusquedaProcesos.aspx" />
+    <Content Include="BusquedaCaracteristicas.aspx" />
+    <Content Include="BusquedaATM.aspx" />
+    <Content Include="Controles\Helper.ascx" />
+    <Content Include="JS\dFilter.js" />
+    <Content Include="JS\Prosegur_Uteis.js" />
+    <Content Include="MantenimientoGrupo.aspx" />
+    <Content Include="MantenimientoATM.aspx" />
+    <Content Include="Dicionarios\Dicionario.fr-FR.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\imgLeft_cab.jpg" />
+    <Content Include="Imagenes\imgRight_cab.jpg" />
+    <Content Include="JS\FuncaoAjax.js" />
+    <Content Include="JS\ucErro.js" />
+    <Content Include="MantenimientoCaracteristicas.aspx" />
+    <Content Include="Imagenes\caracteristicas.gif" />
+    <Content Include="MantenimientoTerminoMedioPagoProcesso.aspx" />
+    <Content Include="MantenimientoTolerancias.aspx" />
+    <Content Include="Imagenes\pag08.JPG" />
+    <Content Include="Imagenes\pag07.JPG" />
+    <Content Include="MantenimientoProceso.aspx" />
+    <Content Include="Imagenes\coins.gif" />
+    <Content Include="Imagenes\money.gif" />
+    <Content Include="MantenimientoValoresTerminoMediosPago.aspx" />
+    <Content Include="MantenimientoTerminoMediosPago.aspx" />
+    <Content Include="MantenimientoMediosPago.aspx" />
+    <Content Include="ErroNaoTratado.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Imagenes\valores_posibles.gif" />
+    <Content Include="wse3policyCache.config" />
+    <Content Include="BusquedaTiposProcesado.aspx" />
+    <Content Include="BusquedaDivisas.aspx" />
+    <Content Include="BusquedaIac.aspx" />
+    <Content Include="BusquedaAgrupaciones.aspx" />
+    <Content Include="BusquedaTerminos.aspx" />
+    <Content Include="BusquedaValoresPosibles.aspx" />
+    <Content Include="BusquedaClientesPopup.aspx" />
+    <Content Include="MantenimientoTerminos.aspx" />
+    <Content Include="MantenimientoValoresPosibles.aspx" />
+    <Content Include="Imagenes\agrupaciones.gif" />
+    <Content Include="Imagenes\canal.gif" />
+    <Content Include="Imagenes\divisa.gif" />
+    <Content Include="Imagenes\iac.gif" />
+    <Content Include="Imagenes\integracion.gif" />
+    <Content Include="Imagenes\loader1.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\mediopago.gif" />
+    <Content Include="Imagenes\modalidrecuento.gif" />
+    <Content Include="Imagenes\pag05.JPG" />
+    <Content Include="Imagenes\pag06.JPG" />
+    <Content Include="Imagenes\proceso.gif" />
+    <Content Include="Imagenes\produtos.gif" />
+    <Content Include="Imagenes\terminos.gif" />
+    <Content Include="MantenimientoAgrupaciones.aspx" />
+    <Content Include="MantenimientoDenominaciones.aspx" />
+    <Content Include="MantenimientoDivisas.aspx" />
+    <Content Include="Dicionarios\Dicionario.es-ES.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Empty.aspx" />
+    <Content Include="Controles\Erro.ascx" />
+    <Content Include="Imagenes\contain.gif" />
+    <Content Include="Imagenes\contain01.GIF" />
+    <Content Include="Imagenes\Erro.gif" />
+    <Content Include="Imagenes\error.jpg" />
+    <Content Include="Imagenes\error.png" />
+    <Content Include="Imagenes\help.jpg" />
+    <Content Include="Imagenes\help.png" />
+    <Content Include="Imagenes\info.jpg" />
+    <Content Include="Imagenes\info.png" />
+    <Content Include="Imagenes\informacao.ico" />
+    <Content Include="Imagenes\loader.gif" />
+    <Content Include="Imagenes\nocontain.GIF" />
+    <Content Include="Imagenes\nocontain01.gif" />
+    <Content Include="Imagenes\Warning.jpg" />
+    <Content Include="MantenimientoIac.aspx" />
+    <Content Include="MantenimientoSubCanales.aspx" />
+    <Content Include="MantenimientoTiposProcesado.aspx" />
+    <Content Include="MaquinaDelProducto.aspx" />
+    <Content Include="Principal.Master" />
+    <Content Include="BusquedaProductos.aspx" />
+    <Content Include="XML\Delegaciones.xml" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4DC9EE4C-7177-466C-826C-49576EFF7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Comunicacion\Prosegur.Genesis.Comunicacion.vbproj">
+      <Project>{817877ca-26fe-4639-91a0-42a29091c817}</Project>
+      <Name>Prosegur.Genesis.Comunicacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.ContratoServicio\Prosegur.Genesis.ContractoServicio.vbproj">
+      <Project>{9ED42568-659A-4DD1-BE34-C14483DF71E6}</Project>
+      <Name>Prosegur.Genesis.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Exception\Prosegur.Genesis.Excepcion.vbproj">
+      <Project>{ed11e59e-9783-4f6c-948b-16530ae69df8}</Project>
+      <Name>Prosegur.Genesis.Excepcion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.LogicaNegocio\Prosegur.Genesis.LogicaNegocio.vbproj">
+      <Project>{b6b90298-6fb3-4150-b1f4-f0a61055fadf}</Project>
+      <Name>Prosegur.Genesis.LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Mail\Prosegur.Genesis.Mail.csproj">
+      <Project>{EED37508-2A39-4E4A-86F5-31502638A13E}</Project>
+      <Name>Prosegur.Genesis.Mail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Parametros\Prosegur.Genesis.Parametros.vbproj">
+      <Project>{c3f8b715-f1ff-4421-9922-9f3cad097dab}</Project>
+      <Name>Prosegur.Genesis.Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Web.Login\Prosegur.Genesis.Web.Login.vbproj">
+      <Project>{63BE8B3D-AE97-4B56-BE67-184973BC259C}</Project>
+      <Name>Prosegur.Genesis.Web.Login</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContractoServicio\Prosegur.Global.GesEfectivo.IAC.ContractoServicio.vbproj">
+      <Project>{275AE785-D755-452A-9A75-7CA678980AC4}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Integracion.ContractoServicio\Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio.vbproj">
+      <Project>{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicaNegocio\Prosegur.Global.GesEfectivo.IAC.LogicaNegocio.vbproj">
+      <Project>{8F0DBF1F-7393-4786-A83D-2AFCF9DA1D8F}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.LogicaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\Padrao\css\img\logo\New Folder\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\accordion\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\ajaxstatus\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\autocomplete\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\calendar\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\carousel\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\core\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\dashboard\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\datagrid\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\datalist\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\datatable\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\dialog\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\dragdrop\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\effect\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\fieldset\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\forms\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\inplace\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\inputmask\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\jquery\ui\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\menu\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\notificationbar\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\orderlist\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\overlaypanel\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\paginator\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\panelgrid\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\panel\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\picklist\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\poll\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\progressbar\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\resizable\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\scrollpanel\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\slider\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\spinner\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\tabview\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\tagcloud\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\toolbar\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\tooltip\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\tree\" />
+    <Folder Include="App_Themes\Padrao\css\img\resources\primefaces\wizard\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <PostBuildEvent>del "$(TargetDir)Oracle.DataAccess.dll"</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57365</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Prosegur.Genesis.IAC.Producto</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

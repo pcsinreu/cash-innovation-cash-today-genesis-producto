@@ -1,0 +1,143 @@
+﻿/* GENERAL STYLES AND CLASSES 
+--------------------------------------------------------------------- */
+body {
+  padding: 5px;
+}
+/* HEADER STYLES
+--------------------------------------------------------------------- */
+/* MAIN STYLES
+--------------------------------------------------------------------- */
+main {
+  padding: 0 20px;
+  min-height: 300px;
+  /* TRANSITION ANIMATIONS FOR MAIN VIEW 
+    ------------------------------------------*/
+  /* start 'enter' transition */
+  /* end 'enter' transition */
+  /* side form */
+}
+main .products-table {
+  margin-top: 20px;
+}
+main .products-table .delete-column {
+  width: 60px;
+}
+main.ng-enter {
+  /* transition on enter for .5s */
+  transition: .5s;
+  /* start with opacity 0 (invisible) */
+  opacity: 0;
+}
+main.ng-enter-active {
+  /* end with opacity 1 (fade in) */
+  opacity: 1;
+}
+main .view-side-form {
+  /* TRANSITION ANIMATIONS FOR SIDE FORM VIEW
+        ------------------------------------------*/
+  /* animations for side form view */
+  /* start 'enter' transition */
+  /* end 'enter' transition */
+  /* end 'leave' transition */
+}
+main .view-side-form .side-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main .view-side-form .side-form .content {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+  background: #fff;
+  padding: 20px;
+  border-left: 1px solid #e0e0e0;
+}
+main .view-side-form .side-form .background {
+  background: #000;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+}
+main .view-side-form.ng-enter,
+main .view-side-form.ng-leave {
+  /* transition on enter and leave for .5s */
+  transition: .5s;
+}
+main .view-side-form.ng-enter .side-form .content {
+  /* start with content 80% off the right of the page */
+  right: -80%;
+}
+main .view-side-form.ng-enter .side-form .background {
+  /* start with background opacity 0 (invisible) */
+  opacity: 0;
+}
+main .view-side-form.ng-enter-active .side-form .content {
+  /* transition the right position which 
+                       slides the content into view */
+  transition: right 1.0s;
+  /* end with content aligned to the right of the page */
+  right: 0;
+}
+main .view-side-form.ng-enter-active .side-form .background {
+  /* transition the background opacity to fades it in */
+  transition: opacity 1.0s;
+  /* end with background opacity 0.8 to give the overlay effect */
+  opacity: .8;
+}
+main .view-side-form.ng-leave-active .side-form .content {
+  /* transition the right position which 
+                       slides the content out of view */
+  transition: right .5s;
+  /* end transition with the content completely off the page */
+  right: -100%;
+}
+main .view-side-form.ng-leave-active .side-form .background {
+  /* transition the background opacity to fades it out */
+  transition: opacity .5s;
+  /* end with background opacity 0 to hide it */
+  opacity: 0;
+}
+/* FOOTER STYLES
+--------------------------------------------------------------------- */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+.scrolled {
+  transition: transform $duration ease;
+  transform: translate3d(0, 0, 0);
+}
+.scrolled.ng-enter {
+  transform: translate3d(100%, 0, 0);
+}
+.scrolled.ng-enter-active {
+  transform: translate3d(0, 0, 0);
+}
+.scrolled.ng-leave {
+  transform: translate3d(0, 0, 0);
+}
+.scrolled.ng-leave-active {
+  transform: translate3d(-100%, 0, 0);
+}
+.backward .scrolled.ng-enter {
+  transform: translate3d(-100%, 0, 0);
+}
+.backward .scrolled.ng-enter-active {
+  transform: translate3d(0, 0, 0);
+}
+.backward .scrolled.ng-leave {
+  transform: translate3d(0, 0, 0);
+}
+.backward .scrolled.ng-leave-active {
+  transform: translate3d(100%, 0, 0);
+}
+/*# sourceMappingURL=app.css.map */

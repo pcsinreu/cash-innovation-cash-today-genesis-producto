@@ -1,0 +1,1 @@
+﻿ DELETE FROM PD_Planta WHERE IdPlanta = :IdPlanta

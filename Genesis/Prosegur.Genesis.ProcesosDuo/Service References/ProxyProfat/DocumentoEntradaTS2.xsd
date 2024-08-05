@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://brbhzsvd00075/Prosegur.Profat.Integracao.Servico/DocumentoEntradaTS.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Prosegur.Profat.Integracao.Comum.Entidades" />
+  <xs:element name="InserirDocumentoEntradaTS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Prosegur.Profat.Integracao.Comum.Entidades" minOccurs="0" name="oEntradaTS" nillable="true" type="q1:EntradaTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InserirDocumentoEntradaTSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Prosegur.Profat.Integracao.Comum.Entidades" minOccurs="0" name="InserirDocumentoEntradaTSResult" nillable="true" type="q2:RetornoTS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

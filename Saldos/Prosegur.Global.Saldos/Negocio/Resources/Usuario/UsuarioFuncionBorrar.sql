@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_FuncionUsuario WHERE IdUsuario = :IdUsuario 

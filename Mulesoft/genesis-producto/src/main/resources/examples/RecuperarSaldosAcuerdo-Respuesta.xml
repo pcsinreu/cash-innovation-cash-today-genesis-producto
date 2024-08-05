@@ -1,0 +1,138 @@
+<Body>
+	<RecuperarSaldosAcuerdoResponse xmlns="Integracion">
+	    <RecuperarSaldosAcuerdoResult xmlns="urn:RecuperarSaldosAcuerdo">
+	        <Resultado TiempoDeEjecucion="00:00:01.0156263">
+	            <Tipo>0</Tipo>
+	            <Codigo>0040330000</Codigo>
+	            <Descripcion>Sucesso.</Descripcion>
+	            <Detalles>
+	                <Detalle Codigo="0040330000" Descripcion="Sucesso." />
+	            </Detalles>
+	        </Resultado>
+	        <PuntosServicio>
+	            <PuntoServicio SourceReferenceId="BR-C596A37176CA64D0E0535B00530AF33D">
+	                <ContractId>ContractId 1</ContractId>
+	                <ServiceOrderId>ServiceOrderId 1</ServiceOrderId>
+	                <ServiceOrderCode>ServiceOrderCode 1</ServiceOrderCode>
+	                <ProductCode>ProductCode 1</ProductCode>
+	                <CodigoPuntoServicio>001990-1980-13</CodigoPuntoServicio>
+	                <CashIns>
+	                    <CashIn>
+	                        <FechaHoraInicio>2021-06-24T00:00:00.0000000-03:00</FechaHoraInicio>
+	                        <FechaHoraFin>2021-06-24T23:59:59.0000000-03:00</FechaHoraFin>
+	                        <Total>30</Total>
+	                        <Divisa>REA</Divisa>
+	                        <TipoMercancia>1</TipoMercancia>
+	                        <CantidadTransacciones>2</CantidadTransacciones>
+	                    </CashIn>
+	                    <CashIn>
+	                        <FechaHoraInicio>2021-06-24T00:00:00.0000000-03:00</FechaHoraInicio>
+	                        <FechaHoraFin>2021-06-24T23:59:59.0000000-03:00</FechaHoraFin>
+	                        <Total>30</Total>
+	                        <Divisa>REA</Divisa>
+	                        <TipoMercancia>3</TipoMercancia>
+	                        <CantidadTransacciones>1</CantidadTransacciones>
+	                    </CashIn>
+	                </CashIns>
+	                <ShipOuts>
+	                    <ShipOut>
+	                        <FechaHoraInicio>2021-06-24T00:00:00.0000000-03:00</FechaHoraInicio>
+	                        <FechaHoraFin>2021-06-24T23:59:59.0000000-03:00</FechaHoraFin>
+	                        <Total>60</Total>
+	                        <Divisa>REA</Divisa>
+	                        <TipoMercancia>1</TipoMercancia>
+	                        <CantidadTransacciones>1</CantidadTransacciones>
+	                    </ShipOut>
+	                    <ShipOut>
+	                        <FechaHoraInicio>2021-06-24T00:00:00.0000000-03:00</FechaHoraInicio>
+	                        <FechaHoraFin>2021-06-24T23:59:59.0000000-03:00</FechaHoraFin>
+	                        <Total>70</Total>
+	                        <Divisa>REA</Divisa>
+	                        <TipoMercancia>3</TipoMercancia>
+	                        <CantidadTransacciones>1</CantidadTransacciones>
+	                    </ShipOut>
+	                </ShipOuts>
+	                <Acreditaciones>
+	                    <Acreditacion>
+	                        <FechaHoraAcreditacion>2021-06-24T00:00:00.0000000-03:00</FechaHoraAcreditacion>
+	                        <FechaHoraInicioVigencia>2020-11-23T14:05:08.0000000-03:00</FechaHoraInicioVigencia>
+	                        <Divisa>REA</Divisa>
+	                        <TotalAcreditacion>50</TotalAcreditacion>
+	                        <TotalTransacciones>10</TotalTransacciones>
+	                        <TotalComision>45</TotalComision>
+	                    </Acreditacion>
+	                    <Acreditacion>
+	                        <FechaHoraAcreditacion>2021-06-25T00:00:00.0000000-03:00</FechaHoraAcreditacion>
+	                        <FechaHoraInicioVigencia>2020-11-24T14:05:08.0000000-03:00</FechaHoraInicioVigencia>
+	                        <Divisa>EUR</Divisa>
+	                        <TotalAcreditacion>50</TotalAcreditacion>
+	                        <TotalTransacciones>10</TotalTransacciones>
+	                        <TotalComision>45</TotalComision>
+	                    </Acreditacion>
+	                </Acreditaciones>
+	            </PuntoServicio>
+	            <PuntoServicio SourceReferenceId="BR-C596A37176CA64D0E0535B00530AF33D">
+	                <ContractId>ContractId 1</ContractId>
+	                <ServiceOrderId>ServiceOrderId 1</ServiceOrderId>
+	                <ServiceOrderCode>ServiceOrderCode 1</ServiceOrderCode>
+	                <ProductCode>ProductCode 1</ProductCode>
+	                <CodigoPuntoServicio>001990-1980-13</CodigoPuntoServicio>
+	                <CashIns>
+	                    <CashIn>
+	                        <FechaHoraInicio>2021-06-24T00:00:00.0000000-03:00</FechaHoraInicio>
+	                        <FechaHoraFin>2021-06-24T23:59:59.0000000-03:00</FechaHoraFin>
+	                        <Total>30</Total>
+	                        <Divisa>REA</Divisa>
+	                        <TipoMercancia>1</TipoMercancia>
+	                        <CantidadTransacciones>2</CantidadTransacciones>
+	                    </CashIn>
+	                    <CashIn>
+	                        <FechaHoraInicio>2021-06-24T00:00:00.0000000-03:00</FechaHoraInicio>
+	                        <FechaHoraFin>2021-06-24T23:59:59.0000000-03:00</FechaHoraFin>
+	                        <Total>30</Total>
+	                        <Divisa>REA</Divisa>
+	                        <TipoMercancia>3</TipoMercancia>
+	                        <CantidadTransacciones>1</CantidadTransacciones>
+	                    </CashIn>
+	                </CashIns>
+	                <ShipOuts>
+	                    <ShipOut>
+	                        <FechaHoraInicio>2021-06-24T00:00:00.0000000-03:00</FechaHoraInicio>
+	                        <FechaHoraFin>2021-06-24T23:59:59.0000000-03:00</FechaHoraFin>
+	                        <Total>60</Total>
+	                        <Divisa>REA</Divisa>
+	                        <TipoMercancia>1</TipoMercancia>
+	                        <CantidadTransacciones>1</CantidadTransacciones>
+	                    </ShipOut>
+	                    <ShipOut>
+	                        <FechaHoraInicio>2021-06-24T00:00:00.0000000-03:00</FechaHoraInicio>
+	                        <FechaHoraFin>2021-06-24T23:59:59.0000000-03:00</FechaHoraFin>
+	                        <Total>70</Total>
+	                        <Divisa>REA</Divisa>
+	                        <TipoMercancia>3</TipoMercancia>
+	                        <CantidadTransacciones>1</CantidadTransacciones>
+	                    </ShipOut>
+	                </ShipOuts>
+	                <Acreditaciones>
+	                    <Acreditacion>
+	                        <FechaHoraAcreditacion>2021-06-24T00:00:00.0000000-03:00</FechaHoraAcreditacion>
+	                        <FechaHoraInicioVigencia>2020-11-23T14:05:08.0000000-03:00</FechaHoraInicioVigencia>
+	                        <Divisa>REA</Divisa>
+	                        <TotalAcreditacion>50</TotalAcreditacion>
+	                        <TotalTransacciones>10</TotalTransacciones>
+	                        <TotalComision>45</TotalComision>
+	                    </Acreditacion>
+	                    <Acreditacion>
+	                        <FechaHoraAcreditacion>2021-06-25T00:00:00.0000000-03:00</FechaHoraAcreditacion>
+	                        <FechaHoraInicioVigencia>2020-11-24T14:05:08.0000000-03:00</FechaHoraInicioVigencia>
+	                        <Divisa>EUR</Divisa>
+	                        <TotalAcreditacion>50</TotalAcreditacion>
+	                        <TotalTransacciones>10</TotalTransacciones>
+	                        <TotalComision>45</TotalComision>
+	                    </Acreditacion>
+	                </Acreditaciones>
+	            </PuntoServicio>
+	        </PuntosServicio>
+	    </RecuperarSaldosAcuerdoResult>
+	</RecuperarSaldosAcuerdoResponse>
+</Body>

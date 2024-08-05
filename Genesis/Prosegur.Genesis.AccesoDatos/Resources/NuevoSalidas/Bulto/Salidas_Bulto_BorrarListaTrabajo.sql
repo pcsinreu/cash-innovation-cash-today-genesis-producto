@@ -1,0 +1,2 @@
+﻿/* Salidas_Bulto_BorrarListaTrabajo.sql */
+DELETE FROM GEPR_TLISTA_TRABAJO WHERE OID_BULTO =[]OID_BULTO

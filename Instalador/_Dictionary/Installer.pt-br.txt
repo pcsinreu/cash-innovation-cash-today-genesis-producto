@@ -1,0 +1,84 @@
+﻿Installer_Error_Title											= Prosegur Installer - Error
+Installer_Error_File_Not_Found									= Não foi possível encontrar o arquivo '{0}'.
+Installer_Error_Wrong_Script_Engine_Defined						= Versão incorreta da engine de script.[\nl]Versão definida: '{0}'.[\nl]Versão esperada: '{1}'.
+Installer_Error_Invalid_Xml_Element								= Elemento XML inválido: '{0}'.
+Installer_Error_Invalid_Xml_Attribute							= Atributo XML '{0}' inválido.
+Installer_Error_Missing_Required_Xml_Attribute					= Atributo XML '{0}' é obrigatório.
+Installer_Error_Unrecognized_Installation_Parameter				= Parâmetro de instalação não conhecido: '{0}'.
+Installer_Error_Action											= Ocorreu um erro na execução da ação '{0}'.[\nl][\nl]Abortar a instalação?[\nl][\nl]{1}
+Installer_Error_Action_Result									= Resultado da mensagem: '{0}'.
+Installer_Error_VersionWebSiteUrl_VersionPackage				= É obrigatório informar um dos dois atributos: VersionPackage, VersionWebSiteUrl.
+Installer_Error_Invalid_Xml_Attribute_Value						= O valor '{0}' é inválido para o Atributo XML '{1}'.
+
+Installer_Message_Undefined										= Não definido
+Installer_Message_Error											= Erro: {0}
+Installer_Message_File_Exists									= Arquivo ja existe.
+Installer_Message_Using_Existing_Virtual_Directory				= Utilizando o diretório virtual existente '{0}'.
+Installer_Message_Using_Existing_Application_Pool				= Utilizando o application pool existente '{0}'.
+
+Installer_Log_InUseScriptFile									= Arquivo de script utilizado: '{0}'
+Installer_Log_Loading_Script_File								= Carregando o arquivo de script.
+Installer_Log_Script_File_Loaded								= Arquivo de script carregado.
+Installer_Log_Script_File_Load_Aborted							= O carregamento do arquivo de script foi abortado.
+Installer_Log_Parsing_Script_File								= Analisando o script.
+Installer_Log_Script_File_Parsed								= Script Analisado.
+Installer_Log_Script_File_Parse_Aborted							= A analise do script foi abortada.
+Installer_Log_Parsing_Script_Element							= Analisando o elemento '{0}'.
+Installer_Log_Reparsing_Script_Element							= Reanalisando o elemento '{0}'.
+Installer_Log_Parsing_Script_Unknow_Element						= Elemento desconhecido.
+Installer_Log_Parsing_Script_Ignoring_Element					= Ignorando o elemento.
+Installer_Log_Context_Begin										= Inicio - {0}
+Installer_Log_Context_End										= Fim - {0}
+Installer_Log_Validating_Possible_Xml_Attributes				= Validando os possíveis atributos '{0}'.
+Installer_Log_Enforcing_Required_Xml_Attributes					= Validando os atributos requeridos '{0}'.
+Installer_Log_Parsing_Script_Get_Attribute						= Recuperando valor do atributo '{0}' com valor padrão: '{1}'. Formatar valor composto: {2}.
+Installer_Log_Parsing_Script_Get_Attribute_Value				= Valor recuperado: '{0}'.
+Installer_Log_Parsing_Script_Get_Attribute_Composed_Value		= Valor composto: '{0}'.
+
+Installer_Parameter_LocalDirectory_Browse						= Procurar
+Installer_Parameter_ConnectionString_Grid_ConnectionColumn		= Conexão
+Installer_Parameter_ConnectionString_Grid_UsernameColumn		= Usuário
+Installer_Parameter_ConnectionString_Grid_EditColumn			= Editar
+
+Installer_Form_Welcome_Title									= Instalação do {0} - Versão {1} - Bem-vindo
+Installer_Form_Welcome_Button_Next								= Continuar
+Installer_Log_Showing_Welcome									= Exibindo tela de boas vindas.
+Installer_Log_Showing_Welcome_Result							= Resultado da tela: '{0}'.
+
+Installer_Form_Parameters_Title									= Configuração de parâmetros
+Installer_Form_Parameters_Button_Previous						= Anterior
+Installer_Form_Parameters_Button_Next							= Próximo
+Installer_Log_Showing_Parameters								= Exibindo tela de configuração de parâmetros de usuário.
+Installer_Log_Showing_Parameters_Result							= Resultado da tela: '{0}'.
+Installer_Log_Selecting_Actions									= Exibindo tela de seleção de ações de instalação.
+Installer_Log_Selecting_Actions_Result							= Resultado da tela: '{0}'.
+
+Installer_Form_Installation_Title								= Instalando...
+Installer_Form_Installation_Label_General_Installation			= Executando passo {0} de {1}. '{2}'.
+Installer_Form_Installation_Installation_Complete				= Instalação completa.
+Installer_Log_Showing_Installation								= Exibindo tela de instalação.
+Installer_Form_Installation_Thread								= Executando Thread de Instalação.
+Installer_Form_Installation_Action_Execute						= Executando ação {0}.
+Installer_Form_Installation_Action_Execute_Parameter			= Parametro {0}: {1}.
+Installer_Form_Installation_Action_Copy_File					= Copiando arquivo '{0}' para '{1}'.
+Installer_Form_Installation_Action_Extract_File					= Extraindo o arquivo '{0}'.
+Installer_Form_Installation_Action_Extract_File_Overriding		= Sobrescrevendo o arquivo '{0}'.
+Installer_Form_Installation_Action_Extract_File_Skipping		= Ignorando a extração do arquivo '{0}'. Arquivo ja existente.
+Installer_Form_Installation_Action_Create_Directory				= Criando o diretório '{0}'.
+Installer_Form_Installation_Action_Skipped						= Ignorando a ação: {0}.
+Installer_Form_Installation_Action_Create_Virtual_Directory		= Criando o diretório virtual '{0}'.
+Installer_Form_Installation_Action_Create_Application_Pool		= Criando o pool de aplicações '{0}'.
+
+Installer_Form_Actions_Title									= Seleção de ações do instalador
+Installer_Form_Actions_Group_Actions							= Ações
+Installer_Form_Actions_Button_Install							= Instalar
+Installer_Form_Actions_Button_Previous							= Voltar
+Installer_Form_Actions_Selected_Actions							= Ações selecionadas: '{0}'.
+
+Installer_Form_ConnectionConfiguration_Error_Title				= Erro
+Installer_Form_ConnectionConfiguration_Label_Username			= Usuário:
+Installer_Form_ConnectionConfiguration_Label_Password			= Senha:
+Installer_Form_ConnectionConfiguration_Button_OK				= OK
+Installer_Form_ConnectionConfiguration_Button_Cancel			= Cancelar
+
+CP_msg_AplicacionVersion_CrearAplicacionVersion_AplicacionNoEncontrada = Aplicação '{0}' não encontrada. Por favor revisar os parametros de instalação.

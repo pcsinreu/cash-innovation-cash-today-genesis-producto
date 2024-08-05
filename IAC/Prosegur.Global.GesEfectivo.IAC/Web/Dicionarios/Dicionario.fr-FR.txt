@@ -1,0 +1,1573 @@
+// ************* TOILES *************
+
+// GENÉRICOS
+gen_ddl_selecione									= Sélectionner
+gen_data_invalida									= Date Incorrecte.
+gen_opcion_si										= Oui
+gen_opcion_no										= Non
+gen_opcion_todos                                    = Tous
+gen_lbl_CriterioBusca								= Critères de recherche
+lbl_gdr_eliminar									= Éliminer
+
+//TOILE BASE
+btnAlta												= Enregistrer
+btnBaja												= Annuler
+btnConsulta											= Consultation
+btnModificacion										= Modification
+btnLimpiar											= Nettoyer
+btnBuscar											= Rechercher
+btnGrabar											= Sauvegarder
+btnCancelar											= Annuler
+btnVolver											= Retour
+btnAceptar											= Valider
+btnDuplicar											= Copier
+btnAnadir											= Ajouter
+btnValoresPosibles									= Valeurs possibles 
+lbl_base_titulo										= IAC
+lbl_version											= Version
+lbl_salir											= Sortir
+btnSincronizar									= Synchroniser Devises
+btnSincronizarMedioPago									= Synchroniser Moyen de paiement
+btnCodigoAjeno										= Code Externe
+
+//MENU PRINCIPAL
+mn_item_canal										= Canal
+mn_item_producto									= Produit
+mn_item_tiposprocesado								= Types traités
+mn_item_divisas										= Devises
+mn_item_iac											= IAC
+mn_item_modalidadrecuento							= Modalité Recomptage
+mn_mediopago										= Moyen Paiement
+mn_agrupaciones										= Regroupements
+mn_terminos											= Termes
+mn_integracion										= Intégration
+mn_valoresposibles									= Valeurs Possibles
+mn_proceso											= Processus
+mn_caracteristicas									= Caractéristiques
+mn_morfologia										= Morphologies
+mn_atm												= ATM
+mn_parametros										= Paramètres
+mn_puestos											= Postes
+mn_delegaciones										= Agence
+mn_plantas											= Sites
+mn_tipoSetor										= Type Secteurs
+mn_Sector											= Secteurs
+mn_tipoCliente										= Types Clients
+mn_TipoSubcliente									= Types de sous-clients
+mn_TipoPuntoServicio								= Type Point Service
+mn_clientes                                         = Clients
+mn_subclientes                                      = Sous-clients
+mn_pto_servicio                                     = Point de service
+mn_tipoProcedencia                                  = Types Provenances
+mn_Procedencia										= Provenances
+mn_MAE												= MAE
+mn_accionesLote										= MAE - Batch actions
+mn_planificaciones									= Planification
+mn_transaciones 									= Transaciones
+mn_Ayuda											= Ayuda
+mn_InformacionIAC									= Información de IAC
+mn_cuentasBancarias	= Comptes bancaires
+mn_aprobacionCuentasBancarias	= Approbation
+mn_periodosAcreditacion = Périodes d'accréditation
+mn_historyCuentasBancarias	= Histórico
+mn_permisos											= Permis
+//ERREUR REGISTRE
+err_padrao_aplicacao								= Erreur d’application
+err_codigo_erro_ambiente_default					= Erreur d’environnement d’exécution
+err_codigo_erro_negocio_sesion_invalida				= Session incorrecte
+err_codigo_erro_negocio_default						= Erreur registre d’activité
+err_passagem_parametro								= Les paramètres affichés sur cet écran sont incorrects.
+err_descricao_invalida								= Description ou code incorrect.
+err_campo_obligatorio								= Le champ {0} est obligatoire.
+err_generico										= Une erreur non traitée s’est produite dans l’application. Contacter l’administrateur du système.
+err_msg_error_05      								= Erreur d’accès à la base de données dans le serveur : {0}
+err_msg_error_02		       						= Erreur de communication répertoire avec le serveur (LDAP).
+err_msg_error_03			 						= Erreur d’accès au serveur d’annuaire (LDAP) : L’utilisateur le mot de passe incorrect.
+err_msg_chave_invalida_webapp						= Assurez-vous que le paramètre Url UrlServicio WebConfig est correctement configuré dans l’application Web.
+
+//INFORMATION REGISTRE
+info_msg_sin_registro								= Aucun enregistrement n’a été trouvé avec les paramètres indiqués
+info_msg_baja										= Enregistrement exclu avec succès !
+info_msg_baja_registro								= Souhaitez-vous supprimer l’enregistrement ?
+info_msg_registro_borrado							= L’enregistrement sélectionné a été désactivé ou supprimé.
+info_msg_grabar										= Confirmer le changement de cet enregistrement ?
+info_msg_alta										= Confirmer l’inclusion de cet enregistrement ?
+info_msg_seleccionar_registro						= Sélectionner un enregistrement avant de réaliser cette action !
+info_msg_max_registro								= Nombre maximum d’enregistrements atteint. Affiner la recherche !
+info_msg_sair_pagina								= Êtes-vous sûr de vouloir sortir de cette page ?
+info_msg_grd_vazio									= Existence de données à présenter
+
+//TOILE RECHERCHE DE CANAUX
+001_titulo_busqueda_canales							= Recherche de Canaux
+001_lbl_codigocanal									= Code Canal  
+001_lbl_descricaocanal								= Description Canal
+001_lbl_vigente										= En vigueur
+001_lbl_subtituloscanales							= Canaux
+001_lbl_subtituloscriteriosbusqueda					= Critères de Recherche
+001_lbl_grd_codigo									= Code
+001_lbl_grd_descripcion								= Description
+001_lbl_grd_observacion								= Commentaires
+001_lbl_grd_vigente									= En vigueur		
+
+//TOILE MAINTENANCE DE CANAUX
+001_titulo_mantenimiento_canales					= Maintenance de canaux
+001_lbl_subtitulossubcanales						= Sous-canaux
+001_lbl_observaciones								= Commentaires
+001_msg_grabado_suceso								= Enregistrement effectué avec succès.
+001_msg_CodigoCanalExistente						= Le code du canal existe déjà.
+001_msg_descricaocanalexistente						= La description du canal existe déjà.
+001_msg_CodigoSubCanalExistente						= Le code du sous-canal existe déjà.
+001_msg_DescricaoSubCanalExistente					= La description du sous-canal existe déjà.
+001_msg_CanalCodigoobligatorio						= Le code du canal est obligatoire.
+001_msg_CanalDescripcionobligatorio					= La description du canal est obligatoire.
+001_msg_canal_subcanal_desactivado					= Le canal et ses sous-canaux associés ont été désactivés.
+001_msg_canal_subcanal_activado						= Le canal et ses sous-canaux associé ont été activés , s'il vous plaît valider les sous-canaux.
+
+//TOILE MAINTENANCE DE SOUS CANAUX
+001_titulo_mantenimiento_subcanales					= Maintenance de sous-canaux
+001_lbl_codigosubcanal								= Code sous-canal
+001_lbl_descricaosubcanal							= Description sous-canal
+001_lbl_subtitulosmantenimientosubcanales			= Maintenance sous-canaux
+001_msg_imposible_activar_subcanal_canal_inactivo   = Vous ne pouvez pas activer cette sous-canaux parce que le canal associé est désactivé.
+
+
+001_msg_subcanalcodigoobligatorio					= Le code du sous-canal est obligatoire.
+001_msg_subcanaldescripcionobligatorio 				= La description du sous-canal est obligatoire.
+001_msg_subcanalcodigoexistente					    = Le code du sous-canal existe déjà.
+001_msg_subcanaldescripcionexistente	 			= La description du sous-canal existe déjà.
+
+//PRODUITS
+
+//TOILE PRODUITS
+002_lbl_codigoproducto								= Code 
+002_lbl_descricaoproducto							= Description 
+002_lbl_manual										= Manuel
+002_lbl_vigente										= En vigueur
+002_lbl_maquina										= Machine
+002_titulo_productos								= Critères de Recherche
+002_subtitulo_productos								= Produits
+002_lbl_grd_codigo									= Code
+002_lbl_grd_descripcion								= Description du Produit
+002_lbl_grd_billete									= Classe du Billet
+002_lbl_grd_correccion								= Facteur de Correction
+002_lbl_grd_manual									= Manuel
+002_lbl_grd_vigente									= En vigueur
+002_titulo_maquinas									= Machines du Produit
+002_lbl_nome_productos								= Produit
+002_lbl_grd_maquina									= Machines
+002_btn_consultar									= Consultation Machines
+002_ddl_selecionar									= Sélectionner
+002_falta_canal										= Veuillez remplir un canal
+002_title_productos									= Recherche de Produits
+002_title_maquinasdelproductos						= Machines du Produit
+002_msg_no_existen_maquinas							= Inexistence de Machines enregistrées pour ce Produit.
+
+//TOILE DEFAUT
+003_lbl_titulo										= IAC
+
+//GRID_SUMMARY
+grid_lbl_pagersummary							    = Page {0} sur {1} ({2} éléments)
+prosegurgridview_asc								= Ordre Croissant
+prosegurgridview_desc								= Ordre Décroissant
+prosegurgridview_sem_registro						= Absence d’enregistrements.
+gen_proximo											= Suivant
+gen_ultimo											= Dernier
+gen_Primeiro										= Premier
+gen_anterior										= Précédent
+
+//TOILE TYPE TRAITEMENTS
+004_lbl_codigotiposprocesado							= Code 
+004_lbl_descripciontiposprocesado						= Description 
+004_chk_vigente											= En vigueur
+004_lst_caracteristicas									= Caractéristiques
+004_lbl_observacion										= Commentaires
+004_titulo_tiposprocesado								= Critères de Recherche
+004_subtitulo_tiposprocesado							= Types Traitements
+004_titulo_matenimentotiposprocesado	 				= Maintenance de Types de Traitement
+004_titulo_caracteristicas_matenimentotiposprocesado	= Caractéristiques du type de traitement
+004_lbl_grd_codigo										= Code
+004_lbl_grd_descripcion									= Description
+004_lbl_grd_observacion									= Commentaires
+004_lbl_grd_vigente										= En vigueur
+004_msg_codigotiposprocesadoexistente					= le code du type de traitement existe déjà.
+004_msg_descricaotiposprocesadoexistente				= La description du type de traitement existe déjà.
+004_title_tiposprocesado								= Recherche de Types de Traitement
+004_title_matenimentotiposprocesado						= Maintenance de Types de Traitement
+004_msg_tipoprocesadocodigoobligatorio					= le code du type de traitement est obligatoire.
+004_msg_tipoprocesadodescripcionobligatorio				= La description du type de traitement est obligatoire.
+
+//TOILE DEVISE
+005_titulo_busqueda_divisas							= Recherche de Devises
+005_lbl_codigoiso									= Code ISO
+005_lbl_descricaodivisa								= Description Devise
+005_lbl_vigente										= En vigueur
+005_lbl_simbolo  									= Symbole
+005_lbl_cor											= couleur
+005_lbl_Codigoacceso								= Code Accès
+005_lbl_subtitulosdivisas							= Devises
+005_lbl_subtituloscriteriosbusqueda					= Critères de Recherche 
+005_lbl_grd_codigo									= Cod.ISO
+005_lbl_grd_descripcion								= Devise
+005_lbl_grd_simbolo									= Symbole
+005_lbl_grd_vigente									= En vigueur
+
+//TOILE MAINTENANCE DE DEVISE
+005_titulo_mantenimiento_divisas					= Maintenance de Devises
+005_lbl_subtitulosDenominaciones					= Dénominations
+005_lbl_grd_mantenimiento_codigo					= Code
+005_lbl_grd_mantenimiento_descripcion				= Description
+005_lbl_grd_mantenimiento_valor						= Valeur
+005_lbl_grd_mantenimiento_peso						= Poids
+005_lbl_grd_mantenimiento_bilhete					= Billet
+005_lbl_grd_mantenimiento_vigente					= En vigueur
+005_msg_grabado_suceso								= Enregistrement effectué avec succès.
+005_msg_divisacodigoobligatorio						= Le champ code de la devise est obligatoire.
+005_msg_divisadescripcionobligatorio				= Le champ description de la devise est obligatoire.
+005_msg_codigodivisaexistente						= Le code de la devise existe déjà.
+005_msg_descripciondivisaexistente					= La Description de la devise existe déjà.
+005_msg_codigocolorobligatorio						= Le code de couleur est obligatoire.
+005_msg_codigoaccesoobligatorio						= Le code d’accès est obligatoire.
+005_msg_codigoaccesoexistente						= Le code d’accès existe déjà.
+
+//TOILE MAINTENANCE DE DENOMINATION
+005_titulo_mantenimiento_denominaciones				= Maintenance de Dénominations
+005_lbl_subtitulosmantenimientodenominacion			= Dénominations
+005_lbl_denominacion_codigo							= Code Dénomination
+005_lbl_denominacion_descricao						= Description Dénomination
+005_lbl_denominacion_valor							= Valeur
+005_lbl_denominacion_codigo_acceso					= Code Accès
+005_lbl_denominacion_peso							= Poids
+005_lbl_indicadorbilhete							= Billet
+005_msg_denominacion_codigoaccesoobligatorio		= Le code d’accès est obligatoire.
+005_msg_denominacion_codigoaccesoexistente	    	= Le code d’accès existe déjà.
+
+//AFFICHAGE DES BUREAUX
+013_titulo_busqueda_delegaciones					= Rechercher les Agences
+013_lbl_codigo_pais									= Pays 
+013_lbl_codigo_delegaciones							= Code 
+013_lbl_descricaodelegaciones						= Description 
+013_lbl_delegaciones								= Agences
+013_lbl_criterio									= Critères de Recherche
+013_titulo_mantenimiento_Delegaciones				= Maintenance des Agences
+013_lbl_cantidadAjuste								= Montant du rajustement minutes
+013_lbl_codigoDelegacion							= Code de l’Agence
+013_lbl_descDelegacion								= Description de l’Agence
+013_lbl_FechaVeranoFim								= Date de fin de l’été
+013_lbl_FechaVeranoInicio							= Date de fin de l’été
+013_lbl_gmtMinutos									= GMT Compte-rendu	
+013_lbl_pais										= Pays
+013_lbl_TituloDelegaciones							= Agence
+013_lbl_zona										= Zone
+013_lbl_vigente										= En vigueur
+013_msg_Existente									= Le code de l’Agence existe déjà
+013_msg_Delegacioncodigoobligatorio					= Le code de l’Agence est obligatoire
+013_msg_PaisObligatorio								= Le Pays est obligatoire
+013_msg_Delegaciondescripcionobligatorio			= La Description de l’Agence est nécessaire
+013_msg_FechaVeranoFin								= Date de fin de l’été est obligatoire
+013_msg_FechaVeranoIncio							= Date de début de l’été est obligatoire
+013_msg_DelegacionGmtMinutos						= GMT compte-rendus est obligatoire
+013_msg_delegacionZona								= La Zone est obligatoire
+013_msg_Delegacion									= Nombre de compte-rendus d’ajustements est obligatoire
+013_ddl_selecione									= Sélectionner
+013_lbl_grd_codigoDel								= Code Agence
+013_lbl_grd_descripcionDelegacion					= Description
+013_lbl_grd_vigenteDelegacion						= Présent
+013_msg_erro_Data									= Cette date doit être égale ou supérieure à Summer Home Date	
+013_msg_erro_pais									= Sélectionnez un pays
+
+005_msg_denominacion_codigo_obligatorio				= Le code de la dénomination est obligatoire.
+005_msg_denominacion_descripcion_obligatorio		= La Description de la dénomination est obligatoire.
+005_msg_denominacion_valor_obligatorio				= La valeur de la dénomination est obligatoire.
+005_msg_denominacion_peso_obligatorio				= Le poids de la dénomination est obligatoire.
+005_msg_denominacion_codigo_existente				= Il existe déjà un moyen de paiement ou la dénomination enregistrée avec le code saisi.
+
+//TELA DE BUSCA DE PLANTAS
+014_lbl_codigo_planta								= Code
+014_titulo_busqueda_delegaciones					= Recherche sur les Sites
+014_lbl_delegaciones								= Agence
+014_lbl_descricao									= Description
+014_lbl_Plantas										= Sites
+014_lbl_criterio									= Critères de recherche
+014_ddl_Selecionar									= Sélectionner
+014_lbl_grd_descricao								= Description
+014_lbl_grd_Ativo									= En vigueur 
+014_titulo_mantenimiento_Planta						= Maintenance des Sites
+014_lbl_codigoPlanta								= Code Site
+014_lbl_Delegacion									= Agence
+014_lbl_DescPlanta									= Description Site
+014_lbl_TituloPlaneta								= Sites	
+014_msg_PlantaExistente								= Site existant
+014_msg_CodigoPlanta								= Code Site est obligatoire
+014_msg_PlantaDescripcion							= Description est obligatoire
+014_msg_Delegacion									= Agence est obligatoire							
+049_msg_erro_PlantaCodigo							= Le code site est nécessaire
+051_msg_erro_PlantaDescricao						= La description du site est nécessaire.
+052_msg_erro_PlantaCodDelegacion					= Le champ Agence est nécessaire.
+053_msg_erro_PlantaExistente						= Site existant avec l’agence choisie.
+053_msg_erro_Insereregistro							= Site Erreur insertion
+053_msg_erro_Atualizaregistro						= Erreur d’annulation du Site
+053_msg_erro_BajaRegistro							= Impossible d’annuler le Site.
+049_msg_erro_PlantaGmtModificacion					= La date de la modification est nécessaire.
+049_msg_erro_PlantaDesUsuModifi						= Il est obligatoire d’informer l’utilisateur qui a effectué le changement.
+msg_erro_campo_delegacion							= Domaine de l’Agence est nécessaire.
+
+//TELA DE BUSCA TIPO DE SETORES
+019_lbl_codigo										= Code
+019_lbl_descripciontiposprocesado					= Description 
+019_lbl_caracteristicas								= Caractéristique Type Secteur
+019_chk_vigente										= En vigueur
+019_lbl_titulo_tipossetor							= Secteurs type de recherche
+019_lbl_subtitulo_tipossetor						= Type Secteurs
+019_lbl_grd_observacion								= Caractéristique
+
+//TOILE MAINTENANCE DE TIPO SECTORES
+019_lbl_codigotiposSetor							= Code Type Secteurs
+019_lbl_descripciontiposSetor						= Description Type Secteurs
+019_titulo_matenimentotiposSetor					= Type Secteurs
+019_titulo_caracteristicas_matenimentotiposSetor	= Caractéristique
+019_msg_tipoSetorcodigoobligatorio					= Code Type Secteurs est obligatoire.
+019_msg_tipoSetordescripcionobligatorio				= Description Type Secteurs est obligatoire.
+019_msg_codigotiposSetorexistente					= Code Type Secteurs existant.
+019_msg_CaracteristicaObrigatoria					= Caractéristique est obligatoire.
+019_lbl_codigoAjeno									= Code des autres
+019_lbl_descricaoAjeno								= Description des autres
+019_lbl_delegacion									= Agence
+
+//TELA DE BUSCA DE SETORES
+054_lbl_centro_processo								= Centre de traitement
+054_lbl_Codigo										= Code Secteur
+054_lbl_Descripcion									= Secteur Description
+054_lbl_planta										= Site
+054_lbl_sector_padre								= Secteur mère
+054_lbl_titulo_busqueda								= Secteurs Recherche générale
+054_lbl_tiulo_Resultados							= Secteurs
+054_lbl_tipo_setor									= Secteur Type
+054_lbl_vigente										= En vigueur
+054_ddl_selecione									= Sélectionner
+054_lbl_grd_codigo									= Code
+054_lbl_grd_descripcion								= Description
+054_lbl_grd_planta									= Site
+054_lbl_grd_tiposector								= Secteur Type
+054_lbl_grd_sectorpadre								= Secteur mère
+054_lbl_grd_centroproceso							= Centre de traitement
+054_lbl_grd_vigente									= En vigueur
+054_lblTituloBuscaSimples							= Secteurs Recherche simples
+054_lbl_criterioBusca								= Critères de recherche
+054_lbl_BuscaSimplesCodigo							= Code
+054_lbl_BuscaSimplesDescripcion						= Description
+054_msg_erro_CodigoPlantaVazio						= Veuillez saisir le site.
+054_msg_erro_CodigoTipoSector						= Veuillez saisir le secteur de type.
+054_msg_erro_CentroProcesso							= Centre de traitement est obligatoire.
+054_msg_BuscaSetorPai								= Recherche simple secteur
+054_msg_erroDelegacion								= Veuillez saisir l’Agence
+019_lbl_centroProcessoAtivado						= Oui
+019_lbl_centroProcessoDesativado					= Non
+
+//TOILE MAINTENANCE SECTORES
+054_lbl_titulo_manutencao_setores					= Secteurs
+054_ddl_planta_manutencao							= Site
+054_ddl_TipoSector									= Secteur Type
+054_lbl_centro_proceso_manutencao					= Centre de traitement 
+054_lbl_sector_padre_manutencao						= Secteur mère
+054_lbl_Codigo_sector_manutencao					= Code Secteur
+054_lbl_descricao_sector_manutencao					= Secteur Description
+054_lbl_codigo_prosegur_manutencao					= Prosegur code
+054_chk_Acpta_movimento								= Validation Mouvement
+054_chk_tesoso										= Trésor
+054_chk_conteo										= Compter
+054_msg_erro_codigoExistente						= Le Code Secteur existe déjà.
+054_msg_codigo_setor_obrigatorio					= Le Code du Secteur est nécessaire.
+054_msg_Descricao_obrigatoria						= La Description du Secteur est obligatoire.
+054_msg_TipoSector_obrigatorio						= La Section Type est obligatoire.
+054_msg_planta_obrigatorio							= Veuillez saisir le Site.
+054_msg_selecione_Sector							= Sélectionnez un Secteur
+054_msg_tipo_pantalla_Sector						= Maintenance Secteurs
+
+//TOILE INFORMATION ADDITIONNELLE DU CLIENT
+006_lbl_codigoiac									= Code
+006_lbl_descripcioniac								= Description
+006_chk_vigente										= En vigueur
+006_chk_invisible									= Invisible
+006_lbl_terminos									= Termes
+006_lbl_observacion									= Commentaires
+006_titulo_matenimentoiac							= Maintenance d’IAC
+006_titulo_iac										= Critères de Recherche
+006_subtitulo_iac									= Information Additionnelle Client
+006_title_iac										= Recherche d’Information Additionnelle Client
+006_title_mantenimentoiac							= Maintenance d’IAC
+006_lbl_grd_codigo									= Code
+006_lbl_grd_descripcion								= Description
+006_lbl_grd_vigente									= En vigueur
+006_lbl_grd_observaciones							= Commentaires 
+006_lbl_grd_checkbox								= 
+006_lbl_grd_obligatorio								= Obligatoire
+006_lbl_grd_busqueda								= Recherche 
+006_lbl_grd_campoclave								= Champ Clé
+006_lbl_grd_copiarTermino							= Copier Terme
+006_lbl_grd_Protegido								= Protégé
+006_msg_iaccodigoobligatorio						= Le code de l’information additionnelle client est obligatoire.
+006_msg_iacdescripcionobligatorio					= La description de l’information additionnelle client est obligatoire.
+006_msg_iacTerminoObligatorio						= Vous devez sélectionner au moins un terme.
+006_msg_codigoiacexistente							= Le code de l’information additionnelle client existe déjà.
+006_msg_descricaoiacexistente						= La description de l’information additionnelle client existe déjà.
+006_lbl_copiardeclarado								= Copier Déclaré
+006_lbl_disponivelnuevosaldos   					= Disponible Nouveau Soldes
+006_lbl_grd_InvisibleRpt							= Invisible Rép
+006_lbl_grd_IdMecanizado							= Id Mécanisé
+006_msg_terminos_misma_descripcion					= Il se termine par la même description faite.
+
+//TOILE LOGIN
+007_lbl_delegacion									= Agence
+007_lbl_login										= Utilisateur
+007_lbl_senha										= Identifiant
+007_btn_confirmar									= Confirmer
+007_btn_cancelar									= Annuler
+007_titulo											= Login IAC
+007_msg_usuario_invalido							= Utilisateur ou identifiant incorrect.
+007_msg_usuario_sem_permisio						= L’utilisateur n’est pas autorisé dans ce système.
+007_msg_sessao_finalizada                           = Session finalisée
+
+//TOILE RECHERCHE DE REGROUPEMENT
+008_titulo_busqueda_agrupaciones					= Recherche de Regroupement
+008_lbl_codigoagrupacion							= Code Regroupement 
+008_lbl_descricaoagrupacion							= Description Regroupement 
+008_lbl_divisa_efetivo								= Devise Espèces
+008_lbl_vigente										= En vigueur
+008_lbl_divisa_ticket								= Devise Ticket
+008_lbl_ticket										= Ticket
+008_lbl_divisa_otros_valores						= Devise Autres Valeurs
+008_lbl_otros_valores								= Autres Valeurs
+008_lbl_divisa_cheques								= Devise Chèques
+008_lbl_cheques										= Chèques
+008_lbl_subtitulosagrupaciones						= Regroupement 008_lbl_subtituloscriteriosbusqueda					= Critères de Recherche 
+008_lbl_grd_codigo									= Code
+008_lbl_grd_descripcion								= Description
+008_lbl_grd_observacion								= Commentaires
+008_lbl_grd_vigente									= En vigueur
+008_ddl_selecione									= Sélectionner
+008_ddl_selecioneDelegacion							= Tous
+
+//TOILE MAINTENANCE DE REGROUPEMENTS
+008_lbl_efectivo									= Espèces
+008_titulo_mantenimiento_agrupaciones				= Maintenance de Regroupements 
+008_lbl_titulos_mantenimento_agrupaciones			= Maintenance de Regroupements
+008_lbl_subtitulos_mantenimento_agrupaciones		= Moyens de Paiement
+008_lbl_observaciones								= Commentaires
+008_msg_agrupacioncodigoobligatorio					= Le code du Regroupement est obligatoire.
+008_msg_agrupaciondescripcionobligatorio			= La description du Regroupement est obligatoire.
+008_msg_descricaoagrupacionexistente				= Le code du Regroupement existe déjà.
+008_msg_codigoagrupacionexistente					= La description du Regroupement existe déjà.
+008_msg_treeviewnodesobligatorio					= Il est obligatoire de sélectionner au moins un moyen de paiement ou une devise d’espèces.
+
+//TOILE VALEURS POSSIBLES
+009_lblcliente										= Client
+009_lbltermino										= Terme
+009_lbl_titulo										= Valeurs Possibles
+009_lbl_titulo_valoresposibles						= Critères de Recherche 
+009_lbl_subtitulo_valoresposibles					= Valeurs Possibles
+009_lbl_grd_codigo									= Code
+009_lbl_grd_descripcion								= Description
+009_lbl_grd_vigente									= En vigueur
+009_lbl_grd_ValorDefecto							= Valeur par Défaut
+009_btncliente										= Recherche Client
+009_msg_codigo_obligatorio							= Le code est obligatoire.
+009_msg_descripcion_obligatorio						= La description est obligatoire.
+009_msg_codigo_existente							= Le code existe déjà.
+009_msg_descripcion_existente						= La description existe déjà.
+009_msg_valordefecto_existente						= enregistrement défaut déjà existant
+009_msg_codigo_cliente_obligatorio					= Le code du client est obligatoire.
+009_msg_termino_obligatorio							= Le code du terme est obligatoire.
+009_msg_grabado_suceso								= Enregistrement mis à jour avec succès.
+009_msg_descripcion_existe							= La description Valeur Possible existe déjà pour le client.
+009_msg_codigo_existe								= Le code Valeur Possible existe déjà pour le client.
+009_ddl_selecione									= Sélectionner
+
+//TOILE RECHERCHE DE TERMES
+010_titulo_busqueda_terminos						= Recherche de Termes par IAC
+010_lbl_codigotermino								= Code
+010_lbl_descricaotermino							= Description
+010_lbl_descricaoformato							= Format
+010_lbl_vigente										= En vigueur
+010_lbl_mostrarcodigo								= Montrer code
+010_lbl_subtitulosterminos							= Termes IAC
+010_lbl_subtituloscriteriosbusqueda					= Critères de Recherche					
+010_lbl_grd_codigo									= Code
+010_lbl_grd_descripcion								= Description
+010_lbl_grd_vigente									= En vigueur		
+010_ddl_selecione									= Sélectionner
+
+//TOILE DE MAINTENANCE DE TERMES
+010_titulo_mantenimiento_terminos					= Maintenance de Termes
+010_lbl_titulosterminos								= Termes IAC
+010_lbl_observaciones 								= Commentaires
+010_lbl_tipoformato   								= Format
+010_lbl_longitud      								= Longueur
+010_lbl_sinvalidacion 								= Sans Validation
+010_lbl_mascara	      								= Format
+010_lbl_listavalores  								= Liste de Valeurs
+010_lbl_formula	      								= Formule
+010_lbl_validacao									= Validation
+010_lbl_listavaloreseditable				= Valider Saisie											  
+010_msg_terminocodigoobligatorio					= Le code du terme est obligatoire.
+010_msg_terminodescripcionobligatorio				= La description du terme est obligatoire.
+010_msg_descricaoterminoexistente					= La description du terme existe déjà.
+010_msg_codigoterminoexistente						= Le code du terme existe déjà.
+010_msg_grabado_suceso								= Enregistrement effectué avec succès.
+010_msg_formatoobligatorio							= Le format est obligatoire 
+010_msg_longitudobligatoria							= La longueur est obligatoire.
+010_msg_longitudvalorinvalido						= La longueur doit contenir une valeur valide supérieure à zéro et inférieure ou égale à {0}.
+010_msg_mascaraobligatoria							= Le format du masque est obligatoire.
+010_msg_algoritmoobligatorio						= La formule de l’algorithme est obligatoire.
+
+//TOILE RECHERCHE CLIENT
+011_titulo_pagina									= Recherche de clients
+011_titulo_busqueda									= Critères de Recherche
+011_titulo_resultado								= Clients
+011_lbl_gdr_codigo									= Code
+011_lbl_gdr_descripcion								= Description
+011_codigo_cliente									= Code client
+011_descricao_cliente								= Description client
+011_seleccione_un_cliente							= Sélectionner un client
+011_seleccione_al_menos_un_cliente					= Sélectionnez au moins un client
+
+//TOILE RECHERCHE MOYEN DE PAIEMENT
+014_titulo_pagina									= Recherche de Moyens de Paiement
+014_lbl_subtituloscriteriosbusqueda					= Critères de Recherche 
+014_lbl_tipo_medio_pago								= Type Moyen de Paiement 
+014_lbl_codigomediopago								= Code
+014_lbl_descricaomediopago							= Description
+014_lbl_MPdivisa									= Devise
+014_lbl_vigente										= En vigueur
+014_lbl_mercancia									= Marchandise
+014_lbl_subtitulosmediopago							= Moyens de Paiement 
+014_lbl_grd_tipo_medio_pago							= Type 
+014_lbl_grd_codigo									= Code
+014_lbl_grd_descripcion								= Nom
+014_lbl_grd_divisa									= Devise
+014_lbl_grd_vigente									= En vigueur
+014_ddl_selecione									= Sélectionner 
+
+//MAINTENANCE DE MOYENS DE PAIEMENT
+014_titulo_mantenimiento_mediospago					= Maintenance de Moyens de Paiement 
+014_lbl_subtitulosmediospago						= Moyen de Paiement 
+014_lbl_subtitulosterminomediospago					= Termes du Moyen de Paiement 								
+014_lbl_observaciones								= Commentaires
+014_msg_mediopagocodigoobligatorio					= Le code du Moyen de Paiement est obligatoire.
+014_msg_codigomediopagoexistente					= La combinaison de Devise et Code de Moyen de Paiement existe déjà.
+014_msg_mediopagodescripcionobligatorio				= La description du Moyen de Paiement est obligatoire.
+014_msg_mediopagotipoobligatorio					= Le type du Moyen de Paiement est obligatoire.
+014_msg_mediopagodivisaobligatorio					= La devise du Moyen de Paiement est obligatoire.
+014_msg_grabado_suceso								= Enregistrement effectué avec succès.
+014_lbl_grd_mantenimiento_codigo					= Code
+014_lbl_grd_mantenimiento_descripcion				= Description
+014_lbl_grd_mantenimiento_formato					= Format
+014_lbl_grd_mantenimiento_vigente					= En vigueur
+014_lbl_codigoacceso								= Code Accès
+014_msg_codigoaccesoobligatorio						= Le code d’accès est obligatoire.
+014_msg_codigoaccesoexistente						= Le code d’accès existe déjà.
+
+//TELA SINCRONIZAR MEDIOS PAGO
+014_titulo_sincronizar_mediospago						= Synchronisation de Moyens de Paiement
+014_titulo_mediospago_sincronizacion					= Moyens de paiement
+014_chk_selecionar_todos_mediosPago						= Sélectionner Tous les Moyens de paiement
+014_msg_sin_actualizacion_mediosPago					= Tous les moyens de paiement sont à jour.
+014_msg_selecionar_mediospago							= Sélectionnez au moins un moyen de paiement.
+014_msg_confirm_sincronizacion_mediospago				= Cette option synchronise les tableaux de Comptage, Sorties, Nouveau Soldes et ATM avec les données IAC pour les moyens de paiement sélectionnés.
+
+//CONTROLE RESULTADO SINCRONIZACION MEDIO PAGO
+014_lbl_resultado							= Résultat :
+014_lbl_url									= URL Service :
+014_msg_url									= URL non trouvée.
+014_lbl_MediosPago_atualizadas				= Moyens de Paiement À jour.
+014_msg_error								= Erreur - {0}
+014_msg_MediosPago_no_atualizadas			= Aucun Moyen de Paiement n’a été mis à jour.
+014_msg_sin_error							= Les Moyens de Paiement ont été mis à jour.
+014_msg_error_Medios Pago					= Certains Moyens de Paiement n’ont pas pu être mis à jour.
+014_msg_error_geral							= Erreur de Mise à jour des Moyens de Paiement.
+014_lbl_cod_MedioPago						= Code du Moyen de Paiement
+014_lbl_des_MedioPago						= Description du Moyen de Paiement
+014_lbl_status								= État
+014_lbl_valor								= Valeur
+014_lbl_divisa								= Moyen de paiement
+014_lbl_cod_erro							= Code de l’Erreur
+014_lbl_des_erro							= Erreur
+
+// MAINTENANCE TERMES DE MOYENS DE PAIEMENT 
+014_titulo_mantenimiento_termino_mediospago			  = Maintenance de Termes de Moyens de Paiement 
+014_subtitulo_mantenimiento_termino_mediospago		  = Termes de Moyens de Paiement 
+014_lbl_formato										  = Format
+014_lbl_longitude									  = Taille
+014_lbl_valorinicial								  = Valeur Initiale
+014_lbl_mostrarcodigo								  = Montrer Code
+014_lbl_validacaoformato							  = Validations Format
+014_lbl_validacaoformula							  = Validations Formule
+014_msg_terminomediopago_codigoobligatorio			  = Le code du terme de moyen de paiement est obligatoire.
+014_msg_terminomediopago_codigopagoexistente		  = Le code du terme de moyen de paiement existe déjà.
+014_msg_terminomediopago_descripcionobligatorio		  = La description du terme de moyen de paiement est obligatoire.
+014_msg_terminomediopago_longitudobligatorio		  = La longueur est obligatoire.
+014_msg_terminomediopago_formatoobligatorio			  = Le type de format est obligatoire.
+014_msg_terminomediopago_longitudeinvalidaobligatorio = La longueur doit contenir une valeur valide supérieure à zéro et inférieure ou égale à {0}.
+014_lbl_valoresposibles								  = Valeurs possibles
+
+// MAINTENANCE VALEURS TERMES DE MOYENS DE PAIEMENT 
+014_titulo_mantenimiento_valorterminomediopagos		  = Maintenance de Valeurs de Termes de Moyens de Paiement 
+014_lbl_codigovalorterminomediopago					  = Code 
+014_lbl_descricaovalorterminomediopago				  = Description
+014_lbl_subtitulosmantenimientovalorterminomediopagos = Valeurs de Termes de Moyens de Paiement 
+014_msg_valorterminomediopagocodigoobligatorio		  = Le code de la valeur du terme de moyen de paiement est obligatoire.
+014_msg_valorterminomediopagodescripcionobligatorio   = La description de la valeur du terme de moyen de paiement est obligatoire.
+014_msg_valorterminomediopagocodigoexistente		  = Le code de la valeur du terme de moyen de paiement existe déjà.
+014_lbl_grd_mantenimiento_valor_termino_codigo		  = Code
+014_lbl_grd_mantenimiento_valor_termino_descripcion	  = Description
+014_lbl_grd_mantenimiento_valor_termino_vigente		  = En vigueur
+
+//TOILE RECHERCHE SOUS CLIENTS
+015_titulo_pagina									= Recherche de Sous-clients
+015_titulo_busqueda									= Critères de Recherche 
+015_titulo_resultado								= Sous-clients 
+015_lbl_gdr_cliente									= Client
+015_lbl_gdr_codigo									= Code
+015_lbl_gdr_descripcion								= Description
+015_lbl_subcliente									= Sous client
+015_codigo_subcliente								= Code Sous-client
+015_descricao_subcliente							= Description Sous-client 
+015_seleccione_un_subcliente						= Sélectionner au moins un Sous-client
+015_lbl_cliente										= Client
+
+// TOILE RECHERCHE DE PROCESSUS
+016_lbl_titulo									   = Recherche de Processus
+016_lbl_titulo_busquedaprocesos					   = Critères de Recherche 
+016_lbl_subtitulo_busquedaprocesos				   = Processus
+016_btncliente									   = Rechercher Client
+016_btnsubcliente								   = Rechercher Sous-client
+016_btnpuntoservicio							   = Rechercher Point de Service
+016_lbl_cliente									   = Client
+016_lbl_subcliente								   = Sous-client
+016_lbl_puntoservicio							   = Point de Service
+016_lbl_grd_cliente								   = Client
+016_lbl_grd_subcliente							   = Sous-client
+016_lbl_grd_ptoservicio							   = Pt. Service
+016_lbl_grd_canal								   = Canal	
+016_lbl_grd_subcanal							   = Sous-canal
+016_lbl_grd_producto							   = Produit
+016_lbl_grd_proceso								   = Processus
+016_lbl_grd_delegacion							   = Agence
+016_lbl_grd_vigente								   = En vigueur
+016_lbl_canal									   = Canal
+016_lbl_subcanal								   = Sous-canal
+016_lbl_producto								   = Produit
+016_lbl_delegacion								   = Agence
+016_lbl_vigente									   = En vigueur
+016_nopuedomodificacion_peroduplicar			   = Le processus ne peut être modifié, mais il peut être copié.
+016_proceso_no_pertence_delegacion				   = Le processus n’appartient pas à l’Agence de l’utilisateur connecté.
+
+//TOILE DE MAINTENANCE DE PROCESSUS
+016_titulo_mantenimiento_procesos									= Maintenance de Processus
+016_lbl_subtitulos_mantenimento_procesos							= Description du Processus
+016_lbl_subtitulos_mantenimento_procesos_informaciondeldeclarado	= Information du Déclaré
+016_lbl_subtitulos_mantenimento_procesos_agrupaciones				= Regroupements
+016_lbl_subtitulos_mantenimento_procesos_mediospago					= Moyens de Paiement
+016_lbl_subtitulos_mantenimento_procesos_modocontaje				= Mode de comptage
+016_lbl_descripcion_proceso											= Processus
+016_lbl_modalidad													= Modalité
+016_lbl_infoadicional												= Inform. Additionnelle
+016_lbl_IACParcial													= IAC Partiel
+016_lbl_IACBulto													= IAC Colis
+016_lbl_IACRemesa													= IAC Remise
+016_lbl_cliente_faturacion											= Client Facturation
+016_lbl_observaciones												= Commentaires
+016_btnClienteFaturacion											= Recherche Client Facturation
+016_btnTerminoMedioPago												= Termes Moyen Paiement
+016_btnTolerancia													= Tolérance
+016_lbl_infodeclarado_pormediopago									= Par moyen de paiement
+016_lbl_infodeclarado_poragrupaciones								= Par regroupements
+016_lbl_contarchequetotales											= Compter chèques par totaux
+016_lbl_contartickettotales											= Compter ticket par totaux 
+016_lbl_contarotrosvalorestotales									= Compter autres valeurs par totaux 
+016_msg_procesodescripcionobligatorio								= La description du processus est obligatoire.
+016_msg_modalidadobligatorio										= La modalité est obligatoire.
+016_msg_productoobligatorio											= Le produit est obligatoire.
+016_msg_treeviewnodesobligatorio									= Il est obligatoire de sélectionner au moins un moyen de paiement ou une devise d’espèces.
+016_msg_agrupacionescompoenprocesoobligatorioobligatorio			= Il est obligatoire de sélectionner au moins un regroupement.
+016_msg_procesoclientenobligatorio									= Le client est obligatoire.
+016_ddl_selecione													= Sélectionner
+016_msg_informaciondeldeclaradoobligatorio							= L’information du déclaré est obligatoire.
+016_lbl_efectivo													= Espèces
+016_lbl_nota									   = Note : L’ordre dans lequel vous sélectionnez les devises sera l’ordre d’affichage des devises sur l’écran de comptage des colis.  
+016_msg_subcanaisobligatorio					   = Le sous-canal est obligatoire.
+
+// MAINTENANCE TERMES MOYEN DE PAIEMENT PROCESSUS
+016_titulo_mantenimiento_termino_pagina								= Maintenance des termes de moyen de paiement
+016_titulo_mantenimiento_termino_mediopago							= Moyens de Paiement
+016_subtitulo_mantenimiento_termino_terminosmediopago				= Termes
+016_lbl_gdr_mantenimiento_termino_mp_descripciondivisa				= Devise
+016_lbl_gdr_mantenimiento_termino_mp_descripciontipomediopago		= Type 
+016_lbl_gdr_mantenimiento_termino_mp_codigomediopago				= Code
+016_lbl_gdr_mantenimiento_termino_mp_descripcionmediopago			= Description
+016_lbl_gdr_mantenimiento_termino_mp_codigoterminomp				= Code
+016_lbl_gdr_mantenimiento_termino_mp_obligatorio					= Obligatoire
+016_lbl_gdr_mantenimiento_termino_mp_descripcionterminomp			= Description
+
+//TOILE RECHERCHE DE POINTS DE SERVICE 
+017_titulo_pagina								   = Recherche de Points de Service
+017_codigo_puntoservicio						   = Code Pt. Service
+017_descricao_puntoservicio						   = Desc Pt. Service
+017_titulo_busqueda								   = Critères de Recherche 
+017_titulo_resultado							   = Points de Service
+017_lbl_gdr_codigocliente						   = Code Client
+017_lbl_gdr_descripcioncliente					   = Desc. Client
+017_lbl_gdr_codigosubcliente					   = Code Sous-client
+017_lbl_gdr_descripcionsubcliente				   = Desc. Sous-client 
+017_lbl_gdr_codigopuntoservicio					   = Code Pt. Service
+017_lbl_gdr_descripcionpuntoservicio			   = Description Pt. Service 
+017_seleccione_un_puntoservicio					   = Sélectionner au moins un point de service
+
+//TOILE MAINTENANCE TOLERANCE
+018_titulo_pagina								   = Tolérances
+018_subtitulo_pagina							   = Tolérances de {0}
+018_col_toleranciamin							   = Min.
+018_col_toleranciamax							   = Max.
+018_col_parcial									   = Rompu
+018_col_bulto									   = Colis
+018_col_remesa									   = Remise
+018_col_agrupaciones							   = Regroupements
+018_col_medios_pago								   = Moyens Paiement
+018_col_divisa									   = Devise
+018_col_tipo_medio_pago 						   = Type
+018_col_medio_pago								   = Moyen de Paiement
+018_col_agrupacion								   = Regroupement
+
+//TOILE RECHERCHE DE CARACTERISTIQUES
+020_titulo_pagina									= Recherche de caractéristiques
+020_titulo_busqueda									= Critères de Recherche 
+020_titulo_resultado								= Caractéristiques 
+020_codigo_caracteristica							= Code
+020_codigo_conteo									= Code comptage
+020_descricao_caracteristica						= Description
+020_seleccione_una_caracteristica					= Sélectionner une caractéristique
+020_caracteristica_vigente							= En vigueur
+020_lbl_gdr_codigo									= Code
+020_lbl_gdr_descripcion								= Description
+020_lbl_gdr_observaciones							= Commentaires
+020_lbl_gdr_codigo_conteo							= Code Comptage
+020_lbl_gdr_vigente									= En vigueur
+
+//TOILE MAINTENANCE CARACTERISTIQUES
+020_titulo_mantenimiento_caracteristicas			= Maintenance de caractéristiques 
+020_lbl_subtitulo_mantenimiento_caracteristicas		= Maintenance de la caractéristique
+020_lbl_codigo_caracteristica						= Code caractéristique
+020_lbl_descricao_caracteristica					= Description caractéristique 
+020_lbl_codigo_conteo								= Code Comptage
+020_lbl_observaciones								= Commentaires
+020_lbl_vigente										= En vigueur
+020_msg_caracteristica_codigo_obligatorio			= Le code de la caractéristique est obligatoire.
+020_msg_caracteristica_descripcion_obligatorio		= La description de la caractéristique est obligatoire.
+020_msg_caracteristica_codigo_conteo_obligatorio	= Le code comptage de la caractéristique est obligatoire.
+020_msg_caracteristica_codigo_existente				= Le code de la caractéristique existe déjà.
+020_msg_caracteristica_descripcion_existente		= La description de la caractéristique existe déjà.
+020_msg_caracteristica_codigo_conteo_existente		= Le code comptage de la caractéristique existe déjà.
+020_msg_grabado_suceso								= Enregistrement effectué avec succès.
+
+//TELA BUSQUEDA MORFOLOGIAS
+
+021_titulo_busqueda									= Recherche de Morphologies
+021_subtitulo_morfologias							= Morphologies
+021_subtitulo_criterio								= Critères de Recherche
+021_lbl_cod_morfologia								= Code Morphologie
+021_lbl_desc_morfologia								= Description Morphologie
+021_lbl_activo										= En vigueur
+021_lbl_grd_codigo									= Code
+021_lbl_grd_descricao								= Description
+021_lbl_grd_componentes								= Composants
+021_lbl_grd_activo									= En vigueur
+021_lbl_dispensador									= Distributeur
+021_lbl_dispensadores								= Distributeurs
+021_lbl_ingresador									= Déposant
+021_lbl_ingresadores								= Déposants
+021_lbl_rechazo										= Refus
+021_lbl_rechazos									= Refus
+021_lbl_tarjeta										= Carte
+021_lbl_tarjetas									= Cartes
+021_lbl_deposito									= Dépôt
+021_lbl_depositos									= Dépôts
+
+//TELA MANTENIMIENTO MORFOLOGIAS
+
+021_titulo_mantenimiento							= Maintenance de Morphologies
+021_subtitulo_morfologia							= Morphologie
+021_subtitulo_componente							= Composants
+021_lbl_codigo										= Code
+021_lbl_grd_codmorfologia							= Code
+021_lbl_grd_funcion									= Fonction
+021_lbl_grd_tipo									= Type
+021_lbl_grd_modalidad								= Modalité
+021_lbl_grd_divida_den_mp							= Devise - Dénomination / Moyens de Paiement
+021_lbl_grd_orden									= Ordre
+021_msg_codigo_existente							= Le code de la morphologie existe déjà !
+021_msg_desc_existente								= Le description de la morphologie existe déjà !
+021_msg_componente									= Au moins un composant obligatoire !
+021_lbl_metodo_habilitacion							= Méthode Qualification
+
+//TELA MANTENIMIENTO COMPONENTE
+
+022_titulo_mantenimiento							= Maintenance de Composants
+022_subtitulo_componente							= Composant
+022_funcion_dispensador								= Distributeur
+022_funcion_ingresador								= Déposant
+022_funcion_deposito								= Dépôt
+022_funcion_rechazo									= Refus
+022_funcion_tarjeta									= Carte
+022_ddl_selecione									= Sélectionner
+022_modalidad_en_base								= Base
+022_modalidad_a_pie									= À pied de guichet automatique
+022_modalidad_adicion_con_dos_tiras					= Rajout avec deux Bandes
+022_lbl_codigo										= Code
+022_lbl_funcion										= Fonction
+022_lbl_tipo										= Type
+022_lbl_modalidad									= Modalité
+022_lbl_divisa										= Devise
+022_lbl_denominacion								= Dénomination
+022_lbl_medio_pago									= Moyen de Paiement
+022_lbl_activo										= En vigueur
+022_lbl_efectivo									= Espèces
+022_msg_dispensador_cajetin							= Un Contenant à fonction distributeur ne pourra être que de type boîtier.
+022_lbl_tipo_bolsa									= Sac
+022_msg_codigo_unico								= Le code du composant existe déjà pour morphologie.
+022_msg_mediopago_unico								= La morphologie possède déjà composant pour la fonction {0} avec la même devise et type de moyen de paiement !
+
+//TELA BÚSQUEDA ATM
+
+023_titulo_busqueda									= Recherche d’ATM
+023_subtitulo_atms									= ATM
+023_lbl_subtituloscriteriosbusqueda					= Critères de Recherche
+023_lbl_cliente										= Client
+023_lbl_subcliente									= Sous-client
+023_lbl_puntoservicio								= Point de Service
+023_lbl_codigoatm									= Code ATM
+023_lbl_red											= Réseau
+023_lbl_modelo										= Modèle
+023_lbl_grupo										= Groupe
+023_lbl_vigente										= En vigueur
+023_btncliente									    = Recherche Client
+023_btnsubcliente								    = Recherche Sous-client
+023_btnpuntoservicio							    = Recherche Point de Service
+023_lbl_grd_codigo									= Code ATM
+023_lbl_grd_cliente_subc_pto						= Client / Sous-client / Point Service
+023_lbl_grd_red										= Réseau
+023_lbl_grd_modelo									= Modèle
+023_lbl_grd_grupo									= Groupe
+023_lbl_grd_morfologia								= Morphologie
+023_lbl_grd_vigente									= En vigueur
+
+//TELA MANTENIMIENTO ATM
+
+023_titulo_mantenimiento							= Maintenance d’ATM
+023_subtitulo_atm									= ATM
+023_subtitulo_morfologias							= Morphologies
+023_subtitulo_procesos								= Processus
+023_lbl_codigo										= Code
+023_lbl_registro_tira								= Enregistrement Bande
+023_lbl_des_morfologia								= Morphologie
+023_lbl_fecha_inicio								= Date
+023_grd_des_morfologia								= Morphologie
+023_grd_fec_inicio									= Date
+023_grd_modificar									= Modifier 
+023_grd_borrar										= Effacer
+023_grd_vigencia									= Validité
+023_msg_fecha_invalida								= Date de validité incorrecte !
+023_lbl_proceso										= Processus
+023_lbl_producto									= Produit
+023_lbl_canal										= Canal
+023_lbl_subcanal									= Sous-canal
+023_lbl_modalidad									= Modalité
+023_lbl_inf_adicional								= Inform. Additionnelle
+023_lbl_cliente_facturacion							= Client Facturation
+023_lbl_modo_contaje								= Mode Comptage
+023_chk_contar_cheque_totales						= Compter chèques par totaux
+023_chk_contar_tickets_totales						= Compter tickets par totaux
+023_chk_contar_otros_totales						= Compter autres par totaux
+023_chk_tarjetas_totales							= Compter cartes par totaux
+023_col_vigente										= En vigueur
+023_col_futura										= Future
+023_col_historico									= Historique
+023_grd_proceso										= Processus
+023_grd_producto									= Produit
+023_grd_canal										= Canal
+023_grd_subcanal									= Sous-canal
+023_grd_modalidad									= Modalité
+023_grd_inf_adic									= Inf. Additionnelle
+023_grd_modo_contage								= Mode Comptage
+023_grd_terminos									= Termes
+023_grd_cliente_fact								= Client Facturation
+023_msg_006											= Impossible de choisir terme moyen de paiement étant donné qu’il n’existe aucune morphologie associée à l’ATM !
+023_morf_proc_obrig									= Un ATM doit au moins être associé à une morphologie et à un processus.
+023_msg_dejara_grupo								= Cesser d’appartenir au groupe !
+023_msg_modificar_borrar							= Terminez la mise à jour de la morphologie pour pouvoir effacer.
+023_msg_modalidad_repetida							= Existence de Modalité répétée dans les processus.
+023_msg_subcanal_repetida							= Existence de Sous-canal répété dans les processus.
+
+//TELA MANTENIMIENTO GRUPO
+
+024_titulo_grupo									= Ajouter Groupe
+024_subtitulo_grupo									= Groupe
+024_codigo_grupo									= Code
+024_desc_grupo										= Description
+024_msg_codigo_existente							= Le code du groupe existe déjà !
+
+//TELA BÚSQUEDA PUESTO
+
+025_titulo_busqueda_puestos							= Recherche de Postes
+025_lbl_subtitulospuestos							= Postes
+025_lbl_subtituloscriteriosbusqueda					= Critères de Recherche
+025_lbl_sem_registro						        = Absence d’enregistrements.
+025_lbl_vigente										= En vigueur
+025_lbl_aplicacion									= Application
+025_lbl_codigopuesto								= Code poste
+025_lbl_hostpuesto									= Host poste
+025_lbl_planta										= Site
+025_chk_vigente 									= En vigueur
+025_chk_no_vigente 									= Pas en vigueur
+025_chk_cualquiera 									= Quelconque
+025_lbl_delegacion									= Agence
+025_btnConfigurarParametros							= Configurer Paramètres
+025_btnCopiarPuesto									= Copier Poste
+
+//TELA MANTENIMIENTO PUESTO
+
+025_titulo_mantenimiento_puestos					= Maintenance de Postes
+025_lbl_man_delegacion								= Agence
+025_lbl_man_aplicacion								= Application
+025_lbl_man_codigopuesto							= Code Poste
+025_lbl_man_hostpuesto								= Host Poste
+025_msg_aplicacion_no_rellenada						= Application doit obligatoirement être saisie
+025_msg_grabar										= Voulez-vous réaliser l’opération d’enregistrement ?
+025_msg_cancelar									= Voulez-vous annuler l’opération ?
+025_msg_grabado_suceso								= Enregistrement sauvegardé avec succès
+025_msg_aplicacionobligatorio						= L’application est obligatoire.
+025_msg_codigopuestoobligatorio						= Le code du poste est obligatoire
+025_msg_hostpuestoobligatorio						= Le Host Poste est obligatoire
+
+//TELA BÚSQUEDA DE PARÁMETROS
+
+026_titulo_busqueda_parametros						= Recherche de paramètres
+026_lbl_subtitulo_filtros							= Filtres
+026_lbl_subtitulo_paramestros						= Paramètres
+026_lbl_aplicacion									= Application
+026_lbl_nivel										= Niveau
+026_lbl_agrupacion									= Groupement
+026_btn_abm_agrupaciones							= Groupements
+026_btn_modificar_parametros						= Modifier Paramètres
+026_col_aplicacion									= Application
+026_col_nivel										= Niveau
+026_col_agrupacion									= Groupement
+026_col_Codparametro								= Code Paramètre
+026_col_parametro									= Description Paramètre
+
+//TELA MANTENIMENTO DE PARÁMETROS
+
+026_titulo_mantenimento_parametros					= Maintenance de paramètre
+026_subtitulo_mantenimento_parametros				= Maintenance de paramètre
+026_lbl_aplicacion_mant								= Application
+026_lbl_nivel_mant									= Niveau
+026_lbl_codparametro_mant							= Paramètre code
+026_lbl_DescripcionLarga_mant						= Description Largeur
+026_lbl_tipocomponent_mant							= Type Composant
+026_lbl_obligatorio_mant							= Obligatoire ?
+026_lbl_tipodato_mant								= Type Donnée
+026_lbl_agrupacion_mant								= Groupement
+026_lbl_descripcioncorto_mant						= Description Courte
+026_lbl_orden_mant									= Ordre
+026_msg_agrupacionobligatorio						= Le groupement est obligatoire.
+026_msg_descripcioncortoobligatorio					= La description courte est obligatoire.
+026_msg_DescripcionLargaobligatorio					= La description Longue est obligatoire.
+026_msg_Dordenobligatorio							= L’ordre est obligatoire.
+026_titulo_lista_opciones									= Liste d’Options
+
+
+//TELA CONFIGURACIÓN DE PARÁMETROS
+027_titulo_configuracion_parametros					= Configuration de paramètres
+027_subtitulos_configuracion_parametros				= Configuration de paramètres
+027_no_permiso_configurar_permiso				= L’utilisateur n’a pas la permission d’accéder à ces paramètres
+
+//TELA BÚSQUEDA DE AGRUPACIONES PARÁMETROS
+028_titulo_busqueda_puestos							= Recherche de Groupements Paramètres
+028_lbl_aplicacion									= Application
+028_lbl_nivel										= Niveau
+028_lbl_agrupacion									= Groupement
+028_lbl_subtituloscriteriosbusqueda					= Critères de Recherche
+028_lbl_subtitulosagrupaciones						= Groupements de Paramètres
+028_lbl_sem_registro						        = Absence d’enregistrements.
+028_col_aplicacion									= Application
+028_col_nivel										= Niveau
+028_col_agrupacion									= Groupement
+
+//TELA MANTENIMENTO DE AGRUPACIONES PARÁMETROS
+028_titulo_mantenimento_agrupacion					= Maintenance de Groupement Paramètre
+028_subtitulo_mantenimento_agrupacion				= Groupement
+028_lbl_aplicacion_mant								= Application
+028_lbl_nivel_mant									= Niveau
+028_lbl_descripcioncorto_mant						= Description Courte
+028_lbl_DescripcionLarga_mant						= Description Largeur
+028_lbl_orden_mant									= Ordre
+028_msg_aplicacionobligatorio						= L’Application est obligatoire.
+028_msg_nivelobligatorio							= Le niveau est obligatoire.
+028_msg_descripcioncortoobligatorio					= La description courte est obligatoire.
+028_msg_DescripcionLargaobligatorio					= La description complète est obligatoire.
+028_msg_Dordenobligatorio							= L’ordre est obligatoire.
+
+//TELA MATENIMIENTO DE OPCIONES PARAMETRO
+029_titulo_mantenimiento_parametroopcion			= Maintenance d’option du Paramètre
+029_subtitulo_mantenimiento_parametroopcion			= Option de Paramètre
+029_lbl_codigoparametroopcion						= Code Option
+029_lbl_descricaoparametroopcion					= Description d’Option
+029_lbl_vigente										= En vigueur
+029_msg_parametroopcion_codigoobligatorio			= Le code de l’option est obligatoire.
+029_msg_parametroopcion_descripcionobligatorio		= La description de l’option est obligatoire.
+029_lbl_delegacion									= Agence
+029_msg_parametroopcion_codigoExistente				= Le code de l’option existe déjà.
+029_msg_parametroopcion_descripcionExistente		= La description de l’option existe déjà.
+
+//TELA GRUPO DE CLIENTE
+030_titulo_busqueda_grupo_cliente					= Recherche de Groupes de Clients
+030_lbl_codigo_grupo_cliente						= Code
+030_lbl_descricao_grupo_cliente						= Description
+030_lbl_vigente										= En vigueur
+030_lbl_subtitulo_criterios_busqueda				= Critères de Recherche
+030_lbl_subtitulo_grupo_cliente						= Groupes de Clients
+030_lbl_cliente										= Client
+030_busca_cliente									= Rechercher Client
+030_busca_subcliente								= Rechercher Sous-client
+030_busca_pto_servicio								= Rechercher Point de Service
+030_lbl_subcliente									= Sous-client
+030_lbl_pto_servicio								= Point de Service
+030_erro_excluir									= Erreur en effaçant le Groupe de Clients.
+030_titulo_mantenimiento_grupo_cliente				= Maintenance de Groupes de Clients
+030_msg_codigo_obrigatorio							= Le code Client est obligatoire.
+030_msg_descricaco_obrigatorio						= La description du Groupe de Clients est obligatoire.
+030_msg_cliente_obrigatorio							= Sélectionnez au moins un client.
+030_msg_codigo_existente							= Le code Client existe déjà.
+030_btnDireccion									= Adresse
+030_lblClienteResultado								= Client appartenant au groupe.
+030_lblSubClienteResultado							= Sous-clients appartenant au groupe.
+030_lblPtoServicioResultado							= Points de Service appartenant au groupe.
+030_msg_iten_existente								= Le {0} a déjà été inclus ou est déjà sur la liste.
+030_lblTipoGrupoCliente								= Type de groupe de clients
+gen_opcion_general									= Général 
+gen_opcion_atm										= ATM
+030_msg_TipoGrupoCliente_obrigatorio                = Le type de groupe de clients est obligatoire
+
+
+
+//TELA LOGIN
+tkn_token_nao_consumida                             = Token d’accès incorrect ou expiré
+tkn_tokenutil_token_invalida                        = Token d’accès incorrect
+
+//TIPO CLIENTE
+031_lbl_titulo_pagina								= Recherche de clients
+031_lbl_codigo_tipoCliente							= Code de type de client
+031_lbl_descricao_tipo								= Description type de client
+031_lbl_Tipo_vigente								= En vigueur
+031_lbl_tipo_cliente								= Types de Clients
+031_lbl_titulo_cliente								= Recherche de clients
+
+031_lbl_grd_codigo									= Code
+031_lbl_grd_descricao								= Description
+031_lbl_grd_Ativo									= En vigueur
+031_lbl_msg_banco									= Vous ne pouvez pas déduire le type de client B - Banque !
+031_lbl_msg_Banco_modificar							= Vous ne pouvez pas changer le type de client B - Banque !
+031_msg_codigTipoExistente							= Le Code de Type Clients existe déjà.
+031_lbl_codigo_cliente								= Le Code de Type Clients est obligatoire. 
+031_lbl_decricao_cliente							= Le Description Type Client est obligatoire. 
+
+//TIPO SUBCLIENTE
+032_titulo_pagina_sub							= Recherche de Type de sous-clients
+032_codigo_tipoSubCliente						= Code Type de sous-clients
+032_descricao_tipoSub							= Description Type de sous-clients
+032_Vigente										= En vigueur
+032_TipoSubCliente								= Type de sous-clients 
+032_TituloSubCliente							= Recherche de Type de sous-clients
+//O dicionário do GRID - Usar da demanda anterior
+032_msg_codigTipoSubExistente					= Le code de type sous-client existe déjà.
+032_lbl_codigo_Tbcliente						= Le Code de Type sous-clients est obligatoire.
+031_lbl_decricao_Tbcliente						= Le Description Type sous-clients Client est obligatoire.
+
+//TIPO_PUNTO_SERVICIO
+033_Titulo_punto_servicio						= Recherche de Type de Point Service
+033_codigo_punto_servicio						= Code Type de Type Code Type Point Service
+033_descricao_punto_servicio					= Description Type Point Service
+033_vigente_punto_servicio						= En vigueur
+033_Titulo_criterio_busca_Punto					= Recherche Type Point Service
+033_Titulo_Resultado_Punto_servicio				= Type Point Service
+033_erro_codigo_obrigatorio						= Le Code Type Point Service est obligatoire.
+033_erro_decricao_obrigatorio					= Le Description Type Point Service est obligatoire.
+033_erro_codigo_existente						= Le Code Type Point Service existe déjà.
+
+//CODIGO AJENO MANTENIMENTO 
+034_titulo_codigo_ajeno							= Codes Externes
+034_subtitulo_grupo								= Codes Externes
+034_lbl_codigo_entidade							= Code
+034_lbl_des_entidade							= Description
+034_lbl_identificador							= Identifiant
+034_lbl_codigo_ajeno							= Code Externe
+034_lbl_descripcion_ajena						= Description Externe
+034_lbl_vigente									= En vigueur
+034_lbl_gdr_defecto								= Défaut
+034_lbl_gdr_identificador						= Identifiant
+034_lbl_gdr_codigo								= Code
+034_lbl_gdr_descripcion							= Description
+034_lbl_gdr_vigente								= En vigueur
+034_lbl_gdr_modificar							= Modifier 
+034_msg_002 									= Des codes externes existent déjà avec le même identifiant pour {0} !
+034_msg_003 									= Existence de codes externes répétés pour {0} !
+034_msg_006 									= Définition obligatoire d’un code externe comme défaut.
+
+//DIRECCION
+035_lbl_codigo							= Code
+035_lbl_descripcion						= Description
+035_lbl_pais							= Pays
+035_lbl_telefono						= Téléphone
+035_lbl_Provincia						= État
+035_lbl_nfiscal							= NIF / Facture
+035_lbl_ciudad							= Ville
+035_lbl_codigopostal					= Code Postal
+035_lbl_email							= E-mail
+035_lbl_direccion1						= Adresse 1
+035_lbl_direccion2						= Adresse 2
+035_lbl_campoadicional					= Champ supplémentaire 1
+035_lbl_campoadicional2					= Champ supplémentaire 2
+035_lbl_campoadicional3					= Champ supplémentaire de 3
+035_lbl_categoriaadicional				= Catégorie supplémentaire 1
+035_lbl_categoriaadicional2				= Catégorie supplémentaire 2
+035_lbl_categoriaadicional3				= Catégorie supplémentaire 3
+035_lbl_direccion						= Adresse
+035_lbl_dados_adicionais				= Données Supplémentaires
+035_msg_erro_Direccion					= Au moins un des champs d’adresse doit être rempli.
+
+//CLIENTES
+036_titulo_pagina                        = Recherche Clients
+036_lbl_SubTitulosCriteriosBusqueda      = Critères de Recherche
+036_lbl_SubTitulo                        = Clients
+036_lbl_CodCliente                       = Code Client
+036_lbl_DescCliente                      = Description Client
+036_lbl_TipoCliente                      = Type Client 
+036_lbl_TotSaldo                         = Totalisateur de Soldes
+036_lbl_Vigente                          = En vigueur
+036_ddl_selecione                        = Sélectionnez
+036_sim                                  = Oui
+036_nao                                  = Non
+036_lbl_grd_codigo                       = Code
+036_lbl_grd_descripcion					 = Description
+036_lbl_grd_tipo_cliente				 = Type Client
+036_lbl_grd_tot_saldos					 = Tot. Soldes
+036_lbl_grd_vigente						 = En vigueur
+
+// MANTENIMIENTO CLIENTES
+037_titulo_mantenimiento                 = Maintenance Clients
+037_lbl_direccion                        = Adresse
+037_lbl_CodCliente                       = Code Client
+037_lbl_CodigoAjeno                      = Code Externe
+037_lbl_DescCliente                      = Description Client
+037_lbl_DesCodigoAjeno                   = Description Code Externe
+037_lbl_TipoCliente                      = Type Client
+037_lbl_TituloCliente                    = Client
+037_lbl_TotSaldo                         = Totalisateur de Solde
+037_lbl_Vigente                          = En vigueur
+037_lbl_msgAvisoCliente					 = En réactivant le client, tous les points de sous-client et de service seront également réactivés.
+037_lbl_msgAvisoClienteDelete 			 = En annulant ce client, tous les sous-clients et points de service seront également annulés.
+037_msg_csvCodClienteExistente			 = Le code du client existe déjà.
+037_msg_csvCodClienteObrigatorio		 = Le champ code client est obligatoire.
+037_msg_csvDescClienteObrigatorio		 = Le champ description du client est obligatoire.
+037_msg_csvTipoClienteObrigatorio		 = Le champ type de client est obligatoire.
+037_msg_csvDescClienteExistente			 = Le description du client existe déjà.
+037_msg_cliente_nivel_saldo				 = Le client totalisateur de soldes est obligatoire.
+037_lbl_TituloTotSaldo					= Configuré totaux clientèle
+037_lbl_ProprioTotSaldo					= Totalise le solde réel?
+037_btn_AnadirTotalizador				= Ajouter totalisateur
+037_lbl_TituloDatosBanc					= Comptes bancaires configuré pour la clientèle
+037_btn_AnadirCuenta					= Ajouter un compte bancaire
+037_titulo_banco						= Banque
+037_titulo_facturacion					= Facturation
+037_lbl_tipoBanco						= Type Banque
+037_lblCodigoBancarioForm				= Código Bancario
+037_lblBancoCapitalForm					= Banco Capital?
+037_lblBancoComisionForm				= Banco Comisión?
+037_lblComisionCliente					= Porc. Comisión Cliente
+
+037_btnBusquedaNivelSaldo                = Niveau Solde
+037_btnExcepciones                       = Exceptions par Sous-canal
+037_lblNivelSaldo                        = Niveau Solde
+037_rbOtroCliente                        = Autre Client
+037_rbEseCliente                         = Ce Client
+037_msg_nivel_saldo                      = Seuls les clients configurés comme Totalisateurs de Solde peuvent être responsables de la totalisation de leur propre solde !
+037_lbl_AbonaPorSaldoTotal				 = Abona por Saldo Total?
+
+// SUB CLIENTES
+038_titulo_pagina                        = Recherche Sous-clients
+038_lbl_SubTitulosCriteriosBusqueda      = Critères de Recherche
+038_lbl_SubTitulo                        = Sous-clients
+038_lbl_CodSubCliente                    = Code Sous-client
+038_lbl_DescSubCliente                   = Description Sous-client
+038_lbl_TipoSubCliente                   = Type Sous-client 
+038_lbl_TotSaldo                         = Totalisateur de Soldes
+038_lbl_Vigente                          = En vigueur
+038_ddl_selecione                        = Sélectionnez
+038_sim                                  = Oui
+038_nao                                  = Non
+038_lbl_grd_cliente						 = Client
+038_lbl_grd_codigo                       = Code
+038_lbl_grd_descripcion					 = Description
+038_lbl_grd_tipo_subcliente				 = Type Sous-client
+038_lbl_grd_tot_saldos					 = Tot. Soldes
+038_lbl_grd_vigente						 = En vigueur
+038_lbl_cliente                          = Client
+038_btncliente							 = Recherche Client
+038_lbl_SubclienteAvisoDelecao			 = En annulant ce sous-client, tous les points de service seront également annulés. 
+038_lbl_SubclienteAvisoAtivo			 = En réactivant le sous-client, tous les points de service seront également réactivés.
+038_msg_csvClienteObrigatorio		     = Le client est obligatoire.
+
+// MANTENIMIENTO SUB CLIENTES
+039_titulo_mantenimiento                 = Maintenance Sous-clients
+039_lbl_direccion                        = Adresse
+039_lbl_CodSubCliente                    = Code Sous-client
+039_lbl_CodigoAjeno                      = Code Externe
+039_lbl_DescSubCliente                   = Description Sous-client
+039_lbl_DesCodigoAjeno                   = Description Code Externe
+039_lbl_TipoSubCliente                   = Type Sous-client
+039_lbl_TituloSubCliente                 = Sous-client
+039_lbl_TotSaldo                         = Totalisateur de Solde
+039_lbl_Vigente                          = En vigueur
+039_lbl_TituloTotSaldo					 = Configuré totaux Sous-client
+039_lbl_ProprioTotSaldo					 = Totalise le solde réel?
+039_btn_AnadirTotalizador				 = Ajouter totalisateur
+039_lbl_cliente                          = Client
+039_btncliente							 = Rechercher Client
+039_btnBusquedaNivelSaldo                = Niveau Solde
+039_btnExcepciones                       = Exceptions par Sous-canal
+039_lblNivelSaldo                        = Niveau Solde
+039_rbOtroCliente                        = Autre Client
+039_rbEseCliente                         = Ce Sous-client
+039_msg_nivel_saldo                      = Seuls les sous-clients configurés comme Totalisateurs de Solde peuvent être responsables de la totalisation de leur propre solde !
+039_msg_csvClienteObrigatorio            = Le champ client est obligatoire.
+039_msg_csvCodSubClienteExistente		 = Le code de sous-client existe déjà pour le client sélectionné.
+039_msg_csvCodSubClienteObrigatorio		 = Le champ code sous-client est obligatoire.
+039_msg_csvDescSubClienteObrigatorio	 = Le champ description du sous-client est obligatoire.
+039_msg_csvTipoSubClienteObrigatorio	 = Le champ type de sous-client est obligatoire.
+039_msg_csvDescSubClienteExistente    	 = Le description sous-client existe déjà pour le client sélectionné.
+039_lbl_TituloDatosBanc					= Comptes bancaires configuré pour la Sous-client
+039_btn_AnadirCuenta					= Ajouter un compte bancaire
+
+//TIPO PROCEDENCIA
+040_lbl_titulo_pagina								= Recherche de Provenance
+040_lbl_codigo_tipoProcedencia						= Code de type de Provenance
+040_lbl_descricao_tipo								= Description type de Provenance
+040_lbl_Tipo_vigente								= En vigueur
+040_lbl_tipo_procedencia							= Types de Provenances
+040_lbl_titulo_procedencia							= Recherche de Provenances
+040_lbl_grd_codigo									= Code
+040_lbl_grd_descricao								= Description
+040_lbl_grd_Ativo									= En vigueur
+040_msg_codigTipoExistente							= Le Code de Type Provenance existe déjà.
+040_lbl_codigo_procedencia							= Le Code de Type Provenance est obligatoire. 
+040_lbl_decricao_procedencia						= Le Description Type Provenance est obligatoire. 
+
+// PUNTO SERVICIO
+041_titulo_pagina                        = Recherche Point de Services
+041_lbl_SubTitulosCriteriosBusqueda      = Critères de Recherche
+041_lbl_SubTitulo                        = PointService
+041_lbl_CodPuntoServicio                 = Code Point de Service
+041_lbl_DescPuntoServicio                = Description Point de Service
+041_lbl_TipoPuntoServicio                = Type Point de Service 
+041_lbl_TotSaldo                         = Totalisateur de Soldes
+041_lbl_Vigente                          = En vigueur
+041_ddl_selecione                        = Sélectionnez
+041_sim                                  = Oui
+041_nao                                  = Non
+041_lbl_grd_codigo                       = Code
+041_lbl_grd_descripcion					 = Description
+041_lbl_grd_tipo_PuntoServicio			 = Type Point de Service
+041_lbl_grd_tot_saldos					 = Tot. Soldes
+041_lbl_grd_vigente						 = En vigueur
+041_lbl_cliente                          = Client
+041_btncliente							 = Rechercher Client
+041_lbl_subcliente                       = Rechercher Sous-client
+041_lbl_gridSubcliente					 = Sous-client
+041_msg_csvClienteObrigatorio            = Le client est obligatoire.
+041_msg_csvSubClienteObrigatorio         = Le sous-client est obligatoire.
+
+// MANTENIMIENTO PUNTO SERVICIO
+042_titulo_mantenimiento                 = Maintenance Point de Services
+042_lbl_direccion                        = Adresse
+042_lbl_CodPuntoServicio                 = Code Point de Service
+042_lbl_CodigoAjeno                      = Code Externe
+042_lbl_DescPuntoServicio                = Description Point de Service
+042_lbl_DesCodigoAjeno                   = Description Code Externe
+042_lbl_TipoPuntoServicio                = Type Point de Service
+042_lbl_TituloPuntoServicio              = Point de Service
+042_lbl_TotSaldo                         = Totalisateur de Solde
+042_lbl_Vigente                          = En vigueur
+042_lbl_cliente                          = Client
+042_btncliente							 = Rechercher Client
+042_lbl_subcliente                       = Sous-client
+042_btn_subcliente			    		 = Rechercher Sous-client
+042_msg_csvClienteObrigatorio            = Le champ client est obligatoire.
+042_msg_csvCodPuntoServicioExistente	 = Le code de Point de Service existe déjà.
+042_msg_csvCodPuntoServicioObrigatorio	 = Le champ code du Point de Service est obligatoire.
+042_msg_csvDescPuntoServicioObrigatorio	 = Le champ description du Point de Service est obligatoire.
+042_msg_csvDescPuntoServicioExistente    = Le champ description du Client existe déjà.
+042_msg_csvTipoPuntoServicioObrigatorio	 = Le champ type de Point de Service est obligatoire.
+042_msg_csvSubClienteObrigatorio         = Le champ Sous-client est obligatoire.
+
+042_btnBusquedaNivelSaldo                = Niveau Solde
+042_btnExcepciones                       = Exceptions par Sous-canal
+042_lblNivelSaldo                        = Niveau Solde
+042_rbOtroCliente                        = Autre Client
+042_rbEseCliente                         = Ce Point Service
+042_msg_nivel_saldo                      = Seuls les points de services configurés comme Totalisateurs de Solde peuvent être responsables de la totalisation de leur propre solde !
+
+042_lbl_TituloTotSaldo					 = Configuré totaux Point de Service
+042_lbl_ProprioTotSaldo					 = Totalise le solde réel?
+042_btn_AnadirTotalizador				 = Ajouter totalisateur
+042_lbl_TituloDatosBanc					= Comptes bancaires configuré pour les Point de Services
+042_btn_AnadirCuenta					= Ajouter un compte bancaire
+
+//NIVEL SALDO
+043_lbl_descricao                        = Description
+043_lbl_nivel_saldo_defecto              = Recherche Nivel Solde 
+043_lbl_titulo_pagina                    = Niveaux Soldes par Sous-canal
+043_lbl_sub_canal                        = Sous-canal
+043_lbl_nivel_saldo                      = Niveau Solde
+043_ddl_selecione						 = Sélectionnez
+043_lbl_gdr_modificar                    = Modifier 
+043_lbl_gdr_eliminar                     = Éliminer
+043_lbl_gdr_sub_canal                    = Sous-canal
+043_lbl_gdr_nivel_saldo                  = Niveau Solde
+043_msg_csvClienteObrigatorio            = Le champ client est obligatoire
+043_msg_csvClienteTotalizador            = Le Client sélectionné n’est pas totalisateur de solde
+043_msg_SubClienteTotalizador            = Le Sous-client sélectionné n’est pas totalisateur de solde
+043_msg_csvPuntoServicioTotalizador      = Le Point de Service sélectionné n’est pas totalisateur de solde
+043_msg_subcanal_ya_configurado          = Sous-canal présente déjà une configuration de niveau de solde pour l’entité {0} !
+043_ddl_todos							 = Todos
+
+// ucTotSaldo
+044_lbl_grd_defecto						= Par défaut
+044_lbl_grd_subcanal					= Sous-canal
+044_lbl_grd_totalizador					= fourre-tout
+044_lbl_grd_cambiar						= changement
+044_lbl_grd_borrar						= supprimer
+044_valida_totalizador					= Comme une approche holistique existe déjà
+
+// BUSQUEDA PROCEDENCIAS
+055_lbl_titulo                           = Recherche Provenances
+055_lbl_tiposubcliente                   = Type de sous-clients
+055_lbl_tipopuntoservicio                = Type Point Service
+055_lbl_tipoprocedencia                  = Type de Provenance
+055_lbl_vigencia		                 = En vigueur
+055_lbl_subtitulosprocedencias			 = Provenances
+055_lbl_subtituloscriteriosbusqueda		 = Critères de Recherche
+055_lbl_gdr_tiposubcliente               = Type de sous-clients
+055_lbl_gdr_tipopuntoservicio            = Type Point Service
+055_lbl_gdr_tipoprocedencia              = Types de Provenance
+055_lbl_gdr_vigencia					 = En vigueur
+055_ddl_selecione						 = Sélectionner
+055_msg_tiposubclienteobligatorio		 = Le type de sous-client est obligatoire.
+055_msg_tipopuntoservicioobligatorio	 = Le type Point Service est obligatoire.
+055_msg_tipoprocedenciaobligatorio		 = Le type de Provenance est obligatoire.
+055_msg_erro_ProcedenciaExistente		 = Provenance existe déjà.
+055_titulo_mantenimiento_procedencia     = Maintenance de Provenance
+055_titulo_procedencia					 = Provenance
+
+btnDetalhes											= Detalles
+btnCopiar											= Copiar
+mn_grupocliente										= Grupo de Clientes
+info_msg_seleccionar_cliente						= ¡Seleccione un cliente antes de realizar esta operación!
+007_msg_usuario_sessao_expirada						= La sesión expiró. Por favor conectarse de nuevo.
+008_lbl_subtituloscriteriosbusqueda					= Criterios de Búsqueda
+008_msg_Agrupacióndescripcionobligatorio			= La descripción de la agrupación es obligatoria.
+008_msg_descricaoAgrupaciónexistente				= El código de la Agrupación ya existe.
+008_msg_codigoAgrupaciónexistente					= La descripción de la Agrupación ya existe.
+014_msg_error_MediosPago					= Alguns Medios Pago no pudieron ser actualizados.
+018_col_Agrupación								   = Agrupación
+043_msg_CodClienteObrigatorio            = El campo código del cliente es obrigatorio.
+043_lbl_titulo                           = Búsqueda Nivel Saldo
+043_lbl_cliente                          = Cliente
+043_lbl_subcliente                       = SubCliente
+043_lbl_puntoservicio                    = Punto de Servicio
+043_btncliente                           = Cliente
+043_btnSubCliente                        = SubCliente
+043_btnPuntoServicio                     = Punto de Servicio
+
+// ucDatosBanc
+086_lbl_grd_defecto						= Par défaut
+086_lbl_grd_divisa						= Badge
+086_lbl_grd_banco						= Banque
+086_lbl_grd_tipo						= Type
+086_lbl_grd_titular						= Titulaire
+086_lbl_grd_nroCuenta					= N ° de compte
+086_lbl_grd_nroDocumento				= Paper No.
+086_lbl_grd_cambiar						= changement
+086_lbl_grd_borrar						= supprimer
+
+// BusquedaDatosBancariosPopup
+087_lbl_titulo							= IAC
+087_lbl_banco							= Banque
+087_lbl_nrodocumento					= Paper No.
+087_lbl_divisa							= Badge
+087_lbl_titularidad						= Titulaire
+087_lbl_tipo							= Type
+087_lbl_obs								= Observations
+087_lbl_cuenta							= N ° de compte
+087_lbl_defecto							= Par défaut
+
+087_msg_csvBancoObrigatorio				= Le champ de la Banque est requise.
+087_msg_csvCuentaObrigatorio			= Le champ de la N ° de compte est requise.
+087_msg_csvDivisaObrigatorio			= Le champ de la Badge est requise.
+087_msg_csvTipoObrigatorio				= Le champ de la Type est requise.
+087_msg_csvTitularidadObrigatorio		= Le champ de la Titulaire est requise.
+
+//Importe Maximo
+056_lbl_codigoImporte = Código
+056_lbl_DescricaoImporte = Descrição
+056_lbl_Vigente = Vigente
+056_lbl_CanalImporte = Canal
+056_lbl_SubCanalImporte = SubCanal
+056_lbl_DivisaImporte = Divisa
+056_lbl_ValorMaximoImporte = Valor Máximo
+057_lbl_cliente = Cliente
+btnImporteMaximo = Importe Máximo
+
+//Tela Mensagem de Erro
+aplicacao//Tela Mensagem de Erro
+aplicacao											= IAC
+
+// WEBCONFIG
+WEBCONFIG_CHAVE_INVALIDA							= Chave {0} inexistente e ou valor {1} inválido.
+
+//Migracao do layout
+TituloDefault									= Inicial
+genDelegacion									= Agence
+genPais											= Pays
+genSector										= Secteur
+btnFechar										= Fermer
+
+//CONTROLE CLIENTE
+021_Cliente_Titulo								= Client
+021_Cliente_Popup_Titulo						= Recherche de Client
+021_Cliente_Popup_Resultado						= Données de Client
+021_Cliente_Popup_Filtro						= Critères de Recherche
+
+//CONTROLE SUBCLIENTE
+022_SubCliente_Titulo							= Sous-client
+022_SubCliente_Popup_Titulo						= Recherche de Sous-Client
+022_SubCliente_Popup_Resultado					= Données de Sous-client
+022_SubCliente_Popup_Filtro						= Critères de Recherche
+
+//CONTROLE SECTOR
+122_Sector_Titulo								= Secteur
+122_Sector_Popup_Titulo							= Recherche de Secteur
+122_Sector_Popup_Resultado						= Données de Secteur
+122_Sector_Popup_Filtro							= Critères de Recherche
+
+//CONTROLE PUNTO SERVICIO
+023_PtoServicio_Titulo							= Point de Service
+023_PtoServicio_Popup_Titulo					= Recherche de Point de Service
+023_PtoServicio_Popup_Resultado					= Données de Point de Service
+023_PtoServicio_Popup_Filtro					= Critères de Recherche
+
+//CONTROLE HELPER
+014_codigo										= Code :
+014_descricion									= Description :
+014_selecao_campo								= Sélectionnez un champ
+014_parametro_obrigatorio						= Le paramètre '{0}' est obligatoire.
+014_ConsiderarSectoresHijos						= Considerar los sectores hijos en el resultado de la búsqueda
+
+//Calendario
+bntProximo									= Suivant
+btnAnterior									= Précédent
+btnMoverArriba								= Haut
+btnMoverAbajo								= Bas
+horas										= heure(s)
+minutos										= minute(s)
+segundos									= seconde(s)
+dias										= [ "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi" ]
+meses										= [ "Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc" ]
+btnAgora										= Maintenant 
+btnConfirma										= Confirmer
+
+pagerFormatGrid									= Página {0} de {1} ({2} itens)
+
+021_Resultado_busqueda_puestos					= Dados de Puestos
+022_Resultado_busqueda_Operarios					= Dados de Operários
+
+002_lblCodigo									= Codigo
+gen_sim											= Si
+gen_nao											= No
+
+002_lblDescripcion								= Description
+btn_aceptar										= Valider
+
+//CONTROLE DE CLIENTE, SUBCLIENTE, PTO SERVICO E GRUPO CLIENTE
+028_btnBuscaCliente									= Recherche de Client
+028_btnBuscaSubCliente								= Recherche de Sous-Client
+028_btnBuscaPtoServicio								= Recherche de Point de Service
+028_tituloCliente									= Recherche de Client
+028_tituloSubCliente								= Recherche de Sous-Client
+028_tituloPtoServico								= Recherche de Point de Service
+028_lblCliente										= Client
+028_lblSubcliente									= Sous-Client
+028_lblPuntoServicio								= Point de Service
+028_lblCodigo										= Código
+028_lblDescricao									= Descripcion
+028_lblCodigoSubCliente								= Cód. SubCliente
+028_lblDescricaoSubCliente							= Des. Sous-Client
+028_lblCodigoPtoServico								= Cód. Point de Service
+028_lblDescricaoPtoServico							= Des. Point de Service
+028_lblCodigoAlheio 								= Cód. Ajeno 
+028_lblDescricaoAlheio 								= Des. Ajeno 
+028_lblCriterioBusca								= Criterios de Búsqueda
+028_lblGrupoClientes								= Grupo Clientes
+
+btnaceitar 										= Valider
+027_lblFiltros										= Configuración Filtro Reportes
+
+
+040_lbl_tipo_procedenciaForm							= Tipo Procedência
+
+010_lbl_titulosterminosForm								= Término IAC
+
+msg_remover_nao_selecionado						= Sélectionnez un ou plusieurs éléments à éliminer !
+
+btnInserirDenominacion = Enregistrer Denom.
+
+btnInserirTerminos = Enregistrer Term.
+
+btnInserirSubcanal = Enregistrer Sous-canal
+
+btnInserirComponente = Enregistrer Componente
+
+deviceIDasociado = DeviceID '{0}' is already associated with the list of machines in the planning
+
+//InformacionGenesis
+InformacionGenesis_grid_FileName = Descripción
+InformacionGenesis_grid_FileVersion = Versión del Archivo
+InformacionGenesis_grid_ProductVersion = Versión del Producto
+
+//InformacionIAC
+InformacionIAC_titulo_pagina	= Información de IAC {0}
+InformacionIAC_lbl_SubTitulo	= Información de IAC {0}
+InformacionIAC_btnExportar		= Exportar
+
+//Tela Transaciones
+lbl_titulo_transacion					= Búsqueda de Transaciones
+
+045_Usuario_Popup_Titulo = Recherche d’utilisateurs
+045_Usuario_Popup_Resultado = Données utilisateur
+045_Usuario_Popup_Filtro = Critères de recherche
+
+DeviceID_Popup_Titulo = Recherche d’ DeviceID
+DeviceID_Popup_Resultado = Données DeviceID
+DeviceID_Popup_Filtro = Critères de recherche
+
+024_Planificacion_Titulo = Planning
+024_Planificacion_Popup_Titulo = Planning Search
+024_Planificacion_Popup_Resultado = Planning Data
+024_Planificacion_Popup_Filtro = Search Criteria

@@ -1,0 +1,47 @@
+SELECT
+  P.COD_PUESTO,
+  SUM(NVL(PRB.CANTIDAD_REMESA,0)) CANTIDAD_REMESA,
+  SUM(NVL(PRB.CANTIDAD_BULTO,0)) CANTIDAD_BULTO
+FROM   
+(
+  -- Quantidade de remessas e malotes para trabalho a nível de remessa
+  SELECT 
+    COUNT(DISTINCT LT.OID_REMESA) CANTIDAD_REMESA,
+    COUNT(B.OID_BULTO) CANTIDAD_BULTO,
+    P.OID_PUESTO
+  FROM
+    GEPR_TPUESTO P 
+    INNER JOIN GEPR_TLISTA_TRABAJO LT ON LT.OID_PUESTO = P.OID_PUESTO 
+    INNER JOIN GEPR_TBULTO B ON B.OID_REMESA = LT.OID_REMESA
+	inner join gepr_tremesa R on r.oid_remesa = lt.oid_remesa
+  WHERE
+    P.COD_DELEGACION = []COD_DELEGACION AND
+    P.BOL_VIGENTE = 1 AND
+    LT.OID_BULTO IS NULL
+	and r.cod_estado_remesa IN ('AS','EC')
+  GROUP BY 
+    P.OID_PUESTO
+  UNION
+  -- Quantidade de remessas e malotes para trabalho a nível de malote
+  SELECT 
+    COUNT(DISTINCT LT.OID_REMESA) CANTIDAD_REMESA,
+    COUNT(LT.OID_BULTO) CANTIDAD_BULTO,
+    P.OID_PUESTO 
+  FROM
+        GEPR_TPUESTO P 
+        INNER JOIN GEPR_TLISTA_TRABAJO LT ON LT.OID_PUESTO = P.OID_PUESTO 
+		inner join gepr_tremesa R on r.oid_remesa = lt.oid_remesa
+      WHERE
+        P.COD_DELEGACION = []COD_DELEGACION AND 
+        P.BOL_VIGENTE = 1 AND 
+        LT.OID_BULTO IS NOT NULL and r.cod_estado_remesa IN ('AS','EC')
+  GROUP BY 
+    P.OID_PUESTO  
+  ) PRB
+  RIGHT JOIN GEPR_TPUESTO P ON PRB.OID_PUESTO = P.OID_PUESTO
+WHERE
+  P.COD_DELEGACION = []COD_DELEGACION AND
+  P.BOL_VIGENTE = 1 
+  {0}
+GROUP BY
+  P.COD_PUESTO

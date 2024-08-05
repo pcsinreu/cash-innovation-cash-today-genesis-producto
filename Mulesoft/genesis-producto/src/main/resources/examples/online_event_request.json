@@ -1,0 +1,20 @@
+{
+  "source": "SIP",
+  "idTran": "123e4567-e89b-42d3-a456-556642440000",
+  "integration": "cash-service-agreement",
+  "dateTime": "2019-10-20T20:00:00.000+01:00",
+  "object": {
+    "sourceId": "ES0200052007",
+    "operation": "A",
+    "attributes": [
+      {
+        "name": "att1",
+        "value": "valatt1"
+      }
+    ]
+  },
+  "context": {
+    "country": "BR",
+    "region": "LATAM"
+  }
+}

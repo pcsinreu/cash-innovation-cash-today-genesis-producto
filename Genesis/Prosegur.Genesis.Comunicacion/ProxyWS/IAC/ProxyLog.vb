@@ -1,0 +1,47 @@
+﻿Option Strict Off
+Option Explicit On
+
+Imports System
+Imports System.ComponentModel
+Imports System.Diagnostics
+Imports System.Web.Services
+Imports System.Web.Services.Protocols
+Imports System.Xml.Serialization
+Imports System.Configuration
+Imports Prosegur.Global.GesEfectivo
+
+<System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.1433"), _
+     System.Diagnostics.DebuggerStepThroughAttribute(), _
+     System.ComponentModel.DesignerCategoryAttribute("code"), _
+     System.Web.Services.WebServiceBindingAttribute(Name:="IACSoap", [Namespace]:="http://Prosegur.Global.GesEfectivo.IAC")> _
+Public Class ProxyLog
+    Inherits ProxyWS.ServicioBase
+    Implements IAC.ContractoServicio.ILog
+
+    Public Sub New()
+        MyBase.New()
+
+        ' Set UrlServicio
+        If UrlServicio IsNot Nothing AndAlso Not String.IsNullOrEmpty(UrlServicio) Then
+            Me.Url = UrlServicio & "IAC/log.asmx"
+        End If        
+
+        ' Set TimeOut Service
+        If Not String.IsNullOrEmpty(Ws_TimeOut) AndAlso IsNumeric(Ws_TimeOut) Then
+            MyBase.Timeout = Integer.Parse(Ws_TimeOut) * 1000
+        End If
+
+    End Sub
+
+    <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Prosegur.Global.GesEfectivo.IAC/InserirLog", RequestNamespace:="http://Prosegur.Global.GesEfectivo.IAC", ResponseNamespace:="http://Prosegur.Global.GesEfectivo.IAC", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)> _
+    Public Function InserirLog(objPeticion As IAC.ContractoServicio.Log.Peticion) As IAC.ContractoServicio.Log.Respuesta Implements IAC.ContractoServicio.ILog.InserirLog
+        Dim results() As Object = Me.Invoke("InserirLog", New Object() {objPeticion})
+        Return CType(results(0), IAC.ContractoServicio.Log.Respuesta)
+    End Function
+
+    <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Prosegur.Global.GesEfectivo.IAC/Test", RequestNamespace:="http://Prosegur.Global.GesEfectivo.IAC", ResponseNamespace:="http://Prosegur.Global.GesEfectivo.IAC", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)> _
+    Public Function Test() As IAC.ContractoServicio.Test.Respuesta Implements IAC.ContractoServicio.ILog.Test
+        Dim results() As Object = Me.Invoke("Test", New Object(-1) {})
+        Return CType(results(0), IAC.ContractoServicio.Test.Respuesta)
+    End Function
+End Class

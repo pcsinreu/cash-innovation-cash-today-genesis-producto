@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="REPORTE">
+      <DataSourceReference>/DEV_PD/Conexoes/REPORTES</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>430da951-0fd0-423c-a9e2-99a4b809d255</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="CONSULTA">
+      <Query>
+        <DataSourceName>REPORTE</DataSourceName>
+        <CommandText>WITH DATOS_MAES AS (
+  /*
+  MAES SIN PUNTO DE SERVICIO RELACIONADO
+  */
+  SELECT
+    MAQU.COD_IDENTIFICACION AS CODIGO,
+    DECODE(MAQU.BOL_ACTIVO, '0', 'NO', '1', 'SI') AS ACTIVA,
+    'NO' AS RELACIONADA,
+    CASE
+      WHEN LENGTH(TRIM(MAQU.COD_IDENTIFICACION)) &lt;&gt; 17 THEN 'EL CODIGO DE LA MAE (''' || MAQU.COD_IDENTIFICACION || ''') NO ESTA EN EL PATRON - TIENE ''' || LENGTH(TRIM(MAQU.COD_IDENTIFICACION)) || ''' POSICIONES Y DEBERIA TENER ''17'''
+      WHEN MAQU.COD_IDENTIFICACION &lt;&gt; SECT.COD_SECTOR THEN 'EL CODIGO DE LA MAE (''' || MAQU.COD_IDENTIFICACION || ''') ES DISTINTO DEL CODIGO DEL SECTOR (''' || SECT.COD_SECTOR || ''')'
+      WHEN MAQU.BOL_ACTIVO = 1 AND MAQU.BOL_ACTIVO &lt;&gt; SECT.BOL_ACTIVO THEN 'LA MAE TIENE UN ESTADO (''' || DECODE(MAQU.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''') DISTINTO DEL SECTOR (''' || DECODE(SECT.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''')'
+      WHEN MAQU.BOL_ACTIVO = 1 AND MAQU.BOL_ACTIVO &lt;&gt; PLAN.BOL_ACTIVO THEN 'LA MAE TIENE UN ESTADO (''' || DECODE(MAQU.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''') DISTINTO DE LA PLANTA (''' || DECODE(PLAN.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''')'
+      WHEN MAQU.BOL_ACTIVO = 1 AND MAQU.BOL_ACTIVO &lt;&gt; DELE.BOL_VIGENTE THEN 'LA MAE TIENE UN ESTADO (''' || DECODE(MAQU.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''') DISTINTO DE LA DELEGACION (''' || DECODE(DELE.BOL_VIGENTE, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''')'
+      WHEN MAQU.BOL_ACTIVO = 1 AND MAQU.BOL_ACTIVO &lt;&gt; PAIS.BOL_ACTIVO THEN 'LA MAE TIENE UN ESTADO (''' || DECODE(MAQU.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''') DISTINTO DEL PAIS (''' || DECODE(PAIS.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''')'
+      WHEN PAIS.COD_PAIS &lt;&gt; DELE.COD_PAIS THEN 'EL CODIGO DEL PAIS (''' || PAIS.COD_PAIS || ''') ESTA DISTINTO DEL CODIGO DEL PAIS EN LA DELEGACION ''' || DELE.DES_DELEGACION || ''' (''' || DELE.COD_PAIS || ''')'
+      WHEN SUBSTR(MAQU.COD_IDENTIFICACION, 1, 2) &lt;&gt; DELE.COD_PAIS THEN 'EL CODIGO DEL PAIS INFORMADO EN EL CODIGO DE LA MAE (''' || SUBSTR(MAQU.COD_IDENTIFICACION, 1, 2) || ''') ESTA DISTINTO DEL CODIGO DEL PAIS (''' || DELE.COD_PAIS || ''')'
+      WHEN COAJ_DELE.OID_CODIGO_AJENO IS NULL THEN 'LA DELEGACION (''' || DELE.DES_DELEGACION || ''') DE LA MAE NO TIENE UN CODIGO AJENO ''MAE'' RELACIONADO'
+      WHEN COAJ_DELE.COD_AJENO IS NULL OR LENGTH(TRIM(COAJ_DELE.COD_AJENO)) &lt; 5 OR COAJ_DELE.COD_AJENO &lt;&gt; SUBSTR(MAQU.COD_IDENTIFICACION, 1, 5) THEN 'EL CODIGO AJENO RELACIONADO A LA DELEGACION (''' || COAJ_DELE.COD_AJENO|| ''') DE LA MAE ES DISTINTO DEL CODIGO DE DELEGACION PRESENTE EN EL CODIGO DE LA MAE (''' || SUBSTR(MAQU.COD_IDENTIFICACION, 1, 5) || ''')'
+      WHEN COAJ_PUSE.OID_CODIGO_AJENO IS NULL OR LENGTH(TRIM(COAJ_PUSE.COD_AJENO)) = 0 THEN 'NO FUE ENCONTRADO UN CODIGO AJENO DE PUNTO DE SERVICIO QUE TENGA LOS MISMOS DATOS DEL CODIGO DE LA MAE (''' || SUBSTR(MAQU.COD_IDENTIFICACION, 6, 6) || '-' || SUBSTR(MAQU.COD_IDENTIFICACION, 12, 4) || '-' || SUBSTR(MAQU.COD_IDENTIFICACION, 16, 2) || ''')'
+      WHEN COAJ_SUCL.OID_CODIGO_AJENO IS NULL OR LENGTH(TRIM(COAJ_SUCL.COD_AJENO)) = 0 THEN 'NO FUE ENCONTRADO UN CODIGO AJENO DE SUBCLIENTE QUE TENGA LOS MISMOS DATOS DEL CODIGO DE LA MAE (''' || SUBSTR(MAQU.COD_IDENTIFICACION, 6, 6) || '-' || SUBSTR(MAQU.COD_IDENTIFICACION, 12, 4) || ''')'
+      WHEN COAJ_CLIE.OID_CODIGO_AJENO IS NULL OR LENGTH(TRIM(COAJ_CLIE.COD_AJENO)) = 0 THEN 'NO FUE ENCONTRADO UN CODIGO AJENO DE CLIENTE QUE TENGA LOS MISMOS DATOS DEL CODIGO DE LA MAE (''' || SUBSTR(MAQU.COD_IDENTIFICACION, 6, 6) || ''')'
+    END ERROR
+  FROM
+    RPGE_YMAQUINA MAQU
+    INNER JOIN RPGE_YSECTOR SECT ON MAQU.OID_SECTOR = SECT.OID_SECTOR
+    INNER JOIN RPGE_YPLANTA PLAN ON SECT.OID_PLANTA = PLAN.OID_PLANTA
+    INNER JOIN RPGE_YDELEGACION DELE ON PLAN.OID_DELEGACION = DELE.OID_DELEGACION
+    INNER JOIN RPGE_YPAIS PAIS ON DELE.OID_PAIS = PAIS.OID_PAIS
+    LEFT JOIN RPGE_YCODIGO_AJENO COAJ_DELE ON DELE.OID_DELEGACION = COAJ_DELE.OID_TABLA_GENESIS AND
+                                                       COAJ_DELE.COD_TIPO_TABLA_GENESIS = 'GEPR_TDELEGACION' AND
+                                                       COAJ_DELE.COD_IDENTIFICADOR = 'MAE'
+    LEFT JOIN RPGE_YPUNTO_SERVICIO MAQU_PUSE ON MAQU.OID_MAQUINA = MAQU_PUSE.OID_MAQUINA
+    LEFT JOIN RPGE_YCODIGO_AJENO COAJ_CLIE ON SUBSTR(MAQU.COD_IDENTIFICACION, 6, 6) = COAJ_CLIE.COD_AJENO AND
+                                                        COAJ_CLIE.COD_TIPO_TABLA_GENESIS = 'GEPR_TCLIENTE' AND
+                                                        COAJ_CLIE.COD_IDENTIFICADOR = 'MAE'
+    LEFT JOIN RPGE_YCLIENTE CLIE ON COAJ_CLIE.OID_TABLA_GENESIS = CLIE.OID_CLIENTE
+    LEFT JOIN RPGE_YCODIGO_AJENO COAJ_SUCL ON SUBSTR(MAQU.COD_IDENTIFICACION, 6, 6) || '-' || SUBSTR(MAQU.COD_IDENTIFICACION, 12, 4) = COAJ_SUCL.COD_AJENO AND
+                                                        COAJ_SUCL.COD_TIPO_TABLA_GENESIS = 'GEPR_TSUBCLIENTE' AND
+                                                        COAJ_SUCL.COD_IDENTIFICADOR = 'MAE'
+    LEFT JOIN RPGE_YSUBCLIENTE SUCL ON COAJ_SUCL.OID_TABLA_GENESIS = SUCL.OID_SUBCLIENTE
+    LEFT JOIN RPGE_YCODIGO_AJENO COAJ_PUSE ON SUBSTR(MAQU.COD_IDENTIFICACION, 6, 6) || '-' || SUBSTR(MAQU.COD_IDENTIFICACION, 12, 4) || '-' || SUBSTR(MAQU.COD_IDENTIFICACION, 16, 2) = COAJ_PUSE.COD_AJENO AND
+                                                        COAJ_PUSE.COD_TIPO_TABLA_GENESIS = 'GEPR_TPUNTO_SERVICIO' AND
+                                                        COAJ_PUSE.COD_IDENTIFICADOR = 'MAE'
+    LEFT JOIN RPGE_YPUNTO_SERVICIO PUSE ON COAJ_PUSE.OID_TABLA_GENESIS = PUSE.OID_PTO_SERVICIO
+  WHERE
+    MAQU_PUSE.OID_MAQUINA IS NULL
+  UNION ALL
+  /*
+  MAES CON PUNTO DE SERVICIO RELACIONADO
+  */
+  SELECT
+    MAQU.COD_IDENTIFICACION AS CODIGO,
+    DECODE(MAQU.BOL_ACTIVO, '0', 'NO', '1', 'SI') AS ACTIVA,
+    'SI' AS RELACIONADA,
+    CASE
+      WHEN LENGTH(TRIM(MAQU.COD_IDENTIFICACION)) &lt;&gt; 17 THEN 'EL CODIGO DE LA MAE (''' || MAQU.COD_IDENTIFICACION || ''') NO ESTA EN EL PATRON - TIENE ''' || LENGTH(TRIM(MAQU.COD_IDENTIFICACION)) || ''' POSICIONES Y DEBERIA TENER ''17'''
+      WHEN MAQU.COD_IDENTIFICACION &lt;&gt; SECT.COD_SECTOR THEN 'EL CODIGO DE LA MAE (''' || MAQU.COD_IDENTIFICACION || ''') ES DISTINTO DEL CODIGO DEL SECTOR (''' || SECT.COD_SECTOR || ''')'
+      WHEN MAQU.BOL_ACTIVO = 1 AND MAQU.BOL_ACTIVO &lt;&gt; SECT.BOL_ACTIVO THEN 'LA MAE TIENE UN ESTADO (''' || DECODE(MAQU.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''') DISTINTO DEL SECTOR (''' || DECODE(SECT.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''')'
+      WHEN MAQU.BOL_ACTIVO = 1 AND MAQU.BOL_ACTIVO &lt;&gt; PLAN.BOL_ACTIVO THEN 'LA MAE TIENE UN ESTADO (''' || DECODE(MAQU.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''') DISTINTO DE LA PLANTA (''' || DECODE(PLAN.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''')'
+      WHEN MAQU.BOL_ACTIVO = 1 AND MAQU.BOL_ACTIVO &lt;&gt; DELE.BOL_VIGENTE THEN 'LA MAE TIENE UN ESTADO (''' || DECODE(MAQU.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''') DISTINTO DE LA DELEGACION (''' || DECODE(DELE.BOL_VIGENTE, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''')'
+      WHEN MAQU.BOL_ACTIVO = 1 AND MAQU.BOL_ACTIVO &lt;&gt; PAIS.BOL_ACTIVO THEN 'LA MAE TIENE UN ESTADO (''' || DECODE(MAQU.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''') DISTINTO DEL PAIS (''' || DECODE(PAIS.BOL_ACTIVO, '0', 'NO ACTIVO', '1', 'ACTIVO') || ''')'
+      WHEN PAIS.COD_PAIS &lt;&gt; DELE.COD_PAIS THEN 'EL CODIGO DEL PAIS (''' || PAIS.COD_PAIS || ''') ESTA DISTINTO DEL CODIGO DEL PAIS EN LA DELEGACION ''' || DELE.DES_DELEGACION || ''' (''' || DELE.COD_PAIS || ''')'
+      WHEN SUBSTR(MAQU.COD_IDENTIFICACION, 1, 2) &lt;&gt; DELE.COD_PAIS THEN 'EL CODIGO DEL PAIS INFORMADO EN EL CODIGO DE LA MAE (''' || SUBSTR(MAQU.COD_IDENTIFICACION, 1, 2) || ''') ESTA DISTINTO DEL CODIGO DEL PAIS (''' || DELE.COD_PAIS || ''')'
+      WHEN COAJ_DELE.OID_CODIGO_AJENO IS NULL THEN 'LA DELEGACION (''' || DELE.DES_DELEGACION || ''') DE LA MAE NO TIENE UN CODIGO AJENO ''MAE'' RELACIONADO'
+      WHEN COAJ_DELE.COD_AJENO IS NULL OR LENGTH(TRIM(COAJ_DELE.COD_AJENO)) &lt; 5 OR COAJ_DELE.COD_AJENO &lt;&gt; SUBSTR(MAQU.COD_IDENTIFICACION, 1, 5) THEN 'EL CODIGO AJENO RELACIONADO A LA DELEGACION (''' || COAJ_DELE.COD_AJENO|| ''') DE LA MAE ES DISTINTO DEL CODIGO DE DELEGACION PRESENTE EN EL CODIGO DE LA MAE (''' || SUBSTR(MAQU.COD_IDENTIFICACION, 1, 5) || ''')'
+      WHEN COAJ_PUSE.OID_CODIGO_AJENO IS NULL OR LENGTH(TRIM(COAJ_PUSE.COD_AJENO)) = 0 THEN 'NO FUE ENCONTRADO UN CODIGO AJENO ''MAE'' PARA EL PUNTO DE SERVICIO (''' || PUSE.OID_PTO_SERVICIO || ''') RELACIONADO'
+      WHEN COAJ_SUCL.OID_CODIGO_AJENO IS NULL OR LENGTH(TRIM(COAJ_SUCL.COD_AJENO)) = 0 THEN 'NO FUE ENCONTRADO UN CODIGO AJENO ''MAE'' PARA EL SUBCLIENTE (''' || SUCL.OID_SUBCLIENTE || ''') RELACIONADO'
+      WHEN COAJ_CLIE.OID_CODIGO_AJENO IS NULL OR LENGTH(TRIM(COAJ_CLIE.COD_AJENO)) = 0 THEN 'NO FUE ENCONTRADO UN CODIGO AJENO ''MAE'' PARA EL CLIENTE (''' || CLIE.OID_CLIENTE || ''') RELACIONADO'
+      WHEN LENGTH(TRIM(COAJ_PUSE.COD_AJENO)) &lt;&gt; 14 THEN 'EL CODIGO AJENO ''MAE'' DEL PUNTO DE SERVICIO (''' || COAJ_PUSE.COD_AJENO || ''') NO ESTA EN EL PATRON - TIENE ''' || LENGTH(TRIM(COAJ_PUSE.COD_AJENO)) || ''' POSICIONES Y DEBERIA TENER ''14'''
+      WHEN LENGTH(TRIM(COAJ_SUCL.COD_AJENO)) &lt;&gt; 11 THEN 'EL CODIGO AJENO ''MAE'' DEL SUBCLIENTE (''' || COAJ_SUCL.COD_AJENO || ''') NO ESTA EN EL PATRON - TIENE ''' || LENGTH(TRIM(COAJ_SUCL.COD_AJENO)) || ''' POSICIONES Y DEBERIA TENER ''11'''
+      WHEN LENGTH(TRIM(COAJ_CLIE.COD_AJENO)) &lt;&gt; 6 THEN 'EL CODIGO AJENO ''MAE'' DEL CLIENTE (''' || COAJ_CLIE.COD_AJENO || ''') NO ESTA EN EL PATRON - TIENE ''' || LENGTH(TRIM(COAJ_CLIE.COD_AJENO)) || ''' POSICIONES Y DEBERIA TENER ''6'''
+      WHEN SUBSTR(COAJ_PUSE.COD_AJENO, 1, 6) &lt;&gt; COAJ_CLIE.COD_AJENO OR SUBSTR(COAJ_PUSE.COD_AJENO, 8, 4) &lt;&gt; SUBSTR(COAJ_SUCL.COD_AJENO, 8, 4) OR LENGTH(TRIM(SUBSTR(COAJ_PUSE.COD_AJENO, 13, 2))) &lt;&gt; 2 THEN 'EL CODIGO AJENO ''MAE'' DEL PUNTO DE SERVICIO (''' || COAJ_PUSE.COD_AJENO || ''') NO ESTA EN EL PATRON - CODIGO AJENO DEL CLIENTE CON 6 POSICIONES (''' || COAJ_CLIE.COD_AJENO || ''') + ''-'' + CODIGO AJENO DEL SUBCLIENTE CON 4 POSICIONES (''' || COAJ_SUCL.COD_AJENO || ''') + ''-'' + CODIGO DEL PUNTO DE SERVICIO CON 2 POSICIONES, EJEMPLO: 000000-0000-00'
+      WHEN SUBSTR(COAJ_SUCL.COD_AJENO, 1, 6) &lt;&gt; COAJ_CLIE.COD_AJENO OR LENGTH(TRIM(SUBSTR(COAJ_SUCL.COD_AJENO, 8, 4))) &lt;&gt; 4 THEN 'EL CODIGO AJENO ''MAE'' DEL SUBCLIENTE (''' || COAJ_SUCL.COD_AJENO || ''') NO ESTA EN EL PATRON - CODIGO AJENO DEL CLIENTE CON 6 POSICIONES (''' || COAJ_CLIE.COD_AJENO || ''') + ''-'' + CODIGO DEL SUBCLIENTE CON 4 POSICIONES, EJEMPLO: 000000-0000'
+    END ERROR
+  FROM
+    RPGE_YMAQUINA MAQU
+    INNER JOIN RPGE_YSECTOR SECT ON MAQU.OID_SECTOR = SECT.OID_SECTOR
+    INNER JOIN RPGE_YPLANTA PLAN ON SECT.OID_PLANTA = PLAN.OID_PLANTA
+    INNER JOIN RPGE_YDELEGACION DELE ON PLAN.OID_DELEGACION = DELE.OID_DELEGACION
+    INNER JOIN RPGE_YPAIS PAIS ON DELE.OID_PAIS = PAIS.OID_PAIS
+    INNER JOIN RPGE_YPUNTO_SERVICIO PUSE ON MAQU.OID_MAQUINA = PUSE.OID_MAQUINA
+    INNER JOIN RPGE_YSUBCLIENTE SUCL ON PUSE.OID_SUBCLIENTE = SUCL.OID_SUBCLIENTE
+    INNER JOIN RPGE_YCLIENTE CLIE ON SUCL.OID_CLIENTE = CLIE.OID_CLIENTE
+    LEFT JOIN RPGE_YCODIGO_AJENO COAJ_DELE ON DELE.OID_DELEGACION = COAJ_DELE.OID_TABLA_GENESIS AND
+                                                       COAJ_DELE.COD_TIPO_TABLA_GENESIS = 'GEPR_TDELEGACION' AND
+                                                       COAJ_DELE.COD_IDENTIFICADOR = 'MAE'
+    LEFT JOIN RPGE_YCODIGO_AJENO COAJ_CLIE ON CLIE.OID_CLIENTE = COAJ_CLIE.OID_TABLA_GENESIS AND
+                                                       COAJ_CLIE.COD_TIPO_TABLA_GENESIS = 'GEPR_TCLIENTE' AND
+                                                       COAJ_CLIE.COD_IDENTIFICADOR = 'MAE'
+    LEFT JOIN RPGE_YCODIGO_AJENO COAJ_SUCL ON SUCL.OID_SUBCLIENTE = COAJ_SUCL.OID_TABLA_GENESIS AND
+                                                       COAJ_SUCL.COD_TIPO_TABLA_GENESIS = 'GEPR_TSUBCLIENTE' AND
+                                                       COAJ_SUCL.COD_IDENTIFICADOR = 'MAE'
+    LEFT JOIN RPGE_YCODIGO_AJENO COAJ_PUSE ON PUSE.OID_PTO_SERVICIO = COAJ_PUSE.OID_TABLA_GENESIS AND
+                                                       COAJ_PUSE.COD_TIPO_TABLA_GENESIS = 'GEPR_TPUNTO_SERVICIO' AND
+                                                       COAJ_PUSE.COD_IDENTIFICADOR = 'MAE'
+), DATOS_MAES_MULTICLIENTES AS (
+  SELECT
+    DAMA.CODIGO
+  FROM
+    DATOS_MAES DAMA
+  WHERE
+    DAMA.RELACIONADA = 'SI'
+  GROUP BY
+    DAMA.CODIGO
+  HAVING
+    COUNT(1) &gt; 1
+)
+SELECT
+  DISTINCT
+  CASE WHEN DAMA.ERROR IS NOT NULL THEN 'INVALIDA' ELSE 'VALIDA' END ESTADO,
+  DAMA.CODIGO,
+  DAMA.ACTIVA,
+  DAMA.RELACIONADA,
+  CASE WHEN DAMM.CODIGO IS NOT NULL THEN 'SI' ELSE 'NO' END MULTICLIENTE,
+  DAMA.ERROR
+FROM
+  DATOS_MAES DAMA
+  LEFT JOIN DATOS_MAES_MULTICLIENTES DAMM ON DAMA.CODIGO = DAMM.CODIGO
+ORDER BY
+  1, 4</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ESTADO">
+          <DataField>ESTADO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CODIGO">
+          <DataField>CODIGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ACTIVA">
+          <DataField>ACTIVA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RELACIONADA">
+          <DataField>RELACIONADA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MULTICLIENTE">
+          <DataField>MULTICLIENTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ERROR">
+          <DataField>ERROR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix2">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>37.43854mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>37.43854mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>37.43854mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>37.43854mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>37.43854mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>37.43854mm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>6mm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox30">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Estado</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox30</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#4e648a</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#384c70</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox31">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Código</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox31</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#4e648a</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#384c70</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox33">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Activa</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox33</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#4e648a</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#384c70</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox35">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Relaciona a uno Punto de Servicio?</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox35</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#4e648a</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#384c70</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox37">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Multcliente?</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox37</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#4e648a</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#384c70</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox39">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Error</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox39</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#4e648a</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#384c70</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>6mm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ESTADO">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ESTADO.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Color>#4d4d4d</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ESTADO</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#e5e5e5</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="CODIGO">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!CODIGO.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Color>#4d4d4d</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>CODIGO</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#e5e5e5</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ACTIVA">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ACTIVA.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Color>#4d4d4d</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ACTIVA</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#e5e5e5</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="RELACIONADA">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!RELACIONADA.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Color>#4d4d4d</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>RELACIONADA</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#e5e5e5</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="MULTICLIENTE">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!MULTICLIENTE.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Color>#4d4d4d</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>MULTICLIENTE</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#e5e5e5</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ERROR">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ERROR.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <Color>#4d4d4d</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ERROR</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>#e5e5e5</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Detalhes" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>CONSULTA</DataSetName>
+            <Top>17.35667mm</Top>
+            <Left>0mm</Left>
+            <Height>12mm</Height>
+            <Width>224.63124mm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Textbox Name="ReportTitle2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Now()</Value>
+                    <Style>
+                      <FontFamily>Verdana</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
+            <rd:DefaultName>ReportTitle</rd:DefaultName>
+            <Top>7.9375mm</Top>
+            <Height>5.13292mm</Height>
+            <Width>166.42292mm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="ReportTitle">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Génesis Producto - Validaciones de Máquinas (MAE's)</Value>
+                    <Style>
+                      <FontFamily>Verdana</FontFamily>
+                      <FontSize>14pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
+            <rd:DefaultName>ReportTitle</rd:DefaultName>
+            <Top>0mm</Top>
+            <Height>7.51417mm</Height>
+            <Width>166.42292mm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>29.63333mm</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>224.63124mm</Width>
+      <Page>
+        <PageHeight>297mm</PageHeight>
+        <PageWidth>210mm</PageWidth>
+        <LeftMargin>20mm</LeftMargin>
+        <RightMargin>20mm</RightMargin>
+        <TopMargin>20mm</TopMargin>
+        <BottomMargin>20mm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <rd:ReportUnitType>Mm</rd:ReportUnitType>
+  <rd:ReportServerUrl>http://brbhzsvd00067/ReportServer</rd:ReportServerUrl>
+  <rd:ReportID>0780ebc1-f08e-4300-baa3-b8c0d12d1eab</rd:ReportID>
+</Report>

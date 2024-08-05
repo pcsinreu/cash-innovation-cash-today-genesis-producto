@@ -1,0 +1,64 @@
+{
+   "apiVersion":"1.0",
+   "countryCode":"PT",
+   "transactions":[
+      {
+         "deviceId":"PT083503783001A01",
+         "branchCode":"PT083",
+         "branchUniqueCode":"PT0200001145",
+         "entityCode":"503783",
+         "entityUniqueCode":"PT0200008427",
+         "entityName":"ADM - RESTAURANTE RÁPIDO, LDA",
+         "centerCode":"503783-001a",
+         "centerUniqueCode":"PT0390027480",
+         "centerName":"Centro 1",
+         "servicePointCode":"503783-001a-01",
+         "servicePointUniqueCode":"PT0490000541",
+         "servicePointName":"Punto 1",
+         "channelCode":"ING",
+         "channelName":"Ingresador",
+         "subChannelCode":"INGBIL",
+         "subChannelName":"Ingresador de Billetes",
+         "transactionDate":"2021-09-07T13:47:32+02:00",
+         "accountingDate":"2021-09-07T13:47:32+02:00",
+         "creationDate":"2021-09-07T13:48:12+02:00",
+         "typeCode":"MAECIC",
+         "typeGroup":"CASHIN",
+         "typeName":"CashIn Contado",
+         "code":"20210907134732_503783001A01_CASHIN_1",
+         "actualId":"20210907134732_503783001A01_1",
+         "collectionId":"503783001A01_1",
+         "notified":true,
+         "notifiedDate":"2021-09-07T14:35:21+02:00",
+         "earlyValued":true,
+         "earlyValuedDate":"2021-09-07T17:47:15+02:00",
+         "currencyCode":"BRL",
+         "total":600,
+         "denominations":[
+            {
+               "code":"R100",
+               "bill":true,
+               "quantity":5,
+               "total":500
+            },
+            {
+               "code":"R50",
+               "bill":true,
+               "quantity":2,
+               "total":100
+            }
+         ],
+         "extraDatas":[
+            {
+               "code":"TellerLogin",
+               "value":"241943"
+            },
+            {
+               "code":"Receipt Number",
+               "value":"20180704033210"
+            }
+         ],
+         "virtual":false
+      }
+   ]
+}

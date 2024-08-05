@@ -1,0 +1,1 @@
+﻿select PD_CAMPOEXTRA_IDCAMPOEXTRA_SEQ.nextval from dual

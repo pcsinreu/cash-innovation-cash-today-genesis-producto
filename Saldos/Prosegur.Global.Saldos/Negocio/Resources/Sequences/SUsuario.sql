@@ -1,0 +1,1 @@
+﻿select PD_USUARIO_IDUSUARIO_SEQ.nextval from dual

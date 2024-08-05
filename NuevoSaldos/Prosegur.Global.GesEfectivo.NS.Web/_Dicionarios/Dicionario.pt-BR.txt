@@ -1,0 +1,2098 @@
+﻿//INFORMACIÓN PADRAO
+Gen_msg_atributo							= Atributo {0} no informado.
+msg_gen_Parametro_Obrigatorio				= Parametro obrigatório{0}
+parametro_Delegacion						= : Delegação
+parametro_Planta							= : Planta
+parametro_Sector							= : Setor
+parametro_UsuarioCreacion					= : Usuário Criação
+parametro_Cliente							= : Cliente
+gen_srv_msg_item_no_encontrado_con_parametros_informados = '{0}' não encontrado com os parâmetros informados.
+msgconcurrenciasobreregistro                = Erro de concorrência sobre o registro.
+msgactualizarpantalla                       = Não foi possivel realizar a tarefa solicitada, pois as informações contidas na tela estão desatualizadas. A tela será atualizada com as informações contidas na base de dados.
+
+lblSemRegistro									= A consulta não retornou nenhum resultado.
+lblSemSaldo = NÃO EXISTE SALDO PARA ESTE SETOR
+gridSemRegistro									= Não há linhas
+btnFechar										= Fechar
+gen_selecione									= Selecione
+genDelegacion									= Delegação
+genPais											= País
+genSector										= Setor
+lblCalendar										= Calendario
+btnConsultar									= Consultar
+btnLimpar										= Limpar
+btnBuscar										= Buscar
+btnAceitar										= Aceitar
+btnCancelar										= Cancelar
+btnConfirma										= Confirma
+btnAgora										= Agora 
+msg_remover_nao_selecionado						= Selecione um ou mais itens a serem removidos!
+msg_sessao_finalizada							= Sessão finalizada
+msg_version_internet_explorer                   = O novo saldos pode ser utilizado nesse momento apenas no Internet Explorer 8 ou superior! Verifique se o seu navegador não está em modo de compatibilidade.
+txt_mas_informaciones							= mais informações
+msg_usuario_sem_permisio						= O usuário não tem permissão neste sistema.
+msg_usuario_sessao_expirada						= A sua sessão expirou. Favor efetuar o login novamente.
+tkn_token_nao_consumida                         = Token de acesso inválida ou expirada
+msg_campo_obrigatorio							= O campo {0} é obrigatório!
+msg_cuentanoencontra		                    = Conta não encontrada com o identificador "{0}".
+btnAgregar										= Selecionar
+btnAgregarTodos									= Selecionar Todos
+btnDesagregarTodos								= Anular seleção de todos
+btnRemoverTodos									= Remover Todos
+btnRemover									    = Remover
+bntProximo										= Próximo 
+btnAnterior										= Anterior
+btnMoverArriba									= Acima
+btnMoverAbajo									= Abaixo
+horas											= hora(s)
+minutos											= minuto(s)
+segundos										= segundo(s)
+dias											= [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ]
+meses											= [ "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" ]
+err_campo_data_invalida							= O campo "{0}" não está preenchido com uma data válida.
+err_campo_hora_invalida							= O campo "{0}" não está preenchido com uma hora válida.
+genNoImplementado								= Funcionalidade conhecida, mas não implementada.
+genTxtValorInvalido								= O campo {0} não possui um valor válido!
+msg_producidoError								= Ocorreu o erro:&nbsp;
+msg_loading										= Por favor, espere um momento enquanto o sistema está:&nbsp;
+btnSim											= Sim
+btnNao											= Não
+
+//Tela Mensagem de Erro
+aplicacao										= Novo Saldos
+
+//Login Unificado
+000_msg_verificarToken							= Validando o Token.
+000_msg_converterPermisos						= Configurando as permissões.
+000_msg_cargarDelegaciones						= Carregando as informações das delegações.
+000_msg_grabarSesion							= Gravando a sessão.
+000_msg_urlDestino								= Recuperando a url de destino.
+000_error_converterPermisos						= Ocorreu o seguinte erro ao tentar converter as permissões.
+000_error_urlDestino							= Ocorreu o seguinte erro ao tentar recuperar a URL de destino.
+000_msg_redirecionando							= Redirecionando...
+
+//POPUP BUSCA DE CLIENTES
+001_titulo										= Busca de Clientes
+001_codigo										= Codigo
+001_descricao									= Descrição
+001_titulo_busca								= Critérios de Busca
+001_titulo_resultadoCliente						= Clientes
+001_seleccione_un_cliente						= Selecione um cliente
+
+//VALIDA CERTIFICADO
+002_btnExecutar									= Executar
+002_btnEliminar									= Eliminar
+002_btnValidaCertificado						= Valida Certificado
+002_btnConfiguraConfiguracion					= Consulta Configuração saldo
+002_lblSectores									= Setores
+002_lblDelegaciones								= Delegação
+002_lblSubCanal									= Subcanal
+002_lblConsulta									= Consulta
+002_lblTipoCertificado							= Tipo Certificado
+002_lblDadosEntrada								= Dados de Entrada
+002_lblDadosSaida								= Dados de Saída
+002_lblClienteTotalizador						= Cliente Totalizador
+002_lblCliente									= Cliente
+002_lblFechaHasta								= Data / Hora
+002_lblIdentificador							= Identificador
+002_lblCalendar									= Calendário
+002_lblmsgerroData								= É obrigatório informar a Data / Hora
+002_lblmsgErroDelegacion						= É obrigatório informar uma Delegação
+002_lblmsgErroSector							= É obrigatório informar um Sector
+002_lblmsgErroSubcanal							= É obrigatório informar um Subcanal
+002_lblmsgErroCliente							= É obrigatório informar um cliente
+002_imbToolTipClinte							= Busca de  Cliente
+002_imbToolTipCalender							= Data
+002_tituloCertificadoDefinitivo					= Certificado Definitivo
+002_tituloCertificadoProvisional				= Certificado Provisional
+002_tituloCertificadoConsulta					= Certificado Consulta
+002_lblCertificadoProvisionalCom				= Certificado provisório com período de fechamento
+002_lblCertificadoProvisionalSin				= Certificado provisório sem período de fechamento
+002_MsgPerguntaCertConflito						= Deseja substituir?
+002_lblClienteTotalizadordeSaldo				= Clientes / Subclientes / Pontos de Serviço que totalizam no cliente totalizador de saldo selecionado
+002_lblCertificados								= Certificados
+002_lblSelecioneCertificado						= Selecione um Certificado
+002_lblDataMaiorAtual							= A data informada é maior do que a data atual
+002_lblCertificadoNaoEncontrado					= Para o cliente totalizador de saldo informado, não foram encontrados certificados para conversão.
+0001_MSG_CERTIFICADO_FILTROS_IGUAL  			= Existe certificado(s) gerado(s) com a mesma combinação de filtros: {0}
+0001_MSG_CERTIFICADO_FECHA_EMITIDO				= Existe(m) certificado(s) definitivos com data maior ou igual à data do certificado emitido: {0}
+
+//GENERAR CERTIFICACION
+0002_Msg_CertificadoNoGenerado					= O certificado não foi gerado, pois não há nenhum movimento de saldo pendente de certificação para o cliente!
+
+//TELA OBTENERNIVELSALDOS
+003_tituloPagina								= Obter Nivel Saldos						
+003_lblDadosEntrada								= Dados de Entrada
+003_lblClienteTotalizador						= Cliente Totalizador de Saldos
+003_lblSubCanal									= SubCanal
+003_msg_error_ClienteTotalizadorSemCliente		= Clientes que totalizam em cliente totalizador esta vazio
+003_lbl_Titulo_ClientesTotalizador				= Clientes que totalizam no subcanal selecionado e totalizam no totalizador de saldo selecionado
+003_lbl_Titulo_ClientesNaoTotalizador			= Clientes que se totalizam no subcanal selecionado e não totalizam no totalizador de saldo selecionado
+003_grid_CodCliente								= Código cliente
+003_grid_DesCliente								= Descrição cliente
+003_grid_CodSubCliente							= Código subcliente
+003_grid_DesSubCliente							= Descrição subcliente
+003_grid_CodPtoServico							= Cód. Pto. Serviço
+003_grid_DesPtoServico							= Desc. Pto. Serviço
+
+//TELA RESULTADO CERTIFICADO
+004_lblDatosEntrada								= Dados de Entrada
+004_lblDatosSalida								= Dados de Saída
+004_lblCodigoCertificado    					= Código do Certificado:
+004_btnConsultar								= Consultar
+004_lblResultado								= Log de execução do processo de certificação: {0}
+004_lblTitulo									= Certificados > Resultado Certificado
+004_msgSinRegistro								= Não foi encontrado nenhum certificado com o código informado.
+004_msgCodigoCertificado						= Código do Certificado
+004_btnExportarXml								= Exportar Xml
+
+//TELA RELATÓRIO DE CERTIFICADO DEFECTO
+005_lblTitulo									= Reportes > Basado en Certificados > Certificado Defecto
+005_lblCodigoCertificado						= Código do Certificado
+005_lblDelegacion								= Delegação
+005_lblSubCanal									= SubCanal:
+005_btnGerar									= Executar Relatório
+005_lblFiltro									= Filtro Relatório
+005_msgComboVazio								= Informe o Código do Certificado
+005_msgCertificadoNoEncontrato					= Código do certificado não encontrado.
+
+//EJECUTA CERTIFICADO
+006_lblAviso									= O processo de certificação irá executar a certificar a seleção abaixo:
+006_lblFiltros									= Filtros
+006_lblPuntoServicio							= Ponto de Serviço
+006_lblSubcliente								= Subcliente
+006_lblUltimaExecucao							= Última Execução
+006_lblCliente									= Cliente
+006_lblDadosCertificado							= Dados do Certificado
+006_lblTituloEjecutaCertificado					= Validação Antes da Execução
+006_lblConsulta									= Consulta
+006_lblProvisionalCon							= Provisional con cierre de periodo
+006_lblProvisionalSim							= Provisional sin cierre de periodo
+006_lblDefinitivo								= Definitivo
+
+//GRID CERTIFICADOS
+007_lblCodigoCertificado						= Código
+007_lblCodigoEstado								= Estado
+007_lblFechaCertificado							= Data/Hora
+
+//VALIDA USERCONTROL ucDatosFormulario
+008_Titulo										= Dados do Formulario
+008_codformulario								= Cod. Formulario
+008_desformulario								= Des. Formulario
+008_codcolor									= Cor
+008_codtpdocumento								= Cod. Tipo Documento
+008_destpdocumento								= Des. Tipo Documento
+008_colecao_tipodocumento_nulo					= O objeto TipoDocumento está vazio.
+008_colecao_formulario_nulo						= O objeto Formulario está vazio.
+008_campo_vazio					     			= O campo '{0}' do '{1}' es obrigatório.
+008_formulario_sin_imagen						= Formulario sem imagem
+
+//USER CONTROL UcDatosCanal
+009_codDescricaoCanal							= Código - Descrição Canal
+009_codDescricaoSubCanal						= Código - Descrição SubCanal
+
+//USER CONTROL ucOrigenMovimiento
+010_desOrigem									= Origem
+010_codDelegacao								= C. Deleg
+010_desDelegacao								= Delegação
+010_codPlanta									= C. Planta
+010_desPlanta									= Planta
+010_codSetor									= C. Setor
+010_desSetor									= Setor (sub setor)
+
+//010 - Serviço Recibir Remesas Pendientes
+010_remesa_declarado_divisas			= Divisa informada não está nas divisas possíveis (Declarado Remessa).
+010_remesa_declarado_agrupaciones		= Agrupação informada não está nas agrupações possíveis (Declarado Agrupacion Remessa).
+010_remesa_declarado_ticket			= Ticket declarado, porém não é para contar ticket (Declarado Remessa).
+010_remesa_declarado_cheque			= Cheque declarado, porém não é para contar cheque (Declarado Remessa).
+010_remesa_declarado_otro_valor			= Outros valores declarado, porém não é para contar outro valor (Declarado Remessa).
+010_remesa_estado_trabajo			= Estado da remessa não existe na lista de valores possíveis.
+010_bulto_declarado_divisas			= Divisa informada não está nas divisas possíveis (Declarado Bulto).
+010_bulto_declarado_agrupaciones		= Agrupação informada não está nas agrupações possíveis (Declarado Agrupacion Bulto).
+010_bulto_declarado_ticket			= Ticket declarado, porém não é para contar ticket (Declarado Bulto).
+010_bulto_declarado_cheque			= Cheque declarado, porém não é para contar cheque (Declarado Bulto).
+010_bulto_declarado_otro_valor			= Outros valores declarado, porém não é para contar outro valor (Declarado Bulto).
+010_bulto_cuenta_ticket_total			= Não tem como contar Ticket por Total, pois o Ticket não é contado.
+010_bulto_cuenta_cheque_total			= Não tem como contar Cheque por Total, pois o Cheque não é contado.
+010_bulto_cuenta_otro_valor_total		= Não tem como contar Outro Valor por Total, pois o Outro Valor não é contado.
+010_bulto_cuenta_tarjeta_total			= Não tem como contar Cartões por Total, pois os Cartões não são contados.
+010_bulto_cuenta_ticket_total_termino		= Não devem existir terminos para Ticket, pois o Ticket é contado por total.
+010_bulto_cuenta_cheque_total_termino		= Não devem existir terminos para Cheque, pois o Cheque é contado por total.
+010_bulto_cuenta_otro_valor_total_termino	= Não devem existir terminos para Outro Valor, pois o Outro Valor é contado por total.
+010_bulto_cuenta_tarjeta_total_termino		= Não devem existir terminos para Cartões, pois o Cartão é contado por total.
+010_bulto_caracteristica_diferente		= Todos os bultos da remessa devem estar com características de CONTAGEM POR REMESSA.
+010_bulto_caract_carga_previa			= Todos os bultos da remessa devem estar apenas com uma das características CARGA PRÉVIA ou CARGA PRÉVIA AUTOMATIZADA.
+010_bulto_caract_cp_conta_parcial		= Todos os bultos da remessa que posuem a característica CARGA PRÉVIA ou CARGA PRÉVIA AUTOMATIZADA também devem ter a característica PROCESSA POR PARCIAIS.
+010_bulto_caract_atm_disp_conta_parcial		= Todos os bultos da remessa que posuem a característica 'CONTEO ATM - DISPENSADOR, RECHAZO Y TARJETA' também devem ter a característica 'PROCESAR POR PARCIALES'.
+010_bulto_caract_atm_disp_conteo_remesa		= Todos os bultos da remessa que posuem a característica 'CONTEO ATM - DISPENSADOR, RECHAZO Y TARJETA' também devem ter a característica 'CONTEO POR REMESA'.
+010_bulto_caract_atm_depos_conta_parcial	= Todos os bultos da remessa que posuem a característica 'CONTEO ATM - DEPÓSITO' também devem ter a característica 'PROCESAR POR PARCIALES'.
+010_bulto_caract_atm_depos_conteo_remesa	= Todos os bultos da remessa que posuem a característica 'CONTEO ATM - DEPÓSITO' também devem ter a característica 'CONTEO POR REMESA'.
+010_bulto_caract_atm_ingre_sin_parcial		= Todos os bultos da remessa que posuem a característica 'CONTEO ATM - INGRESADOR' não devem ter a característica 'PROCESAR POR PARCIALES'.
+010_bulto_caract_atm_ingre_conteo_remesa	= Todos os bultos da remessa que posuem a característica 'CONTEO ATM - INGRESADOR' também devem ter a característica 'CONTEO POR REMESA'.
+010_bulto_caract_atm_mas_de_una			= Todos os bultos da remessa devem estar apenas com uma das características 'CONTEO ATM - DISPENSADOR, RECHAZO Y TARJETA', 'CONTEO ATM - DEPÓSITO' ou 'CONTEO ATM - INGRESADOR'.
+010_bulto_tipo_trabajo				= Tipo de trabalho do bulto não existe na lista de valores possíveis.
+010_bulto_estado_trabajo			= Estado do malote não existe na lista de valores possíveis.
+010_bulto_ubicacion				= Localização do malote não existe na lista de valores possíveis.
+010_bulto_tipo_formato				= Formato do malote não existe na lista de valores possíveis.
+010_parcial_declarado_divisas			= Divisa informada não está nas divisas possíveis (Declarado Parcial).
+010_parcial_declarado_agrupaciones		= Agrupação informada não está nas agrupações possíveis (Declarado Agrupação Parcial).
+010_parcial_declarado_ticket			= Ticket declarado, porém não é para contar ticket (Declarado Parcial).
+010_parcial_declarado_cheque			= Cheque declarado, porém não é para contar cheque (Declarado Parcial).
+010_parcial_declarado_otro_valor		= Outros valores declarado, porém não é para contar outro valor (Declarado Parcial).
+010_parcial_estado_trabajo			= Estado do parcial não existe na lista de valores possíveis.
+010_parcial_tipo_formato			= Formato do parcial não existe na lista de valores possíveis.
+010_bulto_divisaposible_numordem		= Existe para um dos malotes, duas divisas com o mesmo número de ordem.
+010_valor_termino_idbulto			= Valor Término Iac - Identificador Malote
+010_valor_termino_codtermino			= Valor Término Iac - Código Término Iac
+010_msg_declarado_divisa_remesa			= O meio de pagamento informado nos declarados da remesa não esta entre os meios de pagamentos possíveis.
+010_msg_declarado_divisa_bulto			= O meio de pagamento informado nos declarados do malote não esta entre os meios de pagamentos possíveis.
+010_msg_declarado_divisa_parcial		= O meio de pagamento informado nos declarados do parcial não esta entre os meios de pagamentos possíveis.
+010_msg_declarado_det_divisa_remesa		= O meio de pagamento informado nos declarados detalhes da remesa não esta entre os meios de pagamentos possíveis.
+010_msg_declarado_det_divisa_bulto		= O meio de pagamento informado nos declarados detalhes do malote não esta entre os meios de pagamentos possíveis.
+010_msg_declarado_det_divisa_parcial	= O meio de pagamento informado nos declarados detalhes do parcial não esta entre os meios de pagamentos possíveis.
+010_msg_bulto_sem_precinto			= Não devem existir malotes sem código do lacre.
+010_bulto_caract_carga_previa_bcp_conteo_remesa	= Todos os bultos da remessa que posuem a característica 'CARGA PREVIA BCP' também devem ter a característica 'CONTEO POR REMESA'.
+010_bulto_caract_carga_previa_bcp_diferente	= Todos os bultos da remessa devem estar com características de CARGA PREVIA BCP.
+010_bulto_estado_distinto_pendente = O malote {0} não pode ser atualizado, devido estar em um estado que não permite mais atualização.
+010_msg_remesa_ya_procesada		   = A remessa {0} ja foi processada.
+010_msg_conta_por_remesa_trabaja_por_bulto = A modalidade de contagem contem a caracteristica contagem por remessa, então é obrigatório trabalhar por remessa.
+
+//POPUP BUSCA DE SUB CLIENTES
+011_titulo										= Busca de Sub Clientes
+011_codigo										= Codigo
+011_descricao									= Descrição
+011_titulo_busca								= Critérios de Busca
+011_titulo_resultadoSubCliente					= Sub Clientes
+011_seleccione_un_subcliente					= Selecione um sub cliente
+
+//VALIDA USERCONTROL ucDivisa
+012_descripcion									= Descrição
+012_unidad										= Unidade
+012_cantidad									= Quantidade
+012_denominacion								= Denominação
+012_denominaciones								= Denominações
+012_mediopago									= Meio de pago
+012_efectivo									= Efetivo
+012_mediospago									= Meios de pago
+012_codigo										= Codigo
+012_billete										= Nota
+012_moneda										= Moeda
+012_importe										= Valor
+012_importetotal								= Valor Total
+012_calidad										= Qualidade
+012_divisasinimagen								= Divisa sem imagem
+012_divisioninvalida							= A divisão de '{0}' por '{1}' por '{2}' não resulta em um valor inteiro.
+012_divisioninvalidaEfectivo					= A divisão de '{0}' por '{1}' não resulta em um valor inteiro.
+012_valordenominacion							= O valor de denominacão é 0.
+012_borrardivisa								= Excluir Divisa
+012_selecionardivisa							= Selecione a(s) divisa(s) que deseja agregar.
+012_titulopopup									= Busca de divisas
+012_divisanaoagrega								= Não há divisas para serem agregadas.
+012_InfoDetalle									= Informar Detalhes
+012_msg_mascara									= Máscara inválida para o término "{0}" informado.
+012_validacion									= Para o MedioPago '{0}' da divisa '{1}' deverá informar Quantidade e Valor!
+012_validacionTermino							= Foi informado valor para o término '{0}', mas não foi informado valor para o seu medio pago '{1}'.
+
+//VALIDA USER CONTROL ucInfAdicionales
+013_termino_invalido                            = Valor inválido para o termino '{0}'.
+013_termino_invalido_titulo                     = Termino {0}
+013_termino_titulo                              = Informações adicionais
+
+//CONTROLE HELPER
+014_codigo										= Código:
+014_descricion									= Descrição:
+014_selecao_campo								= Selecione um campo no Grid.
+014_parametro_obrigatorio						= O parâmetro '{0}' é obrigatório.
+014_ConsiderarSectoresHijos						= Considerar os setores filhos no resultado da busca
+
+//MEDIO PAGO
+
+014_tipopg_ticket								= Ticket
+014_tipopg_cheque								= Cheque
+014_tipopq_otrosvalores							= Outros Valores
+014_tipopg_tarjeta								= Cartão de Crédito
+
+//CONTROLE ACCION DOCUMENTO
+015_accion_guardar								= Salvar
+015_accion_guardarconfirmar						= Salvar e Confirmar
+015_accion_guardaraceptar						= Salvar e Aceitar
+015_accion_confirmar							= Confirmar
+015_accion_aceptar								= Aceitar
+015_accion_rechazar								= Rejeitar
+015_accion_anular								= Anular
+015_accion_imprimir 							= Imprimir 
+015_accion_cancelar 							= Cancelar
+015_accion_modificar 							= Modificar
+015_accion_visualizar 							= Visualizar Impressão
+015_accion_volver								= Voltar
+015_accion_agregarDocumento						= Adicionar Documento
+015_accion_agregarBulto 						= Adicionar Objeto
+015_accion_agregarParcial						= Adicionar Sangria
+015_accion_anular_documento						= Anular Documento?
+015_accion_guardarconfirmar_documento			= Salvar e Confirmar o Documento?
+015_accion_guardaraceptar_documento		    	= Salvar e Aceitar o Documento?
+015_accion_modificar_terminos					= Modificar Informações Adicionais
+015_accion_salvar_terminos						= Salvar Informações Adicionais
+
+//USERCONTROL UcListaElementos
+016_TituloIcono									= Ícone
+016_TituloPrecinto								= Código
+016_TituloCliente								= Cliente
+016_TituloSubCliente							= Subcliente
+016_TituloPuntoServicio							= Ponto de serviço
+016_TituloCanal									= Canal
+016_TituloSubCanal								= Subcanal
+016_TituloCodigoDivisa							= Código Divisa
+016_TituloDescricionDivisa						= Descrição Divisa
+016_TituloImporte								= Importância
+016_TituloFecha									= Data
+016_TituloDetalles								= Detalhes
+016_TituloElementos                             = Elementos
+016_TituloBultos                                = Objetos
+016_TituloParciales                             = Parciais
+016_TituloCuenta                                = Conta
+016_CodigoContenedor							= Lacre
+016_CodigoRemessa								= Cód. Externo
+016_CodigoBulto									= Lacre
+016_CodigoParcial								= Lacre
+016_SequenciaParcial							= Sequência
+016_anadir                                      = Adicionar
+016_rechazar                                    = Remover
+016_BotonAgregar								= Agregar
+016_BotonEliminar								= Remover
+016_LegendaCampoCodigo							= {0} precinto:
+016_TotalRegistros								= Total de registros:
+016_Declarado									= Declarado
+016_Contado										= Contado
+016_Diferencia									= Diferença
+016_Disponible									= Disponível
+016_NoDisponible								= Não disponível
+016_NoDefinido									= Não definido
+016_AgregarTodos								= Selecionar todos
+016_QuitarTodos									= Eliminar todos
+
+//CONTROLE CUENTA
+017_Titulo_CuentaOrigen							= Conta Origem
+017_Titulo_CuentaDestino						= Conta Destino
+017_prepicion_de_la								= da
+017_totalizaen									= Totaliza em
+
+//CONTROLE SECTOR
+018_Sector_Titulo								= Setor
+018_Sector_Popup_Titulo							= Busca de Setor
+018_Sector_Popup_Resultado						= Dados de Setor
+018_Sector_Popup_Filtro							= Critérios de Busca
+
+//CONTROLE PLANTA
+019_Planta_Titulo								= Planta
+019_Planta_Popup_Titulo							= Busca de Planta
+019_Planta_Popup_Resultado						= Dados de Planta
+019_Planta_Popup_Filtro							= Critérios de Busca
+
+//CONTROLE DELEGACION
+020_Delegacion_Titulo							= Delegação
+020_Delegacion_Popup_Titulo						= Busca de Delegação
+020_Delegacion_Popup_Resultado					= Dados de Delegação
+020_Delegacion_Popup_Filtro						= Critérios de Busca
+
+//CONTROLE CLIENTE
+021_Cliente_Titulo								= Cliente
+021_Cliente_Popup_Titulo						= Busca de Cliente
+021_Cliente_Popup_Resultado						= Dados de Cliente
+021_Cliente_Popup_Filtro						= Critérios de Busca
+//CONTROLE BANCO
+021_Banco_Titulo								= Banco
+021_Banco_Popup_Titulo							= Busca de Banco
+021_Banco_Popup_Resultado						= Dados de Banco
+021_Banco_Popup_Filtro							= Critérios de Busca
+
+//CONTROLE BANCO
+021_BancoCapital_Titulo							= Banco Capital
+021_BancoCapital_Popup_Titulo					= Busca de Banco Capital
+021_BancoCapital_Popup_Resultado				= Dados de Banco Capital
+021_BancoCapital_Popup_Filtro					= Critérios de Busca
+
+
+//CONTROLE MAQUINA
+022_Maquina_Titulo								= Maquina
+022_Maquina_Popup_Titulo						= Busqueda de Maquina
+022_Maquina_Popup_Resultado						= Dados de Maquina
+022_Maquina_Popup_Filtro						= Criterios de Busqueda
+
+
+//CONTROLE BANCO COMISION
+021_BancoComision_Titulo				    	= Banco Comisión
+021_BancoComision_Popup_Titulo					= Busqueda de Banco Comisión
+021_BancoComision_Popup_Resultado				= Datos de Banco Comisión
+021_BancoComision_Popup_Filtro					= Criterios de Busqueda
+
+//CONTROLE SUBCLIENTE
+022_SubCliente_Titulo							= SubCliente
+022_SubCliente_Popup_Titulo						= Busca de SubCliente
+022_SubCliente_Popup_Resultado					= Dados de SubCliente
+022_SubCliente_Popup_Filtro						= Critérios de Busca
+
+//CONTROLE PUNTO SERVICIO
+023_PtoServicio_Titulo							= Ponto de Serviço
+023_PtoServicio_Popup_Titulo					= Busca de Ponto de Serviço
+023_PtoServicio_Popup_Resultado					= Dados de Ponto de Serviço
+023_PtoServicio_Popup_Filtro					= Critérios de Busca
+
+//CONTROLE CANAL
+024_Canal_Titulo								= Canal
+024_Canal_Popup_Titulo							= Busca de Canal
+024_Canal_Popup_Resultado						= Dados de Canal
+024_Canal_Popup_Filtro							= Critérios de Busca
+
+//CONTROLE SUBCANAL
+025_SubCanal_Titulo								= SubCanal
+025_SubCanal_Popup_Titulo						= Busca de SubCanal
+025_SubCanal_Popup_Resultado					= Dados de SubCanal
+025_SubCanal_Popup_Filtro						= Critérios de Busca
+
+// USERCONTROL ELEMENTO
+026_contenedor                                  = Recipiente
+026_remesa                                      = Remessa
+026_bulto                                       = Objeto
+026_parcial                                     = Sangria
+026_precinto                                    = Lacre
+026_tipo_contenedor                             = Tipo Recipiente
+026_tipo_remesa                                 = Tipo Serviço
+026_cod_bolsa									= Código Bolsa
+026_nel_parada									= Parada
+026_codigo_atm									= Codigo ATM
+026_tipo_bulto                                  = Tipo Objeto
+026_tipo_parcial                                = Tipo Sangria
+026_fecha_alta                                  = Data de Criação
+026_fecha_transporte                            = Data de Transporte
+026_cant_elementos_contenedor                   = Qtd. Elementos
+026_cant_elementos_remesa                       = Qtd. 
+026_cant_elementos_bulto                        = Qtd. Sangrias
+026_cod_contenedor                              = Código Recipiente
+026_num_recibo_transporte                       = Código Externo
+026_cod_ruta                                    = Código da Rota
+026_precinto_padre_contenedor                   = Lacre Recipiente
+026_precinto_padre_remesa                       = Lacre Remessa
+026_precinto_padre_bulto                        = Lacre Objeto
+026_valores_declarados                          = Valores Declarados
+026_valores_contados                            = Valores Contados
+026_diferencias                                 = Diferenças
+026_detalhes                                    = Detalhes
+026_ListaRemesas								= Lista de remessas
+026_ListaRemesasVacio							= Esta lista de remesas está vazia.
+026_ListaBulto									= Lista de objetos
+026_ListaBultoVacio								= Esta lista de objetos está vazia.
+026_ListaParciales								= Lista de sangria
+026_ListaParcialesVacio							= Esta lista de sangria está vazia.
+026_formato_remesa								= Formato dos Objetos
+026_formato_bulto                               = Formato do Objeto
+026_formato_parcial                             = Formato da Sangria
+026_Agregar_TituloElemento_Remesa				= Lista de Malotes
+026_Agregar_TituloElemento_Bulto				= Lista de Sangrias
+026_Agregar_TituloAgregar_Remesa				= Agregar novo malote:
+026_Agregar_TituloAgregar_Bulto					= Agregar nova sangria:
+026_Agregar_Precinto							= Lacre
+026_Agregar_CodigoBolsa							= Código Bolsa
+026_Agregar_TipoServicio						= Tipo Serviço
+026_Agregar_Formato								= Formato do objeto
+026_Agregar_FormatoParcial						= Formato do parcial
+026_Agregar_Agregar								= Agregar
+026_Agregar_Avanzado							= Avançado
+026_Agregar_Divisa								= Divisa
+026_Agregar_TotalEfectivo						= Total Efetivo
+026_Agregar_TotalCheque							= Total Cheque
+026_Agregar_TotalTicket							= Total Ticket
+026_Agregar_TotalTarjeta						= Total Cartão
+026_Agregar_TotalOtros							= Total Outros Valores
+026_Agregar_Precinto_Repetido_Bulto				= O lacre da sangria inserida ja existe!
+026_Agregar_Precinto_Repetido_Remesa			= O lacre do malote inserido ja existe!
+026_Historico_Valore_Elemento					= Histórico Importes Elemento
+
+//UserControl UcElementoFiltro
+027_titulo_contenedor							= Recepiente
+027_titulo_remesa								= Remessa
+027_titulo_bulto								= Objeto
+027_titulo_parcial								= Sangria
+027_lbl_Precinto								= Lacre
+027_lbl_parcial									= Sangria
+027_lbl_tipo									= Tipo
+027_lbl_tipo_servicio							= Tipo Serviço
+027_lbl_fecha_alta_desde						= Data Cadastro Desde
+027_lbl_fecha_alta_hasta						= Data Cadastro Ate
+027_lbl_codigo_contenedor						= Código Recepiente
+027_lbl_recibo_transporte						= Número Externo
+027_lbl_ruta									= Cod. Rota
+027_tipo_servicio_guardar						= Guardar
+027_tipo_servicio_clasificar					= Classificar
+027_tipo_servicio_pernocte						= Pernoite
+027_tipo_servicio_procesar						= Processar
+027_tipo_servicio_movimientointerno				= Movimento Interno
+027_trv_tipo_medio_pago_cheque					= Cheque
+027_trv_tipo_medio_pago_ticket					= Ticket
+027_trv_tipo_medio_pago_otros_valores			= Outros Valores
+027_trv_tipo_medio_pago_tarjeta					= Cartão
+027_trv_efectivo								= Efetivo
+027_titulo_documento							= Documento
+027_lbl_formato_bulto							= Formato Objeto:
+027_lbl_formato_parcial							= Formato Sangria:
+
+//Maestro Documento
+028_msg_identificador_documento_obrigatorio		= O identificador do documento é obrigatório.
+028_msg_estado_documento_gravar					= O estado do documento deve ser Novo ou Em Processo.
+028_msg_estado_documento_padre					= O estado do documento deve ser Aceito.
+028_msg_cuenta_origen_obrigatorio				= O campo Conta Origem é obrigatório.
+028_msg_cuenta_destino_obrigatorio				= O campo Conta Destino é obrigatório.
+028_msg_formulario_obrigatorio					= O campo identificador do formulário é obrigatório.
+028_msg_tipo_documento_obrigatorio				= O campo tipo documento é obrigatório.
+028_msg_esta_certificado						= Um documento no estado novo ou em processo não pode está como certificado..
+028_msg_estado_documento_vazio					= O estado do documento está vazio.
+028_msg_usuario_modificacion_vazio				= O usuário da modificação está vazio.
+028_msg_caracteristica_invalida                 = O formulário não possui a caracteristica necessária.
+028_remesa_vazio                                = Objeto remessa está vazio.
+028_remesa_obrigatorio                          = Remessa é obrigatória.
+028_divisa_obrigatorio                          = Devisa é obrigatória.
+028_unidade_medida_obrigatorio                  = Unidade de medida é obrigatória.
+028_remesa                                      = Remessa
+028_bulto                                       = Bulto
+028_parcial                                     = Sangria
+028_contenedor                                  = Recipiente
+028_valor_termino_obrigatorio                   = O valor do termino é obrigatório para {0}.
+028_campo_obrigatorio                           = O campo {0} é de preenchimento obrigatório.
+028_documento                                   = Documento
+028_grupo_documento                             = Grupo de Documentos
+028_medio_pago                                  = Médio Pago
+028_bulto_obrigatorio                           = A remessa deve possuir pelo menos um bulto.
+028_bulto_vazio                                 = Objeto bulto vazio.
+028_cuenta_obrigatorio                          = O campo Cuenta é obrigatório.
+028_denominacion_obrigatoria                    = O campo denominação é obrigatório.
+028_denomincion_ou_total_divisa_obrigatorio     = Denominação ou total divisa é obrigatório.
+028_documento_obrigatorio                       = O campo documento é obrigatório.    
+028_documento_vazio                             = O objeto documento está vazio.
+028_estado_documento_invalido_para_transicion   = Estado do documento inválido para essa transição.
+028_estado_obrigatorio                          = O campo estado é obrigatório.
+028_cuenta_destino_obrigatorio                  = O campo conta de destino é obrigatório.
+028_cuenta_origen_obrigatorio                   = O campo conta de origem é obrigatório.
+028_esta_certificado                            = O documento está certificado.
+028_estado_documento_gravar                     = O estado do documento deve ser novo ou em processo.
+028_estado_documento_padre                      = O estado do documento deve ser aceito.
+028_formulario_obrigatorio                      = O campo formulário é obrigatório.
+028_identificador_documento_obrigatorio         = O campo identificador do documento é obrigatório.
+028_setor_origem_obrigatorio                    = O campo setor de origem é obrigatório.
+028_tipo_documento_obrigatorio                  = O campo tipo de documento é obrigatório.
+028_parcial_obrigatorio                         = O campo sangria é obrigatório.
+028_parcial_vazio                               = O objeto sangria está vazio.
+028_precinto_obrigatorio                        = O campo precinto é obrigatório.
+028_sector_obrigatorio                          = O campo setor é obrigatório.
+028_terminoIAC_obrigatorio                      = O campo termino IAC é obrigatório.
+028_tipo_valor_efectivo                         = O campo tipo valor efetivo deve ser declarado.
+028_tipo_valor_medio_pago                       = O campo tipo valor médio pago deve ser declarado.
+028_usuario_creacion_obrigatorio                = O campo usuário criação é obrigatório.
+028_usuario_modification_obrigatorio            = O campo usuário modificação é obrigatório.
+028_codigo_externo_obrigatorio					= O campo código externo é obrigatório.
+028_codigo_externo_alterado						= O campo código externo não pode ser alterado.
+028_estado_documento_padre_invalido             = O estado do documento padre deve ser Anulado,Rechazado ou Sustituido.
+028_cuenta_saldo_destino_obrigatorio            = O campo conta saldo destino é obrigatório. Verifique se o cliente possui conta saldo destino.
+028_cuenta_saldo_origen_obrigatorio             = O campo conta saldo origem é obrigatório. Verifique se o cliente possui conta saldo origem.
+028_Transicion_Invalida							= Estado do documento inválido para essa transição. Estado atual:{0}, novo estado:{1}.
+028_remesa_con_tipo_servicios_diferentes		= A remessa {0} possui bultos com tipos serviços diferentes.
+028_msg_identificador_setor_obrigatorio		    = O identificador do setor é obrigatório.
+028_msg_identificador_formulario_obrigatorio    = O identificador do formulário é obrigatório.
+028_msg_fechayhoraplancertificacion_invalida	= Não é posível {0} o documento com a data/hora plan. '{1}'. Este período já foi certificado. Consulte-o com o código: {2}
+028_txt_grabar									= salvar
+028_txt_aceptar									= aceitar
+028_txt_rechazar								= recusar
+028_txt_sustituir								= substituir
+028_formulario_inativo							= Não é possível gravar o documento, poque  o formulário solicitado não está ativo.
+028_formulario_de_reenvio_automatico_nao_cadastrado = Não é possível gravar o documento o, porque o formulário de reenvio automático não está cadastrado.
+028_sector_origem_nao_configurado				= Não é possível gravar o documento porque o setor de origen não está configurado para utilizar este formulário.
+028_sector_destino_nao_configurado				= Não é possível gravar o documento porque o setor de Destino não está configurado para receber documentos criados deste formulário.
+028_estado_remesa_invalido_conteo				= O estado atual da remessa no conteo não é valido para aceitar este documento. Estado remessa conteo:{0}. Estado remessa Saldos:{1}.
+028_estado_bulto_invalido_conteo				= O estado atual do bulto no conteo não é valido para aceitar este documento. Estado bulto conteo:{0}. Estado bulto Saldos:{1}.
+028_estado_bulto_invalido_saldos				= O estado do bulto no saldos não é valido para a substituição.
+028_estado_documento_elemento_invalido_bulto	= O estado documento elemento bulto não é válido. Este bulto já está em transição no documento:{0}.
+028_remesa_vinculado_outro_documento			= Este remesa está vinculada a outro documento.(identificador:{0})
+028_bulto_vinculado_outro_documento				= Este malote está vinculado a outro documento.(identificador:{0})
+028_fecha_hora_gestion_obrigatorio              = O campo Data/hora gestão é obrigatório.
+028_fecha_hora_gestion                          = Data/hora gestão
+028_documento_com_transaccion_certificado       = O documento possui Transações em um certificado Definitivo.
+028_setor_diferente_padre						= O setor de origem no do documento está diferente no elemento padre.
+028_remesa_em_uso_conteo						= Esta remessa está em uso no conteo.
+028_documento_invalido_para_transicion			= O Documento padre (identificador:{0}) não possui um documento substituto vinculado.
+028_estado_remesa_invalida						= O estado da remesa não válido para a substituição.
+028_estado_bulto_obrigatorio					= O estado do bulto é obrigatório.
+028_remesa_com_mais_de_um_bulto					= Substituição por gestão de bulto, só permite substituir um bulto por vez.
+028_msg_el_movimiento_produce_saldo_negativo	= O movimento produz un saldo negativo e o formulário não está configurado para permitir chegar a um saldo negativo.
+028_msg_formulario_no_cargado_correctamente		= O formulário relacionado ao documento, não foi carregado corretamente (não é possível verificar suas características).
+028_no_hay_valores_divisas						= Não há nenhum valor para as divisas informadas.
+028_msg_documento_padre_no_cargado_correctamente = O documento pai relacionado ao documento, não foi carregado corretamente.
+028_msg_documento_padre_no_encontrado			= O documento pai '{0}' não foi encontrado.
+028_msg_cuenta_origen_no_encontrada				= A conta de origem, não foi encontrada.
+028_msg_cuenta_destino_no_encontrada			= A conta de destino, não foi encontrada.
+028_msg_documento_sustituto_no_cargado_correctamente = O documento substituto relacionado ao documento, não foi carregado corretamente.
+028_msg_estado_documento_sustituto_invalido     = O estado do documento substituto deve ser Aceito ou Recusado.
+028_msg_documento_sustituto_no_encontrado		= O documento substituto '{0}' não foi encontrado.
+028_msg_termino_valor_obligatorio               = O término '{0}' deverá ter um valor informado.
+028_msg_documento_no_encontrado					= O documento '{0}' não foi encontrado.
+028_msg_documento_sin_elemento					= O documento é de um tipo que trabalha com elementos mas não tem um relacionado.
+028_msg_formulario_no_trabaja_con_elementos		= O documento possui um elemento mas o formulário relacionado não trabalha com elementos.
+028_msg_documento_padre_obligatorio_sustitucion = O documento pai é obrigatório em uma substituição.
+028_msg_doc_elemento_remesa_existe_en_transicion = Não é possível ingressar o documento pois existe uma remessa com o mesmo código externo na base de dados. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_remesa_existe_sin_baja		= Não é possível ingressar o documento pois existe uma remessa com o mesmo código externo na base de dados que ainda não foi executada a baixa. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_remesa_inconsistencia_hist	= Não é possível ingressar o documento pois existe uma inconcistência de histórico para uma remessa com o mesmo código externo - não existe um documento concluído (ou em transição).
+028_msg_doc_elemento_bulto_existe_en_transicion = Não é possível ingressar o documento pois existe um malote com o mesmo código de lacre na base de dados. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_bulto_existe_sin_baja		= Não é possível ingressar o documento pois existe um malote com o mesmo código de lacre na base de dados que ainda não foi executada a baixa. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_bulto_inconsistencia_hist	= Não é possível ingressar o documento pois existe uma inconcistência de histórico para um malote com o mesmo código de lacre - não existe um documento concluído (ou em transição).
+028_Identificador_CodCompro_Documento			= Identificador e Código Comprovante do Documento vazios
+028_divisas										= As divisas: {0}
+028_divisa										= A divisa: {0}
+028_denominaciones								= As denominações: {0}
+028_denominacion								= A denominação: {0}
+028_mediospago									= Os meios de pagamento: {0}
+028_mediopago									= O meio de pagamento: {0}
+028_inactivos									= estão inativos.
+028_inactivas									= estão inativas.
+028_inactivo									= está inativo.
+028_inactiva									= está inativa.
+028_remesas_invalidas_conteo					= Os estados das seguintes remessas no conteo não são validos para aceitar este documento: 
+028_remesa_invalido_conteo						= Remessa:{0}. Estado Conteo:{1}. Estado Saldos:{2}.
+028_bultos_invalidas_conteo						= Os estados dos seguintes bultos no conteo não são validos para aceitar este documento: 
+028_bulto_invalido_conteo						= Malote:{0}. Estado Conteo:{1}. Estado Saldos:{2}.
+
+//UserControl UcFiltroElementoValor
+029_lbl_titulo									= Filtros
+029_lbl_titulo_valor							= Valor
+029_msg_cliente									= Obrigatório selecionar um cliente.
+029_msg_tipo_sector								= Tipo setor vazio.
+029_msg_canal									= Obrigatório selecionar um canal.
+
+//Seleccion Sector
+030_titulo_pagina								= Seleção do setor de trabalho
+030_lblSector									= Setor
+030_btnContinuar								= Continuar
+030_msg_nenhum_setor							= Não há permissão para nenhum setor.
+030_msg_ErrorCargarSector						= Setor não encontrado.
+030_msg_CargandoSector							= Carregando setor selecionado.
+
+//Formularios
+031_Titulo                                      = Movimentos - Novo
+031_Coluna_Icone                                = Icone
+031_Coluna_Codigo                               = Código
+031_Coluna_Descricao                            = Descrição
+031_Coluna_Individual                           = Individual
+031_Coluna_Grupo                                = Grupo
+031_No_Hay_formulario_Configurado               = Não há formulário configurado para o setor selecionado.
+
+// Pantalla GrupoDocumento
+032_Titulo										= Grupo de documentos
+032_ListaElementos								= Lista de Elementos
+032_ListaElementosFiltro						= Filtro
+032_ListaElementosSeleccionados					= Lista de Elementos Selecionados
+032_ListaValores								= Lista de Valores
+032_ListaValoresFiltro							= Filtro
+032_ListaDocumentosSeleccionados				= Lista de Documentos
+032_ListaDocumentosSeleccionadosVacio			= Esta lista de documentos está vazia.
+032_ListaValoresSeleccionados					= Lista de Valores Selecionados
+032_ListaElementosVacio							= Esta lista de elementos está vazia.
+032_ListaElementosSeleccionadosVacio			= Esta lista de elementos está vazia.
+032_ListaValoresVacio							= Esta lista de valores está vazia.
+032_ListaValoresSeleccionadosVacio				= Esta lista de valores está vazia.
+032_TituloCuentaDestino							= Conta Destino
+032_ElementoObrigatorio							= É obrigatorio informar ao menos um elemento.
+032_ValoresObrigatorio							= É obrigatorio informar ao menos um valor.
+032_InformacionesInvalidas						= Informações invalidas
+032_NenhumElementoSeleccionado					= Nenhum elemento selecionado.
+032_NenhumValoresSeleccionado					= Nenhum registro selecionado.
+032_EliminarDocumento							= Esta seguro que deseja eliminar o documento?
+032_popup_saldohijos_lblTitulo					= Consulta Saldo SubSetores/Postos
+032_popup_saldohijos_lblResultados				= Resultado
+032_popup_saldohijos_canal						= Canal
+032_popup_saldohijos_cliente					= Cliente
+032_popup_saldohijos_sector						= Setor
+032_popup_saldohijos_valor_disponible			= Valor Disponível
+032_lista_contenedor_titulo                     = Lista de Contenedores Selecionados
+032_lista_contenedor_titulo_cliente             = Cliente
+032_lista_contenedor_titulo_Canal               = Canal
+032_lista_contenedor_titulo_Sector              = Setor
+032_lista_contenedor_titulo_Precinto            = Objetos
+032_lista_contenedor_titulo_Valores             = Valores
+
+// Pantalla Documento
+033_Titulo										= Movimentos - Pesquisa
+033_TituloCampos								= Informações do documento
+033_NumeroExterno								= Número externo:
+033_Estado										= Estado:
+033_SectorOrigen								= Setor de Origem:
+033_MsgNumeroExterno							= Favor informar o número externos antes de adicionar um objeto.
+033_lblTituloFiltro                             = Filtro
+033_lblTituloFiltro2                            = Selecione uma opção
+033_lblDisponibilidad                           = Por disponibilidade:
+033_lblNumeroComprovante                        = Número Comprovante de:
+033_lblNumeroComprovanteDesde                   = De:
+033_lblNumeroComprovanteHasta                   = Até:
+033_lblFechaCreacion                            = Data Criação de:
+033_lblFechaCreacionDesde                       = De:
+033_lblFechaCreacionHasta                       = Até:
+033_lblBuscarPor								= Buscar por:
+033_ddlSeleccionar                              = Selecionar
+033_ddlNumeroComprovante                        = Número Comprovante
+033_ddlNumeroExterno                            = Número Externo
+033_lblInfValores								= Valores
+033_ddlAmbos                                    = Ambos
+033_ddlDisponible                               = Disponível
+033_ddlNoDisponible                             = Não Disponível
+033_grid_cor									= Cor
+033_grid_codigo_externo							= Código Externo
+033_grid_codigo_comprovante						= Número Comprovante
+033_grid_formulario								= Formulário
+033_grid_canal_cliente							= Canal
+033_grid_centro_processo_origem					= Destino
+033_grid_centro_processo_destino				= Do centro proc.
+033_grid_fecha_hora_creacion					= Data Criação
+033_grid_usuario_creacion						= Usuário Criação
+033_grid_fecha_hora_modificacion				= Data Modificação
+033_grid_usuario_modificacion					= Usuário Modificação
+033_titulValores								= Valores
+033_grid_sector_origem							= Origem
+033_grid_sector_destino							= Setor Destino
+033_MensajeExterna                              = Mensagem Externa
+033_datos_contenedor_Titulo                     = Contenedores
+033_datos_contenedor_Codigo                     = Código
+033_datos_contenedor_Precintos                  = Precintos
+033_lblTipoSitioDocumentos						= Origem / Destino
+033_lblCodigoEstadoDocumento					= Estado
+033_Origem										= Origem
+033_Destino										= Destino
+
+//Datos Documentos
+034_HistEstado									= Histórico
+034_formulario									= Formulário
+034_tpdocumento									= Tipo Documento
+034_Si											= Sim
+034_No											= Não
+034_Titulo										= Informações do documento
+034_NumeroExterno								= Número externo:
+034_Estado										= Estado:
+034_SectorOrigen								= Setor de Origem:
+034_EstaCertificado								= Está Certificado?
+034_FechaHoraPlanificacionCertificacion			= Data/Hora Plan. Certificação:
+034_DatosInvalidos								= As informações repassada para o controle estão incorretas.
+034_txtErroDataMenorActual						= A data/Hora plan. certificação não pode ser menor que a data atual!
+034_Codigo_Comprobante						    = Código Comprovante:
+034_Consulta_Saldo							    = Consultar Saldo do Setor
+034_NoCertificado	=	Não Certificado
+034_Certificado_Parcialmente_Origen	=	Parcialmente Certificado (Conta Origem)
+034_Certificado_Parcialmente_Destino	=	Parcialmente Certificado (Conta Destino)
+034_Certificado	=	Certificado
+034_SaldoSuprimido_image                        = Este movimento foi feito em uma MAE que não permite que os movimentos de contagem impactem o saldo.
+034_SaldoSuprimido                              = Não impacto saldo
+034_Notificado_image                            = Este movimento já foi notificado.
+034_Notificado                                  = Movimento notificado
+
+//Lista de valores
+035_divisasnoselecionadas						= Favor selecionar a(s) conta(s) ou a(s) divisa(s) para inseri-la(s) no documento.
+035_divisasnoseliminadas						= Favor selecionar a(s) conta(s) ou a(s) divisa(s) que deseja eliminar.
+035_documentovacio								= Documento não existe. 
+
+//Grupo Documentos
+036_GrupoDocumentos								= Grupo Documentos
+036_SectorDestino								= Setor Destino
+036_SectorOrigem								= Setor Origem
+036_SectorIdentificadorOrigem					= Identificador Setor Origem
+036_SectorIdentificadorDestino					= Identificador Setor Destino
+036_EstadoGrupoDocumentos						= Estado do Grupo de Documentos
+036_FechaCreacionGrupoDocumento 				= Data de Criação do Grupo de Documentos
+036_UsuarioCreacionGrupoDocumento				= Usuário Criação do Grupo de Documentos
+036_FechaModificacionGrupoDocumento				= Date de Modificação do Grupo de Documentos
+036_UsuarioModificacionGrupoDocumento   		= Usuário de Modificação do Grupo de Documentos
+036_Formulario									= Formulário
+036_IdentificadorFormulario						= Identificador Formulário
+036_EstadoHistorico								= Estado do Histórico
+036_FechaCreacionHistorico		 				= Data de Criação do Histórico
+036_UsuarioCreacionHistorico					= Usuário Criação do Histórico
+036_FechaModificacionHistorico					= Date de Modificação do Histórico
+036_UsuarioModificacionHistorico		  		= Usuário de Modificação do Histórico
+036_ValorTerminoIac								= Valor Termino IAC
+036_IdentificadorTerminoIac						= Identificador Termino IAC
+036_CodUsuarioTerminoIac						= Codigo Usuário Termino IAC
+036_FechaActualizacionTerminoIac				= Data de Atualizado do Termino IAC
+036_Identificador_CodCompro_Grupo_Documento		= Identificador e Código Comprovante do Grupo Documentos vazios
+036_HayCierreCajaEnCurso						= No es posible generar este documento. Ya existe un documento de Cierre en estado "En Curso" para este sector. Verifique.
+
+//Tipos Formato
+037_bolsa										= Bolsa
+037_Cartucho									= Cartucho
+037_Fleje										= Cinta
+037_Lote										= Lote
+037_Saca										= Saca
+037_Sobre										= Sobre
+
+//CONTROLE DATOSDOCUMENTO
+038_hora_modificacion								= Data e Hora de Modificação
+038_usu_modificacion								= Usuário Modificação
+038_estado           								= Estado
+
+//Menu 
+039_Documentos                                      = Movimentos
+039_Certificados                                    = Certificados
+039_Reportes                                        = Relatórios
+039_Configuraciones                                 = Configurações
+039_Nuevo                                           = Novo
+039_Emitidos                                        = Emitidos
+039_Recebidos                                       = Recebidos
+039_EnProceso                                       = Em Processo
+039_Confirmado                                      = Confirmados
+039_Aceptados                                       = Aceitados
+039_Rechazados                                      = Recusados
+039_Anulado                                         = Anulados
+039_Substituido                                     = Substituídos
+039_ImpresoReceber                                  = Confirmado a Receber
+039_RecebidoAceptados                               = Recebido e Aceitados
+039_RecebidoRechazados                              = Recebido e Recusados
+039_Consulta                                        = Consultas
+039_Generar                                         = Gerar
+039_Convertir                                       = Converter
+039_Provisional                                     = Provisório
+039_Definitivo                                      = Definitivo
+039_ResultadoEjecucion                              = Resultado Execução
+039_BasadosCertificados                             = Baseado em Certificados
+039_CertificadoDefecto                              = Certificado Padrão
+039_ConfiguracionNivelSaldo                         = Consulta Configuração Nível Saldo
+039_EnCurso                                         = Em Curso
+039_InventarioBulto                                 = Inventário de Bultos
+039_GenerarInventarioBulto                          = Gerar Inventário de Bultos
+039_HistoricoInventarioBulto                        = Histórico Inventário de Bultos
+039_Saldo					                        = Saldo
+039_HistoricoImportesElementos						= Histórico Importes de Elementos
+039_DocumentosPendientes							= Documentos Pendentes
+039_Abono											= Abono
+039_InformacionNuevoSaldos							= Sobre o Novo Saldos
+039_Busqueda                                        = Pesquisa
+
+//UserControl ucFiltro
+040_lbl_titulo									= Filtros
+040_lbl_cliente									= Cliente/ SubCliente/ PtoServiço
+040_lbl_canal									= Canal/ SubCanal
+040_NenhumRegistroEncontrado					= Nenhum registro encontrado
+040_validar_sector								= Setor não informado.
+040_validas_campos_obligatorios					= É obrigatório informar pelo menos um dos seguintes filtros: “Cliente”, “Documento – Número Externo”, “Documento – Código comprovante”, “Remessa – Código Externo”, “Objeto – Precinto”, “Parcial – Parcial”.
+
+//UserControl ucFiltroElementos
+041_titulo_documento							= Documento
+041_titulo_contenedor							= Contenedor
+041_titulo_remesa								= Remesa
+041_titulo_bulto								= Objeto
+041_titulo_parcial								= Sangria
+041_lbl_Precinto								= Lacre:
+041_lbl_parcial									= Sangria:
+041_lbl_tipo_contenedor							= Tipo Contenedor:
+041_lbl_tipo_servicio							= Tipo Serviço:
+041_lbl_fecha_alta_desde						= Data Inicio:
+041_lbl_fecha_alta_hasta						= Data Fim:
+041_lbl_codigo_contenedor						= Código Contenedor:
+041_lbl_numero_externo							= Número Externo:
+041_lbl_codigo_externo							= Cód. Externo:
+041_lbl_codigo_comprovante						= Cód. Comprovante:
+041_lbl_ruta									= Cód. Rota:
+041_tipo_servicio_guardar						= Guardar
+041_tipo_servicio_clasificar					= Classificar
+041_tipo_servicio_pernocte						= Pernoite
+041_tipo_servicio_procesar						= Processar
+041_tipo_servicio_movimientointerno				= Movimento Interno
+041_lbl_formato_bulto							= Formato Objeto:
+041_lbl_formato_parcial							= Formato Sangria:
+
+//UserControl ucFiltroDivisa
+042_trv_tipo_medio_pago_cheque					= Cheque
+042_trv_tipo_medio_pago_ticket					= Ticket
+042_trv_tipo_medio_pago_otros_valores			= Outros Valores
+042_trv_tipo_medio_pago_tarjeta					= Cartão
+042_trv_efectivo								= Efetivo
+
+//UserControl ucValores
+043_TituloDivisas								= Divisas
+043_TituloValores								= Valores
+043_DivisasSeleccionadas						= Divisas selecionadas
+043_DivisasSector								= Divisas possiveis
+043_divisa_obrigatorio							= O documento deve possuir pelo menos uma divisa.
+043_ConsiderarSomaZero							= Considerar totais que somam zero
+
+//Configuración Formularios
+044_Titulo										= Configuração de Formulários
+044_Exluir										= Excluir
+044_Editar										= Modificar
+044_FormularioHayDocumentos						= Este formulário já possui documentos relacionados.
+044_FormularioBorrado   						= Formulário excluído.
+044_ConfigurarFormulario  						= Configurar Novo Formulário
+044_ExcluirFormulario	  						= Excluir Formulário?
+
+//Formulário (Wizard)
+045_Paso_1										= Passo 1: Código e Descição
+045_Paso_2										= Passo 2: Característica Principal de Uso
+045_Paso_3										= Passo 3:
+045_Paso_4										= Passo 4:
+045_Paso_5										= Passo 5:
+045_Paso_6										= Passo 6:
+045_Confirmacion								= Confirmação
+045_Siguiente									= Seguinte
+045_Anterior									= Anterior
+045_Grabar										= Gravar
+045_Cancelar									= Cancelar
+045_Codigo										= Código
+045_Descripcion									= Descrição
+045_Color_Cabecera								= Cor que aparecerá na cabecera
+045_Tipo_Documento								= Tipo de Documento (Agrupação por Tipo)
+045_Movimento_Individual						= O movimento pode ser realizado de forma Individual?
+045_Movimento_Agrupada							= E de forma Agrupada?
+045_Disponible_Para_Uso							= O movimento esta disponível para uso (ativo)?
+045_Cierres										= Cierres
+045_Gestion_Bultos								= Gestão de Bultos
+045_Gestion_Fondos								= Gestão de Fondos
+045_Gestion_Remesas								= Gestão de Remessas
+045_Gestion_Contenedores						= Gestão de Contenedores
+045_Otros_Movimentos							= Outros Movimentos
+045_Actas										= Actas
+045_Ajustes										= Ajustes
+045_Altas										= Altas
+045_Bajas										= Baixas
+045_Reenvios									= Reenvios
+045_Utiliza_Codigo_Barras						= Se utiliza leitor de código de barras?
+045_Tipo_Bulto_Tratar							= Tipos de bulto a tratar
+045_Llegar_Saldo_Negativo						= O movimento permite chegar saldo negativo?
+045_Agrupar_En_Contenedor						= Agrupar no contenedor
+045_Desagrupar_En_Contenedor					= Desagrupar no contenedor
+045_Bloquear_En_Contenedor						= Bloquear contenedor
+045_Desbloquear_En_Contenedor					= Desbloquear contenedor
+045_Revisar_En_Contenedor						= Revisar contenedor
+045_Eliminar_En_Contenedor						= Eliminar contenedor
+045_Poner_En_Uso_Contenedor						= Por em uso contenedor
+045_Poner_En_Desuso_Contenedor					= Por em desuso contenedor
+045_Movimientos_De_Fondos						= Movimento de Fondos
+045_Cierre_De_Tesoro							= Encerramento de Tesouro
+045_Cierre_De_Caja								= Encerramento de Caixa
+045_Opciones_Cierre_Caja						= Opções do Encerramento de Caixa
+045_Cuadre_Fisico								= Cuadre Físico
+045_Baja_Remesa_Sistema							= Baixa de uma Remesa no Sistema
+045_Salida_Remesa_Ruta							= Saída de uma Remesa em uma Rota
+045_Basado_Reporte								= Baseado no reporte (filtro)
+045_Entre_Sectores								= Entre Setores
+045_Entre_Plantas								= Entre Plantas
+045_Acta_Recuento								= Acta de Recuento
+045_Acta_Clasificado							= Acta de Classificado
+045_Acta_Embolsado								= Acta de Embolsado
+045_Baja_Bulto_Sistema							= Baixa de um Bulto no Sistema
+045_Salida_Bulto_Ruta							= Saída de um Bulto na Rota
+045_Entre_Canales								= Entre Canais
+045_Entre_Clientes								= Entre Clientes
+045_Estados_Posibles_Documento					= Estados Possíveis do Documento
+045_Acciones_Contables_Estados					= Ações Contábeis para os Estados Selecionados
+045_Disponible_Origen							= Disponível na Origem
+045_No_Disponible_Origen						= Não Disponível na Origem
+045_Disponible_Destino							= Disponível no Destino
+045_No_Disponible_Destino						= Não Disponível no Destino
+045_En_Proceso									= Em Proceso
+045_Eliminado									= Anulados
+045_Confirmado									= Confirmado
+045_Aceptado									= Aceitado
+045_Rechazado									= Recusado
+045_Sustituido									= Substituído
+045_Se_Imprime									= Se imprime?
+045_Copias										= Cópias
+045_Anadir										= Adicionar
+045_Quitar										= Remover
+045_IAC_Documento								= IAC no Documento (Individual)
+045_IAC_Documento_Grupo							= IAC no Documento (Grupo)
+045_Buscador									= Buscar
+045_Identificacion								= Identificação
+045_Color										= Cor:
+045_Tipo_Doc									= Tipo de Documento:
+045_Permite_Generar_Individual					= Permite Gerar Documento Individual?
+045_Permite_Generar_Agrupado					= Permite Gerar Documento Agrupado?
+045_Objectivo									= Objetivo
+045_Caracteristicas								= Características:
+045_Tipo_De_Bultos								= Tipos de Bultos:
+045_Visibilidad_Uso								= Visibilidade e Uso
+045_Documento_Podra_Creado_Sectores				= O documento poderá ser criado pelos setores que sejam dos seguintes tipos:
+045_Documento_Podra_Enviado_Sectores			= O documento poderá ser enviado pelos setores que sejam dos seguintes tipos:
+045_Operaciones_Contables_Otros_Datos			= Operações Contábeis e Outros Dados
+045_Estado										= Estado
+045_Permite_Llegar_Saldo_Negativo				= Permite Chegar Saldo Negativo?
+045_Permite_Lector_codigo_Barras				= Permite Utilizar Leitor de Código de Barras?
+045_Impreso_Al_Confirmmar						= O Documento Será Impresso ao Confirmar?
+045_Copias_Impresion_Para						= Cópias de Impressão para:
+045_Cuadres_Cierres								= Cuadres e Encerramentos
+045_Gestion_Bultos_Realizar						= Gestão de Bultos. Ação à realizar.
+045_Gestion_Fondos_Realizar						= Gestão de Fondos. Ação a realizar.
+045_Gestion_Remesas_Realizar					= Gestão de Remesas. Ação a realizar.
+045_Gestion_Contenedores_Realizar				= Gestão de Contenedores. Ação a realizar.
+045_Gestion_Bultos_Bajas_Detalles				= Gestão de Bultos. Baixas. Detalhes.
+045_Gestion_Bultos_Reenvio_Detalles				= Gestão de Bultos. Reenvios. Detalhes.
+045_Gestion_Bultos_Actas_Detalles				= Gestão de Bultos. Actas. Detalhes.
+045_Gestion_Fondos_Movimiento_Detalles			= Gestão de Fundos. Movimento de Fondos. Detalhes.
+045_Gestion_Remesas_Bajas_Detalles				= Gestão de Remesas. Baixas. Detalhes.
+045_Gestion_Remesas_Reenvio_Detalles			= Gestão de Remesas. Reenvios. Detalhes.
+045_Gestion_Remesas_Actas_Detalles				= Gestão de Remesas. Actas. Detalhes.
+045_Gestion_Cierres_Detalles					= Gestão de Cierre Detalhes.
+045_Tipos_Sectores								= Tipos de Setores
+045_Tipos_Sectores_Destino						= Tipos de Setores de Destino
+045_Tipos_Sectores_Movimento_Definido			= Tipo de Setor em que se Apresenta o Movimento Definido.
+045_Tipos_Sectores_Ori_Dest_Movimento_Definido	= Tipo de Setor Origem e Destino em que se Apresenta o Movimento Definido.
+045_Tipos_Sectores_Origen						= Tipos de Setores de Origem
+045_Paso6_Operaciones_Otros_Datos				= Passo 6: Operações contábeis e outros dados
+045_Resumen_Vision								= Resumo de Visão
+045_Si											= Sim
+045_No											= Não
+045_Formulario_Vazio							= Objeto Formulário Vázio
+045_Identificador_Obligatorio					= Identificador Formulário Obrigatório
+045_Tipo_Documento_Obligatorio					= Identificador Tipo Documento Obrigatório
+045_Codigo_Obligatorio							= Código Formulário Obrigatório
+045_Descricion_Obligatorio						= Descrição Formulário Obrigatório
+045_Color_Obligatorio							= Cor Formulário Obrigatório
+045_Cod_Nivel_Movi_Sector_Obligatorio			= Código Nível Movimento Sector Obrigatório
+045_Bol_Activo_Obligatorio						= Está ativo Obrigatório
+045_Fecha_Creacion_Obligatorio					= Data de Criação Formulário Obrigatório
+045_Usuario_Creacion_Obligatorio				= Usuário de Criação Formulário Obrigatório
+045_Fecha_Modificacion_Obligatorio				= Data de Modificação Formulário Obrigatório
+045_Usuario_Modificacion_Obligatorio			= Usuário de Modificação Formulário Obrigatório
+045_Caracteristicas_Obligatorio					= Características Formulário Obrigatório
+045_Utilizar_Reenvio_Automatico					= Utilizar este formulário para Documentos de Reenvio Automático?
+045_Codigo_Formulario_Existe					= Já existe um formulário com este código
+045_Permite_Enviar_Salidas						= Utilizar este formulário para integração com o módulo Salidas?
+045_Permite_Integracion_Recepcion				= Utilizar este formulário para integração com o módulo Recepção e Envio?
+045_Permite_Integracion_Legado					= Utilizar este formulário para integração com o Legado?
+045_Permite_Integracion_Conteo					= Utilizar este formulário para integração com o módulo Conteo?
+045_Permite_Modificar_Termino					= Modificar Términos de documentos válidos?
+045_Codigo_Externo_Obligatorio					= O Código Externo deverá ser obrigatório ao criar o Documento?
+045_Formulario_Eviar_Salidas_Existe				= O formulário de código {0}, já é utilizado para integração com o Módulo Salidas
+045_Formulario_Integracion_Recepcion_Existe		= O formulário de código {0}, já é utilizado para integração com o Módulo Recepção e Envio
+045_Formulario_Integracion_Legado_Existe		= O formulário de código {0}, já é utilizado para integração com o Legado
+045_Formulario_Integracion_Conteo_Existe		= O formulário de código {0}, já é utilizado para integração com o Módulo Conteo
+045_Titulo										= Gerenciador de Formulários
+045_Confirm_Cancelar							= Cancelar?
+045_Accion_Contable_Obligatorio					= Ação Contábil Obrigatória.
+045_Accion_Contable								= Ação Contábil
+045_Extension_Invalido							= A extensão {0} não é válida!
+045_Tamano_Maximo_Icono							= O ícone deve possuir no máximo 150KB.
+045_Ruta_Cargar_Icono							= Diretório para carregar o ícone
+045_Accion_Contable_Suma						= Soma
+045_Accion_Contable_Resta						= Subtrai
+045_Sustitucion									= Sustitución
+045_Solicitacion								= Solicitação
+045_Clasificacion								= Classificação
+045_Formulario_Integracion_Existe				= Não é possível configurar a opção {0} porque o formulário {1} já possuí o mesmo conjunto de característica ({2}).
+045_Permite_Solicitacion_Fondos					= Utilizar esse formulário para Solicitação de Fundos?
+045_Integracion_Salidas_Obligatorio				= O formulário para solicitação de fundos é obrigatório ter integração com o Salidas.
+045_Acta_Desembolsado							= Acta de Desembolsado
+045_Permite_Contestar_Solicitacion_Fondos		= Utilizar esse formulário para Contestar Solicitação de Fundos?
+045_Movimiento_Aceptacion_Automatica			= Este formulário é automaticamente aceito no setor de destino?
+045_Formulario_Ya_Existe						= Já existe um formulário com estas caracterisitcas. Favor verificar o formulario: {0}
+045_Excluir_Sectores_Hijos						= Excluir SubSetores/Postos
+045_Resumen_Excluir_Sectores_Hijos				= Excluir SubSetores/Postos?
+045_Tipo_Documento_Certificable = CERTIFICAVEL
+045_Pack_Modular								= Pack Modular
+045_Desarmar_Contenedor							= Desarmar o Contenedor
+045_Salida_Contenedor							= Saída do Contenedor em uma rota
+045_Disponible_Bloqueado_Origen					= Disponível Bloqueado Origem
+045_Disponible_Bloqueado_Destino				= Disponível Bloqueado Destino 
+
+
+//ACCION CONTABLE
+046_Accion_Contable_Vazio						= Objeto Ação Contábil Vazio.
+046_Identificador_Accion_Contable_Obrigatorio	= Identificador Ação Contábil Obrigatório.
+046_Codigo_Accion_Contable_Obrigatorio			= Código Ação Contábil Obrigatório.
+046_Descripcion_Accion_Contable_Obrigatorio		= Descrição Ação Contábil Obrigatório.
+046_Usuario_Cri_Accion_Contable_Obrigatorio		= Usuário de Criação Obrigatório.
+046_Usuario_Mod_Accion_Contable_Obrigatorio		= Usuário de Modificação Obrigatório.
+046_Fecha_Creacion_Obrigatorio					= Data de criação obrigatória.
+046_Fecha_Modificacion_Obrigatorio				= Data de modificação obrigatória.
+
+//ESTADOS ACCION CONTABLE
+047_Estados_Vazio								= Objeto Estado da Ação Contábil Vazio.
+047_Identificador_Vazio							= Identificador Estado Ação Contábil Vazio.
+047_Identificador_Acao_Contabil_Vazio			= Identificador Ação Contábil Vazio.
+047_Codigo_Estado								= Código Estado Vazio.
+047_Origem_Disponivel							= Origem Disponível Vazio.
+047_Origem_No_Disponivel						= Origem Não Disponível Vazio.
+047_Destino_Disponivel							= Destino Disponível Vazio.
+047_Destino_No_Disponivel						= Destino Não Disponível Vazio.
+047_Mismo_Sector								= Mesmo Setor Vazio.
+047_Fecha_Creacion_Vazia						= Data de criação Vazia.
+047_Fecha_Modificacion_Vazia					= Data de modificação Vazia.
+047_Usuario_Creacion_Vazia						= Usuário criação Vazio.
+047_Usuario_Modificacion_Vazia					= Usuário modificação Vazio.
+047_Accion_No_Mueve_Valores_No_Encontrada		= Não foi possível encontrar a ação contábil 'No Mueve Valores' (código 'AC_000000000001') na base de dados.
+
+//TIPO SECTOR
+048_Tipo_Sector_Vazia							= Objeto Tipo Setor Vazio.
+048_Identificador_Formulario_Obligatorio		= Identificador Formulário Obrigatório.
+048_Relacion_formulario_Obligatorio				= Relação com Formulário Obrigatório.
+048_Tipo_Sector_Obligatorio						= Tipo Setor Obrigatório.
+048_Fecha_Creacion_Obligatorio					= Data Criação Tipo Setor Obrigatório.
+048_Fecha_Modificacion_Obligatorio				= Data Modificação Tipo Setor Obrigatório.
+048_Usuario_Creacion_Obligatorio				= Usuário Criação Tipo Setor Obrigatório.
+048_Usuario_Modificacion_Obligatorio			= Usuário Modificação Tipo Setor Obrigatório.
+
+//TIPO BULTO
+049_Tipo_Bulto_Vazia							= Objeto Tipo Bulto Vazio.
+049_Identificador_Formulario_Obligatorio		= Identificador Formulário Obrigatório.
+049_Identificador_Tipo_Bulto					= Identificador Tipo Bulto Obrigatório.
+049_Fecha_Creacion_Obligatorio					= Data Criação Tipo Bulto Obrigatório.
+049_Fecha_Modificacion_Obligatorio				= Data Modificação Tipo Bulto Obrigatório.
+049_Usuario_Creacion_Obligatorio				= Usuário Criação Tipo Bulto Obrigatório.
+049_Usuario_Modificacion_Obligatorio			= Usuário Modificação Tipo Bulto Obrigatório.
+
+//COPIAS
+050_Copias_Vazia								= Objeto Copia Vazio.
+050_Identificador_Formulario_Obligatorio		= Identificador Formulário Obrigatório.
+050_Identificador_Copias						= Identificador Cópia Obrigatório.
+050_Destino										= Destino Cópia Obrigatório.
+050_Fecha_Creacion_Obligatorio					= Data Criação Cópia Obrigatório.
+050_Fecha_Modificacion_Obligatorio				= Data Modificação Cópia Obrigatório.
+050_Usuario_Creacion_Obligatorio				= Usuário Criação Cópia Obrigatório.
+050_Usuario_Modificacion_Obligatorio			= Usuário Modificação Cópia Obrigatório.
+
+//ucFiltroDivisas
+051_divisa_vacio								= Não existem divisas {0} para serem selecionadas.
+051_activo										= ativas
+051_efectivo_vacio								= Não existem efetivos ativos para a{0} divisa{1} selecionada{2}.
+051_mediopago_vacio								= Não existem meios de pagamento ativos para a{0} divisa{1} selecionada{2}.
+051_efectivos									= Efetivos
+051_mediospago									= Meios de pagamento
+051_divisasinactivas							= Considerar divisas inativas
+051_totalesefectivos							= Considerar totais efetivos
+051_totalesmediospago							= Considerar totais tipos meios de pagamento
+051_divisasnoselecionadas						= Selecione alguma divisa.
+
+//ucListaInventario
+052_btnBuscar									= Buscar
+052_NenhumRegistroEncontrado					= Nenhum registro encontrado.
+052_campoSector_obrigatorio						= O campo Setor é obrigatório.
+052_lblCodigo									= Código	
+052_lblFechaHoraInventario						= Data/Hora Inventário
+052_lblDelegacion								= Delegação
+052_lblPlanta									= Planta
+052_lblSector									= Setor
+052_NenhumInventarioSeleccionado				= Nenhum Inventário selecionado.
+
+//Relatório Generar inventario de bultos
+053_lblTitulo									= Relatórios > Inventário de Bultos > Gerar Inventário de Bultos
+053_lblFiltro									= Inventário de Bultos
+053_OrdenarPor									= Ordenar por
+053_cliente_canal								= Cliente e Canal
+053_documento									= Documento
+053_campoSector_obrigatorio						= O campo Setor é obrigatório.
+053_btnGerar									= Executar Relatório
+053_formato										= Formato
+053_formato_excel								= Excel
+053_formato_pdf									= PDF
+053_discriminar_subsectores						= Discriminar SubSectores/Postos
+053_ubicacion									= Localização
+
+//Relatório Histócio inventario de bultos
+054_lblTitulo									= Relatórios > Inventário de Bultos > Histórico Inventário de Bultos
+054_lblFiltro									= Inventário de Bultos
+054_OrdenarPor									= Ordenar por
+054_cliente_canal								= Cliente e Canal
+054_documento									= Documento
+054_btnGerar									= Executar Relatório
+054_formato										= Formato
+054_formato_excel								= Excel
+054_formato_pdf									= PDF
+054_fecha_hora_desde							= Data/Hora De
+054_fecha_hora_hasta							= Data/Hora Até
+054_codigo_inventario							= Código Inventário
+054_selecao_inventario							= Realize a busca se selecione um registro de inventário.
+054_campoFechaHoraDesde_obrigatorio				= O campo Data/Hora De é obrigatório.
+054_campoFechaHoraHasta_obrigatorio				= O campo Data/Hora Até é obrigatório.
+
+//Controle UCValoresDivisas
+055_lblTituloComponente_Declarado				= Valor Declarado
+055_lblTituloComponente_Contado					= Valor Contado
+055_lblTituloComponente_Diferencia				= Diferença
+055_lblTituloComponente_Disponible				= Divisas
+055_lblTituloComponente_NoDisponible			= Divisas
+055_lblTituloComponente_NoDefinido				= Divisas
+055_divisa										= Divisa
+055_totalGeneral								= Total Geral
+055_totalEfectivo								= Total Efetivo
+055_totalOtroValor								= Total Outro Valor
+055_totalCheque									= Total Cheque
+055_totalTarjeta								= Total Cartão
+055_totalTicket									= Total Ticket
+055_remover										= Remover
+055_selecione									= Selecione...
+055_calidadNoDefinida							= Não definida
+055_preenchaAlgumTotal							= Preencha algum total.
+055_valorNumerico								= O campo deve conter um valor numérico.
+055_totalesPorDivisa							= Totais por Divisa
+055_totalesEfectivo								= Efetivo
+055_totalesEfectivoGrilla						= Totais Efetivo:
+055_tituloComponente							= Titulo do Componente
+055_totalesMedioPago							= Meio de pagamento
+055_totalesMedioPagoGrilla						= Totais Meios de Pagamento:
+055_denominacion								= Denominação
+055_billeteMoneda								= Nota/Moeda
+055_unidadMedida								= Un. Medida
+055_cantidad									= Quant.
+055_valor										= Valor
+055_calidad										= Qualidade
+055_billete										= Bilhete
+055_moneda										= Moeda
+055_tipoMedioPago								= Tipo do meio de pagamento
+055_medioPago									= Meio Pagto
+055_informacionesComplementares					= Inf. Compl.
+055_terminosMedioPago							= Terminos do meio de pagamento
+055_mascaratermino								= Máscara inválida
+055_confirmacionExclusionTodos					= Tem certeza de que deseja excluir todos os items?
+055_unidadmedidaobligatorio						= O campo Unidade de Medida da denominação '{0}' da divisa '{1}' é obrigatório, porque o parametro '{2}' está configurado para trabalhar com Unidades de medida.
+055_calidadobligatorio							= O campo Qualidade da denominação '{0}' da divisa '{1}' é obrigatório, porque o parametro '{2}' está configurado para trabalhar com Qualidades.
+055_importeefectivoobligatorio					= A denominação '{0}' da divisa '{1}' está com o campo Valor inválido, porque existe valor informado para o campo Quantidade.
+055_cantidadefectivoobligatorio					= A denominação '{0}' da divisa '{1}' está com o campo Quantidade inválido, porque existe valor informado para o campo Valor.
+055_importemediopagoobligatorio					= O meio de pagamento '{0}' da divisa '{1}' está com o campo Valor inválido, porque existe valor informado para o campo Quantidade.
+055_cantidadmediopagoobligatorio				= O meio de pagamento '{0}' da divisa '{1}' está com o campo Quantidade inválido, porque existe valor informado para o campo Valor.
+055_mascaraterminoinvalida						= O valor '{0}' informado para o término '{1}' do meido de pagamento '{2}' da divisa '{3}' não atende a máscara configurada: '{4}'.
+055_tituloMonedasAgregadas						= Moedas agregadas:
+055_nivel										= Nível
+055_total										= Total
+055_detalle										= Detalhe
+055_cheque										= Cheque
+055_ticket										= Ticket
+055_otrovalor									= Outros Valores
+055_tarjeta										= Cartão
+055_importepositivomodificar					= Importe positivo a modificar:
+055_importenegativomodificar					= Importe negativo a modificar:
+055_importepositivodetallar						= Importe positivo a detallar:
+055_importenegativodetallar						= Importe negativo a detallar:
+
+//Relatório saldos
+056_menu										= Saldos 
+056_lblTitulo									= Relatórios > Saldos 
+056_lblSubTitulo								= Saldos
+056_btnGerar									= Executar Relatório
+056_formato										= Formato de Saída
+056_formato_excel								= Excel
+056_formato_pdf									= PDF
+056_detalhar_sector								= Discriminar por Setor
+056_detalhar_divisa								= Detalhar Divisas
+056_considerar_cliente_sem_saldo				= Considerar Cliente sem Saldo
+056_campoDelegacion_obrigatorio					= O Campo Delegação é obrigatório.
+056_campoDivisa_obrigatorio						= O Campo Divisa é obrigatório.
+056_considerar_todos_niveis						= Considerar todos os níveis
+056_cliente_nao_totalizador_saldo				= O(s) cliente(s) abaixo não são totalizador(es) de saldo:{0} 
+056_clienteSubClientePontoServico_nao_totalizador = O(s) cliente(s) abaixo não são totalizador(es) de saldo e não possui subcliente ou ponto de serviço totalizador de saldo:{0}  
+056_subcliente_nao_totalizador_saldo			= O(s) subcliente(s) abaixo não são totalizador(es) de saldo:{0}  
+056_SubClientePontoServico_nao_totalizador		= O(s) subcliente(s) abaixo não são totalizador(es) de saldo e não possui ponto de serviço totalizador de saldo:{0}  
+056_pontoServicio_nao_totalizador_saldo			= O(s) Ponto de Serviço(s) abaixo não são totalizador(es) de saldo:{0}  
+056_lengda_tipo_valor							= Tipo de valores
+056_discriminar_subsectores						= Discriminar SubSectores/Postos
+
+//Relatório Transações
+057_menu										= Transações
+057_lblTitulo									= Relatórios > Transações
+057_lblSubTitulo								= Transações
+057_btnGerar									= Executar Relatório
+057_formato										= Formato
+057_formato_excel								= Excel
+057_formato_pdf									= PDF
+057_fechahoradesde								= Data/Hora De
+057_fechahorahasta								= Data/Hora Até
+057_considerarvalores							= Considerar os valores
+057_ambos										= Ambos
+057_disponible									= Disponíveis
+057_ndisponible									= Não disponíveis
+057_formularios									= Formulários
+057_sinformularios								= Não existem formulários para serem exibidos.
+057_delegacionobligatorio						= O campo Delegação é obrigatório.
+057_clienteobligatorio							= O campo Cliente é obrigatório.
+057_canalobligatorio							= O campo Canal é obrigatório.
+057_fechadesdeobligatorio						= O campo Fecha/Hora Desde é obrigatório.
+057_fechahastaobligatorio						= O campo Fecha/Hora Hasta é obrigatório.
+057_fechadesdefechahasta						= O campo Fecha/Hora Desde deve ser menor ou igual ao campo Fecha/Hora Hasta.
+057_columnasadicionalesdisponibles				= Colunas diponíveis
+057_columnasadicionalesseleccionados			= Colunas selecionadas
+057_puntoservicioorigen							= Ponto de Serviço Origem
+057_subclientedestino							= Sub-cliente Destino
+057_puntoserviciodestino						= Ponto de Serviço Destino
+057_NoConsiderarSectoresHijos					= Não considerar setores filhos
+057_lblTituloFiltroFecha						= Filtrar Data/Hora por
+057_lblNotificado                               = Considerar movimentos notificados
+057_lblAcreditado                               = Considerar movimentos acreditados
+057_rbNotificadoAmbos							= Ambos
+057_rbNotificado								= Notificado
+057_rbNoNotificado								= Não notificado
+057_rbAcreditadoAmboso							= Ambos
+057_rbAcreditadoo								= Acreditado
+057_rbNoAcreditadoo								= Não acreditado
+057_FiltroFechaCreacion							= Criação
+057_FiltroFechaGestion							= Gestão
+
+058_TituloTipoServicio							= Tipo do Serviço
+058_TituloFormatoObjeto							= Formato do Objeto
+058_TituloCantidadObjeto_remesa					= Quantidade de Parciais
+058_TituloTipoValor_Declarado					= Declarados
+058_TituloTipoValor_Contado						= Contados
+058_quitar										= Excluir
+058_Totales										= Totais:
+058_TituloDivisas								= Moedas agregadas no grupo:
+058_TituloCantidad_bulto						= Quantidade de sangrias no grupo:
+058_TituloCantidad_remesa						= Quantidade de malotes no grupo:
+058_Seleccionar									= Selecionar
+058_TituloCantidadItems							= Quantidade de itens no grupo:
+
+//ucElementoSelecionar
+059_agregar										= Agregar
+059_remesa										= Remessa
+059_formulario									= Formulário
+059_setor										= Centro de Processo
+059_canal_cliente								= Canal/Cliente
+059_cliente										= Cliente
+059_canal										= Canal
+059_sector										= Setor
+059_valores										= Valores
+059_tipo_servicio								= Tipo Serviço
+059_formato										= Formato do Objeto
+059_quantidade_parcial							= Quantidade de Parciais
+059_lblSelecionar								= Selecionar
+059_lblEliminar									= Eliminar
+059_lblBulto									= Malote
+059_lblConfiguracionNivelDetalle				= Configuração Nivel Detalhe
+059_ConfiguracionNivel_Detalle					= Detalhado
+059_ConfiguracionNivel_Total					= Total
+059_ConfiguracionNivel_Ambos					= Ambos
+
+//Relatório Seguimento de malotes
+060_menu										= Seguimento de malotes
+060_FiltrarNumeroExterno						= Numero Externo
+060_FiltrarCodigoBolsa							= Codigo Malote
+060_FiltrarPrecinto								= Lacre Malote
+060_lblTitulo									= Relatório de Seguimento de Malotes
+060_lblSubTitulo								= Relatório de Seguimento de Malotes
+060_lblCodigo									= Codigo
+060_FiltrarPor									= Filtrar por
+060_InformaCodigo								= Es necesario informar un criterio de busqueda
+060_btnGerar									= Executar Relatório									
+060_formato_excel								= Excel
+060_formato_pdf									= PDF
+060_TradNombreReporte							= Reporte de Seguimento de Malotes
+060_TradPagina									= Pagina
+060_TradCodigoExterno							= Numero GTV
+060_TradUsuario									= Usuario
+060_TradFecha									= Data
+060_TradFormulario								= Formulario
+060_TradBulto									= Malote
+060_TradPrecinto								= Lacre
+060_TradTipoDestino									= Tipo Destino
+060_TradCertificado								= Certificado
+060_TradSectorOrigen							= Setor
+060_TradSectorDestino							= Setor
+060_TradSubCanalOrigen							= Canal/Subcanal
+060_TradSubCanalDestino							= Canal/Subcanal
+060_TradClienteOrigen							= Cliente
+060_TradClienteDestino							= Cliente
+060_TradOrigen									= Dados de Origen
+060_TradDestino									= Datos de Destino
+060_TradProsegur								= Prosegur Brasil S/A
+060_FormatoGenerar								= Formato
+
+//SALDO
+061_Codigo_Sector_Obligatorio					= Código setor Obrigatório
+061_Codigo_Planta_Obligatorio					= Código planta Obrigatório
+
+//CONSULTA SALDO
+062_lblTitulo									= Consultas > Saldo
+062_lblFiltro									= Filtro
+062_lblResultados								= Resultado da consulta
+062_menu										= Consultar Saldo
+062_btnBuscar									= Buscar
+062_considerarvalores							= Considerar os valores
+062_ambos										= Ambos
+062_disponible									= Disponíveis
+062_ndisponible									= Não disponíveis
+062_plantaobligatorio							= O campo Planta é obrigatório.
+062_sectorobligatorio							= O campo Setor é obrigatório.
+062_detallar_cliente_canal						= Detalhar por Cliente e Canal
+062_considerar_sectores_hijos					= Discriminar SubSetores/Postos
+062_todas_cuentas_saldos						= Todas as contas devem ser totatlizadoras de saldos.
+062_no_hay_saldo								= Não há nenhum saldo.
+062_sector										= Setor
+062_cliente_canal								= Cliente e Canal
+062_divisa										= Divisa
+062_valor_disponible							= Valor Disponível
+062_valor_no_disponible							= Valor Não Disponível
+062_suma										= Soma
+062_cuenta										= Setor, Cliente e Canal
+062_DiscriminarPor								= Discriminar Por
+062_Total										= Total
+
+// Consulta Historico Importes de Elementos
+063_Titulo										= Histórico Importes de Elementos
+
+// Controle Filtros Historico Importes de Elementos
+064_Titulo										= Filtro
+064_TipoElemento								= Tipo Elemento
+064_CodigoExterno								= Código Externo
+064_CodigoPrecinto								= Código Precinto
+064_CodigoComprobante							= Código Comprovante
+064_EstadoElemento								= Estado Elemento
+064_EstadoDocumentoElemento						= Estado Documento x Elemento
+064_Buscar										= Buscar
+064_Seleccionar									= Selecionar
+064_EstadoDocElemento_NaoDefinido				= Não Definido
+064_EstadoDocElemento_Historico					= Histórico
+064_EstadoDocElemento_Transicao					= Transição
+064_EstadoDocElemento_Concluido					= Concluído
+064_EstadoDocumento_Nuevo						= Novo
+064_EstadoDocumento_EnCurso						= Em Curso
+064_EstadoDocumento_Confirmado					= Confirmado
+064_EstadoDocumento_Anulado						= Anulado
+064_EstadoDocumento_Aceptado					= Aceitado
+064_EstadoDocumento_Rechazado					= Recusado
+064_EstadoDocumento_Sustituido					= Substituído
+064_EstadoDocumento_Eliminado					= Eliminado
+
+//Relatório histórico de saldos
+065_menu										= Histórico de Saldos 
+065_lblTitulo									= Relatórios > Histórico de Saldos 
+065_lblSubTitulo								= Histórico de Saldos
+065_btnGerar									= Executar Relatório
+065_formato										= Formato de Saída
+065_formato_excel								= Excel
+065_formato_pdf									= PDF
+065_detalhar_sector								= Discriminar por Setor
+065_detalhar_divisa								= Detalhar Divisas
+065_considerar_cliente_sem_saldo				= Considerar Cliente sem Saldo
+065_campoDelegacion_obrigatorio					= O Campo Delegação é obrigatório.
+065_campoDivisa_obrigatorio						= O Campo Divisa é obrigatório.
+065_considerar_todos_niveis						= Considerar todos os níveis
+065_cliente_nao_totalizador_saldo				= O(s) cliente(s) abaixo não são totalizador(es) de saldo:{0} 
+065_clienteSubClientePontoServico_nao_totalizador = O(s) cliente(s) abaixo não são totalizador(es) de saldo e não possui subcliente ou ponto de serviço totalizador de saldo:{0}  
+065_subcliente_nao_totalizador_saldo			= O(s) subcliente(s) abaixo não são totalizador(es) de saldo:{0}  
+065_SubClientePontoServico_nao_totalizador		= O(s) subcliente(s) abaixo não são totalizador(es) de saldo e não possui ponto de serviço totalizador de saldo:{0}  
+065_pontoServicio_nao_totalizador_saldo			= O(s) Ponto de Serviço(s) abaixo não são totalizador(es) de saldo:{0}  
+065_lengda_tipo_valor							= Tipo de valores
+065_fecha_saldo									= Data e Hora de Saldo
+065_fecha_obligatorio							= O filtro Data/Hora é obrigatório.
+
+// DataHoraGMT
+066_NoFueInformadoDelegacion					= Para calcular o GMT, é necessario informar uma delegação valida.
+066_Identificador_Delegacion_Invalido			= Não foi encontrado nenhuma delegação com o identificador informado.
+066_Codigo_Delegacion_Invalido					= Não foi encontrado nenhuma delegação com o código informado.
+
+// DataHoraGMT
+067_Titulo										= Documentos Pendentes
+067_lblTituloFiltro								= Filtros
+067_lblTituloResultado							= Resultado da consulta
+067_lblFechaCertDesde							= Data e Hora Cert. (de)
+067_lblFechaCertHasta							= Data e Hora Cert. (Até)
+067_lblCliente									= Cliente
+067_lblSetor									= Setor
+067_lblTipoDocumento							= Tipo Documento
+067_chkIncDocSinFechaCert						= Incluir documentos sem data de certificação
+067_chkIncDocNoCert								= Incluir documentos marcados para não certificar
+067_grid_codigo_externo							= Código Externo
+067_grid_codigo_Comprovante						= Número Comprovante
+067_grid_formulario								= Formulário
+067_grid_cliente								= Cliente
+067_grid_subcliente								= Subcliente
+067_grid_subcanal								= Subcanal
+067_grid_sector_origem							= Setor Origem
+067_grid_sector_destino							= Setor Destino
+067_grid_fecha_hora_plan_cert					= Data e Hora plan. certificação
+067_grid_excluir								= Excluir
+067_grid_documento								= Documento
+067_validar_cliente_sector						= É obrigatório selecionar cliente ou setor.
+067_documento_certificado						= O documento faz parte do certificado {0} gerado no dia {1}. Ao alterar essas informações, o referido certificado será excluído. Continuar com a mudança?
+067_ProvisionalCon								= Provisória com fechamento
+067_ProvisionalSin								= Provisória sem fechamento
+067_validaFechaHoraCertPlan						= A data e hora do plan. de certificação informados não podem ser menor do que data e hora do certificado definitivo mais recente para a conta de saldo associada
+067_registro_salvo								= Registros salvos com sucesso.
+
+// Caracteristicas Formulários
+CARACTERISTICA_PRINCIPAL_GESTION_REMESAS		= Gestão de Remesas
+CARACTERISTICA_PRINCIPAL_GESTION_BULTOS			= Gestão de Malotes
+CARACTERISTICA_PRINCIPAL_GESTION_CONTENEDORES	= Gestão de Recipiente
+CARACTERISTICA_PRINCIPAL_GESTION_PARCIALES		= Gestão de Sangrias
+CARACTERISTICA_PRINCIPAL_GESTION_FONDOS			= Gestão de Fundos
+CARACTERISTICA_PRINCIPAL_CIERRES				= Fechamentos
+CARACTERISTICA_PRINCIPAL_OTROS_MOVIMIENTOS		= Outros Movimentos
+ACCION_ALTAS									= Inserir
+ACCION_BAJAS									= Excluir
+ACCION_REENVIOS									= Reenvios
+ACCION_ACTAS									= Ata
+ACCION_AJUSTES									= Ajustes
+ACCION_SUSTITUCION								= Substituição	
+ACCION_MOVIMIENTO_FONDOS						= Movimentos de Fundos
+ACCION_SOLICITACION_FONDOS						= Solicitação de Fundos
+PERMITE_LLEGAR_SALDO_NEGATIVO					= Permite Saldo Negativo
+NO_PERMITE_LLEGAR_SALDO_NEGATIVO				= Não Permite Saldo Negativo
+CIERRE_TESORO									= Fechamento do Cofre
+CIERRE_CAJA										= Fechamento de Caixa
+CUADRE_FISICO									= Conferência Física
+UTILIZA_LECTOR_CODIGO_BARRA						= Utiliza Leitor de Código de Barra
+ENTRE_SECTORES_MISMA_PLANTA						= Entre Setores de Mesma Planta
+ENTRE_SECTORES_PLANTAS_DIFERENTES				= Entre Setores de Plantas Diferentes
+ACTA_RECUENTO									= Ata de Contagem
+ACTA_CLASIFICACION								= Ata de Classificação	
+ACTA_EMBOLSADO									= Permite Fazer o Fechamento do Malote
+ACTA_DESEMBOLSADO								= Permite Fazer Abertura do Malote
+ENTRE_CANALES									= Entre Canais
+ENTRE_CLIENTES									= Entre Clientes
+MOVIMIENTO_ACEPTACION_AUTOMATICA				= Movimento de Aceitação Automática
+CONFIRMAR_CON_IMPRESION							= Imprimir Documento ao Confirmar
+DOCUMENTO_INDIVIDUAL							= Documento Individual
+DOCUMENTO_AGRUPADOR								= Documento Agrupador
+MOVIMIENTO_CON_IINFORMACIONES_ROTA				= Movimento Com Informações e Rota
+GESTIONAR_BULTOS_POR_REMESA						= Permite Gestão de Bultos Por Remessa
+GENERA_CONTRAMOVIMIENTOS_DOC_ORIGINAL			= Gerar Extorno Documento Original
+BAJA_ELEMENTOS									= Excluir Malote ou Remessa no Sistema
+SALIDAS_RECORRIDO								= Saída com Referência a um Malote ou Remessa que se Entrega a uma Rota
+REENVIO_AUTOMATICO								= Reenvio Automático
+INTEGRACION_SALIDAS								= Integração Com Saidas
+CODIGO_EXTERNO_OBLIGATORIO						= Código Externo Obrigatório
+INTEGRACION_RECEPCIONYENVIO						= Integração com Recepção e Envio
+INTEGRACION_LEGADO								= Integração com Legado
+INTEGRACION_CONTEO								= Integração com Conteo
+ACCION_CONTESTAR_SOLICITACION_FONDOS			= Contestar Solicitação de Fundos
+SOLO_PERMITIR_AJUSTES_POSITIVOS					= Só Permite Ajustes Positivos
+SOLO_PERMITIR_AJUSTES_NEGATIVOS					= Só Permite Ajustes Negativos
+
+//CONFIGURACION MULTIPLES CERTIFICADOS
+068_lblTitulo_ConfigReporte						= Reportes
+068_lblFiltro_ConfigReporte						= Filtro
+068_lblCodigo									= Codigo
+068_lblDescriccion								= Descriccion
+068_lblDireccionEnServidor						= Direccion en el Servidor de Reporting Service
+068_accion_configurarnovoreporte				= Configurar Nuevo Reporte
+068_lblTituloDadosGenerales						= Dados Generales
+068_tipo_cliente_obligatorio					= O Cliente o Tipo Cliente deveran ser informados.
+068_cliente_obligatorio							= O Cliente é obrigatório.
+068_codigo_reporte								= O Código é obrigatório.
+068_descripcion_reporte							= A Descrição é obrigatório.
+068_direccion_reporte							= O Diretório é obrigatório.
+068_lbl_Tipo_Reporte							= Tipo Relatório
+068_Tipo_Reporte_Certificado					= Certificação
+068_Tipo_Reporte_Abono_Vizualicacion     		= Abono Visualização
+068_Tipo_Reporte_Abono_Exportacion	    		= Abono Exportação
+068_tipo_reporte_obligatorio					= O tipo de relatório é obrigatório
+068_lblMascaraNombre							= Máscara para geração do nome do reporte
+068_lblExtensaoArquivo							= Extensão
+068_lblParametros								= Parâmetros
+068_lblSeparadorArquivo							= Separador
+068_lblRenderizador								= Renderizador
+068_txtMascaraNombre_obligatorio				= A Máscara para geração do nome do reporte é obrigatória
+068_ddlRenderizador_obligatorio					= O Renderizador é obrigatório
+068_txtExtensaoArquivo_obligatorio				= A extensão é obrigatória
+068_btnExcluirConfiguracaoReporte				= Excluir Configuração de Relatório?
+
+//Resultado de la Certificación
+069_Titulo										= Resultado da Certificação
+069_lblTitulo									= Certificado
+069_lblTitulo1									= Reportes
+069_lblCodigoCertificado						= Código
+069_btnEjecutarInforme							= Executar Informe
+069_lblFechaCertificacion						= Data e Hora Certificação (De)
+069_lblEstado									= Certificados
+069_rblEstado_definitivo						= Definitivo
+069_rblEstado_provisionales						= Provisionais
+069_rblEstado_consultas							= Consulta
+069_btnBuscar									= Buscar
+069_msgCliente_Delegacion						= Cliente ou Delegação
+069_estado_certificado_CO						= Consulta
+069_estado_certificado_PC						= Provisional com fechamento
+069_estado_certificado_PS						= Provisional sem fechamento
+069_estado_certificado_DE						= Definitivo
+069_ProcesandoReporte							= Gerando o relatório <b>{0}</b> para o cliente <b>{1}</b> com subcanal <b>{2}</b>. </br> Faltam {3} relatórios para processar do total de {4}.
+069_btnConvertirProvisionalSinCierre			= Converter Provisional SEM Fechamento
+069_btnConvertirProvisionalConCierre			= Converter Provisional COM Fechamento
+069_btnConvertirDefinitivo						= Converter Definitivo
+069_btnVolver									= Voltar
+
+069_grid_fyhcertificado							= Data e Hora Certificado
+069_grid_tipo									= Tipo
+069_grid_cliente								= Cliente
+069_grid_subcanal								= SubCanal
+069_grid_reporte								= Reporte
+069_lbl_en_curso								= Em Execução
+069_lbl_procesado								= Bem Sucedido
+069_lbl_en_cola									= Em Fila de Execução
+069_lbl_erro_ejecucion							= Erro de Execução
+069_grid_situacion								= Situação
+
+//Historico de Elemento
+070_lblTitulo	=	Histórico Elemento
+070_lblFiltro	=	Filtro
+070_lblResultados	=	Histórico
+070_formulario	=	Formulário
+070_sector_origem	=	Setor Origem
+070_sector_destino	=	Setor Destino
+070_data_hora	=	Data e Hora
+070_documento	=	Documento
+
+info_msg_grd_vazio							= No existen datos para ser exhibidos.
+008_colecao_tipoformulario_nulo					= El objeto TipoDocumento está vacío.
+069_msg_Arquivo_Inexistente						= O arquivo não está mais disponivel para download.
+
+
+// **** Abono ****
+// Comon
+071_Comon_msg_loading						= Por favor, espere um momento enquanto o sistema está:&nbsp;
+071_Comon_msg_obtenerValores				= Consultando a base de dados.
+071_Comon_msg_producidoError				= Ocorreu o erro:&nbsp;
+071_Comon_msg_nenhumRegistroEncontrado		= Nenhum registro encontrado!
+071_Comon_msg_nenhumRegistroSeleccionado	= Nenhum registro selecionado!
+071_Comon_msg_informacionesInvalidas		= Informações invalidas!
+071_msg_FormularioNoConfigurado				= O setor atual, {0}, não está configurado para utilizar o formulario de pases {1} (código {2}) necesario para este tipo de abono. Verifique as configurações no maestro de formulários ou certifique que tenha ingressado no setor correto.
+071_Comon_msg_CamposDocPasesObligatorio		= Setor, Canal E SubCanal são obrigatórios.
+071_Comon_msg_CamposCadastroDatosBancarios	= Codigo Cuenta y Titularidad obligatorio.
+071_msg_CuentaEstandarYaExiste				= Já existe conta padrão para o banco informado. Desaja alterar a conta padrão?
+071_msg_NoPermiteSaldoNegativo				= Ao final do proceso de abono um documento de passes será criado pelo formulário '{0}' (código '{1}'). Este formulário está configurado para não permitir chegar saldo negativo, por esta razão, não é possível gerar um abono com valor negativo.
+071_Comon_Valores_Seleccionar				= Selecionar
+071_Comon_Valores_Estado_EN					= Em Curso
+071_Comon_Valores_Estado_PR					= Processado
+071_Comon_Valores_Estado_AN					= Anulado
+071_Comon_Valores_TipoAbono_SA				= Por Saldos
+071_Comon_Valores_TipoAbono_EL				= Por Elemento
+071_Comon_Valores_TipoAbono_PE				= Por Pedido
+071_Comon_Valores_TipoValor_DE				= Declarados
+071_Comon_Valores_TipoValor_CO				= Contados
+071_Comon_Valores_TipoMedioPago_codtipob	= Cheque
+071_Comon_Valores_TipoMedioPago_codtipo		= Outros Valores
+071_Comon_Valores_TipoMedioPago_codtipoc	= Cartão
+071_Comon_Valores_TipoMedioPago_codtipoa	= Ticket
+071_Comon_Valores_TipoEfectivo				= Efetivo
+071_Comon_Campo_Banco						= Solicitante
+071_Comon_Campo_Cliente						= Destinatario
+071_Comon_Campo_SubCliente					= Sub-Cliente
+071_Comon_Campo_PtoServicio					= Ponto de Serviço
+071_Comon_Campo_Canal						= Canal
+071_Comon_Campo_SubCanal					= Sub-Canal
+071_Comon_Campo_Delegacion					= Delegação
+071_Comon_Campo_Planta						= Planta
+071_Comon_Campo_Sector						= Setor
+071_Comon_Campo_Divisa						= Divisas
+071_Comon_Campo_Valores						= Valores
+071_Comon_Campo_TipoAbono					= Tipo Abono
+071_Comon_Campo_NumeroExterno				= Número Externo
+071_Comon_Campo_Precinto					= Precinto
+071_Comon_Campo_Codigo						= Código
+071_Comon_Campo_Estado						= Estado
+071_Comon_Grid_TituloColumna_Aciones		= Ações
+071_Comon_Grid_TituloColumna_Situacion		= Situação
+071_Comon_Boton_Buscar						= Buscar
+071_Comon_Boton_Limpar						= Limpar
+071_Comon_Boton_Aceptar						= Aceitar
+071_Comon_Boton_Cancelar					= Cancelar
+071_Comon_Boton_Visualizar					= Visualizar
+071_Comon_Boton_Editar						= Modificar
+071_Comon_Boton_Eliminar					= Eliminar
+071_Comon_Boton_Voltar						= Voltar
+071_Comon_Titulo_Alert						= Mensagem
+
+071_Comon_Campo_Banco_Saldos	=	Destinatário
+071_Abono_Grid_TituloColumna_Cliente_Saldos	=	Remetente
+071_Comon_Campo_Cliente_Saldos	=	Remetente
+071_Detalle_Campo_Cliente_Saldos	=	Remetente
+071_Abono_Grid2_TituloColumna_Cliente_Saldos	=	Remetente
+071_Comon_Campo_Banco_Elemento	=	Solicitante
+071_Abono_Grid_TituloColumna_Cliente_Elemento	=	Cliente
+071_Comon_Campo_Cliente_Elemento	=	Cliente
+071_Detalle_Campo_Cliente_Elemento	=	Cliente
+071_Abono_Grid2_TituloColumna_Cliente_Elemento	=	Cliente
+071_Comon_Campo_Banco_Pedido	=	Solicitante
+071_Abono_Grid_TituloColumna_Cliente_Pedido	=	Solicitante
+071_Comon_Campo_Cliente_Pedido	=	Solicitante
+071_Detalle_Campo_Cliente_Pedido	=	Destinatário
+071_Abono_Grid2_TituloColumna_Cliente_Pedido	=	Destinatário
+
+071_Busqueda_Campo_Banco	=	Solicitante / Destinatário
+071_Busqueda_Campo_Cliente	=	Remetente / Cliente
+
+// Pantalla Busqueda
+071_Busqueda_Titulo							= Abono
+071_Busqueda_Titulo_Filtro					= Filtro
+071_Busqueda_Titulo_RespuestaConsulta		= Resultado da consulta
+071_Busqueda_Campo_FechaHoraDesde			= Data e Hora Inicial
+071_Busqueda_Campo_FechaHoraHasta			= Data e Hora Final
+071_Busqueda_Campo_Estado					= Estado
+071_Busqueda_Grid_TituloColumna_FechaHora	= Data e Hora
+071_Busqueda_Grid_TituloColumna_Banco		= Solicitante
+071_Busqueda_Grid_TituloColumna_Codigo		= Código
+071_Busqueda_Grid_TituloColumna_TipoAbono	= Tipo Abono
+071_Busqueda_Grid_TituloColumna_Estado		= Estado
+071_Busqueda_Boton_VisualizarArchivo		= Visualizar Arquivos
+071_Busqueda_Boton_VisualizarReporte		= Visualizar Reportes
+071_Busqueda_Boton_NuevoAbono				= Novo Processo Abono
+071_Busqueda_msg_Archivos_Parciales			= Será uma geração parcial, pois nem todos os arquivos estão prontos para ser visualizados. Deseja continuar?
+071_Busqueda_msg_Reportes_Parciales			= Será uma geração parcial, pois nem todos os reportes estão prontos para ser visualizados. Deseja continuar?
+071_Busqueda_msg_Anular_Abono				= Gostaria de anular o processo de abono do banco | | inicializando da data |?
+071_Busqueda_msg_Anulando_Abono				= Eliminando Abono
+071_Busqueda_msg_Generando_Reportes			= Gerando relatórios
+
+// Pantalla Abono
+071_Abono_Titulo							= Abono
+071_Abono_Titulo_TituloDefinicionProceso	= Definição do Processo
+071_Abono_Titulo_TituloResultadoFiltro		= Filtros
+071_Abono_Titulo_TituloElementosAbonados	= Elementos Abonados
+071_Abono_Titulo_TituloSaldosAbonados		= Saldos Abonadas
+071_Abono_Campo_HacerDocumentoPases			= Finalizar o processo de abono com um documento de pases?
+071_Abono_Grid_TituloColumna_NumExterno		= Nº Externo
+071_Abono_Grid_TituloColumna_SubCanal		= Sub-Canal
+071_Abono_Grid_TituloColumna_Cliente		= Cliente
+071_Abono_Grid_TituloColumna_Valor			= Valor
+071_Abono_Grid_TituloColumna_Cuenta			= Conta
+071_Abono_Grid_TituloColumna_Banco          = Banco
+071_Abono_Boton_Seleccionar					= Selecionar
+071_Abono_Boton_Eliminar					= Eliminar
+071_Abono_Boton_Grabar						= Gravar
+071_Abono_Boton_Confirmar					= Gravar e Confirmar
+071_Abono_Boton_Finalizar					= Gravar e Finalizar
+071_Abono_Boton_Anular						= Anular
+071_Abono_msg_ValidacaoFiltro				= Ao alterar este campo, o processo de abono será reiniciado – perdendo todos os abonos criados. Deseja continuar?
+071_Abono_msg_ValidacionTerminosIllenos		= Existem Terminos com valores preenchidos, ao desmarcar essa opção todos os terminos serão perdidos. Deseja continuar?
+071_Abono_msg_RetornandoResultadoFiltro		= Por favor, espere um momento enquanto o sistema está: Consultando a base de dados.
+071_Abono_msg_VinculandoAbono				= Por favor, espere um momento enquanto o sistema está: Vinculando o abono selecionado.
+071_Abono_msg_VinculandoAbonos				= Por favor, espere um momento enquanto o sistema está: Vinculando os abonos selecionados.
+071_Abono_msg_EliminandoAbono				= Por favor, espere um momento enquanto o sistema está: Eliminando o abono selecionado.
+071_Abono_msg_EliminandoAbonos				= Por favor, espere um momento enquanto o sistema está: Eliminando os abonos selecionados.
+071_Abono_msg_GrabandoAbono					= Por favor, espere um momento enquanto o sistema está: Gravando o abono.
+071_Abono_msg_GrabadoElAbono				= Processo de abono gravado com éxito.
+071_Abono_msg_ConfirGrabaryFinalizarAbono	= Ao finalizar o processo de abono não poderá mais ser executado nenhuma alteração nos abonos criados. Esta seguro que deseja finalizar o processo de abono?
+071_Abono_msg_GrabandoyFinalizandoAbono		= Por favor, espere um momento enquanto o sistema está: Gravando e finalizando o abono.
+071_Abono_msg_GrabadoyFinalizadoElAbono		= Processo de abono finalizado com exito.
+071_Abono_msg_ConfirAnulandoAbono			= Ao anular o processo de abono todos os dados relacionados (abonos) serão excluidos da base de dados. Esta seguro que deseja continuar?
+071_Abono_msg_AnulandoAbono					= Por favor, espere um momento enquanto o sistema está: Anulando o abono.
+071_Abono_msg_AnuladoElAbono				= Processo de abono anulado com exito!
+071_Abono_msg_NoExistenDatosBancarios		= Não existem dados bancarios configurados para o cliente (subcliente, ponto de serviço) {0} para a divisa {1}. O número externo {2} não poderá ser abonado.
+071_Abono_msg_FaltaConfiguraciónDatosBanc	= Existem elementos que não poderá ser selecionados devido a falta de configuração de dados bancarios.
+071_Abono_msg_ParametroDocPasesNoEncontrado = Parametro para documento de passes não encontrado
+071_Abono_msg_FormularioPasesInvalido       = O formulário agrupador de passes entre clientes configurado no parâmetro ‘FormularioPasesProcesoAbono’ não é valido. Para finalizar o processo de abono será necessário configurá-lo corretamente.
+071_Abono_msg_TerminosFormPasesNoConfig		= O formulário ‘{0}’ de código ‘{1}’ configurado no parâmetro ‘FormularioPasesProcesoAbono’ não tem configurado os términos necessários para {2}.
+
+// Pantalla Visualizar
+071_Visualizar_Titulo						= Abono
+071_Visualizar_Titulo_DefinicionProceso 	= Definiçõa do Processo
+071_Visualizar_Titulo_Elementos_Abonados	= Elementos Abonados
+071_Visualizar_Titulo_Saldos_Abonados		= Saldos Abonados
+071_Visualizar_Boton_VisualizarArchivo		= Visualizar Arquivos
+071_Visualizar_Boton_VisualizarReporte		= Visualizar Reportes
+071_Visualizar_Boton_GenerarPase			= Finalizar e Gerar o Documento de Pases
+071_Visualizar_Boton_VisualizarPase			= Visualizar o Documento de Pases
+071_Visualizar_Grid_TituloColumna_NumExterno= Nº Externo
+071_Visualizar_Grid_TituloColumna_Cliente	= Cliente
+071_Visualizar_Grid_TituloColumna_Cuenta	= Conta
+071_Visualizar_Grid_TituloColumna_Documento	= Documento
+071_Visualizar_Grid_TituloColumna_Codigo	= Código
+071_Visualizar_Grid_TituloColumna_Titularid	= Titularidade
+071_Visualizar_Grid_TituloColumna_Obs		= Observações
+071_Visualizar_Grid_TituloColumna_Valor		= Valor
+071_Visualizar_msg_ActualizaAutomatico		= * A página se atualiza automáticamente em:
+071_Visualizar_msg_Segundos					= segundos
+071_Visualizar_msg_Error					= Ocorreu um erro ao tentar gerar os relatórios: 
+
+// Popup Filtro
+071_Filtro_Titulo							= Filtro
+071_Filtro_Campo_ConsiderarTodosNiveis		= Considerar los sectores hijos en el resultado de la búsqueda
+071_Filtro_Campo_SolamenteUnDatoBancario	= Exibir clientes com somente um dado bancário (conta)
+071_Filtro_Campo_ValoresCeroYNegativos		= Exibir valores en zero e negativos
+
+// Popup Detalle
+071_Detalle_Titulo							= Abono: Detalhe
+071_Detalle_Titulo_CuentaValoresAbonos		= Conta e Valores Abonados
+071_Detalle_Titulo_Abonos					= Abonos
+071_Detalle_Campo_Divisa					= Divisa
+071_Detalle_Campo_NumExterno				= Número Externo
+071_Detalle_Campo_Cliente					= Cliente
+071_Detalle_Campo_Cuenta					= Conta
+071_Detalle_Campo_Documento					= Documento
+071_Detalle_Campo_Titularidad				= Titularidade
+071_Detalle_Campo_Codigo					= Código
+071_Detalle_Campo_Observaciones				= Observações
+071_Detalle_Campo_ValorTotal				= Valor Total Informado
+071_Detalle_Campo_Disponible				= Disponível:
+071_Detalle_Campo_Valor						= Valor Informado:
+071_Detalle_Campo_TotalEfectivo				= Total Efetivo
+071_Detalle_Campo_TotalOtroValor			= Total Outro Valor
+071_Detalle_Campo_TotalCheque				= Total Cheque
+071_Detalle_Campo_TotalTarjeta				= Total Cartão
+071_Detalle_Campo_TotalTicket				= Total Ticket
+071_Detalle_Boton_Confirmar					= Confirmar
+071_Detalle_Boton_OtraCuenta				= Informar Outra Conta
+071_Detalle_Boton_Cancelar					= Cancelar
+071_Detalle_Grid_TituloColumna_Denominacion	= Denominação
+071_Detalle_Grid_TituloColumna_BilleteMoneda= Efetivo/Moeda
+071_Detalle_Grid_TituloColumna_Disp_Cantidad= Quantidade Disponível
+071_Detalle_Grid_TituloColumna_Disp_Valor	= Valor Disponível
+071_Detalle_Grid_TituloColumna_Inf_Cantidad	= Quantidade Informada
+071_Detalle_Grid_TituloColumna_Inf_Valor	= Valor Informado
+071_Detalle_Grid_TituloColumna_Tipo_MedioPago= Tipo de Meio de Pagamento
+071_Detalle_Grid_TituloColumna_MedioPago	= Meio de Pagamento
+071_Detalle_Grid_TituloColumna_Cuenta		= Conta
+071_Detalle_Grid_TituloColumna_Banco		= Banco
+071_Detalle_Grid_TituloColumna_Documento	= Documento
+071_Detalle_Grid_TituloColumna_Titularidad	= Titularidade
+071_Detalle_Grid_TituloColumna_Codigo		= Código
+071_Detalle_Grid_TituloColumna_Observaciones= Observações
+071_Detalle_Grid_TituloColumna_Valor		= Valor
+071_Detalle_Grid_TituloColumna_Acciones		= Ações
+071_Detalle_Grid_TituloColumna_TotalDisponible = Total Disponível
+071_Detalle_Grid_TituloColumna_TotalInformado = Total Informado
+071_Detalle_msg_AbonoSinInformarValor		= Não se pode registrar um abono sem informar um valor.
+071_Detalle_msg_NingunDivisaConValorDisp	= Nenhuma divisa com valor disponível.
+071_Detalle_msg_ConfirmarExcluirAbonoEle	= Esta seguro que deseja eliminar o abono elemento?
+071_Detalle_msg_DivisasConValoresDisp		= Existem divisas com valores disponíveis para abonar.
+071_Detalle_msg_DivisasConLaMismaCuenta		= Existe divisa abonada com a mesma conta: 
+071_Detalle_msg_ListaCuentasOCuentaVacia	= Existe abonos sem contas vinculdas.
+071_Detalle_Grid_TituloColumna_Termino		= Termino
+
+// Popup Busqueda Avanzada
+071_BusquedaAvanzada_Titulo					= Busca de 
+071_BusquedaAvanzada_Campo_Codigo			= Código
+071_BusquedaAvanzada_Campo_Descripcion		= Descrição
+071_BusquedaAvanzada_Titulo_Filtro			= Critérios de busca
+071_BusquedaAvanzada_Titulo_Respuesta		= Resultado da consulta
+071_Comon_Campo_First						= Primeira
+071_Comon_Campo_Last						= Ultima
+071_BusquedaAvanzada_Acumular_Valores_Hijos = Acumular valores de sectores hijos en sectores padres
+
+//Popup Cadastro Datos Bancarios
+071_CadastroDatosBancarios_Banco			=  Banco
+071_CadastroDatosBancarios_Tipo				= Tipo
+071_CadastroDatosBancarios_Cuenta			= Cuenta 
+071_CadastroDatosBancarios_Documento		= Documento
+071_CadastroDatosBancarios_Titularidad		= Titularidad 
+071_CadastroDatosBancarios_Observaciones	= Observacíones 
+071_CadastroDatosBancarios_CuentaPatron		= Cuenta Patrón
+071_CadastroDatosBancarios_Titulo			= Datos Bancarios
+071_CadastroDatosBancarios_BotonAceptar		= Aceptar  
+071_CadastroDatosBancarios_BotonCancelar	= Cancelar
+
+//Popup Generacion Documento Pases
+071_GeneracionDocPases_Titulo				= Generación del Documento de Pases
+071_GeneracionDocPases_Informacion			= Informe abajo los datos de sector y canal / subcanal para la generación de documento de pases:
+071_GeneracionDocPases_BusquedaSetor		= Sector
+071_GeneracionDocPases_BusquedaCanal		= Canal	
+071_GeneracionDocPases_BusquedaSubCanal		= Subcanal
+071_GeneracionDocPases_BotonAceptar			= Aceptar  
+071_GeneracionDocPases_BotonCancelar		= Cancelar
+
+// Pantalla Clasificacion
+072_msg_valoresInsuficienteEfectivos		= Valores insuficientes para a(s) divisa(s):
+072_msg_valoresInsuficientesMediosPago		= Valores insuficientes para o(s) meio(s) de pagamento: 
+072_msg_sinValores							= Não foram informados valores.
+072_elegirsaldo								= Selecionar saldo a modificar
+072_saldomodificado							= Saldo modificado
+072_diferenciaefectivo						= Existem diferenças para a(s) divisa(s): 
+072_diferenciamediopago						= Existem diferenças para o(s) meio(s) de pagamento: 
+072_cuentasinsaldo							= Não existe saldo para a conta informada.
+
+073_Menu = Contenedores Pack Modular Vencidos
+//CONTROLE TIPOCONTENEDOR
+073_TipoContenedor_Titulo								= Tipo Contenedor
+073_TipoContenedor_Popup_Titulo							= Seach for Tipo Contenedor
+073_TipoContenedor_Popup_Resultado						= Tipo Contenedor data
+073_TipoContenedor_Popup_Filtro							= Search criteria
+
+// ucCentralNotificaciones.ascx
+073_lblTbLeida								= Lidas
+073_lblTbNoLeida							= Não Lidas
+073_lblActualizacionAut						= Atualização automática em 
+073_lblSegundos								= segundos
+073_lblDesde								= De:
+073_lblHasta								= Até:
+073_btnBuscar								= Buscar
+073_btnBuscarNoLeida						= Buscar
+073_btnMarcarLeida							= Marcar como lida
+073_btnMarcarNoLeida						= Marcar como não lida
+073_privadonoprivado						= Privada/Não Privada
+073_privado									= Privada
+073_noPrivado								= Não Privada
+073_colNotificaciones						= Notificações
+073_colLeida								= Lida
+073_colCreacion								= Criação
+073_msg_leida								= {0} em {1}
+073_msg_confirma_accion						= Executando esta ação a notificação será considerada como lida e, por não ser privada, ficará como lida para outros usuários. Você está certo desta ação?
+073_msg_erro_accion							= Não foi possível executar a ação porque os dados relacionados com a notificação são inconsistentes
+073_msg_erro_accion1						= Não foi possível executar a ação. Esta versão do Genesis não está pronta para a execução.
+
+// POPUP CONVERTER CERTIFICADO
+073_btnConvertirRelacionado					= Converter Certificado Relacionado
+073_lblConvertirCertificado					= Converter Certificado
+073_lblCertificadosSelecionados				= Certificados Selecionados para Conversão
+073_btnConverter							= Converter
+073_btnCancelar								= Cancelar
+073_grid_fyhcertificado						= Data e Hora Certificado
+073_grid_cliente							= Cliente
+073_grid_codigo								= Código
+073_grid_de_tipo							= Do Tipo
+073_grid_para_tipo							= Para o Tipo
+073_estado_certificado_PC					= Provisional com fechamento
+073_estado_certificado_PS					= Provisional sem fechamento
+073_estado_certificado_DE					= Definitivo
+073_lbl_certificado_nao_selecionado			= Para converter um certificado é necessário seleccionar pelo menos um relatório de certificação
+073_lbl_cerificao_converitr_nao_selecionado = Para executar a conversão, selecione pelo menos um certificado.
+073_lbl_convertendo							= Convertendo o certificado <b>{0}</b> do cliente <b>{1}</b> para <b>{2}</b>. Total {3} de {4}.
+
+//REPORT SEGUIMIENTO DEL ELEMENTO
+074_Menu									= Rastreio Elementos
+074_Cabecera								= Relatório > Rastreio Elementos
+074_lblSubTitulo							= Rastreio Elementos
+074_lblFiltros								= Filtros - Rastreio Elementos
+074_TituloPrecintoDelElemento               = Selo Elemento
+074_CabeceraGridPrecintos					= Selos
+074_CabeceraGridPrecinto					= Selo
+074_CabeceraGridFechaHoraArmado				= Data/Hora Armado
+074_CabeceraGridState						= Estado
+074_CabeceraGridAgrupaElementos				= Agrupa Elementos?
+074_CabeceraGridCuentas						= Contas
+074_CabeceraGridCuenta						= Conta
+074_CabeceraCodigoExterno					= Código Externo
+074_CabeceraGridFechaHoraCreacion		    = Data/Hora Creacion
+074_CabeceraGridFechaHoraTransport		    = Data/Hora Transporte
+074_CabeceraGridTipoServicio			    = Tipo Serviço
+074_LblConsultaContenedor					= Lista de Recipientes - Resultados da consulta
+074_LblConsultaRemesa						= Lista de Remessas - Resultados da consulta
+074_LblConsultaBulto						= Lista de Malotes - Resultados da consulta
+
+074_msg_Obrigatorio_Selecionar_Uno_Registro     = Selecione um registro para executar o relatório
+074_msg_campo_precinto_Del_Elemento_Obrigatorio = Campo Selo do Elemento obrigatório
+
+
+//REPORT CONTENEDORES
+075_Menu									= Recipientes
+075_Cabecera								= Relatórios > Recipentes
+075_lblSubTitulo							= Recipientes
+075_lblFechaArmadoDesde						= Data/Hora Armado Desde
+075_lblFechaArmadoHasta						= Data/Hora Armado Até
+075_lbl_Precinto							= Selos
+075_TituloUcDiscriminarPor					= Discriminar Por
+075_TextChkNoConsiderarHijos				= Não considerar setores filhos
+075_TextchkContenedoresPackModular			= Recipiente Pack Modular
+075_OpcionDiscriminadoPorSector 			= Setor
+075_OpcionDiscriminadoPorSectorClienteYCanal= Setor, cliente e canal
+075_msg_campoArmadoDesdeObrigatorio			= Campo Armado Desde é obrigatório
+075_msg_campoArmadohHastaObrigatorio		= Campo Armado Até é obrigatório
+
+//EstadoContenedor
+EstadoContenedor							= Estado Recipiente
+Nuevo										= Novo
+Pendiente									= Pendente
+Procesado									= Processado
+Anulado										= Anulado
+Armado										= Armado
+EnTransito									= Em Trânsito
+Desarmado									= Desarmado
+NoDefinido									= Não Definido
+
+
+//REPORT CLIENTE X CONTENEDORES
+076_Menu									= Clientes x Recipientes
+076_Cabecera								= Relatórios > Clientes x Recipientes
+076_lblSubTitulo							= Clientes x Recipientes
+076_lblFechaArmadoDesde						= Data/Hora Armado Desde
+076_lblFechaArmadoHasta						= Data/Hora Armado Até
+076_lbl_Precinto							= Selos
+076_TituloUcDiscriminarPor					= Discriminar Por
+076_TextChkNoConsiderarHijos				= Não considerar setores filhos
+076_TextchkContenedoresPackModular			= Recipiente Pack Modular
+076_OpcionDiscriminadoPorSector 			= Setor
+076_OpcionDiscriminadoPorSectorClienteYCanal= Setor, cliente e canal
+
+//REPORT INVENTARIO CONTENEDORES
+077_Menu									= Inventário de Recipientes
+077_SubMenuGenerar							= Criar Inventário
+077_SubMenuConsultar						= Consultar Inventário
+077_CabeceraConsultar						= Relatórios > Consultar Inventário
+077_CabeceraGenerar							= Relatórios > Generar Inventário
+077_lblSubTituloGenerar						= Criar Inventario
+077_lblSubTituloConsultar					= Consultar Inventário
+077_lblFechaInventarioDesde					= Data/Hora Inventário Desde
+077_lblFechaInventarioHasta					= Data/Hora Inventário Hasta
+077_lbl_CodigoInventario					= Código Inventário
+077_TituloUcDiscriminarPor					= Discriminado por
+077_TextChkNoConsiderarHijos				= Não considerar setores filhos
+077_lblResultadoBusqueda					= Lista de inventários - Resultados da consulta
+077_OpcionDiscriminadoPorSector 			= Setor
+077_HeaderSector							= Sector
+077_HeaderCliente							= Cliente
+077_HeaderCodigoInventario				    = Código Inventário
+077_HeaderFechaHoraInvetario				= Fecha/Hora Invetário
+077_HeaderCantiContTeóricos					= Quant. Recipi. Teóricos
+077_HeaderCantiContInventariados			= Quant. Recipi. Inventariados
+077_HeaderDiferencia						= Diferença
+077_OpcionDiscriminadoPorSectorClienteYCanal= Setor, cliente e canal
+
+
+//CONTENEDORES A VENCER VENCIDOS
+078_Menu									= Recipientes Pack Modular a Vencer/Vencidos
+078_FechaVencimentoDesde					= Data Vencimento Desde
+078_FechaVencimentoHasta					= Data Vencimento Até
+078_Cabecera								= Relatórios > Recipientes Pack Modular a Vencer/Vencidos
+078_lblSubTitulo							= Recipientes a Vencer/Vencidos
+
+//InformacionGenesis
+InformacionGenesis_grid_FileName = Descrição
+InformacionGenesis_grid_FileVersion = Versão do Arquivo
+InformacionGenesis_grid_ProductVersion = Versão do Produto
+
+//InformacionNuevoSaldos
+InformacionNuevoSaldos_Titulo = Sobre o Novo Saldos {0}
+InformacionNuevoSaldos_btnExportar = Exportar informações
+
+//Transações
+079_menu										= Transações
+079_lblTitulo									= Transações
+079_lblSubTitulo								= Transações
+079_delegacion									= Delegação
+079_planta										= Planta
+079_fecha_transaccion							= Data Transação
+079_fecha_creacion								= Data Criação
+079_fecha_credito								= Data Crédito
+079_modalidad									= Modaliade
+079_transaccion									= Tipo de transação
+079_ddl_seleccione                              = Selecione
+079_tituloFecha									= Datas
+079_todos										= Todos
+079_deposito									= Depósito
+079_coleccion									= Coleta
+079_contar										= Contagem
+079_credito										= Crédito
+
+//CONTROLE MAQUINA
+077_Maquina_Titulo								= Máquina / Setor
+077_Maquina_Popup_Titulo						= Busca de Máquina / Setor
+077_Maquina_Popup_Resultado						= Dados de Máquina / Setor
+077_Maquina_Popup_Filtro						= Critérios de Busca
+
+//CONTROLE MAQUINA
+075_Maquina_Titulo								= Máquina
+075_Maquina_Popup_Titulo						= Busca de Máquina
+075_Maquina_Popup_Resultado						= Dados de Máquina
+075_Maquina_Popup_Filtro						= Critérios de Busca
+
+
+//CONTROLE Planificacion
+021_Planificacion_Titulo								= Planificação
+021_Planificacion_Popup_Titulo							= Busca de Planificação
+021_Planificacion_Popup_Resultado						= Dados de Planificação
+021_Planificacion_Popup_Filtro							= Critérios de Busca
+
+
+//CONTROLE Banco Tesoreria
+022_BancoTesoreria_Titulo						= Banco Tesoreria
+022_BancoTesoreria_Popup_Titulo					= Búsqueda de Banco Tesoreria
+022_BancoTesoreria_Popup_Resultado				= Datos de la Banco Tesoreria
+022_BancoTesoreria_Popup_Filtro					= Criterios de busqueda
+
+//CONTROLE Cuenta Tesoreria
+023_CuentaTesoreria_Titulo								= Cuenta Tesoreria
+023_CuentaTesoreria_Popup_Titulo						= Búsqueda de Cuenta Tesoreria
+023_CuentaTesoreria_Popup_Resultado						= Datos de la Cuenta Tesoreria
+023_CuentaTesoreria_Popup_Filtro						= Criterios de busqueda
+
+
+//CONTROLE CAMPO EXTRA (TERMINO)
+080_CampoExtra_Titulo = Campo Extra
+080_CampoExtra_Popup_Titulo = Pesquisa de campo extra
+080_CampoExtra_Popup_Resultado = Dados de campo extras
+080_CampoExtra_Popup_Filtro = Critérios de pesquisa
+
+081_BusquedaIntegracion_Titulo					= Tela de integração de movimentos inclinados

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:amqp="http://www.mulesoft.org/schema/mule/amqp" xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd
+http://www.mulesoft.org/schema/mule/amqp http://www.mulesoft.org/schema/mule/amqp/current/mule-amqp.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="29ea776b-5eb8-439c-b556-46ed0751a5d2" >
+		<http:listener-connection host="0.0.0.0" port="${http.port}" />
+	</http:listener-config>
+	<global-property doc:name="Global Property" doc:id="ed9181aa-fec8-46e0-8865-dc43c8f5e974" name="env" value="sit" doc:description='Setear la variable con los siguientes valores: sit, uat o prod&#10;&#10;- "sit" 		(entorno de desarrollo)&#10;- "uat"		(entorno de homologación)&#10;- "prod"	(entorno de producción)'/>
+	 <configuration-properties doc:name="Configuration properties" doc:id="dab661b0-38cc-4937-bd3d-6e20b870a7d5" file="properties/${env}-config.yaml" />
+		<wsc:config name="Integracion_DE" doc:name="Web Service Consumer Config" doc:id="bd8e4391-04fa-4dec-bf38-71e0f95c8583" doc:description="Integración - ALEMANIA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.DE.protocol}://${servicio.DE.host}:${servicio.DE.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+			<wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    
+</wsc:connection>
+	</wsc:config><wsc:config name="Integracion_AR" doc:name="Web Service Consumer Config" doc:id="efd4a664-ceb9-4aaa-abf4-b209bc72d0c7" doc:description="Integración - ARGENTINA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.AR.protocol}://${servicio.AR.host}:${servicio.AR.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_AU" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - AUSTRALIA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.AU.protocol}://${servicio.AU.host}:${servicio.AU.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_BR" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - BRASIL">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.BR.protocol}://${servicio.BR.host}:${servicio.BR.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_CL" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - CHILE">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.CL.protocol}://${servicio.CL.host}:${servicio.CL.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_CO" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - COLOMBIA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.CO.protocol}://${servicio.CO.host}:${servicio.CO.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_CR" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - COSTA RICA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.CR.protocol}://${servicio.CR.host}:${servicio.CR.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_EC" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - ECUADOR">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.EC.protocol}://${servicio.EC.host}:${servicio.EC.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_SV" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - EL SALVADOR">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.SV.protocol}://${servicio.SV.host}:${servicio.SV.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_ES" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - ESPAÑA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.ES.protocol}://${servicio.ES.host}:${servicio.ES.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_PH" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - FILIPINAS">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.PH.protocol}://${servicio.PH.host}:${servicio.PH.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_FR" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - FRANCIA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.FR.protocol}://${servicio.FR.host}:${servicio.FR.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_GT" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - GUATEMALA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.GT.protocol}://${servicio.GT.host}:${servicio.GT.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_HN" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - HONDURAS">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.HN.protocol}://${servicio.HN.host}:${servicio.HN.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_IN" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - INDONESIA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.IN.protocol}://${servicio.IN.host}:${servicio.IN.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_MX" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - MEXICO">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.MX.protocol}://${servicio.MX.host}:${servicio.MX.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_NI" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - NICARAGUA">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.NI.protocol}://${servicio.NI.host}:${servicio.NI.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_PY" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - PARAGUAY">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.PY.protocol}://${servicio.PY.host}:${servicio.PY.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_PE" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - PERU">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.PE.protocol}://${servicio.PE.host}:${servicio.PE.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_PT" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - PORTUGAL">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.PT.protocol}://${servicio.PT.host}:${servicio.PT.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Integracion_UY" doc:name="Web Service Consumer Config" doc:id="" doc:description="Integración - URUGUAY">
+	    <wsc:connection wsdlLocation="wsdl\integracion.wsdl" service="${servicio.integracion.service}" port="${servicio.integracion.port}" address="${servicio.UY.protocol}://${servicio.UY.host}:${servicio.UY.port}/${servicio.integracion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config>
+	<wsc:config name="Notificacion_DE" doc:name="Web Service Consumer Config" doc:id="049532ab-580f-447e-9e36-5be330c38e8e" doc:description="Notificación - ALEMANIA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.DE.protocol}://${servicio.DE.host}:${servicio.DE.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_AR" doc:name="Web Service Consumer Config" doc:id="7efcb86f-a8b4-4a02-a925-407bc7dbddf0" doc:description="Notificación - ARGENTINA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.AR.protocol}://${servicio.AR.host}:${servicio.AR.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_AU" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - AUSTRALIA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.AU.protocol}://${servicio.AU.host}:${servicio.AU.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_BR" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - BRASIL">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.BR.protocol}://${servicio.BR.host}:${servicio.BR.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_CL" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - CHILE">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.CL.protocol}://${servicio.CL.host}:${servicio.CL.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_CO" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - COLOMBIA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.CO.protocol}://${servicio.CO.host}:${servicio.CO.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_CR" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - COSTA RICA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.CR.protocol}://${servicio.CR.host}:${servicio.CR.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_EC" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - ECUADOR">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.EC.protocol}://${servicio.EC.host}:${servicio.EC.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_SV" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - EL SALVADOR">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.SV.protocol}://${servicio.SV.host}:${servicio.SV.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_ES" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - ESPAÑA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.ES.protocol}://${servicio.ES.host}:${servicio.ES.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_PH" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - FILIPINAS">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.PH.protocol}://${servicio.PH.host}:${servicio.PH.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_FR" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - FRANCIA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.FR.protocol}://${servicio.FR.host}:${servicio.FR.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_GT" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - GUATEMALA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.GT.protocol}://${servicio.GT.host}:${servicio.GT.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_HN" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - HONDURAS">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.HN.protocol}://${servicio.HN.host}:${servicio.HN.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_IN" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - INDONESIA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.IN.protocol}://${servicio.IN.host}:${servicio.IN.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_MX" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - MEXICO">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.MX.protocol}://${servicio.MX.host}:${servicio.MX.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_NI" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - NICARAGUA">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.NI.protocol}://${servicio.NI.host}:${servicio.NI.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_PY" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - PARAGUAY">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.PY.protocol}://${servicio.PY.host}:${servicio.PY.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_PE" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - PERU">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.PE.protocol}://${servicio.PE.host}:${servicio.PE.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_PT" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - PORTUGAL">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.PT.protocol}://${servicio.PT.host}:${servicio.PT.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config><wsc:config name="Notificacion_UY" doc:name="Web Service Consumer Config" doc:id="" doc:description="Notificación - URUGUAY">
+	    <wsc:connection wsdlLocation="wsdl\notificacion.wsdl" service="${servicio.notificacion.service}" port="${servicio.notificacion.port}" address="${servicio.UY.protocol}://${servicio.UY.host}:${servicio.UY.port}/${servicio.notificacion.path}">
+	        <reconnection>
+	            <reconnect />
+	        </reconnection>
+	        <wsc:custom-transport-configuration >
+				<wsc:default-http-transport-configuration timeout="60000" />
+			</wsc:custom-transport-configuration>
+	    </wsc:connection>
+	</wsc:config>
+</mule>

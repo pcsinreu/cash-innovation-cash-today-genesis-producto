@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd  http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+    <apikit:config name="genesis-producto-api-transactions-config" api="resource::92828c50-e50e-490b-a02b-0d6b8dff301c:genesis-producto-api-transactions:1.0.4:raml:zip:genesis-producto-api-transactions.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <flow name="genesis-producto-api-transactions-main">
+        <http:listener config-ref="HTTP_Listener_config" path="/api/*">
+            <http:response statusCode="#[vars.httpStatus default 200]">
+                <http:headers>#[vars.outboundHeaders default {}]</http:headers>
+            </http:response>
+            <http:error-response statusCode="#[vars.httpStatus default 500]">
+                <http:body>#[payload]</http:body>
+                <http:headers>#[vars.outboundHeaders default {}]</http:headers>
+            </http:error-response>
+        </http:listener>
+        <apikit:router config-ref="genesis-producto-api-transactions-config" />
+        <error-handler>
+            <on-error-propagate type="APIKIT:BAD_REQUEST">
+                <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Bad request",
+	details: error.description
+	
+}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[400]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:NOT_FOUND">
+                <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Resource not found"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus">404</ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:METHOD_NOT_ALLOWED">
+                <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Method not allowed"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus">405</ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:NOT_ACCEPTABLE">
+                <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Not acceptable"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus">406</ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:UNSUPPORTED_MEDIA_TYPE">
+                <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Unsupported media type"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus">415</ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:NOT_IMPLEMENTED">
+                <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Not Implemented"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus">501</ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+        </error-handler>
+    </flow>
+    <flow name="genesis-producto-api-transactions-console">
+        <http:listener config-ref="HTTP_Listener_config" path="/console/*">
+            <http:response statusCode="#[vars.httpStatus default 200]">
+                <http:headers>#[vars.outboundHeaders default {}]</http:headers>
+            </http:response>
+            <http:error-response statusCode="#[vars.httpStatus default 500]">
+                <http:body>#[payload]</http:body>
+                <http:headers>#[vars.outboundHeaders default {}]</http:headers>
+            </http:error-response>
+        </http:listener>
+        <apikit:console config-ref="genesis-producto-api-transactions-config" />
+        <error-handler>
+            <on-error-propagate type="APIKIT:NOT_FOUND">
+                <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Resource not found"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus">404</ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+        </error-handler>
+    </flow>
+    <flow name="post:\transactions:application\json:genesis-producto-api-transactions-config">
+        <flow-ref doc:name="GetTransactions" doc:id="7f867800-6e7f-49a0-a162-f675e5d10571" name="GetTransactions" />
+        <ee:transform xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+            <ee:message>
+                <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+  apiVersion: "1.0",
+  countryCode: upper(vars.CodPaisOriginal),
+  transactions:
+  	payload groupBy $.OID_MOVIMIENTO pluck ((movimientos, key, index) -> {
+  	deviceId: movimientos[0].COD_DEVICEID,
+  	(deviceName: movimientos[0].DES_MAQUINA) if(!isEmpty(movimientos[0].DES_MAQUINA)),
+	(branchCode: movimientos[0].COD_DELEGACION_OPE) if(!isEmpty(movimientos[0].COD_DELEGACION_OPE)),
+	(branchUniqueCode: movimientos[0].COD_DELEGACION_MDM) if(!isEmpty(movimientos[0].COD_DELEGACION_MDM)),
+	(branchName: movimientos[0].DES_DELEGACION) if(!isEmpty(movimientos[0].DES_DELEGACION)),
+	(entityCode: movimientos[0].COD_CLIENTE_OPE) if(!isEmpty(movimientos[0].COD_CLIENTE_OPE)),
+	(entityUniqueCode: movimientos[0].COD_CLIENTE_MDM) if(!isEmpty(movimientos[0].COD_CLIENTE_MDM)),
+	(entityName: movimientos[0].DES_CLIENTE) if(!isEmpty(movimientos[0].DES_CLIENTE)),
+	(centerCode: movimientos[0].COD_SUBCLIENTE_OPE) if(!isEmpty(movimientos[0].COD_SUBCLIENTE_OPE)),
+	(centerUniqueCode: movimientos[0].COD_SUBCLIENTE_MDM) if(!isEmpty(movimientos[0].COD_SUBCLIENTE_MDM)),
+	(centerName: movimientos[0].DES_SUBCLIENTE) if(!isEmpty(movimientos[0].DES_SUBCLIENTE)),
+	(servicePointCode: movimientos[0].COD_PTO_SERVICIO_OPE) if(!isEmpty(movimientos[0].COD_PTO_SERVICIO_OPE)),
+	(servicePointUniqueCode: movimientos[0].COD_PTO_SERVICIO_MDM) if(!isEmpty(movimientos[0].COD_PTO_SERVICIO_MDM)),
+	(servicePointName: movimientos[0].DES_PTO_SERVICIO) if(!isEmpty(movimientos[0].DES_PTO_SERVICIO)),
+	(channelCode: movimientos[0].COD_CANAL) if(!isEmpty(movimientos[0].COD_CANAL)),
+	(channelName: movimientos[0].DES_CANAL) if(!isEmpty(movimientos[0].DES_CANAL)),
+	(subChannelCode: movimientos[0].COD_SUBCANAL) if(!isEmpty(movimientos[0].COD_SUBCANAL)),
+	(subChannelName: movimientos[0].DES_SUBCANAL) if(!isEmpty(movimientos[0].DES_SUBCANAL)),
+	transactionDate: movimientos[0].HOR_MOVIMIENTO,
+	(accountingDate: movimientos[0].FYH_CONTABLE) if(!isEmpty(movimientos[0].FYH_CONTABLE)),
+	(creationDate: movimientos[0].GMT_CREACION) if(!isEmpty(movimientos[0].GMT_CREACION)),
+	(typeCode: movimientos[0].COD_TIPO_MOVIMIENTO) if(!isEmpty(movimientos[0].COD_TIPO_MOVIMIENTO)),
+	typeGroup: movimientos[0].COD_GRUPO_MOVIMIENTO,
+	(typeName: movimientos[0].DES_TIPO_MOVIMIENTO) if(!isEmpty(movimientos[0].DES_TIPO_MOVIMIENTO)),
+	code: movimientos[0].COD_MOVIMIENTO,
+	(actualId: movimientos[0].COD_ACTUAL_ID) if(!isEmpty(movimientos[0].COD_ACTUAL_ID)),
+	(collectionId: movimientos[0].COD_COLLECTION_ID) if(!isEmpty(movimientos[0].COD_COLLECTION_ID)),
+	(notified: if(movimientos[0].BOL_NOTIFICADO ~= 1)(true)else(false)) if(!isEmpty(movimientos[0].BOL_NOTIFICADO)),
+	(notifiedDate: movimientos[0].FYH_NOTIFICACION) if(!isEmpty(movimientos[0].FYH_NOTIFICACION)),
+	(earlyValued: if(movimientos[0].BOL_ACREDITADO ~= 1)(true)else(false)) if(!isEmpty(movimientos[0].BOL_ACREDITADO)),
+	(earlyValuedDate: movimientos[0].FYH_ACREDITACION) if(!isEmpty(movimientos[0].FYH_ACREDITACION)),
+	currencyCode: movimientos[0].COD_DIVISA,
+	(currencyName: movimientos[0].DES_DIVISA) if(!isEmpty(movimientos[0].DES_DIVISA)),
+	total: movimientos[0].NUM_IMPORTE,
+  	(denominations: movimientos groupBy $.OID_MOVIMIENTO_DETALLE pluck(detalles, detKey, detIndex) -> {
+	  	code: detalles[0].COD_DENOMINACION,
+	  	name: detalles[0].DES_DENOMINACION,
+        bill: detalles[0].BOL_BILLETE,
+        quantity: detalles[0].NEL_CANTIDAD,
+        total: detalles[0].NUM_IMPORTE_DET,
+    }) if(!isEmpty(movimientos[0].OID_MOVIMIENTO_DETALLE)),
+  	(extraDatas: movimientos groupBy $.OID_MOVIMIENTO_CAMPO_EXTRA pluck(extras, extKey, extIndex) -> {
+	  	code: extras[0].COD_CAMPO_EXTRA,
+        value: extras[0].DES_VALOR_CAMPO_EXTRA,
+    }) if(!isEmpty(movimientos[0].OID_MOVIMIENTO_CAMPO_EXTRA)),
+    virtual: if(movimientos[0].BOL_VIRTUAL ~= 1)(true)else(false)
+  }),
+  "sort":if(!isEmpty(vars.Sort))(vars.Sort)else(["transactionDate"]),
+  "limit": vars.Fetch,
+  "offset": vars.Offset
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+        <error-handler>
+            <on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="9bc1cbdf-95c1-4287-8493-6a4cf990981e">
+                <ee:transform doc:name="Transform Message" doc:id="aee69203-a86a-49f5-bb77-3cf7455572f1">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+	Error: error.description
+}]]></ee:set-payload>
+                    </ee:message>
+                </ee:transform>
+            </on-error-propagate>
+        </error-handler>
+    </flow>
+</mule>

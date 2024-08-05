@@ -1,0 +1,1 @@
+﻿SELECT IdDocumento FROM PD_DocumentoCabecera WHERE IdGrupo = :IdGrupo

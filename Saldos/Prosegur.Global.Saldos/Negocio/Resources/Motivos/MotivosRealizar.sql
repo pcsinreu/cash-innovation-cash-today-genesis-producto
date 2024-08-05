@@ -1,0 +1,1 @@
+﻿SELECT IdMotivo as Id, Descripcion, Accion FROM PD_Motivo

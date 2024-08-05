@@ -1,0 +1,50 @@
+﻿
+
+//--------------------------------------------------------------------------------------
+// GENERICOS
+//--------------------------------------------------------------------------------------
+gen_selecione                                             = Seleccione
+err_campo_obligatorio					                  = El campo {0} es obligatorio.
+msg_producidoError								= Se ha producido un error:&nbsp;
+msg_loading										= Por favor, espere un momento mientras el sistema está:&nbsp;
+msg_redirecionando							= Redireccionando...
+
+//--------------------------------------------------------------------------------------
+// CONTROLES
+//--------------------------------------------------------------------------------------
+gen_btnLogin                                              = Aceptar
+gen_btnCancelar                                           = Cancelar
+gen_msg_camporequerido                                    = El campo '{0}' es obligatorio.
+
+Default_lblUsuario                                        = Usuario
+Default_lblSenha                                          = Clave
+Default_lblPais                                           = País
+Default_sessao_expirada                                   = Sesión expirada, favor logar nuevamente.
+
+//--------------------------------------------------------------------------------------
+// TOKEN
+//--------------------------------------------------------------------------------------
+tkn_tokenutil_token_invalida                              = Token inválida
+tkn_creartokenacceso_erro_serializar                      = Error al serializar permisos
+tkn_creartokenacceso_erro_gerartoken                      = Error al generar token
+
+//--------------------------------------------------------------------------------------
+// LOGIN
+//--------------------------------------------------------------------------------------
+lgn_usuario_nao_autenticado							      = No fue posible autenticar el usuario. Verifique el usuario y seña informados.
+lgn_usuario_aplicacionversion_noencontrada			      = No fue encontrada versión de la aplicación para el usuario.
+lgn_sesion_activa									      = No es posible realizar el login, pues ya existe una sesión válida para el usuario informado.
+000_msgerrogenerico									      = Aconteció un error en la aplicación.
+mdl_msg_sempermissao								      = ¡Usuario sin permiso!
+lgn_lblversion										      = Versión
+lgn_lblbuild										      = Build
+
+
+msg_obtenerDelegaciones									= Obteniendo delegaciones.
+msg_cargarDelegaciones									= Cargando lista de delegaciones.
+msg_obtenerPaises										= Obteniendo países.
+msg_cargarPaises										= Cargando lista de países.
+msg_cargarPlantas										= Cargando lista de plantas.
+msg_iniciarSesion										= Validando usuario.
+msg_obtenerAplicaciones 								= Obtenendo aplicaciones.
+msg_crearToken											= Obteniendo Token.

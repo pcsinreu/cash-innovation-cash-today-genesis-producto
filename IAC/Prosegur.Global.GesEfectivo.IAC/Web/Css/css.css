@@ -1,0 +1,542 @@
+/* ÁREA PRINCIPAL--------------------- */
+body
+{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    /*background-image: url(../imagenes/bg.jpg);*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333333;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.principal
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+/* TÍTULOS--------------------- */
+.titulo01
+{
+    background-image: url(../imagenes/titulo01_bg.jpg);
+    background-repeat: repeat-x;
+    display: block;
+    height: 22px;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.titulo02
+{
+    background-image: url(../imagenes/titulo01_bg.jpg);
+    background-repeat: repeat-x;
+    display: block;
+    height: 29px;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.Div_Titulo 
+{
+    background-image: url(../imagenes/titulo01_bg.jpg);
+    background-repeat: repeat-x;
+    position:relative;
+    display: block;
+    height: 22px;
+    padding: 6px 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Div_Titulo_icon 
+{
+    float: left;
+    background-image: url(../imagenes/ico01.jpg);
+    background-repeat:no-repeat;
+    margin: 0px 10px 0px 10px;
+    height: 18px;
+    width: 16px;
+}
+.Div_Titulo_legenda
+{
+    float: left;
+    font-family: Arial, Verdana, Tahoma;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+/* TEXTOS--------------------- */
+.Text01
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 11px;
+    font-weight: normal;
+}
+.Text02
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* GRIDS--------------------- */
+.grid
+{
+    width: 100%;
+}
+
+.grid td
+{
+    text-align: center;
+}
+.grid th
+{
+    text-align: center;
+    background-image: url(../imagenes/grid_titulo_bg.jpg);
+    background-repeat: repeat-x;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    height: 21px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+.grid .linha01
+{
+    text-align: center;
+    background-image: url(../imagenes/grid_linha_01.jpg);
+    background-repeat: repeat-x;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    height: 24px;
+}
+.grid .linha00
+{
+    text-align: center;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    height: 24px;
+    background-color: #FFFFFF;
+}
+.grid .linha_destaque
+{
+    text-align: center;
+    background-image: url(../imagenes/grid_linha_destaque.jpg);
+    background-repeat: repeat-x;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    height: 24px;
+    font-weight: bold;
+}
+.grid_2 th
+{
+    text-align: left;
+    background-image: url(../imagenes/grid_titulo_bg.jpg);
+    background-repeat: repeat-x;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    height: 21px;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.grid_2
+{
+    width: 100%;
+}
+.grid_2 td
+{
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+.grid_2 textarea
+{
+    font-size: 11px;
+    width: 90%;
+    height: 85px;
+    border: 1px solid #CCCCCC;
+}
+
+.GridTitulo
+{
+    background-image: url(../imagenes/grid_titulo_bg.jpg);
+}
+
+.GridLinhaAlternada
+{
+    background-image: url(../imagenes/grid_linha_01.jpg);
+    text-indent: 3px;
+}
+
+.GridLinhaDestaque
+{
+    background-image: url(../imagenes/grid_linha_destaque.jpg);
+    background: #ffcc00;
+}
+
+.GridLinhaDestaque2
+{
+    background-image: url(../imagenes/grid_linha_destaque.jpg);
+    background: #ffcc00;
+}
+
+.GridLinhaPadrao
+{
+    text-indent: 3px;
+    background-color: #FFFFFF;
+}
+.CabecalhoQuandoVazio
+{
+    text-align: left;
+}
+
+/* DROPDOWN--------------------- */
+.ddl100
+{
+    width: 100px;
+}
+
+.ddl150
+{
+    width: 150px;
+}
+
+.ddl200
+{
+    width: 200px;
+}
+
+.ddl250
+{
+    width: 250px;
+}
+
+/* TABELAS--------------------- */
+.tabela_interna
+{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align:left;
+}
+.tabela_campos
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    width: 1088px;
+    background-color: #FFFFFF;
+}
+.tabela_camposv2
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    width: 1278px;   
+    background-color: #FFFFFF; 
+}
+.espaco_inicial
+{
+}
+.tamanho_celula
+{
+}
+.tamanho_celula_auto
+{
+    width: auto;
+}
+
+
+/* Botão em estado normal (sem foco) */
+TABLE.BotaoNormal
+{
+    border: white 1px solid;
+    padding-right: 0px;
+    border-top: white 1px solid;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    font: 11px Arial;
+    border-left: white 1px solid;
+    color: #8a7033;
+    padding-top: 0px;
+    border-bottom: white 1px solid;
+    height: 18px;
+    background-color: #ffffff;
+}
+
+/* Botão em estado desabilitado (sem foco) */
+TABLE.BotaoDesabilitar
+{
+    opacity: 0.5;
+    cursor: default;
+}
+
+
+/* Botão quando o mouse está sobre */
+TABLE.BotaoFoco
+{
+    border-right: #bbb100 1px solid;
+    padding-right: 0px;
+    border-top: #bbb100 1px solid;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    font: 11px Arial;
+    border-left: #bbb100 1px solid;
+    cursor: pointer;
+    color: #000000;
+    padding-top: 0px;
+    border-bottom: #bbb100 1px solid;
+    height: 18px;
+    background-color: #ebebbe;
+}
+
+TABLE.BotaoNormal2
+{
+    border: solid 1px #666666;
+    padding: 0px;
+    font: 11px Arial;
+    color: #8a7033;
+    height: 18px;
+    width: 100px;
+    background-color: #ffffff;
+    margin: auto auto;
+    list-style: none;
+    counter-reset: li;
+    background: #eee;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+TABLE.BotaoFoco2
+{
+    padding: 0px;
+    border: #bbb100 1px solid;
+    font: 11px Arial;
+    cursor: pointer;
+    color: #000000;
+    height: 18px;
+    background-color: #ebebbe;
+    width: 100px;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+/* IMAGENS--------------------- */
+/* Ícone do botão */
+IMG.IconeBotao
+{
+    border-style: none;
+    vertical-align: top;
+}
+
+/* LABELS--------------------- */
+.Lbl0 /* Estilo para label pequeno */
+{
+    font-weight: normal;
+    font-size: 10px;
+    font-family: Arial, Verdana, Tahoma;
+}
+
+.Lbl1 /* Estilo para label normal */
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.Lbl2 /* Estilo para label médio */
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.TABLE.SemRegistro
+{
+    border-color: Black;
+    border-width: 1px;
+    text-align: center;
+    font-size: large;
+    padding-left: 5px;
+    padding-top: 0px;
+}
+
+/* OUTROS--------------------- */
+.divAguarde
+{
+    /*background:#FF0000;  */
+    position: absolute;
+    left: 800px;
+    top: 130px;
+    width: 50px;
+    height: auto;
+}
+
+.TreeViewSelecionado
+{
+    color: #0000FF;
+    background-color: #ebebbe;
+}
+
+.TreeViewHyperlinkSelecionado
+{
+    color: #0000FF;
+}
+
+/* -- ASPxTabControl, ASPxPageControl -- */
+.dxtcControl
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/* Tab Hyperlink*/
+.dxtcTab a, .dxtcTabWithTabPositionLeft a, .dxtcTabWithTabPositionBottom a, .dxtcTabWithTabPositionRight a, .dxtcActiveTab a, .dxtcActiveTabWithTabPositionBottom a, .dxtcActiveTabWithTabPositionLeft a, .dxtcActiveTabWithTabPositionRight a, .dxtcTabHover a, .dxtcTabHoverWithTabPositionBottom a, .dxtcTabHoverWithTabPositionLeft a, .dxtcTabHoverWithTabPositionRight a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* Active Tab */
+.dxtcActiveTab, .dxtcActiveTabWithTabPositionBottom, .dxtcActiveTabWithTabPositionLeft, .dxtcActiveTabWithTabPositionRight
+{
+    border: solid 1px #A8A8A8;
+    padding: 3px 12px 4px 12px;
+    background-image: url(../imagenes/grid_titulo_bg.jpg);
+}
+
+/* Active Tab Texto */
+.dxtcActiveTab table.dxtc, .dxtcActiveTabWithTabPositionBottom table.dxtc, .dxtcActiveTabWithTabPositionLeft table.dxtc, .dxtcActiveTabWithTabPositionRight table.dxtc
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-weight: bold;
+}
+
+/* Active Tab Célula */
+.dxtcActiveTab td.dxtc, .dxtcActiveTabWithTabPositionBottom td.dxtc, .dxtcActiveTabWithTabPositionLeft td.dxtc, .dxtcActiveTabWithTabPositionRight td.dxtc
+{
+    white-space: nowrap;
+    background-color: transparent !important;
+    background-image: url('') !important;
+    border-width: 0px !important;
+    padding: 0px !important;
+}
+
+/* Active Tab over */
+.dxtcActiveTabHover
+{
+    background-color: white;
+}
+
+/* Tab */
+.dxtcTab, .dxtcTabWithTabPositionLeft, .dxtcTabWithTabPositionBottom, .dxtcTabWithTabPositionRight
+{
+    border: solid 1px #A8A8A8;
+    padding: 3px 12px 4px 12px;
+    background-image: url(../imagenes/grid_titulo_bg.jpg);
+}
+
+/* Tab Texto*/
+.dxtcTab table.dxtc, .dxtcTabWithTabPositionBottom table.dxtc, .dxtcTabWithTabPositionLeft table.dxtc, .dxtcTabWithTabPositionRight table.dxtc
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.dxtcTab td.dxtc, .dxtcTabWithTabPositionBottom td.dxtc, .dxtcTabWithTabPositionLeft td.dxtc, .dxtcTabWithTabPositionRight td.dxtc
+{
+    white-space: nowrap;
+    background-color: transparent !important;
+    background-image: url('') !important;
+    border-width: 0px !important;
+    padding: 0px !important;
+    color: #999;
+}
+
+/* Tab Hover */
+.dxtcTabHover, .dxtcTabHoverWithTabPositionBottom, .dxtcTabHoverWithTabPositionLeft, .dxtcTabHoverWithTabPositionRight
+{
+    background-image: url(../imagenes/grid_linha_destaque.jpg);
+}
+
+.dxtcPageContent, .dxtcPageContentWithTabPositionBottom, .dxtcPageContentWithTabPositionLeft, .dxtcPageContentWithTabPositionRight, .dxtcPageContentWithoutTabs
+{
+    background-color: #EAEAEA;
+    vertical-align: top;
+}
+
+.LinhaAlternada
+{
+    text-indent: 3px;
+    padding-left: 3px;
+    background-image: url(../imagenes/grid_linha_01.jpg);
+}
+
+.LinhaPadrao
+{
+    text-indent: 3px;
+    padding-left: 3px;
+    background-color: #FFF;
+}
+
+.AlertLoading
+{
+    background: #FFFFFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    background-image: url('../Imagenes/loader1.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.legendas
+{
+    text-align: right;
+    color: Black;
+    width: 140px;
+}
+
+.barraBody { overflow-x: hidden; overflow-y:auto; width: 787px;}

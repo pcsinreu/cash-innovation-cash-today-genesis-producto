@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{448A1791-122C-44CE-B86E-6E856A61AFE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Genesis.BaseDatos</RootNamespace>
+    <AssemblyName>Prosegur.Genesis.BaseDatos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.BaseDatos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.BaseDatos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="..\..\Extras\BaseDatos\Entrega\Genesis\SAPR_TDOCUMENTO.SQL">
+      <Link>Genesis\Entrega\SAPR_TDOCUMENTO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Entrega\Genesis\SAPR_TPLANIFICACION.SQL">
+      <Link>Genesis\Entrega\SAPR_TPLANIFICACION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Entrega\Genesis\SAPR_TPLANXMAQUINA.SQL">
+      <Link>Genesis\Entrega\SAPR_TPLANXMAQUINA.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Entrega\Genesis\X_DICCIONARIO.SQL">
+      <Link>Genesis\Entrega\X_DICCIONARIO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Entrega\Genesis\X_DICCIONARIO_Servicios.SQL">
+      <Link>Genesis\Entrega\X_DICCIONARIO_Servicios.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\FN_CALCULAR_GMT_0.SQL">
+      <Link>Genesis\Functions\FN_CALCULAR_GMT_0.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\FN_GMT_DELEGACION.SQL">
+      <Link>Genesis\Functions\FN_GMT_DELEGACION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\FN_GMT_ZERO_VERSION.SQL">
+      <Link>Genesis\Functions\FN_GMT_ZERO_VERSION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\FN_SECTOR_PADRE_VERSION.SQL">
+      <Link>Genesis\Functions\FN_SECTOR_PADRE_VERSION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\FN_STRING_TO_ARRAY.SQL">
+      <Link>Genesis\Functions\FN_STRING_TO_ARRAY.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\FN_TRADUZIR.SQL">
+      <Link>Genesis\Functions\FN_TRADUZIR.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_GEPR_PCODIGO_AJENO.SQL">
+      <Link>Genesis\Packages\PKG_GEPR_PCODIGO_AJENO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_GEPR_PCOMON.SQL">
+      <Link>Genesis\Packages\PKG_GEPR_PCOMON.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_GEPR_PDICCIONARIO.SQL">
+      <Link>Genesis\Packages\PKG_GEPR_PDICCIONARIO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_GEPR_PMOD_MODELO_DD.SQL">
+      <Link>Genesis\Packages\PKG_GEPR_PMOD_MODELO_DD.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_GEPR_PPROCESO.SQL">
+      <Link>Genesis\Packages\PKG_GEPR_PPROCESO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_GEPR_PTERMINOS_IAC.SQL">
+      <Link>Genesis\Packages\PKG_GEPR_PTERMINOS_IAC.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_GEPR_PUTILIDADES.SQL">
+      <Link>Genesis\Packages\PKG_GEPR_PUTILIDADES.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_CONSULTAS_ATM.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_CONSULTAS_ATM.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_GREL_CONTENEDORES.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_GREL_CONTENEDORES.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PBULTO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PBULTO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PCAJERO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PCAJERO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PCERTIFICACION.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PCERTIFICACION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PCONTENEDOR.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PCONTENEDOR.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PCUENTAS.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PCUENTAS.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PDELEGACION.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PDELEGACION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PDIVISA.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PDIVISA.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PDOCUMENTO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PDOCUMENTO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PDOCUMENTOS_GRP.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PDOCUMENTOS_GRP.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PELEMENTO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PELEMENTO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PFORMULARIO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PFORMULARIO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PLISTA_VALOR.sql">
+      <Link>Genesis\Packages\PKG_SAPR_PLISTA_VALOR.sql</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PMAQUINA.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PMAQUINA.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PMOVIMIENTO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PMOVIMIENTO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PNOTIFICACION.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PNOTIFICACION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PPANTALLAS.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PPANTALLAS.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PPARCIAL.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PPARCIAL.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PPERIODO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PPERIODO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PPLANIFICACION.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PPLANIFICACION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PPLANTA.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PPLANTA.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PREMESA.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PREMESA.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PSALDOS.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PSALDOS.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PSECTOR.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PSECTOR.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PSERVICIO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PSERVICIO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PTRANSICIONES.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PTRANSICIONES.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PUSUARIO.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PUSUARIO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\SP_BORRAR_CERTIFICADO.SQL">
+      <Link>Genesis\Procedures\SP_BORRAR_CERTIFICADO.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\SP_CLAUSULA_IN.SQL">
+      <Link>Genesis\Procedures\SP_CLAUSULA_IN.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\SP_SAPR_SCLAUSULA_IN_INSERT.SQL">
+      <Link>Genesis\Procedures\SP_SAPR_SCLAUSULA_IN_INSERT.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\FN_CALCULAR_GMT_0.SQL">
+      <Link>Reportes\Functions\FN_CALCULAR_GMT_0.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\FN_GMT_DELEGACION.SQL">
+      <Link>Reportes\Functions\FN_GMT_DELEGACION.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\PKG_GREL_TRANSACCIONES.SQL">
+      <Link>Reportes\Packages\PKG_GREL_TRANSACCIONES.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\PKG_SAPR_PREL_MAE_ACREDITACIONES.SQL">
+      <Link>Reportes\Packages\PKG_SAPR_PREL_MAE_ACREDITACIONES.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\PKG_SAPR_PREL_MAE_SHIPOUT.SQL">
+      <Link>Reportes\Packages\PKG_SAPR_PREL_MAE_SHIPOUT.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\SP_HISTORICO_SALDOS.SQL">
+      <Link>Reportes\Procedures\SP_HISTORICO_SALDOS.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\SP_PLANIFICACIONES.SQL">
+      <Link>Reportes\Procedures\SP_PLANIFICACIONES.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\SP_SALDOS_V2.SQL">
+      <Link>Reportes\Procedures\SP_SALDOS_V2.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Reportes\SP_TRANSACCIONES.SQL">
+      <Link>Reportes\Procedures\SP_TRANSACCIONES.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Geral\Genesis\PKG_SAPR_PCLIENTE.SQL">
+      <Link>Genesis\Packages\PKG_SAPR_PCLIENTE.SQL</Link>
+    </Content>
+    <Content Include="..\..\Extras\BaseDatos\Entrega\Genesis\SAPR_TNOTIFICACION.SQL">
+    	<Link>Genesis\Entrega\SAPR_TNOTIFICACION.SQL</Link>
+    </Content>
+    <Content Include="Genesis\Entrega\SAPR_TPLANXENTIDAD.SQL" />
+    <Content Include="..\..\Extras\BaseDatos\Entrega\Genesis\SAPR_TPLANXSUBCANAL.sql">
+    	<Link>Genesis\Entrega\SAPR_TPLANXSUBCANAL.SQL</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\TeamBuild\Microsoft.TeamFoundation.Build.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="AfterBuild">
+    <!-- Teste
+	<Exec Command="echo $(ProjectDir)$(OutDir)" /> 
+	-->
+    <!-- ScriptsEntrega - Executa o Comando que cria os Arquivos ScriptsEntrega.sql -->
+    <Exec Command="&quot;\\BRBHZSVD00063\Dlls$\Sistemas\GESTIN~1\lib\Genesis.ProcedureVersionNuevo.exe&quot; &quot;$(TargetPath)&quot; &quot;$(SolutionRoot)\Extras\BaseDatos\Entrega\Reportes&quot; &quot;&quot; false ScriptsEntrega" />
+    <Exec Command="&quot;\\BRBHZSVD00063\Dlls$\Sistemas\GESTIN~1\lib\Genesis.ProcedureVersionNuevo.exe&quot; &quot;$(TargetPath)&quot; &quot;$(SolutionRoot)\Extras\BaseDatos\Entrega\Genesis&quot; &quot;&quot; false ScriptsEntrega" />
+    <!-- Procedures - Executa o Comando que cria os Arquivos Procedures.sql -->
+    <Exec Command="&quot;\\BRBHZSVD00063\Dlls$\Sistemas\GESTIN~1\lib\Genesis.ProcedureVersionNuevo.exe&quot; &quot;$(TargetPath)&quot; &quot;$(SolutionRoot)\Extras\BaseDatos\Geral\Reportes&quot; &quot;&quot; false Procedures" />
+    <Exec Command="&quot;\\BRBHZSVD00063\Dlls$\Sistemas\GESTIN~1\lib\Genesis.ProcedureVersionNuevo.exe&quot; &quot;$(TargetPath)&quot; &quot;$(SolutionRoot)\Extras\BaseDatos\Geral\Genesis&quot; &quot;&quot; false Procedures" />
+    <!-- Cria pastas no Diretório de Destino -->
+    <Exec Command="if not exist &quot;$(ProjectDir)$(OutDir)Reportes\&quot; md &quot;$(ProjectDir)$(OutDir)Reportes\&quot;" />
+    <Exec Command="if not exist &quot;$(ProjectDir)$(OutDir)Genesis\&quot; md &quot;$(ProjectDir)$(OutDir)Genesis\&quot;" />
+    <!-- Procedures - Executa a Cópia para o Diretório de Destino -->
+    <Exec Command="if exist &quot;$(SolutionRoot)\Extras\BaseDatos\Geral\Reportes\Procedures.sql&quot; move /y &quot;$(SolutionRoot)\Extras\BaseDatos\Geral\Reportes\Procedures.sql&quot; &quot;$(ProjectDir)$(OutDir)Reportes\&quot;" />
+    <Exec Command="if exist &quot;$(SolutionRoot)\Extras\BaseDatos\Geral\Genesis\Procedures.sql&quot; move /y &quot;$(SolutionRoot)\Extras\BaseDatos\Geral\Genesis\Procedures.sql&quot; &quot;$(ProjectDir)$(OutDir)Genesis\&quot;" />
+    <!-- ScriptsEntrega - Executa a Cópia para o Diretório de Destino -->
+    <Exec Command="if exist &quot;$(SolutionRoot)\Extras\BaseDatos\Entrega\Reportes\ScriptsEntrega.sql&quot; move /y &quot;$(SolutionRoot)\Extras\BaseDatos\Entrega\Reportes\ScriptsEntrega.sql&quot; &quot;$(ProjectDir)$(OutDir)Reportes\&quot;" />
+    <Exec Command="if exist &quot;$(SolutionRoot)\Extras\BaseDatos\Entrega\Genesis\ScriptsEntrega.sql&quot; move /y &quot;$(SolutionRoot)\Extras\BaseDatos\Entrega\Genesis\ScriptsEntrega.sql&quot; &quot;$(ProjectDir)$(OutDir)Genesis\&quot;" />
+  </Target>
+  <PropertyGroup>
+    <BuildDependsOn>
+        BeforeBuild;
+        CoreBuild;
+        AfterBuild
+    </BuildDependsOn>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

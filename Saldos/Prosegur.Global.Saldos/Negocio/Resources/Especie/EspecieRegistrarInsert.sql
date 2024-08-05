@@ -1,0 +1,24 @@
+﻿INSERT INTO PD_Especie
+  (IdEspecie,
+   Descripcion,
+   IdMoneda,
+   Uniforme,
+   Orden,
+   EnActaProceso,
+   IdRBO,
+   IdSIGII,
+   Calidad,
+   Bol_Billete,
+   Bol_Moneda)
+VALUES
+  (:IdEspecie,
+   :Descripcion,
+   :IdMoneda,
+   :Uniforme,
+   :Orden,
+   :EnActaProceso,
+   :IdRBO,
+   :IdSIGII,
+   :Calidad,
+   :EsBillete,
+   :EsMoneda)

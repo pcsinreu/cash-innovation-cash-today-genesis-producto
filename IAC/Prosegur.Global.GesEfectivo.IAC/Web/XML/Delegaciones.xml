@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Delegaciones>
+  <Delegacion>
+    <Codigo>BH</Codigo>
+    <Descripcion>Belo Horizonte</Descripcion>
+  </Delegacion>
+  <Delegacion>
+    <Codigo>TransporteValoresBRZ1</Codigo>
+    <Descripcion>Belo Horizonte - 2</Descripcion>
+  </Delegacion>  
+  <Delegacion>
+    <Codigo>NAZCA</Codigo>
+    <Descripcion>NAZCA</Descripcion>
+  </Delegacion>
+  <Delegacion>
+    <Codigo>BuenosAires</Codigo>
+    <Descripcion>Buenos Aires</Descripcion>
+  </Delegacion>
+  <Delegacion>
+    <Codigo>Madri</Codigo>
+    <Descripcion>Madri</Descripcion>
+  </Delegacion>
+  <Delegacion>
+    <Codigo>Barcelona</Codigo>
+    <Descripcion>Barcelona</Descripcion>
+  </Delegacion>  
+  <Delegacion>
+    <Codigo>999</Codigo>
+    <Descripcion>Delegação Central</Descripcion>
+  </Delegacion>
+  <Delegacion>
+    <Codigo>Rio de Janeiro</Codigo>
+    <Descripcion>Rio de Janeiro</Descripcion>
+  </Delegacion>
+  <Delegacion>
+    <Codigo>BASA</Codigo>
+    <Descripcion>Salvador</Descripcion>
+  </Delegacion>
+  <Delegacion>
+    <Codigo>Mantena</Codigo>
+    <Descripcion>Mantena</Descripcion>
+  </Delegacion>
+  <Delegacion>
+    <Codigo>LVMX01</Codigo>
+    <Descripcion>México</Descripcion>
+  </Delegacion>
+</Delegaciones>

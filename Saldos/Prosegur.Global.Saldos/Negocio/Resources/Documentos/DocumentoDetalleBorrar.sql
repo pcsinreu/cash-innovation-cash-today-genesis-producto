@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_DocumentoDetalle WHERE IdDocumento = :IdDocumento

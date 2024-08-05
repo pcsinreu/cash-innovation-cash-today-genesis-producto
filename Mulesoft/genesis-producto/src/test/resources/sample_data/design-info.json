@@ -1,0 +1,12 @@
+{
+  "sampleData": {
+    "16b47925-b8c1-408e-9785-5cd13c07a2f6": {
+      "payload": "sample_data/weave.dwl"
+    },
+    "307c62cb-cdc8-452f-9bb3-42f1d7a1781a": {
+      "payload": "sample_data/json.json"
+    },
+    "98d72a66-609b-4d56-9b0f-995d1bfaf876": {},
+    "24c465fb-d591-49ae-bdbe-8059c1ed5280": {}
+  }
+}

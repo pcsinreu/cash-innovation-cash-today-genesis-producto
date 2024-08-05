@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Prosegur.Global.Saldos.Negocio", "Negocio\Prosegur.Global.Saldos.Negocio.vbproj", "{98A0B1A2-D8F4-44E1-BA90-22EB0BA83562}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Prosegur.Global.Saldos.Web", "Web\Prosegur.Global.Saldos.Web.vbproj", "{2BDBB70A-61FC-4121-A056-15F49F2016F0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Prosegur.Global.GesEfectivo.Conteo.ContractoServicio", "..\..\Conteo\Prosegur.Global.GesEfectivo.Conteo\ContractoServicio\Prosegur.Global.GesEfectivo.Conteo.ContractoServicio.vbproj", "{BEE02C5F-DDB9-4E45-9AA8-5E4784F4E42D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Prosegur.Global.GesEfectivo.IAC.ContractoServicio", "..\..\IAC\Prosegur.Global.GesEfectivo.IAC\ContractoServicio\Prosegur.Global.GesEfectivo.IAC.ContractoServicio.vbproj", "{275AE785-D755-452A-9A75-7CA678980AC4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio", "..\..\IAC\Prosegur.Global.GesEfectivo.IAC\Integracion.ContractoServicio\Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio.vbproj", "{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Prosegur.Global.GesEfectivo.Salidas.ContractoServicio", "..\..\Salidas\Prosegur.Global.GesEfectivo.Salidas\ContractoServicio\Prosegur.Global.GesEfectivo.Salidas.ContractoServicio.vbproj", "{1C267534-52BF-48C3-84CD-3B729F4727B6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://brbhzsvd00062:8080/gesti%c3%b3n%20de%20efectivo
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Web\\Prosegur.Global.Saldos.Web.vbproj
+		SccProjectName1 = Web
+		SccLocalPath1 = Web
+		SccProjectUniqueName2 = Negocio\\Prosegur.Global.Saldos.Negocio.vbproj
+		SccProjectName2 = Negocio
+		SccLocalPath2 = Negocio
+		SccProjectUniqueName3 = ..\\..\\Conteo\\Prosegur.Global.GesEfectivo.Conteo\\ContractoServicio\\Prosegur.Global.GesEfectivo.Conteo.ContractoServicio.vbproj
+		SccProjectName3 = ../../Conteo/Prosegur.Global.GesEfectivo.Conteo/ContractoServicio
+		SccLocalPath3 = ..\\..\\Conteo\\Prosegur.Global.GesEfectivo.Conteo\\ContractoServicio
+		SccProjectUniqueName4 = ..\\..\\IAC\\Prosegur.Global.GesEfectivo.IAC\\ContractoServicio\\Prosegur.Global.GesEfectivo.IAC.ContractoServicio.vbproj
+		SccProjectName4 = ../../IAC/Prosegur.Global.GesEfectivo.IAC/ContractoServicio
+		SccLocalPath4 = ..\\..\\IAC\\Prosegur.Global.GesEfectivo.IAC\\ContractoServicio
+		SccProjectUniqueName5 = ..\\..\\IAC\\Prosegur.Global.GesEfectivo.IAC\\Integracion.ContractoServicio\\Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio.vbproj
+		SccProjectName5 = ../../IAC/Prosegur.Global.GesEfectivo.IAC/Integracion.ContractoServicio
+		SccLocalPath5 = ..\\..\\IAC\\Prosegur.Global.GesEfectivo.IAC\\Integracion.ContractoServicio
+		SccProjectUniqueName6 = ..\\..\\Salidas\\Prosegur.Global.GesEfectivo.Salidas\\ContractoServicio\\Prosegur.Global.GesEfectivo.Salidas.ContractoServicio.vbproj
+		SccProjectName6 = ../../Salidas/Prosegur.Global.GesEfectivo.Salidas/ContractoServicio
+		SccLocalPath6 = ..\\..\\Salidas\\Prosegur.Global.GesEfectivo.Salidas\\ContractoServicio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98A0B1A2-D8F4-44E1-BA90-22EB0BA83562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A0B1A2-D8F4-44E1-BA90-22EB0BA83562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A0B1A2-D8F4-44E1-BA90-22EB0BA83562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A0B1A2-D8F4-44E1-BA90-22EB0BA83562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDBB70A-61FC-4121-A056-15F49F2016F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDBB70A-61FC-4121-A056-15F49F2016F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDBB70A-61FC-4121-A056-15F49F2016F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDBB70A-61FC-4121-A056-15F49F2016F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE02C5F-DDB9-4E45-9AA8-5E4784F4E42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE02C5F-DDB9-4E45-9AA8-5E4784F4E42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE02C5F-DDB9-4E45-9AA8-5E4784F4E42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE02C5F-DDB9-4E45-9AA8-5E4784F4E42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275AE785-D755-452A-9A75-7CA678980AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275AE785-D755-452A-9A75-7CA678980AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275AE785-D755-452A-9A75-7CA678980AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275AE785-D755-452A-9A75-7CA678980AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C267534-52BF-48C3-84CD-3B729F4727B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C267534-52BF-48C3-84CD-3B729F4727B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C267534-52BF-48C3-84CD-3B729F4727B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C267534-52BF-48C3-84CD-3B729F4727B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

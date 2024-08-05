@@ -1,0 +1,45 @@
+﻿<div class="container" ng-controller="bankFilterCtrl">
+    <div class="row">
+        <div class="col-lg-8">
+            <form id="convFilter" class="form-horizontal" action="/admin/conversations/filter">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="keywords">COD.CLIENTE</label>
+                        <div class="col-sm-8">
+                            <input type="text" ng-model="Filter.CodCliente" class="form-control" name="keywords" id="keywords">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group ">
+                        <label class="col-sm-4 control-label" for="fromDate">DESCRIPCION</label>
+                        <div class="col-sm-8">
+                            <input type="text" ng-model="Filter.Description" class="form-control" id="description">
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-4 col-sm-8">
+                        <input type="button" id="find-all" class="ui-button" value="Buscar" ng-click="Search(Filter)" />
+                        <input id="limpiar" ng-click="Clean()" type="button" class="ui-button" value="Limpiar" />
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    var app = angular.module('ConsLocApp');
+
+    app.register.controller("bankFilterCtrl", ['$scope', function ($scope) {
+       
+        $scope.Filter = { Description: '', CodCliente: '' };
+
+        $scope.Clean = function () {
+            $scope.Filter.Description = "";
+            $scope.Filter.CodCliente = "";
+        };
+
+    }])
+
+</script>

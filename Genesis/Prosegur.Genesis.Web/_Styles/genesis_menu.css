@@ -1,0 +1,24 @@
+﻿.menu_container
+{
+    border:1px solid gray;
+    background: #f0f0f0;
+    width:200px;
+    position:fixed;
+    left:100px;
+    top: 100%;
+    left:100%;
+    margin: -20px -210px; 
+    cursor:pointer;
+}
+.menu_container .menu_header
+{
+    height:20px;
+    text-align:center;
+}
+.menu_container .menu_item
+{
+    display:block;
+    height:20px;
+    padding:0 5px 0 5px;
+    text-decoration: none;
+}

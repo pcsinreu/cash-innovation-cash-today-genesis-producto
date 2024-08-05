@@ -1,0 +1,176 @@
+﻿WITH Q AS
+ (SELECT DISTINCT 
+			      REM.FYH_INICIO,
+				  REM.OID_REMESA,
+				  REM.OID_REMESA_REF,
+                  REM.OID_REMESA_LEGADO,
+				  REM.COD_ESTADO_REMESA,
+                  NULL           OID_BULTO,
+                  NULL           COD_PRECINTO_BULTO,
+                  NULL           COD_ESTADO_BULTO,
+                  NULL           BOL_CUADRADO,
+                  NULL           COD_USUARIO,
+                  NULL           FYH_ACTUALIZACION,
+                  NULL           OID_MORFOLOGIA_COMPONENTE,
+                  NULL           BOL_PICOS,
+                  NULL           BOL_PREPARADO,
+                  NULL           COD_USUARIO_BLOQUEO,
+                  NULL           OID_TIPO_BULTO,
+				  NULL			 COD_FORMATO,
+                  NULL           COD_PUESTO,
+                  NULL COD_TIPO_BULTO,
+                  NULL DES_TIPO_BULTO,
+				  NULL BOL_CAJETIN,
+                  NULL COD_BOLSA,
+				  NULL DES_CONTACTO1,
+				  NULL DES_CONTACTO2,
+				  NULL DES_CONTACTO3,
+				  NULL DES_CONTACTO4
+    FROM GEPR_TREMESA REM
+    LEFT JOIN GEPR_TBULTO B
+      ON B.OID_REMESA = REM.OID_REMESA
+    LEFT JOIN GEPR_TLISTA_TRABAJO LT
+      ON LT.OID_REMESA = REM.OID_REMESA
+     AND LT.OID_BULTO IS NULL
+    LEFT JOIN GEPR_TPUESTO PST
+      ON LT.OID_PUESTO = PST.OID_PUESTO
+    LEFT JOIN GEPR_TREMESA_TIPO_MERCANCIA RTM
+      ON REM.OID_REMESA = RTM.OID_REMESA
+    LEFT JOIN GEPR_TTIPO_MERCANCIA TM
+      ON RTM.OID_TIPO_MERCANCIA = TM.OID_TIPO_MERCANCIA
+   {0}
+  UNION
+  SELECT DISTINCT REM.FYH_INICIO,
+			      REM.OID_REMESA,
+				  REM.OID_REMESA_REF,
+                  REM.OID_REMESA_LEGADO,
+				  REM.COD_ESTADO_REMESA,
+                  B.OID_BULTO,
+                  B.COD_PRECINTO_BULTO,
+                  B.COD_ESTADO_BULTO,
+                  B.BOL_CUADRADO,
+                  B.COD_USUARIO,
+                  B.FYH_ACTUALIZACION,
+                  B.OID_MORFOLOGIA_COMPONENTE,
+                  B.BOL_PICOS,
+                  B.BOL_PREPARADO,
+                  B.COD_USUARIO_BLOQUEO,
+                  B.OID_TIPO_BULTO,
+				  B.COD_FORMATO,
+                  PST.COD_PUESTO,
+                  TIB.COD_TIPO_BULTO,
+                  TIB.DES_TIPO_BULTO,
+				  TIB.BOL_CAJETIN,
+                  B.COD_BOLSA,
+				  REM.DES_CONTACTO1,
+				  REM.DES_CONTACTO2,
+				  REM.DES_CONTACTO3,
+				  REM.DES_CONTACTO4
+    FROM GEPR_TREMESA REM
+   INNER JOIN GEPR_TBULTO B
+      ON B.OID_REMESA = REM.OID_REMESA
+   INNER JOIN GEPR_TTIPO_BULTO TIB
+      ON B.OID_TIPO_BULTO = TIB.OID_TIPO_BULTO
+    LEFT JOIN GEPR_TLISTA_TRABAJO LT
+      ON ((REM.BOL_TRABAJA_POR_BULTO = 1 AND LT.OID_REMESA = REM.OID_REMESA AND
+         LT.OID_BULTO = B.OID_BULTO) OR
+         ((REM.BOL_TRABAJA_POR_BULTO = 0 OR []AGRUPA_BULTOS = 1)  AND LT.OID_REMESA = REM.OID_REMESA AND
+         LT.OID_BULTO IS NULL))
+    LEFT JOIN GEPR_TPUESTO PST
+      ON LT.OID_PUESTO = PST.OID_PUESTO
+    LEFT JOIN GEPR_TBULTO_TIPO_MERCANCIA BTM
+      ON B.OID_BULTO = BTM.OID_BULTO
+    LEFT JOIN GEPR_TTIPO_MERCANCIA TM
+      ON BTM.OID_TIPO_MERCANCIA = TM.OID_TIPO_MERCANCIA
+   {1}),
+ REMESAS_MODIFICADAS AS (
+SELECT Q.OID_REMESA,
+        1 MODIFICADA
+FROM Q 
+WHERE Q.COD_ESTADO_REMESA <> 'MD' AND EXISTS (SELECT 1 FROM GEPR_TREMESA R WHERE R.OID_REMESA_REF = Q.OID_REMESA_REF AND R.COD_ESTADO_REMESA = 'MD'))
+SELECT DISTINCT RM.MODIFICADA,
+                R.FYH_INICIO,
+				R.OID_REMESA_PADRE,
+                R.OID_REMESA,
+                R.OID_REMESA_LEGADO,
+                R.COD_DELEGACION,
+                R.COD_ESTADO_REMESA,
+                R.FYH_INICIO_ARMADO,
+                R.FYH_FIN_ARMADO,
+				R.OID_CLIENTE_FACTURACION,
+                R.COD_CLIENTE_FACTURACION,
+                R.DES_CLIENTE_FACTURACION,
+				R.OID_CLIENTE_SALDO,
+				R.COD_CLIENTE_SALDO,
+				R.DES_CLIENTE_SALDO,
+				R.OID_SUBCLIENTE_SALDO,
+				R.COD_SUBCLIENTE_SALDO,
+				R.DES_SUBCLIENTE_SALDO,
+				R.OID_PTO_SERVICIO_SALDO,
+				R.COD_PTO_SERVICIO_SALDO,
+				R.DES_PTO_SERVICIO_SALDO,
+				R.OID_CLIENTE_DESTINO,
+                R.COD_CLIENTE_DESTINO,
+                R.DES_CLIENTE_DESTINO,
+				R.OID_SUBCLIENTE,
+                R.COD_SUBCLIENTE,
+                R.DES_SUBCLIENTE,
+				R.OID_PUNTO_SERVICIO,
+                R.COD_PUNTO_SERVICIO,
+                R.DES_PUNTO_SERVICIO,
+                R.COD_RUTA_REMESA,
+                R.NEL_PARADA,
+                R.COD_EMPRESA_TRANSPORTE,
+                R.COD_CANAL,
+				R.COD_SUBCANAL,
+                R.DES_REF_CLIENTE,
+                R.COD_CAJA_CENTRALIZADA,
+                R.COD_SECTOR,
+                R.DES_DIRECCION_ENTREGA,
+                R.DES_LOCALIDAD_ENTREGA,
+                R.FYH_PROCESO,
+                R.FEC_SERVICIO,
+                R.FYH_SALIDA,
+                R.NEL_PEDIDO_LEGADO,
+                R.NEL_CONTROL_LEGADO,
+                R.DES_COMENTARIO,
+                R.BOL_ATM,
+                R.DES_MODELO_CAJERO,
+                R.DES_RED,
+                R.NEC_MOD_HAB_REC,
+                R.COD_RECIBO_REMESA,
+                R.COD_USUARIO,
+                R.FYH_ACTUALIZACION         FECHA_MODIFICACION_REMESA,
+                R.BOL_TRABAJA_POR_BULTO,
+                R.COD_USUARIO_BLOQUEO,
+				R.COD_ATM,
+				R.OID_OT,
+				R.COD_SERVICIO,
+				R.COD_SECUENCIA,
+				R.BOL_MEDIO_PAGO,
+                Q.OID_BULTO,
+                Q.COD_PRECINTO_BULTO,
+                Q.COD_ESTADO_BULTO,
+                Q.BOL_CUADRADO,
+                Q.COD_USUARIO,
+                Q.FYH_ACTUALIZACION         FECHA_MODIFICACION_BULTO,
+                Q.OID_MORFOLOGIA_COMPONENTE,
+                Q.BOL_PICOS,
+                Q.BOL_PREPARADO,
+                Q.COD_USUARIO_BLOQUEO,
+                Q.OID_TIPO_BULTO,
+				Q.COD_FORMATO,
+                Q.COD_PUESTO,
+                Q.COD_TIPO_BULTO,
+                Q.DES_TIPO_BULTO,
+				Q.BOL_CAJETIN,
+                Q.COD_BOLSA,
+				R.DES_CONTACTO1,
+				R.DES_CONTACTO2,
+				R.DES_CONTACTO3,
+				R.DES_CONTACTO4,
+				R.OID_REMESA_REF
+  FROM Q
+ INNER JOIN GEPR_TREMESA R
+    ON R.OID_REMESA = Q.OID_REMESA
+ LEFT JOIN REMESAS_MODIFICADAS RM ON RM.OID_REMESA = R.OID_REMESA

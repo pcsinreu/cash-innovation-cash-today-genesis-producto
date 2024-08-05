@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5687E3C6-A6F1-4C83-9103-E045C90B24C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Genesis.Report</RootNamespace>
+    <AssemblyName>Prosegur.Genesis.Report</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.Report.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.Report.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Prosegur.Framework.Dicionario, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=6bb1f230141d8049, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.Framework.Dicionario.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="ConfiguracionGeneral.vb" />
+    <Compile Include="Constantes.vb" />
+    <Compile Include="DataSet.vb" />
+    <Compile Include="DataSetReference.vb" />
+    <Compile Include="DataSource.vb" />
+    <Compile Include="DefaultValue.vb" />
+    <Compile Include="Dependencie.vb" />
+    <Compile Include="Gerar.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParameterValue.vb" />
+    <Compile Include="Parametro.vb" />
+    <Compile Include="ParametroReporte.vb" />
+    <Compile Include="ReportExecutionService.vb" />
+    <Compile Include="ReportingService2005.vb" />
+    <Compile Include="ReportingService2010.vb" />
+    <Compile Include="Util.vb" />
+    <Compile Include="ValidValue.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\ContractoServicio\Prosegur.Global.GesEfectivo.IAC.ContractoServicio.vbproj">
+      <Project>{275AE785-D755-452A-9A75-7CA678980AC4}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4dc9ee4c-7177-466c-826c-49576eff7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comunicacion\Prosegur.Genesis.Comunicacion.vbproj">
+      <Project>{817877CA-26FE-4639-91A0-42A29091C817}</Project>
+      <Name>Prosegur.Genesis.Comunicacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Exception\Prosegur.Genesis.Excepcion.vbproj">
+      <Project>{ED11E59E-9783-4F6C-948B-16530AE69DF8}</Project>
+      <Name>Prosegur.Genesis.Excepcion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Web.Login\Prosegur.Genesis.Web.Login.vbproj">
+      <Project>{63BE8B3D-AE97-4B56-BE67-184973BC259C}</Project>
+      <Name>Prosegur.Genesis.Web.Login</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <!--<ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

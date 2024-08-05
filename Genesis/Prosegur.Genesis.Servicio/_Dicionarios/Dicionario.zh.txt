@@ -1,0 +1,3295 @@
+﻿*******************************************************COMUM*******************************************************
+
+Gen_msg_atributo				=属性{0}不知情。 
+001_Erro_EnviadoLegado						= Erro ao enviar ao legado. {0} Erro {1} de {2}.
+001_Error_EnviadoSaldos						= Erro ao enviar ao saldos. {0} Erro {1} de {2}.
+
+*******************************************************GENESIS*******************************************************
+
+//ObtenerAplicacionVersion
+gen_msg_obteneraplicacionversion_codigoaplicacion = CodigoAplicacion 
+gen_msg_obteneraplicacionversion_codigouversion = CodigoVersion 
+gen_msg_obteneraplicacionversion_aplicacionversionnoencontrado = 版本的应用程序{0} {1}没有找到。 
+msg_campo_obrigatorio						= El campo {0} es obligatorio!
+gen_atr_obteneraplicacionversion_coddelegacion		= Código Delegación
+gen_atr_obteneraplicacionversion_codplanta			= Código Planta
+gen_atr_obteneraplicacionversion_deslogin			= Login
+
+//ObtenerDelegaciones
+gen_atr_obtenerdelegaciones_identificadorusuario	= Identificador del usuário
+
+//ObtenerPermisos
+gen_atr_obtenerpermisos_identificadorusuario		= Identificador del usuário
+gen_atr_obtenerpermisos_identificadoraplicacion		= Identificador de la aplicación
+gen_atr_obtenerpermisos_codigopais					= Código del país
+
+*******************************************************SALIDAS*******************************************************
+
+//TABELA DE CÓDIGOS PARA DICIONÁRIO
+//Código										Funcionalidade
+
+//*************************************************************************************************************
+//	Genéricas
+//*************************************************************************************************************
+gen_srv_msg_atributo				= 属性“{0}”没有被告知。 
+gen_srv_msg_atributos				= 属性“{0}”没有被告知。 
+gen_srv_msg_coleccion_vazia			= 收集“{0}”是空的。 
+gen_srv_msg_atributos_nao_preenchidos		= 输入属性“{0}”和/或属性'{1}“。 
+gen_srv_msg_errocabecalho			= SOAP安全令牌没有被告知或不正确。 
+gen_srv_msg_errocolecao				= 在集合中找到错误。 
+gen_srv_msg_erroexecucao			= 在执行环境中的错误。 
+gen_srv_msg_erro_par_entrada			= 在输入参数中的错误。 
+gen_srv_msg_atributo_invalido			= 属性“{0}”是无效的。 
+gen_srv_msg_erronegocio				= 商业错误。 
+gen_srv_msg_id_obligatorio			= 的标识符{0}是必须的！ 
+gen_srv_msg_item_vazio_coleccion	= Hay un '{0}' vazio en la colección '{1}'.
+gen_srv_msg_atributo_item_coleccion	= Atributo '{0}' no informado en el item '{1}' de la colección '{2}'.
+gen_srv_msg_atributo_item_id_coleccion = Atributo '{0}' no informado en el item '{1}' con identificador '{2}' de la colección '{3}'.
+gen_srv_msg_item_no_encontrado_con_parametros_informados = '{0}' no encontrado con los parámetros informados.
+
+//*************************************************************************************************************
+//	Login
+//*************************************************************************************************************
+001_srv_msg_login_identificadorusuario		= 用户标识符 
+001_srv_msg_login_password			= 密码 
+001_srv_msg_login_puesto			= 邮寄 
+001_srv_msg_login_delegacion			= 代表团 
+001_srv_msg_login_codigosector			= 代码行业类别 
+001_srv_msg_InserirSesion_CodigoAplicacion		= CodigoAplicacion 
+001_srv_msg_InserirSesion_IdentificadorUsuario	= IdentificadorUsuario 
+
+//*************************************************************************************************************
+//	Remesa
+//*************************************************************************************************************
+002_srv_msg_remesa_criterio			= 转诊标准 
+002_srv_msg_remesa_delegacion			= 代码代表团 
+002_srv_msg_remesa_usuario			= 用户代码 
+002_srv_msg_remesa_remesas			= 未获悉转诊 
+002_srv_msg_asignacionremesapuestoerror_105	= 货不能被指定为无效 
+002_srv_msg_asignacionremesapuestoerror_106	= 货不能被指定为修改 
+002_srv_msg_asignacionremesapuestoerror_107	= 货不能被指定为你的国家不允许 
+002_srv_msg_cerrar_remesa_error_108		= 货不能关闭，因为它无效 
+002_srv_msg_cerrar_remesa_error_109		= 货不能关闭，因为它的状态是不是在进步 
+002_srv_msg_cerrar_remesa_error_110		= 货不能关闭，因为没有收到生成并打印 
+002_srv_msg_cerrar_remesa_error_111		= 不能被关闭，因为有未关闭的袋或对象的发送 
+002_srv_msg_cerrar_remesa_error_112		= 不能被关闭，因为它被修改的发送 
+002_srv_requerido_oidremesalegado		= 一批标识符遗留的 
+002_srv_requerido_coddelegacion			= CodDelegacion 
+002_srv_requerido_codestadoremesa		= CodEstadoRemesa 
+002_srv_requerido_codclienteori			= 客户端源代码 
+002_srv_requerido_desclienteori			= 说明源客户端 
+002_srv_requerido_codcliente			= 客户端代码 
+002_srv_requerido_descliente			= 说明客户 
+002_srv_requerido_codsubcliente			= 子客户端代码 
+002_srv_requerido_dessubcliente			= 说明子客户端 
+002_srv_requerido_codpuntoservicio		= 服务代码点 
+002_srv_requerido_despuntoservicio		= 说明点服务 
+002_srv_requerido_modhabrecogida		= 模式使聚会 
+002_srv_erro_termino					= 在报道方面的请愿书，但单据出具（{0}）已经没有IAC配置。
+002_srv_requerido_codcanal			= 码道 
+002_srv_requerido_codsector			= 代码行业类别 
+002_srv_requerido_codruta			= 代码鲁塔 
+002_srv_requerido_fechaservicio			= 数据服务 
+002_srv_requerido_codisodivisa			= 代码isoDivisa 
+002_srv_requerido_coddenominacion		= 代码指定 
+002_srv_requerido_nelcantidad			= 量 
+002_srv_requerido_necprioridad			= 优先 
+002_srv_requerido_necorden			= 秩序 
+002_srv_requerido_importeefectivodetalle	= 属性导入有效的“有效的缺乏细节没有被告知。 
+002_srv_requerido_numimporteefectivo		= 导入有效 
+002_srv_requerido_codtipomodulo			= 类型代码模块 
+002_srv_requerido_fechaactualizacion		= 更新日期 
+002_srv_requerido_codigopuesto			= 代码后 
+002_srv_requerido_codtipoobjeto			= 代码类型对象 
+002_srv_requerido_idmorfologiacomponente	= 形态组件标识符 
+002_srv_requerido_unidades			= 单位 
+002_srv_msg_siefectivosomodulosobultos		= 甲送的信息可以是实际的或模块或小袋的，但不超过一次。 
+002_srv_msg_noefectivosomodulosobultos		= 请告知有效转介或模块或小袋。 
+002_srv_msg_validacaovaloresdenominaciones	= 有效教派的价值观是不同的每种货币的进口总价值的总和。 
+002_srv_msg_remesanoexiste			= 有一个所需的交付 
+002_srv_msg_remesanoactualizar			= 无法更新发货，因为状态代码是不同的，从'PE'和/或已经产生的收据。 
+002_srv_msg_remesabloqueadoparaactualizar	= 這是不可能的，以更新該貨物，如已經開始了組裝過程。
+002_srv_msg_remesacodigorutaactualizado = Somente os dados da rota foram atualizados, pois já iniciou o processo de armação. 
+002_srv_msg_remesaactualizardatos = 无法更改要求发货数额或价值，因为它已经作为，不仅改变了路由数据。
+002_srv_msg_remesanoanular			= 无法取消发货，因为状态代码是不同的，从'PE'或'AS'。 
+002_srv_msg_remesajabloqueada			= 货不能阻止已经标记为锁定。 
+002_srv_msg_remesabloqueadaporoutrousuario	= 货不能解锁，因为它是由另一个用户锁定。 
+002_srv_msg_validacaosomatipomodulos		= 总进口模块发送配置导入不同类型的模块。 
+002_srv_msg_tipomodulonoexiste			= 有一种类型的代码模块'{0}“。 
+002_srv_msg_divisanoexiste			= 货币ISO代码'{0}“。 
+002_srv_msg_denominacionnoexiste		= 有一个名称与代码“{0}”。 
+002_srv_msg_nocambiaryaanulada			= 货不能放在当然是无效。 
+002_srv_msg_nocambiarestadonopermite		= 货不能放在课程为你的国家不允许。 
+002_srv_msg_nocambiarnoasignadaparaelpuesto	= 货不能放在没有被分配到该职位的当然。 
+002_srv_msg_nocambiaryamodificada		= 货不能落实到位，因为它已经被修改。 
+002_srv_msg_novolverasyaanulada			= 货不能返回的状态'，'已经取消。 
+002_srv_msg_novolverasestadonopermite		= 货不能返回的状态'为'，因为你的状态不允许。 
+002_srv_msg_novolverasyabultocerrado		= 货不能返回的状态'，'bultos关闭。 
+002_srv_msg_novolverasyamodificada		= 货不能返回“AS”的状态，因为它被修改。 
+002_srv_msg_remesasnoencontradas		= 没有托运被发现。 
+002_srv_msg_remesaconbultospendientes		= 有袋正在等待装运。 
+002_srv_msg_remesa_modificada			= 的发送不能被更改，因为它已被修改。 
+002_srv_msg_nohayefectivobulto			= 没有有效的小袋通知 
+002_srv_msg_tipocontenedor_x_tipobulto		= 通知容器类型是不是相当于一种袋代表团。 
+002_srv_msg_nohaytiposbultodisponibles		= 类型袋代表团。无法将对象发送到许可证。 
+002_srv_msg_validarmodalidadrecogida		= 付款/结算方式告知不等于任何可能的方式。 
+002_srv_msg_validartipoobjeto			= 通知的对象类型是不等价的任何可能的类型。 
+002_srv_msg_sindatoshabilitacion		= 值没有被告知的资格此装运ATM。 
+002_srv_msg_remesatipomercanciainvalido = 无法更新发货，因为代码mercancia的类型'{0}“不存在于数据库中。 
+002_msg_error_documento_saldos		= (Saldos Legacy) Ningún documento fue encontrado con los parámetros: Número externo: {0}, Formulario: {1} y Delegación: {2}
+002_srv_msg_Limite_ultrapassado     = El codigo generado para el recibo es demasiado largo. Favor hacer la modificacion del código ajeno para uno más curto.
+002_srv_msg_tipobulto_medio_pago_no_encontrado = No fue encontrado un tipo de bulto para medio pago.
+002_srv_msg_modulo_no_configurado	= El Modulo informado no está configurado correctamiente.
+002_srv_msg_remesa_efectivo_medio_pago = La remesa no puede tener valores de efectivo y medio pago.
+002_srv_msg_remesa_modulo_medio_pago = La remesa no puede tener valores para modulos y medio pago.
+002_srv_msg_remesa_modulo_cantidad_cero = Hay modulos con cantidad cero.
+
+//LEE ESCRIBE ESTADO REMESA
+002_cod_usuario					= 用户代码 
+002_msg_operacion_invalida			= 输入的交易是无效的。 
+002_msg_remesa_vacia				= 它是强制性的，至少有一个装运。 
+002_msg_remesa_estado_invalido			= 该Remesa {0}不能改变自己的状态，因为你的状态是不同的待。 
+002_msg_estado_no_informado			= 代销{0}的状态并没有被告知。 
+002_msg_estado_informado_invalido		= 不能改变一批{0}，{1}与国家。 
+002_msg_remesa_no_existe			= 一批{0}不存在在离开。 
+002_msg_estado_pendiente_cambio			= 待交换 
+002_msg_estado_SIP				= SIP 
+
+//*************************************************************************************************************
+//	Puesto
+//*************************************************************************************************************
+003_srv_msg_puesto_delegacion			= 代码代表团 
+003_srv_msg_puesto_posto			= 代码后 
+003_srv_msg_puesto_vigente			= 目前 
+003_srv_msg_puesto_evento			= 代码事件 
+003_srv_msg_puesto_postonaoencontrado		= 旅游没有发现的参数。 
+003_srv_msg_puesto_atributosinvalidos		= 属性“{0}”和“{1}”是无效的。 
+003_srv_msg_puesto_postoorigem			= 将源代码 
+003_srv_msg_puesto_postodestino			= 发布代码的目的 
+003_srv_requerido_codisodivisa			= 代码isoDivisa 
+003_srv_requerido_coddenominacion		= 代码指定 
+003_srv_msg_puesto_importetotaldivergente	= 通知导入不同面额的总和。 
+003_srv_requerido_codpuestooperador		= 代码集合运算符 
+003_srv_requerido_codpuestosupervisor		= 代码集监事 
+003_srv_requerido_codusuario			= 用户代码 
+003_srv_msg_efetivonoinformado			= 没有有效的治疗进行了报道。 
+003_srv_requerido_clavesupervisor		= 重点监 
+003_srv_requerido_codsectorentrega		= 代码段交货 
+003_srv_requerido_oidPuesto				= 重点旅游 
+003_srv_requerido_Servicios				= 服务 
+
+//*************************************************************************************************************
+//	Bulto
+//*************************************************************************************************************
+004_srv_msg_tipo_bulto_disponible_delegacion	= CodDelegacion 
+004_srv_requerido_coddelegacion			= 代码代表团 
+004_srv_requerido_codisodivisa			= 代码isoDivisa 
+004_srv_requerido_coddenominacion		= 代码指定 
+004_srv_requerido_nelcantidad			= 量 
+004_srv_requerido_necagrupacion			= 分组 
+004_srv_requerido_codusuario			= 用户代码 
+004_srv_requerido_codsupervisor			= 代码主管 
+004_srv_requerido_oidremesalegado		= 一批标识符遗留的 
+004_srv_requerido_IdentificadorExterno	= 外部标识符
+004_srv_requerido_fyhactualizacion		= 更新日期 
+004_srv_requerido_oidbulto			= 标识符bulto的 
+004_srv_requerido_oidbultodiponible		= 手柄式包装袋可用 
+004_srv_requerido_oidcontenedorreabierto	= 处理容器重新开放 
+004_srv_requerido_codprecintobulto		= 代码密封袋 
+004_srv_requerido_codtipobulto			= 类型代码袋 
+004_srv_requerido_codtipomodulo			= 类型代码模块 
+004_srv_requerido_codestadobulto		= 代码状态袋 
+004_srv_requerido_codpuesto			= 代码后 
+004_srv_requerido_descripcionbulto		= 说明袋 
+004_srv_requerido_descripciontipobulto		= 描述型袋 
+004_srv_requerido_remesa			= 装船 
+004_srv_requerido_bulto				= 袋 
+004_srv_requerido_oidobjeto			= 对象标识符 
+004_srv_requerido_codprecintoobjeto			= 对象代码的密封 
+004_srv_requerido_codprecintoagr		= 代码院内池程序 
+004_srv_requerido_bultodisponible		= 可用袋 
+004_srv_requerido_prioridade			= 优先 
+004_srv_requerido_tipobulto			= 类型袋 
+004_srv_requerido_aptopicos			= 飞度峰 
+004_srv_requerido_AptoMezcla			= 适合MERGES的 
+004_srv_requerido_baja				= 低 
+004_srv_requerido_oidimportestandardbulto	= 办理进口标准 
+004_srv_requerido_nelmaximounidades		= 最大单位 
+004_srv_requerido_bolnecesitaprecinto		= 需要密封 
+004_srv_msg_bultosnoactualizados		= 的包装袋不能被更新，因为已被修改的发送。 
+004_srv_msg_algunbultofuemodificado		= 有些邮袋装运被修改。 
+004_srv_msg_siefectivosomodulos			= 划分袋可能有实际或模块，但没有一次。 
+004_srv_msg_noefectivosomodulos			= 请告知有效或模块的划分袋。 
+004_srv_msg_noceradobultoanulado		= 袋不能被关闭，因为它是无效的。 
+004_srv_msg_noceradobultonoencurso		= 袋不能终止，因为它的状态是不是在进步。 
+004_srv_msg_noceradobultomodificado		= 的袋不能被关闭，因为它已被修改。 
+004_srv_msg_bultonoencontrado			= 进入袋没有被发现。 
+004_srv_msg_valorebultonoencontrado		= 报道没有值的小袋。 
+004_srv_msg_nuevovalorigualaoantigo		= 通知的密封等于记录在系统。 
+004_srv_msg_precintoyamodificado		= 不能注册新的密封袋，因为被其他用户修改。 
+004_srv_msg_tipobultonoencontrado		= 没有找到任何袋可用于代号为“{0}”。 
+004_srv_msg_validanumimportemaxseguro		= 最要紧的安全型小袋配置不能低于面额的价值。 
+004_srv_msg_actualizacionnosucesso		= 更新日志没有确认操作成功。 
+004_srv_msg_parametrocontrolenumerario		= 本参数BOL_CONTROLA_NUMERARIO_POR_BULTO，“没有被发现。 
+004_srv_msg_efetivodelbultonoencontrado		= 未找到有效的详细袋标识，然后：“{0}”。 
+004_srv_msg_identificadordenominacion		= 找不到手柄的面额。 
+004_srv_msg_nopuedemodificaryamodificado	= 你不能改变类型袋已经被其他用户修改。 
+004_srv_error_ocorreuerrosnegociopreparo	= 时发生的错误开始执行所要求的修改。 
+004_srv_error_ocorreuerrosbajatipobulto		= 剔除未实现的！有同类型袋小袋通知。 
+004_srv_error_bajatipobultotipomoduloasociado	= 剔除未实现的！类型通知类型袋相关的模块。 
+004_srv_msg_tipobultopesquisanoencontrado	= 未找到类型的眼袋通知。 
+004_srv_msg_denominacionnoencontrada		= 未找到该名称的代码：“{0}”。 
+004_srv_msg_validanecagrupacionnelmaximo	= 的最大面额类型的小袋不能被设置小于分组的金额。 
+004_srv_msg_bultosmaximoremesa			= 装运生成，但没有分成小袋，因为师超过了最大30袋。
+004_srv_msg_tipobultosemdenominacao		= 有一些名字座右銘“{0}”是不是在配置袋的類型。這些名稱應該手動報導。
+004_srv_msg_tipobultosemdivisadenominacao	= 貨幣“{0}”不具有配置袋的類型可用教派。這些名稱應該手動報導。
+004_srv_msg_precintobultoexiste			= 代码袋{0}已经存在。 
+004_srv_msg_nodivididobultos			= 生成发货，但它并没有分成小块
+
+//*************************************************************************************************************
+//	Parametros
+//*************************************************************************************************************
+005_srv_requerido_codidentificador		= 识别码 
+
+//*************************************************************************************************************
+//	Denominación
+//*************************************************************************************************************
+006_srv_requerido_codisodivisa			= ISO货币代码 
+
+//*************************************************************************************************************
+//	Movimentación Fondo
+//*************************************************************************************************************
+007_srv_requerido_coddelegacion			= 代码代表团 
+007_srv_requerido_coddestinodinero		= 代码目的地钱 
+007_srv_requerido_codorigendinero		= 源代码的钱 
+007_srv_requerido_codusuariosolicitante		= 用户代码 
+007_srv_requerido_efectivos			= 有效 
+007_srv_requerido_Ticket			= 代码票 
+007_srv_requerido_fechaactualizacion		= 更新日期 
+007_srv_requerido_coddenominacion		= 代码指定 
+007_srv_requerido_codisodivisa			= 代码isoDivisa 
+007_srv_requerido_codtipomovimentacion		= 驱动器类型 
+007_srv_msg_modificacionestadonocompativel	= 修改的运动是不可能的，因为他们的状态不是'PE'。 
+007_srv_msg_modificacionyaalterada		= 的变形运动是不可能的，因为已经被修改。 
+007_srv_msg_modificacionnoencontrada		= 没有发现运动与票务通知。 
+007_srv_msg_movimentacionnoinformada		= 获悉没有动静。 
+007_srv_requerido_movimentaciondocumentomif	= 文件MIF 
+007_srv_requerido_documentomifdetalle		= 详细的文档MIF 
+007_srv_requerido_documentomifoid		= MIF文件标识符 
+007_srv_requerido_documentomifestadomov		= 固态硬盘 
+007_srv_msg_documentomifnopodrareceber		= 离港不能接收文件，因为你的状态不允许。 
+007_srv_msg_documentomifnopodrarecebermov	= 该文件可能无法收到相应的状态驱动器不允许离港。 
+007_srv_msg_Movimentacionnoencontrada		= 未找到驱动器。 
+007_srv_oidpuestonoencontrado			= 旅游标识没有找到。 
+007_srv_oiddivisanoencontrado			= 货币标识符没有找到。 
+
+//*************************************************************************************************************
+//	SincronizarDivisasSalidas
+//*************************************************************************************************************
+008_Divisas					= 外汇 
+008_CodIsoDivisa				= ISO货币代码 
+008_DescripcionDivisa				= 说明货币 
+008_Denominaciones				= 面值 
+008_CodDenominacion				= 代号名称 
+008_DescripcionDenominacion			= 指定说明 
+008_msg_denominacion_existe			= 代码名称已经存在另一种货币。 
+
+//*************************************************************************************************************
+//	GetLotes
+//*************************************************************************************************************
+009_srv_msg_campo_obrigatorio = 参数“{0}”是必需的 
+009_srv_campo_codDelegacion = CodDelegacao 
+009_srv_campo_oidPuesto = OIDPuesto 
+
+//*************************************************************************************************************
+//	SetLotes
+//*************************************************************************************************************
+010_srv_msg_campo_obrigatorio = 参数“{0}”ES obligatorio的 
+010_srv_campo_coddelegacion = CodDelegacao 
+010_srv_campo_codsupervisor = CodSupervisor 
+010_srv_campo_oidbulto = oidBulto 
+010_srv_campo_oidremesalegado = oidRemesaLegado 
+010_srv_msg_erro_lote_obrigatorio =“阿尔至少一个批次ES obligatorio的” 
+
+010_srv_msg_bulto_no_encontrada = 香格里拉Remesa发现在FUE 
+010_srv_msg_bulto_anulado = 萨尔瓦多bulto podra管理遐encuentra取消 
+010_srv_msg_bulto_modificado = 萨尔瓦多bulto podra管理遐encuentra修改 
+010_srv_msg_bulto_estado_no_permitido = 萨尔瓦多bulto podra（重新）苏asignado雅乐允许状态 
+
+010_srv_msg_remesa_no_encontrada = 香格里拉Remesa发现在FUE 
+010_srv_msg_remesa_anulada = 香格里拉Remesa podra encuentra取消Gestiona雅 
+010_srv_msg_remesa_modificada = 香格里拉Remesa podra encuentra修改Gestiona雅 
+010_srv_msg_remesa_estado_no_permitido = 香格里拉Remesa podra（重新）苏asignada雅乐允许状态 
+
+//*************************************************************************************************************
+//	EsUltimoBultoObjetoProcesado
+//*************************************************************************************************************
+011_srv_Oid_Remesa_Legado = OidRemesaLegado 
+
+//*************************************************************************************************************
+//	BultoPreparado
+//*************************************************************************************************************
+012_srv_Oid_Bulto = OidBulto 
+
+//*************************************************************************************************************
+// IniciarBulto
+//*************************************************************************************************************
+013_srv_Oid_Bulto							= OidBulto 
+013_srv_Cod_Usuario					= CodUsuario 
+013_srv_Cod_Puesto						= CodPuesto 
+013_srv_Msg_Remesa_Anulada	= 袋不能放在正在进行中已经寄售它所属anulda。 
+013_srv_Msg_Bulto_Asginado		=  袋不能叫，因为它目前的状态不允许。 
+013_srv_Msg_Puesto_Distinto		= Posivel无法修改状态持续袋以上职务，因为它是不相关的。 
+013_srv_Msg_Bulto_No_Existe		= 的袋被排除。 
+
+//*************************************************************************************************************
+// VolverBultoEstadoAsignado
+//*************************************************************************************************************
+014_srv_Oid_Bulto							= OidBulto 
+014_srv_Cod_Usuario					= CodUsuario 
+014_srv_Msg_Remesa_Anulada	= 袋不能返回的状态'为'JA代销其所属anulda。 
+014_srv_Msg_Bulto_Asginado		=  袋不能被称为“AS”，因为你的状态不允许。 
+014_srv_Msg_Bulto_No_Existe		= 的袋被排除。 
+
+//*************************************************************************************************************
+// CerrarBultoObjetoRemesa
+//*************************************************************************************************************
+015_srv_Peticion_Cerrar_Remesa	= PeticionCerrarRemesa 
+
+//*************************************************************************************************************
+// CerrarObjeto
+//*************************************************************************************************************
+016_srv_Objetos	= 对象 
+016_srv_Codigo_Usuario = CodigoUsuario 
+016_srv_Oid_Remesa = OidRemesa 
+016_srv_Oid_Objeto = OidObjeto 
+016_srv_Cod_Precinto = CodPrecintoObjeto 
+016_srv_msg_objeto_no_encontro = 输入的对象不存在或已被修改。 
+016_srv_msg_objeto_no_prepado = 输入的对象是没有准备好。 
+016_srv_msg_objeto_ya_procesado = 输入的对象已经被处理。 
+
+//*************************************************************************************************************
+// ValidarPrecintosHabilitacion
+//*************************************************************************************************************
+017_srv_Tiras = 条 
+017_srv_PrecintosComponentes = PrecintosComponentes 
+017_srv_IdTira = IdTira 
+017_srv_Habilitaciones = Habilitaciones 
+017_srv_IdHabilitacion = IdHabilitacion 
+017_srv_IdRemesaSalidas = IdRemesaSalidas 
+017_srv_msg_lacre_no_encontrado = 没有发现印章。 
+017_srv_msg_tiras_diferentes = 海豹被发现在不同的条。 
+017_srv_msg_sin_registro_tira = 以前没有带。 
+017_srv_msg_tiras_habilitacion_diferentes = 密封件的启用/不同的需要。 
+
+//*************************************************************************************************************
+// RecibirRemesasProcesadas
+//*************************************************************************************************************
+018_srv_Remesas = Remesas 
+018_srv_CodClienteDestino = CodClienteDestino 
+018_srv_CodClienteFacturacion = CodClienteFacturacion 
+018_srv_CodDelegacion = CodDelegacion 
+018_srv_CodPuntoServicio = CodPuntoServicio 
+018_srv_CodSubcliente = CodSubcliente 
+018_srv_CodUsuario = CodUsuario 
+018_srv_DesClienteDestino = DesClienteDestino 
+018_srv_DesClienteFacturacion = DesClienteFacturacion 
+018_srv_DesPuntoServicio = DesPuntoServicio 
+018_srv_DesSubcliente = DesSubcliente 
+018_srv_FyhActualizacion = FyhActualizacion 
+018_srv_NelControlLegado = NelControlLegado 
+018_srv_OidRemesaLegado = OidRemesaLegado 
+018_srv_Bultos = Bultos 
+018_srv_CodPrecinto = CodPrecinto 
+018_srv_CodTipoBulto = CodTipoBulto 
+018_srv_BultoEfectivos = BultoEfectivos 
+018_srv_CodIsoDivisa = CodIsoDivisa 
+018_srv_BultoEfectivoDetalles = BultoEfectivoDetalles 
+018_srv_CodDenominacion = CodDenominacion 
+018_srv_NelCantidad = NelCantidad 
+018_srv_Msg_habilitacion = 资格数据不匹配的形态力！ 
+018_srv_Msg_HabilitacionTieneTira = 这个资格已经记录需要。 
+018_srv_Msg_TipoBulto = 类型bulto无效。 
+018_srv_Msg_RemesasConErro = 有错误的出货量。 
+018_srv_Msg_DivisaNoConfigurada = ATM不包含货币或面额知情的。 
+018_srv_Msg_Sin_Dispensador		= 它是强制性发送至少一个bulto的指定。 
+
+*******************************************************IAC*******************************************************
+
+//GENERICAS
+
+//CLASSE CANALES
+
+001_msg_Erro_UKCanal				= 代码或说明通道已经存在。 
+001_msg_Erro_UKSubCanal				= 已经存在的代码或说明的子信道。 
+001_msg_CanalCodigoVazio			= 码信道是必需的。 
+001_msg_CanalProcessoVigente			= 此信道与当前进程。 
+001_msg_CanalDescripcion			= 运河的描述是强制性的。 
+001_msg_SubCanalProcessoVigente			= 该子信道是与现有的过程。 
+001_msg_SubCanalDescripcion			= 子信道的描述中是强制性的。 
+001_msg_SubCanalCodigoVazio			= 子信道码是必需的。 
+001_msg_ErroCollecionCanales			= 在集合中找到错误，在其执行过程。 
+
+//CLASSE DIVISAS
+
+002_msg_DivisaCodigoVazio			= 货币的代码是必需的。 
+002_msg_DivisaCodigoAccesoVazio			= 访问码是必需的货币。
+002_msg_DivisaCorVazia					= 软木徽章是强制性的。
+002_msg_CodigoAccesoDenominacionVacio   = 访问码是必需的面额。
+002_msg_DivisaComEntidadeVigente		= 与此相关的座右铭是一个过程，或分组方式支付力。 
+002_msg_DivisaDescripcionVazio			= 货币的描述是必需的。 
+002_msg_CodigoDenominacionVazio			= 的代码名称是必需的。 
+002_msg_DescricaoDenominacionVazio		= 的名称的描述中是强制性的。 
+002_msg_Erro_UKDivisa				= 边界的描述中已经存在。 
+002_msg_Erro_UKDenominacion			= 描述的名称已经存在。 
+002_msg_ErroCollecionDivisas			= 在集合中找到错误，在其执行过程。 
+002_msg_CodigoDenominacionMedioPago		= 已经有一个付款方式的代码为“{0}”所输入的名称。 
+002_msg_CodigoAccesoExiste				= 在输入访问密码已经存在。
+
+//AGRUPACION
+
+003_msg_AgrupacionCodigoVazio			= 与本集团的代码是必需的。 
+003_msg_AgrupacionComEntidadeVigente		= 分组与当前进程。 
+003_msg_AgrupacionDescripcionVazio		= 分组的描述是强制性的。 
+003_msg_ErroCollecionAgrupacion			= 在集合中找到错误，在其执行过程。 
+003_msg_NenhumCodigoAgrupacionInformado		= 无代码与本集团获悉的。 
+003_msg_Erro_UKAgrupacion			= 与本集团的代码或说明已经存在。 
+
+//CLASSE TIPOS PRCESADO
+
+004_msg_Erro_UKTipoProcesado			= 加工类型的代码或说明已经存在。 
+004_msg_TipoProcesadoCodigoVazio		= 的处理类型的代码是必需的。 
+004_msg_TipoProcesadoDescripcion		= 加工类型的描述是强制性的。 
+004_msg_TipoProcesadoProcessoVigente		= 处理这种类型与当前进程。 
+004_msg_TipoProcesadoCaracteristicaCodigoVazio	= 需要处理代码要素类型。 
+
+//INFORMAÇÃO ADICIONAL AO CLIENTE
+
+006_msg_Erro_UKIac				= 该代码已经存在。 
+006_msg_Erro_UKTerminoIac			= 已经存在的代码或说明终止。 
+006_msg_IacCodigoVazio				= 附加信息客户的代码是强制性的。 
+006_msg_IacProcessoVigente			= 附加信息是与此客户现有过程。 
+006_msg_IacDescripcion				= 附加信息的描述客户是强制性的。 
+006_msg_TerminoIacCodigoVazio			= 终止的代码是必需的。 
+006_msg_ErroExecucionIac			= 信息的执行过程中发现的错误。 
+006_msg_ErroCampoClave				= 关键领域不能被复制的两端之间。 
+006_msg_ErroInvisibleObligatorios		= 无法设置IAC型隐形的强制性条款。 
+
+//VALORES POSIBLES
+009_msg_Erro_UKValorPosible			= 代码或说明存在。 
+009_msg_cliente					= 的顾客需要。 
+009_msg_terminos				= 至少必须完成联合国终止。 
+
+//TERMINO
+010_msg_TerminoCodigoVazio			= 终止的代码是必需的。 
+010_msg_TerminoComEntidadeVigente		= 这是与现行结束附加信息客户。 
+010_msg_TerminoDescripcionVazio			= 终止的描述是必需的。 
+010_msg_CodigoFormatoVazio			= 的格式是必需的。 
+010_msg_LongitudeVazia				= 经度是强制性的。 
+010_msg_Erro_UKTermino				= 已经存在的代码或说明终止。 
+
+//UTILIDAD
+012_msg_codtipo_medio				= 代号类型付款方法不知情。 
+012_msg_codCliente				= 客户代码不知情。 
+012_msg_codCanal				= 代码频道不知情。 
+012_msg_codCaracteristica			= 代码功能不知情。 
+012_msg_codConteoCaracteristica			= 守则功能不知情禁忌。 
+012_msg_desCaracteristica			= 说明功能不知情。 
+
+//INTEGRACION
+013_msg_ErroCollecionClientes			= 在集合中找到错误，在其执行过程。 
+013_msg_ClienteCodigoVazio			= 客户端代码是强制性的。 
+013_msg_ClienteDescripcion			= 客户的描述是强制性的。 
+013_msg_SubClienteCodigoVazio			= 子客户端的代码是必需的。 
+013_msg_SubClienteDescripcion			= 子客户端的描述中是强制性的。 
+013_msg_PuntoServicioCodigoVazio		= 服务点的代码是必需的。 
+013_msg_PuntoServicioDescripcion		= 服务点的描述是强制性的。 
+013_msg_Erro_UKCliente				= 已经存在的客户的代码或说明。 
+013_msg_Erro_UKSubCliente			= 子客户端的代码或说明已经存在。 
+013_msg_Erro_UKPuntoServicio			= 已经存在的代码或说明服务点。 
+013_msg_SubCanalCodigoVazio			= 子信道码是必需的。 
+013_msg_DelegacionCodigoVazio			= 代表团的代码是必需的。 
+013_msg_sinClientes				= 被送到客户。 
+013_msg_sinUsuario				= 用户代码是必需的。 
+013_msg_ErrorDatosBancarios_Cliente			= 客戶嘅註冊已經完成，但銀行詳細信息嘅配置存在問題。 請查看客戶嘅詳細信息。
+013_msg_ErrorDatosBancarios_SubCliente		= 子客戶耑嘅註冊已經完成，但銀行詳細信息嘅配置存在問題。 請查看子客戶耑嘅詳細信息。
+013_msg_ErrorDatosBancarios_PuntoServicio	= 子客戶耑嘅註冊已經完成，但銀行詳細信息嘅配置存在問題。 請查看服務啲嘅詳細信息。
+013_IdentificadorConfiguracion = 标识符Configuracição的 
+013_ConfiguracionesReportes		= ConfiguracionesReportes 
+013_DesConfiguracion			= DesConfiguracion 
+013_CodConfiguracion			= CodConfiguracion 
+013_NecFormatoArchivo			= NecFormatoArchivo 
+013_IdentificadorConfiguracionGeneral					= IdentificadorConfiguracionGeneral 
+013_DesRuta						= DesRuta 
+013_CodUsuario					= CodUsuario 
+013_ParametrosReporte			= ParametrosReporte 
+013_CodParametro				= CodParametro 
+013_DesValorParametro			= DesValorParametro 
+013_Reportes					= 报告 
+
+//MEDIO PAGO
+014_msg_Erro_UKMedioPago			= 付款方法或元素之一已经存在。 
+014_msg_MedioPagoCodigoVazio			= 付款方式的代码是必需的。 
+014_msg_MedioPagoUtilizado			= 此付款方法相关联用分组或过程。 
+014_msg_MedioPagoDescripcionVazio		= 付款方式的描述是强制性的。 
+014_msg_MedioPagoCodigoTipoMedioPagoVazio	= 付款方式的类型是必需的。 
+014_msg_MedioPagoCodigoDivisaVazio		= 付款方式的货币是强制性的。 
+014_msg_MedioPagoCodigoDenominacion		= 已经有一个半付款通知的代码名称。 
+014_msg_ErroCollecionMedioPagos			= 付款方式收集其执行过程中发现的错误。 
+014_tipopg_ticket				= 票 
+014_tipopg_cheque				= 查 
+014_tipopq_otrosvalores				= 其他值 
+014_tipopg_tarjeta				= 信用卡 
+014_msg_codigo_acceso			= 访问码是必需的。 
+014_msg_codigo_acceso_existe	= 访问代码已经存在知情。													  
+													  
+//TERMINO MEDIO PAGO								  
+014_msg_TerminoMedioPagoCodigoVazio		= 终止付款方法的代码是必需的。 
+014_msg_TerminoMedioPagoDescripcionVazio	= 终止付款方法的描述是强制性的。 
+014_msg_TerminoMedioPagoCodigoFormatoVazio	= 终止的格式是必需的。 
+014_msg_TerminoMedioPagoLongitudeInvalido	= 终止的经度是必需的。 
+014_msg_TerminoMedioPagoOrdenTerminoVazio	= 终止的顺序是必需的。 
+													  
+													  
+//VALOR TERMINO MEDIO DE PAGO						  
+014_msg_ValorTerminoMedioPagoCodigoVazio	= 终止付款方法关联的代码值是必需的。 
+014_msg_ValorTerminoMedioPagoDescripcionVazio	= 终止付款方式相关联的值的描述是强制性的。 
+
+//PROCESO
+016_msg_ProcesoNoEncontrado			= 没有过程中发现 
+016_msg_cod_Cliente				= 客户端代码是强制性的。 
+016_msg_cod_Delegacion				= 代表团的代码是必需的。 
+016_msg_cod_SubCanal				= 子信道码是必需的。 
+016_msg_erro_execucao				= 在执行过程中的错误。 
+016_msg_erro_SubCliente				= 子客户端的代码是必需的。 
+
+//PROCESOS
+019_msg_fecha_inicial				= 开始日期是强制性的。 
+
+//CARACTERISTICAS
+020_msg_codigoCaracteristica			= 特征代码是必需的。 
+020_msg_codigoConteoCaracteristica		= 禁忌功能的代码是强制性的。 
+020_msg_descripcionCaracteristica		= 的功能的描述中是必需的。 
+020_msg_CaracteristicaEnUso			= 该功能是在使用中。 
+020_msg_codigoUsuario				= 用户代码是必需的。 
+020_msg_AK_descricao_codigo_existente		= 已经存在的功能的代码或说明。 
+
+//MetodoTest
+
+021_SemErro					= 好吧服务 
+021_ComErro					= 执行中的错误 
+
+// Morfologia
+022_tipopg_ticket				= 票 
+022_tipopg_cheque				= 查 
+022_tipopq_otrosvalores				= 其他值 
+022_tipopq_tarjeta				= 卡 
+022_msg_oidmorfologia				= 的形态的标识符是必需的。 
+022_msg_actualizacion				= 您不能修改的形态，因为另一个用户已经改变了！ 
+022_msg_morfologia				= 的形态是强制性的。 
+022_msg_codfuncioncontenedor			= 该的公告FUNCION容器是必需的。 
+022_msg_codtipocontenedor			= 集装箱类型代码是强制性的。 
+022_msg_codmodalidad				= 付款方式是强制性的。 
+022_msg_oidmediopago				= 支付方法的标识符是必需的。 
+022_msg_con_asociacion				= 无法删除的形态，因为它已经与一个ATM！ 
+022_msg_codmorfologia				= 鳕鱼。形态学是必需的。 
+022_msg_componente				= 该组件是必需的。 
+022_msg_objecto					= 该对象是必需的。 
+
+// ATM
+023_msg_codigodelegacion			= 该代表团的通报是必需的。 
+023_msg_codigocliente				= 客户代码是强制性的。 
+023_msg_codigosubcliente			= 子客户端代码是强制性的。 
+023_msg_codigoptoservicio			= 服务代码点是必需的。 
+023_msg_atm					= 该ATM是必需的。 
+023_msg_proceso					= 的过程是必需的。 
+023_msg_oidmorfologia				= 需要标识符形态。 
+023_msg_fecinicio				= 开始日期是强制性的。 
+023_msg_codcaj_codpto				= 服务代码点是必需的。 
+023_msg_oidcajero				= 该ATM标识符是必需的。 
+023_msg_concorrencia_atm			= 你不能修改的自动取款机，因为它已经被其他用户修改！ 
+023_msg_nenhum_atm				= 数据客户端/子客户端/服务蓬表征的ATM！ 
+023_msg_desclientefacturacion			= 输入客户帐单未发现 
+023_msg_codigoformatotira			= 已经有一个带格式输入的代码 
+
+
+// GRUPO
+024_msg_codigogrupo				= 本集团守则是必需的。 
+024_msg_oidgrupo				= 组标识符。 
+024_msg_descripciongrupo			= 集团描述是强制性的。 
+024_msg_codusuario				= 需要的用户通报。 
+
+//PROCESOS POR DELEGACION
+025_msg_delegacion				= 该代表团的代码是必需的。 
+025_msg_proceso_no_encontrados			= 没有过程中发现的参数。 
+
+// NIVEL
+026_msg_permisos_no_encontrados			= 没有权限的参数。 
+
+// PLANTA
+027_msg_pais_y_delegacion_no_encontrados	= 家长和代表团没有找到与参数报告。 
+027_msg_delegacion_no_encontrada		= 该代表团的代码是必需的。 
+027_msg_pais_no_encontrado			= 国家代码是必需的。 
+
+// APLICACION
+028_msg_permisos_no_encontrados			= 没有权限的参数。 
+
+//Puesto
+029_msg_permisos_no_encontrados			= 没有权限的参数。 
+029_msg_aplicacion_no_lenar_permiso		= 权限不能与应用程序报告。 
+029_msg_delegacion				= 代表团的代码是必需的。 
+029_msg_pais					= 国家代码是必需的。 
+029_msg_hostpuesto				= 后代码的主机是必需的。 
+029_msg_planta					= 植物的代码是必需的。 
+029_msg_Aplicacion				= 应用程序的代码是必需的。 
+029_msg_puesto					= 邮政代码是必需的。 
+029_msg_usuario					= 用户代码是必需的。 
+029_msg_Erro_UKPuesto				= 已经存在的代码集。 
+029_msg_planta_no_encontrada			= 植物没有找到。 
+029_msg_aplicacion_no_encontrada		= 找不到应用。 
+029_msg_puesto_no_encontrada			= 旅游没有找到。 
+029_msg_puesto_registrado			= 旅游已经为应用程序注册，并告知代表团。 
+029_msg_host_puesto_registrado			= 主机已注册的应用程序和知情后。 
+029_msg_delegacion_no_encontrada		= 代表团没有发现。 
+
+getvalor_parametros_vazio				= El(los) parámetro(s) ({0}) esta(n) vacío(s).
+getvalor_parametro_codTipo				= CodTipo
+getvalor_parametro_codValor				= CodValor
+getvalor_parametro_desValor				= DesValor
+getvalor_parametro_activo				= BolActivo
+getvalor_parametro_gmtCreacion			= GmtCreacion
+getvalor_parametro_desUsuarioCreacion	= DesUsuarioCreacion
+getvalor_parametro_gmtModificacion		= GmtModificacion
+getvalor_parametro_desUsuarioModificacion	= DesUsuarioModificacion
+getvalor_parametro_codigoTipoInvalido	= El Codigo Tipo informado no existe.
+
+setTipoModulo_parametro_obligatorio      = El parámetro {0} es obligatorio.
+setTipoModulo_codEmbalaje_no_encontrado  = El codEmbalaje seleccionado no fue encontrado.
+setTipoModulo_divisa_no_encontrado		 = La divisa seleccionada no fue encontrada.
+setTipoModulo_denominacion_no_encontrado = La denominacion seleccionada no fue encontrada.
+setTipoModulo_cliente_no_encontrado		 = El cliente seleccionado no fue encontrado.
+
+//Parametro
+030_msg_permisos_no_encontrados			= 没有权限的参数。 
+030_msg_aplicacion_no_lenar_permiso		= 权限不能与应用程序报告。 
+030_msg_Aplicacion				= 应用程序的代码是必需的。 
+030_msg_parametro				= 代码参数是必需的。 
+030_msg_usuario					= 用户代码是必需的。 
+030_msg_agrupacion				= 分组参数不在。 
+030_msg_parametro_no_encontrado			= 参数没有被发现。 
+030_msg_parametro_no_permitido			= 参数不允许。 
+030_msg_nivel					= 代码水平是必需的。 
+030_msg_agrupacion_descripcion			= 参数的简短描述是必需的。 
+030_msg_agrupacion_bajar			= 您不能删除一组相关参数。 
+030_msg_nec_orden				= 订单号是必需的。 
+030_msg_descripcion_larga			= 详细描述是强制性的。 
+030_msg_descripcion_larga_y_orden		= 方括号NecOrden descipcionLarga的，并不能为空，填写至少一个。 
+030_msg_Erro_UKAgrupacion			= 该代码已经存在或摘要描述。 
+030_msg_pais					= 国家代码是必需的。 
+030_msg_planta_no_encontrada			= 植物没有找到。 
+030_msg_puesto_planta_obligatorio		= 的codigoPosto完成，所以它是强制性的，以填补codigoPlanta 
+030_msg_Erro_UKParametro			= 适用车型及参数的代码已经存在。 
+030_msg_puesto_no_encontrado			= 旅游没有找到。 
+030_msg_aplicacion_no_encontrada		= 找不到应用。 
+030_msg_nivel_no_encontrada			= 未找到级别。 
+030_msg_delegacion_no_encontrada		= 代表团没有发现。 
+030_msg_parametro_url_invalida			= 检查url参数设置是否正确在UrlServicioSalidas WebConfig Web服务。 
+030_msg_parametro_iac_inexistente			= 代表团在IAC不存在。 
+
+//ImportarParametros
+031_codigo_puesto				= 守则之旅 
+031_codigo_host_puesto				= 守则主机之旅 
+031_codigo_aplicacion				= 代码应用 
+031_codigo_delegacion				= 代表团守则 
+031_parametro					= 参数 
+031_codigo_parametro				= 代码参数 
+031_valor_parametro				= 参数值 
+031_msg_delegacion				= 团{0}未注册在数据库中。 
+031_msg_aplicacion				= {0}的应用没有被注册在数据库中。 
+031_msg_parametro				= 参数{0}未注册在数据库中。 
+
+
+//RecuperarParametros
+032_codigo_puesto				= 守则之旅 
+032_codigo_host_puesto				= 守则主机之旅 
+032_codigo_aplicacion				= 代码应用 
+032_planta					= 厂 
+032_msg_parametro_no_encontrado			= 旅游和/或参数找不到或无效。 
+032_msg_parametro_no_configurado		= 参数'{​​0}“没有设置，它的收费是强制性的。 
+032_msg_lista_parametro_no_configurado		= 参数'{​​0}“未设定的值的列表，它的收费是强制性的。 
+032_msg_parametro_no_seleccionado		= parâmentro“{0}”没有从列表中选择一个值的可能性。 
+032_msg_parametro_no_marcado_como_lista		= parâmentro'{0}“未设置为”值列表“（已列出的值，但没有打上值列'类型'）。 
+
+//RecuperarParametrosDelegacionPuesto
+033_codigo_aplicacion				= 代码应用 
+033_codigo_delegacion				= 代表团守则 
+
+//Integracion Salidas
+034_msg_puesto_non_creado_modificado		= 后不能创建或修改的的模块salidas，错误：{0} 
+
+//Código Ajeno
+035_msg_002 								= 外部代码都是相同的分子{0}！ 
+035_msg_003 								= 外部代码重复{0}！ 
+035_msg_004 								= 的的标识符{0}和{1}外部代码已经存在的实体{2}！ 
+035_msg_005 								= 的外部代码从旧结余迁移的标识符不能修改！ 
+035_msg_006 								= 有一个以上的标准代码AJENO {0}！ 
+
+gen_saldos_remesa_sin_bultos				= 無袋不能使用自動機的規則在裝船。
+gen_saldos_codigo_mayor						= 您不能使用自動機的規則時，{0}已超過5個位置。
+gen_saldos_sinformulario					= No fue encontrado un formulario en Saldos con las caracteristicas: {0}.
+
+//CARGA PREVIA ELETRONICA
+036_msg_cod_IdentificadorConfiguracion_CodigoConfiguracion  = 该方括号IdentificadorConfiguracion CodigoConfiguracion的和不能为空。 
+036_msg_cod_Delegacion										= 的CodigoDelegacion单一参数不能为空。 
+036_msg_cod_Cliente_Configuracao							= 客户ID的参数，不能为空。 
+036_msg_ConfiguracionNoEncontrado							= 未发现配置 
+
+
+*******************************************************CONTEO*******************************************************
+
+//TABELA DE CÓDIGOS PARA DICIONÁRIO
+//Código		Funcionalidade
+//001			Pantalla de Conteo
+//002			Pantalla de Informaciones
+//003			Controle de Declarados
+//004			Controle Datos Parcial
+//005			Controle Datos Conteo
+//006			Serviço Recuperar Valores Contados
+//007			Serviço Guardar Datos Confeccíon Bulto
+//008			Controle Cheque Conteo
+//009			Controle Efetivo Conteo
+//010			Serviço Recibir Remesas Pendientes
+//011			Serviço Parcializar Bulto
+//012			Pantalla Estado de La parcializacion
+//013			Pantalla Valores Contados
+//014			Pantalla Detalle Ticket o OtroValor
+//015			Pantalla Billetes Falsos
+//016			Controle TicketOtroValores Conteo
+
+//GENÉRICAS
+Gen_msg_atributos_nao_preenchidos		= 通知属性{0}和/或{1}属性。 
+Gen_msg_ErroCabecalho				= SOAP安全令牌没有被告知或不正确。 
+Gen_msg_ErroColecao				= 在集合中找到错误。 
+Gen_msg_ErroExecucao				= 在执行环境中的错误。 
+gen_msg_erro_par_entrada			= 在输入参数中的错误。 
+gen_msg_peticao_ya_procesada			= 先前记录的数据已被送往。 
+gen_msg_error_01				= 由于网络问题与服务器通信时出错。 
+gen_msg_error_05				= 错误，同时访问服务器上的数据库： 
+gen_msg_error_04				= 访问错误（）URL（次），服务（S）（S）： 
+gen_msg_error_02				= 错误通信与目录服务器（LDAP）。 
+gen_msg_error_03				= 在访问目录服务器（LDAP）错误。用户名或密码不正确。 
+
+//COMUNS A VÁRIAS FUNCIONALIDADES
+000_DeclaradoDet_Agrupacion			= Agrupacion 
+000_InfoAdicional_Nombre			= InfoAdicional_Nombre 
+000_InfoAdicional_Valor				= InfoAdicional_Valor 
+
+//001 - Serviço VerificarHayDiferenciasBultoParcialRemesa
+001_atributo_naoInformado			= 强制性 
+001_codigo_delegacion				= 代码Delegacion 
+
+//004 - Serviço Recuperar Estado Bulto Parcializado
+004_IdBulto					= 密封袋标识符 
+
+//006 - Recuperar valores contados
+006_dadosnaoinformados				= 它是强制性的通知标识符Remesa bulto部分。 
+
+//007 -	Serviço Guardar Datos Confeccíon Bulto
+007_CodigoPuesto				= 守则之旅 
+007_CodigoDelegacion				= 代码代表团 
+007_CodigoUsuario				= 用户代码 
+007_CodigoUbicacionDestino			= 目标位置代码 
+007_BultoVacio					= Bulto 
+007_FechaConfeccionBulto			= 日期绗缝袋 
+007_CodigoCliente				= 客户代码 
+007_DescripcionCliente				= 说明客户 
+007_CodigoSubcliente				= 子客户端代码 
+007_DescripcionSubcliente			= 说明子客户端 
+007_CodigoPuntoServicio				= 服务代码点 
+007_DescripcionPuntoServicio			= 说明点服务 
+007_CodigoSubCanal				= 代码子频道 
+007_DescripcionSubCanal				= 子通道说明 
+007_Precinto_Existente				= 密封的代码已经存在。 
+007_CodigoPrecinto				= 代码印章 
+007_Existe_Contenedor_Reaberto			= 有几十这个职位重新开放。完成计数，重新开放之前执行交付的证券。 
+
+//010 - Serviço Recibir Remesas Pendientes
+010_remesa_declarado_divisas			= 货币没有被告知可能的货币（申报一批）。 
+010_remesa_declarado_agrupaciones		= 分组没有告知可能的分组（申报名叫Agrupacion优惠）。 
+010_remesa_declarado_ticket			= 票务宣布，但不要指望票（申报一批）。 
+010_remesa_declarado_cheque			= 支票宣布，但不要指望检查（申报一批）。 
+010_remesa_declarado_otro_valor			= 其他值说明，但不告诉其他价值（申报一批）。 
+010_remesa_estado_trabajo			= 可能值的列表中不存在发送的状态。 
+010_bulto_declarado_divisas			= 货币不通知可能的货币（声明Bulto）。 
+010_bulto_declarado_agrupaciones		= 分组没有告知可能的分组（声明名叫Agrupacion Bulto）。 
+010_bulto_declarado_ticket			= 票务宣布，但不要指望票（声明Bulto）。 
+010_bulto_declarado_cheque			= 支票宣布，但不要指望检查（声明Bulto）。 
+010_bulto_declarado_otro_valor			= 其他值说明，但不要告诉其他值（声明Bulto）。 
+010_bulto_cuenta_ticket_total			= 有没有办法告诉票务总额，因为不计入机票。 
+010_bulto_cuenta_cheque_total			= 有没有办法告诉支票合计，因为检查不计入。 
+010_bulto_cuenta_otro_valor_total		= 有没有办法告诉另一个每股总价值不计入其他价值。 
+010_bulto_cuenta_tarjeta_total			= 有没有办法，总的算牌，因为卡不计算在内。 
+010_bulto_cuenta_ticket_total_termino		= 应该没有terminos门票机票计数。 
+010_bulto_cuenta_cheque_total_termino		= 不应该有任何terminos检查，因为检查计数。 
+010_bulto_cuenta_otro_valor_total_termino	= 应该没有terminos，另一种价值，因为其他值计算所有。 
+010_bulto_cuenta_tarjeta_total_termino		= 应该没有terminos，卡，因为该卡计数。 
+010_bulto_caracteristica_diferente		= 所有bultos装运必须有特色分数装运。 
+010_bulto_caract_carga_previa			= 所有bultos装运必须只有一个特性负载或LOAD前PRIOR自动化。 
+010_bulto_caract_cp_conta_parcial		= ，所有bultos装运，posuem功能负载或负载之前事先自动化特点起诉部份，也应该有。 
+010_bulto_caract_atm_disp_conta_parcial		= 所有装运，posuem特色的'禁忌ATM - 饮水机，拒绝TARJETA Y'也应该有特色的'PROCESAR IN parciales“bultos。 
+010_bulto_caract_atm_disp_conteo_remesa		= 所有装运bultos，posuem特色的'禁忌ATM - 饮水机，拒绝TARJETA Y'也应该有特色的'禁忌IN Remesa'。 
+010_bulto_caract_atm_depos_conta_parcial	= 所有装运posuem特色的'禁忌ATM - 存款也应该有特色的'PROCESAR IN parciales“bultos。 
+010_bulto_caract_atm_depos_conteo_remesa	= 所有装运posuem特色的'禁忌ATM - 存款也应该有特色的'IN Remesa'禁忌bultos。 
+010_bulto_caract_atm_ingre_sin_parcial		= 全部装运，posuem特色的'禁忌ATM - INGRESADOR'不应该有特色的'PROCESAR IN parciales“bultos。 
+010_bulto_caract_atm_ingre_conteo_remesa	= 所有bultos装运，posuem特色的'禁忌ATM - INGRESADOR'也必须有特色的'禁忌IN Remesa'。 
+010_bulto_caract_atm_mas_de_una			= 所有bultos装运必须只有一个功能禁忌ATM - 饮水机，拒绝ŸTARJETA“，”禁忌ATM - 存款“ATM禁忌 - INGRESADOR。 
+010_bulto_tipo_trabajo				= 工作bulto不同的可能值的列表中不存在的。 
+010_bulto_estado_trabajo			= 可能值的列表中不存在的状态的袋。 
+010_bulto_ubicacion				= 可能值的列表中不存在的位置袋。 
+010_bulto_tipo_formato				= 可能值的列表中不存在的袋子的形状。 
+010_parcial_declarado_divisas			= 货币没有被告知可能的货币（声明部分）。 
+010_parcial_declarado_agrupaciones		= 分组没有告知可能的分组（声明部分分组）。 
+010_parcial_declarado_ticket			= 票务宣布，但不要指望票（声明部分）。 
+010_parcial_declarado_cheque			= 支票宣布，但不要指望检查（声明部分）。 
+010_parcial_declarado_otro_valor		= 其他值说明，但不要告诉其他值（声明部分）。 
+010_parcial_estado_trabajo			= 可能值的列表中不存在的状态的部分。 
+010_parcial_tipo_formato			= 可能值的列表中不存在格式部分。 
+010_bulto_divisaposible_numordem		= 存在一个袋，两种货币相同的序列号。 
+010_valor_termino_idbulto			= 值完IAC - 处理袋 
+010_valor_termino_codtermino			= 值完IAC - 代码结束IAC 
+010_msg_declarado_divisa_remesa			= 是所列知情Remesa的支付手段不是在可能的支付方式。 
+010_msg_declarado_divisa_bulto			= 知情袋所述的付款方式是不是在可能的支付方式。 
+010_msg_declarado_divisa_parcial		= 平均付款细节，我们了解到部分声明中未支付的可能手段
+010_msg_declarado_det_divisa_remesa		= 平均支付的声明，我们了解到货物的细节是不是中金的可能途径。
+010_msg_declarado_det_divisa_bulto		= 支付方式我们学到的包的细节不申报缴纳之间的可能的手段
+010_msg_declarado_det_divisa_parcial	= 支付方式听取了部分的细节宣布我们不要支付中的可能手段。
+010_msg_bulto_sem_precinto			= 应该没有代码密封袋。 
+010_bulto_caract_carga_previa_bcp_conteo_remesa	= 所有装运bultos，posuem特色的'LOAD预览BCP还必须有特色的'禁忌IN Remesa'。 
+010_bulto_caract_carga_previa_bcp_diferente	= 所有bultos装运必须有功能LOAD预览BCP。
+010_bulto_estado_distinto_pendente = 该bulto{0}不能被更新，因为在一个国家，这并不让更多的更新之中。 
+010_msg_remesa_ya_procesada		   = 代销{0}已被处理。
+010_msg_conta_por_remesa_trabaja_por_bulto = 计数的方法，包含每票货的特征数，那么它是强制性的，以每票货的工作。
+
+//011 - Parcializar Bulto
+011_Erro_bulto					= 有袋密封现有的代码。 
+011_CodigoPrecintoBulto				= 代码密封袋 
+011_IdentificadorBulto				= 标识符Bulto的 
+011_IdentificadorRemesa				= 标识符Remesa的 
+011_CodigoTipoTrabajo				= 工作类型代码 
+011_Fecha_Hora_Parcializacion			= 日期时间是partialization的 
+011_CodigoPrecintoNuevoBulto			= 新的守则密封袋 
+011_IdentificadorNuevoBulto			= 手柄袋新 
+011_NumeroParcialesNuevoBulto			= 数部分新袋 
+011_Numero_Orden_Bulto_Parcializado		= 订单号袋Parcializado 
+011_Gerar_Codigo_Precinto			= 将产生新的代码被复制的印章。 
+
+//019 - Serviço Recuperar Saldo Desglosado
+019_CodigoPuesto				= 守则之旅 
+019_CodigoDelegacion				= 代码代表团 
+019_Puesto					= 邮寄 
+
+//020 - Associar Bulto a Confección
+020_RegistrosNaoAtualizados			= 没有记录更新。 
+020_ParametrosObrigatorios			= 必要的参数没有被告知。 
+
+//021 - Rechazar Bulto
+021_Identificador_Bulto_Rechazar		= 密封袋标识符 
+021_Data_hora_Rechazar				= 日期和时间 
+021_Precinto_Existente				= 密封的代码已经存在。 
+021_Codigo_Delegacion				= 代表团守则 
+021_Codigo_Puesto				= 代码后 
+021_Codigo_Usuario				= 用户代码 
+021_Codigo_Precinto				= 代码印章 
+
+
+//022 - Rechazar Remesa
+022_Identificador_Remesa			= 标识符Remesa的 
+022_Data_hora_Rechazar				= 日 
+022_Codigo_Delegacion				= 代表团守则 
+022_Codigo_Puesto				= 代码后 
+022_Codigo_Usuario				= 用户代码 
+
+//023 - Registro Impresion Ticket
+023_Identificador_Bulto				= 标识符Bulto的 
+023_CodigoPuesto				= 守则之旅 
+023_CodigoUsuario				= 用户代码 
+023_FechaImpresionTicket			= 日 
+023_codigo_precinto				= {0}必须予以通报。 
+023_msg_codigo_precinto				= 代码印章。 
+
+//024 - Guardar Datos Retiro Valroes
+024_Codigo_Puesto				= 守则之旅 
+024_Codigo_Usuario_Retira			= 用户代码 
+024_Codigo_Precinto_Bulto			= 代码密封袋 
+024_Codigo_Data_Retirada			= 提款日期和时间 
+024_Bulto_Obrigatorio				= 它是强制性的至少一种bulto 
+024_Bulto_Nao_Existe				= 的bulto必须存在，并且一个bulto过程。 
+024_Codigo_Erro_Puesto				= 应该是相同的，因为它被张贴内部bulto的。 
+024_Codigo_Estado_Ubicacion			= 该的必须满足bulto等候在运输过程中的状态和代码UBICACION的。 
+024_codigo_Usuario_Igual			= 指定的用户必须被告知比用户，产生bulto的。 
+024_Erro_bulto					= 中发现错误一个或多个bultos的。 
+
+//025 - RecuperarCredencialesDeUsuario
+025_Login_Usuario				= 用户 
+025_Password					= 密码 
+025_msg_erro_usuario				= 用户输入是无效的。 
+
+//026 - RechazarConteo
+026_Identificador_Bulto				= 标识符Bulto的 
+026_Fecha_Rechazo				= 迄今拒绝 
+
+//027 - AgregarDivisaPosible
+027_oidBulto					= 标识符bulto的 
+027_codIsoDivisa				= ISO货币代码 
+027_msg_divisaAgregada				= 可能是货币骨料。 
+
+//028 - Serviço CerrarBultoParcializado
+028_Codigo_Puesto				= 守则之旅 
+028_Codigo_Delegacion				= 代码代表团 
+028_Codigo_Precinto				= 代码密封件 
+028_Codigo_Usuario				= 用户代码 
+028_Identificador_Bulto				= 标识符Bulto的 
+028_fecha_hora_conteo				= 日期和时间 
+028_msg_atributo				= 参数{0}是空的。 
+
+//029 - Serviço GuardarComentario
+029_oid_remesa					= 标识符Remesa的 
+029_comentario					= 评论 
+029_motivo					= 原因 
+029_codUsuario					= 用户代码 
+029_fecha					= 日 
+029_msg_comentario_guardado			= 评论保存。 
+
+//030 - Serviço ObtenerComentario
+030_msg_parametro_obrigatorio			= 没有数据报告，寻求覆核。 
+030_msg_intervencion_encontrada			= 审查发现 
+030_msg_sem_comentario				= 暂无评论 
+
+//031-Serviço EliminarComentario
+031_codigo_oid_comentario			= 标识符评论 
+031_usuario					= 用户标识符 
+031_Fecha					= 日 
+031_msg_itenvencion_no_encontrada		= 有需要任何评论。 
+031_msg_comentario_eliminado			= 评论已删除。 
+
+//032 - RehabilitarConteo
+032_identificador_bulto				= 标识符bulto的 
+032_Fecha_Hora_Rechazo				= 日期和时间 
+032_Usuario					= 用户 
+032_estado_remesa_diferente_rc			= Remesa没有告知rechazada 
+032_estado_bulto_diferente_rc			= bulto没有告知rechazado 
+
+//033 - GuardarDatosModificadosSupervisor
+033_identificador_remesa			= 标识符Remesa的 
+033_identificador_remesaOri			= Remesa唯一标识符 
+033_identificador_bultoOri			= Bulto唯一标识符 
+033_identificador_parcialOri			= 标识符部分原 
+033_codigo_iso_divisa				= 代码边界 
+033_denominacion				= 面值 
+033_unidades					= 单位 
+033_codAgrupacion				= 分组守则 
+033_descripcion_agrupacion			= 分组描述 
+033_importe_agrupacion				= 进口分组 
+033_unidade_manual				= 单位手册 
+033_unidade_maquina				= 单元机 
+033_numero_serie				= 流水号 
+033_codigo_tipo_medio_pago			= 类型代码德尔梅迪奥支付 - 
+033_descripcion_tipo_medio_pago			= 描述型德尔梅迪奥支付 
+033_codigo_medio_pago				= 代码德尔梅迪奥支付 
+033_descripcion_medio_pago			= 说明支付德尔梅迪奥， 
+033_secuencia_medio_pago			= 已支付Secuencia平均 
+033_codigo_termino_medio_pago			= 代码结束德尔梅迪奥支付 
+033_descripcion_termino_medio_pago		= 支付说明结束德尔梅迪奥 
+033_descripcion_valor_term_medio_pago		= 值说明完成德尔梅迪奥支付 
+033_mostrar_codigo_termino_medio_pago		= 显示代码结束德尔梅迪奥的支付 
+033_codigo_termino_inform_adicional		= 代码完成更多的信息 
+033_descripcion_termino_inform_adicional	= 说明光洁度额外信息 
+033_descripcion_valor_term_inform_adicional	= 值说明完成额外信息 
+033_mostrar_codigo_termino_inform_adicional	= 显示代码完成更多的信息 
+033_dados_rem_parc_bulto_nao_informados		= 它是强制性告知部分或bulto的或Remesa。 
+033_dados_nao_informados			= 没有被告知任何参数。 
+033_msg_sem_saldo_en_curso			= 试图产生负平衡的变化。 
+033_msg_parcial_nao_informado			= 要修改一个计数是必要的通知标识符部分。 
+033_msg_remesa_nao_existe			= 有通知Remesa。 
+033_msg_bulto_nao_existe			= 的通知bulto。 
+033_msg_parcial_nao_existe			= 部分有通知。 
+033_codigo_puesto				= 守则之旅 
+033_codigo_supervisor				= 代码监事 
+033_msg_saldo_insuficiente			= 有足够的余额来完成操作。 
+033_msg_denominacion_no_existe			= 名称不存在于数据库中。 
+
+//034 - Eliminar Parcial
+034_oid_parcial					= 部分标识符 
+034_fecha					= 日 
+034_cod_usuario					= 用户代码 
+034_parcial_nao_encontrado			= 部分{0}没有被发现。 
+034_parcial_eliminado				= 删除部分（）（）正确。 
+034_parcial_es_ultimo_remesa_bulto		= 这是不可能消除所有的部分运费每票快件（计数）或袋。 
+034_parcial_es_ultimo_bulto			= 这是不可能的，以消除所有的袋部分。 
+034_parcial_es_ultimo_remesa			= 这是不可能的，以消除所有的Remesa部分。 
+034_msg_parcial_no_es_cp			= 部分{0}不包含预测的负载特性。 
+034_msg_inicio_Conteo				= 已经开始计数寄售或邮袋。 
+
+//035 - Eliminar Bulto
+035_oid_bulto					= 标识符Bulto的 
+035_fecha					= 日 
+035_cod_usuario					= 用户代码 
+035_bulto_nao_encontrado			= Bulto {0}没有被发现。 
+035_bulto_contado				= 正在清点bulto 
+035_bulto_eliminado				= 消除Bulto。 
+035_parcial_es_ultimo_remesa			= 这是不可能的Remesa消除所有的包装袋。 
+
+//036 - Eliminar Remesa
+036_oid_remesa					= 标识符Remesa的 
+036_fecha					= 日 
+036_cod_usuario					= 用户代码 
+036_remesa_nao_encontrada			= 有没有Remesa要求。 
+036_remesa_contado				= 这是正在告诉Remesa 
+036_remesa_eliminada				= 消除Remesa。 
+
+//037 - Marcar Modificar Uma Remesa
+037_oid_remesa					= 标识符Remesa的 
+037_fecha					= 日 
+037_cod_usuario					= 用户代码 
+037_remesa_nao_encontrada			= 未发现Remesa。 
+037_remesa_contado				= 这是正在告诉Remesa 
+037_remesa_marcada				= 标记Remesa的 
+037_remesa_procesada				= 没有需要检查复诊。 
+
+//038 - Actualizar Conteo Reabierto
+038_oid_remesa					= 标识符Remesa的 
+038_fecha					= 日 
+038_cod_usuario					= 用户代码 
+038_cod_estado					= 区域代码 
+038_remesa_nao_existe				= 有没有Remesa要求。 
+038_bultos_parciales_reabiertos			= 有部分bultos /重开请求Remesa。 
+038_parciales_reabiertos			= 有部分要求重开bulto。 
+038_bulto_nao_existe				= 有没有bulto的请求。 
+038_parcial_nao_reaberto			= 部分请求不会重新开启。 
+
+//040 - RecuperarConteosReabiertos
+040_usuario					= 用户 
+040_puesto					= 邮寄 
+040_sem_contenedores				= 没有容器用户/ post请求重新开放。 
+
+//041 - Reabrir Conteo
+041_oid_remesa					= 标识符Remesa的 
+041_oid_bulto					= 标识符Bulto的 
+041_oid_parcial					= 部分标识符 
+041_usuario					= 用户 
+041_fecha					= 日 
+041_remesa_nao_existe				= 有没有Remesa要求。 
+041_usuario_finalizado				= 您已经完成了您的会话。 
+041_bulto_nao_existe				= 有没有bulto的请求。 
+041_parcial_nao_existe				= 有没有一部分下令。 
+041_msg_error_reabrir_remesa			= 无法重新打开Remesa。 
+041_msg_error_reabrir_bulto			= 无法重新打开bulto。 
+041_msg_error_reabrir_parcial			= 部分不能重开。 
+041_msg_entrega_valores				= 已经有送的计数此Remesa的开始后。 
+041_puesto					= 守则之旅 
+041_remesa					= Remesa 
+041_msg_bultos					= 它是强制性至少一个bulto。 
+041_msg_parcial_contado				= 不进行选择的部分，因为至少有一个部分，即：不存在，或者未计数的开口。 
+041_usuario_fim_session				= {2} {0}不进行开放：用户选定部分由于他的会议结束后{1}，与部分序列计数相关： 
+041_msg_parc_procesado				= 不进行开幕选定的部分原因是：部分序列{0}未加工的状态。 
+
+
+//042 - Super Servicio Supervisor
+042_peticion_guardar_datos_supervisor		= 保存修改的数据监事 
+
+//SERVIÇO RecuperaDadosParcialCP
+043_CodCliente					= 客户代码 
+043_CodSubCliente				= 子客户端代码 
+043_CodPuntoServicio				= 服务代码点 
+043_CodCanal					= 码频道 
+043_CodSubCanal					= 代码子频道 
+043_CodDelegacion				= 代码代表团 
+043_CodPrecintoRemesa				= 代码密封出货 
+043_CodUsuario					= 用户代码 
+043_IAC						= 条款IAC 
+043_termino_IAC					= 结束IAC代码/值 
+043_exito					= 成功操作 
+043_parcial_duplicado				= 我们发现，超过三分之一的部分 
+
+//SERVIÇO MarcarParcialCP
+
+044_OIDParcialCP				= 部分加载标识符预览 
+044_CodPrecintoRemesa				= 代码密封出货 
+044_CodEstado					= 国家代码 
+044_CodNuevoEstado				= 新的状态码 
+044_CodUsuario					= 用户代码 
+044_msg_parcial_no_encontrado			= 找不到要求的部分。 
+044_msg_parcial_encontrado			= 不止一个部分发现 
+044_msg_parcial_utilizado			= 部分已使用 
+
+//SERVIÇO GuardarParcialCP
+
+045_OID_Bulto					= 标识符Bulto的 
+045_CodUsuario					= 用户代码 
+045_NumSecuencia				= 数列 
+045_CodPrecinto					= 代码密封件 
+045_CodDelegacion				= 代码代表团 
+045_desTermino					= 说明总结 
+045_oidTerminoIAC				= 标识符完成IAC 
+045_decValorIAC					= 描述值完成IAC 
+045_TerminoColeccion				= 收集总结 
+045_CodigoIsoDivisa				= 货币标识符 
+045_CodAgrupacion				= 代码分组 
+045_AgrupacionColeccion				= 分组收集 
+045_termino_iac_duplicado			= 已经注册的部分（）它（）值（s）（s）结束（次）进入英华达（S） 
+045_parcial_sendo_contado			= 部分被计算在内。 
+045_parcial_contado				= 部分已经被计算在内。 
+045_parcial_atualizado				= 部分更新。 
+
+//046 - Recuperar Declarados
+
+046_dados_nao_informados			= 它是强制性到Remesa或bulto。 
+046_cod_delegacion				= 代码代表团 
+
+//047 - Recibir Datos Adicionales Declarados
+
+047_cod_cliente					= 客户代码 
+047_cod_sub_cliente				= 子客户端代码 
+047_cod_punto_servicio				= 服务代码点 
+047_cod_canal					= 码频道 
+047_cod_sub_canal				= 代码子信道 
+047_cantidad_parciales				= 部分数 
+047_fecha_transporte				= 数据传输 
+047_declarado					= 它是强制性的，至少有一个宣布。 
+047_cod_iso_divisa				= ISO货币代码 
+047_importe_total				= 总进口 
+047_importe_efectivo				= 导入有效 
+047_importe_cheque				= 进口支票 
+047_importe_ticket				= 进口门票 
+047_importe_otro_valor				= 另一个进口值 
+047_parcial					= 它是强制性的至少一个部分。 
+047_cod_precinto_remesa				= 代码密封出货 
+047_cod_precinto_bulto				= 代码密封袋 
+047_cod_termino					= 代码完成 
+047_valor					= 值完成 
+047_termino					= 它是强制性的至少一端。 
+047_processo_nao_encontrado			= 找不到任何进程。 
+047_proceso_sem_carga_previa			= 该工艺具有自动预充电。 
+047_termino_iac_vacio			= 还有terminos IAC配置的过程中。 
+047_termino_iac_invalido		= 完成IAC是无效的过程。的Terminos是：{0} 
+047_valor_posible_invalido			= 成功的量之外的可能的值。的Terminos :: {0} 
+047_termino_clave_no_informado			= 失踪通知terminos键字段。的Terminos是：{0} 
+047_bulto_no_encontrado				= 不同意在创世记的过程bulto的，这个过程和知情提供bulto载货。 
+047_divisa_invalida				= 座右铭是不为客户有效。货币：{0} 
+047_proceso_sen_iac				= 该过程不会有IAC。 
+047_archivo					= 它是强制性的通知。 
+047_delegacion					= 代表团守则 
+047_usuario					= 用户代码 
+047_msg_termino_obligatorio			= 有所需不知情terminos。的Terminos是：{0} 
+047_msg_termino_duplicado			= 有一个以上的端用相同的代码。 
+047_msg_cantidade_parciales			= 部分发送的量是不同的输入的数量。 
+047_msg_campos_obligatorios			= 它是强制性代码Remesa密封，或密封的代码或代码bulto的运输。 
+047_msg_cantidad_parciales_alterado = 据报道数量，但部分{0} {1}进口。 
+
+//048 - MetodoTest
+
+048_SemErro					= 好吧服务 
+048_ComErro					= 执行中的错误 
+
+//049 - Recuperar Datos Remesa
+049_CodDelegacion				= 代码代表团 
+049_PrecintoObligatorio				= 它是强制性的，以通知的院内bulto或Remesa。 
+049_DosPrecintosInformados			= 应告知只有一个校区码。 
+
+//050 - Guardar Datos Confeccion Remesa
+050_remesa					= Remesa 
+050_CodIsoDivisa				= ISO货币代码 
+050_CodDenominacion				= 代号名称 
+050_CodTipoMedioPago				= 代码类型付款方法 
+050_DescripcionTipoMedioPago			= 说明类型付款方法 
+050_CodigoMedioPago				= 代码付款方法 
+050_DescripcionMedioPago			= 付款方式说明 
+050_CodigoTermino				= 代码完成 
+050_DescripcionTermino				= 说明总结 
+050_CodigoValor					= 代码值 
+050_DescripcionValor				= 说明价值 
+050_CodDenominacionMoneda			= 伪造货币的代号名称 
+050_CodDenominacionBillete			= 代号名称假票 
+050_PeticionBulto				= 它是强制性至少一个bulto。 
+
+//051 - Guardar Parcial CP ATM
+051_codUsuario					= 用户代码 
+051_oidBulto					= OID的Bulto的 
+051_codPrecinto					= 代码专用区 
+051_codDelegacion				= 代表团守则 
+051_parciales					= 它是强制性的至少一个部分。 
+051_termino					= 它是强制性的至少一端。 
+051_oidTerminoIac				= OID的TerminoIac的 
+051_desTermino					= 说明总结 
+051_decValorIac					= 说明价值IAC 
+051_codDenominacion				= 代码指定 
+051_codIsoDivisa				= 货币代码 
+051_declaradoNegativo				= 部分不能有一个声明为负。 
+051_parcialActualizado				= 部分更新。 
+051_declarado					= 宣 
+						= 部分不能付款方式及其他同时宣布有效手段，并至少有一个部分登贝拉posuir宣布有效。 
+
+//052 - GuardarDeclaradosModificadosSupervisorAtm
+052_codPuesto					= 守则之旅 
+052_identificadorBulto				= 标识符袋 
+052_identificadorRemesa				= 标识符Remesa的 
+052_codSupervisor				= 代码监事 
+052_codIsoDivisa				= 代码边界 
+052_codDenominacion				= 代号名称 
+052_codAgrupacion				= 代码分组 
+052_DescAgrupacion				= 说明分组 
+052_remesaNaoExiste				= 有没有Remesa。 
+052_bultoNaoExiste				= 有袋。 
+052_caracteristicaNaoExiste			= 计数过程应包含相关联的ATM和PROCESA的同时部分功能。 
+052_precintobulto				= 院内的眼袋 
+052_codigodelegacion				= 代码代表团 
+
+//054 - AccionActualizarCantidadParciales
+054_identificadorBulto				= 标识符袋 
+054_identificadorRemesa				= 标识符出货 
+054_loginusuario				= 用户代码 
+054_semBultos					= 是没有告知数据bultos的。 
+054_msg_bultoEstadoInvalido			= 袋{0}不能更新，因为它的状态是{1}。 
+
+// Remessa
+Gen_msg_BultosPendentes				= 还有Bultos待处理的不同状态。 
+Gen_msg_Remesa_BultosNaoProcessados		= 还有Bultos不同处理的状态。 
+gen_remesa_exception_Proceso_nexiste		= 不存在进程的组合。客户端的代码： 
+gen_remesa_remesacodigoSubCliente		= 子客户端的代码： 
+gen_remesa_remesacodigoPuntoServicio		= 代码服务点： 
+gen_remesa_remesacodigoSubCanal			= 子信道代码： 
+gen_remesa_remesaDelegacion			= 代表团： 
+gen_remesa_colRemesaVazia			= 它是强制性至少一个Remesa。 
+gen_remesa_colBulto				= 它是强制性的通知至少一个bulto。 
+gen_msg_erroconversaodados			= 数据转换中的错误。 
+gen_msg_erroCodigoOperation			= 输入的交易是无效的。 
+gen_msg_remesa_nao_existe			= 该Remesa {0}不存在。 
+
+//Intervencion Supervisor
+034_SemMotivos					= 没有理由咨询 
+034_MotivosNaoEncontrados			= 是有原因未找到 
+
+//BultoParcializado
+gen_msg_bulto_parcializadosnaoprocesados	= 还有Bultos而未处理的parcializados。 
+gen_msg_cerrarbultoparcializado_identificadorpuesto = IdentificadorPuesto 
+gen_msg_cerrarbultoparcializado_identificadornuevobulto = IdentificadorNuevoBulto 
+gen_msg_cerrarbultoparcializado_codprecinto	= CodigoLacreMalote。 
+gen_msg_bultoparcializado_estadoterminado	= 这是Bulto Parcializado状态完成。 
+gen_msg_listatrabajo_estadoprocesado		= 此Bulto Parcializado处理状态。 
+gen_msg_bultoparcializado_precintobultonaoencontrado = 协会袋/盖章无效。 
+gen_msg_cerrarbultoparcializado_identificadordelegacion = IdentificadorDelegacion 
+
+// ListaTrabajo
+Gen_msg_AsociarBultoaPuesto_IdBulto		= IdBulto 
+Gen_msg_AsociarBultoaPuesto_CodigoEstado	= CodigoEstado 
+Gen_msg_ErrorObtenerRemesa			= 无法得到Remesa。 
+Gen_msg_ListaTipo				= 型号代码 
+
+002_IdDelegacionOri				= IdentificadorDivisaOri 
+002_IdDivisaOri					= IdentificadorDelegacionOri 
+002_Generica					= 必须输入的字段中的至少一个。 
+
+Gen_msg_AsociarBultoApuesto_IdDelegacionOrigem	= IdDelegacionOrigem 
+Gen_msg_ListaTrabajo_IdBulto			= IdBulto 
+Gen_msg_ListaTrabajo_CodEstadoTrabajo		= CodEstadoTrabajo 
+Gen_msg_ListaTrabajo_codTipo			= codigoTipoTrabajo 
+Gen_msg_ListaTrabajo_idRemesa			= identificadorRemesa 
+Gen_msg_ListaTrabajo_cantidadParciales		= cantidadParciales 
+
+//TrabajoEnCurso
+Gen_msg_RecuperarTrabajoEnCurso_IdentificadorPuesto = IdentificadorPuesto 
+Gen_msg_RecuperarTrabajoEnCurso_IdentificadorDelegacion = IdentificadorDelegacion 
+
+//GuardarDatosConteoParcial
+//peticion
+gen_msg_peticion_IdentificadorBulto		= IdentificadorBulto 
+gen_msg_peticion_IdentificadorRemesa		= IdentificadorRemesa 
+gen_msg_peticion_FechaHoraFinConteo		= FechaHoraFinConteo 
+gen_msg_peticion_TipoContenedor			= TipoContenedor 
+gen_msg_peticion_CodPrecintoBulto		= CodPrecintoBulto 
+gen_msg_peticion_CodPrecintoRemesa		= CodPrecintoRemesa 
+gen_msg_parcialDineroSueltoYaExiste		= 这袋已经部分包含了宽松的货币。 
+gen_msg_parcialFinSacaYaExiste			= 现在这袋包含的偏序袋。 
+gen_codigo_blister				= 代码吸塑 
+gen_medio_pago_efectivo					= Dinero
+gen_puesto_Mecanizado_nao_informado		= El codigo del Puesto Mecanizado no informado.
+
+//Registromovimiento
+gen_msg_registromovimiento_IdentificadorPuesto	= IdentificadorPuesto 
+gen_msg_registromovimiento_IdentificadorBulto	= IdentificadorBulto 
+gen_msg_registromovimiento_IdentificadorRemesa	= IdentificadorRemesa 
+gen_msg_registromovimiento_IdentificadorRemesaOri = IdentificadorRemesaOri 
+gen_msg_registromovimiento_TipoMovimento	= TipoMovimento 
+gen_msg_registromovimiento_TipoContenedor	= TipoContenedor 
+gen_msg_registromovimiento_CodigoDelegacion	= CodigoDelegacion 
+
+//Buscar Remesa Por Termino Parcial
+gen_msg_codigo_termino_vazio			= Codigo(s) do(s) termino(s) vacio(s).
+gen_msg_valor_termino_vazio				= Valor(es) do(s) termino(s) vacio(s).
+gen_msg_estado_remesa_vazio				= Estado(s) da(s) remesa(s) vacio(s).
+gen_msg_fecha_transporte				= Fecha(s) transporte(s) vacia(s).
+
+//RecuperarMovimientoEnProceso
+gen_msg_registroenproceso_invalido = 服务没有收到的任何参数entreda。 
+
+//Declaradototal
+Gen_msg_declaradototal_IdDivisa			= IdDivisa 
+
+//Declarado Detalle
+Gen_msg_DeclaradoDet_Unidades			= DeclaradoDet单位 
+Gen_msg_DeclaradoDet_CodigoDenominacion		= DeclaradoDet CodigoDenominacion 
+
+//Declarado Agrupacion
+Gen_msg_DeclaradoAgrupacion_Importe		= DeclaradoAgrupacion导入 
+Gen_msg_DeclaradoAgrupacion_Codigo		= DeclaradoAgrupacion代码 
+Gen_msg_DeclaradoAgrupacion_Descripcion		= 号码产品描述DeclaradoAgrupacion的 
+
+//Efectivo
+Gen_msg_Efectivo_UnidadesManual			= UnidadesManual 
+Gen_msg_Efectivo_UnidadesMaquina		= UnidadesMaquina 
+Gen_msg_Efectivo_IdDenominacion			= IdDenominacion 
+Gen_msg_Efectivo_CodigoIsoDivisa		= CodigoIsoDivisa 
+
+//billete falso
+Gen_msg_BilleteFalso_IdDenominacion		= IdDenominacion 
+Gen_msg_BilleteFalso_NumeroSerie		= NumeroSerie 
+
+//Moneda Falsa
+Gen_msg_MonedaFalsa_IdDenominacion		= IdDenominacion 
+Gen_msg_MonedaFalsa_Unidades			= 单位 
+
+//Cheque
+Gen_msg_Cheque_IdDivisa				= IdDivisa 
+Gen_msg_Cheque_Importe				= 进口 
+Gen_msg_Cheque_Secuencia			= Secuencia 
+
+//ticket
+Gen_msg_ticket_Descricion			= Descricion 
+Gen_msg_ticket_ticketDet			= Tick​​etDet 
+Gen_msg_ticket_IdDivisa				= IdDivisa 
+Gen_msg_ticket_Secuencia			= Secuencia 
+Gen_msg_ticket_Importe				= 进口 
+Gen_msg_ticket_Unidades				= 单位 
+
+//otros
+Gen_msg_otros_Descricion			= Descricion 
+Gen_msg_otros_OtrosDet				= OtrosDet 
+Gen_msg_otros_IdDivisa				= IdDivisa 
+Gen_msg_otros_Secuencia				= Secuencia 
+Gen_msg_otros_Importe				= 进口 
+Gen_msg_otros_Unidades				= 单位 
+
+//info adicional
+gen_msg_remesa_bulto_ext_invalido		= remesa和/或Bulto的在外部数据库中无效。 
+
+//Valor informacion adicional cliente
+gen_msg_valorinfoadicionalcliente_CodigoTermino	= CodigoTermino 
+gen_msg_valorinfoadicionalcliente_DescripcionTermino = DescripcionTermino 
+gen_msg_valorinfoadicionalcliente_DescripcionValor = DescripcionValor 
+
+//Medio Pago
+gen_msg_mediopago_CodigoTipoMedioPago		= MedioPago CodigoTipoMedioPago 
+gen_msg_mediopago_DescripcionTipoMedioPago	= MedioPago DescripcionTipoMedioPago 
+gen_msg_mediopago_CodigoIsoDivisa		= MedioPago CodigoIsoDivisa 
+gen_msg_mediopago_CodigoMedioPago		= MedioPago CodigoMedioPago 
+gen_msg_mediopago_DescripcionMedioPago		= MedioPago DescripcionMedioPago 
+gen_msg_mediopago_NecSecuencia			= MedioPago NecSecuencia 
+
+//Valor Termino Medio Pago
+gen_msg_valorterminomediopago_CodigoTermino	= ValorTerminoMedioPago CodigoTermino 
+gen_msg_valorterminomediopago_DescripcionTermino = ValorTerminoMedioPago DescripcionTermino 
+gen_msg_valorterminomediopago_DescripcionValor	= ValorTerminoMedioPago DescripcionValor 
+
+//Horario Trabajo
+gen_msg_regtiempo_peticion_idusuario		= 用户标识符 
+gen_msg_regtiempo_peticion_idpuesto		= IdentificadorPuesto 
+gen_msg_regtiempo_peticion_idsesion		= IdSesion 
+gen_msg_regtiempo_peticion_codigoevento		= CodigoEvento 
+gen_msg_regtiempo_peticion_codigodelegacion	= CodigoDelegacion 
+
+//Login
+Gen_msg_Login_IdentificadorUsuario		= IdentificadorUsuario 
+Gen_msg_Login_Password				= 密码 
+Gen_msg_Login_Puesto				= Puesto 
+Gen_msg_Login_Delegacion			= Delegacion 
+Gen_msg_Login_CodigoSector			= CodigoSector 
+
+//Recuperar Usuarios Supervisores
+Gen_msg_RecuperarUsuariosSupervisores_Delegacion			= CodigoDelegacion 
+Gen_msg_RecuperarUsuariosSupervisores_CodigoSector			= CodigoSector 
+
+//Logout
+Gen_msg_Logout_IdentificadorSesion		= IdentificadorSesion 
+
+//ValidarSesion
+Gen_msg_ValidarSesion_IdentificadorSesion	= IdentificadorSesion 
+Gen_msg_ValidarSesion_Usuario			= 用户 
+
+Gen_msg_ControleSesionServicio_Caducada		= 过期的会话。 
+Gen_msg_ControleSesionServicio_Incorrecto	= 告知用户会话无效。 
+Gen_msg_ControleSesionServicio_Inexistente	= 记录不存在。 
+Gen_msg_ControleSesionServicio_NaoInformado	= 会话数据没有被告知。 
+Gen_msg_ControleSesionServicio_SesionPuesto	= 用户{0} {1}的位置已经有一个活跃的会话。 
+
+//LogarError
+Gen_msg_LogarErro_PuestoTrabajo			= 工作 
+Gen_msg_LogarErro_DescricionErro		= 描述错误 
+
+//Intervencion Supervisor
+Gen_msg_IdentificadorRemesa_Obrigatorio		= 的标识符Remesa是必需的。 
+Gen_msg_CodigoContador_Obrigatorio		= 计数器的代码是必需的。 
+Gen_msg_CodigoSupervisor_Obrigatorio		= 主管的代码是必需的。 
+Gen_msg_FechaHoraInicio_Obrigatorio		= 日期和开始时间是强制性的。 
+Gen_msg_CodigoMotivo_Obrigatorio		= 有义务告知至少有一个原因代码。 
+Gen_msg_Remesa_Existe				= 有通知Remesa。 
+Gen_msg_CodigoMotivo_Existe			= 所输入的原因代码不存在。 
+Gen_msg_IntervencionSupervisor_Obrigatorio	= 代码主管的干预是必要的。 
+Gen_msg_ParametroSetIntervencion_Obrigatorio	= 主管的干预，不能作为孤立的usuada参数。 
+Gen_msg_ParametrosGetIntervecion_Obrigatorios	= 这是必要的参数中的至少一个输​​入。 
+Gen_msg_ParametrosGetIntervecion_RemesaObrigatoria	= 它需要被告知至少汇款。
+CONTEO_Gen_Msg_IdentificadorIntervencion			= Identificador Intervenção
+CONTEO_Gen_Msg_Comentario							= Comentario
+
+//ValidarTermino
+
+Gen_msg_CodigoAlgoritimo_Obrigatorio		= 该代码的算法是必需的。 
+
+//Consultar Estados Parciales
+
+Gen_msg_IdentificadorBultoParcial_Obrigatorio	= 该标识符是强制bulto的 
+
+####### ORGANIZAÇÃO DO DICIONÁRIO POR TABELA.CAMPO #######
+// MANTER ATUALIZADO DE ACORDO COM AS MUDANÇAS NAS TABELAS E NOS SERVIÇOS
+
+// GEPR_TDECLARADO_REMESA
+GEPR_TDECLARADO_REMESA_OID_DECLARADO_REMESA	= GEPR_TDECLARADO_REMESA.OID_DECLARADO_REMESA 
+GEPR_TDECLARADO_REMESA_COD_ISO_DIVISA		= GEPR_TDECLARADO_REMESA.COD_ISO_DIVISA 
+GEPR_TDECLARADO_REMESA_OID_REMESA		= GEPR_TDECLARADO_REMESA.OID_REMESA 
+
+// GEPR_TDECLARADO_REMESA_DET
+GEPR_TDECLARADO_REMESA_DET_OID_DECLARADO_REMESA_DET = GEPR_TDECLARADO_REMESA_DET.OID_DECLARADO_REMESA_DET 
+GEPR_TDECLARADO_REMESA_DET_COD_DENOMINACION	= GEPR_TDECLARADO_REMESA_DET.COD_DENOMINACION 
+GEPR_TDECLARADO_REMESA_DET_OID_REMESA		= GEPR_TDECLARADO_REMESA_DET.OID_REMESA 
+GEPR_TDECLARADO_REMESA_DET_NEL_UNIDADES		= GEPR_TDECLARADO_REMESA_DET.NEL_UNIDADES 
+
+// GEPR_TDEC_REMESA_AGRUPACION
+GEPR_TDEC_REMESA_AGRUPACION_OID_DEC_REMESA_AGRUPACION = GEPR_TDEC_REMESA_AGRUPACION.OID_DEC_REMESA_AGRUPACION 
+GEPR_TDEC_REMESA_AGRUPACION_COD_AGRUPACION	= GEPR_TDEC_REMESA_AGRUPACION.COD_AGRUPACION 
+GEPR_TDEC_REMESA_AGRUPACION_OID_REMESA		= GEPR_TDEC_REMESA_AGRUPACION.OID_REMESA 
+GEPR_TDEC_REMESA_AGRUPACION_NUM_IMPORTE		= GEPR_TDEC_REMESA_AGRUPACION.NUM_IMPORTE 
+
+// GEPR_TDECLARADO_BULTO
+GEPR_TDECLARADO_BULTO_OID_DECLARADO_BULTO	= GEPR_TDECLARADO_BULTO.OID_DECLARADO_BULTO 
+GEPR_TDECLARADO_BULTO_COD_ISO_DIVISA		= GEPR_TDECLARADO_BULTO.COD_ISO_DIVISA 
+GEPR_TDECLARADO_BULTO_OID_BULTO			= GEPR_TDECLARADO_BULTO.OID_BULTO 
+
+// GEPR_TDECLARADO_BULTO_DET
+GEPR_TDECLARADO_BULTO_DET_OID_DECLARADO_BULTO_DET = GEPR_TDECLARADO_BULTO_DET.OID_DECLARADO_BULTO_DET 
+GEPR_TDECLARADO_BULTO_DET_COD_DENOMINACION	= GEPR_TDECLARADO_BULTO_DET.COD_DENOMINACION 
+GEPR_TDECLARADO_BULTO_DET_OID_BULTO		= GEPR_TDECLARADO_BULTO_DET.OID_BULTO 
+GEPR_TDECLARADO_BULTO_DET_NEL_UNIDADES		= GEPR_TDECLARADO_BULTO_DET.NEL_UNIDADES 
+
+// GEPR_TDEC_BULTO_AGRUPACION
+GEPR_TDEC_BULTO_AGRUPACION_OID_DEC_BULTO_AGRUPACION = GEPR_TDEC_BULTO_AGRUPACION.OID_DEC_BULTO_AGRUPACION 
+GEPR_TDEC_BULTO_AGRUPACION_COD_AGRUPACION	= GEPR_TDEC_BULTO_AGRUPACION.COD_AGRUPACION 
+GEPR_TDEC_BULTO_AGRUPACION_OID_BULTO		= GEPR_TDEC_BULTO_AGRUPACION.OID_BULTO 
+GEPR_TDEC_BULTO_AGRUPACION_NUM_IMPORTE		= GEPR_TDEC_BULTO_AGRUPACION.NUM_IMPORTE 
+
+// GEPR_TDECLARADO_PARCIAL
+GEPR_TDECLARADO_PARCIAL_OID_DECLARADO_PARCIAL	= GEPR_TDECLARADO_PARCIAL.OID_DECLARADO_PARCIAL 
+GEPR_TDECLARADO_PARCIAL_COD_ISO_DIVISA		= GEPR_TDECLARADO_PARCIAL.COD_ISO_DIVISA 
+GEPR_TDECLARADO_PARCIAL_OID_PARCIAL		= GEPR_TDECLARADO_PARCIAL.OID_PARCIAL 
+
+// GEPR_TDECLARADO_PARCIAL_DET
+GEPR_TDECLARADO_PARCIAL_DET_OID_DECLARADO_PARCIAL_DET = GEPR_TDECLARADO_PARCIAL_DET.OID_DECLARADO_PARCIAL_DET 
+GEPR_TDECLARADO_PARCIAL_DET_COD_DENOMINACION	= GEPR_TDECLARADO_PARCIAL_DET.COD_DENOMINACION 
+GEPR_TDECLARADO_PARCIAL_DET_OID_PARCIAL		= GEPR_TDECLARADO_PARCIAL_DET.OID_PARCIAL 
+GEPR_TDECLARADO_PARCIAL_DET_NEL_UNIDADES	= GEPR_TDECLARADO_PARCIAL_DET.NEL_UNIDADES 
+
+// GEPR_TDEC_PARCIAL_AGRUPACION
+GEPR_TDEC_PARCIAL_AGRUPACION_OID_DEC_PARCIAL_AGRUPACION = GEPR_TDEC_PARCIAL_AGRUPACION.OID_DEC_PARCIAL_AGRUPACION 
+GEPR_TDEC_PARCIAL_AGRUPACION_COD_AGRUPACION	= GEPR_TDEC_PARCIAL_AGRUPACION.COD_AGRUPACION 
+GEPR_TDEC_PARCIAL_AGRUPACION_OID_PARCIAL	= GEPR_TDEC_PARCIAL_AGRUPACION.OID_PARCIAL 
+GEPR_TDEC_PARCIAL_AGRUPACION_NUM_IMPORTE	= GEPR_TDEC_PARCIAL_AGRUPACION.NUM_IMPORTE 
+
+// GEPR_TPRODUCTO
+GEPR_TPRODUCTO_OID_PRODUCTO			= GEPR_TPRODUCTO.OID_PRODUCTO 
+GEPR_TPRODUCTO_COD_PRODUCTO			= GEPR_TPRODUCTO.COD_PRODUCTO 
+GEPR_TPRODUCTO_DES_PRODUCTO			= GEPR_TPRODUCTO.DES_PRODUCTO 
+GEPR_TPRODUCTO_DES_CLASE_BILLETE		= GEPR_TPRODUCTO.DES_CLASE_BILLETE 
+GEPR_TPRODUCTO_NUM_FACTOR_CORRECCION		= GEPR_TPRODUCTO.NUM_FACTOR_CORRECCION 
+GEPR_TPRODUCTO_BOL_MANUAL			= GEPR_TPRODUCTO.BOL_MANUAL 
+GEPR_TPRODUCTO_OID_BULTO			= GEPR_TPRODUCTO.OID_BULTO 
+
+// GEPR_TTIPO_PROCESADO
+GEPR_TTIPO_PROCESADO_OID_TIPO_PROCESADO		= GEPR_TTIPO_PROCESADO.OID_TIPO_PROCESADO 
+GEPR_TTIPO_PROCESADO_COD_TIPO_PROCESADO		= GEPR_TTIPO_PROCESADO.COD_TIPO_PROCESADO 
+GEPR_TTIPO_PROCESADO_DES_TIPO_PROCESADO		= GEPR_TTIPO_PROCESADO.DES_TIPO_PROCESADO 
+GEPR_TTIPO_PROCESADO_BOL_ADMITE_IAC		= GEPR_TTIPO_PROCESADO.BOL_ADMITE_IAC 
+GEPR_TTIPO_PROCESADO_BOL_CONTAR_CIEGO		= GEPR_TTIPO_PROCESADO.BOL_CONTAR_CIEGO 
+GEPR_TTIPO_PROCESADO_OID_BULTO			= GEPR_TTIPO_PROCESADO.OID_BULTO 
+
+// GEPR_TLISTA_TRABAJO
+GEPR_TLISTA_TRABAJO_OID_LISTA_TRABAJO		= GEPR_TLISTA_TRABAJO.OID_LISTA_TRABAJO 
+GEPR_TLISTA_TRABAJO_OID_REMESA			= GEPR_TLISTA_TRABAJO.OID_REMESA 
+GEPR_TLISTA_TRABAJO_OID_BULTO			= GEPR_TLISTA_TRABAJO.OID_BULTO 
+GEPR_TLISTA_TRABAJO_BOL_ES_PARCIALIZADO		= GEPR_TLISTA_TRABAJO.BOL_ES_PARCIALIZADO 
+GEPR_TLISTA_TRABAJO_COD_TRABAJO			= GEPR_TLISTA_TRABAJO.COD_TRABAJO 
+GEPR_TLISTA_TRABAJO_COD_TIPO			= GEPR_TLISTA_TRABAJO.COD_TIPO 
+GEPR_TLISTA_TRABAJO_COD_ESTADO			= GEPR_TLISTA_TRABAJO.COD_ESTADO 
+GEPR_TLISTA_TRABAJO_NEC_NUM_PARCIALES		= GEPR_TLISTA_TRABAJO.NEC_NUM_PARCIALES 
+GEPR_TLISTA_TRABAJO_COD_USUARIO			= GEPR_TLISTA_TRABAJO.COD_USUARIO 
+GEPR_TLISTA_TRABAJO_FYH_ACTUALIZACION		= GEPR_TLISTA_TRABAJO.FYH_ACTUALIZACION 
+
+// GEPR_TREMESA
+GEPR_TREMESA_OID_REMESA				= GEPR_TREMESA.OID_REMESA 
+GEPR_TREMESA_OID_REMESA_ORI			= GEPR_TREMESA.OID_REMESA_ORI 
+GEPR_TREMESA_COD_ESTADO				= GEPR_TREMESA.COD_ESTADO 
+GEPR_TREMESA_NEC_NUM_BULTOS			= GEPR_TREMESA.NEC_NUM_BULTOS 
+GEPR_TREMESA_COD_DELEGACION			= GEPR_TREMESA.COD_DELEGACION 
+GEPR_TREMESA_COD_USUARIO			= GEPR_TREMESA.COD_USUARIO 
+GEPR_TREMESA_FYH_ACTUALIZACION			= GEPR_TREMESA.FYH_ACTUALIZACION 
+
+// GEPR_TBULTO
+GEPR_TBULTO_OID_BULTO				= GEPR_TBULTO.OID_BULTO 
+GEPR_TBULTO_OID_BULTO_ORI			= GEPR_TBULTO.OID_BULTO_ORI 
+GEPR_TBULTO_OID_REMESA				= GEPR_TBULTO.OID_REMESA 
+GEPR_TBULTO_COD_ESTADO				= GEPR_TBULTO.COD_ESTADO 
+GEPR_TBULTO_COD_CLIENTE				= GEPR_TBULTO.COD_CLIENTE 
+GEPR_TBULTO_DES_CLIENTE				= GEPR_TBULTO.DES_CLIENTE 
+GEPR_TBULTO_COD_DELEGACION			= GEPR_TBULTO.COD_DELEGACION 
+GEPR_TBULTO_COD_SUBCLIENTE			= GEPR_TBULTO.COD_SUBCLIENTE 
+GEPR_TBULTO_DES_SUBCLIENTE			= GEPR_TBULTO.DES_SUBCLIENTE 
+GEPR_TBULTO_COD_PUNTO_SERVICIO			= GEPR_TBULTO.COD_PUNTO_SERVICIO 
+GEPR_TBULTO_DES_PUNTO_SERVICIO			= GEPR_TBULTO.DES_PUNTO_SERVICIO 
+GEPR_TBULTO_BOL_BANCO_MADRE			= GEPR_TBULTO.BOL_BANCO_MADRE 
+GEPR_TBULTO_BOL_CON_PARCIALES			= GEPR_TBULTO.BOL_CON_PARCIALES 
+GEPR_TBULTO_BOL_CUENTA_CHEQUE			= GEPR_TBULTO.BOL_CUENTA_CHEQUE 
+GEPR_TBULTO_BOL_CUENTA_TICKET			= GEPR_TBULTO.BOL_CUENTA_TICKET 
+GEPR_TBULTO_BOL_CUENTA_OTRO_VALOR		= GEPR_TBULTO.BOL_CUENTA_OTRO_VALOR 
+GEPR_TBULTO_BOL_CUENTA_CHEQUE_TOTAL		= GEPR_TBULTO.BOL_CUENTA_CHEQUE_TOTAL 
+GEPR_TBULTO_BOL_CUENTA_TICKET_TOTAL		= GEPR_TBULTO.BOL_CUENTA_TICKET_TOTAL 
+GEPR_TBULTO_BOL_CUENTA_OTRO_VALOR_TOTAL		= GEPR_TBULTO.BOL_CUENTA_OTRO_VALOR_TOTAL 
+GEPR_TBULTO_DES_BOOK_PROCESO			= GEPR_TBULTO.DES_BOOK_PROCESO 
+GEPR_TBULTO_COD_USUARIO				= GEPR_TBULTO.COD_USUARIO 
+GEPR_TBULTO_FYH_ACTUALIZACION			= GEPR_TBULTO.FYH_ACTUALIZACION 
+
+// GEPR_TPARCIAL
+GEPR_TPARCIAL_OID_PARCIAL			= GEPR_TPARCIAL.OID_PARCIAL 
+GEPR_TPARCIAL_OID_PARCIAL_ORI			= GEPR_TPARCIAL.OID_PARCIAL_ORI 
+GEPR_TPARCIAL_NEC_SECUENCIA			= GEPR_TPARCIAL.NEC_SECUENCIA 
+GEPR_TPARCIAL_COD_ESTADO			= GEPR_TPARCIAL.COD_ESTADO 
+GEPR_TPARCIAL_OID_BULTO				= GEPR_TPARCIAL.OID_BULTO 
+GEPR_TPARCIAL_COD_DELEGACION			= GEPR_TPARCIAL.COD_DELEGACION 
+GEPR_TPARCIAL_COD_USUARIO			= GEPR_TPARCIAL.COD_USUARIO 
+GEPR_TPARCIAL_FYH_ACTUALIZACION			= GEPR_TPARCIAL.FYH_ACTUALIZACION 
+
+// GEPR_TVALOR_TERMINO_PARCIAL
+GEPR_TVALOR_TERMINO_PARCIAL_OID_VALOR_TERMINO_PARCIAL = GEPR_TVALOR_TERMINO_PARCIAL.OID_VALOR_TERMINO_PARCIAL 
+GEPR_TVALOR_TERMINO_PARCIAL_OID_PARCIAL		= GEPR_TVALOR_TERMINO_PARCIAL.OID_PARCIAL 
+GEPR_TVALOR_TERMINO_PARCIAL_OID_TERMINO_IAC	= GEPR_TVALOR_TERMINO_PARCIAL.OID_TERMINO_IAC 
+GEPR_TVALOR_TERMINO_PARCIAL_DES_VALOR_TERMINO	= GEPR_TVALOR_TERMINO_PARCIAL.DES_VALOR_TERMINO 
+
+// GEPR_TINFORM_ADI_CLIENTE
+GEPR_TINFORM_ADI_CLIENTE_OID_INFORM_ADI_CLIENTE	= GEPR_TINFORM_ADI_CLIENTE.OID_INFORM_ADI_CLIENTE 
+GEPR_TINFORM_ADI_CLIENTE_OID_BULTO		= GEPR_TINFORM_ADI_CLIENTE.OID_BULTO 
+GEPR_TINFORM_ADI_CLIENTE_OID_REMESA		= GEPR_TINFORM_ADI_CLIENTE.OID_REMESA 
+GEPR_TINFORM_ADI_CLIENTE_COD_IAC		= GEPR_TINFORM_ADI_CLIENTE.COD_IAC 
+GEPR_TINFORM_ADI_CLIENTE_DES_IAC		= GEPR_TINFORM_ADI_CLIENTE.DES_IAC 
+
+// GEPR_TTERMINO_IAC
+GEPR_TTERMINO_IAC_OID_TERMINO_IAC		= GEPR_TTERMINO_IAC.OID_TERMINO_IAC 
+GEPR_TTERMINO_IAC_OID_INFORM_ADI_CLIENTE	= GEPR_TTERMINO_IAC.OID_INFORM_ADI_CLIENTE 
+GEPR_TTERMINO_IAC_COD_TERMINO			= GEPR_TTERMINO_IAC.COD_TERMINO 
+GEPR_TTERMINO_IAC_DES_TERMINO			= GEPR_TTERMINO_IAC.DES_TERMINO 
+GEPR_TTERMINO_IAC_COD_FORMATO			= GEPR_TTERMINO_IAC.COD_FORMATO 
+GEPR_TTERMINO_IAC_DES_FORMATO			= GEPR_TTERMINO_IAC.DES_FORMATO 
+GEPR_TTERMINO_IAC_NEC_LONGITUD			= GEPR_TTERMINO_IAC.NEC_LONGITUD 
+GEPR_TTERMINO_IAC_BOL_MOSTRAR_CODIGO		= GEPR_TTERMINO_IAC.BOL_MOSTRAR_CODIGO 
+GEPR_TTERMINO_IAC_BOL_BUSQUEDA_PARCIAL		= GEPR_TTERMINO_IAC.BOL_BUSQUEDA_PARCIAL 
+GEPR_TTERMINO_IAC_BOL_CAMPO_CLAVE		= GEPR_TTERMINO_IAC.BOL_CAMPO_CLAVE 
+GEPR_TTERMINO_IAC_NEC_ORDEN			= GEPR_TTERMINO_IAC.NEC_ORDEN 
+GEPR_TTERMINO_IAC_BOL_VALORES_POSIBLES		= GEPR_TTERMINO_IAC.BOL_VALORES_POSIBLES 
+
+// GEPR_TVALOR_POSIBLE
+GEPR_TVALOR_POSIBLE_OID_VALOR_POSIBLE		= GEPR_TVALOR_POSIBLE.OID_VALOR_POSIBLE 
+GEPR_TVALOR_POSIBLE_OID_TERMINO_IAC		= GEPR_TVALOR_POSIBLE.OID_TERMINO_IAC 
+GEPR_TVALOR_POSIBLE_COD_VALOR_POSIBLE		= GEPR_TVALOR_POSIBLE.COD_VALOR_POSIBLE 
+GEPR_TVALOR_POSIBLE_DES_VALOR_POSIBLE		= GEPR_TVALOR_POSIBLE.DES_VALOR_POSIBLE 
+
+// GEPR_TMEDIO_PAGO_POSIBLE
+GEPR_TMEDIO_PAGO_POSIBLE_OID_MEDIO_PAGO_POSIBLE	= GEPR_TMEDIO_PAGO_POSIBLE.OID_MEDIO_PAGO_POSIBLE 
+GEPR_TMEDIO_PAGO_POSIBLE_OID_BULTO		= GEPR_TMEDIO_PAGO_POSIBLE.OID_BULTO 
+GEPR_TMEDIO_PAGO_POSIBLE_COD_TIPO_MEDIO_PAGO	= GEPR_TMEDIO_PAGO_POSIBLE.COD_TIPO_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_POSIBLE_DES_TIPO_MEDIO_PAGO	= GEPR_TMEDIO_PAGO_POSIBLE.DES_TIPO_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_POSIBLE_COD_ISO_DIVISA		= GEPR_TMEDIO_PAGO_POSIBLE.COD_ISO_DIVISA 
+GEPR_TMEDIO_PAGO_POSIBLE_COD_MEDIO_PAGO		= GEPR_TMEDIO_PAGO_POSIBLE.COD_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_POSIBLE_DES_MEDIO_PAGO		= GEPR_TMEDIO_PAGO_POSIBLE.DES_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_POSIBLE_NUM_TOLERANCIA_PARCIAL_MIN = GEPR_TMEDIO_PAGO_POSIBLE.NUM_TOLERANCIA_PARCIAL_MIN 
+GEPR_TMEDIO_PAGO_POSIBLE_NUM_TOLERANCIA_PARCIAL_MAX = GEPR_TMEDIO_PAGO_POSIBLE.NUM_TOLERANCIA_PARCIAL_MAX 
+GEPR_TMEDIO_PAGO_POSIBLE_NUM_TOLERANCIA_BULTO_MIN = GEPR_TMEDIO_PAGO_POSIBLE.NUM_TOLERANCIA_BULTO_MIN 
+GEPR_TMEDIO_PAGO_POSIBLE_NUM_TOLERANCIA_BULTO_MAX = GEPR_TMEDIO_PAGO_POSIBLE.NUM_TOLERANCIA_BULTO_MAX 
+GEPR_TMEDIO_PAGO_POSIBLE_NUM_TOLERANCIA_REMESA_MIN = GEPR_TMEDIO_PAGO_POSIBLE.NUM_TOLERANCIA_REMESA_MIN 
+GEPR_TMEDIO_PAGO_POSIBLE_NUM_TOLERANCIA_REMESA_MAX = GEPR_TMEDIO_PAGO_POSIBLE.NUM_TOLERANCIA_REMESA_MAX 
+
+// GEPR_TTERMINO_MEDIO_PAGO
+GEPR_TTERMINO_MEDIO_PAGO_OID_TERMINO_MEDIO_PAGO	= GEPR_TTERMINO_MEDIO_PAGO.OID_TERMINO_MEDIO_PAGO 
+GEPR_TTERMINO_MEDIO_PAGO_OID_MEDIO_PAGO_POSIBLE	= GEPR_TTERMINO_MEDIO_PAGO.OID_MEDIO_PAGO_POSIBLE 
+GEPR_TTERMINO_MEDIO_PAGO_COD_TERMINO		= GEPR_TTERMINO_MEDIO_PAGO.COD_TERMINO 
+GEPR_TTERMINO_MEDIO_PAGO_DES_TERMINO		= GEPR_TTERMINO_MEDIO_PAGO.DES_TERMINO 
+GEPR_TTERMINO_MEDIO_PAGO_NEC_LONGITUD		= GEPR_TTERMINO_MEDIO_PAGO.NEC_LONGITUD 
+GEPR_TTERMINO_MEDIO_PAGO_COD_FORMATO		= GEPR_TTERMINO_MEDIO_PAGO.COD_FORMATO 
+GEPR_TTERMINO_MEDIO_PAGO_DES_FORMATO		= GEPR_TTERMINO_MEDIO_PAGO.DES_FORMATO 
+GEPR_TTERMINO_MEDIO_PAGO_BOL_MOSTRAR_CODIGO	= GEPR_TTERMINO_MEDIO_PAGO.BOL_MOSTRAR_CODIGO 
+GEPR_TTERMINO_MEDIO_PAGO_NEC_ORDEN		= GEPR_TTERMINO_MEDIO_PAGO.NEC_ORDEN 
+
+// GEPR_TVALOR_TERMINO
+GEPR_TVALOR_TERMINO_OID_VALOR_TERMINO		= GEPR_TVALOR_TERMINO.OID_VALOR_TERMINO 
+GEPR_TVALOR_TERMINO_OID_TERMINO_MEDIO_PAGO	= GEPR_TVALOR_TERMINO.OID_TERMINO_MEDIO_PAGO 
+GEPR_TVALOR_TERMINO_COD_VALOR			= GEPR_TVALOR_TERMINO.COD_VALOR 
+GEPR_TVALOR_TERMINO_DES_VALOR			= GEPR_TVALOR_TERMINO.DES_VALOR 
+
+// GEPR_TMED_PAGO_POR_AGRUPACION
+GEPR_TMED_PAGO_POR_AGRUPACION_OID_MEDIO_PAGO_AGRUPACION = GEPR_TMED_PAGO_POR_AGRUPACION.OID_MEDIO_PAGO_AGRUPACION 
+GEPR_TMED_PAGO_POR_AGRUPACION_OID_AGRUPACION_POSIBLE = GEPR_TMED_PAGO_POR_AGRUPACION.OID_MEDIO_PAGO_AGRUPACION 
+GEPR_TMED_PAGO_POR_AGRUPACION_OID_MEDIO_PAGO_POSIBLE = GEPR_TMED_PAGO_POR_AGRUPACION.OID_MEDIO_PAGO_AGRUPACION 
+
+// GEPR_TAGRUPACION_POSIBLE
+GEPR_TAGRUPACION_POSIBLE_OID_AGRUPACION_POSIBLE	= GEPR_TAGRUPACION_POSIBLE.OID_AGRUPACION_POSIBLE 
+GEPR_TAGRUPACION_POSIBLE_OID_BULTO		= GEPR_TAGRUPACION_POSIBLE.OID_BULTO 
+GEPR_TAGRUPACION_POSIBLE_COD_AGRUPACION		= GEPR_TAGRUPACION_POSIBLE.COD_AGRUPACION 
+GEPR_TAGRUPACION_POSIBLE_DES_AGRUPACION		= GEPR_TAGRUPACION_POSIBLE.DES_AGRUPACION 
+GEPR_TAGRUPACION_POSIBLE_NUM_TOLERANCIA_PARCIAL_MIN = GEPR_TAGRUPACION_POSIBLE.NUM_TOLERANCIA_PARCIAL_MIN 
+GEPR_TAGRUPACION_POSIBLE_NUM_TOLERANCIA_PARCIAL_MAX = GEPR_TAGRUPACION_POSIBLE.NUM_TOLERANCIA_PARCIAL_MAX 
+GEPR_TAGRUPACION_POSIBLE_NUM_TOLERANCIA_BULTO_MIN = GEPR_TAGRUPACION_POSIBLE.NUM_TOLERANCIA_BULTO_MIN 
+GEPR_TAGRUPACION_POSIBLE_NUM_TOLERANCIA_BULTO_MAX = GEPR_TAGRUPACION_POSIBLE.NUM_TOLERANCIA_BULTO_MAX 
+GEPR_TAGRUPACION_POSIBLE_NUM_TOLERANCIA_REMESA_MIN = GEPR_TAGRUPACION_POSIBLE.NUM_TOLERANCIA_REMESA_MIN 
+GEPR_TAGRUPACION_POSIBLE_NUM_TOLERANCIA_REMESA_MAX = GEPR_TAGRUPACION_POSIBLE.NUM_TOLERANCIA_REMESA_MAX 
+
+// GEPR_TDIVISA_POR_AGRUPACION
+GEPR_TDIVISA_POR_AGRUPACION_OID_DIVISA_POR_AGRUPACION = GEPR_TDIVISA_POR_AGRUPACION.OID_DIVISA_POR_AGRUPACION 
+GEPR_TDIVISA_POR_AGRUPACION_OID_DIVISA_POSIBLE	= GEPR_TDIVISA_POR_AGRUPACION.OID_DIVISA_POSIBLE 
+GEPR_TDIVISA_POR_AGRUPACION_OID_AGRUPACION_POSIBLE = GEPR_TDIVISA_POR_AGRUPACION.OID_AGRUPACION_POSIBLE 
+
+// GEPR_TDIVISA_POSIBLE
+GEPR_TDIVISA_POSIBLE_OID_DIVISA_POSIBLE		= GEPR_TDIVISA_POSIBLE.OID_DIVISA_POSIBLE 
+GEPR_TDIVISA_POSIBLE_OID_BULTO			= GEPR_TDIVISA_POSIBLE.OID_BULTO 
+GEPR_TDIVISA_POSIBLE_COD_ISO_DIVISA		= GEPR_TDIVISA_POSIBLE.COD_ISO_DIVISA 
+GEPR_TDIVISA_POSIBLE_NEC_NUM_ORDEN		= GEPR_TDIVISA_POSIBLE.NEC_NUM_ORDEN 
+GEPR_TDIVISA_POSIBLE_NUM_TOLERANCIA_PARCIAL_MIN	= GEPR_TDIVISA_POSIBLE.NUM_TOLERANCIA_PARCIAL_MIN 
+GEPR_TDIVISA_POSIBLE_NUM_TOLERANCIA_PARCIAL_MAX	= GEPR_TDIVISA_POSIBLE.NUM_TOLERANCIA_PARCIAL_MAX 
+GEPR_TDIVISA_POSIBLE_NUM_TOLERANCIA_BULTO_MIN	= GEPR_TDIVISA_POSIBLE.NUM_TOLERANCIA_BULTO_MIN 
+GEPR_TDIVISA_POSIBLE_NUM_TOLERANCIA_BULTO_MAX	= GEPR_TDIVISA_POSIBLE.NUM_TOLERANCIA_BULTO_MAX 
+GEPR_TDIVISA_POSIBLE_NUM_TOLERANCIA_REMESA_MIN	= GEPR_TDIVISA_POSIBLE.NUM_TOLERANCIA_REMESA_MIN 
+GEPR_TDIVISA_POSIBLE_NUM_TOLERANCIA_REMESA_MAX	= GEPR_TDIVISA_POSIBLE.NUM_TOLERANCIA_REMESA_MAX 
+
+// GEPR_TBULTO_PARCIALIZADO
+GEPR_TBULTO_PARCIALIZADO_OID_BULTO_PARCIALIZADO	= GEPR_TBULTO_PARCIALIZADO.OID_BULTO_PARCIALIZADO 
+GEPR_TBULTO_PARCIALIZADO_COD_PRECINTO_BULTO_PADRE = GEPR_TBULTO_PARCIALIZADO.COD_PRECINTO_BULTO_PADRE 
+GEPR_TBULTO_PARCIALIZADO_OID_BULTO_PADRE	= GEPR_TBULTO_PARCIALIZADO.OID_BULTO_PADRE 
+GEPR_TBULTO_PARCIALIZADO_COD_PRECINTO_BULTO_PARC = GEPR_TBULTO_PARCIALIZADO.COD_PRECINTO_BULTO_PARC 
+GEPR_TBULTO_PARCIALIZADO_COD_ESTADO_BULTO_PARC	= GEPR_TBULTO_PARCIALIZADO.COD_ESTADO_BULTO_PARC 
+GEPR_TBULTO_PARCIALIZADO_NEC_NUMERO_PARCIALES	= GEPR_TBULTO_PARCIALIZADO.NEC_NUMERO_PARCIALES 
+GEPR_TBULTO_PARCIALIZADO_COD_USUARIO		= GEPR_TBULTO_PARCIALIZADO.COD_USUARIO 
+GEPR_TBULTO_PARCIALIZADO_FYH_ACTUALIZACION	= GEPR_TBULTO_PARCIALIZADO.FYH_ACTUALIZACION 
+
+// GEPR_TINTERVENCION_SUPERVISOR
+GEPR_TINTERVENCION_SUPERVISOR_OID_INTERVENCION	= GEPR_TINTERVENCION_SUPERVISOR.OID_INTERVENCION 
+GEPR_TINTERVENCION_SUPERVISOR_OID_REMESA	= GEPR_TINTERVENCION_SUPERVISOR.OID_REMESA 
+GEPR_TINTERVENCION_SUPERVISOR_COD_SUPERVISOR	= GEPR_TINTERVENCION_SUPERVISOR.COD_SUPERVISOR 
+GEPR_TINTERVENCION_SUPERVISOR_COD_CONTADOR	= GEPR_TINTERVENCION_SUPERVISOR.COD_CONTADOR 
+GEPR_TINTERVENCION_SUPERVISOR_FYH_INICIO_INTERV	= GEPR_TINTERVENCION_SUPERVISOR.FYH_INICIO_INTERV 
+
+// GEPR_TMOTIVO_POR_INTERVENCION
+GEPR_TMOTIVO_POR_INTERVENCION_OID_MOTIVO_INTERVENCION = GEPR_TMOTIVO_POR_INTERVENCION.OID_MOTIVO_INTERVENCION 
+GEPR_TMOTIVO_POR_INTERVENCION_OID_INTERVENCION	= GEPR_TMOTIVO_POR_INTERVENCION.OID_INTERVENCION 
+GEPR_TMOTIVO_POR_INTERVENCION_OID_MOTIVO	= GEPR_TMOTIVO_POR_INTERVENCION.OID_MOTIVO 
+
+// GEPR_TMOTIVO
+GEPR_TMOTIVO_OID_MOTIVO				= GEPR_TMOTIVO.OID_MOTIVO 
+GEPR_TMOTIVO_COD_MOTIVO				= GEPR_TMOTIVO.COD_MOTIVO 
+GEPR_TMOTIVO_DES_MOTIVO				= GEPR_TMOTIVO.DES_MOTIVO 
+
+// GEPR_TLOG_ERROR
+GEPR_TLOG_ERROR_OID_LOG_ERROR			= GEPR_TLOG_ERROR.OID_LOG_ERROR 
+GEPR_TLOG_ERROR_DES_ERROR			= GEPR_TLOG_ERROR.DES_ERROR 
+GEPR_TLOG_ERROR_FYH_ERROR			= GEPR_TLOG_ERROR.FYH_ERROR 
+GEPR_TLOG_ERROR_COD_PUESTO			= GEPR_TLOG_ERROR.COD_PUESTO 
+
+// GEPR_TDECLARADO_TOTAL
+GEPR_TDECLARADO_TOTAL_OID_DECLARADO_TOTAL	= GEPR_TDECLARADO_TOTAL.OID_DECLARADO_TOTAL 
+GEPR_TDECLARADO_TOTAL_OID_REGISTRO_MOVIMIENTO	= GEPR_TDECLARADO_TOTAL.OID_REGISTRO_MOVIMIENTO 
+GEPR_TDECLARADO_TOTAL_COD_ISO_DIVISA		= GEPR_TDECLARADO_TOTAL.COD_ISO_DIVISA 
+GEPR_TDECLARADO_TOTAL_COD_DELEGACION		= GEPR_TDECLARADO_TOTAL.COD_DELEGACION 
+GEPR_TDECLARADO_TOTAL_COD_USUARIO		= GEPR_TDECLARADO_TOTAL.COD_USUARIO 
+GEPR_TDECLARADO_TOTAL_FYH_ACTUALIZACION		= GEPR_TDECLARADO_TOTAL.FYH_ACTUALIZACION 
+
+// GEPR_TDECLARADO_DET
+GEPR_TDECLARADO_DET_OID_DECLARADO_DET		= GEPR_TDECLARADO_DET.OID_DECLARADO_DET 
+GEPR_TDECLARADO_DET_OID_REGISTRO_MOVIMIENTO	= GEPR_TDECLARADO_DET.OID_REGISTRO_MOVIMIENTO 
+GEPR_TDECLARADO_DET_COD_DENOMINACION		= GEPR_TDECLARADO_DET.COD_DENOMINACION 
+GEPR_TDECLARADO_DET_NEL_UNIDADES		= GEPR_TDECLARADO_DET.NEL_UNIDADES 
+GEPR_TDECLARADO_DET_COD_USUARIO			= GEPR_TDECLARADO_DET.COD_USUARIO 
+GEPR_TDECLARADO_DET_FYH_ACTUALIZACION		= GEPR_TDECLARADO_DET.FYH_ACTUALIZACION 
+
+// GEPR_TDECLARADO_AGRUPACION
+GEPR_TDECLARADO_AGRUPACION_OID_DECLARADO_AGRUPACION = GEPR_TDECLARADO_AGRUPACION.OID_DECLARADO_AGRUPACION 
+GEPR_TDECLARADO_AGRUPACION_OID_REGISTRO_MOVIMIENTO = GEPR_TDECLARADO_AGRUPACION.OID_REGISTRO_MOVIMIENTO 
+GEPR_TDECLARADO_AGRUPACION_COD_AGRUPACION	= GEPR_TDECLARADO_AGRUPACION.COD_AGRUPACION 
+GEPR_TDECLARADO_AGRUPACION_NUM_IMPORTE		= GEPR_TDECLARADO_AGRUPACION.NUM_IMPORTE 
+GEPR_TDECLARADO_AGRUPACION_COD_USUARIO		= GEPR_TDECLARADO_AGRUPACION.COD_USUARIO 
+GEPR_TDECLARADO_AGRUPACION_FYH_ACTUALIZACION	= GEPR_TDECLARADO_AGRUPACION.FYH_ACTUALIZACION 
+
+// GEPR_TSALDO_EN_CURSO
+GEPR_TSALDO_EN_CURSO_OID_SALDO_EN_CURSO		= GEPR_TSALDO_EN_CURSO.OID_SALDO_EN_CURSO 
+GEPR_TSALDO_EN_CURSO_OID_REGISTRO_MOVIMIENTO	= GEPR_TSALDO_EN_CURSO.OID_REGISTRO_MOVIMIENTO 
+GEPR_TSALDO_EN_CURSO_COD_PUESTO			= GEPR_TSALDO_EN_CURSO.COD_PUESTO 
+GEPR_TSALDO_EN_CURSO_BOL_CHEQUE_ENTREGADO	= GEPR_TSALDO_EN_CURSO.BOL_CHEQUE_ENTREGADO 
+GEPR_TSALDO_EN_CURSO_BOL_TICKET_ENTREGADO	= GEPR_TSALDO_EN_CURSO.BOL_TICKET_ENTREGADO 
+GEPR_TSALDO_EN_CURSO_BOL_BILLETE_FALSO_ENTREGADO = GEPR_TSALDO_EN_CURSO.BOL_BILLETE_FALSO_ENTREGADO 
+GEPR_TSALDO_EN_CURSO_BOL_OTRO_VALOR_ENTREGADO	= GEPR_TSALDO_EN_CURSO.BOL_OTRO_VALOR_ENTREGADO 
+GEPR_TSALDO_EN_CURSO_COD_DELEGACION		= GEPR_TSALDO_EN_CURSO.COD_DELEGACION 
+GEPR_TSALDO_EN_CURSO_COD_USUARIO		= GEPR_TSALDO_EN_CURSO.COD_USUARIO 
+GEPR_TSALDO_EN_CURSO_FYH_ACTUALIZACION		= GEPR_TSALDO_EN_CURSO.FYH_ACTUALIZACION 
+
+// GEPR_TTRABAJO_EN_CURSO
+GEPR_TTRABAJO_EN_CURSO_OID_TRABAJO_EN_CURSO	= GEPR_TTRABAJO_EN_CURSO.OID_TRABAJO_EN_CURSO 
+GEPR_TTRABAJO_EN_CURSO_BOL_ES_BANCO_MADRE	= GEPR_TTRABAJO_EN_CURSO.OID_TRABAJO_EN_CURSO 
+GEPR_TTRABAJO_EN_CURSO_COD_PUESTO		= GEPR_TTRABAJO_EN_CURSO.OID_TRABAJO_EN_CURSO 
+GEPR_TTRABAJO_EN_CURSO_COD_DELEGACION		= GEPR_TTRABAJO_EN_CURSO.OID_TRABAJO_EN_CURSO 
+GEPR_TTRABAJO_EN_CURSO_COD_USUARIO		= GEPR_TTRABAJO_EN_CURSO.OID_TRABAJO_EN_CURSO 
+GEPR_TTRABAJO_EN_CURSO_FYH_ACTUALIZACION	= GEPR_TTRABAJO_EN_CURSO.OID_TRABAJO_EN_CURSO 
+
+// GEPR_TVALOR_INFORM_ADI_CLIENTE
+GEPR_TVALOR_INFORM_ADI_CLIENTE_OID_VALOR_INFORM_ADICIONAL_CLI = GEPR_TVALOR_INFORM_ADI_CLIENTE.OID_VALOR_INFORM_ADICIONAL_CLI 
+GEPR_TVALOR_INFORM_ADI_CLIENTE_OID_REGISTRO_MOVIMIENTO = GEPR_TVALOR_INFORM_ADI_CLIENTE.OID_REGISTRO_MOVIMIENTO 
+GEPR_TVALOR_INFORM_ADI_CLIENTE_COD_TERMINO	= GEPR_TVALOR_INFORM_ADI_CLIENTE.COD_TERMINO 
+GEPR_TVALOR_INFORM_ADI_CLIENTE_DES_TERMINO	= GEPR_TVALOR_INFORM_ADI_CLIENTE.DES_TERMINO 
+GEPR_TVALOR_INFORM_ADI_CLIENTE_DES_VALOR	= GEPR_TVALOR_INFORM_ADI_CLIENTE.DES_VALOR 
+GEPR_TVALOR_INFORM_ADI_CLIENTE_COD_VALOR	= GEPR_TVALOR_INFORM_ADI_CLIENTE.COD_VALOR 
+GEPR_TVALOR_INFORM_ADI_CLIENTE_BOL_MOSTRAR_CODIGO = GEPR_TVALOR_INFORM_ADI_CLIENTE.BOL_MOSTRAR_CODIGO 
+GEPR_TVALOR_INFORM_ADI_CLIENTE_FYH_ACTUALIZACION = GEPR_TVALOR_INFORM_ADI_CLIENTE.FYH_ACTUALIZACION 
+GEPR_TVALOR_INFORM_ADI_CLIENTE_COD_USUARIO	= GEPR_TVALOR_INFORM_ADI_CLIENTE.COD_USUARIO 
+
+// GEPR_TREGISTRO_MOVIMIENTO
+GEPR_TREGISTRO_MOVIMIENTO_OID_REGISTRO_MOVIMIENTO = GEPR_TREGISTRO_MOVIMIENTO.OID_REGISTRO_MOVIMIENTO 
+GEPR_TREGISTRO_MOVIMIENTO_OID_REMESA		= GEPR_TREGISTRO_MOVIMIENTO.OID_REMESA 
+GEPR_TREGISTRO_MOVIMIENTO_OID_REMESA_ORI	= GEPR_TREGISTRO_MOVIMIENTO.OID_REMESA_ORI 
+GEPR_TREGISTRO_MOVIMIENTO_COD_TIPO_MOVIMIENTO	= GEPR_TREGISTRO_MOVIMIENTO.COD_TIPO_MOVIMIENTO 
+GEPR_TREGISTRO_MOVIMIENTO_COD_TIPO_CONTENEDOR	= GEPR_TREGISTRO_MOVIMIENTO.COD_TIPO_CONTENEDOR 
+GEPR_TREGISTRO_MOVIMIENTO_COD_DELEGACION	= GEPR_TREGISTRO_MOVIMIENTO.COD_DELEGACION 
+GEPR_TREGISTRO_MOVIMIENTO_COD_PUESTO		= GEPR_TREGISTRO_MOVIMIENTO.COD_PUESTO 
+GEPR_TREGISTRO_MOVIMIENTO_COD_USUARIO		= GEPR_TREGISTRO_MOVIMIENTO.COD_USUARIO 
+GEPR_TREGISTRO_MOVIMIENTO_FYH_ACTUALIZACION	= GEPR_TREGISTRO_MOVIMIENTO.FYH_ACTUALIZACION 
+
+// GEPR_TDIVISA
+GEPR_TDIVISA_OID_DIVISA				= GEPR_TDIVISA.OID_DIVISA 
+GEPR_TDIVISA_COD_ISO_DIVISA			= GEPR_TDIVISA.COD_ISO_DIVISA 
+GEPR_TDIVISA_DES_DIVISA				= GEPR_TDIVISA.DES_DIVISA 
+GEPR_TDIVISA_COD_USUARIO			= GEPR_TDIVISA.COD_USUARIO 
+GEPR_TDIVISA_FYH_ACTUALIZACION			= GEPR_TDIVISA.FYH_ACTUALIZACION 
+
+// GEPR_TDENOMINACION
+GEPR_TDENOMINACION_OID_DENOMINACION		= GEPR_TDENOMINACION.OID_DENOMINACION 
+GEPR_TDENOMINACION_OID_DIVISA			= GEPR_TDENOMINACION.OID_DIVISA 
+GEPR_TDENOMINACION_COD_DENOMINACION		= GEPR_TDENOMINACION.COD_DENOMINACION 
+GEPR_TDENOMINACION_DES_DENOMINACION		= GEPR_TDENOMINACION.DES_DENOMINACION 
+GEPR_TDENOMINACION_NUM_VALOR			= GEPR_TDENOMINACION.NUM_VALOR 
+GEPR_TDENOMINACION_BOL_BILLETE			= GEPR_TDENOMINACION.BOL_BILLETE 
+GEPR_TDENOMINACION_COD_USUARIO			= GEPR_TDENOMINACION.COD_USUARIO 
+GEPR_TDENOMINACION_FYH_ACTUALIZACION		= GEPR_TDENOMINACION.FYH_ACTUALIZACION 
+
+// GEPR_TLISTA_TIPO
+GEPR_TLISTA_TIPO_OID_LISTA_TIPO			= GEPR_TLISTA_TIPO.OID_LISTA_TIPO 
+GEPR_TLISTA_TIPO_COD_TIPO			= GEPR_TLISTA_TIPO.COD_TIPO 
+GEPR_TLISTA_TIPO_DES_TIPO			= GEPR_TLISTA_TIPO.DES_TIPO 
+
+// GEPR_TLISTA_VALOR
+GEPR_TLISTA_VALOR_OID_LISTA_VALOR		= GEPR_TLISTA_VALOR.OID_LISTA_VALOR 
+GEPR_TLISTA_VALOR_OID_LISTA_TIPO		= GEPR_TLISTA_VALOR.OID_LISTA_TIPO 
+GEPR_TLISTA_VALOR_COD_VALOR			= GEPR_TLISTA_VALOR.COD_VALOR 
+GEPR_TLISTA_VALOR_DES_VALOR			= GEPR_TLISTA_VALOR.DES_VALOR 
+
+// GEPR_TMONEDA_FALSA
+GEPR_TMONEDA_FALSA_OID_MONEDA_FALSA		= GEPR_TMONEDA_FALSA.OID_MONEDA_FALSA 
+GEPR_TMONEDA_FALSA_OID_REGISTRO_MOVIMIENTO	= GEPR_TMONEDA_FALSA.OID_REGISTRO_MOVIMIENTO 
+GEPR_TMONEDA_FALSA_COD_DENOMINACION		= GEPR_TMONEDA_FALSA.COD_DENOMINACION 
+GEPR_TMONEDA_FALSA_NEL_UNIDADES			= GEPR_TMONEDA_FALSA.NEL_UNIDADES 
+GEPR_TMONEDA_FALSA_COD_USUARIO			= GEPR_TMONEDA_FALSA.COD_USUARIO 
+GEPR_TMONEDA_FALSA_FYH_ACTUALIZACION		= GEPR_TMONEDA_FALSA.FYH_ACTUALIZACION 
+
+// GEPR_TEFECTIVO
+GEPR_TEFECTIVO_OID_EFECTIVO			= GEPR_TEFECTIVO.OID_EFECTIVO 
+GEPR_TEFECTIVO_OID_REGISTRO_MOVIMIENTO		= GEPR_TEFECTIVO.OID_REGISTRO_MOVIMIENTO 
+GEPR_TEFECTIVO_COD_DENOMINACION			= GEPR_TEFECTIVO.COD_DENOMINACION 
+GEPR_TEFECTIVO_COD_CALIDAD			= GEPR_TEFECTIVO.COD_CALIDAD 
+GEPR_TEFECTIVO_NEL_UNIDADES_MANUAL		= GEPR_TEFECTIVO.NEL_UNIDADES_MANUAL 
+GEPR_TEFECTIVO_NEL_UNIDADES_MAQUINA		= GEPR_TEFECTIVO.NEL_UNIDADES_MAQUINA 
+GEPR_TEFECTIVO_COD_ISO_DIVISA			= GEPR_TEFECTIVO.COD_ISO_DIVISA 
+GEPR_TEFECTIVO_COD_USUARIO			= GEPR_TEFECTIVO.COD_USUARIO 
+GEPR_TEFECTIVO_FYH_ACTUALIZACION		= GEPR_TEFECTIVO.FYH_ACTUALIZACION 
+
+// GEPR_TMEDIO_PAGO
+GEPR_TMEDIO_PAGO_OID_MEDIO_PAGO			= GEPR_TMEDIO_PAGO.OID_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_OID_REGISTRO_MOVIMIENTO	= GEPR_TMEDIO_PAGO.OID_REGISTRO_MOVIMIENTO 
+GEPR_TMEDIO_PAGO_COD_TIPO_MEDIO_PAGO		= GEPR_TMEDIO_PAGO.COD_TIPO_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_DES_TIPO_MEDIO_PAGO		= GEPR_TMEDIO_PAGO.DES_TIPO_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_COD_ISO_DIVISA			= GEPR_TMEDIO_PAGO.COD_ISO_DIVISA 
+GEPR_TMEDIO_PAGO_COD_MEDIO_PAGO			= GEPR_TMEDIO_PAGO.COD_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_DES_MEDIO_PAGO			= GEPR_TMEDIO_PAGO.DES_MEDIO_PAGO 
+GEPR_TMEDIO_PAGO_NEC_SECUENCIA			= GEPR_TMEDIO_PAGO.NEC_SECUENCIA 
+GEPR_TMEDIO_PAGO_COD_USUARIO			= GEPR_TMEDIO_PAGO.COD_USUARIO 
+GEPR_TMEDIO_PAGO_FYH_ACTUALIZACION		= GEPR_TMEDIO_PAGO.FYH_ACTUALIZACION 
+
+// GEPR_TBILLETE_FALSO
+GEPR_TBILLETE_FALSO_OID_BILLETE_FALSO		= GEPR_TBILLETE_FALSO.OID_BILLETE_FALSO 
+GEPR_TBILLETE_FALSO_OID_REGISTRO_MOVIMIENTO	= GEPR_TBILLETE_FALSO.OID_REGISTRO_MOVIMIENTO 
+GEPR_TBILLETE_FALSO_COD_DENOMINACION		= GEPR_TBILLETE_FALSO.COD_DENOMINACION 
+GEPR_TBILLETE_FALSO_COD_USUARIO			= GEPR_TBILLETE_FALSO.COD_USUARIO 
+GEPR_TBILLETE_FALSO_FYH_ACTUALIZACION		= GEPR_TBILLETE_FALSO.FYH_ACTUALIZACION 
+
+// GEPR_THORARIO_TRABAJO
+GEPR_THORARIO_TRABAJO_OID_HORARIO_TRABAJO	= GEPR_THORARIO_TRABAJO.OID_HORARIO_TRABAJO 
+GEPR_THORARIO_TRABAJO_COD_PUESTO		= GEPR_THORARIO_TRABAJO.COD_PUESTO 
+GEPR_THORARIO_TRABAJO_FYH_EVENTO		= GEPR_THORARIO_TRABAJO.FYH_EVENTO 
+GEPR_THORARIO_TRABAJO_OID_SESION		= GEPR_THORARIO_TRABAJO.OID_SESION 
+GEPR_THORARIO_TRABAJO_COD_DELEGACION		= GEPR_THORARIO_TRABAJO.COD_DELEGACION 
+GEPR_THORARIO_TRABAJO_COD_EVENTO		= GEPR_THORARIO_TRABAJO.COD_EVENTO 
+
+// GEPR_TVALORES_TERM_MEDIO_PAGO
+GEPR_TVALORES_TERM_MEDIO_PAGO_OID_VALORES_TERM_MEDIO_PAGO = GEPR_TVALORES_TERM_MEDIO_PAGO.OID_VALORES_TERM_MEDIO_PAGO 
+GEPR_TVALORES_TERM_MEDIO_PAGO_OID_MEDIO_PAGO	= GEPR_TVALORES_TERM_MEDIO_PAGO.OID_MEDIO_PAGO 
+GEPR_TVALORES_TERM_MEDIO_PAGO_COD_TERMINO	= GEPR_TVALORES_TERM_MEDIO_PAGO.COD_TERMINO 
+GEPR_TVALORES_TERM_MEDIO_PAGO_DES_TERMINO	= GEPR_TVALORES_TERM_MEDIO_PAGO.DES_TERMINO 
+GEPR_TVALORES_TERM_MEDIO_PAGO_DES_VALOR		= GEPR_TVALORES_TERM_MEDIO_PAGO.DES_VALOR 
+GEPR_TVALORES_TERM_MEDIO_PAGO_COD_USUARIO	= GEPR_TVALORES_TERM_MEDIO_PAGO.COD_USUARIO 
+GEPR_TVALORES_TERM_MEDIO_PAGO_FYH_ACTUALIZACION	= GEPR_TVALORES_TERM_MEDIO_PAGO.FYH_ACTUALIZACION 
+GEPR_TVALORES_TERM_MEDIO_PAGO_COD_VALOR		= GEPR_TVALORES_TERM_MEDIO_PAGO_COD_VALOR 
+GEPR_TVALORES_TERM_MEDIO_PAGO.BOL_MOSTRAR_CODIGO = GEPR_TVALORES_TERM_MEDIO_PAGO.BOL_MOSTRAR_CODIGO 
+
+// GEPR_TCARAC_POR_TIPO_PROCESADO
+GEPR_TCARAC_POR_TIPO_PROCESADO_OID_CARACTERISTICA = GEPR_TCARAC_POR_TIPO_PROCESADO.OID_CARACTERISTICA 
+GEPR_TCARAC_POR_TIPO_PROCESADO_OID_TIPO_PROCESADO = GEPR_TCARAC_POR_TIPO_PROCESADO.OID_TIPO_PROCESADO 
+GEPR_TCARAC_POR_TIPO_PROCESADO_COD_CARACTERISTICA = GEPR_TCARAC_POR_TIPO_PROCESADO.COD_CARACTERISTICA 
+GEPR_TCARAC_POR_TIPO_PROCESADO_DES_CARACTERISTICA = GEPR_TCARAC_POR_TIPO_PROCESADO.DES_CARACTERISTICA 
+GEPR_TCARAC_POR_TIPO_PROCESADO_COD_CARACTERISTICA_CONTEO = GEPR_TCARAC_POR_TIPO_PROCESADO.COD_CARACTERISTICA_CONTEO 
+
+
+// ************* USER CONTROLS *************
+
+
+// ************* GENÉRICOS *****************
+
+000_titulo_msgbox				= 有效管理 
+000_msgerrogenerico				= 在应用程序中有一个错误 
+000_camposobrigatorios				= 下面的字段是强制性的： 
+000_campoObrigatorio				= 该字段{0}是必需的。 
+000_numericoinvalido				= 输入的值是无效的！ 
+000_inteirovaziogrande				= 输入的值不能为空或大于2147483647！ 
+
+//TELA BILLETE FALSOS
+015_Titulo					= 假 
+015_NumeroSerie					= 流水号 
+015_Plancha					= Plancha的号 
+015_Obs						= 观察 
+015_Aceptar					= 接受＆ 
+015_Volver					= ＆返回 
+015_CampoInvalido				= 字段的值{0}是无效的。 
+
+//USER CONTROL ucEfectivoConteo
+009_Billete					= Billetes 
+009_Moneda					= Monedas 
+009_DenominacionNombre				= 面值 
+009_Unidades					= 单位 
+009_Maquina					= 机 
+009_Manual					= 手册 
+009_Importe					= 进口 
+009_Falso					= 假 
+009_Detalles					= 所有细节 
+009_TotalImporte				= 总进口 
+009_TotalDeclarado				= 总申报 
+009_msg_titulomensagem				= 验证数字 
+009_inteirovaziogrande				= 输入的值不能为空或大于2147483647 
+
+
+//USER CONTROL ucMedioPago
+
+099_Cheque					= 查 
+099_OtroValor					= 其它零件值 
+099_Ticket					= 票 
+099_tipo_medio_pago				= 型译介付费， 
+099_importe					= 进口 
+099_cantidad					= 量 
+099_datos					= 数据 
+099_TotalImporte				= 总进口 
+099_TotalDeclarado				= 总申报 
+
+//TELA DETALLEMEDIOPAGO
+
+100_aceptar					= 接受 
+100_volver					= 御宇 
+100_Importe					= 进口 
+100_Cantidad					= Cantidad 
+100_Total					= 总 
+100_erro_validar				= 现场验证错误 
+100_colecion_termino_vazia			= 支付的，收集Terminos平均是空的; 
+100_mascara_invalida				= 无效的面膜 
+100_algoritmo_erro_validar			= 错误验证算法 
+100_algoritmo_invalido				= 无效的算法 
+100_inteiro_invalido				= 该字段必须包含一个整型值 
+100_decimal_invalido				= 该字段必须包含一个小数 
+
+
+//016 Algoritimo Valida_Fecha
+016_msg_feche_superior				= 关闭EN EL FUTURO 
+
+
+//017			Búsqueda Bultos o Remesas
+017_msg_no_hay_bultos_codigos			= 有这个代码密封bultos。 
+017_msg_no_hay_bultos_parametros		= 有bultos的，以满足所需的参数。 
+017_msg_no_hay_remesas_codigos			= 有没有这个代码运输运费。 
+017_msg_no_hay_remesas_parametros		= 有出货量，以满足所需的参数。 
+017_codigo					= 码 
+017_delegacion					= 代表团 
+017_fecha_desde					= 数据传输：首页 
+017_fecha_hasta					= 发货日期：结尾 
+017_fecha_conteo_desde				= 数据：网站首页 
+017_fecha_conteo_hasta				= 统计日期：结束 
+017_cliente					= 顾客 
+017_cod_puesto					= 守则之旅 
+
+//ALGORITIMO Banque Populaire
+018_msg_formato_invalido			= 无效的格式 
+
+//ALGORITIMO CAJERAS CARREFOUR
+039_msg_formato_invalido			= 无效的格式 
+039_msg_formato_fecha_invalido			= 日期格式无效 
+039_msg_feche_superior_día_conteo		= 输入的日期不能大于计数时间 
+
+
+//ACTIVACION DESACTIVACION PUESTO
+055_cod_delegacion				= 代表团守则 
+055_cod_usuario					= 用户代码 
+055_cod_puesto					= 守则之旅 
+055_puestos					= 帖子 
+
+//LEE ESCRIBE ESTADO REMESA
+056_cod_usuario					= 用户代码 
+056_msg_operacion_invalida			= ES Laoperación的通知有效。 
+056_msg_remesa_vacia				= ES UNA obligatorio的通知至少Remesa人。 
+056_msg_remesa_estado_invalido			= LA Remesa {0}，puede tener的苏ESTADO交换PUES ES苏ESTADO不同pendiente。
+056_msg_estado_no_informado			= 萨尔瓦多国家德拉Remesa {0} FUE通报。 
+056_msg_estado_informado_invalido		= LA Remesa {0}，交换puede CON EL状态{1}。 
+056_msg_remesa_no_existe			= LA Remesa {0}不存在EN EL禁忌。 
+056_msg_estado_pendiente_cambio			= 待交换 
+056_msg_estado_SIP				= SIP 
+
+//DESHACER REAPERTURA
+057_cod_usuario					= 用户代码 
+057_identificador_remesa			= 汇款标识符 
+057_msg_succeso					= 汇款成功修复！ 
+057_msg_parcial_asignado			= 一批{0}，包含部分国家分配。 
+057_msg_remesa_no_reabierta			= 一批{0}，不会重新开启。 
+057_msg_remesa_no_existe			= 一批{0}不存在。 
+
+//RECUPERAR DATOS PARAMETROS
+058_cod_delegacion				= 代码代表团 
+
+//GUARDAR DATOS PARAMETROS
+059_cod_delegacion				= 代码代表团 
+059_cod_identificador				= 识别码 
+059_cod_parametro				= 代码参数 
+059_valores_parametro				= 参数值 
+059_valor_parametro				= 值 
+059_descripcion_valor				= 值的说明 
+
+//ALGORITIMO VALIDACION CUENTA CORRIENTE
+060_msg_numero_conta_invalido			= 无效的帐户号码。 
+060_msg_formula_conta_invalida			= IAC公式验证帐户配置不正确。所以没有验证为terminos帐户的 
+
+//ALGORITIMO VALIDACION RECUPERAR FECHA TRANSPORTE
+061_msg_DataMaior				= 数据传输超过当前日期。 
+
+//ALGORITIMO VALIDACION FECHA MENOR FECHA TRANSPORTE
+062_msg_Fecha_Transporte_No_Informada		= 没有被告知的出货日期。 
+062_msg_FechaMayor				= 数据大于出货日期。 
+
+//ALGORITIMO VALIDACION FECHA CON FECHA ACTUAL MAS FECHA TRANSPORTE
+063_msg_Fecha_Transporte_No_Informada		= 没有被告知的出货日期。 
+063_msg_Fecha_Inferior				= 日期大于当前日期之前的装运日期或少于30天。 
+
+//ALGORITIMO VALIDACION COPIAR FECHA TRANSPORTE
+064_msg_Fecha_Transporte_No_Informada		= 没有被告知的出货日期。 
+
+//ALGORITIMO VALIDACION FECHA TRANSPORTE CON FECHA ACTUAL
+065_msg_FechaMayor				= 数据传输超过当前日期。 
+
+//MODIFICAR REGISTRO MOVIMIENTO
+066_id_parcial					= 标识符桑格利亚 
+066_tipo_movimiento				= 机芯类型 
+066_codigo_usuario				= 用户代码 
+066_fecha_actualizacion				= 日期刷新 
+066_msg_estadoremesa				= 国家Remesa不“OK”。 
+066_msg_remesanoexiste				= Remesa没有在数据库中找到。 
+
+//MODIFICAR DATOS REMESA
+067_id_remesa					= 托运识别 
+067_estado_remesa				= 国家出货 
+067_codigo_usuario				= 用户代码 
+067_fecha_actualizacion				= 日期刷新 
+067_cod_iso_divisa				= ISO货币代码 
+067_cod_denominacion				= 法典 
+067_num_unidades				= 单位 
+067_id_morfologia				= 标识符形态 
+067_cod_morfologia_componente			= 形态组件代码 
+067_msg_componentes_morfologia			= 组件没有被告知形态 
+067_msg_funcion_contenedor			= 根据通知的容器没有对应的功能的ATM容器 
+067_msg_objetos_componente			= 没有被告知的对象组件的形态 
+067_msg_morfologia				= 形态没有被告知交货 
+
+//DIVIDIR REMESA
+068_id_remesa					= 托运识别 
+068_id_remesa_origen				= 转介来源识别码 
+068_id_codigo_delegacion			= 代码代表团 
+068_codigo_usuario				= 用户代码 
+068_fecha_actualizacion				= 日期刷新 
+068_msg_funcion_componente			= 该组件的功能，获知不对应的功能提供给一个ATM 
+068_precintos					= 密封件 
+068_codigo_subcanal				= 代码子信道 
+068_cod_iso_divisa				= ISO货币代码 
+068_cod_denominacion				= 法典 
+068_num_unidades				= 单位 
+068_cod_morfologia_componente			= 形态组件代码 
+068_msg_componentes_morfologia			= 组件没有被告知形态 
+068_msg_objetos_componente			= 没有被告知的对象组件的形态 
+068_msg_morfologia				= 形态没有被告知交货 
+068_msg_componente				= 航运组件没有被告知 
+068_msg_remesa					= 不能分割装运知情，因为他们的状态是不同的“EN” 
+
+//RECUPERAR DATOS TIRA
+069_id_cajero					= 标识符ATM 
+
+//GET DECLARADOS CONTADOS
+070_identificadorRemesa				= 通知托运的标识符，它是强制性的。 
+
+//GuardarCantidadParcialesDeclarados
+071_msg_dados_obrigatorios_nao_informados	= 它是强制性的参数OID优惠和用户代码。 
+071_par_oid_remesa				= OID优惠。 
+071_par_codigo_usuario				= 用户代码 
+071_msg_bulto_nao_encontrado			= 报告的数据（OID的OID优惠和邮袋）找不到Bulto的。 
+071_msg_bultos_nao_encontrados			= 找不到报告的信息Bultos（OID优惠）。 
+
+//GravarDocumentoParteDiferencias
+072_oid_remesa					= 托运识别 
+072_num_documento				= 文件编号 
+072_fecha_conteo				= 计数日期 
+
+//RecuperarDocPartDiferencias
+073_efectivo					= 有效 
+073_totales					= 总计 
+073_Cheque					= 查 
+073_OtroValor					= 其他 
+073_Ticket					= 票 
+073_msg_remesanaoencontrada			= 优惠是没有的。 
+
+// ENVIO DATOS CONTEO
+074_msg_arquivo_delegaciones_legado_invalido	= 参数“CAMINO_DELEGACIONES_LEGADO”设置为无效值：{0} 
+074_msg_arquivo_delegaciones_legado_conteudo_invalido = 无法加载XML文件参数的“CAMINO_DELEGACIONES_LEGADO”：{0} 
+074_msg_arquivo_delegaciones_legado_formato_invalido = 无效的XML文件格式为的参数“CAMINO_DELEGACIONES_LEGADO”：{0} 
+074_msg_delegacion_no_encontrada_xml		= 代表团“{0}”装运“{1}”未找到XML文件中的参数“CAMINO_DELEGACIONES_LEGADO”。 
+
+//RECUPERAR DATOS IAC
+075_oid_remesa					= 托运识别 
+075_oid_bulto					= 手柄袋 
+
+//ALGORITIMO VALIDACION CODIGO BLISTER
+076_CodigoBlister_Obligatorio			= 吸塑代码没有被告知。 
+076_CodigoBlister_Invalido			= 吸塑代码应该包含13个字符。 
+076_CodigoBlister_No_Es_Numerico		= 吸塑代码不能包含字母。 
+
+//SINCRONIZARDIVISASCONTEO
+077_Divisas					= 外汇 
+077_CodIsoDivisa				= ISO货币代码 
+077_DescripcionDivisa				= 说明货币 
+077_Denominaciones				= 面额 
+077_CodDenominacion				= 代号名称 
+077_DescripcionDenominacion			= 指定说明 
+077_msg_denominacion_existe			= 代码名称已经存在另一种货币。 
+
+//RECUPERARDIVISAS
+078_CodIsoDivisaLocal				= ISO代码边界位置 
+
+//ALGORITMO VALIDACION NUMERO SANGRIA
+079_msg_numero_incorreto = 出血的数量是不正确的。 
+079_Numero_Sangria_Obligatorio			= 没有通知数桑格利亚。 
+079_Numero_Sangria_Invalido			= 号码的出血必须包含13个字符。 
+079_Numero_Sangria_No_Es_Numerico		= 号码不能包含字母桑格利亚。 
+*******************************************************ATM*******************************************************
+
+// ----------------------------------------------------------
+// TABELA DE CÓDIGOS PARA DICIONÁRIO
+//
+// Código		Funcionalidade
+// ----------------------------------------------------------
+// 001			Asociar Formato Tira
+// 002			ATM
+// 003			Login
+
+// ----------------------------------------------------------
+//GENÉRICAS
+// ----------------------------------------------------------
+Gen_msg_atributo_vacio				= 输入参数{0}必须予以通报。 
+Gen_msg_atributo_vacio_posicion		= 输入参数的位置{0} {1}必须被告知。 
+Gen_msg_atributo_no_valido			= 输入参数{0}是不是一个有效的值。 
+Gen_msg_Peticion_vacio				= 没有数据被发送到服务的。 
+Gen_msg_registro_movimiento_en_proceso = 登记处理。稍等片刻，然后再试一次。 
+
+// ----------------------------------------------------------
+// 001 - Asociar Formato Tira
+// ----------------------------------------------------------
+001_atr_codmodelocajero				= 标准守则Cajero的 
+001_atr_codred					= “红色代码” 
+001_atr_oidformatotira				= OID格式地带 
+
+// ----------------------------------------------------------
+// 002 - ATM
+// ----------------------------------------------------------
+002_atr_atm					= 自动取款机 
+
+// ----------------------------------------------------------
+// 003 - Login
+// ----------------------------------------------------------
+003_atr_login					= 注册 
+003_atr_password				= 密码 
+003_atr_puesto					= Puesto 
+003_atr_codigodelegacion			= 代码Delegacion 
+003_atr_codigosector				= 代码行业类别 
+003_atr_codigoaplicacion			= 应用程序代码
+
+// ----------------------------------------------------------
+// 004 - Formato Tira
+// ----------------------------------------------------------
+004_atr_oidFormatoTira				= 标识符格式地带 
+004_atr_Area					= 区域 
+004_atr_codigoTipoArea				= 区号类型 
+004_atr_ordenArea				= 奥登区 
+004_atr_Campo					= 场 
+004_atr_CodigoTipoCampo				= 代码类型字段 
+004_atr_DescripcionCampo			= 描述字段 
+004_atr_PosicionCampo				= 场上位置 
+004_atr_NumLinea				= 数线 
+004_atr_numColumna				= 数列 
+004_atr_CantidadMaxima				= 最高金额 
+004_msg_MSG002					= 无法删除这个带钢格式，它已经在使用！ 
+004_msg_MSG003					= 您无法修改的格式条，它已经被其他用户修改！ 
+004_msg_MSG004					= 已经有条状格式设置为默认，希望继续吗？ 
+004_msg_MSG005					= 存档带格式的孔塔多拉是腐败！ 
+004_msg_MSG006					= 无格式地带到ATM！ 
+004_msg_MSG009					= 带必须有这些领域之一：（掌柜，现金/存款，卡）！ 
+004_msg_MSG010					= 网络文件带格式被破坏！ 
+
+// ----------------------------------------------------------
+// 005 - Registro de Tira
+// ----------------------------------------------------------
+005_atr_Tira					= 剥去 
+005_atr_codigoUsuario				= 用户代码 
+005_atr_TiraComponente				= 带钢组件 
+005_atr_oidMorfologiaComponente			= 形态组件标识符 
+005_atr_oidDivisa				= 货币标识符 
+005_atr_numImporteIngresado			= 输入金额 
+005_atr_nelCantidadSobre			= 信封卷 
+005_atr_Habilitacion				= 许可证 
+005_atr_oidHabilitacion				= 资质标识 
+005_atr_OidCajero				= ATM机的标识符 
+005_atr_OidMorfologia				= 标识符形态 
+005_atr_CodMorfologia				= 代码形态 
+005_atr_CodTipoMedioPago			= 代码类型付款方法 
+
+005_atr_CodCajero				= 代码墨盒 
+005_atr_CodCliente				= 客户代码 
+005_atr_DesCliente				= 客户简介 
+005_atr_CodSubcliente				= 子客户端代码 
+005_atr_DesSubcliente				= 说明子客户端 
+005_atr_CodPtoServicio				= 服务代码点 
+005_atr_DesPtoServicio				= 服务点说明 
+005_divisa_no_encontrada			= IAC形态的货币在ATM模块配置为不存在，请从IAC提供同步的货币。 
+005_modo							= El tipo de operación debe ser sólo insertar o actualizar.
+
+// ----------------------------------------------------------
+// 006 - Serviço Recibir Solicitud Carga
+// ----------------------------------------------------------
+006_msg_MSG002					= 数据客户端/子客户端/服务蓬表征的ATM！ 
+006_msg_MSG003					= 资格数据不匹配的形态力！ 
+006_atr_CodigoRemesaLegado			= CodigoRemesaLegado 
+006_atr_CodigoDelegacion			= CodigoDelegacion 
+006_atr_CodigoClienteOri			= CodigoClienteOri 
+006_atr_CodigoCliente				= 客户ID 
+006_atr_CodigoSubcliente			= CodigoSubcliente 
+006_atr_CodigoPuntoServicio			= CodigoPuntoServicio 
+006_atr_CodigoCanal				= CodigoCanal 
+006_atr_FechaServicio				= FechaServicio 
+006_atr_CodigoTipoHabilitacion			= CodigoTipoHabilitacion 
+006_atr_CodigoDenominacion			= CodigoDenominacion 
+006_atr_CodigoIsoDivisa				= CodigoIsoDivisa 
+006_atr_Unidades				= 单位 
+006_msg_TipoHabilitacion			= 类型启用输入无效 
+
+// ----------------------------------------------------------
+// 007 - Serviço Actualizar Estado Habilitacion
+// ----------------------------------------------------------
+007_atr_IdRemesaSalidas				= IdRemesaSalidas 
+007_atr_CodEstadoHabilitacion			= CodEstadoHabilitacion 
+007_atr_IdBulto					= IdBulto 
+007_atr_IdObjeto				= IdObjeto 
+007_atr_CodPrecinto				= CodPrecinto 
+007_atr_CodUsuario				= CodigoUsuario 
+007_atr_FechaActualizacion			= FechaActualizacion 
+
+// ----------------------------------------------------------
+// 008 - Recuperar Datos Tira
+// ----------------------------------------------------------
+008_atr_IdCajero											= IdCajero 
+008_atr_Precinto											= Precinto
+008_msg_Sin_Tira											= 没有带返回到ATM。 
+008_msg_Precinto_No_Encontrado				= 没有发现印章。 
+008_msg_Precinto_Tira_Diferente				= 一个或多个印章，未发现对带钢发现。 
+008_msg_Precinto_Tira_No_Disponible    = 找到的密封件之间的条带的条带，不提供自动柜员机。 
+008_msg_Precinto_Pendiente_Tira				= 待注册地带。 
+008_msg_Habilitacion_Pendiente_Tira     = 资格待登记条。 
+008_msg_Precintos_Sin_Tiras						= 密封条均未发现。 
+008_msg_Precintos_Hab_Dif						= 密封研究和未经登记条。 
+008_msg_Geral_Precinto_Hab_Dif				= 海豹被发现在研究与未经登记条。 
+008_msg_Precinto_Tira_Dif							= Precintoshabilitación/不同的需要。 
+008_msg_Geral_Precinto_Tira_Dif				= 密封件被发现在一个或多个条带。 
+0008_msg_Tira_No_Disponible					= 警察发现无法使用。 
+008_msg_tira_Corrompida						= 网络文件格式需要损坏！ 
+
+// ----------------------------------------------------------
+// 009 - Balancear Tira
+// ----------------------------------------------------------
+009_atr_IdTira					= IdTira 
+009_atr_IdRemesa				= IdRemesa 
+009_atr_CodigoUsuario				= CodigoUsuario 
+009_atr_FechaActualizacion			= FechaActualizacion 
+009_msg_Funcion					= 功能获知不对应于一个功能的一个组件自动柜员机 
+
+// ----------------------------------------------------------
+// 010 - Cruce de Informaciones Habilitación x Tira x Conteo
+// ----------------------------------------------------------
+010_msg_MSG001					= 发现不一致形态和TiraComponente之间！ 
+
+// ----------------------------------------------------------
+// ATM 001 - Servicio Recuperar Valores Ultima tira
+// ----------------------------------------------------------
+ATM_001_MSG001					= 没有纪录（s）为（）标准（S）（S）输入的搜索！ 
+ATM_001_MSG002					= O（s）参数（S）项目是（）知情（次）。 
+ATM_001_MSG003					= 字段列表“{0}”是不完整的！ 
+ATM_001_CliSubCLiPntServ		= 客户机/子客户端/服务点 
+
+//SERVIÇO VERIFICARHAYCONTEOTIRA
+ATM_002_identificador_tira_obligatorio					= El identificador de la tira és obligatorio.
+
+// ----------------------------------------------------------
+// ATM 003 - Servicio Búsqueda Tiras
+// ----------------------------------------------------------
+ATM_003_MSG001					= Al menos un rango de fechas completo debe ser seleccionado
+ATM_003_MSG002					= Debe seleccionar ATM o Cliente/Subcliente/Punto de Servicio
+ATM_003_MSG003					= El formato de la fecha no es correcto.
+ATM_003_MSG004					= No hay ningún registro seleccionado.
+ATM_003_MSG005					= Existe al menos un conteo asociado a esta tira, sólo podrá ser  modificada desde la apliación supervisor
+ATM_003_MSG006					= No se puede eliminar la tira porque hay un conteo asociado. Debe eliminar el conteo desde la aplicación Supervisor para poder eliminar la tira.
+
+// ----------------------------------------------------------
+// ATM 004 - Servicio Eliminar tira
+// ----------------------------------------------------------
+ATM_004_MSG001					= No se puede eliminar la tira porque hay un conteo asociado. Debe eliminar el conteo desde la aplicación Supervisor para poder eliminar la tira.
+
+//*************************************************************************************************************
+//	SincronizarDivisasSalidas
+//*************************************************************************************************************
+011_Divisas					= 外汇 
+011_CodIsoDivisa				= ISO货币代码 
+011_DescripcionDivisa				= 说明货币 
+011_Denominaciones				= 面值 
+011_CodDenominacion				= 代号名称 
+011_DescripcionDenominacion			= 指定说明 
+011_msg_denominacion_existe			= 代码名称已经存在另一种货币。 
+
+*******************************************************SALDOS*******************************************************
+
+//AccionGuardarDatosDocumento
+01_msg_iddocumento_invalido			= ID的文件应予以通报。 
+01_msg_idformulario_invalido			= ID的形式予以通报。 
+01_msg_iddocumento_nao_pode_ser_informafo	= 无法获知该文件的ID。 
+01_msg_iddocumentoorigem_invalido		= ID的源文件必须被告知。 
+01_msg_dados_usuario_invalido			= 没有用户数据获悉。 
+01_msg_dados_login_invalido			= 无效的登录。 
+01_msg_dados_usuario_bloqueado			= 用户锁定。 
+01_msg_dados_usuario_expirou			= 用户过期。 
+01_msg_dados_documento_agrupado			= 该文件是不能接受的，它是一个集群文件。 
+01_msg_dados_documento_estado_impreso		= 文件不能被接受，他们状态不打印。 
+01_msg_dados_documento_estado_proceso		= 文件不能被接受，你的状态不是过程。 
+01_msg_dados_documento_centro_proceso_destino	= 该文件是不能接受的，该中心的目标进程没有规定。 
+01_msg_dados_documento_documentos		= 不能接受该文件，文件通知。 
+01_msg_dados_documento_bultos			= 文件不能被接受，被告知袋子。 
+01_msg_dados_documento_detalles			= 该文件不能被接受，价值观进行了报道。 
+01_msg_dados_documento_sobres			= 文件不能被接受，被告知泛音。 
+01_msg_dados_documento_permiso			= 用户没有权限更新该文档的特点和加工中心通报。 
+01_msg_dados_documento_bulto			= 小袋的字段值不能被改变。 
+01_msg_dados_documento_campo			= 字段{0}没有被告知。 
+01_msg_dados_documento_campo_valor		= 不允许更改域{0}的价值。 
+01_msg_dados_documento_campo_extra		= 额外的字段{0}没有被告知。 
+01_msg_dados_documento_campo_extra_valor	= 不允许更改该值的额外字段{0}。 
+01_msg_dados_documento_permiso_crear_acta	= 用户没有权限创建ATA的特点和中心普罗塞索通报。 
+01_msg_dados_documento_documento_origen		= 已经创造了一个纪录普罗塞索使用源文件。 
+01_msg_dados_documento_origen			= ID的源文件必须被告知。 
+01_msg_dados_documento_idps_no_encontrado	= 国内流离失所者（{0}）{1}没有被发现。 
+01_msg_dados_documento_documentos_agrupados	= 该文件{0}不能聚集。 
+01_msg_dados_documento_saldo			= 文件没有可用余额。 
+01_msg_dados_documento_informar_bultos		= 该文件是不能接受的，没有被告知袋。 
+01_msg_dados_documento_cliente_no_encontrado	= 有没有相应的客户端在客户的结余：{0}，子客户端：{1}和{2} SERVICIO蓬。 
+01_msg_dados_documento_canal_no_encontrado	= 目前没有相应的渠道销售渠道：{0}和U频道：{1}。 
+
+//AccionIngresoRemesas
+02_msg_error_malotes_cliente_canal		= 袋托运（S），即使（S）客户端（s）和/或通道。 
+02_msg_error_serializar_remesa			= 序列化装运时出错。 
+02_msg_error_campos_extra			= Extra字段{0}，是不是有效的形式。 
+02_msg_dados_documento_moneda			= 不映射到系统管理结余的货币{0}。 
+02_msg_dados_documento_especie_default		= 货币{0}没有默认映射物种。 
+02_msg_dados_campo_fixo				= 无法创建固定字段。 
+02_msg_documento_reenvio			= 成功的航运ingressada。但有一个错误在发送到目标部门。 
+02_msg_descricao_especie			= 物种的描述不是数字。 
+02_msg_nao_encontrou_especie			= 没有找到莫内达和种名{0}。 
+02_msg_remesa_estado_invalido			= 该批货物尚未发送。他的条件是不同的，尚未了结或拒绝禁忌。 
+02_msg_dados_campo_naoinformado			= 字段{0}没有被告知。 
+02_msg_campo_delegacion				= 代表团 
+02_msg_error_malotes				= 该批货物尚未发送。他们的包装袋没有被告知正确。 
+02_msg_error_cliente_origen_nao_encontrado_automatas = 找不到客户报告的数据来源（客户代码 
+02_msg_sectororigen_vazio           = 它没有被发现的起源与国内流离失所者的任何部门 {0}.
+02_msg_sectordestino_vazio		    = 它没有被发现与国内流离失所者的任何目标行业 {0}.
+
+//Documentos
+023_msg_valida_numexterno					= 外线号码已经存在。 
+023_msg_valida_centroprocesso_selecionado	= 选择一个处理中心。 
+023_msg_valida_TipoDoc_NumExternoExistente	= 要保存文档与外部号码重复是必要的，创建这个外部号码是最后一个文档输出。 
+
+//Clientes
+03_msg_erro_cliente				= 客户端不能被保存，代码或用户端的说明没有被告知。 
+
+//GneracionF22
+04_msg_dados_usuario_naoinformado		= 没有用户数据获悉。 
+04_msg_erro_parametro_naoencontrado		= 识别码的形式在配置文件中未找到。 
+04_msg_dados_campo_naoinformado			= 字段{0}没有被告知。 
+04_msg_campo_fechaentrega			= 交货日期 
+04_msg_campo_codigocanal			= 码道 
+04_msg_campo_codigocentroproceso		= 代码加工中心 
+04_msg_campo_codigoclientemandante		= 客户端代码客户端 
+04_msg_campo_codigorecibo			= 收到守则 
+04_msg_moneda_nao_configurada		= 货币代码'{0}“没有正确映射。请检查。 
+04_msg_especie_nao_configurada		= 代号“{0}”没有正确映射。请检查。 
+04_msg_grupoiac_obligatorio			= 為了招攬輸出具有相關工作秩序要求的形式已經設置路由的條款.
+
+//Creacion Mif Intersector
+05_msg_dados_usuario_naoinformado		= 没有用户数据获悉。 
+05_msg_erro_parametro_naoencontrado		= 识别码的形式在配置文件中未找到。 
+05_msg_dados_campo_naoinformado			= 字段{0}没有被告知。 
+05_msg_campo_codigocanal			= 码频道 
+05_msg_campo_codigocliente			= 客户代码 
+05_msg_campo_codigocentroprocesoorigem		= 程序源代码中心 
+05_msg_campo_codigocentroprocesodestino		= 代码过程中心目的地 
+05_srv_requerido_coddenominacion		= 法典 
+05_srv_requerido_codisodivisa			= 代码IsoDivisa 
+05_srv_msg_divisanoencontrada			= 边界没有在数据库中找到。 
+05_srv_msg_centroprocessodestinonoencontrado	= 处理中心没有找到目的地。 
+05_srv_msg_centroprocessoorigennoencontrado	= 处理中心来源没有找到。 
+05_msg_documento_impreso			= 该文件已经印结余。 
+05_msg_documento_aceptado			= 该文件已被接受的结余。 
+05_msg_documento_rechazado			= 该文件已被拒绝的结余。 
+
+//Creacion Mif Intersector Integracion NuevoSaldos
+05_IS_msg_dados_usuario_naoinformado		= 没有用户数据获悉。
+05_IS_msg_erro_caracteristicas_formulario	= Para generar una solitación de fondo es preciso tener un formulario MIF configurado en el nuevo saldos con las siguientes caracteristicas: {0}
+05_IS_msg_dados_campo_naoinformado			= 字段{0}没有被告知。
+05_IS_msg_campo_codigosubcanal			= CodSubCanal
+05_IS_msg_campo_codigocliente			= 客户代码
+05_IS_msg_campo_sectororigem		= 源代码行业
+05_IS_msg_campo_sectordestino		= 行业代码目的地
+05_IS_srv_requerido_coddenominacion		= 法典
+05_IS_srv_requerido_codisodivisa			= 代码IsoDivisa 
+05_IS_srv_msg_divisanoencontrada			= 边界没有在数据库中找到。 
+05_IS_srv_msg_denominacionnoencontrada			= 没有找到面额恩拉基地去DATOS。
+05_IS_srv_msg_sectordestinoencontrado	= 目标行业：{0}无CodigoAjeno国内流离失所者与代码“{1}”已被发现。 {2}或{3}表“{4}”不链接到任何部门。
+05_IS_srv_msg_sectororigennoencontrado	= 业内人士：{0}无CodigoAjeno国内流离失所者与代码“{1}”已被发现。 {2}或{3}表“{4}”不链接到任何部门。
+05_IS_srv_msg_clientenoencontrado       = 客户端{0}所在。
+05_IS_srv_msg_subcanalnoencontrado       = SubCanal:{0}No fue encontrado ningún CodigoAjeno IDPS con el código {1}.
+05_IS_srv_msg_cuentaorigennogenerada       = 无法生成源帐户。
+05_IS_srv_msg_cuentadestinonogenerada       = 这是不可能的，以产生目标账户。
+05_IS_srv_msg_cuentasaldoorigennogenerada       = 这是不可能的，生成的帐户余额原点。 
+05_IS_srv_msg_cuentasaldodestinonogenerada       = 这是不可能的，生成的帐户余额目标。
+05_IS_msg_documento_impreso			= 该文件已经印结余。 
+05_IS_msg_documento_aceptado			= 该文件已被接受的结余。
+05_IS_msg_documento_rechazado			= 该文件已被拒绝的结余。 
+
+//Cambia Estado Documento Fundos
+06_msg_datos_documento				= 没有被告知的文档数据。 
+06_msg_IdentificadorDocSaldos			= 没有被告知的文件标识符。 
+06_msg_datos_Usuario				= 没有告知用户数​​据。 
+06_msg_Estado					= 没有被告知该文件的状态。 
+06_msg_usuario					= 没有告知用户。 
+06_msg_clave					= 没有被告知的密码。 
+06_msg_rechazado				= 该文件已被拒绝的结余，不能更新。 
+06_msg_aceptado					= 该文件已被接受入结余，不能更新。 
+06_msg_usuario_sin_permiso			= 用户没有权限进行操作。 
+
+//Crear Movimiento
+07_msg_dados_usuario_naoinformado		= 没有用户数据获悉。 
+07_msg_tipodocumento_invalido			= 代码的文件类型没有被发现。 
+07_msg_dados_campo_naoinformado			= 字段{0}没有被告知。 
+07_msg_campo_accion				= 阿吉拉 
+07_msg_campo_codigotipodocumento		= 文件类型代码 
+07_msg_campo_codigoplanta			= 工厂代码 
+07_msg_campo_codigocliente			= 客户代码 
+07_msg_campo_codigocanal			= 码频道 
+07_msg_campo_codigocanalorigen			= 频道源代码 
+07_msg_campo_codigocanaldestino			= 代码通道目的地 
+07_msg_campo_codigocentroprocesoorigem		= 程序源代码中心 
+07_msg_campo_codigocentroprocesodestino		= 代码过程中心目的地 
+07_msg_campo_oidtransaccion			= 事务标识符 
+07_msg_campo_desglose				= 没有数据报告，了解详情。 
+07_srv_requerido_coddenominacion		= 法典 
+07_srv_requerido_codisodivisa			= 代码IsoDivisa 
+07_srv_msg_divisanoencontrada			= 边界没有在数据库中找到。 
+07_srv_msg_centroprocessodestinonoencontrado	= 中心的目标过程中没有发现。 
+07_srv_msg_centroprocessoorigennoencontrado	= 加工中心源没有找到。 
+07_msg_documento_impreso			= 该文件已经印上结余及不能更新。 
+07_msg_documento_aceptado			= 该文件已被接受入结余，不能更新。 
+07_msg_documento_rechazado			= 该文件已被拒绝的结余，不能更新。 
+07_msg_login_invalido				= 用户名或密码无效。 
+07_msg_login_bloqueado				= 知情的用户被锁定。 
+
+//Recuperar Saldo
+08_msg_dados_usuario_naoinformado		= 拿督用户已被告知。 
+08_msg_dados_campo_naoinformado			= 字段{0}没有被告知。 
+08_msg_campo_codigoplanta				= 工厂代码 
+08_msg_campo_codigomoneda				= 货币代码 
+08_msg_dados_fecha_invalida				= 日期'初始'不能是大于数据“终结”。 
+08_msg_login_invalido					= 用户名或密码无效。 
+08_msg_login_bloqueado					= 知情的用户被锁定。 
+
+//Recuperar Transaciones
+09_msg_dados_usuario_naoinformado		= 拿督用户已被告知。 
+09_msg_dados_campo_naoinformado			= 字段{0}没有被告知。 
+09_msg_campo_codigoplanta				= 工厂代码 
+09_msg_campo_codigofechahoradesde		= 日期开始时间 
+09_msg_campo_codigofechahorahasta		= 决赛日期时间 
+09_msg_dados_fecha_invalida				= 日期'初始'不能是大于数据“终结”。 
+09_msg_login_invalido					= 用户名或密码无效。 
+09_msg_login_bloqueado					= 知情的用户被锁定。 
+
+//Recuperar Transacion Detallada
+10_msg_dados_usuario_naoinformado		= 拿督用户已被告知。 
+10_msg_dados_campo_naoinformado			= 字段{0}没有被告知。 
+10_msg_login_invalido					= 用户名或密码无效。 
+10_msg_login_bloqueado					= 知情的用户被锁定。 
+
+//Manipular Documentos
+11_msg_atributo_vacio_documento						= 输入参数{0} {1}在文件中应予以通报。 
+11_msg_atributo_vacio_documento_campoextra			= 应告知额外的字段{1} {2}的文件中输入参数{0}。 
+11_msg_atributo_vacio_documento_bulto				={2}{0}{1}中袋文件输入参数必须被告知。
+11_msg_atributo_vacio_documento_detalle				= 输入参数{0} {1}文件{2}详细必须予以通报。
+11_msg_atributo_vacio_documento_parcial				= 输入参数{0}{1}{2}的文件应予以通报。
+11_msg_regla_invalida								= 值'{0}'不是一个有效的规则。
+11_msg_documentos_vacio								= 参数文件应该被告知。
+11_msg_documentos_documento_vacio					= 您不能发布空白文档集合中的文档。
+11_msg_parametro_vacio_webconfig					= 找不到参数{0}在配置文件web.config中的服务。
+11_msg_numeroexterno_repetido_sin_salida			= 要输入一个文件，与外部号码重复是必要的，在这个外部数的最后一个文档输出。
+11_msg_numeroexterno_no_valido						= 一批{0}已订立买卖。
+11_msg_documento_impreso							= 该文件已经印上结余及不能更新。
+11_msg_documento_aceito								= 该文件已被接受入结余，不能更新。
+11_msg_documento_rechazado							= 该文件已被拒绝的结余，不能更新。
+11_msg_cliente_origen_regla_automatas				= 找不到客户端与源数据输入（客户代码
+11_msg_documento_no_existe_rechazo					= 无法拒绝的文件（IdDocumento
+11_msg_atributo_vacio_bulto							= 文件{0} {1}的袋，不能为空。
+11_msg_atributo_vacio_detalle						= 详细的文档{0} {1}不能为空。
+11_msg_atributo_vacio_parcial						= 文件{0} {1}的部分不能为空。
+11_msg_login_invalido								= 用户名或密码无效。
+11_msg_login_bloqueado								= 知情的用户被锁定。
+
+// Recuperar Remesas Por Grupo
+12_msg_dados_usuario_naoinformado					= 没有用户数据获悉。
+12_msg_dados_filtro_naoinformado					= 过滤器没有被告知。
+12_msg_dados_filtro_codigosgrupo_naoinformado		= 没有组代码输入。
+12_msg_dados_filtro_codigosgrupo_novalido			= 代码组'{0}“是无效的。
+12_msg_codigo_formulario_novalido					= 已配置的代码组'的形式代码“{0}”{1}“是无效的。
+12_msg_login_invalido								= 用户名或密码无效。
+12_msg_login_bloqueado								= 知情的用户被锁定。
+
+// Recuperar Transação não migrada
+13_msg_data_naoinformada							= 日期还没有通知。
+13_msg_busca_vazio									= 所有交易之日起进入已经被迁移。
+
+*******************************************************LISTADOS*******************************************************
+//001 - Metodo Test
+001_SemErro											= 好吧服务 
+
+//GENÉRICAS
+Gen_msg_atributo_invalido							=属性值{0}是无效的。
+
+// CONTADO POR PUESTO
+001_lbl_hora_fin									= 时间翅
+001_lbl_hora_inicio									= 开始时间
+
+//ERRO PADRÃO
+err_msg_error_05									= 访问服务器上的数据库时出错：{0} 
+err_msg_error_02									= 错误通信与目录服务器（LDAP）。 
+err_msg_error_03   									= 在访问目录服务器（LDAP）错误。用户名或密码不正确。 
+
+//GUARDAR ITEM PROCESO
+002_CodProceso										=代码普罗塞索
+002_Parametros										= 参数
+002_FechaCreacion									= 关闭创建
+002_CodigoUsuario									= 用户代码
+002_CodDelegacion									= 代码代表团
+002_CampoInvalido									= 字段的值{0}是无效的。 
+
+//RecuperarInformeResultadoContaje
+002_efectivo										= 有效 
+002_totales											= 总计 
+002_Cheque										    = 查 
+002_OtroValor									    = 其他 
+002_Ticket									        = 票 
+002_OidRemesa										= 托运识别 
+
+
+//BuscarResultadoContaje
+003_campos_obrigatorios								=选区转诊代码或代码或代码院内袋运输必须完成。
+
+//BilletajeSucursal
+004_billete_deteriorado = 坏 
+
+//DetalleParciales
+005_billete_deteriorado = 坏 
+
+//GrupoCliente
+006_msg_codigo_vazio								=的代码客户集团是强制性的。
+006_msg_desc_vazio									= 客户组的描述是强制性的。
+006_msg_cliente_vazio								= 至少有一个客户，必须在客户端组。
+006_msg_codusuario_vazio							= 用户代码没有被告知。
+006_msg_cliente_nao_encontrado						= 客户“{0}”没有被发现。
+006_msg_subcliente_nao_encontrado					= 子客户端“{0}”没有被发现。
+006_msg_ptoservicio_nao_encontrado					= 服务点“{0}”没有被发现。
+
+***************************************** MENSAGENS DA FUNCIONALIDADE DE TOKEN *******************************************************
+tkn_creartokenacceso_browseragent               = 浏览器代理
+tkn_creartokenacceso_ip                         = IP
+tkn_creartokenacceso_codaplicacion              = 应用程序代码
+tkn_creartokenacceso_permisos                   = 权限
+tkn_creartokenacceso_permisosserializados       = 系列化的权限
+tkn_creartokenacceso_oidusuario                 = OID用户
+tkn_creartokenacceso_oidaplicacao               = OID的应用
+tkn_consumirtokenacceso_browseragent            = 浏览器代理
+tkn_consumirtokenacceso_ip                      = IP
+tkn_consumirtokenacceso_token                   = 象征
+tkn_creartokenacceso_erro_serializar            = 序列化权限时出错
+tkn_creartokenacceso_erro_gerartoken            = 错误生成令牌
+tkn_consumirtokenacceso_token_invalida          = 无效的令牌
+tkn_consumirtokenacceso_token_outro_ip          = 不同于当前的IP令牌生成
+tkn_consumirtokenacceso_token_outro_browser     = 浏览器产生不同于当前令牌
+tkn_consumirtokenacceso_token_expirada          = 令牌过期
+tkn_consumirtokenacceso_sin_permisos            = 用户没有权限访问的应用程序
+tkn_tokenutil_token_invalida                    = 无效的令牌
+
+***************************************** MENSAGENS DA RECUPERALOTEIMPRESSION *******************************************************
+
+RecuperaRemessaCodDelegacion						= 代表团的代码是必需的。
+
+***************************************** MENSAGENS DO SERVIÇO GUARDARDATOSLOTEIMPRESION *******************************************************
+gdli_delegacion										= 代表团的代码是必需的。
+gdli_remesas										= 有列表remesas remesas。
+*************************************************  NUEVO SALDOS  ********************************************************
+
+0001_MSG_CAMPOS_NAO_INFORMADOS					= 必填字段没有被告知
+0001_MSG_DIVISA_NAO_ENCONTRADA  				= 货币代码“{0}”没有在数据库中找到。需要同步同步之前的支付手段的货币。
+0001_MSG_DENOMINACION_NAO_PERTENCE_DIV			= 代码名称已经存在另一种货币
+0001_MSG_CERTIFICADO_FECHA_EMITIDO				= 有一个正式证书，它关闭颁布喜欢这种坏reciente的：{0}
+0001_MSG_CERTIFICADO_FILTROS_IGUAL  			= 有证书（如有）生成（S）具有相同的过滤器组合：{0}
+
+//GENERAR CERTIFICACION
+0002_Msg_codCliente								= CodCliente
+0002_Msg_codEstado								= CodEstado
+0002_Msg_fyhCertificado							= FyhCertificado
+0002_Msg_CodDelegaciones						= CodDelegaciones
+0002_Msg_CodSectores							= CodSectores
+0002_Msg_CodSubcanales							= CodSubcanales
+0002_Msg_gmtCreacion							= GmtCreacion
+0002_Msg_desUsuarioCreacion 					= DesUsuarioCreacion
+0002_Msg_CertificadoNoGenerado					= 证书没有产生是因为没有认证，为客户余额运动！
+0002_Msg_CodigoExiste							= 该脚本代码已经存在。
+0002_Msg_CodigoCertificado						= CodCertificado
+0002_Msg_CertificadoNoEncontrado				= 没有找到任何要转换为最终的证书。
+0002_Msg_TransacionNoMigrada					= 证书不能产生，因为有交易尚未迁移。
+
+//INGRESO CONTADO
+0003_Msg_Remesa									= 托运物
+0003_Msg_IdentificadorDocumentoRemesa			= 汇款文件标识符
+0003_Msg_IdentificadorRemesa					= 汇款标识符
+0003_Msg_CodigoDelegacion						= 代码代表团
+0003_Msg_IdentificadorBulto						= 捆绑标识符
+0003_Msg_IdentificadorDocumentoBulto			= 文件捆绑标识符
+0003_Msg_Bultos									= 束
+0003_Msg_RemesaNoExiste							= 没有这批货物中有新的余额
+0003_Msg_CodigoFormularioActa					= 该纪要的形式的代码应该服务的配置文件中输入
+0003_Msg_CodigoFormularioRechazo				= 该纪要的形式的代码应该服务的配置文件中输入
+0003_Msg_FormularioNoEncontrado					= 找不到表格{0}与代码。
+0003_Msg_Acta									= 记录
+0003_Msg_Rechazo								= 拒绝
+0003_Msg_RemesaPadre							= 未找到包含外部号码{0}的父文档。
+0003_Msg_IdentificadorDocumento					= 没有填写的文件{0}袋的标识。
+003_Msg_BultoNoEncontrado						= 袋没有找到。
+003_Msg_ParametroGenerarBultoPorActa			= 该GenerarActaIndivualPorBulto参数设置不正确。
+003_Msg_formulario_acta_no_encontrado			= 未找到“会议纪要诉讼”的形式。
+003_Msg_formulario_sustituicion_no_encontrado	= O formulário de "Substiuição" não foi encontrado.
+003_Msg_formulario_Rechazo_no_encontrado	    = O formulário de "Ata de Rechazo" não foi encontrado.
+
+*************************************************** IAC *****************************************************************
+
+//DELEGACION
+035_msg_codigo_delegacion_noencontrado		= 主机链接到一个代表团。
+039_msg_DelegacionExistente					= 代表团的代码已经存在。
+046_msg_Erro_AltaDelegacion					= 错误插入代表团。错误：{0}
+047_msg_Erro_BajaDelegacion					= 错误核销代表团。错误：{0}
+048__msg_Erro_AtualizaDelegacion			= 错误重载代表团。错误：{0}
+013_msg_erro_Data							= {0}不能大于{1}。
+013_msg_erro_delegacionUtilizacao			= 这是不可能的，以降低代表团有厂（次）主动绑定（次）！
+
+//PLANTA
+053_msg_erro_PlantaExistente				= 该工厂已经存在与选定的代表团。
+053_msg_erro_Erro_PlantaUtilizada			= 这是不可能的，因为有部门（s）挂钩资产（次），以降低工厂！
+053_msg_erro_Erro_DelegacionDesativada		= 选定代表团未被激活！
+053_msg_erro_Pais_No_Encontrado             = 结果发现派斯报道！
+
+//SECTORES
+054_msg_planta_CentroProceso				= 这个行业应该属于同一母公司厂房，产业类型和状态在编辑加工中心行业！
+054_msg_erro_codigoExistente				= 业内代码已经存在。
+054_msg_erro_tipo_sector_inativo			= 机构的选择是不活跃的。
+054_msg_erro_Sector_Pai_Utilizado			= 这是不可能的降低部门，因为有（米）部门（s）子（仁）绑定（次）！
+054_msg_erro_SectorPlantaDesativada			= 选择植物未被激活！
+054_msg_erro_SectorSectorPadreDesativado	= 部门选定父未被激活！
+
+//TIPO CLIENTE
+055_msg_erro_TipoClienteUtilizado			= 这是不可能的，以降低类型的客户端，因为有（米）客户端（次）活动（次）界（）吧！
+055_msg_erro_TipoClienteExclusao			= 你不能改变客户端B型 - 银行！
+
+//MANTENIEMIENTO CLIENTE
+055_msg_mas_de_uno_defecto                  = 客户端有一个以上的平衡度标准！
+055_msg_tipo_cliente_inactivo               = 客户类型selecinado未被激活！
+055_msg_codigo_obrigatorio					= 客户端代码是强制性的。
+055_msg_descricao_obrigatorio               = 客户的描述是必需的。
+055_msg_cliente_totalizador                 = 你不能改变客户，因为客户端的累计结余结余共计另一个客户端！
+055_msg_erro_Insereregistro                 = 错误插入客户端！
+055_msg_erro_Atualizaregistro			    = 错误删除客户端！
+055_msg_erro_BajaRegistro				    = 错误更新客户端！
+055_msg_erro_Cliente_ya_existe              = すでにクライアントは、説明に存在する
+055_msg_erro_cliente_codigo					= 子客户端已经存在的代码{0}客户端{0}！
+
+//TIPO PUNTO SERVICIO
+056_msg_erro_ExclusaoPuntoServicio			= 您不能修改服务种类的B点 - 银行！
+056_msg_erro_TipoPuntoServUtili				= 降低点的服务类型，因为那里是（米）点（次），服务（S）活动（）绑定（次）这是不可能的！
+056_msg_tipoPuntoServicioProcedencia		= 降低点的服务类型是不可能的，因为那里是（米）的由来（次）绑定（次）！
+
+//MANTENIEMIENTO PUNTO SERVICIO
+056_msg_mas_de_uno_defecto                  = 服务标准的平衡点有一个以上的水平！
+056_msg_tipo_cliente_inactivo               = 该的服务点selecinado不活跃！
+056_msg_codigo_obrigatorio					= 所需的服务代码点。
+056_msg_descricao_obrigatorio               = 服务点的描述是必需的。
+056_msg_punto_servicio_totalizador          = 您不能更改服务点，服务点总计结余累加器结余，因为从另一个角度服务！
+056_msg_subcliente_naoencontrado            = 输入的子客户端未找到！
+056_msg_cliente_naoencontrado               = 输入客户端未找到！
+056_msg_erro_Insereregistro                 = 错误插入服务点！
+056_msg_erro_Atualizaregistro			    = 错误更新服务点！
+056_msg_erro_BajaRegistro			        = 错误删除服务点！
+056_msg_erro_Subcliente						= 选定的子客户端未被激活！
+056_msg_tipoPuntoServicio_naoencontrado		= サービス選択のポイントのタイプが見つかりませんでした！
+056_msg_tipoPuntoServicio_noactivo		    = El tipo del punto de servicio no est activo!
+056_msg_erro_puntoservicio_codigo			= 由于服务点代码存在{0}客户端{1}和{2}子客户端！
+
+//TIPO SUB CLIENTE
+056_msg_erro_ExclusaoTipoSubC				= 这是不可能降低的客户端类型，因为那里是（米）子客户端活跃（次）绑定（次）！
+056_msg_erro_TipoSubCUtilizado				= 您不能修改的类型的子客户端B - 银行！
+056_msg_erro_TipoSubClienteProcedencia		= 这是不可能的，以降低类型的子客户端，因为有（米）的由来（）界（）！
+056_msg_erro_punto_servicio_cliente_ativo	= 选定的客户端未被激活！
+056_msg_erro_punto_servicio_sub_cliente_ativo = 选定的子客户端未被激活！
+
+//MANTENIEMIENTO SUB CLIENTE
+057_msg_mas_de_uno_defecto                  = 子客户端有多个级别的标准平衡！
+057_msg_tipo_cliente_inactivo               = 该子客户端selecinado，未被激活！
+057_msg_codigo_obrigatorio					= 代码所需的子客户端。
+057_msg_descricao_obrigatorio               = 子客户端的描述中是必需的。
+057_msg_subcliente_totalizador              = 你不能改变的子客户端为不累计结余，因为其他子客户端的客户端总数结余！
+057_msg_cliente_naoencontrado               = 输入客户端未找到！
+057_msg_erro_Insereregistro                 = 错误插入子客户端！
+057_msg_erro_Atualizaregistro			    = 子客户端更新时发生错误！
+057_msg_erro_BajaRegistro				    = 错误删除子客户端！
+057_msg_erro_cliente						= 选定的客户端未被激活！
+057_msg_tipoSubCliente_naoencontrado        = サブクライアント選択したタイプが見つかりませんでした！
+057_msg_tipoSubCliente_naoativo		        =サブクライアントタイプがアクティブではありません！
+057_msg_erro_subcliente_codigo				= 子客户端已经存在的代码{0}客户端{1}！
+
+//DIRECCION
+057_msg_erro_OidDireccion					= 要执行的低地址，{0}必须被告知！
+
+//TIPO PROCEDÊNCIA
+058_msg_tipo_Exclusao_procedencia			= 无法键入出身低，因为有（米）的由来（）界（）！
+
+//TIPO SECTOR		
+059_msg_erro_tipoSectorUtilizadoSector		= 这是不可能的，以降低型部门，因为有（米）部门（s）活动（）界（）！
+
+//ENTIDADES 
+060_msg_nome_entidadeCliente				= 顾客 
+060_msg_nome_entidadeSubcliente				= 子客户端 
+060_msg_nome_entidadePuntoServicio			= 服务点 
+060_msg_nome_entidadePlanta					= 厂 
+060_msg_nome_entidadeCanal					= 渠道 
+060_msg_nome_entidadeSubcanal				= 子信道 
+060_msg_nome_entidadeTipoSector				=  
+060_msg_nome_entidadeSector					= 扇形 
+060_msg_nome_entidadeGrupoCliente			=客户集团
+
+//PROCEDENCIAS								
+061_msg_erro_Procedencia					=通知类型和类型点服务已经有一个客户端出处！
+
+// CONFIGURAÇÃO GERAL DE RELATÓRIO
+062_msg_configuracionGeneralDuplicado       = 重复的记录。这份报告已经被配置为这种格式。
+062_msg_configuracionGeneral_em_uso			= 一般配置"{0}"，因为它已经被使用在配置exluída。
+
+// CONFIGURAÇÕES RELATÓRIO
+063_msg_configuracionDuplicado				= 重复的记录。已经有这个描述的配置。
+
+//COMON
+
+064_msg_identificador_obrigatorio = 标识符{0}是强制性的
+064_msg_aplicacion_inexistente    = 应用程序不存在
+064_msg_lista_tipo_sin_valor_padron	= No fue posible encontrar en la base de datos un valor padrón (valor 'No Definido' en la tabla 'GEPR_TLISTA_VALOR') para la lista de tipo '{0}' (tabla 'GEPR_TLISTA_TIPO').
+
+// Generacion F22
+080_msg_codigo_formulario_no_valido								= 表单代码"{0}"设置成“GENERACION F22'是无效的。
+080_msg_valor_invalido_atributo									= 值"{0}"的属性"{1}"无效。
+080_msg_parametro_iac_CrearConfiguiracionNivelSaldo_invalido	= 国际综艺合家欢"CrearConfiguiracionNivelSaldo"的参数不为应用程序"{0}"和委托"{1}"配置正确。
+080_msg_codigo_subcanal_no_valido								= El parámetro del IAC 'CodigoSubCanalDefecto' no está configurado correctamente para la aplicación '{0}' y delegación '{1}'.
+
+// Actualizar Saldos Puesto
+081_no_hay_fomulario_ajuste										= No hay un formulario configurado para ajuste de saldos positivos con integración con el Salidas.
+081_no_hay_fomulario_ajuste_negativo							= No hay un formulario configurado para ajuste de saldos negativos con integración con el Salidas.
+
+// Actualizar Precintos Salidas e Saldos
+082_hay_bultos_sin_precintos									= Hay bultos sin precintos.
+082_bulto_relacionado_salidas_recorrido							= El bulto de precinto {0} esta relacionado con el documento de Salidas a Recorrido de codigo externo {1} y comprobante {2}.
+082_puesto_logrado_dicferente_del_bulto							= El puesto logrado no es del mismo sector padre del bulto.
+
+//ALGORITMO VALIDACION 2º Bloco – Código Barras Carrefour
+083_msg_erro_prefixCodBarras = El parámetro PrefixoCodigoBarrasCarrefour es obligatorio.
+083_msg_erro_pdv = El numero PDV no está correcto.
+083_msg_erro_drt = El numero DRT no está correcto.
+083_msg_erro_dv = El numero DV no está correcto.
+083_msg_erro_invalido = Código inválido!
+
+//Buscar Archivo
+081_msg_fecha_creacion_archivo_desde				= Fecha de creación del archivo obligatorio.
+
+//Maestro Formulario
+msg_formulario_vazio								= El objeto formulario está vacío.
+msg_codigo_formulario_obrigatorio					= El código del formulário es obligatorio.
+msg_formulario_no_encuentrado						= El formulario '{0}' no fue encontrado.
+msg_formulario_acta_no_encontrado					= El formulario de "Acta de Proceso" no fue encontrado.
+msg_caracteristicas_ingreso_remesa_invalidas		= El formulário no posee las características de Ingreso de Remesa.
+msg_caracteristicas_salida_remesa_invalidas			= El formulário no posee las características de Salida de Remesa.
+msg_formulario_noactivo								= El formulario no esta activo y por esto no se puede crear o movimentar documentos.
+
+//Cuentas
+msg_cliente_vazio									= El código Cliente {0} no fue encontrado en el IAC.
+msg_subcliente_vazio								= El SubCliente de código {0} no fue encontrado en el IAC.
+msg_ptoServicio_vazio								= El Punto Servicio de código {0} no fue encontrado en el IAC.
+msg_canal_vazio										= El Canal del código {0} no fue encontrado en el IAC.
+msg_subcanal_vazio									= El Sub Canal de código {0} no fue encontrado en el IAC.
+msg_sector_vazio									= El Sector del código {0} no fue encontrado en el IAC.
+msg_delegacion_vazio								= La Delegación del código {0} no fue encontrado en el IAC.
+msg_planta_vazio									= La Planta del código {0} no fue encontrado en el IAC.
+msg_codigo_cliente_vazio							= El código del Cliente no fue informado.
+msg_codigo_canal_vazio								= El código del Canal no fue informado.
+msg_codigo_subcanal_vazio							= El código del SubCanal no fue informado.
+msg_codigo_sector_vazio								= El código del Sector no fue informado.
+msg_codigo_ajeno									= Utilizando código ajeno {0}.
+msg_relacion_cliente_subcliente_puntoservicio_invalida = La relación entre los datos de Cliente, SubCliente y Punto de Servicio no es valido para la creación de una Cuenta.
+msg_relacion_canal_subcanal_invalida				   = La relación entre los datos de Canal, SubCanal no es valido para la creación de una Cuenta.
+msg_relacion_delegacion_planta_sector_invalida		   = La relación entre los datos de Delegacion, Planta e Sector no es valido para la creación de una Cuenta.
+msg_obtener_cuenta_movimiento_tipo_cuenta_invalido = La cuenta relacionada al identificador '{0}' es exclusiva para llevar 'Saldos' y no puede ser utilizada para generar 'Movimientos'. Caso sea necesário utilizárla para 'Movimientos', su tipo deberá ser actualizado.
+msg_obtener_cuenta_saldo_tipo_cuenta_invalido = La cuenta relacionada al identificador '{0}' es exclusiva para llevar 'Movimientos' y no puede ser utilizada para generar 'Saldos'. Caso sea necesário utilizárla para 'Saldos', su tipo deberá ser actualizado.
+
+//Maestro Documento
+028_msg_identificador_documento_obrigatorio		= Identificador del Documento es obligatorio.
+028_msg_estado_documento_gravar					= El estado del documento debe ser Nuevo o EnProceso.
+028_msg_estado_documento_padre					= El Estado Documento debe ser Aceptado.
+028_msg_cuenta_origen_obrigatorio				= El campo Cuenta Origen es obligatorio.
+028_msg_cuenta_destino_obrigatorio				= El campo Cuenta Destino es obligatorio.
+028_msg_estado_documento_vazio					= El estado del documento está vacío.
+028_msg_usuario_modificacion_vazio				= El usuario de la modificacion está vacío.
+028_msg_caracteristica_invalida                 = El formulario no tiene la caracteristica requerida.
+028_remesa_vazio								= Objeto Remesa está vacío.
+028_remesa_obrigatorio							= Remesa es obligatorio.
+028_divisa_obrigatorio							= Devisa es obligatorio.
+028_unidade_medida_obrigatorio					= Unidad medida es obligatorio.
+028_remesa										= Remesa
+028_bulto										= Objeto
+028_parcial										= Parcial
+028_contenedor									= Contenedor
+028_valor_termino_obrigatorio					= El valor para termino es obligatorio '{0}'.
+028_valor_termino_valor_invalido				= 这个词是无效值“{0}”。
+028_campo_obrigatorio							= El campo {0} es obligatorio.
+028_documento									= Documento
+028_grupo_documento								= Grupo de los Documentos.
+028_medio_pago                                  = Medios de pago.
+028_bulto_obrigatorio							= La remesa debe poseer por lo menos uno objeto.
+028_bulto_vazio                                 = Objeto está vacío.
+028_cuenta_obrigatorio							= El campo Cuenta es obligatorio.
+028_denominacion_obrigatoria					= El campo Denominación es obligatorio.
+028_denomincion_ou_total_divisa_obrigatorio		= Denominación o Devisa es obligatorio.
+028_documento_obrigatorio						= El campo documento es obligatorio.
+028_documento_vazio								= Objeto documento está vacío.
+028_estado_documento_invalido_para_transicion   = Estado del documento no válido para esta transición.
+028_estado_obrigatorio                          = El campo Estado es obligatorio.
+028_cuenta_destino_obrigatorio					= El campo Cuenta Destino es obligatorio.
+028_cuenta_origen_obrigatorio                   = El campo Cuenta Origen es obligatorio.
+028_esta_certificado                            = El Documento está Certificado
+028_estado_documento_gravar                     = El estado del documento debe ser Nuevo o EnProceso.
+028_estado_documento_padre                      = El estado del documento debe ser Aceptado.
+028_formulario_obrigatorio                      = El campo Formulario es obligatorio.
+028_identificador_documento_obrigatorio         = El campo Identificador del Documento es obligatorio.
+028_setor_origem_obrigatorio                    = El campo Sector de Origen es obligatorio.
+028_tipo_documento_obrigatorio                  = El campo Tipo Documento es obligatorio.
+028_parcial_obrigatorio                         = El campo Parcial es obligatorio.
+028_parcial_vazio                               = Objeto Parcial está vacío.
+028_precinto_obrigatorio                        = El campo precinto es obligatorio.
+028_sector_obrigatorio                          = El campo Sector es obligatorio.
+028_terminoIAC_obrigatorio                      = El campo Termino IAC es obligatorio.
+028_tipo_valor_efectivo                         = El campo Tipo Valor Efectivo debe ser declarado.
+028_tipo_valor_medio_pago                       = El campo Tipo Valor Medio de pago debe ser declarado.
+028_usuario_creacion_obrigatorio                = El campo usuario creación es obligatorio.
+028_usuario_modification_obrigatorio            = El campo usuario de la modificacion es obligatorio.
+028_codigo_atm_invalido							= Codigo ATM invalido
+028_codigo_externo_obrigatorio					= El campo codigo externo es obligatorio.
+028_codigo_externo_alterado						= El campo codigo externo no puede ser cambiado.
+028_estado_documento_padre_invalido             = El estado del documento padre debe ser Anulado,Rechazado o Sustituido.
+028_cuenta_saldo_destino_obrigatorio            = El campo Cuenta saldo destino es obligatorio. Compruebe que el cliente tiene Cuenta saldo destino.
+028_cuenta_saldo_origen_obrigatorio             = El campo Cuenta saldo origem es obligatorio. Compruebe que el cliente tiene Cuenta saldo origem.
+028_Transicion_Invalida							= El Estado del documento no válido para esta transición. Estado corriente:{0}, nuevo estado:{1}.
+028_remesa_con_tipo_servicios_diferentes		= La remesa {0} tiene bultos con tipos servicios diferentes.
+028_msg_identificador_setor_obrigatorio		    = El identificador del sector es obligatorio.
+028_msg_identificador_formulario_obrigatorio    = El identificador del formulario es obligatorio.
+028_msg_fechayhoraplancertificacion_invalida	= No es posible {0} el documento con la fecha y hora planificación: '{1}'. Dicho período ya fue certificado. Consultarlo con el código: {2}
+028_txt_grabar									= grabar
+028_txt_aceptar									= aceptar
+028_txt_rechazar								= rechazar
+028_txt_sustituir								= sustituir
+028_formulario_inativo							= No es posible grabar el documento pues el formulario solicitado no esta activo.
+028_formulario_de_reenvio_automatico_nao_cadastrado = No es posible grabar el documento pues el formulario solicitado de derivación automática no esta cadastrado.
+028_sector_origem_nao_configurado				= No es posible crear el documento pues el Sector de Origen no esta configurado para utilizar este formulario.
+028_sector_destino_nao_configurado				= No es posible crear el documento pues el Sector de Destino no esta configurado para recibir documentos creados desde este formulario.
+028_estado_remesa_invalido_conteo				= El estado corriente de la remesa en el conteo no es valido para aceptar lo documento. Estado remesa conteo:{0}. Estado remesa Saldos:{1}.
+028_estado_bulto_invalido_conteo				= El estado corriente del malote en el conteo no es valido para aceptar lo documento. Estado malote conteo:{0}. Estado malote Saldos:{1}.
+028_estado_bulto_invalido_saldos				= El estado del malote en el saldos no es valido para ser sustituido.
+028_estado_documento_elemento_invalido_bulto	= El estado el documento elemento malote no es valido. Este malote esta en transicion no documento:{0}.
+028_remesa_vinculado_outro_documento			= Este remesa esta vinculada a outro documento.(identificador:{0})
+028_bulto_vinculado_outro_documento				= Este malote esta vinculado a outro documento.(identificador:{0})
+028_fecha_hora_gestion_obrigatorio              = El campo fecha/hora gestión es obligatorio.
+028_fecha_hora_gestion                          = Fecha/hora gestión
+028_documento_com_transaccion_certificado       = El documento tiene transacciones en un certificado definitivo.
+028_setor_diferente_padre						= El sector de origem no do documento esta diferente no elemento padre.
+028_remesa_em_uso_conteo						= Esta remesa se encuentra en uso en el Conteo.
+028_documento_invalido_para_transicion			= El Documento padre (identificador:{0}) no tine uno documento sustituto vinculado.
+028_estado_remesa_invalida						= El estado da remesa no es valido para a sustituicion.
+028_estado_bulto_obrigatorio					= El estado del malote es obligatorio.
+028_remesa_com_mais_de_um_bulto					= Sustitucion por gestión de malote, sólo permite la sustitución de un malote por vez.
+028_msg_el_movimiento_produce_saldo_negativo	= El movimento produce un saldo negativo y el formulário no esta configurado para permitir llegar a un saldo negativo.
+028_msg_formulario_no_cargado_correctamente		= El formulario relacionado al documento, no fue cargado correctamente (no se puede mirar las caracteríticas vinculadas).
+028_no_hay_valores_divisas						= No hay ningún valor para las divisas informadas.
+028_msg_documento_padre_no_cargado_correctamente = El documento padre relacionado al documento, no fue cargado correctamente.
+028_msg_documento_padre_no_encontrado			= El documento padre '{0}' no fue encontrado.
+028_msg_cuenta_origen_no_encontrada				= La cuenta de origen, no fue encontrada.
+028_msg_cuenta_destino_no_encontrada			= La cuenta de destino, no fue encontrada.
+028_msg_documento_sustituto_no_cargado_correctamente = El documento sustituto relacionado al documento, no fue cargado correctamente.
+028_msg_estado_documento_sustituto_invalido     = El estado del documento sustituto debe ser Aceptado o Rechazado.
+028_msg_documento_sustituto_no_encontrado		= El documento sustituto '{0}' no fue encontrado.
+028_msg_termino_valor_obligatorio               = El término '{0}' deberá tener un valor informado.
+028_msg_documento_no_encontrado					= El documento '{0}' no fue encontrado.
+028_msg_documento_sin_elemento					= El documento es de un tipo que trabaja con elementos pero no posue un relacionado.
+028_msg_formulario_no_trabaja_con_elementos		= El documento posue un elemento pero el formulário relacionado no trabaja con elementos.
+028_msg_documento_padre_obligatorio_sustitucion = El documento padre es obligatório en una sustitución.
+028_msg_doc_elemento_remesa_existe_en_transicion = No es posible ingresar el documento pues existe una remesa con el mismo código externo en la base de datos. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_remesa_existe_sin_baja		= No es posible ingresar el documento pues existe una remesa con el mismo código externo en la base de datos que aún no fue ejecutada la baja. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_remesa_inconsistencia_hist	= No es posible ingresar el documento pues existe una inconcistencia de histórico para una remesa con el mismo código externo - no existe un documento concluído (o en transición).
+028_msg_doc_elemento_bulto_existe_en_transicion = No es posible ingresar el documento pues existe un bulto con el mismo código precinto en la base de datos. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_bulto_existe_sin_baja		= No es posible ingresar el documento pues existe un bulto con el mismo código precinto en la base de datos que aún no fue ejecutada la baja. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_bulto_inconsistencia_hist	= No es posible ingresar el documento pues existe una inconcistencia de histórico para un bulto con el mismo código precinto - no existe un documento concluído (o en transición).
+028_divisas										= Las divisas: {0}
+028_divisa										= La divisa: {0}
+028_denominaciones								= Las denominaciones: {0}
+028_denominacion								= La denominación: {0}
+028_mediospago									= Los medios de pago: {0}
+028_mediopago									= El medio pago: {0}
+028_inactivos									= están inactivos.
+028_inactivas									= están inactivas.
+028_inactivo									= está inactivo.
+028_inactiva									= está inactiva.
+028_ValidarSalidaRecorrido						= No es permitido grabar un documento de “Salidas a Recorrido” con elementos que no fueron cuadrados.
+028_identificador_documento_nao_informado       = Identificador de Documento no informado.
+028_usuario_nao_informado                       = Usuario no informado.
+028_caracteristicas_formulario_nao_inforamado   = Caracteristica de Formulario no informado.
+028_remesas_invalidas_conteo					= Los estados de las seguintes remesas en el conteo no son validos para aceptar el documento: 
+028_remesa_invalido_conteo						= Remesa:{0}. Estado Conteo:{1}. Estado Saldos:{2}.
+028_bultos_invalidas_conteo						= Los estados de los seguintes bultos en el conteo no son validos para aceptar el documento: 
+028_bulto_invalido_conteo						= Bulto:{0}. Estado Conteo:{1}. Estado Saldos:{2}.
+028_msg_doc_elementoremesaexisteentransicion    = No es posible ingresar el documento pues existe una remesa con el mismo código externo en la base de datos. Código externo: {0}
+028_msg_doc_elementosremesasexisteentransicion  = No es posible ingresar los documentos pues existen remesas con el mismo código externo en la base de datos. Códigos externos: {0}
+028_msg_validacion_terminos						= Los terminos necesarios no fueron configurados en IAC del formulario
+028_documento_padre_nao_informado				= No fue encontrado un documento padre no sustituido.
+
+//RECUPERAR_SALDO_EXPOSTO
+NUEVO_SALDOS_029_CodigoDelegacion				= Código Delegación
+NUEVO_SALDOS_029_CodigoPlanta					= Código Planta
+NUEVO_SALDOS_029_CodigosSectores				= Código Sectores
+NUEVO_SALDOS_029_CodigoCanal					= Código Canal
+NUEVO_SALDOS_029_CodigoSubCanal					= Código SubCanal
+NUEVO_SALDOS_029_no_encontro_cliente_saldos		= No fue encontrado el cliente totalizador de saldos del cliente {0}.
+
+//COMON
+NUEVO_SALDOS_TOKEN_PETICION_OBLIGATORIA			= Petición vacía o inválida.
+NUEVO_SALDOS_TOKEN_TOKEN_INVALIDO				= El valor del Token de seguridad es inválido: '{0}'.
+
+//SERVICIO SALIRRECORRIDO
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_PETICION_OBLIGATORIA				= Petición vacía o inválida para el servicio SalirRecorrido.
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_CODIGO_RUTA_O_RECIBO_OBLIGATORIOS	= Es necesario informar el Código de la Ruta o el un Recibo de Transporte.
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_CANTIDAD_REMESAS_DIFERENTES_RUTA	= La cantidad de remesas ({0}) informada para baja es diferente de la cantidad de remesas ({1}) encontradas con los filtros: ruta '{2}', delegación '{3}', planta '{4}' y sector '{5}'.
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_CODIGO_RUTA_SIN_REMESAS			= No existen remesas para el código de ruta informado.
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_CODIGO_RECIBO_SIN_REMESA			= No existe en la base de datos una remesa para el código de recibo de transporte informado ({0}) que esté relacionada a un documento válido y los fitros: delegación '{2}', planta '{3}' y sector '{4}'.
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_CODIGO_RECIBO_SIN_REMESAS			= No existe en la base de datos una remesa para el código de recibo de transporte informado ({0}) que esté relacionada a un documento válido.
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_CANTIDAD_REMESAS_DIFERENTES		= La cantidad de remesas ({0}) informada para baja es diferente de la cantidad de remesas ({1}) encontradas para los códigos de recibos informados y los fitros: delegación '{2}', planta '{3}' y sector '{4}'.
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_REMESA_BULTOS_ESTADOS_INVALIDOS	= La remesa ({0}) no puede ser bajada pues existe bultos con estados distintos de cerrado.
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_REMESA_ERROR_DOCUMENTO				= La remesa ({0}) no puede ser bajada pues hubo un error al crear el documento: {1}
+NUEVO_SALDOS_SERVICIO_SALIRRECORRIDO_DATOS_ORIGEN_OBLIGATORIOS			= Los datos de Origen son inválidos o no fueron informados.
+
+//SERVICIO REENVIO
+NUEVO_SALDOS_SERVICIO_REENVIO_PETICION_OBLIGATORIA						= Petición inválida o no informada para ejecución del servicio de Reenvío.
+NUEVO_SALDOS_SERVICIO_REENVIO_DATOS_ORIGEN_DESTINO_OBLIGATORIOS			= Los datos de Origen o Destino no fueron informados para la ejecución del servicio de Reenvío.
+NUEVO_SALDOS_SERVICIO_REENVIO_DATOS_ORIGEN_DESTINO_IGUALES				= Los datos de Origen o Destino son iguales y por esto no se puede ejecutar el servicio de Reenvío.
+NUEVO_SALDOS_SERVICIO_REENVIO_DATOS_ORIGEN_DESTINO_INCOMPATIBLES		= Los datos de Origen o Destino son incompatibles para un reenvío. O si reenvia cambiando la delegación / planta, o si reenvia cambiando el sector - los dos al mismo tiempo no es permitido.
+NUEVO_SALDOS_SERVICIO_REENVIO_DATOS_ELEMENTOS_DOCUMENTOS_OBLIGATORIOS	= Para ejecutar el servicio de Reenvío deberán ser informados por lo menos un Elemento o un Documento.
+NUEVO_SALDOS_SERVICIO_REENVIO_REMESA_NO_ENCONTRADA						= No existe en la base de datos una remesa para el código externo informado ({0}) y los fitros: delegación '{1}', planta '{2}' y sector '{3}'.
+NUEVO_SALDOS_SERVICIO_REENVIO_ELEMENTO_REMESA_O_BULTO					= El elemento utilizado en el servicio de Reenvío no es de los dos tipos soportados: Remesa y Bulto.
+NUEVO_SALDOS_SERVICIO_REENVIO_CANTIDAD_ELEMENTOS_DIFERENTES				= La cantidad de elementos ({0}) informada para reenvío es diferente de la cantidad de elementos ({1}) encontrados.
+NUEVO_SALDOS_SERVICIO_REENVIO_ERROR_CREACION_DOCUMENTO					= No se pudo crear el documento de reenvío: {0}
+
+//SERVICIO CREARDOCUMENTO
+NUEVO_SALDOS_SERVICIO_CREARDOCUMENTO_PETICION_OBLIGATORIA		= Petición inválida o no informada para ejecución del servicio de CrearDocumento.
+NUEVO_SALDOS_SERVICIO_CREARDOCUMENTO_PARAMETROS_NO_INFORMADOS		= Es necesario informar por lo menos un de los parámetros 'IdentificadorFormulario', 'CodigoFormulario' o 'CaracteristicasFormulario' para ejecutar el servicio de CrearDocumento.
+NUEVO_SALDOS_SERVICIO_CREARDOCUMENTO_FORM_NO_ENCONTRADO_IDENTIFICADOR	= No fue posible encontrar un formulario con el identificador '{0}' en la ejecución del servicio de CrearDocumento.
+NUEVO_SALDOS_SERVICIO_CREARDOCUMENTO_FORM_NO_ENCONTRADO_CODIGO		= No fue posible encontrar un formulario con el codigo '{0}' en la ejecución del servicio de CrearDocumento.
+NUEVO_SALDOS_SERVICIO_CREARDOCUMENTO_FORM_NO_ENCONTRADO_CARACTERISTICAS	= No fue posible encontrar un formulario con las caracteristicas '{0}' en la ejecución del servicio de CrearDocumento.
+NUEVO_SALDOS_SERVICIO_CREARDOCUMENTO_FORM_MUCHOS_ENCONTRADOS		= Fueron encontrados más de un formulario con las caracteristicas '{0}' en la ejecución del servicio de CrearDocumento. Es necesario informar más caracteristicas para filtrar el resultado (regresar solamente uno).
+NUEVO_SALDOS_SERVICIO_CREARDOCUMENTO_FORM_NO_RECUPERADO_CARACTERISTICAS	= No fue posible recuperar el formulario de identificador '{0}' con las caracteristicas '{1}' en la ejecución del servicio de CrearDocumento.
+
+//SERVICIO RECUPERARCUENTA
+NUEVO_SALDOS_SERVICIO_RECUPERARCUENTA_PETICION_OBLIGATORIA = Petición inválida o no informada para ejecución del servicio de RecuperarCuenta.
+NUEVO_SALDOS_SERVICIO_RECUPERARCUENTA_PARAMETROS_OBLIGATORIOS = Para ejecutar el servicio de RecuperarCuenta es necesario informar uno de los dos parámetros: 'PorIdentificadorCuentaMovimiento' o 'PorFiltroParametros'.
+NUEVO_SALDOS_SERVICIO_RECUPERARCUENTA_PARAMETRO_NO_INFORMADO = El parámetro '{0}' es obligatório al intentar recuperar una cuenta por parámetros en la ejecución del servicio de RecuperarCuenta.
+NUEVO_SALDOS_SERVICIO_RECUPERARCUENTA_PARAMETRO_NO_ENCONTRADO = No fue posible encontrar el '{0}' con el {1} '{2}' en el servicio de RecuperarCuenta.
+NUEVO_SALDOS_SERVICIO_RECUPERARCUENTA_CUENTA_NO_ENCONTRADA = No fue encontrada ninguna cuenta por el servicio de RecuperarCuenta con los parámetros informados.
+
+*******************************************************NUEVO SALIDAS*******************************************************
+//RECUPERAR DATOS GENERALES REMESA
+00001_msg_Delegacion = Es obligatorio informar la delegación.
+00001_msg_Usuario = Es obligatorio informar el usuario.
+
+NUEVO_SALIDAS_002_msg_id_no_encontrado			= El identificador del 'Bulto' '{0}' no fue encontrado en la base de datos.
+NUEVO_SALIDAS_002_msg_precinto_invalido			= El precinto '{0}' informado en el 'Bulto' con identificador '{1}' ya fue utilizado por el 'Bulto' de identificador '{2}'.
+
+//INICIAR REMESA
+NUEVO_SALIDAS_INICIAR_REMESA_CAMPOS_OBRIGATORIO			= El campos remesa, fecha/hora actualizacion, puesto e usuario son obligatorios.
+NUEVO_SALIDAS_INICIAR_REMESA_REMESA_OBRIGATORIO			= El campo identificador de la remesa es obligatorio.
+NUEVO_SALIDAS_INICIAR_REMESA_POSTO_OBRIGATORIO			= El campo codigo del Puesto es obligatorio.
+NUEVO_SALIDAS_INICIAR_REMESA_USUARIO_OBRIGATORIO		= El campo codigo del Usuario es obligatorio.
+NUEVO_SALIDAS_INICIAR_REMESA_ATUALIZACAO_OBRIGATORIO	= El campo fecha/hora actualizacion es obligatorio.
+NUEVO_SALIDAS_INICIAR_REMESA_REMESA_NAO_EXISTE			= La remesa del identificador({0}) no estas cadastrada.
+NUEVO_SALIDAS_INICIAR_REMESA_REMESA_ANULADA				= La remesa no podrá ser puesta en curso ya que se encuentra anulada.
+NUEVO_SALIDAS_INICIAR_REMESA_REMESA_ATAULIZADA			= La remesa no podrá puesta en curso ya que ha sido modificada.
+NUEVO_SALIDAS_INICIAR_REMESA_ESTADO_NAO_PERMITIDO		= La remesa no podrá ser puesta en curso pues su estado actual({0}) no permite.
+
+//VOLVER_REMESA
+NUEVO_SALIDAS_VOLVER_REMESA_CAMPOS_OBRIGATORIO			= El campos remesa, fecha/hora actualizacion, puesto e usuario son obligatorios.
+NUEVO_SALIDAS_VOLVER_REMESA_REMESA_NAO_EXISTE			= La remesa del identificador({0}) no estas cadastrada.
+NUEVO_SALIDAS_VOLVER_REMESA_REMESA_ANULADA				= La remesa no podrá volver al estado Asignda ya se encuentra anulada.
+NUEVO_SALIDAS_VOLVER_REMESA_REMESA_ATAULIZADA			= La remesa no podrá volver al estado Asignada porque já foi modificada.
+NUEVO_SALIDAS_VOLVER_REMESA_ESTADO_NAO_PERMITIDO		= La remesa no podrá volver al estado Asignada, pues su estado actual({0}) no permite.
+NUEVO_SALIDAS_VOLVER_REMESA_ESTADO_BULTO_INVALIDO		= La remesa no podrá volver al estado Asignada, ya que existen bultos en curso y/o cerrados.
+
+//INICIAR_BULTO
+NUEVO_SALIDAS_INICIAR_BULTO_CAMPOS_OBRIGATORIO			= El campos identificador bulto, puesto e usuario son obligatorios.
+NUEVO_SALIDAS_INICIAR_BULTO_BULTO_NAO_EXISTE			= El bulto de identificador({0}) no esta cadastrado.
+NUEVO_SALIDAS_INICIAR_BULTO_REMESA_ANULADA				= El bulto podrá volver al estado em Curso ya que la remesa a la cual pertenece se encuentra anulada.
+NUEVO_SALIDAS_INICIAR_BULTO_BULTO_OBRIGATORIO			= El campo identificador do Bulto es obligatorio.
+NUEVO_SALIDAS_INICIAR_BULTO_POSTO_OBRIGATORIO			= El campo codigo del Puesto es obligatorio.
+NUEVO_SALIDAS_INICIAR_BULTO_USUARIO_OBRIGATORIO			= El campo codigo del Usuario es obligatorio.
+NUEVO_SALIDAS_INICIAR_BULTO_BULTO_ATAULIZADO			= El bulto no podrá puesta en curso ya que ha sido modificado.
+
+//VOLVER_BULTO
+NUEVO_SALIDAS_VOLVER_BULTO_CAMPOS_OBRIGATORIO			= Os campos identificador bulto, posto e usuario são obrigatórios.
+NUEVO_SALIDAS_VOLVER_BULTO_BULTO_NAO_EXISTE				= El bulto de identificador({0}) no esta cadastrado.
+NUEVO_SALIDAS_VOLVER_BULTO_REMESA_ANULADA				= El bulto podrá volver al estado Asignado ya que la remesa a la cual pertenece se encuentra anulada.
+NUEVO_SALIDAS_VOLVER_BULTO_ESTADO_NAO_PERMITIDO			= El bulto no podrá volver al estado Asignada, pues su estado actual({0}) no permite.
+NUEVO_SALIDAS_VOLVER_BULTO_BULTO_OBRIGATORIO			= El campo identificador do Bulto es obligatorio.
+NUEVO_SALIDAS_VOLVER_BULTO_POSTO_OBRIGATORIO			= El campo codigo del Puesto es obligatorio.
+NUEVO_SALIDAS_VOLVER_BULTO_USUARIO_OBRIGATORIO			= El campo codigo del Usuario es obligatorio.
+
+//VALIDACION SALDO
+NUEVO_SALIDAS_VALIDACIONSALDO_PUESTOSINSALDO			= No hay saldo en el puesto de trabajo.
+NUEVO_SALIDAS_VALIDACIONSALDO_PUESTOSINSALDO_DETALLE	= No hay saldo en el puesto de trabajo para la denominación {0}
+
+// CERRAR REMESA // CERRAR BULTO
+NUEVO_SALIDAS_CERRARREMESA_CAMPOS_OBLIGATORIO					= Los campos de la remesa, Identificador, Fecha e Usuario de modificación son obligatorios.
+NUEVO_SALIDAS_CERRARBULTO_CAMPOS_OBLIGATORIO					= Los campos del bulto, Identificador, Precinto, Fecha y Usuario de modificación son obligatorios.
+NUEVO_SALIDAS_CERRARREMESA_REMESA_SIN_BULTO						= La remesa debe poser un bulto.
+NUEVO_SALIDAS_CERRARREMESA_BULTO_SIN_PRECINTO					= El bulto debe poser un precinto.
+NUEVO_SALIDAS_CERRARREMESA_PRECINTOSDUPLICADOS					= Los precintos de abajo están duplicados: {0}
+NUEVO_SALIDAS_CERRARREMESA_INTEGRACIONSOL						= No fue posible hacer la integración con SOL: '{0}'
+NUEVO_SALIDAS_CERRARREMESA_SALDODISTINTO						= No es posible cerrar la remesa porque la misma tiene un montante distinto del montante total existente en el puesto.
+NUEVO_SALIDAS_CERRARREMESA_CODIGOSBOLSADUPLICADOS				= Los codigos bolsa abajo estan duplicados: {0}
+
+NUEVO_SALIDAS_CERRARBULTO_PRECINTODUPLICADO						= El precinto {0} ya está registrado.
+NUEVO_SALIDAS_CERRARREMESABULTO_REMESA							= Remesa
+NUEVO_SALIDAS_CERRARREMESABULTO_BULTO							= Bulto
+NUEVO_SALIDAS_CERRARREMESABULTO_USUARIOMODIFICACION_REMESA		= Usuario de Modificación de la remesa
+NUEVO_SALIDAS_CERRARREMESABULTO_FECHAHORAMODIFICACION_REMESA	= Fecha y Hora de Modificación de la remesa
+NUEVO_SALIDAS_CERRARREMESABULTO_USUARIOMODIFICACION_BULTO	    = Usuario de Modificación del bulto
+NUEVO_SALIDAS_CERRARREMESABULTO_FECHAHORAMODIFICACION_BULTO	    = Fecha y Hora de Modificación del bulto
+
+NUEVO_SALIDAS_CERRARBULTO_SIN_RECIBO							= Para cerrar el ultimo malote de la remesa es necesario generar el recibo de transporte.
+
+// ESTADO REMESA
+NUEVO_SALIDAS_ESTADO_REMESA_Nuevo						= Nuevo
+NUEVO_SALIDAS_ESTADO_REMESA_Pendiente					= Pendiente
+NUEVO_SALIDAS_ESTADO_REMESA_Procesada					= Procesada
+NUEVO_SALIDAS_ESTADO_REMESA_Anulado						= Anulada
+NUEVO_SALIDAS_ESTADO_REMESA_Eliminado					= Eliminada
+NUEVO_SALIDAS_ESTADO_REMESA_Asignada					= Asignada
+NUEVO_SALIDAS_ESTADO_REMESA_EnCurso						= En Curso
+NUEVO_SALIDAS_ESTADO_REMESA_EnviadoLegado				= Enviada Legado
+NUEVO_SALIDAS_ESTADO_REMESA_EnviadoSaldos				= Enviada Saldos
+NUEVO_SALIDAS_ESTADO_REMESA_Sustituido					= Sustituida
+
+// ESTADO BULTO
+NUEVO_SALIDAS_ESTADO_BULTO_Nuevo						= Nuevo
+NUEVO_SALIDAS_ESTADO_BULTO_Cerrado						= Cerrado
+NUEVO_SALIDAS_ESTADO_BULTO_Aberto						= Abierto
+NUEVO_SALIDAS_ESTADO_BULTO_Anulado						= Anulado
+NUEVO_SALIDAS_ESTADO_BULTO_Eliminado					= Eliminado
+NUEVO_SALIDAS_ESTADO_BULTO_Salida						= Salida
+NUEVO_SALIDAS_ESTADO_BULTO_Pendiente					= Pendiente
+NUEVO_SALIDAS_ESTADO_BULTO_Procesado					= Procesado
+NUEVO_SALIDAS_ESTADO_BULTO_EnCurso						= En Curso
+NUEVO_SALIDAS_ESTADO_BULTO_Asignado						= Asignado
+NUEVO_SALIDAS_ESTADO_BULTO_Sustituido					= Sustituido
+
+//VERIFICARPRECINTODUPLICADO
+NUEVO_SALIDAS_PRECINTODUPLICADO							= El codigo del precinto es obligatorio.
+
+//DividirEnBultos
+NUEVO_SALIDAS_DIVIDIR_EN_BULTOS_PETICION				= El campo requeridos no se han informado.
+NUEVO_SALIDAS_DIVIDIR_EN_BULTOS_REMESA					= El campo remesa no se ha informado.
+
+//BloquearRemesasBultos
+NUEVO_SALIDAS_BLOQUEAR_REMESAS_BULTOS_PETICION			= El campos remesas o bultos deben ser informados.
+NUEVO_SALIDAS_BLOQUEAR_REMESAS_BULTOS_REMESA_NAO_EXISTE	= A remesa de identificador({0}) no está registrada.
+NUEVO_SALIDAS_BLOQUEAR_REMESAS_BULTOS_BULTO_NAO_EXISTE	= O bulto de identificador({0}) no está registrado.
+NUEVO_SALIDAS_BLOQUEAR_REMESAS_BULTOS_BULTO_BLOQUEADO	= O bulto de identificador({0}) já está bloqueado.
+NUEVO_SALIDAS_BLOQUEAR_REMESAS_BULTOS_REMESA_BLOQUEDA	= A remesa de identificador({0}) já está bloqueada.
+
+// Solicitar Fondos a Saldos
+NUEVO_SALIDAS_SOLICITAR_FONDOS_DOCUMENTO				= El documento no se han informado.
+NUEVO_SALIDAS_SOLICITAR_FONDOS_DIVISA					= El campo moneda es obligatorio.
+NUEVO_SALIDAS_SOLICITAR_FONDOS_USUARIO					= El campo usuario es obligatorio.
+NUEVO_SALIDAS_SOLICITAR_FONDOS_FORMULARIO_INVALIDO		= Verificar las configuraciones del formulario de envío de fondos en saldos. Pues no está retornando el formulario de forma correcta.
+NUEVO_SALIDAS_SOLICITAR_FONDOS_CUENTA_ORIGEN			= El campo cuenta origen es obligatorio.
+NUEVO_SALIDAS_SOLICITAR_FONDOS_CLIENTE					= El campo cliente es obligatorio.
+NUEVO_SALIDAS_SOLICITAR_FONDOS_SUBCANAL					= El campo subCanal es obligatorio.
+
+// Validar Serviço
+
+NUEVO_SALIDAS_Servicio_Remesa_Cambiada					= No es posible trabajar con la remesa {0}, pues la misma se encuentra cambiada.
+NUEVO_SALIDAS_Servicio_Remesa_Bloqueada					= No es posible trabajar con la remesa {0}, pues la misma se encuentra bloqueada por el usuario {1}.
+NUEVO_SALIDAS_Servicio_Bulto_Cambiada					= No es posible trabajar con el bulto {0}, pues el mismo se encuentra cambiado.
+NUEVO_SALIDAS_Servicio_Bulto_Bloqueada					= No es posible trabajar con el bulto {0}, pues el mismo se encuentra bloqueado por el usuario {1}.
+
+//Servicio ObtenerNecesidadFondoPuesto
+NUEVO_SALIDAS_CAMPO_OBLIGATORIO							= El parámetro '{0}' es obligatorio.
+NUEVO_SALIDAS_DELEGACION								= delegación
+NUEVO_SALIDAS_PUESTO									= puesto
+
+
+// SOL
+SOL_ERRO												= IdSol：{0}ID：{1}消息：{2}
+//RYE
+RYE_SOL_VALIDAR_ESTADO_RUTA				= 這條路線沒有運行
+RYE_BULTOS_SECTORES_DISTINTOS			= Ni todos los bultos de las remesas: {0}, están en el sector indicado.
+RYE_VALIDAR_ESTADO_RUTA                 = 該航線是該州 {0}.
+
+// WEBCONFIG
+WEBCONFIG_CHAVE_INVALIDA							= Clave {0} no existe y o valor no válido {1}.
+
+// Enviar Fondos a Saldos
+NUEVO_SALIDAS_ENVIAR_FONDOS_DOCUMENTO				= El documento no se han informado.
+NUEVO_SALIDAS_ENVIAR_FONDOS_DIVISA					= El campo divisa es obligatorio.
+NUEVO_SALIDAS_ENVIAR_FONDOS_USUARIO					= El campo usuário criação es obligatorio.
+NUEVO_SALIDAS_ENVIAR_FONDOS_FORMULARIO_INVALIDO		= Verificar las configuraciones del formulario de envío de fondos en saldos. Pues no está retornando el formulario de forma correcta.
+NUEVO_SALIDAS_ENVIAR_FONDOS_CUENTA_ORIGEN			= El campo conta origen es obligatorio.
+NUEVO_SALIDAS_ENVIAR_FONDOS_CLIENTE_ORIGEN			= El campo cliente origen es obligatorio.
+NUEVO_SALIDAS_ENVIAR_FONDOS_SUBCANAL_ORIGEN			= El campo subCanal origem es obligatorio.
+NUEVO_SALIDAS_ENVIAR_FONDOS_CUENTA_DESTINO			= El campo conta destino es obligatorio.
+NUEVO_SALIDAS_ENVIAR_FONDOS_CLIENTE_DESTINO			= El campo cliente destino es obligatorio.
+NUEVO_SALIDAS_ENVIAR_FONDOS_SUBCANAL_DESTINO		= El campo subCanal destino es obligatorio.
+NUEVO_SALIDAS_ENVIAR_FONDOS_CONFLICTO_FORMULARIO	= Fueron encontrados {0} formularios en conflicto (mismo conjunto de caracteristicas). Las caracteristicas son: ({1}). Los formularios son: ({2}).
+NUEVO_SALIDAS_ENVIAR_FONDOS_FORMULARIO_NO_ENCONTADO	= No fue encontrado ninguno formulario con las caracteristicas: {0}
+
+// FinalizarPreparacion
+NUEVO_SALIDAS_FINALIZAR_PREPARACION_PETICION		= La petición es obligatoria.
+NUEVO_SALIDAS_FINALIZAR_PREPARACION_USUARIO			= El campo usuario de creación es obligatorio.
+
+// ValidarRemesasAnuladas
+NUEVO_SALIDAS_REMESA_ANULADA						= La remesa fue anulada.
+NUEVO_SALIDAS_REMESA_NO_ENCONTRADA					= La remesa de identificador: ({0}) no fue encontrada en el Salidas.
+
+// DataHoraGMT
+066_NoFueInformadoDelegacion					= Para calcular el GMT, es necesario informar una delegación valida.
+066_Identificador_Delegacion_Invalido			= No fue encontrado ninguna delegación con el identificador informado.
+066_Codigo_Delegacion_Invalido					= No fue encontrado ninguna delegación con el codigo informado.
+
+001_Error_ParametroNoInformado						= El siguiente parámetro no fue informado: {0}.
+001_Error_MapeoModeloContadora						= El modelo de la contadora del puesto ‘{0}’ no está configurada en el parámetro de IAC ContadoraClasificacion.
+001_Error_MapeoTipoTrabajo							= El tipo de trabajo no está mapeado para el archivo de nombre: {0}. Verificar los parámetros “claveArchivosTarjetaBPS” y “claveArchivosEtiquetaBPS”.
+001_Error_EncontradoMasDeUnParcial					= Fue encontrado más de un parcial para la asociación del archivo:
+001_Error_EncontradoMasDeUnParcialRepeticion		= Remesa{0}: PrecintoRemesa:“{1}”, CodCliente:“{2}”, CodTransporte:“{3}”, Delegacion:“{4}”, id Parcial: “{5}”
+001_Error_ParcialNoEncontrado						= Parcial no encontrado
+001_Cabecalho_Email									=  - Genesis - TransferirDatosRemesa. Servidor: {0}, Fecha/Hora: {1}, Otras Informaciones: {2}
+001_Erro_Desconhecido								= Error desconocido.
+001_Erro_Msg_Correo									= No es posible enviar el e-mail para el día {0}. Por favor, póngase en contacto con el administrador del sistema.
+001_Modelo_Contadora_Invalido_Posto					= El modelo de cajero configurado para el puesto no coincide con el tipo de archivo.
+001_Error_DenominacionesNoMapeada					= Denominaciones: ({0})  no mapeada correctamente.
+001_Error_DenominacionesNoInformada					= Ninguna denominaciones informada en el archivo de datos.
+001_Error_NoEsUnaDivisaPosible						= No es una divisa posible.
+
+// DIFERENCIAS
+010_infoEfectivo									= Efectivo
+010_infoCheque										= Cheque
+010_infoTicket										= Ticket
+010_infoOtros										= Otros Valores
+010_infoTarjetas									= Tarjetas
+010_infoTotal										= Total
+
+085_parcial_em_curso								= Parcial ya estaba en Curso.
+085_etiqueta_contado								= Hay registros con etiqueta contados mecanizada.
+085_arquivo_invalido								= Archivo no válido. La primera línea debe comenzar con "<?XML" para indicar que un XML o "[HEADER]" para indicar que el archivo es un archivo TXT. Tras el comienzo de la primera línea del archivo: {0}.
+
+
+
+//*************************************************************************************************************
+//	EfectuarSalida
+//*************************************************************************************************************
+101_formularioNoEncontrado		= No fue encontrado un formulario en el Nuevo Saldos que posibilite la secuencia del flujo
+101_MasDeUnoformulario   		= No será posible seguir con el flujo porque hay más de un formulario disponible en Nuevo Saldos
+101_VerificaEstadoBultos		= Uno o más bultos no si encuentran actualizados en Nuevo Saldos y por eso no será posible seguir con el flujo. Favor verificar la comunicación entre los módulos.
+101_SinRemesa					= No hay remesas a ser procesadas.
+
+
+//*************************************************************************************************************
+//	Integracion - Validaciones
+//*************************************************************************************************************
+VAL100			= ¡El parámetro ‘{0}’ debe tener un valor informado!
+VAL101			= ¡Petición invalida!
+VAL102			= ¡Token de acceso inválido!
+VAL103			= Token não configurado.
+VAL104			= O atributo '{0}' do objeto '{1}' é obrigatório.
+VAL105			= Divisa invalida.
+VAL106			= Denominación invalida.
+VAL107			= Medio Pago invalida.
+VAL108			= Formulario invalido.
+VAL109			= Formulario no es de Gestión de Fondos.
+VAL110			= Formulario: Error en las configuraciones de Accion Contable.
+VAL111			= Formulario: Error en el Tipo de Documento.
+VAL112			= Error al obtener la cuenta de movimiento ({0}) con los datos: {1}.
+VAL113			= Error al obtener la cuenta de saldos ({0}) con los datos: {1}.
+VAL114			= El documento no tiene valores.
+VAL115			= Hubo un error al intentar grabar el documento. Estado del documento: {0}
+VAL116			= Campo adicional invalido: {0}.
+VAL117			= Campo adicional obrigatorio no informado: {0}.
+VAL118			= Error al obtener o crear la cuenta de {0}.
+VAL119			= Error al intentar obtener el codigo ajeno, utilizando el identificador {0} de la tabla {1}.
+VAL120			= Error al intentar obtener el codigo ajeno {0}.
+VAL121			= No es posible ingresar el documento pues existe un registro con el mismo código externo en la base de datos.
+VAL127          = Error al crear periodo.
+VAL128          = No fue posible acceder a la dirección ‘{0}’ del servicio de crear período de acreditación. Detalles: {1}
+VAL129			= Unable to connect to legacy service responsible for creating periods. {0}
+
+007_Gerar_Codigo				= Será generado un nuevo código de precinto.
+051_declaradosEfectivoOtrosValores		= El Parcial no puede tener Declarado de Efectivo y otros Medios de Pago simultáneamente, y al menos un parcial debe poseer declarados en efectivo.
+074_msg_tener_valor_intero					= La clave {0} debe tener un valor intero.
+02_msg_tener_valor_intero					= La clave {0} debe tener un valor intero.
+07_msg_erro_parametro_naoencontrado		= Código identificador del formulario no existe.
+tkn_creartokenacceso_erro_serializarpermisos        = Error al serializar permisos
+NUEVO_SALIDAS_CERRARBULTO_PRECINTOSDUPLICADOS			= El precinto {0} ya está registrado.
+
+//Desarmar Contenedores
+NUEVO_SALDOS_DEBE_TENER_OID_O_PRECINTO_CONTENEDOR	=	Por lo menos uno de los parámetros debe estar rellenado: (IdentificadorContenedor o Precinto)!
+
+//Mover Contenedores
+NUEVO_SALDOS_DEBE_SER_SECTORES_DISTINTOS	        =   No se puede hacer el movimiento de contenedores para lo mismo sector!
+
+//Serviço DefinirCambiarPosicionContenedor
+msg_gen_Parametro_Obrigatorio = 參數{0}是必需的！
+parametro_Delegacion = 代表團
+parametro_Planta = 廠
+parametro_Sector = 扇區
+parametro_Precinto = CodPrecinto
+parametro_Posicion = codPosicion
+parametro_fechaAlerta = 日期警報
+parametro_CodTipoAlerta = 鱈魚類型的警報
+parametro_diasVencer = 天數贏取
+parametro_emails = 電子郵件
+002_msg_precinto_duplicado							= La remesa '{0}' está con el precinto '{1}' duplicado.
+
+//Serviço Consultar Contenedores Cliente
+parametro_cliente  = CodCliente
+parametro_codDelegacion = CodDelegacion
+parametro_codPlanta = CodPlanta
+parametro_codSector = codSector
+parametro_codCanal = CodCanal
+parametro_codSubCanal = CodSubCanal
+
+//Recuperar Contenedores Por FIFO
+FIFO_sin_contenedores					=	No fueron encontrados contenedores para los filtros informados.
+FIFO_importe_menor						=	El cliente no dispone de los valores solicitados, actualmente este cliente puede extraer ({0} {1}).
+
+// AccionGenerarCertificado
+102_validacion_delegacion         = ¡El código de la delegación informada, ‘{0}’, no es válido!
+102_validacion_fechacertificado   = ¡No es posible certificar con la fecha y hora informada. La fecha y hora informada deberá ser menor o igual a la hora local: fecha y hora informada ‘{0}’, fecha y hora local ‘{1}’!
+102_validacion_sectores           = ¡El sector de código ‘{0}’ no fue encontrado o no pertenece a la delegación ‘{1}’!
+102_validacion_cliente            = ¡El código del cliente informado, ‘{0}’, no es válido!
+102_validacion_canal              = ¡El código del canal informado, ‘{0}’, no es válido!
+102_validacion_subcanal           = ¡El subcanal de código ‘{0}’ no fue encontrado o no pertenece al canal() '{1}’!
+integracion_error_grabarIntegracion = Error al grabar la integración
+
+codigo_externo_ya_notificado         = Document already notified.
+codigo_externo_ya_acreditado         = Document already accredited.
+verificar_codigos_ajenos             = Unidentified foreign codes. Please validate the "IdentifierAny" field, and the configuration of the external codes for: Delegation, Plant, Sector, Channel.
+movimiento_no_encontrado             = No document found in the database of Genesis Product.
+no_es_maquina_activa                 = This machine was not found. Please review the configuration and make sure you are on an active schedule.
+accion_obligatoria                   = Please report an action [Notify and / or Accredit]
+obligatorios_recuperar_planificacion = It is compulsory to inform the "External Code" or "Bank Code".
+obligatorios_recuperar_mae           = It is compulsory to inform the "DeviceID" or ["Delegation Code", "Plant Code", "Customer Code"].

@@ -1,0 +1,1 @@
+﻿INSERT INTO PD_Banco (IdBanco) VALUES (:IdCliente)

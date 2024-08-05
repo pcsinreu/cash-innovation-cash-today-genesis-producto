@@ -1,0 +1,37 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Default.master.vb" Inherits="Prosegur.Genesis.Web._Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Genesis - Login unificado</title>
+    <link rel="stylesheet" type="text/css" href="_Styles/genesis.css" />
+
+    <script type="text/javascript" src="./_Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="./_Scripts/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="./_Scripts/Scripts.js"></script>
+    <script type="text/javascript" src="./_Scripts/String.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="dvAlert" class="genesisAlert" style="display: none;">
+            <div class="fundo"></div>
+            <div id="dvAlertPanel" class="painel loading">
+                <div id="dvAlertLabel" class="Label">Loading</div>
+                <div id="dvAlertClose" class="Close" style="visibility:hidden;">
+                    <button id="btnClose" type="button" onclick="Javascript: genesisAlertError('','');">x</button>
+                </div>
+            </div>
+            <div id="dvAlertErro" style="display: none;"></div>
+        </div>
+        <div class="page" id="divPage" style="top: 0px; left: 0px; background-size: auto;">
+            <center>
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True" AsyncPostBackTimeout="600"></asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </center>
+        </div>
+    </form>
+</body>
+</html>

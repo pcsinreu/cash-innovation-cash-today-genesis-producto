@@ -1,0 +1,7 @@
+﻿SELECT OID_PLANTA,
+       COD_PLANTA,
+       DES_PLANTA
+FROM GEPR_TPLANTA
+ {0}
+WHERE 1 = 1
+ {1}

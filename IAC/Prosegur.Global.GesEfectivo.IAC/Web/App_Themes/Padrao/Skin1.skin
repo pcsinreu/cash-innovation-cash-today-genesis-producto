@@ -1,0 +1,92 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<%-- General --%>
+<asp:Label runat="server" SkinID="Titulo" CssClass="Titulo"/>
+<asp:Label runat="server" SkinID="SubTitulo" CssClass="SubTitulo"/>
+<asp:Label runat="server" SkinID="SubTituloItem" CssClass="SubTituloItem"/>
+
+
+<asp:LinkButton runat="server" SkinID="linkBreadscrumbHome" CssClass="ui-menuitem-link ui-corner-all ui-icon ui-icon-home" />
+<asp:RadioButtonList runat="server" SkinID="radioButton" CssClass="radioButtonList radioButtonList input radioButtonList label"/>
+<asp:CheckBoxList runat="server" SkinID="checkboxlist" CssClass="checkBoxList checkBoxList input checkBoxList label"/>
+
+<%-- Skin do Controle Filtro --%>
+<asp:Label runat="server" SkinID="filtro-label-aux" CssClass="ui-label-filter-aux" style="width:inherit;" />
+<asp:Label runat="server" SkinID="filtro-label" CssClass="ui-label-filter" style="width:inherit;" />
+<asp:Label runat="server" SkinID="filtro-label_titulo" CssClass="ui-panel-title" />
+<asp:TextBox runat="server" SkinID="filtro-textbox" CssClass="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterInput" style="height:auto; width:200px;" />
+<asp:Button runat="server" SkinID="filtro-button" CssClass="ui-button ui-button-text-only button-form-filter" style="height:auto; width:100px; margin: 0px;" />
+<asp:DropDownList runat="server" SkinID="filtro-dropdownlist" CssClass="ui-gn-mandatory big-dropdown ui-widget ui-state-default ui-corner-all" style="height:auto; width:210px; padding: 3px;" />
+
+<%-- Skin Padrao --%>
+<asp:Label runat="server" SkinID="padrao-label" CssClass="ui-label-filter" style="width:inherit; margin-right: 3px;" />
+<asp:Label runat="server" SkinID="padrao-label_titulo" CssClass="ui-panel-title" />
+<asp:TextBox runat="server" SkinID="padrao-textbox" CssClass="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterInput" style="width:200px;" />
+<asp:TextBox runat="server" SkinID="padrao-textbox_SinWidth" CssClass="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterInput" />
+<asp:Button runat="server" SkinID="padrao-button" CssClass="ui-button ui-button-text-only button-form-filter" style="width:100px; margin: 0px; height:auto;" />
+<asp:DropDownList runat="server" SkinID="padrao-dropdownlist" CssClass="ui-gn-mandatory big-dropdown ui-widget ui-state-default ui-corner-all" style="width:210px; padding: 3px;" />
+
+
+<%-- Filters Fields --%>
+<asp:Label runat="server" SkinID="filter-label" CssClass="ui-label-filter" />
+<asp:TextBox runat="server" SkinID="filter-textbox" CssClass="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterInput" />
+<asp:Button SkinID="filter-button" runat="server" CssClass="ui-button ui-button-text-only button-form-filter" style="height:auto; width:100px;" />
+
+<%-- Form Edit --%>
+<asp:Label runat="server" SkinID="form-label" CssClass="ui-label-filter" />  
+<asp:TextBox SkinID="form-textbox" runat="server" CssClass="ui-inputfield ui-widget-content ui-inputfield" />
+<asp:TextBox SkinID="form-textbox-mandatory" runat="server" CssClass="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-gn-mandatory" />
+<asp:DropDownList SkinID="form-dropdownlist-mandatory" runat="server" CssClass="ui-gn-mandatory big-dropdown ui-widget ui-state-default ui-corner-all" />
+<asp:CheckBox runat="server" SkinID="form-checkbox" CssClass="ui-checkbox" TextAlign="Left" />
+<asp:CheckBox runat="server" SkinID="form-checkbox-mandatory" CssClass="ui-checkbox-mandatory" TextAlign="Left" />
+
+
+<asp:TextBox SkinID="form-textarea" runat="server" CssClass="ui-inputfield ui-inputtextarea ui-widget ui-state-default ui-corner-all filterInput" />
+
+
+<asp:DropDownList SkinID="form-dropdownlist-mandatory-big" runat="server" CssClass="ui-gn-mandatory big-dropdown" />
+
+<%-- GridView --%>
+<asp:GridView runat="server" CssClass="ui-datatable ui-datatable-data">
+  <HeaderStyle  />
+  <AlternatingRowStyle CssClass="ui-datatable-odd" />
+  <RowStyle BackColor="#FFFDF2" />
+  <PagerStyle CssClass="ui-paginator" BackColor="#f9f9f9" />
+</asp:GridView>
+
+<asp:ImageButton SkinID="btnAcciones" runat="server" CssClass="ui-button acciones"/>
+
+
+
+<%--<ns:Boton runat="server" ImagenCssClass="ui-button-icon ui-button-icon-left ui-icon" BotonCssClass="ui-button-text-icon-left"/> --%>
+
+<%-- Helper Fields --%>
+<asp:TextBox SkinID="helper_textbox_min" runat="server" CssClass="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterInput" style="width:110px;" />
+<asp:TextBox SkinID="helper_textbox_max" runat="server" CssClass="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all filterInput" style="width:210px;" />
+<asp:TextBox SkinID="helper_listbox" runat="server" CssClass="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-gn-mandatory" style="width:330px;" />
+<asp:ImageButton SkinID="helper_button_Find" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/grid/search.png" />
+<asp:ImageButton SkinID="helper_button_Add" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/iconos/adicionar.png" />
+<asp:ImageButton SkinID="helper_button_Close" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/iconos/icon_close.png" />
+<asp:Label runat="server" SkinID="helper_label" CssClass="ui-label-filter" style="width:inherit; margin-right: 3px;" />
+
+<%-- Button Certificado --%>
+<asp:ImageButton SkinID="button_navegate_remove" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/pag06.png" />
+<asp:ImageButton SkinID="button_navegate_remove_all" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/pag08.png" />
+<asp:ImageButton SkinID="button_navegate_add" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/pag05.png" />
+<asp:ImageButton SkinID="button_navegate_add_all" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/pag07.png" />
+<asp:ImageButton SkinID="button_navegate_move_up" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/pag10.png" />
+<asp:ImageButton SkinID="button_navegate_move_down" runat="server" CssClass="ui-button-helper ui-button" ImageUrl="~/App_Themes/Padrao/css/img/pag09.png" />

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EED37508-2A39-4E4A-86F5-31502638A13E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prosegur.Genesis.Mail</RootNamespace>
+    <AssemblyName>Prosegur.Genesis.Mail</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.EmailHelper">
+      <HintPath>..\.Referencias\Prosegur.EmailHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MailUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prosegur.Genesis.AccesoDatos\Prosegur.Genesis.AccesoDatos.vbproj">
+      <Project>{1f867d49-94a8-4d3a-a498-741ee9e2ba57}</Project>
+      <Name>Prosegur.Genesis.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4dc9ee4c-7177-466c-826c-49576eff7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comunicacion\Prosegur.Genesis.Comunicacion.vbproj">
+      <Project>{817877ca-26fe-4639-91a0-42a29091c817}</Project>
+      <Name>Prosegur.Genesis.Comunicacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.ContratoServicio\Prosegur.Genesis.ContractoServicio.vbproj">
+      <Project>{9ED42568-659A-4DD1-BE34-C14483DF71E6}</Project>
+      <Name>Prosegur.Genesis.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Logeo\Prosegur.Genesis.Logeo.csproj">
+      <Project>{5ab2966c-0c11-48e0-928e-4accd9b5d2f2}</Project>
+      <Name>Prosegur.Genesis.Logeo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Utilidad\Prosegur.Genesis.Utilidad.vbproj">
+      <Project>{a9602d8d-3afe-4948-b579-05325b690dc5}</Project>
+      <Name>Prosegur.Genesis.Utilidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

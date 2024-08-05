@@ -1,0 +1,284 @@
+﻿/* CSS Document */
+/* RESET */
+*, body{
+	margin:0;
+	padding:0;
+	border:0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+body, html, form{
+	height:100%;
+	overflow:hidden;
+}
+
+
+.page{
+	background: #aaa url(../_Imagens/background.jpg) top center no-repeat;	
+	background-repeat:repeat-x;
+	background-size:cover;
+	width: auto;
+	height:100%;
+	min-height:1080px;
+}
+
+.page .loginbox {
+	width: 492px; 
+    margin-top:7%; 
+    position: relative; 
+    background:transparent url(../_Imagens/login_box.png) top left no-repeat;
+}
+
+.page .loginbox .legenda {
+    width: 15%; height:23px; float: left; text-align:right; margin: 0px 0px 0px 4px; padding-top: 5px;
+}
+.page .loginbox .campo {
+    width: 30%; height:28px; float: left; text-align:left; margin: 0px 0px 0px 4px; vertical-align:middle;
+}
+
+.page .logo {	
+	float:left;	
+	margin:80px 0 0% 25%; /* margin metade da altura da imagem 80px */
+}
+
+li 
+{
+    list-style-type:none;
+}
+
+/*.page .loginbox .label {
+	font-size:12px;
+	min-width:75px;	
+	text-align:right;
+	margin:5px 15px;
+}*/
+
+/*.page .loginbox input, .form select, .form .labelErro {
+	float:right;	
+}*/
+.page .loginbox  select, input
+{
+    width:140px;
+            border:1px solid #808080;
+            background-color: #ffffff;
+            color: #444444;
+            padding:2px;
+}
+
+.page .loginbox select
+        {
+            width:145px;
+        }
+
+.page .loginbox .button{
+	width:100px;
+    height:30px;
+	vertical-align:middle;
+	background:transparent url(../_Imagens/button.fw.png) no-repeat;	
+    margin-top: 8px;
+}
+
+/*.page .loginbox .button.login {
+	margin-left:35px;	
+}
+.page .loginbox .button.cancelar 
+{
+    vertical-align:middle;
+	margin-left:10px;
+}*/
+.page .loginbox .button img {
+	margin-top:1px;
+	vertical-align:middle;
+    margin-right: 4px;
+}
+.page .loginbox .button span 
+{
+	line-height: 25px;
+    vertical-align: middle;
+}
+
+.versionAplicacionLista
+{
+    font-size:9px;
+    font-family:Arial;
+    min-height:500px; 
+    width:47%; 
+    float:left; 
+    padding-top: 15%;
+}
+
+.versionAplicacionLista span
+{
+    padding-left:25px;
+    padding-top:5px;
+    font-style:italic;
+    color:#444444;
+}
+
+.page .appsbox 	
+{
+    min-height: 500px; 
+    width: 300px;
+        /*width:57%;*/ 
+    position: relative; 
+    float:left; 
+    top: 50px;
+    margin-left:40px;
+}
+
+.page .appsbox .app{	
+	background:url(../_Imagens/login_barra.fw.png) no-repeat;	
+	padding:5px 10px 15px 0;
+	height:83px;
+	width:240px;
+    float:left;
+	margin-bottom:10px;
+    cursor:pointer;
+}
+
+.page .appsbox .app div{	
+	width:100%;
+    height:70px;
+    background-repeat:no-repeat;
+    background-position-X:10px;
+    background-position-y:5px;
+    text-align:left;
+}
+
+.page .appsbox .app img{
+	margin:-5px 10px 0;
+	float:left;
+}
+
+.page .appsbox .app span{
+	margin:35px 0px 0px 100px;	
+}
+
+a
+{
+    text-decoration:none;
+    cursor:pointer;
+    color:black;
+}
+
+.version
+{
+    font-size:9px;
+}
+
+.lblSaldos
+{
+    position:relative;
+    left:-15px;
+}
+
+.valignMiddleWrapper
+{  
+    width:100%;
+    position: relative;
+}
+
+.valignMiddle 
+{
+    width:100%;
+    position: relative;
+    top: 25%;
+}
+
+.valignMiddleContent
+{
+    position: relative;
+    float:left;
+}
+.versionAplicacion
+{
+    font-size:9px;
+    font-family:Arial;
+    float:right;
+}
+
+.genesisAlert {
+    z-index:20000000;
+    width:100%; 
+    height:100%; 
+    position: absolute; 
+    top:0px; 
+    left: 0px; 
+    display:none;
+}
+
+.genesisAlert .fundo{
+    background-color: #FFFFFF; 
+    width:100%; 
+    height:100%; 
+    position: absolute; 
+    top:0px; 
+    left: 0px; 
+    z-index:20000000;
+    opacity: .90;
+}
+
+.genesisAlert .painel{
+    z-index:20000002;
+    width: 80%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 8px 8px 8px 50px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 0px 0px 4px 4px;
+    -moz-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+    font-size:9pt; 
+    font-weight:bold;
+    box-shadow: 3px 3px 3px #AAA;
+}
+.genesisAlert .painel div {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+.genesisAlert .painel .Label{
+    float: left;
+    width: 90%;
+}
+.genesisAlert .painel .Close{
+    float: right;
+    width: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.genesisAlert .loading{
+    color: #333; 
+    background-color: #c4c4c4; 
+    border-color: #bce8f1; 
+    background-image:url(../_Imagens/loading/Wait.gif); 
+    background-repeat:no-repeat; 
+    background-position: 1% 35%; 
+}
+.genesisAlert .loading div {
+    color: #333;
+}
+
+.genesisAlert .error{
+    color: #31708f; 
+    background-color: #f2dede; 
+    border-color: #ebccd1; 
+}
+.genesisAlert .error div {
+    color: #a94442;
+}
+.genesisAlert .error button {
+    color: #a94442;
+    background-color: transparent;
+    font-weight:bold;
+    font-family:Arial;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    text-align:center;
+}

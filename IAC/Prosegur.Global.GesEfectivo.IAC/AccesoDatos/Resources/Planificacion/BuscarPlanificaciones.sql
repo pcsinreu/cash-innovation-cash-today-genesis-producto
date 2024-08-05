@@ -1,0 +1,109 @@
+﻿WITH Q AS
+ (SELECT PG.OID_PLANIFICACION,
+         C.COD_CLIENTE || ' - ' || C.DES_CLIENTE AS BANCO,
+         P.DES_PLANIFICACION AS DESCRIPCION,
+         TT.DES_TIPO_PLANIFICACION AS TIPO,
+         P.BOL_ACTIVO AS VIGENTE,
+         P.OID_DELEGACION,
+		 P.NUM_PORCENT_COMISION,
+		 P.BOL_CONTROLA_FACTURACION,
+         CAST(fn_gmt_delegacion_###VERSION###(P.OID_DELEGACION,P.FYH_VIGENCIA_INICIO) AS DATE) AS GMT_INICIO,         
+		 CASE
+          WHEN P.FYH_VIGENCIA_FIN IS NULL THEN
+            NULL
+          ELSE
+            CAST(fn_gmt_delegacion_###VERSION###(P.OID_DELEGACION,P.FYH_VIGENCIA_FIN) AS DATE)
+         END AS GMT_FIN,
+
+         MAX(CASE
+               WHEN PG.NEC_DIA_FIN = 1 THEN
+                PG.FYH_HORA_FIN
+               ELSE
+                null
+             END) as LUNES,
+         MAX(CASE
+               WHEN PG.NEC_DIA_FIN = 2 THEN
+                PG.FYH_HORA_FIN
+               ELSE
+                null
+             END) as MARTES,
+         MAX(CASE
+               WHEN PG.NEC_DIA_FIN = 3 THEN
+                PG.FYH_HORA_FIN
+               ELSE
+                null
+             END) as MIERCOLES,
+         MAX(CASE
+               WHEN PG.NEC_DIA_FIN = 4 THEN
+                PG.FYH_HORA_FIN
+               ELSE
+                null
+             END) as JUEVES,
+         MAX(CASE
+               WHEN PG.NEC_DIA_FIN = 5 THEN
+                PG.FYH_HORA_FIN
+               ELSE
+                null
+             END) as VIERNES,
+         MAX(CASE
+               WHEN PG.NEC_DIA_FIN = 6 THEN
+                PG.FYH_HORA_FIN
+               ELSE
+                null
+             END) as SABADO,
+         MAX(CASE
+               WHEN PG.NEC_DIA_FIN = 7 THEN
+                PG.FYH_HORA_FIN
+               ELSE
+                null
+             END) as DOMINGO
+    FROM SAPR_TPLANXPROGRAMACION PG
+   INNER JOIN SAPR_TPLANIFICACION P
+      ON P.OID_PLANIFICACION = PG.OID_PLANIFICACION
+   INNER JOIN GEPR_TCLIENTE C
+      ON C.OID_CLIENTE = P.OID_CLIENTE
+   INNER JOIN SAPR_TTIPO_PLANIFICACION TT
+      ON P.OID_TIPO_PLANIFICACION = TT.OID_TIPO_PLANIFICACION
+    {0}
+   GROUP BY PG.OID_PLANIFICACION,
+            C.COD_CLIENTE,
+            C.DES_CLIENTE,
+            P.DES_PLANIFICACION,
+            TT.DES_TIPO_PLANIFICACION,
+            P.BOL_ACTIVO,
+			P.NUM_PORCENT_COMISION,
+            P.FYH_VIGENCIA_INICIO,
+            P.FYH_VIGENCIA_FIN,
+            P.OID_DELEGACION,
+		    P.BOL_CONTROLA_FACTURACION,
+            PG.NEC_DIA_FIN,
+            PG.FYH_HORA_FIN
+   ORDER BY PG.NEC_DIA_FIN)
+SELECT Q.OID_PLANIFICACION,
+       Q.BANCO,
+       Q.DESCRIPCION,
+       Q.TIPO,
+       Q.VIGENTE,    
+       Q.GMT_INICIO,
+       Q.GMT_FIN,
+       Q.OID_DELEGACION,
+	   Q.NUM_PORCENT_COMISION,
+	   Q.BOL_CONTROLA_FACTURACION,
+       LISTAGG(TO_CHAR(LUNES, 'HH24:MI:SS'), ' / ') WITHIN
+               GROUP(ORDER BY LUNES) AS LUNES,
+       LISTAGG(TO_CHAR(MARTES, 'HH24:MI:SS'), ' / ') WITHIN
+               GROUP(ORDER BY MARTES) AS MARTES,
+       LISTAGG(TO_CHAR(MIERCOLES, 'HH24:MI:SS'), ' / ') WITHIN
+               GROUP(ORDER BY MIERCOLES) AS MIERCOLES,
+       LISTAGG(TO_CHAR(JUEVES, 'HH24:MI:SS'), ' / ') WITHIN
+               GROUP(ORDER BY JUEVES) AS JUEVES,
+       LISTAGG(TO_CHAR(VIERNES, 'HH24:MI:SS'), ' / ') WITHIN
+               GROUP(ORDER BY VIERNES) AS VIERNES,
+       LISTAGG(TO_CHAR(SABADO, 'HH24:MI:SS'), ' / ') WITHIN
+               GROUP(ORDER BY SABADO) AS SABADO,
+       LISTAGG(TO_CHAR(DOMINGO, 'HH24:MI:SS'), ' / ') WITHIN
+               GROUP(ORDER BY DOMINGO) AS DOMINGO
+      
+  FROM Q
+ GROUP BY Q.OID_PLANIFICACION, Q.BANCO, Q.DESCRIPCION, Q.TIPO, Q.VIGENTE, Q.GMT_FIN, Q.GMT_INICIO,Q.OID_DELEGACION, Q.NUM_PORCENT_COMISION, Q.BOL_CONTROLA_FACTURACION
+ ORDER BY Q.DESCRIPCION DESC

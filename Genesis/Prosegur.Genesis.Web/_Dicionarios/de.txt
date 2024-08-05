@@ -1,0 +1,34 @@
+﻿  gen_selecione   = Auswählen 
+  msg_producidoError   = Ein Fehler ist aufgetreten:&nbsp; 
+  msg_loading   = Bitte warten Sie einige Zeit, bis das System betriebsbereit ist 
+  msg_redirecionando   = Umleitung… 
+  Default_lblSenha   = Kennwort 
+  Default_sessao_expirada   = Sitzung abgelaufen. Bitte melden Sie sich erneut an. 
+  tkn_tokenutil_token_invalida   = Ungültiges Token 
+  tkn_creartokenacceso_erro_serializar   = Berechtigungsfehler 
+  tkn_creartokenacceso_erro_gerartoken   = Fehler beim Erstellen des Token 
+  lgn_usuario_nao_autenticado   = Authentifizierungsfehler. Bitte vergewissern Sie sich, dass Benutzername und Passwort eingegeben wurden 
+  lgn_usuario_aplicacionversion_noencontrada   = Eine Version der App für den Benutzer wurde nicht gefunden 
+  lgn_sesion_activa   = Es ist bereits eine Sitzung für den Benutzer eingetragen. 
+  000_msgerrogenerico   = In der App ist ein Fehler aufgetreten. 
+  mdl_msg_sempermissao   = Benutzer ohne Erlaubnis! 
+  lgn_lblversion   = Version 
+  lgn_lblbuild   = Erzeugen 
+  msg_obtenerDelegaciones   = Niederlassungen erhalten 
+  msg_cargarDelegaciones   = Niederlassungen Liste laden 
+  msg_cargarPlantas   = Cash Centers Liste laden 
+  msg_iniciarSesion   = Benutzer überprüfen 
+  msg_obtenerAplicaciones   = Apps erhalten 
+  msg_crearToken   = Token erstellen 
+  
+err_campo_obligatorio					                  = Feld {0} ist obligatorisch.
+
+gen_btnLogin                                              = OK
+gen_btnCancelar                                           = Abbrechen
+gen_msg_camporequerido                                    = Feld {0} ist obligatorisch!
+
+msg_obtenerPaises					= Niederlassungen Lands.
+msg_cargarPaises					= Niederlassungen Liste Lands.
+
+Default_lblUsuario                                        = Benutzer
+Default_lblPais                                           = Land

@@ -1,0 +1,1 @@
+﻿select PD_MONEDA_IDMONEDA_SEQ.nextval from dual

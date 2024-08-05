@@ -1,0 +1,60 @@
+﻿User_Form_Welcome_Text_Welcome_Message							= Bien venido a la instalación de la aplicación Génesis.[\nl]Para seguir, haga un clic en el botón 'Siguiente'.
+
+User_Local_Site_Installation_Folder								= Seleccione la carpeta para la instalación.
+User_Local_Site_Installation_Folder_Required_Message			= Es obligatorio seleccionar una carpeta para la instalación.
+
+User_Local_Site_IIS_Site										= Seleccione el sitio IIS donde estará la aplicación.
+User_Local_Site_IIS_Site_Required_Message						= Es obligatorio seleccionar el sitio IIS donde estará la aplicación.
+
+User_Local_Site_Virtual_Directory								= Informe la carpeta virtual de la aplicación.
+User_Local_Site_Virtual_Directory_Required_Message				= Es obligatorio informar la carpeta virtual de la aplicación.
+
+User_Local_Site_IIS_Site_Application_Pool						= Seleccione el POOL de las aplicaciones.
+User_Local_Site_IIS_Site_Application_Pool_Required_Message		= Es obligatorio seleccionar el POOL de las aplicaciones.
+
+User_Local_Service_Installation_Folder							= Seleccione la carpeta para la instalación.
+User_Local_Service_Installation_Folder_Required_Message			= Es obligatorio seleccionar una carpeta para la instalación.
+
+User_Local_Service_IIS_Site										= Seleccione el sitio IIS donde estará el servicio.
+User_Local_Service_IIS_Site_Required_Message					= Es obligatorio seleccionar el sitio IIS donde estará el servicio.
+
+User_Local_Service_Virtual_Directory							= Informe la carpeta virtual del servicio.
+User_Local_Service_Virtual_Directory_Required_Message			= Es obligatorio informar la carpeta virtual del servicio.
+
+User_Local_Database												= Certifíquese de los os datos de conexiones para la ejecución de los scripts
+User_Local_Database_Required_Message							= Es obligatorio configurar los datos de conexiones para la ejecución de los scripts
+User_Local_Database_OracleConnection_Invalid_Directory_Root		= Carpeta raíz del archivo de conexiones inválido 
+
+User_Local_Previous_Service_Installation_Folder_Part1			= Selecciones la carpeta donde está instalada la versión anterior del servicio 
+User_Local_Previous_Service_Installation_Folder_Part2			=  (Versión 
+User_Local_Previous_Service_Installation_Folder_Required_Message	= Es obligatorio informar la carpeta raíz de la versión anterior del servicio instalado.
+
+User_Installation_Message_CopyFiles_IAC							= Copiar los archivos de la aplicación IAC para el destino 
+User_Installation_Message_CopyFiles_Reportes					= Copiar los archivos de la aplicación REPORTES para o destino 
+User_Installation_Message_CopyFiles_Saldos						= Copiar los archivos de la aplicación SALDOS para o destino
+User_Installation_Message_CopyFiles_CargaPrevia					= Copiar los archivos de la aplicación Carga Prévia para o destino  
+User_Installation_Message_CopyFiles_ConsultaLocal				= Copiar los archivos de la aplicación Consulta Local para o destino  
+User_Installation_Message_CopyFiles_NuevoSaldos					= Copiar los archivos de la aplicación Nuevo Saldos para o destino 
+User_Installation_Message_CopyFiles_Servicio					= Copiar los archivos del servicio GENESIS para o destino 
+User_Installation_Message_CopyFiles_Web							= Copiar los archivos de la aplicación GENESIS para o destino 
+User_Installation_Message_CreateUpdate_VirtualDirectory			= Criar/Actualizar en el IIS la carpeta virtual 
+User_Installation_Message_Publish_Application					= Guardar en la aplicación AdminPermisos los datos de la nueva versión de la aplicación 
+User_Installation_Message_EjecucionScripts_Salidas				= Ejecutar los scripts en la base de datos del SALIDAS
+User_Installation_Message_EjecucionScripts_Conteo				= Ejecutar los scripts en la base de datos del CONTEO
+User_Installation_Message_EjecucionScripts_Saldos				= Ejecutar los scripts en la base de datos del SALDOS
+User_Installation_Message_EjecucionScripts_Reportes				= Ejecutar los scripts en la base de datos del REPORTES
+User_Installation_Message_EjecucionScripts_Genesis				= Ejecutar los scripts en la base de datos del GENESIS
+User_Installation_Message_EjecucionScripts_ATM					= Ejecutar los scripts en la base de datos del ATM
+User_Installation_Message_EjecucionScripts_Dashboard				= Ejecutar los scripts en la base de datos del DASHBOARD
+User_Installation_Message_EjecucionScripts_CompileSchema_Salidas				= Compile Schema SALIDAS
+User_Installation_Message_EjecucionScripts_CompileSchema_Conteo				= Compile Schema CONTEO
+User_Installation_Message_EjecucionScripts_CompileSchema_Saldos				= Compile Schema SALDOS
+User_Installation_Message_EjecucionScripts_CompileSchema_Reportes				= Compile Schema REPORTES
+User_Installation_Message_EjecucionScripts_CompileSchema_Genesis				= Compile Schema GENESIS
+User_Installation_Message_EjecucionScripts_CompileSchema_ATM					= Compile Schema ATM
+User_Installation_Message_EjecucionScripts_CompileSchema_Dashboard				= Compile Schema DASHBOARD
+User_Installation_Message_Copy_WebConfig						= Copiar WEB.CONFIG de la versión anterior para la nueva versión de la aplicación / servicio 
+User_Installation_Message_Copy_Conexoes							= Copiar CONEXOES.DBC de la versión anterior para la nueva versión de la aplicación / servicio 
+
+User_Local_Previous_Version_Installation							= Informe la versión anterior de los Web Sites
+User_Local_Previous_Version_Installation_Required_Message			= Es obligatorio informar la versión anterior de los Web Sites.

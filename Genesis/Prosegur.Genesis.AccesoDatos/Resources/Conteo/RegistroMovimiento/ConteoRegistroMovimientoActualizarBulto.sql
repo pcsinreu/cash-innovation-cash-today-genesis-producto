@@ -1,0 +1,4 @@
+﻿/*ConteoRegistroMovimientoActualizarBulto.sql*/
+UPDATE GEPR_TREGISTRO_MOVIMIENTO RM
+SET RM.OID_BULTO = []OID_BULTO
+WHERE RM.OID_REMESA =[]OID_REMESA

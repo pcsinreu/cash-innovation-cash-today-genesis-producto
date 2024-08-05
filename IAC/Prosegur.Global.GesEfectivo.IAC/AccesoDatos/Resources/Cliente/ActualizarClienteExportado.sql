@@ -1,0 +1,1 @@
+﻿update gepr_tcliente set bol_enviado_saldos = []bol_enviado_saldos where cod_cliente = []cod_cliente

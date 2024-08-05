@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>9.2cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>9.2cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.5cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="DES_SUBCLIENTE">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>ORIGEN</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>DES_SUBCLIENTE</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </Border>
+                        <BackgroundColor>#c6d9f1</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>DESTINO</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </Border>
+                        <BackgroundColor>#c6d9f1</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.5cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox12">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Sector: </Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=First(Fields!DES_DELEGACION.Value, "ds_cuenta_origen_grupo") + " - " + First(Fields!DES_PLANTA.Value, "ds_cuenta_origen_grupo")
++ " - " + First(Fields!DES_SECTOR.Value, "ds_cuenta_origen_grupo")</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox12</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                          <Width>0.5pt</Width>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Style>Solid</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>Solid</Style>
+                        </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox13">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=IIF(First(Fields!DES_VALOR.Value, "dsTerminosIAC") Is Nothing,
+"Sector: " + First(Fields!DES_DELEGACION.Value, "ds_cuenta_destino_grupo") + " - " + First(Fields!DES_PLANTA.Value, "ds_cuenta_destino_grupo")
++ " - " + First(Fields!DES_SECTOR.Value, "ds_cuenta_destino_grupo"),
+"Ruta: " + First(Fields!DES_VALOR.Value, "dsTerminosIAC"))</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                          <Width>0.5pt</Width>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                        </BottomBorder>
+                        <RightBorder>
+                          <Style>Solid</Style>
+                        </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details" />
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>ds_cuenta_destino_grupo</DataSetName>
+        <Left>0.1cm</Left>
+        <Height>1cm</Height>
+        <Width>18.4cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>0.3937in</Height>
+    <Style />
+  </Body>
+  <Width>18.5cm</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Reporte">
+      <DataSourceReference>reportes</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>5dfed308-a0f7-4135-903d-c063f131b1ec</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ds_cuenta_destino_grupo">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT        DEL.DES_DELEGACION, DEL.COD_DELEGACION, PLA.COD_PLANTA, PLA.DES_PLANTA, SEC.COD_SECTOR, SEC.DES_SECTOR
+FROM            RPGE_YGRUPO_DOCUMENTO DOC, RPGE_YSECTOR SEC, RPGE_YPLANTA PLA, RPGE_YDELEGACION DEL
+WHERE        DOC.OID_SECTOR_DESTINO = SEC.OID_SECTOR AND SEC.OID_PLANTA = PLA.OID_PLANTA AND PLA.OID_DELEGACION = DEL.OID_DELEGACION AND 
+                         (DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE)</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="COD_SECTOR">
+          <DataField>COD_SECTOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_SECTOR">
+          <DataField>DES_SECTOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_PLANTA">
+          <DataField>DES_PLANTA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_DELEGACION">
+          <DataField>DES_DELEGACION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_DELEGACION">
+          <DataField>COD_DELEGACION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_PLANTA">
+          <DataField>COD_PLANTA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ds_cuenta_origen_grupo">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT        DEL.DES_DELEGACION, DEL.COD_DELEGACION, PLA.COD_PLANTA, PLA.DES_PLANTA, SEC.COD_SECTOR, SEC.DES_SECTOR
+FROM            RPGE_YGRUPO_DOCUMENTO DOC, RPGE_YSECTOR SEC, RPGE_YPLANTA PLA, RPGE_YDELEGACION DEL
+WHERE        DOC.OID_SECTOR_ORIGEN = SEC.OID_SECTOR AND SEC.OID_PLANTA = PLA.OID_PLANTA AND PLA.OID_DELEGACION = DEL.OID_DELEGACION AND 
+                         (DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE)</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="COD_SECTOR">
+          <DataField>COD_SECTOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_SECTOR">
+          <DataField>DES_SECTOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_PLANTA">
+          <DataField>DES_PLANTA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_DELEGACION">
+          <DataField>DES_DELEGACION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_DELEGACION">
+          <DataField>COD_DELEGACION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_PLANTA">
+          <DataField>COD_PLANTA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ds_caracteristicas_formulario">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT CF.COD_CARACT_FORMULARIO 
+FROM RPGE_YGRUPO_DOCUMENTO DOC 
+INNER JOIN RPGE_YCARACTFORMXFORMULARIO CFF ON CFF.OID_FORMULARIO = DOC.OID_FORMULARIO
+INNER JOIN RPGE_YCARACT_FORMULARIO CF ON CF.OID_CARACT_FORMULARIO = CFF.OID_CARACT_FORMULARIO
+WHERE DOC.COD_COMPROBANTE =:P_COD_COMPROBANTE</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="COD_CARACT_FORMULARIO">
+          <DataField>COD_CARACT_FORMULARIO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsTerminosIAC">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT 
+	TGD.DES_VALOR 
+FROM RPGE_YVALOR_TERMINOXGRUPODOC TGD
+INNER JOIN RPGE_YTERMINO T ON T.OID_TERMINO = TGD.OID_TERMINO
+INNER JOIN RPGE_YGRUPO_DOCUMENTO GD ON GD.OID_GRUPO_DOCUMENTO = TGD.OID_GRUPO_DOCUMENTO
+INNER JOIN RPGE_YFORMULARIO F ON F.OID_FORMULARIO = GD.OID_FORMULARIO
+INNER JOIN RPGE_YCARACTFORMXFORMULARIO CF ON CF.OID_FORMULARIO = F.OID_FORMULARIO
+INNER JOIN RPGE_YCARACT_FORMULARIO C ON C.OID_CARACT_FORMULARIO = CF.OID_CARACT_FORMULARIO
+WHERE T.COD_TERMINO = 'TR_000000000012' 
+AND C.COD_CARACT_FORMULARIO = 'SALIDAS_RECORRIDO'
+AND GD.COD_COMPROBANTE = :P_COD_COMPROBANTE</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DES_VALOR">
+          <DataField>DES_VALOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="P_COD_COMPROBANTE">
+      <DataType>String</DataType>
+      <Prompt>P COD COMPROBANTE</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>7f92fd0b-7030-426c-b798-dbbb418f9eb4</rd:ReportID>
+</Report>

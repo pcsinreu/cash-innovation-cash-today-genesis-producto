@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="ContadoPuesto.asmx.vb" Class="Prosegur.Global.GesEfectivo.Reportes.Servicio.ContadoPuesto" %>

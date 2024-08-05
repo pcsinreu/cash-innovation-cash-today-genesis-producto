@@ -1,0 +1,1 @@
+﻿SELECT IdReporte as Id, Descripcion FROM PD_Reporte

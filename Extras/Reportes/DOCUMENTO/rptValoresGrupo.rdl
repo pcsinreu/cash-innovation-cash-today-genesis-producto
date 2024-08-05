@@ -1,0 +1,1095 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Reporte">
+      <DataSourceReference>Reporte</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>aa6ef4c8-0de3-495e-8389-7a2de5238e0f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ds_datos_documento_grupo">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>
+          SELECT F.DES_FORMULARIO, DOC.COD_COMPROBANTE, FN_GMT_DELEGACION(PLA.OID_DELEGACION, DOC.GMT_MODIFICACION) AS GMT_MODIFICACION,
+          DOC.BOL_IMPRESO, FN_GMT_DELEGACION(PLA.OID_DELEGACION, SYS_EXTRACT_UTC(CURRENT_TIMESTAMP)) AS FECHA_IMPRESSION
+          FROM            RPGE_YGRUPO_DOCUMENTO DOC, RPGE_YFORMULARIO F, RPGE_YSECTOR SEC, RPGE_YPLANTA PLA
+          WHERE        (DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE) AND (F.OID_FORMULARIO = DOC.OID_FORMULARIO) AND (SEC.OID_SECTOR = DOC.OID_SECTOR_ORIGEN)
+          AND (PLA.OID_PLANTA = SEC.OID_PLANTA)
+        </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DES_FORMULARIO">
+          <DataField>DES_FORMULARIO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_COMPROBANTE">
+          <DataField>COD_COMPROBANTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GMT_MODIFICACION">
+          <DataField>GMT_MODIFICACION</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="BOL_IMPRESO">
+          <DataField>BOL_IMPRESO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="FECHA_IMPRESSION">
+          <DataField>FECHA_IMPRESSION</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ds_copia">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>
+          SELECT DISTINCT DECODE(DOCU.COD_ESTADO,'AC','ACEPTADO'
+          ,'AN','ANULADO'
+          ,'CF','CONFIRMADO'
+          ,'EC','EN CURSO'
+          ,'RC','RECHAZADO'
+          ,'SU', 'SUSTITUIDO'
+          ,'ERROR') ESTADO
+          , DOCU.COD_COMPROBANTE, COPI.NEL_CANTIDAD_COPIA, COPI.DES_DESTINO_COPIA, DOCU.BOL_IMPRESO
+          FROM            RPGE_YGRUPO_DOCUMENTO DOCU, RPGE_YFORMULARIO FORM, RPGE_YCOPIA COPI
+          WHERE        (DOCU.OID_FORMULARIO = FORM.OID_FORMULARIO) AND (FORM.OID_FORMULARIO = COPI.OID_FORMULARIO) AND
+          (DOCU.COD_COMPROBANTE = :P_COD_COMPROBANTE)
+        </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ESTADO">
+          <DataField>ESTADO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_COMPROBANTE">
+          <DataField>COD_COMPROBANTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NEL_CANTIDAD_COPIA">
+          <DataField>NEL_CANTIDAD_COPIA</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DES_DESTINO_COPIA">
+          <DataField>DES_DESTINO_COPIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BOL_IMPRESO">
+          <DataField>BOL_IMPRESO</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix2">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>18.7175cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>37.86346mm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="recValores">
+                          <ReportItems>
+                            <Tablix Name="Tablix1">
+                              <TablixBody>
+                                <TablixColumns>
+                                  <TablixColumn>
+                                    <Width>7.00921cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>4.51386cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>6.87692cm</Width>
+                                  </TablixColumn>
+                                </TablixColumns>
+                                <TablixRows>
+                                  <TablixRow>
+                                    <Height>0.6cm</Height>
+                                    <TablixCells>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox3">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Constant" />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox3</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="txtEstado">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=First(Fields!ESTADO.Value, "ds_copia")</Value>
+                                                    <Style>
+                                                      <FontSize>11pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                      <Color>Red</Color>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <ZIndex>3</ZIndex>
+                                            <Style>
+                                              <Border>
+                                                <Color>Red</Color>
+                                                <Style>Solid</Style>
+                                                <Width>0.5pt</Width>
+                                              </Border>
+                                              <VerticalAlign>Middle</VerticalAlign>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox12">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style />
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox12</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                    </TablixCells>
+                                  </TablixRow>
+                                </TablixRows>
+                              </TablixBody>
+                              <TablixColumnHierarchy>
+                                <TablixMembers>
+                                  <TablixMember />
+                                  <TablixMember />
+                                  <TablixMember />
+                                </TablixMembers>
+                              </TablixColumnHierarchy>
+                              <TablixRowHierarchy>
+                                <TablixMembers>
+                                  <TablixMember>
+                                    <Group Name="Details1" />
+                                  </TablixMember>
+                                </TablixMembers>
+                              </TablixRowHierarchy>
+                              <DataSetName>ds_copia</DataSetName>
+                              <Top>0.62794cm</Top>
+                              <Height>0.6cm</Height>
+                              <Width>18.39999cm</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Tablix>
+                            <Subreport Name="Subreport4">
+                              <ReportName>rptDatosCuentasGrupo</ReportName>
+                              <Parameters>
+                                <Parameter Name="P_COD_COMPROBANTE">
+                                  <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+                                </Parameter>
+                              </Parameters>
+                              <Left>0.00001cm</Left>
+                              <Height>0.52211cm</Height>
+                              <Width>18.52605cm</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <FontFamily>Calibri</FontFamily>
+                                <FontSize>8pt</FontSize>
+                                <PaddingBottom>50pt</PaddingBottom>
+                              </Style>
+                            </Subreport>
+                            <Subreport Name="Subreport2">
+                              <ReportName>rptInformacionAdicionalGrupo</ReportName>
+                              <Parameters>
+                                <Parameter Name="P_COD_COMPROBANTE">
+                                  <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+                                </Parameter>
+                              </Parameters>
+                              <Top>2.24675cm</Top>
+                              <Left>0.00001cm</Left>
+                              <Height>0.33166in</Height>
+                              <Width>18.43037cm</Width>
+                              <ZIndex>2</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <FontFamily>Calibri</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </Subreport>
+                            <Subreport Name="subValoresGrupo">
+                              <ReportName>rptValoresGrupoDocumento</ReportName>
+                              <Parameters>
+                                <Parameter Name="P_COD_COMPROBANTE">
+                                  <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+                                </Parameter>
+                              </Parameters>
+                              <Top>1.33377cm</Top>
+                              <Left>0.03039cm</Left>
+                              <Height>0.33166in</Height>
+                              <Width>18.4cm</Width>
+                              <ZIndex>3</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <FontFamily>Calibri</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </Subreport>
+                          </ReportItems>
+                          <PageBreak>
+                            <BreakLocation>End</BreakLocation>
+                            <ResetPageNumber>true</ResetPageNumber>
+                          </PageBreak>
+                          <PageName>=Fields!NEL_CANTIDAD_COPIA.Value &amp; " / " &amp; Fields!DES_DESTINO_COPIA.Value</PageName>
+                          <OmitBorderOnPageBreak>true</OmitBorderOnPageBreak>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!NEL_CANTIDAD_COPIA.Value</GroupExpression>
+                    </GroupExpressions>
+                    <PageBreak>
+                      <BreakLocation>End</BreakLocation>
+                    </PageBreak>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!NEL_CANTIDAD_COPIA.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <KeepTogether>true</KeepTogether>
+            <DataSetName>ds_copia</DataSetName>
+            <Left>0.03039cm</Left>
+            <Height>37.86346mm</Height>
+            <Width>18.7175cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>1.55549in</Height>
+        <Style />
+      </Body>
+      <Width>18.74789cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>3.32936cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Image Name="imgLogo">
+              <Source>Embedded</Source>
+              <Value>logo</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0mm</Top>
+              <Left>0.13175cm</Left>
+              <Height>15.26459mm</Height>
+              <Width>30.51528mm</Width>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+              </Style>
+              <cl:ComponentMetadata>
+                <cl:ComponentId>d2db0489-e6be-412d-b54e-7eaf22c37b4e</cl:ComponentId>
+                <cl:SourcePath>/Report Parts/imgLogo</cl:SourcePath>
+                <cl:SyncDate>2013-12-16T13:40:11.1132500-02:00</cl:SyncDate>
+              </cl:ComponentMetadata>
+            </Image>
+            <Textbox Name="txtDadosProsegur">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!P_ReporteDocumentoNegocio.Value</Value>
+                      <Style>
+                        <FontSize>11pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>PROSEGUR</Value>
+                      <Style>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!P_ReporteDocumentoDomicilioTelefono.Value</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0mm</Top>
+              <Left>33.05193mm</Left>
+              <Height>15.26459mm</Height>
+              <Width>152.13539mm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtDatosDocumento">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!DES_FORMULARIO.Value, "ds_datos_documento_grupo")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>N</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>º: </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!COD_COMPROBANTE.Value, "ds_datos_documento_grupo")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Página: </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Code.PaginaActualGrupo(Globals!PageName)</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value> de </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=ROUND(Globals!OverallTotalPages / Count(Fields!NEL_CANTIDAD_COPIA.Value, "ds_copia"))</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>16.88943mm</Top>
+              <Left>0.13175cm</Left>
+              <Height>16.40417mm</Height>
+              <Width>9.2cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <TopBorder>
+                  <Color>Black</Color>
+                </TopBorder>
+                <BottomBorder>
+                  <Color>Black</Color>
+                </BottomBorder>
+                <LeftBorder>
+                  <Color>Black</Color>
+                </LeftBorder>
+                <RightBorder>
+                  <Color>Black</Color>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtFechasDocumento">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Data: </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!GMT_MODIFICACION.Value, "ds_datos_documento_grupo")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <Format>dd/MM/yyyy HH:mm:ss tt</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Data </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=IIF(FIRST(Fields!BOL_IMPRESO.Value, "ds_datos_documento_grupo") ="0" ,"Impresión", "Reimpresión")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>: </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!FECHA_IMPRESSION.Value, "ds_datos_documento_grupo")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <Format>dd/MM/yyy HH:mm:ss tt</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>16.88943mm</Top>
+              <Left>93.26049mm</Left>
+              <Height>16.40417mm</Height>
+              <Width>9.2cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>2.67229cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="txtEntregadoPorArea">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>4.9375mm</Top>
+              <Left>0.1cm</Left>
+              <Height>15.525mm</Height>
+              <Width>18.42605cm</Width>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <RightBorder>
+                  <Style>Solid</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtEntregadoPor">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Entregado por</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.525mm</Top>
+              <Left>1mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>40.2296mm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtRecebidoPor">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Recebido por</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.525mm</Top>
+              <Left>40.67408mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>36.16325mm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtV">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>V</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>º</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.525mm</Top>
+              <Left>76.83731mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>18.87008mm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtRegistradoPor">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Registrado por</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.525mm</Top>
+              <Left>95.7074mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>32.98825mm</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtSelo">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Selo</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.525mm</Top>
+              <Left>128.69564mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>56.49168mm</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>0.5pt</Width>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtImpresion">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>(</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=iif(FIRST(Fields!BOL_IMPRESO.Value, "ds_copia") ="0", "Impresión", "Reimpresión")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>) Cópia </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Globals!PageName</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>21.0975mm</Top>
+              <Left>0.30385mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>92.68715mm</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtSelo4">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Usuário solicitante: </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Parameters!P_DES_USUARIO_SOLICITANTE.Value</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>21.0975mm</Top>
+              <Left>94.75489mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>88.93174mm</Width>
+              <ZIndex>7</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="P_COD_COMPROBANTE">
+      <DataType>String</DataType>
+      <Prompt>Codigo comprobante del Documento.</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="P_DES_USUARIO_SOLICITANTE">
+      <DataType>String</DataType>
+      <Prompt>Usuario solicitante de la impresión.</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="P_ReporteDocumentoNegocio">
+      <DataType>String</DataType>
+      <Prompt>P_ReporteDocumentoNegocio</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="P_ReporteDocumentoDomicilioTelefono">
+      <DataType>String</DataType>
+      <Prompt>P_ReporteDocumentoDomicilioTelefono</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>
+    Public GrupoActual As String = ""
+    Public IndicePaginaActualGrupo As Int32 = 0
+
+    Public Function PaginaActualGrupo(ByVal Grupo As String) As String
+
+    If Len(Trim(Grupo)) = 0 Or Trim(GrupoActual) &lt;&gt; Trim(Grupo) Then
+    GrupoActual = Grupo
+    IndicePaginaActualGrupo = 1
+    Else
+    IndicePaginaActualGrupo = IndicePaginaActualGrupo + 1
+    End If
+
+    PaginaActualGrupo = CStr(IndicePaginaActualGrupo)
+
+    End Function
+  </Code>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo">
+      <MIMEType>image/bmp</MIMEType>
+      <ImageData>Qk1+cQAAAAAAADYAAAAoAAAAfQAAADoAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/wMDA/8DAwP/AwMD/////////////////////////////////////////////////wMDA/8DAwP/AwMD/wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/8DAwP/AwMD/wMDA///////////////////////////////////////////////////////AwMD/wMDA/8DAwP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP/AwMD///////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD//////////////////////wAAAP8AAAD/AAAA//////////////////////+AgID/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/wMDA////////////
+////////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/8DAwP////////////////8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID/////////////////wMDA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA/8DAwP8AAAD/AAAA//////////////////////+AgID/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID//////////////////////4CAgP8AAAD/AAAA///////////////////////AwMD/AAAA/wAAAP+AgID//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/AAAA/4CAgP///////////////////////////////////////////4CAgP8AAAD/AAAA/8DAwP//////////////////////AAAA/wAAAP+AgID/////////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA/////////////////wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/8DAwP//////wMDA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////4CAgP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/////////////////AAAA/wAAAP8AAAD//////////////////////8DAwP8AAAD/AAAA/8DA
+wP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP8AAAD/gICA////////////////////////////////////////////gICA/wAAAP8AAAD/wMDA//////////////////////8AAAD/AAAA/4CAgP///////////8DAwP8AAAD/AAAA/wAAAP/AwMD////////////AwMD/AAAA/wAAAP8AAAD/wMDA///////AwMD/AAAA/wAAAP+AgID/////////////////wMDA/wAAAP8AAAD/gICA///////AwMD/AAAA/wAAAP+AgID/wMDA/8DAwP/AwMD/wMDA/8DAwP/AwMD/wMDA///////AwMD/AAAA/wAAAP8AAAD/gICA////////////wMDA/4CAgP8AAAD/AAAA/wAAAP///////////8DAwP8AAAD/AAAA/4CAgP/AwMD///////////+AgID/AAAA/wAAAP/AwMD///////////8AAAD/AAAA/wAAAP//////////////////////wMDA/wAAAP8AAAD/wMDA///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP+AgID///////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD//////////////////////wAAAP8AAAD/gICA////////////AAAA/wAAAP8AAAD/wMDA///////////////////////AwMD/AAAA/wAAAP+AgID/
+/////4CAgP8AAAD/AAAA////////////////////////////gICA/wAAAP8AAAD//////8DAwP8AAAD/AAAA/4CAgP///////////////////////////////////////////4CAgP8AAAD/AAAA/8DAwP///////////////////////////wAAAP8AAAD/AAAA////////////gICA/wAAAP8AAAD/wMDA/////////////////8DAwP8AAAD/AAAA/4CAgP///////////wAAAP8AAAD/AAAA//////////////////////+AgID/AAAA/wAAAP/AwMD//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP/AwMD//////////////////////4CAgP8AAAD/AAAA/8DAwP/AwMD/wMDA/8DAwP+AgID/AAAA/wAAAP+AgID///////////8AAAD/AAAA/4CAgP////////////////////////////////8AAAD/AAAA/wAAAP//////////////////////////////////////wMDA/4CAgP8AAAD/AAAA/wAAAP//////wMDA/wAAAP8AAAD/gICA////////////////////////////////////////////AAAA/wAAAP8AAAD/////////////////wMDA/8DAwP/AwMD/gICA/wAAAP8AAAD///////////+AgID/AAAA/wAAAP/AwMD/////////////////wMDA/wAAAP8AAAD/gICA////////////AAAA/wAAAP8AAAD/wMDA/8DAwP/AwMD/wMDA/wAAAP8AAAD/AAAA/8DA
+wP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA////////////wMDA/wAAAP8AAAD/gICA/////////////////////////////////4CAgP8AAAD/AAAA///////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA///////AwMD/AAAA/wAAAP8AAAD/gICA/4CAgP+AgID/gICA/4CAgP/AwMD///////////8AAAD/AAAA/wAAAP////////////////+AgID/AAAA/wAAAP8AAAD/AAAA/wAAAP///////////4CAgP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID///////////8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP8AAAD/gICA/4CAgP8AAAD/AAAA/wAAAP8AAAD/wMDA//////+AgID/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID////////////AwMD/AAAA/wAAAP+AgID/////////////////////////////////gICA/wAAAP8AAAD/
+///////////AwMD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////8DAwP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////wAAAP8AAAD/AAAA/////////////////8DAwP8AAAD/AAAA/wAAAP8AAAD/gICA////////////gICA/wAAAP8AAAD/wMDA/////////////////8DAwP8AAAD/AAAA/4CAgP///////////wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/AAAA/4CAgP////////////////+AgID/AAAA/wAAAP+AgID//////4CAgP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID//////8DAwP8AAAD/AAAA/4CAgP////////////////////////////////8AAAD/AAAA/wAAAP//////wMDA/wAAAP8AAAD/AAAA/wAAAP+AgID/gICA/8DAwP//////////////////////wMDA/wAAAP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP+AgID/gICA////////////AAAA/wAAAP8AAAD///////////////////////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD/////////////////wMDA/wAAAP8AAAD/gICA////////////AAAA/wAAAP8AAAD//////////////////////4CAgP8AAAD/AAAA/8DA
+wP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP8AAAD/gICA/////////////////8DAwP8AAAD/AAAA/4CAgP//////gICA/wAAAP8AAAD/wMDA//////////////////////+AgID/AAAA/wAAAP///////////wAAAP8AAAD/AAAA/////////////////////////////////wAAAP8AAAD/AAAA///////AwMD/AAAA/wAAAP+AgID//////////////////////8DAwP/AwMD////////////AwMD/AAAA/wAAAP+AgID///////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD////////////////////////////AwMD/wMDA/8DAwP///////////4CAgP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID///////////8AAAD/AAAA/wAAAP///////////////////////////wAAAP8AAAD/gICA///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP+AgID/////////////////wMDA/wAAAP8AAAD/gICA//////+AgID/AAAA/wAAAP/AwMD//////////////////////wAAAP8AAAD/AAAA////////////gICA/wAAAP8AAAD/wMDA//////////////////////+AgID/AAAA/wAAAP+AgID/
+/////8DAwP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID//////8DAwP8AAAD/AAAA/4CAgP///////////////////////////////////////////8DAwP8AAAD/AAAA/4CAgP//////////////////////wMDA/wAAAP8AAAD/gICA////////////gICA/wAAAP8AAAD/wMDA/////////////////8DAwP8AAAD/AAAA/4CAgP///////////wAAAP8AAAD/AAAA///////////////////////AwMD/AAAA/wAAAP+AgID//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/AAAA/wAAAP+AgID/gICA/4CAgP8AAAD/AAAA/wAAAP/AwMD//////4CAgP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP8AAAD/AAAA/wAAAP+AgID////////////AwMD/AAAA/wAAAP8AAAD/gICA/8DAwP/AwMD/gICA/wAAAP8AAAD/AAAA////////////wMDA/wAAAP8AAAD/AAAA/8DAwP/AwMD/gICA/wAAAP8AAAD/AAAA////////////wMDA/wAAAP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP+AgID/gICA/8DAwP///////////4CAgP8AAAD/AAAA/wAAAP+AgID/wMDA/4CAgP8AAAD/AAAA/wAAAP/AwMD///////////+AgID/AAAA/wAAAP/AwMD/////////////////wMDA/wAAAP8AAAD/gICA////////////AAAA/wAAAP8AAAD/gICA/4CAgP+AgID/gICA/wAAAP8AAAD/AAAA/8DA
+wP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP/AwMD/////////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID////////////AwMD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/wMDA/////////////////4CAgP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA/////////////////4CAgP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID///////////8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/gICA/4CAgP+AgID/gICA/4CAgP+AgID/gICA/8DAwP/////////////////AwMD/gICA/4CAgP+AgID/gICA/4CAgP+AgID/gICA/8DAwP/////////////////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/wAAAP+AgID/////////////////
+////////////////wMDA/4CAgP8AAAD/AAAA/wAAAP+AgID/wMDA//////////////////////+AgID/gICA/4CAgP+AgID/gICA/4CAgP+AgID/gICA/4CAgP/AwMD//////////////////////8DAwP+AgID/AAAA/wAAAP8AAAD/gICA/8DAwP//////////////////////wMDA/4CAgP+AgID///////////////////////////+AgID/gICA/4CAgP///////////4CAgP+AgID/gICA/4CAgP+AgID/gICA/4CAgP+AgID/wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP/AwMD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP8AAAD/AAAA/wAAAP8AAAD/gICA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////gICA/wAAAP8AAAD/gICA/8DAwP/////////////////AwMD/gICA/8DAwP/AwMD/gICA/wAAAP8AAAD/gICA/8DAwP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////4CAgP8AAAD/AAAA/4CAgP+AgID/////////////////gICA/4CAgP///////////8DAwP+AgID//////wAAAP8AAAD/AAAA/8DAwP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////AwMD/AAAA/4CAgP///////////8DAwP+AgID/gICA/4CAgP/AwMD/////////////////gICA////////////gICA/4CAgP8AAAD/AAAA///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD///////////////////////////+AgID/gICA/4CAgP/AwMD//////8DAwP+AgID////////////AwMD/wMDA/4CAgP8AAAD/gICA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+AgID/wMDA////////////////////////////gICA/8DAwP///////////4CAgP+AgID/gICA/8DAwP///////////8DAwP/AwMD//////4CAgP8AAAD/wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+wMDA/wAAAP8AAAD/gICA/8DAwP///////////8DAwP+AgID//////////////////////8DAwP+AgID/gICA/8DAwP//////wMDA/8DAwP//////wMDA/wAAAP+AgID///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+AgID/AAAA/4CAgP8AAAD/AAAA/wAAAP/AwMD/gICA////////////////////////////gICA/8DAwP//////wMDA/4CAgP+AgID/wMDA////////////gICA/wAAAP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAP8AAAD///////////+AgID/AAAA/wAAAP8AAAD/gICA//////////////////////+AgID//////////////////////4CAgP+AgID/gICA//////+AgID/AAAA/8DAwP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+AAAA/4CAgP//////////////////////AAAA/wAAAP8AAAD/AAAA/4CAgP//////gICA/8DAwP//////////////////////gICA/8DAwP/AwMD/gICA/4CAgP8AAAD/gICA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/gICA/////////////////8DAwP+AgID//////8DAwP8AAAD/AAAA/wAAAP8AAAD/wMDA//////////////////////+AgID/////////////////wMDA/wAAAP+AgID/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP+AgID/////////////////gICA/8DAwP/////////////////AwMD/AAAA/wAAAP8AAAD/gICA/8DAwP///////////4CAgP//////////////////////AAAA/4CAgP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+AAAA/wAAAP+AgID/wMDA//////+AgID///////////////////////////+AgID/wMDA/4CAgP8AAAD/AAAA/4CAgP+AgID/wMDA/////////////////8DAwP8AAAD/gICA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAD/AAAA/8DAwP+AgID/gICA/4CAgP//////////////////////wMDA/8DAwP///////////8DAwP+AgID/AAAA/wAAAP8AAAD/wMDA////////////gICA/wAAAP/AwMD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////4CAgP8AAAD/wMDA////////////gICA/4CAgP/AwMD///////////+AgID////////////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/4CAgP+AgID/AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+wMDA/wAAAP+AgID///////////+AgID//////8DAwP+AgID/gICA/4CAgP///////////////////////////4CAgP///////////4CAgP8AAAD/AAAA/wAAAP+AgID/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA/wAAAP/AwMD//////4CAgP////////////////+AgID/gICA/4CAgP////////////////+AgID/wMDA///////////////////////AwMD/gICA/8DAwP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP//////gICA////////////wMDA/4CAgP//////wMDA/4CAgP+AgID/gICA/8DAwP//////////////////////wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////+AgID/AAAA/4CAgP+AgID///////////+AgID//////////////////////4CAgP+AgID/gICA/8DAwP///////////8DAwP8AAAD/AAAA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD/wMDA/4CAgP///////////8DAwP+AgID/wMDA////////////gICA/4CAgP+AgID/AAAA/wAAAP/AwMD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+AgID/AAAA/wAAAP8AAAD/wMDA//////+AgID/gICA///////////////////////AwMD/AAAA/wAAAP8AAAD/wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////AwMD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID/gICA/4CAgP+AgID/AAAA/wAAAP8AAAD/gICA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/4CAgP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/wMDA/8DAwP/AwMD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>77912940-2d1a-464d-8d53-c94e8f99a6f4</rd:ReportID>
+</Report>

@@ -1,0 +1,1 @@
+﻿SELECT IdUsuario as id, Nombre, ApellidoNombre, Bloqueado FROM PD_Usuario

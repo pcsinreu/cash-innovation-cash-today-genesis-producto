@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Prosegur.Profat.Integracao.Comum.Entidades" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Prosegur.Profat.Integracao.Comum.Entidades" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntradaCT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnoCompetencia" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CodCliente" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CodFilialOperativa" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CodPontoServico" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CodUsuario" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DataServico" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Lista_Valores_Custodiados" nillable="true" type="tns:ArrayOfValores_Custodiados" />
+      <xs:element minOccurs="0" name="MesCompetencia" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="OrigemDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EntradaCT" nillable="true" type="tns:EntradaCT" />
+  <xs:complexType name="ArrayOfValores_Custodiados">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Valores_Custodiados" nillable="true" type="tns:Valores_Custodiados" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValores_Custodiados" nillable="true" type="tns:ArrayOfValores_Custodiados" />
+  <xs:complexType name="Valores_Custodiados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodMercadoria" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CodigoISODivisa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MontanteDivisa" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Valores_Custodiados" nillable="true" type="tns:Valores_Custodiados" />
+  <xs:complexType name="RetornoCT">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Retorno">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RetornoCT" nillable="true" type="tns:RetornoCT" />
+  <xs:complexType name="Retorno">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoUnicoDocumento" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Erros" nillable="true" type="tns:ArrayOfErro" />
+      <xs:element minOccurs="0" name="Retorno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Retorno" nillable="true" type="tns:Retorno" />
+  <xs:complexType name="ArrayOfErro">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Erro" nillable="true" type="tns:Erro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfErro" nillable="true" type="tns:ArrayOfErro" />
+  <xs:complexType name="Erro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodErro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DetalheErro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MensagemErro" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Erro" nillable="true" type="tns:Erro" />
+</xs:schema>

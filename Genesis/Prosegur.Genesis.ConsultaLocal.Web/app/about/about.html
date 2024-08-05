@@ -1,0 +1,18 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12" style="padding-left:4%; padding-right:4%">
+            <table class="table table-hover ">
+                <tr ng-repeat="cliente in clientes">
+                    <td>
+                        <a ng-click="GoToClient(cliente)">
+                            <img ng-src="{{cliente.DES_PATH_RELATIVO_LOGO}}/{{cliente.DES_ARCHIVO_LOGO}}" alt="{{cliente.DES_CLIENTE}}" title="{{cliente.DES_CLIENTE}}" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+

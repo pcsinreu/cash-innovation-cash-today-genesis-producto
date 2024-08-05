@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_Cliente WHERE IdCliente = :IdCliente

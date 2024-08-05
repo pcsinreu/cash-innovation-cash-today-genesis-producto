@@ -1,0 +1,306 @@
+<div ng-controller="DashboardCtrl">
+
+    <!--Plantilla excel-->
+    <div ng-include="'app/Includes/ExportedTable.html'"></div>
+
+    <!--modal busqueda de clientes-->
+    <div ng-include="'app/Includes/BusquedaDeClientes.html'"></div>
+
+    <!--modal clientes-->
+    <div ng-include="'app/Includes/ModalClientes.html'"></div>
+
+    <!--modal delegaciones-->
+    <div ng-include="'app/Includes/ModalDelegaciones.html'"></div>
+
+    <!--nav bar-->
+    <div class="container-fluid">
+           
+        <div class="row">
+            <nav class="navbar navbar-light bg-faded fixed-top" style="background-color:#6E8492; z-index:1">
+
+                <span data-target="#sidebar" data-toggle="collapse" aria-expanded="false" class="collapsed"><i class="fa fa-navicon fa-2x py-2 p-1"></i></span>
+                <a class="navbar-brand" href="#">
+                    <img src="App_Themes/Padrao/css/img/logo2.jpg" width="150" height="40" class="d-inline-block align-top" alt="">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img ng-if="logoBancoSeleccionado != null" ng-src="{{logoBancoSeleccionado}}" width="100" height="30" class="d-inline-block align-top" alt="">
+                    <span ng-if="logoBancoSeleccionado == null">{{descripcionBancoSeleccionado}}</span>
+                </a>
+
+
+                <form class="form-inline">
+                    <div class="dropdown show mr-sm-2">
+                        <a class="btn dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: white; color: grey;">
+                            {{PlanificacionSeleccionada}}
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" ng-click="ObtenerGraficoMaesxClientes(config.OID_PLANIFICACION,config.DES_PLANIFICACION)" ng-repeat="config in ListaConfiguraciones">{{config.DES_PLANIFICACION}}</a>
+                        </div>
+                    </div>
+                    <label class="mr-sm-2" style="font-family: inherit;color: transparent;">Fecha Desde</label>
+                    <div style="position:relative">
+                        <input class="form-control mr-sm-2 filtroFecha" placeholder="Fecha desde" id="FechaDesde"/>
+                        
+                    </div>
+
+                    <label class="mr-sm-2" style="font-family: inherit;color: transparent;">Fecha Hasta</label>
+                    <div style="position:relative">
+                        <input class="form-control mr-sm-2 filtroFecha" placeholder="Fecha hasta" id="FechaHasta"/>
+                    </div>
+                    <!-- <input class="btn btn-outline-success my-2 my-sm-0" type="button" value="Filtrar" ng-click="Filter()" /> -->
+                          <div class="ui basic red animated button" tabindex="0">
+                                <div class="visible content">Filtrar</div>
+                                <div class="hidden content"  ng-click="Filter()">
+                                        <i class="filter icon"></i>
+                                </div>
+                         </div>
+                </form>
+            </nav>
+        </div>
+        <!--menu lateral-->
+        <div class="row" style="padding-top: 65px;" >
+            <div class="col-md-3 float-left col-1 pl-0 pr-0 collapse width" id="sidebar">
+                <div class="list-group border-0 card text-center">
+                    <a ng-click="ObtenerPlanificaciones(bank)" class="list-group-item d-inline-block collapsed" data-parent="#sidebar" ng-repeat-start="bank in Bancos">
+                        
+                        <img class="ui small centered bordered btn  image" ng-src="{{bank.DES_LOGO_PATH}}" height="50x" width="200px" alt="{{bank.DES_CLIENTE}}" title="{{bank.DES_CLIENTE}}" />
+                    </a>
+                    <!-- <a ng-click="ObtenerCliPlanificacion()" ng-if="$last"  ng-repeat-end style="color:#ffe800">
+                        <i class="fa fa-search fa-2x fa-inverse" aria-hidden="true">Buscar cliente</i>
+                    </a> -->
+                    
+                    <button  ng-click="ObtenerCliPlanificacion()" ng-if="$last" ng-repeat-end style="background-color:#ffc71e; color:white"  class="ui button">
+                            <i class="icon search"></i> Buscar cliente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--body-->         
+        <br /><!-- Icon Cards-->
+        <!-- <div class="row justify-content-md-center">
+            <div class="col-sm-4 text-center my-auto">
+                <div class="card o-hidden h-100">
+                    <header>
+                        <h2 class="display h6">Saldos desplazados</h2>
+                    </header>
+                    <div class="card-body">                      
+                        <div class="h4 mb-0 text-primary" style="font-size:30px" ng-bind="SaldosDesp[0].NUM_IMPORTE | placeholder: 0 | number:2"></div>
+                        <div class="small text-muted" style="font-size:20px" ng-bind="SaldosDesp[0].DIVISA | placeholder: 'BRL'"></div>
+                        <hr>
+                        <div class="h4 mb-0 text-primary" to="5000" style="font-size:30px" ng-bind="SaldosDesp[1].NUM_IMPORTE | placeholder: 0 | number:2"></div>
+                        <div class="small text-muted" style="font-size:20px">USD</div>
+                        <hr>
+                        <div class="h4 mb-0 text-warning" style="font-size:30px" ng-bind="SaldosDesp[2].NUM_IMPORTE | placeholder: 0 | number:2"></div>
+                        <div class="small text-muted" style="font-size:20px">EU</div>
+
+                        <div class="h4 mb-0 text-success"></div>
+                        <div class="small text-muted"></div>
+                    </div>
+                </div>
+            </div>          
+            <div class="col-md-4" style="padding-left:0">
+                <div class="container card h-100" style="padding:0">
+                    <header class="text-center">
+                        <h2 class="display h6">Maes por cliente</h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <canvas class="chart chart-pie" id="maeschart" chart-data="SaldosCliente.data" chart-options="options" width="250px" height="250px" chart-labels="SaldosCliente.labels" chart-click="ShowModal"></canvas>
+
+                        </div>
+                        <div id="maesClienteLegened" class="legendSection col-xl-6"></div>
+                    </div>
+                </div>
+            </div>          
+            <div class="col-md-4" style="padding-left:0">
+                <div class="container card h-100" style="padding:0">
+                    <header class="text-center">
+                        <h2 class="display h6">Maes por delegacion</h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <canvas id="maesdelegacion" class="chart chart-pie" chart-data="SaldosDelegacion.data" chart-labels="SaldosDelegacion.labels" chart-options="options" width="250px" height="250px" chart-click="ShowModalDelegaciones"></canvas>
+                        </div>
+                        <div id="maesDelegacionLegend" class="legendSection col-xl-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="ui basic segment App-DashboardContainer">
+            <div class="ui divided three column grid App-DashBoard">
+               <div class="row rowdashboard">
+                  <div class="column">
+                     <div class="ui horizontal segments App-Resulter">
+                        <div class="ui center aligned segment">
+                           <!-- <div class="ui red top right attached label">Saldos Desplazados</div> -->
+                           <div class="ui top right attached label charttitle">Saldos Desplazados</div>                           
+                           <div class="ui blue tiny statistic">
+                              <div class="value" style="font-size: 1.6rem!important"  ng-bind="SaldosDesp[0].NUM_IMPORTE | placeholder: 0 | number:2"></div>
+                              <div class="label">BRL</div>
+                           </div>
+                           <div class="ui section divider"></div>
+                           <div class="ui tiny statistic">
+                               <div class="value statisticsUsd" style="font-size: 1.6rem!important" ng-bind="SaldosDesp[1].NUM_IMPORTE | placeholder: 0 | number:2">0.00</div>
+                              <div class="label">USD</div>
+                           </div>
+                           <div class="ui section divider"></div>
+                           <div class="ui yellow tiny statistic">
+                               <div class="value" style="font-size: 1.6rem!important" ng-bind="SaldosDesp[2].NUM_IMPORTE | placeholder: 0 | number:2">0.00</div>
+                              <div class="label">EU</div>
+                           </div>
+                        </div>
+                        <div class="ui center aligned segment">
+                           <!-- <div class="ui red top right attached label">Valores a acreditar</div> -->
+                           <div class="ui top right attached label charttitle">Valores a acreditar</div>
+                           <div class="ui blue tiny statistic">
+                               <div class="value" style="font-size: 1.6rem!important" ng-bind="SaldosAcred[0].NUM_IMPORTE | placeholder: 0 | number:2">0.00</div>
+                              <div class="label">BRL</div>
+                           </div>
+                           <div class="ui section divider"></div>
+                           <div class="ui tiny statistic">
+                               <div class="value statisticsUsd" style="font-size: 1.6rem!important" ng-bind="SaldosAcred[1].NUM_IMPORTE | placeholder: 0 | number:2">0.00</div>
+                              <div class="label">USD</div>
+                           </div>
+                           <div class="ui section divider"></div>
+                           <div class="ui yellow tiny statistic">
+                               <div class="value" style="font-size: 1.6rem!important" ng-bind="SaldosAcred[2].NUM_IMPORTE | placeholder: 0 | number:2">0.00</div>
+                              <div class="label">EU</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="column">
+                     <div class="ui clearing segment App-PieChart">
+                        <!-- <div class="ui red top right attached label">Maes - Cliente</div> -->
+                        <div class="ui top right attached label charttitle">Maes - Cliente</div>
+                        <div class="row">
+                           <div class="col-xl-7">
+                              <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                 <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                    <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                                 </div>
+                                 <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                    <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                                 </div>
+                              </div>
+                              <canvas class="chart chart-pie" id="maeschart" chart-data="SaldosCliente.data" chart-options="options" width="250px" height="250px" chart-labels="SaldosCliente.labels" chart-click="ShowModal"></canvas>
+                           </div>
+                            <div id="maesClienteLegened" style="padding-left: 0" class="legendSection col-xl-5"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="column">
+                     <div class="ui clearing segment App-PieChart">
+                        <!-- <div class="ui red top right attached label">Maes - Delegacion</div> -->
+                        <div class="ui top right attached label charttitle">Maes - Delegacion</div>
+                        <div class="row">
+                           <div class="col-xl-7">
+                              <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                 <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                    <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                                 </div>
+                                 <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                    <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                                 </div>
+                              </div>
+                              <canvas id="maesdelegacion" class="chart chart-pie" chart-data="SaldosDelegacion.data" chart-labels="SaldosDelegacion.labels" chart-options="options" width="250px" height="250px" chart-click="ShowModalDelegaciones"></canvas>
+                           </div>
+                            <div id="maesDelegacionLegend"  style="padding-left: 0" class="legendSection col-xl-5">
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>   
+                     
+        <div class="card mb-3" style="margin-top:15px">
+            <div class="card-body" style="padding:0">
+                <div class="table-responsive">
+                    <div id="dataTable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+                        <div class="row">
+                            <div class="col-sm-12" style="padding:0">
+                                <table class="table table-bordered dataTable table-sm" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%; margin:0">
+                                    <thead class="tableHeader">
+                                        <tr role="row">                                            
+                                            <th  tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 201px;">
+                                                    <h4 class="ui header">
+                                                            <i class="block layout icon"></i>
+                                                            <div class="content">
+                                                              Agrupado por
+                                                              <select ng-model="selection" class="ui dropdown" ng-options="item for item in items" ng-change="CloseAll()">
+                                                                </select>  
+                                                            </div>
+                                                          </h4>                                                                                                                
+                                                            
+                                            </th>
+                                            <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 201px;">{{'LBL_FECHA' | translate}}</th>
+                                            <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 303px;">HORA</th>
+                                            <th tabindex="0" class="text-right" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 145px;">{{'LBL_REALES' | translate}}</th>
+                                            <th tabindex="0" class="text-right"  aria-controls="dataTable" rowspan="1" colspan="1" style="width: 70px;">{{'LBL_DOLARES' | translate}}</th>
+                                            <th tabindex="0" class="text-right"  aria-controls="dataTable" rowspan="1" colspan="1" style="width: 141px;">{{'LBL_EUROS' | translate}}</th>
+                                            <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 10px;"></th>                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr role="row" class="odd" ng-repeat-start="acred in bank.DetalleAcreditaciones">
+                                            <td>
+                                                <button style="height: 29.5px; width: 33px;" ng-if=" acred.expanded" ng-click="acred.expanded = false" class="btn btn-warning">
+                                                    <span class="fa fa-chevron-up" aria-hidden="true"></span>
+                                                </button>
+                                                <!-- <button ng-if="!acred.expanded" class="btn btn-warning" ng-click="GetAcreditationDetailsxCli(acred)"> -->
+                                                <button style="height: 29.5px; width: 33px;" ng-if="!acred.expanded" class="btn btn-warning" ng-click="DispatchDetalleDeAcreditaciones(acred)">
+                                                    <span class="fa fa-chevron-down" aria-hidden="true"></span>
+                                                </button>                                              
+                                            </td>
+                                            <td ng-bind="acred.FYH_ACREDITACION.split('T')[0] | placeholder: 0 | date: 'dd/MM/yyyy'"></td>
+                                            <td>{{acred.FYH_ACREDITACION.split('T')[1]}}</td>
+                                            <td class="text-right" ng-bind="acred.REALES | placeholder: 0 | number:2 "></td>
+                                            <td class="text-right" ng-bind="acred.DOLARES | placeholder: 0 | number:2"></td>
+                                            <td class="text-right" ng-bind="acred.EUROS | placeholder: 0 | number:2"></td>
+                                            <td class="text-center"><i title="Guardar" class=" link large save icon" ng-click="SaveAndExport(acred); ExportData();"></i></td>
+                                        </tr>
+                                        <tr ng-if="acred.expanded">
+                                            <td colspan="7" style="padding-right: 0">
+                                                <div class="container-fluid">
+                                                    <div class="row">                                                                                                                
+                                                        <div class="col-md-12" style="padding-right: 0" class="animate-switch-container" ng-switch on="selection">
+                                                               
+                                                                    <div class="animate-switch" ng-switch-when="Delegacion">
+                                                                            <div  ng-include="'app/Includes/AcreditacionesxDelegacion.html'"></div>
+                                                                    </div>
+                                                                    <div class="animate-switch" ng-switch-when="Cliente">
+                                                                        <div  ng-include="'app/Includes/AcreditacionesxCliente.html'"></div> 
+                                                                    </div>                                                                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr ng-if="$last" ng-repeat-end>
+                                            <td colspan="7">
+                                                <nav ng-if="$last" aria-label="Page navigation" ng-repeat-end>
+                                                    <ul class="pagination">
+                                                        <li class="page-item" ng-if="$parent.bank.DetalleAcreditaciones.page > 0" style="cursor:pointer"><a ng-click="ChangeAcreditationPage($parent.bank,'previous')" class="page-link">{{'LBL_ATRAS' | translate}}</a></li>
+                                                        <li class="page-item"><a class="page-link">{{$parent.bank.DetalleAcreditaciones.page + 1}}</a></li>
+                                                        <li class="page-item" ng-if="$parent.bank.DetalleAcreditaciones.page +1 < $parent.bank.DetalleAcreditaciones.Pages" style="cursor:pointer"><a class="page-link" ng-click="ChangeAcreditationPage($parent.bank,'next')">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                                                        <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}}: {{$parent.bank.DetalleAcreditaciones.Pages}}</a></li>
+                                                    </ul>
+                                                </nav>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

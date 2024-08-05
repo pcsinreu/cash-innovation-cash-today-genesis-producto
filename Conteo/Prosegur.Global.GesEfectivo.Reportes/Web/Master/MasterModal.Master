@@ -1,0 +1,128 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterModal.Master.vb" EnableTheming="true"
+    Inherits="Prosegur.Global.GesEfectivo.Reportes.Web.Master.MasterModal" %>
+<%@ Register src="~/Controles/Erro.ascx" tagname="Erro" tagprefix="uc1"  %>
+<%@ Import Namespace="Prosegur.Framework.Dicionario" %>
+<!DOCTYPE html>
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/genesis.css")%>" rel="stylesheet" />
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/dhtmlgoodies_calendar.css")%>" rel="stylesheet" />
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/genesis_customization_theme.css")%>" rel="stylesheet" />
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/jquery-ui.custom.min.css")%>" rel="stylesheet" />
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/js_color_picker_v2.css")%>" rel="stylesheet" />
+<!-- SCRIPT -->
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/jquery.min.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/jquery-ui.custom.min.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/jquery-ui-timepicker-addon.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/date-en-US.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/genesis.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/ie10fix.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/shortcut.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/Funcoes.js")%>"></script>
+<script type="text/javascript">
+    window.alert = function (message) {
+        ExibirMensagem(message, '<%= Tradutor.Traduzir("aplicacao") %>', '', '<%= Tradutor.Traduzir("btnFechar") %>')
+    }
+</script>
+<html>
+<head runat="server">
+    <title>Genesis</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <script type="text/javascript">
+         function AddRemovIdSelect2(obj, hidden, isRadio, btnAceptar) {
+             if (isRadio) {
+                 document.getElementById(hidden).value = '';
+             }
+             if (obj.checked) {
+                 //Caso id já exista na lista o id duplicado é descartado.
+                 if (document.getElementById(hidden).value.indexOf(obj.value + "|") < 0) {
+                     document.getElementById(hidden).value += obj.value + "|";
+                 }
+             }
+             else {
+
+                 var strtemp = document.getElementById(hidden).value.replace(obj.value + "|", "");
+                 document.getElementById(hidden).value = strtemp;
+             }
+             if (isRadio) {
+                 if (btnAceptar !== "") {
+                     document.getElementById(btnAceptar).click();
+                 }
+             }
+         }
+         function ExecutarClick(btn) {
+             document.getElementById(btn).click();
+         }
+         function SelecionarConfirmarExclusao(grid, msgSelecionar, msgItensMais, msgConfirmar, btn) {
+
+             if (VerificarRegistrosSelecionadosGridView(grid, msgSelecionar, msgItensMais, msgConfirmar)) {
+                 $(document).ready(function () {
+                     $('#dvBloquearTela').css('display', 'block');
+                 });
+                 $(document).load(function () {
+                     $('#dvBloquearTela').css('display', 'none');
+                 });
+                 ExecutarClick(btn);
+             }
+         }
+     </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True" AsyncPostBackTimeout="600" >
+        </asp:ScriptManager>
+              <uc1:Erro ID="Erro1" runat="server" Visible="False"/> 
+        <div id="dvAlert" class="genesisAlert" style="display: none;">
+            <div class="fundo"></div>
+            <div id="dvAlertPanel" class="painel loading">
+                <div id="dvAlertLabel" class="Label">Loading</div>
+                <div id="dvAlertClose" class="Close" style="visibility:hidden;">
+                    <button type="button" onclick="Javascript: genesisAlertError('','');">x</button>
+                </div>
+            </div>
+            <div id="dvAlertErro" style="display: none;"></div>
+        </div>
+        <div class="page">
+            <div class="layout-center-modal" id="pnlConteudo">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <div id="dvBloquearTela" class="AlertLoading" style="display: none;">
+                </div>
+                <asp:UpdateProgress ID="upp" runat="server" DisplayAfter="0" DynamicLayout="False">
+                    <ProgressTemplate>
+                        <div id="AlertDivAll" class="AlertLoading">
+                        </div>
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+                <div>
+                    <asp:ContentPlaceHolder ID="cphBotonesRodapie" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            //Script necessário para evitar que dê erro ao clicar duas vezes em algum controle que esteja dentro do updatepanel.
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_initializeRequest(initializeRequest);
+
+            function initializeRequest(sender, args) {
+                if (prm.get_isInAsyncPostBack()) {
+
+                    args.set_cancel(true);
+
+                }
+            }
+                </script>   
+    </form>
+</body>
+</html>
+<style type="text/css">
+            .style1
+        {
+            height: 28px;
+        }
+        .botaoOcultar {
+            display: none;
+        }
+</style>

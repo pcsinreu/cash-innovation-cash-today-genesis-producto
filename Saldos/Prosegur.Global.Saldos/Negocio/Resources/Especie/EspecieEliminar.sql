@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_Especie WHERE IdEspecie = :IdEspecie

@@ -1,0 +1,128 @@
+﻿<table class="table table-bordered dataTable">
+    <thead class="tableHeader">
+        <tr>
+            <th></th>
+            <th>DELEGACION</th>
+            <th class="text-right">REALES</th>
+            <th class="text-right">DOLARES</th>
+            <th class="text-right">EUROS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat-start="axdeleg in acred.AcreditationbyDeleg">
+            <td>
+                <button style="height: 29.5px; width: 33px;" ng-if="axdeleg.expanded" ng-click="axdeleg.expanded = false" class="btn btn-warning">
+                    <span class="fa fa-chevron-up" aria-hidden="true"></span>
+                </button>
+                <button style="height: 29.5px; width: 33px;" ng-if="!axdeleg.expanded" class="btn btn-warning" ng-click="GetMaesxDeleg(axdeleg)">
+                    <span class="fa fa-chevron-down" aria-hidden="true"></span>
+                </button>
+            </td>
+            <td ng-bind="axdeleg.DES_DELEGACION | placeholder: 0"></td>
+            <td class="text-right" ng-bind="axdeleg.REALES | placeholder: 0 | number: 2"></td>
+            <td class="text-right" ng-bind="axdeleg.DOLARES | placeholder: 0 | number: 2"></td>
+            <td class="text-right" ng-bind="axdeleg.EUROS | placeholder: 0 | number: 2"></td>
+        </tr>
+        <tr ng-if="axdeleg.expanded">
+            <td colspan="5" style="padding-right: 0">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12" style="padding-right: 0">
+                            <table class="table table-stripped table-bordered table-sm">
+                                <thead class="tableHeader">
+                                    <tr role="row">
+                                        <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 201px;">FECHA CREACION</th>
+                                        <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 201px;">FORMULARIO</th>
+                                        <th tabindex="0" class="text-right" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 145px;">REALES</th>
+                                        <th tabindex="0" class="text-right" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 70px;">DOLARES</th>
+                                        <th tabindex="0" class="text-right" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 141px;">EUROS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat-start="mae in axdeleg.Maes">
+                                        <td>
+                                            <button style="height: 29.5px; width: 33px;" ng-if="mae.expanded" ng-click="mae.expanded = false" class="btn btn-warning">
+                                                <span class="fa fa-chevron-up" aria-hidden="true"></span>
+                                            </button>
+                                            <button style="height: 29.5px; width: 33px;" ng-if="!mae.expanded" class="btn btn-warning" ng-click="ObtenerDetalleMaes(mae)">
+                                                <span class="fa fa-chevron-down" aria-hidden="true"></span>
+                                            </button>
+                                        </td>
+                                        <td ng-bind="mae.DES_SECTOR | placeholder: 0"></td>
+                                        <td class="text-right" ng-bind="mae.COD_DIVISA_C  | placeholder: mae.COD_DIVISA_F | number:2"></td>
+                                        <td class="text-right" ng-bind="mae.IMPORTE_C | placeholder: 0 | number:2"></td>
+                                        <td class="text-right" ng-bind="mae.IMPORTE_F | placeholder: 0 | number:2"></td>
+                                    </tr>
+                                    <tr ng-if="mae.expanded">
+                                        <td colspan="5" style="padding-right:0">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-12" style="padding-right:0">
+                                                        <table class="table table-stripped table-bordered table-sm">
+                                                            <thead class="tableHeader">
+                                                                <tr role="row">
+                                                                    <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 120px;">FECHA CREACION</th>
+                                                                    <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 120px;">FECHA GESTION</th>
+                                                                    <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 130px;">CODIGO EXTERNO</th>
+                                                                    <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 145px;">FORMULARIO</th>
+                                                                    <th tabindex="0" class="text-right" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 141px;">REALES</th>
+                                                                    <th tabindex="0" class="text-right" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 141px;">DOLARES</th>
+                                                                    <th tabindex="0" class="text-right" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 141px;">EUROS</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr ng-repeat-start="detalle in mae.Detalles">
+                                                                    <td ng-bind="detalle.GMT_CREACION.split('T')[0] | placeholder: 0 | date: 'dd/MM/yyyy'"></td>
+                                                                    <td ng-bind="detalle.FYH_GESTION.split('T')[0] | placeholder: 0 | date: 'dd/MM/yyyy'"></td>
+                                                                    <td class="text-right" ng-bind="detalle.COD_EXTERNO"></td>
+                                                                    <td class="text-right" ng-bind="detalle.DES_FORMULARIO"></td>
+                                                                    <td class="text-right" ng-bind="detalle.REALES | placeholder: 0 | number:2"></td>
+                                                                    <td class="text-right" ng-bind="detalle.DOLARES | placeholder: 0 | number:2"></td>
+                                                                    <td class="text-right" ng-bind="detalle.EUROS | placeholder: 0 | number:2"></td>
+                                                                </tr>
+                                                                <tr ng-if="$last" ng-repeat-end>
+                                                                    <td colspan="7">
+                                                                        <ul class="pagination">
+                                                                            <li class="page-item" ng-if="$parent.mae.Detalles.page > 0" style="cursor:pointer"><a ng-click="ChangeDetalleMaes($parent.mae,'previous')" class="page-link">{{'LBL_ATRAS' | translate}}</a></li>
+                                                                            <li class="page-item"><a class="page-link">{{$parent.mae.Detalles.page + 1}}</a></li>
+                                                                            <li class="page-item" ng-if="$parent.mae.Detalles.page +1 < $parent.mae.Detalles.Pages" style="cursor:pointer"><a class="page-link" ng-click="ChangeDetalleMaes($parent.mae,'next')">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                                                                            <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}}:  {{$parent.mae.Detalles.Pages}}</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr ng-if="$last" ng-repeat-end>
+                                        <td colspan="5">
+                                            <ul class="pagination">
+                                                <li class="page-item" ng-if="$parent.axdeleg.Maes.page > 0" style="cursor:pointer"><a ng-click="ChangeMaesPage($parent.axdeleg,'previous')" class="page-link">{{'LBL_ATRAS' | translate}}</a></li>
+                                                <li class="page-item"><a class="page-link">{{$parent.axdeleg.Maes.page + 1}}</a></li>
+                                                <li class="page-item" ng-if="$parent.axdeleg.Maes.page +1 < $parent.axcli.Maes.Pages" style="cursor:pointer"><a class="page-link" ng-click="ChangeMaesPage($parent.axdeleg,'next')">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                                                <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}}:  {{$parent.axdeleg.Maes.Pages}}</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr ng-if="$last" ng-repeat-end>
+            <td colspan="5">
+                <ul class="pagination">
+                    <li class="page-item" ng-if="$parent.acred.AcreditationbyDeleg.page > 0" style="cursor:pointer"><a class="page-link" ng-click="ChangeAcreditbyDelegPage($parent.acred,axdeleg,'previous')">{{'LBL_ATRAS' | translate}}</a></li>
+                    <li class="page-item"><a class="page-link">{{$parent.acred.AcreditationbyDeleg.page + 1}}</a></li>
+                    <li class="page-item" ng-if="$parent.acred.AcreditationbyDeleg.page + 1 < $parent.acred.AcreditationbyDeleg.Pages" style="cursor:pointer"><a class="page-link" ng-click="ChangeAcreditbyDelegPage($parent.acred,axdeleg,'next')">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                    <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}}:  {{$parent.acred.AcreditationbyDeleg.Pages}}</a></li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

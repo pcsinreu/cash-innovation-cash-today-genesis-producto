@@ -1,0 +1,5 @@
+﻿    SELECT S.OID_SECTOR AS IDENTIFICADOR
+      FROM GEPR_TSECTOR S
+	  {0}
+     WHERE S.BOL_ACTIVO = 1
+      {1}  

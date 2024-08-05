@@ -1,0 +1,1139 @@
+// ************* TELAS *************
+
+//TELA BASE
+btnAlta												= Register
+btnBaja												= Unregister
+btnConsulta											= Query
+btnModificacion										= Modification
+btnLimpiar											= Clear
+btnBuscar											= Search
+btnGrabar											= Save
+btnCancelar											= Cancel
+btnVolver											= Return
+btnAceptar											= Accept
+btnDuplicar											= Duplicate
+btnValoresPosibles									= Possible Values
+lbl_btn_calendario									= Calendar
+lbl_base_titulo										= Reports Counting
+lbl_version											= Version
+lbl_salir											= Close
+lbl_formato_salida_csv								= CSV
+lbl_formato_salida_pdf								= PDF
+lbl_desde											= From
+lbl_hasta											= To
+lbl_btnDetalhes										= Details
+lbl_btnCopiar										= Copy
+
+
+gen_csv_lbl_billete									= B
+gen_csv_lbl_moneda									= M
+gen_csv_lbl_importe									= Amount
+
+
+gen_Cheque											= Check
+gen_Ticket											= Ticket
+gen_OtroValor										= Other Values
+gen_Efectivo										= Cash
+
+
+gen_selecione                                       = Select
+
+//MENU PRINCIPAL
+mn_billetaje_sucursal								= Balance per Cash Center
+mn_corte_parcial									= Parital cut
+mn_respaldo_completo								= Complete backup
+mn_detalle_parciales								= Partial Detail
+mn_contado_posto									= Countes per Workstation
+mn_recibo_f22_respaldo								= Receipt F22 and backup
+mn_relaciones_habilitacion_tira_conteo				= Loadings Relations x Slip x Counting
+mn_parte_diferencias								= Incident Report
+mn_reportar_pedido_bcp								= Report Order BCP
+mn_informe_resultado_contaje						= Counting Result
+mn_reportes											= Reports
+mn_InformacionReportes								= Información de Reportes
+mn_acreditaciones  = Acreditaciones
+
+
+
+//ERRO PADRÂO
+err_padrao_aplicacao								= Error in the aplication
+err_codigo_erro_ambiente_default					= Error in the execution enviroment
+err_codigo_erro_negocio_sesion_invalida				= Invalid session
+err_codigo_erro_negocio_default						= Error in business pattern
+err_passagem_parametro								= The parameters are not valid.
+err_descricao_invalida								= Description or code not valid
+err_campo_obrigatorio								= The field ""{0}"" is mandatory.
+err_generico										= Unusual error. Contact the system administrator.
+lbl_campo_nao_preenchido							= The field ""{0}"" is not filled.
+lbl_campo_nao_selecionado							= The field ""{0}"" is not selected
+lbl_campo_invalido									= The field ""{0}"" must not be informed for this report.
+lbl_nenhum_registro_encontrado						= None data was found
+lbl_campo_data_invalida								= The field ""{0}"" is not filled with a valid date
+lbl_campo_hora_invalida								= The field ""{0}"" is not filled with a valid time.
+lbl_campo_datahora_invalida							= The field ""{0}"" is not filled with a valid date or time.
+lbl_campo_periodo_invalido							= The field ""{0}"" must be greater than the field ""{1}"".
+lbl_campo_periodo_dias_distintos					= The field ""{0}"" must have the same day as the field ""{1}"".
+lbl_campo_periodo_ja_informado						= Just one of the fileds {0}, {1} or {2} must be filled for the period of the report
+lbl_campo_periodo_ja_informado_2					= Just one of the fileds {0} or {1} must be filled for the period of the report
+err_msg_error_05      								= Access error to the server database: {0}
+err_msg_error_02		       						= Communication error with the directory server (LDAP).
+err_msg_error_03			 						= Access error to the server directory (LDAP). Invalid user or password.
+
+
+//INFORMACIÓN PADRAO
+info_msg_sin_registro								= Records not found with parameters indicated
+info_msg_baja										= Record succesfully deactivated!
+info_msg_baja_registro								= Do you want to conclude the deactivation?
+info_msg_seleccionar_registro						= Select a record before concluding the operation!
+info_msg_max_registro								= Maximum number of records found. ¡Search again!
+info_msg_sair_pagina								= Are you sure you want to close the page? You will lose all information not saved
+info_msg_grd_vazio									= No data found.
+info_msg_sucesso										= Query sent successfully
+
+
+//TIPOS EFETIVOS
+lbl_billete											= Note
+lbl_moneda											= Coin
+
+
+//TELA DEFAULT
+001_lbl_titulo										= Reports Counting
+
+
+//RELATORIO
+lbl_titulo_empresa									= PROSEGUR
+lbl_pagina											= Page:
+lbl_de												= of
+
+
+//GRID_SUMMARY
+grid_lbl_pagersummary							    = Page {0} of {1} ({2} items)
+prosegurgridview_asc								= Sort ascending
+prosegurgridview_desc								= Sort descending
+gen_primeiro										= First
+gen_anterior										= Previous
+gen_proximo											= Next
+gen_ultimo											= Last
+
+
+//TELA LOGIN
+002_lbl_delegacion									= Cash Center
+002_lbl_login										= User
+002_lbl_senha										= Password
+002_btn_confirmar									= Log in
+002_btn_cancelar									= Cancel
+002_titulo											= Screen format for slip registration
+002_msg_usuario_invalido							= Access error to the server directory (LDAP). Invalid user or password.
+002_msg_usuario_sem_permisio						= The user doesn't have permissions for this system.
+002_msg_usuario_sessao_expirada						= The session expired. Please log in again.
+
+002_msg_sessao_finalizada                           = Session finished
+
+// TELA BILLETAJE SUCURSAL
+003_titulo_pagina									= Reports - Notes per Branch
+003_lbl_titulo_busqueda								= Search note per Cash Center
+003_lbl_delegacion									= Cash Center
+003_lbl_cliente										= Client
+003_lbl_sector										= Sector
+003_lbl_proceso										= Process
+003_lbl_fecha_transporte							= Transport Date
+003_lbl_fecha										= Date
+003_lbl_fecha_fin_conteo							= Date End Counting
+003_lbl_remesas_pendientes							= Pending Shipments
+003_lbl_formato_salida								= Output Format
+003_btn_cliente										= Search Client
+003_btn_proceso										= Search process
+
+
+003_csv_lbl_recuento								= Recount
+003_csv_lbl_fecha									= Date
+003_csv_lbl_letra									= Letter
+003_csv_lbl_f22										= F22
+
+003_csv_lbl_oidRemesaOri                            = Shipment Origin Oid
+003_csv_lbl_codSubCliente                           = Subclient Number
+003_csv_lbl_estacion								= Branch
+003_csv_lbl_descricion_estacion						= Branch Description
+003_csv_lbl_descricion_divisa						= Currency Description
+003_csv_lbl_medio_pago								= Means of Payment
+003_csv_lbl_unidad									= Unit
+003_csv_lbl_calidad									= Quality
+003_csv_lbl_multiplicador							= Multiplier
+003_csv_lbl_cantidad								= Amount
+003_csv_lbl_valor									= Value
+003_csv_lbl_deteriorado								= Damaged
+003_csv_lbl_codigo_calidad							= Damaged
+
+
+rpt_003_txt_lbl_titulo								= Balance per Cash Center
+rpt_003_txt_lbl_planta								= Plant………….:
+rpt_003_txt_lbl_cliente								= Client…………..:
+rpt_003_txt_lbl_transporte_del_dia					= D. Transport From..:
+rpt_003_txt_lbl_transporte_ate						= D. Transport To..:
+rpt_003_txt_lbl_del_dia								= D. Process From…….:
+rpt_003_txt_lbl_ate									= D. Process To…….:
+rpt_003_txt_lbl_conteo_del_dia						= D. End Counting From..:
+rpt_003_txt_lbl_conteo_ate							= D. End Counting to..:
+rpt_003_txt_lbl_recuento							= Recount………….:
+rpt_003_txt_lbl_sucursal							= BRANCH…………:
+rpt_003_txt_lbl_divisa								= Currency…………..:
+rpt_003_txt_lbl_medio_pago							= Means of Payment
+rpt_003_txt_lbl_unidad								= Unit
+rpt_003_txt_lbl_valor_recontado						= Value Recounted
+rpt_003_txt_lbl_declarado							= Declared
+rpt_003_txt_lbl_recontado							= Recount
+rpt_003_txt_lbl_deferencia							= Difference
+rpt_003_txt_lbl_total_sucursal						= TOTAL BRANCH
+rpt_003_txt_lbl_cant_respaldos						= Backup Quantity
+rpt_003_txt_lbl_declarado_general					= Declared
+rpt_003_txt_lbl_recontado_general					= Recount
+rpt_003_txt_lbl_deferencia_general					= Difference
+rpt_003_txt_lbl_total_general						= OVERALL TOTAL
+rpt_003_txt_lbl_cant_respaldos_general				= Backup Quantity
+rpt_003_txt_lbl_divisa_general						= Currency
+rpt_003_txt_lbl_medio_pago_general					= Means of Payment
+rpt_003_txt_lbl_efectivo							= Cash
+rpt_003_txt_lbl_deteriorado							= Damaged
+rpt_003_txt_lbl_codigo_transporte					= RECEIPT…………..:
+rpt_003_txt_lbl_subcliente       					= SUB CLIENT…………:
+rpt_003_txt_lbl_oid_remesa_ori    					= OID SHIPMENT ORI…….:
+rpt_003_txt_lbl_resumo			   					= Analitic Report
+rpt_003_txt_lbl_calidad			   					= Quality
+rpt_003_txt_lbl_codido_calidad	   					= Damaged
+													  =
+
+// TELA CORTE PARCIAL
+004_titulo_pagina									= Reports - Partial Cut
+004_lbl_titulo_busqueda								= Search partial cut
+004_lbl_delegacion									= Cash Center
+004_lbl_cliente										= Client
+004_lbl_sector										= Sector
+004_lbl_proceso										= Process
+
+004_lbl_canal                                       = Channels
+004_lbl_fecha_transporte							= Transport Date
+004_lbl_fecha										= Date
+004_lbl_fecha_fin_conteo							= Date End Counting
+004_lbl_formato_salida								= Output Format
+004_btn_cliente										= Search Client
+004_btn_proceso										= Search process
+
+
+004_csv_lbl_recuento								= Recount
+004_csv_lbl_fecha									= Date
+004_csv_lbl_letra									= Letter
+004_csv_lbl_f22										= F22
+
+004_csv_lbl_oidRemesaOri                            = Shipment Origin Oid
+004_csv_lbl_codSubCliente                           = Subclient Number
+004_csv_lbl_estacion								= Station
+004_csv_lbl_descricion_estacion						= Station Description
+004_csv_lbl_descricion_divisa						= Currency Description
+004_csv_lbl_medio_pago								= Means of Payment
+004_csv_lbl_descricion_medio_pago					= Mean of Payment Description
+004_csv_lbl_declarado_f22							= Declared by Shipment
+004_csv_lbl_ingresado_por_sobre						= Deposited per envelope SumxShipment
+004_csv_lbl_recontado								= Recount
+004_csv_lbl_recontado_declarado_remesa				= Recount - Shipment Declared
+004_csv_lbl_ingresado_declarado_remesa				= Deposited per envelope - Shipment declared
+004_csv_lbl_observaciones							= Comments
+004_csv_lbl_falsos									= Fakes
+
+
+rpt_004_txt_lbl_titulo_desc							= Parital cut
+rpt_004_txt_lbl_recuento							= Recount………….:
+rpt_004_txt_lbl_transporte_del_dia					= D. Transport From..:
+rpt_004_txt_lbl_transporte_ate						= D. Transport To..:
+rpt_004_txt_lbl_del_dia								= D. Process From…….:
+rpt_004_txt_lbl_ate									= D. Process To…….:
+rpt_004_txt_lbl_conteo_del_dia						= D. End Counting From..:
+rpt_004_txt_lbl_conteo_ate							= D. End Counting to..:
+rpt_004_txt_lbl_planta								= Plant………….:
+rpt_004_txt_lbl_cliente								= Client…………..:
+rpt_004_txt_lbl_letra								= LETTER………………:
+rpt_004_txt_lbl_subcliente       					= SUB CLIENT…………:
+rpt_004_txt_lbl_oid_remesa_ori    					= OID SHIPMENT ORI…….:
+rpt_004_txt_lbl_sucursal							= BRANCH…………:
+rpt_004_txt_lbl_fecha_transporte					= DATE………..:
+rpt_004_txt_lbl_letra_f22							= LETTER………………:
+rpt_004_txt_lbl_f22									= F22………….:
+rpt_004_txt_lbl_subcliente_f22     					= SUB CLIENT…………:
+rpt_004_txt_lbl_sucursal_f22						= BRANCH…………:
+rpt_004_txt_lbl_fecha_transporte_f22				= DATE………..:
+rpt_004_txt_lbl_total								= Total
+rpt_004_txt_lbl_divisa								= Currency
+rpt_004_txt_lbl_declarado							= Declared
+rpt_004_txt_lbl_ingresado							= Deposited
+rpt_004_txt_lbl_recontado							= Recount
+rpt_004_txt_lbl_rec_declarado						= REC. - DECL.
+rpt_004_txt_lbl_ing_declarado						= DEP. - DECL.
+rpt_004_txt_lbl_sobre								= Envelope
+rpt_004_txt_lbl_observaciones						= Comments
+rpt_004_txt_lbl_resumen_recuento					= RECOUNTING SUMMARY:
+rpt_004_txt_lbl_cantidad_cortes						= Amount of cuts:
+rpt_004_txt_lbl_falso								= Fakes
+
+
+// TELA RESPALDO COMPLETO
+005_titulo_pagina									= Reports - Complete Backup
+005_lbl_titulo_busqueda								= Complete backup Search
+005_lbl_delegacion									= Cash Center
+005_lbl_cliente										= Client
+005_lbl_sector										= Sector
+005_lbl_proceso										= Process
+005_lbl_fecha_transporte							= Transport Date
+005_lbl_fecha										= Date
+005_lbl_fecha_fin_conteo							= Date End Counting
+005_lbl_formato_salida								= Output Format
+005_lbl_remesas_en_curso								= Shipment in process
+005_btn_cliente										= Search Client
+005_btn_proceso										= Search process
+
+
+005_csv_lbl_recuento								= Recount
+005_csv_lbl_fecha									= Date
+005_csv_lbl_letra									= Letter
+005_csv_lbl_f22										= F22
+
+005_csv_lbl_oidRemesaOri                            = Shipment Origin Oid
+005_csv_lbl_codSubCliente                           = Subclient Number
+005_csv_lbl_estacion								= Branch
+005_csv_lbl_descricion_estacion						= Branch Description
+005_csv_lbl_medio_pago								= Means of Payment
+005_csv_lbl_descricion_divisa						= Currency Description
+005_csv_lbl_ingresado_por_sobre						= Deposited per envelope
+005_csv_lbl_recontado								= Recount
+005_csv_lbl_recontado_ingresado						= Recount - Deposited
+005_csv_lbl_observaciones							= Comments
+005_csv_lbl_falsos									= Fakes
+
+
+rpt_005_txt_lbl_titulo								= Complete backup
+rpt_005_txt_lbl_transporte_del_dia					= D. Transport From..:
+rpt_005_txt_lbl_transporte_ate						= D. Transport To..:
+rpt_005_txt_lbl_del_dia								= D. Process From…….:
+rpt_005_txt_lbl_ate									= D. Process To…….:
+rpt_005_txt_lbl_conteo_del_dia						= D. End Counting From..:
+rpt_005_txt_lbl_conteo_ate							= D. End Counting to..:
+rpt_005_txt_lbl_planta								= Plant………….:
+rpt_005_txt_lbl_cliente								= Client…………..:
+rpt_005_txt_lbl_recuento							= Recount………….:
+rpt_005_txt_lbl_letra								= LETTER………………:
+rpt_005_txt_lbl_f22									= F22………….:
+rpt_005_txt_lbl_subcliente       					= SUB CLIENT…………:
+rpt_005_txt_lbl_oid_remesa_ori    					= OID SHIPMENT ORI…….:
+rpt_005_txt_lbl_sucursal							= BRANCH…………:
+rpt_005_txt_lbl_nrosobre							= Envelope Num………..:
+rpt_005_txt_lbl_divisa								= Currency
+rpt_005_txt_lbl_medio_pago							= Means of Payment
+rpt_005_txt_lbl_unidad								= Unit
+rpt_005_txt_lbl_valor_recontado						= Value Recounted
+rpt_005_txt_lbl_declarado							= Declared
+rpt_005_txt_lbl_ingressado							= Deposited
+rpt_005_txt_lbl_recontado							= Recount
+rpt_005_txt_lbl_diferencia							= Difference
+rpt_005_txt_lbl_total_nro_sobre						= TOTAL ENVELOPE NUM.
+rpt_005_txt_lbl_cant_respaldo						= Backup Quantity
+rpt_005_txt_lbl_total_general						= OVERALL TOTAL
+rpt_005_txt_lbl_total								= Total
+rpt_005_txt_lbl_informacion_iac						= IAC INFORMATION
+rpt_005_txt_lbl_meiopgto							= Means of Payment
+rpt_005_txt_lbl_descripiciondivisa					= Currency
+rpt_005_txt_lbl_observaciones						= Comments
+
+
+//TELA BUSQUEDA CLIENTES
+006_titulo_pagina									= Client Search
+006_titulo_busqueda									= Search Citeria
+006_titulo_resultado								= Clients
+006_lbl_gdr_codigo									= Code
+006_lbl_gdr_descripcion								= Description
+006_codigo_cliente									= Client Number
+006_descricao_cliente								= Client Description
+006_seleccione_un_cliente							= Select a client
+
+
+// TELA DETALLE PARCIALES
+007_titulo_pagina									= Reports - Partial Details
+007_lbl_titulo_busqueda								= Details of partials search
+007_lbl_delegacion									= Cash Center
+007_lbl_fecha										= Date
+007_lbl_fecha_transporte							= Transport Date
+007_lbl_numero_remesa								= Shipment Number
+007_lbl_numero_precinto								= Seal Number
+007_lbl_cliente										= Client
+007_lbl_subcliente									= Subclient
+007_lbl_con_denominacion							= With denomination
+007_lbl_con_incidencia								= With incidence
+007_lbl_formato_salida								= Output Format
+007_btn_cliente										= Search Client
+007_btn_subcliente									= Search Subclient
+
+
+007_lbl_cheque										= Check
+007_lbl_ticket										= Ticket
+007_lbl_otro_valor									= Other Value
+
+
+007_csv_lbl_codigo_cliente							= Client Number
+007_csv_lbl_nombre_cliente							= Client Name
+007_csv_lbl_codigo_subcliente						= SubCl Number
+007_csv_lbl_nombre_subcliente						= SubClient Name
+007_csv_lbl_punto_servicio							= Point of Service……..:
+007_csv_lbl_fecha_proceso							= Processing date
+007_csv_lbl_fecha_transporte						= Transport Date
+007_csv_lbl_numero_remesa							= Shipment Num
+007_csv_lbl_numero_precinto							= Seal Num
+007_csv_lbl_valor_declarado_bulto					= V. Decl Parcel
+007_csv_lbl_valor_declarado_remesa					= V. Decl Shipment
+007_csv_lbl_numero_parcial							= Partial Number
+007_csv_lbl_valor_declarado_parcial					= V. Decl Partial
+007_csv_lbl_valor_contado							= Counted Value
+007_csv_lbl_diferencia								= Difference
+007_csv_lbl_falsos									= Fakes
+007_csv_lbl_observaciones							= Comments
+007_csv_lbl_denominacion							= Denomination
+007_csv_lbl_cantidad								= Amount
+007_csv_lbl_importe									= Amount
+007_csv_lbl_calidad									= Quality
+007_csv_lbl_codigo_calidad							= Damaged
+
+
+rpt_007_lbl_titulo									= Partial Detail
+rpt_007_lbl_planta									= Plant………….:
+rpt_007_lbl_cliente_filtro							= Client…………..:
+rpt_007_lbl_subcliente_filtro						= SubClient………:
+rpt_007_lbl_transporte_del_dia						= D. Transport Start..:
+rpt_007_lbl_del_dia									= D. Process Start…….:
+rpt_007_lbl_hora_inicio								= Start Time…………:
+
+
+rpt_007_lbl_ate										= D. Process End…….:
+rpt_007_lbl_transporte_ate							= D. Transport End..:
+rpt_007_lbl_hora_fim								= End Time…………:
+rpt_007_lbl_operario								= Operator……………:
+rpt_007_lbl_fecha_transp							= Transport Date…….:
+
+
+rpt_007_lbl_operario_filtro							= Operator……………:
+rpt_007_lbl_puesto_filtro							= Workstation………….:
+rpt_007_lbl_num_remesa_filtro						= Shipment Num………..:
+rpt_007_lbl_num_precinto_filtro						= Seal Num………:
+
+
+rpt_007_lbl_posto									= Workstation………….:
+rpt_007_lbl_cliente									= Client…………..:
+rpt_007_lbl_subcliente								= SubClient………:
+rpt_007_lbl_pto_servicio							=#N/A
+rpt_007_lbl_fecha_proc								= Processing dat.…..:
+rpt_007_lbl_num_precinto							= Seal Num………..:
+rpt_007_lbl_num_remesa								= Number…...…..:
+rpt_007_lbl_num_parcial								= Number…...…..:
+
+
+rpt_007_lbl_remesa									= Shipment
+rpt_007_lbl_num_bulto								= Parcel
+rpt_007_lbl_parcial									= Partial
+rpt_007_lbl_val_dec_remesa							= Declared value
+rpt_007_lbl_val_dec_bulto							= Declared value
+rpt_007_lbl_val_dec_parcial							= Declared value
+rpt_007_lbl_val_contado								= Counted Value
+rpt_007_lbl_falsos									= Fakes
+rpt_007_lbl_denominaciones							= Denominations
+rpt_007_lbl_importe									= Amount
+rpt_007_lbl_diferencias								= Difference
+rpt_007_lbl_diferenca_dec							= Declared
+rpt_007_lbl_diferenca_contado						= Counted
+rpt_007_lbl_diferenca_total							= Total
+rpt_007_lbl_diferenca_obs							= Comments
+rpt_007_lbl_efetivo									= Cash
+rpt_007_lbl_iacs									= Additional Client Information
+rpt_007_lbl_qtde									= Amount
+
+
+// TELA CONTADO POR PUESTO
+008_titulo_pagina									= Reports - Counted per Workstation
+008_lbl_titulo_busqueda								= Search counted per workstation
+008_lbl_delegacion									= Cash Center
+008_lbl_fecha										= Date
+008_lbl_fecha_transporte							= Transport Date
+008_lbl_fecha_conteo								= Counting Date
+008_lbl_puesto										= Workstation
+008_lbl_operario									= Operator
+008_lbl_hora										= Time
+008_lbl_inicio										= Start
+008_lbl_finalizacion								= Finalization
+008_lbl_numero_remesa								= Shipment Number
+008_lbl_numero_precinto								= Seal Number
+008_lbl_cliente										= Client
+008_lbl_subcliente									= Subclient
+008_lbl_con_denominacion							= With denomination
+008_lbl_con_incidencia								= With incidence
+008_lbl_formato										= Output Format
+008_msg_datas										= Fill one of the fields ""{0}"", ""{1}"" or ""{2}"".
+008_msg_uma_data									= Fill only the field ""{0}"" or the field ""{1}"" or the field ""{2}"".
+008_btn_cliente										= Search Client
+008_btn_subcliente									= Search Subclient
+008_btn_puesto										= Search Workstation
+008_btn_operario									= Search operator
+
+
+008_csv_lbl_puesto									= Workstation Number
+008_csv_lbl_operario								= Operator Number
+008_csv_lbl_codcliente								= Client Number
+008_csv_lbl_nombrecliente							= Client Name
+008_csv_lbl_codsubcl								= Subclient Number
+008_csv_lbl_nombresubcl								= SubClient Name
+008_csv_lbl_pto_servicio							= Point of Service
+008_csv_lbl_fecha_proc								= Processing date
+008_csv_lbl_fecha_transp							= Transport Date
+008_csv_lbl_num_remesa								= Shipment Num
+008_csv_lbl_num_precinto							= Seal Num
+008_csv_lbl_val_dec_rem								= Total Declared
+008_csv_lbl_val_dec_bulto							= Declared parcel
+008_csv_lbl_val_dec_parcial							= Declared Partial
+008_csv_lbl_val_contado								= Counted Value
+008_csv_lbl_diferencia								= Difference
+008_csv_lbl_cheques									= Checks
+008_csv_lbl_falsos									= Fakes
+008_csv_lbl_obs										= Comments
+008_csv_lbl_efetivo									= Cash
+
+
+008_msg_soloamete_fecha_3dias						= To fill the fields {0}, {1} y {2}  the range of dates can not be more than 3 days.
+008_msg_OperarioPuestoHora							= To fill the fields {0} or {1} It is neccesary to fill the interval {2}.
+
+
+rpt_008_lbl_titulo									= Countes per Workstation
+rpt_008_lbl_planta									= Plant………….:
+rpt_008_lbl_cliente_filtro							= Client…………..:
+rpt_008_lbl_subcliente_filtro						= SubClient………:
+rpt_008_lbl_transporte_del_dia						= D. Transport Start..:
+rpt_008_lbl_del_dia									= D. Process Start …….:
+rpt_008_lbl_hora_inicio								= Start Time…………:
+
+
+rpt_008_lbl_ate										= D. Process Final…….:
+rpt_008_lbl_transporte_ate							= D. Transport End..:
+rpt_008_lbl_hora_fim								= End Time…………:
+rpt_008_lbl_operario								= Operator……………:
+rpt_008_lbl_fecha_transp							= Transport Date…….:
+
+
+rpt_008_lbl_operario_filtro							= Operator……………:
+rpt_008_lbl_puesto_filtro							= Workstation………….:
+rpt_008_lbl_num_remesa_filtro						= Shipment Num………..:
+rpt_008_lbl_num_precinto_filtro						= Seal Num………:
+
+
+rpt_008_lbl_posto									= Workstation………….:
+rpt_008_lbl_cliente									= Client…………..:
+rpt_008_lbl_subcliente								= SubClient………:
+rpt_008_lbl_pto_servicio							=#N/A
+rpt_008_lbl_fecha_proc								= Processing dat.…..:
+rpt_008_lbl_num_precinto							= Seal Num………..:
+rpt_008_lbl_num_remesa								= Number…...…..:
+rpt_008_lbl_num_parcial								= Number…...…..:
+
+
+rpt_008_lbl_remesa									= Shipment
+rpt_008_lbl_num_bulto								= Parcel
+rpt_008_lbl_parcial									= Partial
+rpt_008_lbl_val_dec_remesa							= Declared value
+rpt_008_lbl_val_dec_bulto							= Declared value
+rpt_008_lbl_val_dec_parcial							= Declared value
+rpt_008_lbl_val_contado								= Counted Value
+rpt_008_lbl_falsos									= Fakes
+rpt_008_lbl_denominaciones							= Denominations
+rpt_008_lbl_diferencias								= Difference
+rpt_008_lbl_diferenca_dec							= Declared
+rpt_008_lbl_diferenca_contado						= Counted
+rpt_008_lbl_diferenca_total							= Total
+rpt_008_lbl_diferenca_obs							= Comments
+rpt_008_lbl_efetivo									= Cash
+rpt_008_lbl_qtde									= Amount
+
+
+//TELA BUSQUEDA SUBCLIENTES
+009_titulo_pagina									= Subclient Search
+009_titulo_busqueda									= Search Citeria
+009_titulo_resultado								= Subclients
+009_lbl_gdr_cliente									= Client
+009_lbl_gdr_codigo									= Code
+009_lbl_gdr_descripcion								= Description
+009_codigo_subcliente								= Subclient Number
+009_descricao_subcliente							= Subclient Description
+009_seleccione_un_subcliente						= Select a Subclient
+009_lbl_cliente										= Client
+
+
+
+//TELA BUSQUEDA PROCESOS
+010_titulo_pagina									= Process search
+010_titulo_busqueda									= Search Citeria
+010_titulo_resultado								= Processes
+010_lbl_delegacion									= Cash Center
+010_lbl_cliente										= Client
+010_lbl_subcliente									= Subclient
+010_lbl_puntoservicio								= Point of Service
+010_lbl_canal										= Channel
+010_lbl_subcanal									= Subchanel
+010_grd_selecionar									= Select?
+010_grd_cliente										= Client
+010_grd_subcliente									= Subclient
+010_grd_puntoservicio								= Point of Service
+010_grd_canal										= Channel
+010_grd_subcanal									= Subchanel
+010_grd_proceso										= Process
+010_grd_vigente										= Valid
+010_btn_subcliente									= Search Subclient
+010_btn_puntoservicio								= Search Point of service
+010_seleccione_un_proceso							= Select a process
+
+
+//TELA PRINCIPAL - SELECCIONAR DELEGACIÓN
+012_btn_confirmar									= Access
+012_lbl_delegacion									= Cash Center
+012_titulo											= List of countings
+
+
+//TELA BUSQUEDA RECIBO F22 RESPALDO
+013_titulo_pagina									= Receipt F22 and backup
+013_lbl_titulo_busqueda								= Receipt Search F22
+013_lbl_delegacion									= Cash Center
+013_lbl_cliente										= Client
+013_lbl_fecha_fin_conteo							= Date End Counting
+013_lbl_fecha										= Date
+013_cod_pes											= WEIGHTS
+013_des_pes											= WEIGHTS
+013_cod_rea											= REAL
+013_des_rea											= REAL
+013_cod_dol											= DOLAR
+013_des_dol											= DOLARS
+013_cod_res											= BACKUP
+013_des_res											= AMOUNT OF SOB
+013_cod_eur											= EUROS
+013_des_eur											= EUROS
+013_des_cheque										= Checks
+013_des_ticket										= Tickets
+013_des_outro_valor									= Other Values
+
+
+//TELA BUSQUEDA REGISTRO DE TIRAS
+014_titulo_pagina									= Slip record selection
+014_pnlFiltros										= Filters
+014_lblCodigoATM									= ATM number
+014_lblCliente										= Client
+014_lblSubcliente									= Subclient
+014_lblPuntoServicio								= Point of Service
+014_lblPeriodoContable								= Accounting Period
+014_btn_cliente										= Search Client
+014_btn_subcliente									= Search Subclient
+014_btn_punto_servicio								= Search Point of service
+014_lblFechaInicio									= Start Date
+014_lblFechaFim										= Date End
+014_btnBuscar										= Filter
+014_lblTituloTabela									= Slip Records
+014_colFecha										= Date
+014_colCodigoAtm									= ATM number
+014_colDesPeriodoContable							= Accounting P.
+014_colCliente										= Client
+014_colSubCliente									= Subclient
+014_colPuntoServicio								= Point of Service
+014_colConsultar									= Query
+
+
+//TELA BUSQUEDA REGISTRO DE TIRAS
+015_titulo_pagina									= Loadings Relations X Slip X Counting
+015_pnlATM											= ATM identification
+015_lblCodigoATM									= ATM number
+015_lblCliente										= Client
+015_lblSubcliente									= Subclient
+015_lblPuntoServicio								= Point of Service
+015_lblDescripcion									= Description
+015_pnlHabilitaciones								= Loadings
+
+
+015_colCodRemesaLegado								= Shipment
+015_colFyhHabilitacion								= Date
+015_colCodInventarioContenedor						= Inventary Number
+015_colCodPrecintoContenedor						= Seal Number
+015_colCodMorfologiaComponente						= Identifiers
+015_colDesDivisa									= Currency
+015_colCodDenominacion								= Denomination
+015_colNelCantidadHabilitada						= Amount
+015_colNumImporteHabilitado							= Amount
+015_colTotalDivisa									= Total Currency
+015_colDivisa										= Currency
+
+
+015_TotalHabilitado									= Total enabled
+
+
+015_lblTiraRegistrada								= Slip registered in
+015_tdDeclaradoDispensadores						= Declared Dispensers
+015_tdCajetines										= Cassetes
+015_tdCantidad										= Amount
+015_tdImporte										= Amount
+
+
+015_TcolCodMorfologiaComponente						= Identifiers
+015_TcolDesDivisa									= Currency
+015_TcolDesDenominacion								= Denomination
+015_TcolNelCantidadIntroducida						= Loading
+015_TcolNelCantidadDispensada						= Disp.
+015_TcolNelCantidadRechazada						= Rejects
+015_TcolNelCantidadRemanente						= Remaining
+015_TcolNumImporteIntroducido						= Loading
+015_TcolNumImporteDispensado						= Disp.
+015_TcolNumImporteRechazado							= Rejects
+015_TcolNumImporteRemanente							= Remaining
+015_TcolnumImporteDeclarado							= Declared
+
+
+015_tdDivisa										= Total per Currency
+015_TotcolDesDivisa									= Currency
+015_TotcolNumImporteIntroducido						= Loading
+015_TotcolNumImporteRechazado						= Rejects
+015_TotcolNumImporteRemanente						= Remaining
+015_TotcolnumImporteDeclarado						= Declared
+
+
+015_tdConteoDispensadores							= Dispensers Counting
+015_tdCajetinesConteo								= Cassetes
+
+
+015_ContcolCodRemesaConteo							= Shipment
+015_ContcolDesDivisa								= Currency
+015_ContcolDesDenominacion							= Denomination
+015_ContcolNumImporteContado						= Counted
+
+
+015_tdDivisaConteo									= Total per Currency
+
+
+015_ContTotcolDesDivisa								= Currency
+015_ContTotcolNumImporteContado						= Counted
+
+
+015_lblDeclaradosIngresadores						= Declared deposits
+015_lblDeclaradosDepositos							= Declared deposits
+015_DecIngcolDesDivisa								= Currency
+015_DecIngcolDesTipoMedioPago						= Means of Payment
+015_DecIngcolNumImporteIngresado					= Declared
+
+
+015_lblPeriodoContable								= Accounting Period
+015_lblFecha										= Date
+
+
+015_lblContadosIngresadores							= Deposits Counting
+015_lblContadosDepositos							= Deposits Counting
+015_ContIngcolCodRemesaConteo						= Shipment
+015_ContIngcolDesDivisa								= Currency
+015_ContIngcolDesTipoMedioPago						= Means of Payment
+015_ContIngcolNumImporteIngresado					= Counted
+
+
+015_msg001											= There is no loading registered for this ATM
+015_msg002											= No value was declared for dispensers!
+015_msg003											= There is no counting results for the dispensers!
+015_msg004											= There is no counting results for the deposits!
+015_msg005											= There is no counting results for the deposits!
+015_msg006											= No value was declared for deposits!
+015_msg007											= No value was declared for deposits!
+
+
+//TELA BUSQUEDA PARTE DE DIFERENCIAS
+016_titulo_pagina									= Incident Report
+016_lbl_titulo_busqueda								= Incident report Search
+016_lbl_delegacion									= Cash Center
+016_lbl_precinto_remesa								= Shipment Seal
+016_lbl_precinto_bulto								= Parcel Seal
+016_lbl_numero_albaran								= Transport receipt Num
+016_lbl_cliente										= Client
+016_btn_cliente										= Search Client
+016_lbl_subcliente									= Subclient
+016_btn_subcliente									= Search Subclient
+016_lbl_punto_servicio								= Point of Service
+016_btn_punto_servicio								= Search Point of service
+016_lbl_fecha_conteo								= Counting Date
+016_lbl_fecha_conteo_desde							= From
+016_lbl_fecha_conteo_hasta							= To
+016_lbl_fecha_transporte							= Transport Date
+016_lbl_fecha_transporte_desde						= From
+016_lbl_fecha_transporte_hasta						= To
+016_lbl_contador									= Counter
+016_lbl_supervisor									= Supervisor
+016_btn_buscar										= Search
+016_btn_limpar										= Clear
+016_titulo_grid										= Shipments Found
+016_btn_visualizar									= View
+016_btn_voltar										= Return
+016_col_fecha_conteo								= Counting Date
+016_col_precinto_remesa								= Shipment Seal
+016_col_codigo_transporte							= Transport code
+016_col_fecha_transporte							= Transport Date
+016_col_cliente										= Client
+016_col_subcliente									= Subclient
+016_col_punto_servicio								= Point of Service
+016_msg_remesa_obligatoria							= It is necessary to select at least one shipment.
+
+
+//TELA BUSQUEDA PARTE DE DIFERENCIAS - DOCUMENTOS
+017_titulo_pagina									= Incident Report - Documents
+017_lbl_precinto									= Shipment Seal
+017_col_fecha_creacion								= Creating Date
+017_col_numero_documento							= Document Number
+017_col_doc_general									= General document / Parcel / Partial
+017_col_doc_incidencia								= Document Incidence
+017_col_doc_justificacion							= Document Justification
+017_btn_visualizar									= View
+017_btn_volver										= Return
+017_msg_documento_obligatorio						= It is necessary to select at least one document.
+
+
+//TELA BUSQUEDA PUNTO SERVICIO
+018_titulo_pagina									= Point of Service Search
+018_titulo_busqueda									= Search Citeria
+018_titulo_resultado								= Point of Service
+018_lbl_gdr_codigo									= Code
+018_lbl_gdr_descripcion								= Description
+018_codigo_puntoservicio							= Point of service Number
+018_descricao_puntoservicio							= Point of Service Description
+018_seleccione_un_puntoservicio						= Select a Point of Service
+
+
+//TELA REPORTAR PEDIDO BCP
+020_titulo_pagina									= Report Collection Order
+020_lbl_delegacion									= Cash Center
+020_lbl_tipo_especie								= Type of denomination
+020_lbl_tipo_deposito								= Type Deposit
+020_lbl_fecha_conteo								= Counting Date
+020_lbl_fecha_conteo_desde							= From
+020_lbl_fecha_conteo_hasta							= To
+020_btn_reportar									= Inform
+020_btn_limpar										= Clear
+020_lbl_titulo_busqueda								= Collection Search
+020_lbl_titulo_reportado							= Reported orders
+020_lst_especie_moneda								=  0 - Currency
+020_lst_especie_billete								=  1 - Note
+020_rst_deposito_centralizado						=  1 - Centralized
+020_lst_deposito_servilock							=  2 - Servilock
+020_lbl_fecha_ultimo_envio							= Date-Time last delivery
+020_btn_atualizar									= Update
+020_col_especie										= Denomination
+020_col_deposito									= Deposit
+020_col_fecha_desde									= From
+020_col_fecha_hasta									= Date to
+020_col_delegacion									= Cash Center
+020_col_estado										= Status
+020_col_observacion									= Comments
+020_col_fecha_creacion								= Creating Date
+020_msg_solicitacao_existente						= There is already a request with the informed data.
+020_msg_caminho_diretorio							= The path of the directory to store the request, is not filled in the configurations file.
+020_msg_url_servicio_duo							= The URL of the DUO service is not filled in the configurations file.
+020_msg_sin_datos_retorno							= There is no regiter of process item to be showed.
+
+
+//TELA BUSQUEDA INFORME RESULTADO CONTAJE
+019_titulo_pagina									= Enter Counting Result
+019_lbl_titulo_busqueda								= Counting report Search
+019_lbl_delegacion									= Cash Center
+019_lbl_precinto_remesa								= Shipment Seal
+019_lbl_precinto_bulto								= Parcel Seal
+019_lbl_numero_albaran								= Transport receipt Num
+019_lbl_cliente										= Client
+019_btn_cliente										= Search Client
+019_lbl_subcliente									= Subclient
+019_btn_subcliente									= Search Subclient
+019_lbl_punto_servicio								= Point of Service
+019_btn_punto_servicio								= Search Point of service
+019_lbl_fecha_conteo								= Counting Date
+019_lbl_fecha_conteo_desde							= From
+019_lbl_fecha_conteo_hasta							= To
+019_lbl_fecha_transporte							= Transport Date
+019_lbl_fecha_transporte_desde						= From
+019_lbl_fecha_transporte_hasta						= To
+019_btn_buscar										= Search
+019_btn_limpar										= Clear
+019_titulo_grid										= Shipments Found
+019_btn_visualizar									= View
+019_btn_voltar										= Return
+019_msg_remesa_obligatoria							= It is necessary to select at least one shipment.
+019_col_fecha_conteo								= Counting Date
+019_col_precinto_remesa								= Shipment Seal
+019_col_codigo_transporte							= Transport code
+019_col_fecha_transporte							= Transport Date
+019_col_cliente										= Client
+019_col_subcliente									= Subclient
+019_col_punto_servicio								= Point of Service
+
+
+rpt_019_lbl_titulo_projecto							= Counting
+rpt_019_lbl_titulo_reporte							= Enter Counting Result
+rpt_019_lbl_titulo_empresa							= Prosegur China
+rpt_019_lbl_datos_cliente							= Client info
+rpt_019_lbl_cod_delegacion							= Cash Center Code
+rpt_019_lbl_cliente									= Client
+rpt_019_lbl_sucursal								= Branch
+rpt_019_lbl_fecha_recorida							= Collection  Date
+rpt_019_lbl_datos_prosegur							= Prosegur Data
+rpt_019_lbl_fecha_conteo							= Counting Date
+rpt_019_lbl_codigo_transporte						= Delivey note Num
+rpt_019_lbl_codigo_usuario							= Operator
+rpt_019_lbl_parciales_contados						= Partials Numbers
+rpt_019_lbl_titulo_iac								= IAC Fields
+rpt_019_precintobulto 				                = Parcel Seal
+rpt_019_precintoparcial                         	= Partial Number
+rpt_019_precintoremesa				                = Shipment Seal
+rpt_019_precintosbultos                         	= Parcel Seals
+rpt_019_precintosparciales                     		= Number of Partials
+rpt_019_lbl_resultado_general_titulo				= Overall Counting Result
+rpt_019_lbl_nro_parciales_declarados				= Num of Partials Declared:
+rpt_019_lbl_nro_parciales_contados					= Num of Partials Counted
+rpt_019_lbl_nro_parciales_diferencia				= Partial differences
+rpt_019_lbl_resultado_general_moneda				= Coin
+rpt_019_lbl_resultado_general_declarado				= Declared
+rpt_019_lbl_resultado_general_contado				= Counted
+rpt_019_lbl_resultado_general_falta					= Lack
+rpt_019_lbl_resultado_general_sobra					= Leftover
+rpt_019_lbl_resultado_general_falsos				= Fakes
+rpt_019_lbl_detalle_conteo_titulo					= Counting Detail
+rpt_019_lbl_detalle_denominacion					= Denomination
+rpt_019_lbl_detalle_importe							= Amount
+rpt_019_lbl_detalle_contado							= Counted
+rpt_019_lbl_detalle_unidades						= Units
+rpt_019_lbl_detalle_falsos							= Fakes
+rpt_019_lbl_detalle_deteriorados					= Damaged
+rpt_019_lbl_detalle_grandtotal						= Grand Total
+rpt_019_lbl_detalle_parciales_titulo				= Partial Detail
+rpt_019_lbl_detalle_parciales_parcial				= Partial Number
+rpt_019_lbl_detalle_parciales_divisa				= Currency
+rpt_019_lbl_detalle_parciales_cliente				= Client
+rpt_019_lbl_detalle_parciales_subcliente			= Subclient
+rpt_019_lbl_detalle_parciales_punto_servicio		= Point of Service……..:
+rpt_019_lbl_detalle_parciales_declarado				= Declared
+rpt_019_lbl_detalle_parciales_contado				= Counted
+rpt_019_lbl_observaciones_titulo					= Comments
+rpt_019_lbl_precintos_parciales						= Partial Seals
+rpt_019_lbl_numero_parcial							= Partial Number
+rpt_019_lbl_comentario								= Comment
+rpt_019_lbl_supervisor								= Supervisor
+rpt_019_lbl_codigo_motivo							= Incidence Number
+
+
+//TELA BÚSQUEDA PUESTO
+
+021_titulo_busqueda_puestos							= Workstation Search
+021_lbl_subtitulospuestos							= Workstations
+021_lbl_subtituloscriteriosbusqueda					= Search Citeria
+021_lbl_sem_registro						        = No records found.
+021_lbl_vigente										= Valid
+021_lbl_codigopuesto								= Workstation Number
+021_lbl_hostpuesto									= Workstation Host
+021_chk_vigente 									= Valid
+021_chk_no_vigente 									= Not Valid
+021_chk_cualquiera 									= Any
+021_lbl_delegacion									= Cash Center
+021_seleccione_un_puesto							= Select a workstation
+
+
+//TELA BÚSQUEDA OPERARIO
+
+022_titulo_busqueda_operario						= Operator Search
+022_lbl_subtitulosoperario							= Operator
+022_lbl_subtituloscriteriosbusqueda					= Search Citeria
+022_lbl_sem_registro						        = No records found.
+022_lbl_nombre										= Name
+022_lbl_apellido									= Surname
+022_lbl_login										= Login
+022_lbl_delegacion									= Cash Center
+022_seleccione_un_operario							= Select an operator
+
+
+
+// token
+tkn_token_nao_consumida                             = Access Token invalid or expired.
+tkn_tokenutil_token_invalida                        = Access Token invalid
+
+//TELA REPORTES
+023_titulo_pagina									= Reports
+023_lblSubTituloreportes							= Reports
+023_lblDelegacion									= Cash Center
+023_lblFechaConteoInicio							= Counting Date Start
+023_lblFechaTransporteDesde							= Transport Date From
+023_lblFechaConteoFin								= Counting Date End
+023_lblFechaTransporteHasta							= Transport Date To
+023_btnAdicionar									= New Report Configuration
+023_btnEditar										= Configurate Reports
+023_btnExcluir										= Delete configuration of report
+023_btnGerarRelatorio								= Generate selected reports
+023_msg_error_rangofecha							= At least a range of dates must be informed
+023_err_campo_data_invalida							= The field ""{0}"" is not filled with a valid date.
+023_msg_error_reporte_vazio							= At least one report must be selected
+023_msg_error_reporte_unico							= Please, select just one configuration
+023_msg_error_selecionar_reporte					= Please, select one report
+023_msg_alert_excluir								= Do you want to delete?
+023_col_selecionar									= Select
+023_col_reporte										= Report
+023_col_descricao									= Description
+023_msg_erro_generico_configuracion_reporte 		= The report of the configuration ""{0}"" was not generated.
+023_msg_erro_sinParametros							= The report of the configuration ""{0}"" there is no parameters.
+023_msg_erro_sinParametrosCliente					= The report of configuration ""{0}"" do not have clients or group of clients
+023_msg_erro_singrupoCliente						= The group of clients ""{0}"" inserted in the configuration ""{1}"" wasn't found.
+023_msg_erro_campoObrigatorioConfiguracion			= The field ""{0}"" is mandatory for the configuration ""{1}"".
+
+
+//TELA CONFIGURAÇÃO REPORTES
+024_titulo_pagina									= Reports Configuration
+024_lblDescricaoConfiguracao						= Configuration Description
+024_lblReporte										= Report
+024_lblDelegacion									= Cash Center
+024_lblFechaRecaudacionIni							= Counting Date From
+024_lblFechaRecaudacionFin							= Counting Date To
+024lblFechaTransporteIni							= Transport Date Start
+024_lblFechaTransporteFim							= Transport Date End
+024_lblCliente										= Client
+024_btnCliente										= Search Client
+024_lblSubCliente									= Subclient
+024_btnSubCliente									= Search Subclient
+024_lblPuntoServicio								= Point of Service
+024_btnPuntoServicio								= Search Point of service
+024_lblGrupoClientes								= Group Clents
+024_lblCanal										= Channel
+024_lblSubCanal										= Subchanel
+024_lblPuesto										= Workstation
+024_lblDivisa										= Currency
+024_lblContador										= Counter
+024_chkAgruparClientes								= Group Clients
+024_chkAgruparSubClientes							= Group Subclients
+024_chkAgruparPuntosServicios						= Group Service Points
+024_chkAgruparGrupoClientes							= Group by Client group
+024_lblRuta											= Route
+024_lblFormatoArchivo								= File Format
+024_rbnCSV											= CSV
+024_rbnPDF											= PDF
+024_rbnEXCEL										= Excel
+024_rbnHTML											= HTML
+024_btnGenerarInforme								= General report
+024_msgDiretorioInvalido							= Invalid Route
+024_erro_config_reporte								= The report "{0}" is not with all the correct settings. Please check the parameter "{1}"
+
+
+// WEBCONFIG
+WEBCONFIG_CHAVE_INVALIDA							= Chave {0} inexistente e ou valor {1} inválido.
+
+//Migracao do layout
+TituloDefault									= Start
+genDelegacion									= Chash Center
+genPais											= Country
+genSector										= Sector
+
+
+//CONTROLE CLIENTE
+021_Cliente_Titulo								= Client
+021_Cliente_Popup_Titulo						= Search for Client
+021_Cliente_Popup_Resultado						= Client data
+021_Cliente_Popup_Filtro						= Search criteria
+
+//CONTROLE SUBCLIENTE
+022_SubCliente_Titulo							= SubClient
+022_SubCliente_Popup_Titulo						= Search for SubClient
+022_SubCliente_Popup_Resultado					= SubClient data
+022_SubCliente_Popup_Filtro						= Search criteria
+
+//CONTROLE SECTOR
+122_Sector_Titulo							= Sector
+122_Sector_Popup_Titulo						= Search for Sector
+122_Sector_Popup_Resultado					= Sector data
+122_Sector_Popup_Filtro						= Search criteria
+
+//CONTROLE PUNTO SERVICIO
+023_PtoServicio_Titulo							= Point of service
+023_PtoServicio_Popup_Titulo					= Search for Point of service
+023_PtoServicio_Popup_Resultado					= Point of service data
+023_PtoServicio_Popup_Filtro					= Search criteria
+
+//CONTROLE HELPER
+014_codigo										= Code:
+014_descricion									= Description:
+014_selecao_campo								= Select a field
+014_parametro_obrigatorio						= Parameter '{0}' is mandatory.
+014_ConsiderarSectoresHijos						= Consider sectors children in search results
+
+//Calendario
+bntProximo									= Next
+btnAnterior									= Previus
+btnMoverArriba								= Up
+btnMoverAbajo								= Down
+horas										= hour(s)
+minutos										= minute(s)
+segundos									= second(s)
+dias										= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+meses										= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+btnAgora										= Now 
+btnConfirma										= Confirm
+
+pagerFormatGrid									= Page {0} of {1} ({2} items)
+
+021_Resultado_busqueda_puestos					= Puestos data
+
+
+022_Resultado_busqueda_Operarios					= Operator data
+
+002_lblCodigo									= Code
+gen_sim											= Yes
+gen_nao											= No
+
+002_lblDescripcion								= Description
+btn_aceptar										= Acept
+
+//CONTROLE DE CLIENTE, SUBCLIENTE, PTO SERVICO E GRUPO CLIENTE
+028_btnBuscaCliente									= Search for Client
+028_btnBuscaSubCliente								= Search for SubClient
+028_btnBuscaPtoServicio								= Search for Point of service
+028_tituloCliente									= Search for Client
+028_tituloSubCliente								= Search for SubClient
+028_tituloPtoServico								= Search for Point of service
+028_lblCliente										= Client
+028_lblSubcliente									= SubClient
+028_lblPuntoServicio								= Point of service
+028_lblCodigo										= Cod
+028_lblDescricao									= Description
+028_lblCodigoSubCliente								= Cod. SubClient
+028_lblDescricaoSubCliente							= Des. SubClient
+028_lblCodigoPtoServico								= Cód. Point of service
+028_lblDescricaoPtoServico							= Des. Point of service
+028_lblCodigoAlheio 								= Cód. Ajeno 
+028_lblDescricaoAlheio 								= Des. Ajeno 
+028_lblCriterioBusca								= Search criteria
+028_lblGrupoClientes								= Client group
+
+btnaceitar 										= Acept
+027_lblFiltros										= Configuracion Filtro Reportes
+
+
+040_lbl_tipo_procedenciaForm							= Tipo Procedência
+
+010_lbl_titulosterminosForm								= Término IAC
+
+msg_remover_nao_selecionado						=  Select one ore more items to be eliminated!
+
+btnInserirDenominacion = Insert Denom.
+
+btnInserirTerminos = Insert Term.
+
+btnInserirSubcanal = Insert SubCanal
+
+btnInserirComponente = Insert Componente
+
+//InformacionGenesis
+InformacionGenesis_grid_FileName = Descripción
+InformacionGenesis_grid_FileVersion = Versión del Archivo
+InformacionGenesis_grid_ProductVersion = Versión del Producto
+
+//InformacionReportes
+InformacionReportes_titulo_pagina	= Información de Reportes {0}
+InformacionReportes_lbl_SubTitulo	= Información de Reportes {0}
+InformacionReportes_btnExportar		= Exportar

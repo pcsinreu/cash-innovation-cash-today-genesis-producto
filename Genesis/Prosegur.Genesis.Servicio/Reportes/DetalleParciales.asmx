@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="DetalleParciales.asmx.vb" Class="Prosegur.Global.GesEfectivo.Reportes.Servicio.DetalleParciales" %>

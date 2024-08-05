@@ -1,0 +1,110 @@
+CREATE OR REPLACE FUNCTION FN_TRADUZIR_###VERSION### (P_CULTURA          IN VARCHAR2,
+                                       P_CHAVE            IN VARCHAR2,
+                                       P_FUNCIONALIDAD    IN VARCHAR2,
+                                       P_APLICACION       IN VARCHAR2,
+                                       P_PARAMETROS       IN VARCHAR2,
+                                       P_MARCAR_INI_TEXTO IN NUMBER DEFAULT 0)
+  RETURN VARCHAR2 IS
+  /*Version: ###VERSION_COMP###*/
+
+  CURSOR CURSOR_PARAMETROS IS
+    SELECT COLUMN_VALUE COD_PARAMETRO
+      FROM TABLE(STRING_TO_ARRAY_###VERSION### (P_PARAMETROS, '|'));
+
+  V_VALOR_CHAVE       VARCHAR2(4000);
+  V_EXISTE            NUMBER;
+  V_INDEX_PARAMETRO   NUMBER;
+  V_SIMBOLO_PARAMETRO VARCHAR2(100);
+
+BEGIN
+
+  SELECT COUNT(*)
+    INTO V_EXISTE
+    FROM (SELECT D.VALOR
+            FROM GEPR_TDICCIONARIO D
+           INNER JOIN GEPR_TAPLICACION A
+              ON A.OID_APLICACION = D.OID_APLICACION
+           WHERE A.COD_APLICACION = P_APLICACION
+             AND D.COD_IDIOMA = P_CULTURA
+             AND D.COD_FUNCIONALIDAD = P_FUNCIONALIDAD
+             AND D.COD_EXPRESION = P_CHAVE
+          UNION
+          SELECT D.VALOR
+            FROM GEPR_TDICCIONARIO D
+           INNER JOIN GEPR_TAPLICACION A
+              ON A.OID_APLICACION = D.OID_APLICACION
+           WHERE A.COD_APLICACION = P_APLICACION
+             AND D.COD_IDIOMA <> P_CULTURA
+             AND D.COD_FUNCIONALIDAD = P_FUNCIONALIDAD
+             AND D.BOL_DEFECTO = 1
+             AND D.COD_EXPRESION = P_CHAVE
+             AND D.COD_EXPRESION NOT IN
+                 (SELECT D.COD_EXPRESION
+                    FROM GEPR_TDICCIONARIO D
+                   INNER JOIN GEPR_TAPLICACION A
+                      ON A.OID_APLICACION = D.OID_APLICACION
+                   WHERE A.COD_APLICACION = P_APLICACION
+                     AND D.COD_IDIOMA = P_CULTURA
+                     AND D.COD_EXPRESION = P_CHAVE
+                     AND D.COD_FUNCIONALIDAD = P_FUNCIONALIDAD));
+
+  IF V_EXISTE > 0 THEN
+  
+    SELECT VALOR
+      INTO V_VALOR_CHAVE
+      FROM (SELECT D.VALOR
+              FROM GEPR_TDICCIONARIO D
+             INNER JOIN GEPR_TAPLICACION A
+                ON A.OID_APLICACION = D.OID_APLICACION
+             WHERE A.COD_APLICACION = P_APLICACION
+               AND D.COD_IDIOMA = P_CULTURA
+               AND D.COD_FUNCIONALIDAD = P_FUNCIONALIDAD
+               AND D.COD_EXPRESION = P_CHAVE
+            UNION
+            SELECT D.VALOR
+              FROM GEPR_TDICCIONARIO D
+             INNER JOIN GEPR_TAPLICACION A
+                ON A.OID_APLICACION = D.OID_APLICACION
+             WHERE A.COD_APLICACION = P_APLICACION
+               AND D.COD_IDIOMA <> P_CULTURA
+               AND D.COD_FUNCIONALIDAD = P_FUNCIONALIDAD
+               AND D.BOL_DEFECTO = 1
+               AND D.COD_EXPRESION = P_CHAVE
+               AND D.COD_EXPRESION NOT IN
+                   (SELECT D.COD_EXPRESION
+                      FROM GEPR_TDICCIONARIO D
+                     INNER JOIN GEPR_TAPLICACION A
+                        ON A.OID_APLICACION = D.OID_APLICACION
+                     WHERE A.COD_APLICACION = P_APLICACION
+                       AND D.COD_IDIOMA = P_CULTURA
+                       AND D.COD_EXPRESION = P_CHAVE
+                       AND D.COD_FUNCIONALIDAD = P_FUNCIONALIDAD));
+  
+    IF P_PARAMETROS IS NOT NULL THEN
+    
+      V_INDEX_PARAMETRO   := 0;
+      V_SIMBOLO_PARAMETRO := '';
+    
+      FOR CP IN CURSOR_PARAMETROS LOOP
+      
+        V_SIMBOLO_PARAMETRO := '{' || V_INDEX_PARAMETRO || '}';
+        V_VALOR_CHAVE       := REPLACE(V_VALOR_CHAVE,
+                                       V_SIMBOLO_PARAMETRO,
+                                       CP.COD_PARAMETRO);
+        V_INDEX_PARAMETRO   := V_INDEX_PARAMETRO + 1;
+      END LOOP;
+    
+    END IF;
+  
+    IF P_MARCAR_INI_TEXTO = 1 AND V_VALOR_CHAVE IS NOT NULL THEN
+    
+      V_VALOR_CHAVE := '#' || V_VALOR_CHAVE || '#';
+    
+    END IF;
+  
+  END IF;
+
+  RETURN V_VALOR_CHAVE;
+
+END FN_TRADUZIR_###VERSION###;
+/

@@ -1,0 +1,1600 @@
+
+.ui-sol-icon-menu {
+	background: url(../images/iconos/icon_geografica2.png) 0 0 no-repeat !important;	
+}
+
+.ui-sol-tipo-modulo-desglose-grid {
+	width: 60% !important ; 
+	padding: 1px;
+}
+
+.ui-sol-check-box-map-direccion {
+	padding-left: 120px !important;
+}
+
+.ui-sol-sub-header {
+    color: #000000 !important;
+    font-size: 14px !important;
+    font: bold !important;
+    padding:0 22px 3px 11px;
+	background: transparent url(../images/iconos/icone1.png) 0 2px no-repeat!important;
+	}
+
+.ui-sol-sub-header span {
+    color:Red!important;
+    }
+
+.ui-sol-panel-footer {
+	position: fixed;
+	bottom: 0px;
+	margin: auto;
+	width: 100%;
+	min-width: 990px !Important;
+	height: 50px !important;
+	background: transparent url(../images/body.png) 0 35px repeat-x!important;
+}
+
+.ui-frecuencia-radio-table {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.ui-frecuencia-checkOne {
+	text-align: right;
+	margin-top: -62px;
+	margin-bottom: 16px;
+	margin-right: 170px;
+
+}
+.ui-frecuencia-checkTwo {
+	text-align: right;
+	margin-top: -22px;
+	margin-bottom: 12px;
+}
+
+img {
+	border: none;
+}
+
+.ui-sol-simple-buttons-panel {
+	width: 632px !important;
+	height: 64px;
+	margin: auto !important;
+	background: none !important;
+	position: fixed;
+	bottom: -30px;
+}
+
+.ui-sol-center-header{
+	overflow:hidden;
+}
+.ui-sol-simple-label-tipo-solicitud{
+	padding-right: 15px!important;
+	vertical-align: top!important;
+}
+
+.ui-inputtextarea {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	height: 128px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	width: 528px !important;
+}
+
+.ui-sol-without-padding {
+	padding: 0px;
+}
+
+.ui-sol-image-map {
+	background-image: url("../images/iconos/icone_globo.png") !important
+}
+
+.ui-sol-date .ui-datepicker-trigger .ui-icon-calendar {
+	background-position: 0px 0px !important;
+	background-image: url("../images/iconos/icone_calendario2.png")
+		!important;
+}
+
+.ui-sol-hour .ui-datepicker-trigger .ui-icon-calendar {
+	background-position: 0px 0px !important;
+	background-image: url("../images/iconos/icone_hora.png")
+		!important;
+}
+
+.ui-sol-simple-2-buttons-panel {
+	width: 260px !important;
+	height: 64px;
+	margin: auto !important;
+	background: none !important;
+	position: fixed;
+	bottom: -30px;
+}
+
+.ui-sol-simple-3-buttons-panel {
+	width: 330px !important;
+	height: 64px;
+	margin: auto !important;
+	background: none !important;
+	position: fixed;
+	bottom: -30px;
+}
+
+.ui-sol-simple-buttons {
+	margin: auto;
+}
+
+.ui-sol-panel-left {
+	height: 64px;
+	padding: 0 18px;
+}
+
+.ui-sol-panel-right {
+	height: 64px;
+	float: right;
+	width: 20px;
+	margin: -68px 0 0 0;
+}
+
+.ui-sol-panel-center {
+	background: transparent url(../images/panel_button.png) 0 0 repeat-x;
+	height: 64px;
+	white-space: nowrap;
+}
+
+.ui-sol-panel-center input {
+	margin: 22px 2px 0 2px;
+	height: 30px;
+	border: solid 1px #FFFF00;
+	background: #ffcc00;
+}
+
+.ui-sheet-cell-info {
+	display: none;
+}
+
+.ui-sheet-editor {
+	display: none;
+}
+
+.ui-sheet-editor-bar {
+	border: none !important;
+}
+
+.invisible {
+	display: none;
+}
+
+.columnSheet {
+	width: 125px;
+	min-width: 125px;
+}
+
+.sheetWidth {
+	width: 425px;
+}
+
+.notificationBar {
+	z-index: 100;
+}
+
+.ui-chkbox .ui-chkbox-box {
+	opacity: 1;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+body {
+	background: transparent url(../images/body.png) 0 0 repeat-x !important;
+}
+
+.edit {
+	background-image: url(../images/grid/edit.png) !important;
+}
+
+.view {
+	background: url(../images/grid/search.png) 0 0 no-repeat !important;
+}
+
+.delete {
+	background: url(../images/grid/deletar.png) 0 0 no-repeat !important;
+}
+
+.new {
+	background: url(../images/grid/nuevo.png) 0 0 no-repeat !important;
+}
+
+.update {
+	background: url(../images/grid/grabar.png) 0 0 no-repeat !important;
+}
+
+.excel {
+	background: url(../images/button/xls.png) 0 0 no-repeat !important;
+}
+
+.traduccion {
+	background: url(../images/button/traduccion.png) 0 0 no-repeat
+		!important;
+}
+
+.mark {
+	background: url(../images/iconos/icone_check2.png) 0 0 no-repeat !important;
+}
+.anadir {
+	background: url(../images/iconos/adicionar.png) 0 0 no-repeat !important;
+	margin:-7px 2px 0 0!important;
+}
+
+.borrar {
+	background: url(../images/grid/borrar.png) 0 0 no-repeat !important;
+}
+
+.down {
+	background: url(../images/iconos/icon2.png) 0 0 no-repeat !important;
+	margin-left: -5px!important;
+	margin-top: -5px!important;
+}
+
+.up {
+	background: url(../images/iconos/icon3.png) 0 0 no-repeat !important;
+	margin-left: -5px!important;
+	margin-top: -6px!important;
+}
+
+.ui-datatable .ui-datatable-header {
+	color: #000;
+}
+
+.ui-sol-icon-mark{
+	margin-left:-5px!important;
+	margin-top:-6px!important;
+}
+
+.ui-sol-checkbox-multiple{
+	margin-left: 50%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 50%;
+}
+
+.ui-widget {
+	font-size: 12px !important;
+	color: #333 !important;
+}
+
+.ui-icon {
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+}
+
+.ui-layout-container {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 12px !important;
+	color: #333 !important;
+}
+
+.ui-sol-buttom-move{
+	
+}
+
+.ui-panel-footer {
+	background: green !important;
+}
+
+.ui-layout-center {
+	border: solid 1px red;
+}
+
+.ui-button {
+	background: #ffcc00 url(../images/button.png) 0 0 repeat-x !important;
+	height: 28px;
+}
+
+
+.ui-button-text {
+	color: #000;
+}
+
+.ui-dt-c input {
+	background: #fff url(../images/input.png) 0 0 repeat-x !important;
+	font-size: 11px !important;
+	border: solid 1px #666;
+}
+
+.ui-dt-c button {
+	width: 20px ;
+	height: 20px ;
+	margin: 2px 0;
+}
+
+.ui-fecha-component-model table{
+	width: 100% !important; 
+}
+
+.ui-fecha-button-model {
+	width: 89% !important;
+	height: 24px !important;
+	text-align: center;
+	margin: auto ;
+}
+
+.ui-fecha-input-model {
+	width: 50% !important;
+	text-align: left !important; 
+}
+
+.ui-dt-c table {
+	border: none!important;
+	width: 20px ;
+	padding: 0 2px !important;
+}
+
+.ui-dt-c td {
+	border: solid 1px #fff !important;
+}
+
+.ui-datatable-data td {
+	padding: 0 2px !important;
+}
+
+.formTop:topBar {
+	border: solid 1px red !important;
+	z-index: 5000 !important;
+}
+
+.ui-datatable tr {
+	border: solid 1px #999 !important;
+}
+
+.ui-widget-content {
+	border: none;
+	background: #fff;
+}
+
+.ui-state-hover {
+	box-shadow: 0px 0px 0px #fff !important;
+	filter: alpha(opacity =     80) !important;
+	opacity: 0.80 !important;
+}
+
+
+table tr.ui-datatable-even, .ui-widget-content.ui-datatable-even.ui-state-highlight{
+	background: #FFFDF2 !important;
+}
+
+table tr.ui-datatable-odd, .ui-widget-content.ui-datatable-odd.ui-state-highlight{
+	background: #FFFFFF !important;
+}
+
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus
+	{
+	border: 1px solid #666 !important;
+	background: #EBEBEB!important;
+}
+
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active
+	{
+	border: 1px solid #ccc !important;
+	background: #ccc url(../images/hover_geral.png) 0 0 repeat-x !important;
+	color: #000 !important;
+}
+
+.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error
+	{
+	background: #FFFAE8 url(../images/obrigatorio_geral.png) 0 0 repeat-x
+		!important;
+	border: solid 1px #ddd;
+}
+
+.ui-widget-overlay {
+	background: #333 !important;
+}
+
+.ui-panel .ui-panel-content{
+	padding:0!important;
+}
+
+#south .ui-layout-unit-content .ui-widget-content {
+	border: none !important;
+}
+
+.ui-datatable .ui-paginator,.ui-datatable .ui-paginator {
+	padding: 1px;
+	background: #f9f9f9;
+	border: solid 1px #ccc;
+}
+
+.ui-sol-button-center {
+	margin: 0 auto !important;
+	display: block !important;
+	text-align: center !important;
+}
+
+.actions {
+	margin: auto;
+	border:none!important;
+}
+.actions table{
+	border:none!important;
+}
+
+.actions tr{
+	border:none!important;
+}
+.actions tbody{
+	border:none!important;
+}
+.actions td{
+	border:none!important;
+}
+
+.ui-messages {
+	z-index: 500000;
+}
+
+.ui-state-default input:focus {
+	background: #ebebeb !important;
+	box-shadow: 1px 1px 6px red !important;
+}
+
+.ui-state-default input {
+	background: transparent url(../images/input.png) 0 0 repeat-x;
+}
+
+.ui-state-default input:focus {
+	background: #ebebeb !important;
+	box-shadow: 1px 1px 6px #ffcc00 !important;
+	border: solid 1px #333 !important;
+}
+
+.ui-column-filter .ui-state-hover {
+	background: transparent url(../images/input.png) 0 0 repeat-x;
+}
+
+.ui-state-hover input {
+	background: #fefefe url(../images/input.png) 0 0 repeat-x !important;
+}
+
+.ui-state-hover input:hover {
+	background: #fefefe url(../images/input.png) 0 0 repeat-x !important;
+}
+
+.ui-panel-content input {
+	background: #fefefe url(../images/input.png) 0 0 repeat-x !important;
+}
+
+.ui-panel-content input:hover {
+	background: #fefefe url(../images/input.png) 0 0 repeat-x !important;
+}
+
+.ui-panel-content input:focus {
+	background: #ebebeb !important;
+	box-shadow: 1px 1px 6px #666 !important;
+	border: solid 1px #ffcc00 !important;
+}
+
+input[readonly] {
+	background: buttonface;
+	opacity: .60;
+	filter: Alpha(Opacity =     35);
+	background-image: none;
+}
+
+.ui-panel-content input {
+	background: #fefefe url(../images/input.png) 0 0 repeat-x !important;
+}
+
+.ui-panel-content select {
+	background: #fefefe url(../images/input.png) 0 0 repeat-x !important;
+	border: 1px solid #ccc;
+	font-weight: bold !important;
+	height: 23px !important;
+	color: #333 !important;
+	-moz-box-shadow: inset 0 2px 2px #8F8F8F !important;
+	-webkit-box-shadow: inset 0 2px 2px #8F8F8F !important;
+	box-shadow: inset 0 2px 2px #8F8F8F !important;
+	margin: 0;
+}
+
+
+.ui-sol-menu {
+	height: 60px !important;
+	border: none;
+	float: left;
+	width: 154px;
+	height: 56px;
+	margin: 2px 0 0 10px;
+	z-index: 40000 !important;
+}
+
+
+.ui-sol-navigation {
+	float: right !important;
+	min-width: 300px;
+	margin: -81px 6px 0 0;
+	z-index: 6000 !Important;
+	color: #333 !important;
+	width: auto !important;
+	text-align: right;
+	height: 17px;
+	font-size: 10px !important;
+	font-style: italic;
+}
+
+.ui-sol-navigation .ui-widget-header {
+	width: auto !important;
+	border: none !important;
+	font-size: 10px !important;
+	margin: -8px 0 0 0 !important;
+	text-decoration: none;
+}
+
+.ui-sol-select-location-panel {
+	padding: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ui-sol-top-navigation {
+	margin: -51px 0 0 0;
+	float: left;
+	width: 100%!important;
+	height: 55px;
+	background: transparent url(../images/header2.png) 200px 0 no-repeat!important;
+	z-index: 2000!important;
+	padding:4px 0 0 0!important;
+}
+
+.ui-sol-user {
+	height: 33px;
+	z-index: 60000;
+	margin: 4px 5px 0 0;
+	padding: 0 0 0 10px;
+	font-size: 10px;
+	color: #666 !important;
+	width: auto !important;
+	float: right;
+	text-align: right;
+	background: none;
+}
+
+.ui-sol-shortcuts {
+	float: right;
+	height: 19px;
+	margin: 0 5px 0 0;
+	cursor: pointer;
+	font-size: 10px !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	float: right;
+}
+
+.ui-sol-shortcuts a
+{
+    text-decoration:none!important;
+    }
+
+
+.ui-sol-logoff {
+	width: 19px !important;
+	height: 19px;
+	margin: 3px 7px 0 10px;
+	border: none;
+	cursor: pointer;
+	right: 8px;
+	float: right;
+	background: transparent url(../images/iconos/icon_close.png) 0 0
+		no-repeat !important;
+}
+
+.ui-sol-page-title {
+	font-size: 16px !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-variant: normal;
+	color: #999 !important;
+	text-align: left;
+	float: left;
+	margin: 0 0 0 207px;
+}
+
+.ui-layout-unit-content {
+	background: none !important;
+}
+
+.ui-sol-buttom-principal{
+	margin-left: 40%!important;
+}
+
+.ui-sol-layout-unit-content {
+	overflow: hidden !important;
+	width: auto;
+	background: none;
+}
+
+/*Footer AJUSTES*/
+.ui-layout-pane-south {
+	height: 68px !important;
+}
+
+.ui-layout-south {
+	background: transparent url(../images/body.png) 0 52px repeat-x
+		!important;
+}
+
+#formSouth .ui-panel-content {
+	background: none !important;
+}
+
+
+/*
+.ui-menu {
+	width: 50%;
+	background: none !important;
+	left: 5px;
+}
+
+
+.ui-menu-list {
+	width: 190px !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	left: 0px;
+}
+*/
+/*menu geral*/
+/*
+.ui-menu-list .ui-corner-all { 
+	background: #dfdfdf url(../images/notificationbar.png) 0 -25px repeat-x
+		!important;
+	color: #666 !important;
+	margin: 1px 0 0 0 !important;
+	padding: 0 !important;
+	moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	line-height: 22px;
+}
+*/
+
+/*menu geral*/
+/*
+.ui-menu-list .ui-corner-all { 
+	background: #dfdfdf url(../images/notificationbar.png) 0 -25px repeat-x
+		!important;
+	color: #666 !important;
+	margin: 1px 0 0 0 !important;
+	padding: 0 !important;
+	moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	line-height: 22px;
+}
+*/
+
+/*menu geral hover*/
+/*
+.ui-menu-list .ui-corner-all .ui-state-hover { 
+	background: #dfdfdf url(../images/notificationbar.png) 0 -10px repeat-x
+		!important;
+	border: 1px #cdcdcd solid !important;
+	color: #000 !important;
+	line-height: 22px;
+	border-bottom: solid 1px #999 !important;
+	width: 190px !important;
+}
+*/
+
+/*menu sinalizaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½o submenu*/
+/*
+.ui-menu-list .ui-menu-parent { 
+	background: #dfdfdf !important;
+}
+*/
+/*style link*/
+/*
+.ui-menuitem-link {
+	border-bottom: solid 1px #f9f9f9 !important;
+	width: 190px !important;
+}
+
+.ui-menu .ui-menu-child {
+	box-shadow: 0px 2px 2px #666 !important;
+}
+*/
+/*ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½cone menu*/
+/*
+.ui-menu-item a:hover {
+	color: red !Important;
+	padding: 5px 10px !important;
+}
+
+.ui-menu-dynamic {
+	left: 0px !Important;
+	box-shadow: none;
+}
+*/
+
+#top {
+	background: none !important;
+}
+
+.ui-panel-titlebar {
+	font-size: 14px;
+	color: red;
+	background: transparent url(../images/iconos/icon_menu_off.png) 0 5px
+		no-repeat !important;
+	border: none;
+	line-height: 12px;
+	border-bottom: solid 1px #ccc;
+	margin: 10px 0 5px 0;
+}
+
+.ui-panel-title {
+	color: #000 !important;
+	padding: 0 0 0 5px;
+}
+
+#login_box input {
+	width: 200px;
+	font-size: 20px;
+	padding: 0 0 0 10px !important;
+}
+
+.ui-sol-version-panel {
+	background: transparent url(../images/iconos/icon_version.png) 0 0
+		no-repeat !important;
+	width: 100px;
+	height: 15px;
+	text-shadow: 0px 0px 0px;
+	font-size: 10px !important;
+	padding: 0 0 0 15px !important;
+	position: absolute;
+	margin: 34px 0 0 0;
+}
+
+.ui-sol-buttom-anadir-destino{
+	float: left;
+	margin-top: 10px;
+}
+
+.ui-sol-institucional-panel {
+	background: transparent url(../images/logo/logotipo_prosegur.png) 0 0
+		no-repeat !important;
+	float: right;
+	width: 64px;
+	height: 12px;
+	margin: -29px 10px 0 0;
+}
+
+.ui-sol-buttom-codPostal{
+	width: 25px!important;
+	height: 25px!important;
+}
+
+.ui-sol-institucional-panel-desktop {
+	background: transparent url(../images/logo/logotipo_prosegur.png) 0 0
+		no-repeat !important;
+	float: right;
+	width: 64px;
+	height: 12px;
+	margin: 35px 10px 0 0;
+}
+
+.ui-sol-box-funcionalidades {
+	width: 13%;
+	padding: 5px;
+	background: #dfdfdf;
+	border: solid 1px #ACACAC;
+	border-left: solid 1px #ccc;
+	border-top: solid 1px #ccc;
+	font-size: 10px;
+	background: #fff url(../images/iconos/bg_box_funcionalidades.png) 0 0
+		repeat-x;
+	float: left;
+	margin: 2px;
+}
+
+.ui-sol-box-funcionalidades b {
+	font-size: 12px;
+	background: url(../images/iconos/icon_funcionalidades.png) 0 0 no-repeat;
+	height: 30px;
+	padding: 0 0 2px 20px;
+}
+
+.ui-sol-box-funcionalidades a {
+	color: #666;
+	text-decoration: none;
+}
+
+.ui-sol-box-funcionalidades a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.ui-sol-mandatory {
+	background: url(../images/iconos/input_mandatory.png) 0 0 repeat-x
+		!important;
+	border-left: solid 1px #B70000 !important;
+}
+
+.ui-sol-buttom-view {
+
+	vertical-align: middle !important;
+	margin-top: -14% !important;
+}
+
+.ui-sol-div-selectdirection {
+	display: table-cell;
+}
+
+.ui-sol-mandatory-textarea {
+	background: url(../images/iconos/input_mandatory.png) 0 0 repeat-x
+		!important;
+	border-left: solid 1px #B70000 !important;
+	height: 50px !important;
+}
+
+.ui-sol-mandatory-autocomplete {
+	border: none;
+}
+
+.ui-messages-error,.ui-messages-info {
+	border: 0px !important;
+	background: none !important;
+}
+
+.ui-sol-panel-grid-desktop {
+	background: transparent url(../images/box.png) 0 0 no-repeat !important;
+	width: 257px !important;
+	height: 99px !important;
+	margin: 15px !important;
+	float: left !important;
+	padding: 10px;
+}
+
+.ui-sol-panel-grid-desktop img {
+	border: 0;
+}
+
+.ui-sol-panel-grid-desktop a:link {
+	font-size: 24px;
+	font-weight: bold;
+	width: 100px;
+	color: #666;
+	text-decoration: none;
+}
+
+.ui-sol-table-servicio-contratado{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.ui-sol-servicio-button-move{
+	width: 15px!important;
+	height: 15px!important;
+}
+
+.ui-sol-fieldset-servicio-contratado{
+	height: 270px;
+}
+
+.ui-datatable-servicio-contratado{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.ui-sol-check-servicio-contratado{
+	margin-left: 40%!important;
+}
+
+.ui-sol-column-check-servicio-contratado{
+	width: 20%!important;
+}
+
+.ui-sol-observacion{
+	margin: 5px;
+	height: 30px;
+	width: 700px;
+}
+
+.ui-sol-panel-grid-desktop a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.ui-sol-panel-grid-desktop img {
+	float: right;
+}
+
+.ui-sol-label-ambito-actual-valor {
+	font-weight: bold;
+	font-size: 16px !important;
+	padding: 0 3px;
+}
+
+.ui-sol-label-ambito-actual {
+	font-size: 16px !important;
+	padding: 0 3px;
+}
+
+
+.ui-sol-label-ambito-actual {
+	background: transparent url(../images/iconos/icon_menu_on.png) 0 2px
+		no-repeat !important;
+	padding: 0 0 0 20px;
+}
+
+.ui-picklist td {
+	border: solid 1px #cfcfcf;
+	padding: 0 4px;
+}
+
+.ui-picklist li {
+	background: #e0e0e0;
+	border: solid 1px #ccc !important;
+	margin: 1px 0 !important;
+}
+
+.ui-sol-layout-blank-content {
+	height: 50px !important;
+	width: 98% !important;
+}
+
+.ui-confirm-dialog-severity {
+	float: left;
+	margin: 3px 7px 20px 0;
+	display: none !important;
+}
+
+.ui-draggable td {
+	padding: 3px 2px;
+}
+
+.ui-sol-column-activo-combo {
+	width: 45px !important;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	background: none;
+	border: none;
+	padding: 0;
+	vertical-align:sub!important;
+}
+
+
+.panel_button {
+	background: transparent url(../images/panel_button2.png) 0 0 no-repeat;
+	height: 75px;
+	width: 632px;
+	margin: auto;
+	padding: 12px 0 0 0;
+}
+
+.carregandoFX {
+	border: 0;
+	/*background:transparent url(../images/box_prosegur.png) 0 0 no-repeat;*/
+	font-size: 10px;
+	font-family: verdana;
+	padding: 72px 0 0 0;
+	text-align: center;
+	background: transparent !important;
+	-webkit-box-shaddow: 0 !important;
+}
+
+.ui-sol-loading {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	background: none;
+	border: none;
+}
+
+.ui-sol-loading .ui-widget-header {
+	background: none !important;
+}
+
+.ui-sol-ambito-content select {
+	width: 180px;
+}
+
+.ui-tree-node-label {
+	vertical-align: top;
+}
+
+.ui-tree-node-label span {
+	margin: -4px 0 0 0;
+}
+
+.ui-tree-node-label img {
+	margin: -4px 5px 0 0;
+}
+
+.ui-datagrid-data {
+	width: auto !important;
+}
+
+.ui-sol-translate-input {
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.ui-breadcrumb ul {
+	width: auto !important;
+	float: right;
+	list-style: none;
+}
+
+.ui-breadcrumb .ui-menuitem-link {
+	width: auto !important;
+	text-decoration: none;
+	font-style: normal;
+	padding-right: 5px;
+	margin-top: 4px !important;
+}
+
+.ui-breadcrumb ul li a.ui-icon-home {
+	padding: 8px !important;
+	margin-top: 2px !important;
+}
+
+.ui-breadcrumb a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+.ui-breadcrumb-chevron {
+	width: 17px;
+}
+
+.ui-breadcrumb .ui-menuitem-text {
+	width: auto !important;
+}
+
+#left {
+	min-height: 520px;
+	position: absolute;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	right: auto;
+	z-index: 1;
+	left: 0px;
+	width: 196px;
+	top: 76px;
+	bottom: 0px;
+	height: 549px;
+	display: block;
+	visibility: visible;
+}
+
+.ui-sol-content-menu-left, .leftMenu {
+	position: relative;
+	height: 545px;
+	visibility: visible;
+	width: 200px;
+	min-width: 200px;
+	overflow-x: none !important;
+
+}
+
+
+
+.ui-sol-content-menu-left ul .ui-menuitem-link, .leftMenu ul .ui-menuitem-link{
+	margin: 0 0 0 -10px;
+	color:#000!important;
+	margin:0 0 0 -15px!important;
+	padding:0 0 0 15px!important;
+	border-radius:1px!important;
+	font-weight:bold;
+	background:#f9f9f9!important;
+	width:99%;
+	}
+	
+.ui-sol-content-menu-left ul .ui-state-disabled, .leftMenu ul .ui-state-disabled{
+	margin: 0 0 0 -10px;
+	color:#000!important;
+	margin:0 0 0 -15px!important;
+	padding:0 0 0 15px!important;
+	border-radius:3px!important;
+}
+.ui-sol-content-menu-left ul .ui-state-hover, .leftMenu ul .ui-state-hover{
+	margin: 0 0 0 -10px;
+	color:#000!important;
+	margin:0 0 0 -15px!important;
+	padding:0 0 0 15px!important;
+	border-radius:3px!important;
+}
+
+
+
+.ui-sol-footer-panel-simple-main-template {
+	background: transparent url(../images/panel_simple_main_template.png) 0 0 no-repeat;
+	height: 64px;
+	width: 655px;
+	margin: auto;
+	padding: 0;
+}
+
+.ui-sol-footer-panel-2-buttons-template {
+	background: transparent
+		url(../images/panel_simple_two_buttons_template.png) 0 0 no-repeat;
+	height: 64x;
+	width: 260px;
+	margin: auto;
+	padding: 0;
+}
+
+.ui-sol-footer-panel-left-menu-template {
+	background: transparent url(../images/panel_left_main_template.png) 0 0
+		no-repeat;
+	height: 64x;
+	width: 655px;
+	margin: auto;
+	padding: 12px 0 0 0;
+}
+
+.ui-sol-footer-panel-3-buttons-template {
+	background: transparent
+		url(../images/panel_simple_three_buttons_template.png) 0 0 no-repeat;
+	height: 64x;
+	width: 355px;
+	margin: auto;
+	padding: 12px 0 0 0;
+}
+
+.ui-sol-content-accordion .ui-tree-icon {
+	background: transparent
+		url(../images/iconos/marcador_funcionalidades.png) 0 0 no-repeat;
+	padding: 0 0 0 20px;
+}
+
+.ui-accordion .ui-accordion-content {
+	height: 400px !important;
+}
+
+.ui-sol-content-accordion .ui-tree-node {
+	font-size: 20px;
+}
+
+.ui-sol-content-accordion .ui-tree-parent {
+	font-size: 18px;
+}
+
+.ui-accordion .ui-tree-node-label img {
+	margin: 0 5px 0 0;
+}
+
+.ui-sol-left-menu-layout {
+	background: none;
+	z-index: 0;
+}
+
+.ui-fieldset {
+	border: 1px solid #A8A8A8 !important;
+	margin-bottom: 3px;
+}
+
+.ui-datepicker {
+	border: 1px solid #A8A8A8;
+}
+
+.fileupload-buttonbar {
+
+	padding: 20px 0 0 0 !important;
+	background: none;
+	border: none;
+}
+
+.ui-datepicker-trigger {
+	background: #CCC !Important;
+	height: 22px;
+}
+
+.ui-orderlist-list {
+	height: 200px;
+	list-style-type: none;
+	margin: 0;
+	overflow: auto;
+	padding: 0;
+	width: 100% !important;
+}
+
+.ui-panelgrid td {
+	border-style: none !important;
+	padding: 0px 3px !important;
+}
+
+/*novos ajustes*/
+.files .template-upload {
+	border: solid 2px #ffcc00 !important;
+	border-radius: 4px;
+	width: 560px;
+	height: 70px;
+	position: absolute;
+	padding: 5px;
+	top: 0;
+	right: 0;
+	background: #f9f9f9;
+}
+
+.files .template-upload .name {
+	width: 250px !important;
+	font-size: 10px;
+}
+
+.fileupload-content .ui-progressbar {
+	width: 100px !important;
+}
+
+.fileupload-buttonbar .ui-button-text {
+	padding: 7px 5px 0 25px !important;
+}
+
+.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited {
+	color: #000 !important;
+	background: #fff url(../images/input.png) 0 0 repeat-x !important;
+	border-bottom: solid 1px #fff !important;
+	margin: 0 0 -2px 0;
+}
+
+.ui-tabs-panels {
+	border: solid 1px gray !important;
+}
+
+.ui-sol-mandatory-autocomplete .ui-autocomplete-input {
+	background: transparent url(../images/iconos/input_mandatory.png) 0 0
+		repeat-x !important;
+	border-left: solid 1px #B70000 !important;
+}
+
+.ui-sortable-column-icon {
+	float: right;
+	position: relative!important;
+}
+
+.ui-sortable-column .ui-dt-c span:last-child{
+	float: left;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-default {
+    background: #dfdfdf!important;
+    border: 1px #ddd solid!important;
+    color: #666!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    text-shadow: none!important;
+}
+.ui-datepicker .ui-datepicker-calendar .ui-state-default thead{
+    color: red!important;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-week-end {
+    background: #f9f9f9!important;
+    border: 1px #ddd solid!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    text-shadow: none!important;
+}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-week-end a{ 
+    color: #c9c9c9!important;
+}
+
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-hover {
+    background: #ffcc00!important;
+    border: 1px #ffcc00 solid!important;
+    color: #000!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    text-shadow: none!important;
+}
+
+.ui-inputfield .ui-inputtext .ui-widget .ui-state-default .ui-corner-all{
+    -moz-border-radius: 0px!important;
+    -webkit-border-radius: 0px!important;
+    border-radius: 3px!important;
+    -webkit-box-shadow:none!important;
+    box-shadow: none!important
+}
+
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield{
+    -moz-border-radius: 0px!important;
+    -webkit-border-radius: 0px!important;
+     border-radius: 3px!important;
+    -webkit-box-shadow:none!important;
+    box-shadow: none!important
+}
+
+
+.ui-menu{
+    width:220px!important;
+    background: #ccc url(../images/menu_geral.png) top repeat-x!important;
+}
+
+.ui-menu ul{
+    width:220px!important;
+    background: #ccc url(../images/menu_geral.png) top repeat-x!important;
+
+}
+
+.ui-sol-acuerdo-label-checkbox input[type="checkbox"] 
+{
+    margin:0 5px 0 0;
+}
+
+
+.ui-fieldset legend
+{
+    padding:2px 4px!Important;
+}
+/*
+.ui-entity table
+{
+    border-spacing:2px!important;
+}
+*/    
+.ui-widget-content table
+{
+    border-spacing:2px!important;
+}
+        
+ .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid #666!important;
+    background:#dfdfdf!important;
+    color: #333!important;
+    text-shadow: 0px 0px 0px #fff!important;
+}
+
+.ui-sol-acuerdo-header
+{
+    padding:0 2px;
+    font-size:14px;
+    }
+.ui-sol-acuerdo-header-bold
+{    padding:0 3px;
+
+    font-size:14px;
+    font-weight:bold;
+
+    }
+    
+    .ui-commandlink img
+    {
+        margin:0 0 -2px 0!important;
+    }
+       
+.ui-tabs .ui-state-hover
+{
+    /*border-bottom:none!important;
+    padding-bottom:1px !important;*/
+}
+     
+.ui-sol-acuerdo-panel-title
+{
+    margin-top:-20px!Important;
+}
+
+.ui-tree-node-label-disabled {
+	color: gray;
+}
+
+.ui-sol-row-height-space {
+	line-height: 35px;
+}
+
+/* alteracoes  Tiago Balbino */
+.ui-sol-mandatory-textarea.ui-state-hover
+{
+    border:1px solid #A8A8A8 !important;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+
+.ui-sol-without-padding.helper {
+	width:395px !important;	
+}
+}
+
+.helper .ui-commandlink{
+	margin:5px 0;
+}
+
+table .ui-panel{
+	padding:0 !important;
+}
+
+.ui-dt-c .actions {
+	/*width:30% !important;*/
+}
+
+.ui-dt-c .actions tr td{
+	border:0;
+}
+
+html{ 
+	min-width:1000px;
+	overflow-x:auto !important;
+}
+
+.ui-layout-unit .ui-layout-unit-content{
+	overflow-x:hidden !important;
+}
+
+.ui-layout-unit.ui-widget.ui-widget-content.ui-corner-all.ui-layout-center.ui-sol-left-menu-center.ui-layout-pane.ui-layout-pane-center{
+	width: auto !important;
+}
+.ui-fieldset{
+	/*overflow:auto !important;*/
+}
+
+.ui-inputfield .ui-inputtext .ui-widget .ui-state-default .ui-corner-all .ui-sol-mandatory{
+	margin:2px;
+}
+
+.ajusteBotao button, /*.ui-dt-c button*/ {
+	margin:2px !important;
+}
+
+.modalBusca .ui-datatable table{
+	width:100% !important;
+}
+
+.observacionesOPs{
+	height:335px;	
+	float:left;	
+	width:340px
+}
+
+/* fileupload */
+.ui-sol-panelGrid-topAligned {
+	vertical-align: top;
+}
+
+.fileupload-buttonbar .ui-button {
+  height: 26px;
+  margin: 6px -3px 0 -2px;
+}
+/* end fileupload */
+
+.ui-selectcheckboxmenu-trigger, .ui-selectcheckboxmenu-label{
+	/*border: 1px solid #111 !important;*/
+}
+
+.ui-selectcheckboxmenu .ui-selectcheckboxmenu-trigger .ui-icon{
+	background-image: url("/sol-base-view-1.0.0.4/faces/javax.faces.resource/images/ui-icons_616161_256x240.png?ln=primefaces-aristo") !important;
+}
+
+/* AlteraÃ§Ãµes de layout */
+.leftMenu{
+	position:absolute;
+	z-index:1;	
+	left:0;
+	width:213px;
+	height:27px;
+}
+
+.contentMain{	
+	margin:0 20px 0 220px;	
+	display:inline-table;
+	width:auto;
+	position:relative;
+}
+
+.contentMain .ui-datatable, .contentMain .ui-fieldset-content{	
+	width:auto;
+}
+
+.contentMain .ui-panel-content select {
+	/*width:80%;*/
+}
+
+.fieldsetMain{
+	width:96.5%;
+}
+
+.fieldsetOverflow{
+	overflow:hidden !important;	
+	width: 100% !important;
+}
+
+.tableOverflow{
+	overflow:hidden !important;	
+	width:100%;
+}
+
+#fieldsetOverflow{
+	width: 96% !important;
+}
+
+.tableOverflow .ui-tabs-panels{
+	width:100% !important;
+}
+
+.tableOverflow .ui-tabs-panel{
+	overflow:hidden !important;		
+}
+
+.tableOverflow .ui-datatable{
+	overflow:auto !important;
+	width:100% !important;
+	border-bottom:1px solid #666;
+}
+
+.btnIcon{
+	margin-left:180px;
+	border: 1px solid #A8A8A8;
+	font-weight: bold;
+	color: #4F4F4F;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+}
+
+.btnIcon-2{
+	background-color:#dcdcdc!important;
+}
+
+/* Pick List */
+.ui-picklist .ui-picklist-list{
+	width:auto;
+	max-width:350px;	
+}
+
+.ui-picklist .ui-picklist-list .roles{
+	min-width:350px;
+}
+
+.ui-accordion .ui-accordion-header{
+	z-index:2;
+}
+
+
+/* Menu global icon */
+.ui-sol-icon-menu{
+	background: url(../images/iconos/Globe.png) 0 0 no-repeat !important;
+	margin-top:1px;	
+	float:right !important;
+}
+
+
+.listItem .ui-menu{
+    width:200px!important;
+    background: #ccc url(../images/menu_geral.png) top repeat-x!important;
+}
+
+.listItem .ui-menu .ui-menuitem-link{
+	width:90% !important;
+}
+
+.coincidente{
+	width: 188px;
+	float: left;
+}
+
+.tableResize{
+	width:100%;
+}
+
+.datosOperativos .ui-dt-c button{
+	margin:2px;
+}
+
+
+.frecuencia-destino-table table {
+	width : 100% ;
+}
+
+/* Tree */
+.ui-tree .ui-tree-nodes .ui-tree-node .ui-tree-node-content .ui-tree-node-label{
+	max-width: 250px;
+}

@@ -1,0 +1,2098 @@
+﻿//INFORMACIÓN PADRAO
+Gen_msg_atributo							= Attribute {0} not informed.
+msg_gen_Parametro_Obrigatorio				= Mandatory Parameter{0}
+parametro_Delegacion						= : Delegation
+parametro_Planta							= : Plant
+parametro_Sector							= : Sector
+parametro_UsuarioCreacion					= : Creation User
+parametro_Cliente							= : Client
+gen_srv_msg_item_no_encontrado_con_parametros_informados = '{0}' no encontrado con los parámetros informados.
+msgconcurrenciasobreregistro                = Competition error on the record.
+msgactualizarpantalla                       = Could not perform the requested task, because the information on the screen is not updated. The display will be updated with the stored data.
+
+lblSemRegistro								= There are not data to be displayed.
+lblSemSaldo = THERE IS NO BALANCE FOR THIS SECTOR
+gridSemRegistro								= There are no lines
+btnFechar								    = Close
+gen_selecione								= Select
+genDelegacion								= Chash Center
+genPais										= Country	
+genSector									= Sector
+lblCalendar									= Calendar
+btnConsultar								= Consult
+btnLimpar									= Clean
+btnBuscar									= Search
+btnAceitar									= Ok
+btnCancelar									= Cancel
+btnAgora									= Now
+btnConfirma									= Confirm
+msg_remover_nao_selecionado					= Select one ore more items to be eliminated!
+msg_sessao_finalizada						= Session terminated
+msg_version_internet_explorer               = New Balances (Nuevo Saldos) can be used in this moment only with Internet Explorer 8 o higher! Make sure that your browser is not in compatibility mode.
+txt_mas_informaciones						= More information
+msg_usuario_sem_permisio					= User does not have permission in this system.
+msg_usuario_sessao_expirada					= Session has expired. Please log in again.
+tkn_token_nao_consumida                     = Invalid or expired Token access
+msg_campo_obrigatorio						= Field {0} is mandatory!
+msg_cuentanoencontra	   	                = Account not found with ID "{0}".
+btnAgregar									= Select
+btnAgregarTodos								= Select all
+btnDesagregarTodos						    = Anular la selección de todos
+btnRemoverTodos								= Delete all
+btnRemover									= Delete
+bntProximo									= Next
+btnAnterior									= Previus
+btnMoverArriba								= Up
+btnMoverAbajo								= Down
+horas										= hour(s)
+minutos										= minute(s)
+segundos									= second(s)
+dias										= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+meses										= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+err_campo_data_invalida						= Field '{0}' is not completed with a valid date.
+err_campo_hora_invalida						= Field "{0}" is not completed with a valid hour.
+genNoImplementado							= This feature is known but is not implemented.
+genTxtValorInvalido							= Field{0} it does not valid value!
+msg_producidoError								= Se ha producido un error:&nbsp;
+msg_loading										= Por favor, espere un momento mientras el sistema está:&nbsp;
+btnSim											= Yes
+btnNao											= No
+
+//Tela Mensagem de Erro
+aplicacao									= Nuevo Saldos (New Balances)
+
+//Login Unificado
+000_msg_verificarToken							= Validando el Token.
+000_msg_converterPermisos						= Configurando las permisos.
+000_msg_cargarDelegaciones						= Cargando las informaciones de las delegaciones.
+000_msg_grabarSesion							= Grabando la sessión.
+000_msg_urlDestino								= Obteniendo la url de destino.
+000_error_converterPermisos						= Se ha producido un error al intentar convertir los permisos.
+000_error_urlDestino							= Se ha producido un error al intentar obtener la URL de destino.
+000_msg_redirecionando							= Redireccionando...
+
+//POPUP BUSCA DE CLIENTES
+001_titulo									= Search for client
+001_codigo									= Code
+001_descricao								= Description
+001_titulo_busca							= Search criteria
+001_titulo_resultadoCliente					= Clients
+001_seleccione_un_cliente					= Select a client
+
+//VALIDA CERTIFICADO
+002_btnExecutar									= Run
+002_btnEliminar									= Delete
+002_btnValidaCertificado						= Validate certificate
+002_btnConfiguraConfiguracion					= Balance setup query
+002_lblSectores									= Sectors
+002_lblDelegaciones								= Cash center
+002_lblSubCanal									= Subchannal
+002_lblConsulta									= Query
+002_lblTipoCertificado							= Certificate type
+002_lblDadosEntrada								= Input data
+002_lblDadosSaida								= Output data
+002_lblClienteTotalizador						= Cliente Totalizador de Saldo
+002_lblCliente									= Client
+002_lblFechaHasta								= Date / Hour 
+002_lblIdentificador							= ID
+002_lblCalendar									= Calendar
+002_lblmsgerroData								= Is mandatory indicate date / time
+002_lblmsgErroDelegacion						= Is mandatory indicate Chash center
+002_lblmsgErroSector							= Is mandatory indicate Sector
+002_lblmsgErroSubcanal							= Is mandatory indicate Subchannel
+002_lblmsgErroCliente							= Is mandatory indicate Client
+002_imbToolTipClinte							= Search for client
+002_imbToolTipCalender							= Date
+002_tituloCertificadoDefinitivo					= Final certificate
+002_tituloCertificadoProvisional				= Provisional certificate
+002_tituloCertificadoConsulta					= Certificate query
+002_lblCertificadoProvisionalCom				= Provisional certificate with period-end
+002_lblCertificadoProvisionalSin				= Provisional certificate without end of period
+002_MsgPerguntaCertConflito						= Do you want to replace?
+002_lblClienteTotalizadordeSaldo				= Client / Subclient / Point of service totaling in the totalizer selected balance customer
+002_lblCertificados								= Certificates
+002_lblSelecioneCertificado						= Select a certificate
+002_lblDataMaiorAtual							= The date entered is greater than the current date
+002_lblCertificadoNaoEncontrado					= Para el cliente totalizador de saldo informado, no fueron encontrados certificados para conversión.
+0001_MSG_CERTIFICADO_FILTROS_IGUAL			    = Hay certificado(s) generado(s) con la misma combinación de filtros: {0}
+0001_MSG_CERTIFICADO_FECHA_EMITIDO				= There are definitive certificates with a date greater than or equal to the date of the certificate issued: {0}
+
+//GENERAR CERTIFICACION
+0002_Msg_CertificadoNoGenerado					= O certificado não foi gerado, pois não há nenhum movimento de saldo pendente de certificação para o cliente!
+
+//TELA OBTENERNIVELSALDOS
+003_tituloPagina								= Obtain level in the balances	
+003_lblDadosEntrada								= Input data
+003_lblClienteTotalizador						= Client wich have Total Client balance amount
+003_lblSubCanal									= SubChannel
+003_msg_error_ClienteTotalizadorSemCliente		= Client wich have Total Client balance amount is empty
+003_lbl_Titulo_ClientesTotalizador				= Client wich have Total Client balance amount in the selected sub-channel and totaled in selected balance
+003_lbl_Titulo_ClientesNaoTotalizador			= Client wich have Total Client balance amount in the selected sub-channel and not totaled in selected balance 
+003_grid_CodCliente								= Client code
+003_grid_DesCliente								= Client description
+003_grid_CodSubCliente							= SubClient code 
+003_grid_DesSubCliente							= Subclient description
+003_grid_CodPtoServico							= Point of service code
+003_grid_DesPtoServico							= Point of service description
+
+//TELA RESULTADO CERTIFICADO
+004_lblDatosEntrada								= Input data
+004_lblDatosSalida								= Output data
+004_lblCodigoCertificado	     				= Certificate code:
+004_btnConsultar								= Consult
+004_lblResultado								= Log of execution of the certification process: {0}
+004_lblTitulo									= Certificates > Certificate result
+004_msgSinRegistro								= It was not found any certificate with the code informed.
+004_msgCodigoCertificado						= Certificate code
+004_btnExportarXml								= Export to Xml
+
+//TELA RELATÓRIO DE CERTIFICADO DEFECTO
+005_lblTitulo									= Reports > Based on certificates > Certificate defect
+005_lblCodigoCertificado						= Certificate code
+005_lblDelegacion								= Cash center
+005_lblSubCanal									= SubChannel:
+005_btnGerar									= Run report
+005_lblFiltro									= Filter report
+005_msgComboVazio								= Enter the code of the certificate
+005_msgCertificadoNoEncontrato					= Certificate code was not found.
+
+//EJECUTA CERTIFICADO
+006_lblAviso									= It will run the process of certification for the following selected data:
+006_lblFiltros									= Filters
+006_lblPuntoServicio							= Point of service
+006_lblSubcliente								= Subclient
+006_lblUltimaExecucao							= Last execution
+006_lblCliente									= Client
+006_lblDadosCertificado							= Certificate data
+006_lblTituloEjecutaCertificado					= Validation before implementation
+006_lblConsulta									= Query
+006_lblProvisionalCon							= Interim including the end of period
+006_lblProvisionalSim							= Provisional not including the end of period
+006_lblDefinitivo								= Final
+
+//GRID CERTIFICADOS
+007_lblCodigoCertificado						= Code
+007_lblCodigoEstado								= State
+007_lblFechaCertificado							= Date
+
+//VALIDA USERCONTROL ucDatosFormulario
+008_Titulo										= Form data
+008_codformulario								= Code form
+008_desformulario								= From description
+008_codcolor									= Color
+008_codtpdocumento								= Document code type
+008_destpdocumento								= Description type of document
+008_colecao_tipoformulario_nulo					= Objetc TipoDocumento is empty.
+008_colecao_formulario_nulo						= The form object is empty.
+008_campo_vazio					     			= The field '{0}' of '{1}' is mandatory.
+008_formulario_sin_imagen						= Form without image
+
+//USER CONTROL UcDatosCanal
+009_codDescricaoCanal							= Code - Channel description
+009_codDescricaoSubCanal						= Code - SubChannel description
+
+//USER CONTROL ucOrigenMovimiento
+010_desOrigem									= Origin
+010_codDelegacao								= Cash center code
+010_desDelegacao								= Cash center
+010_codPlanta									= Office code
+010_desPlanta									= Office
+010_codSetor									= Sector code
+010_desSetor									= Sector (sub sector)
+
+//010 - Serviço Recibir Remesas Pendientes
+010_remesa_declarado_divisas			= Informed currency is not possible currencies (Declared order).
+010_remesa_declarado_agrupaciones		= Informed grouping is not possible groupings (declared grouping order).
+010_remesa_declarado_ticket			= Declared ticket, but not to count Ticket (Declared order).
+010_remesa_declarado_cheque			= Declared Check, but not to count Check(Declared order).
+010_remesa_declarado_otro_valor			= Declared Other values, but not to count Other values(Declared order).
+010_remesa_estado_trabajo			= Status of the shipment does not exist in the list of possible values.
+010_bulto_declarado_divisas			= Informed currency is not possible currencies (Declared bag).
+010_bulto_declarado_agrupaciones		= Informed grouping is not possible groupings(Declared grouping bag).
+010_bulto_declarado_ticket			= Declared ticket, but is not counting ticket (Declared bag).
+010_bulto_declarado_cheque			= Declared Check, but is not counting Check (Declared bag).
+010_bulto_declarado_otro_valor			= Declared Other values, but is not counting Other values (Declared bag).
+010_bulto_cuenta_ticket_total			= There is no way to count the Total value Ticket.Ticket is not counted.
+010_bulto_cuenta_cheque_total			= There is no way to count the Total value Check. Check is not counted.
+010_bulto_cuenta_otro_valor_total		= There is no way to count the Total value Other values. Other values is not counted.
+010_bulto_cuenta_tarjeta_total			=  There is no way to count the Total value Cards. Cards  are not counted.
+010_bulto_cuenta_ticket_total_termino		= There must be no terms for Ticket, then the Ticket is counted by total.
+010_bulto_cuenta_cheque_total_termino		= There must be no terms for Check, then the Check is counted by total.
+010_bulto_cuenta_otro_valor_total_termino	= There must be no terms for Other values, then the Other values is counted by total.
+010_bulto_cuenta_tarjeta_total_termino		= There must be no terms for Cards, then the Cards is counted by total.
+010_bulto_caracteristica_diferente		= All bags in the consignment must be characteristics of  CONTAGEN POR REMESA.
+010_bulto_caract_carga_previa			= All bags in the consignment must be only with one of the features CARGA PRÉVIA or CARGAPRÉVIA AUTOMATIZADA.
+010_bulto_caract_cp_conta_parcial		= All bag of the order which possess the characteristic  CARGA PRÉVIA or CARGA PRÉVIA AUTOMATIZADA  must also have PROCESA POR PARCIALES.
+010_bulto_caract_atm_disp_conta_parcial		= All bags of the order that possess the characteristic 'CONTEO ATM - DISPENSADOR, RECHAZO Y TARJETA' they must also have the characteristic 'PROCESAR POR PARCIALES'.
+010_bulto_caract_atm_disp_conteo_remesa		= All bag of the order that possess the characteristic 'CONTEO ATM - DISPENSADOR, RECHAZO Y TARJETA' they must also have the characteristic 'CONTEO POR REMESA'.
+010_bulto_caract_atm_depos_conta_parcial	= All bag of the order that possess the characteristic 'CONTEO ATM - DEPÓSITO' they must also have the characteristic 'PROCESAR POR PARCIALES'.
+010_bulto_caract_atm_depos_conteo_remesa	= All bag of the order that possess the characteristic 'CONTEO ATM - DEPÓSITO' they must also have the characteristic 'CONTEO POR REMESA'.
+010_bulto_caract_atm_ingre_sin_parcial		= All bag of the order that possess the characteristic 'CONTEO ATM - INGRESADOR' they must not have the characteristic 'PROCESAR POR PARCIALES'.
+010_bulto_caract_atm_ingre_conteo_remesa	= All bag of the order that possess the characteristic 'CONTEO ATM - INGRESADOR' they must also have the characteristic'CONTEO POR REMESA'.
+010_bulto_caract_atm_mas_de_una			= All bag in the order must be only with one of the features 'CONTEO ATM - DISPENSADOR, RECHAZO Y TARJETA', 'CONTEO ATM - DEPÓSITO' or 'CONTEO ATM - INGRESADOR'.
+010_bulto_tipo_trabajo				= Bag work type does not exist in the list of possible values.
+010_bulto_estado_trabajo			= Bag status does not exist in the list of possible values.
+010_bulto_ubicacion				= Location of the bag does not exist in the list of possible values.
+010_bulto_tipo_formato				= Format of the bag does not exist in the list of possible values.
+010_parcial_declarado_divisas			= Informed currency is not possible currencies (Declared Parcel).
+010_parcial_declarado_agrupaciones		= Informed grouping is not possible groupings (declared Parcel grouping).
+010_parcial_declarado_ticket			= Declared ticket, but is not counting ticket (Declared Parcel).
+010_parcial_declarado_cheque			= Declared check, but is not counting check (Declared Parcel).
+010_parcial_declarado_otro_valor		= Declared Other values, but is not counting Ohter values (Declared Parcel).
+010_parcial_estado_trabajo			= Parcel status does not exist in the list of possible values.
+010_parcial_tipo_formato			= Parcel format does not exist in the list of possible values.
+010_bulto_divisaposible_numordem		= Exists for one of bag, two currencies with the same order number.
+010_valor_termino_idbulto			= Value term IAC - ID bag
+010_valor_termino_codtermino			= Value term IAC - Term code Iac
+010_msg_declarado_divisa_remesa			= Means of payment entered on the declared value of the Order is not among the possible payment types.
+010_msg_declarado_divisa_bulto			= Means of payment entered on the declared value of the Bag is not among the possible payment types.
+010_msg_declarado_divisa_parcial		= Means of payment entered on the declared value of the Parcel is not among the possible payment types.
+010_msg_declarado_det_divisa_remesa		= Means of payment entered on the declared details value of the Order is not among the possible payment types.
+010_msg_declarado_det_divisa_bulto		= Means of payment entered on the declared details value of the Bag is not among the possible payment types.
+010_msg_declarado_det_divisa_parcial	= Means of payment entered on the declared details value of the Parcel is not among the possible payment types.
+010_msg_bulto_sem_precinto			= There should be no bug without seal code.
+010_bulto_caract_carga_previa_bcp_conteo_remesa	= All bag of the order that possess the characteristic 'CARGA PREVIA BCP' they must also have the characteristic 'CONTEO POR REMESA'.
+010_bulto_caract_carga_previa_bcp_diferente	= All bags in the order must be characteristics of CARGA PREVIA BCP.
+010_bulto_estado_distinto_pendente = Bag {0} can not be upgraded, because of being is in a State that does not allow more update.
+010_msg_remesa_ya_procesada		   = Order {0} It was already processed.
+010_msg_conta_por_remesa_trabaja_por_bulto = La modalidad de conteo tiene la caracteristica conteo por remesa, entonces es obligatório trabajar por remesa.
+
+//POPUP BUSCA DE SUB CLIENTES
+011_titulo										= Search for SubClient
+011_codigo										= Code
+011_descricao									= Description
+011_titulo_busca								= Search criteria
+011_titulo_resultadoSubCliente					= SubClients
+011_seleccione_un_subcliente					= Select a subClient
+
+//VALIDA USERCONTROL ucDivisa
+012_descripcion									= Description
+012_unidad										= Unit
+012_cantidad									= Quantity
+012_denominacion								= Denomination
+012_denominaciones								= Denominations
+012_efectivo									= Cash
+012_mediopago									= Payment method
+012_mediospago									= Payment methods
+012_codigo										= Code
+012_billete										= Note
+012_moneda										= Coin
+012_importe										= Amount
+012_importetotal								= Total amount
+012_calidad										= Quality
+012_divisasinimagen								= Currency without image
+012_divisioninvalida							= The division of '{0}' on '{1}' by '{2}' does not translate into an integer value.
+012_divisioninvalidaEfectivo					= The division of '{0}' to '{1}' does not translate into an integer value.
+012_valordenominacion							= The denomination value is 0.
+012_borrardivisa								= Delete currency
+012_selecionardivisa							= Select the currency(s) that you want to add.
+012_titulopopup									= Search for currency
+012_divisanaoagrega								= There are not currency to be added.
+012_InfoDetalle									= Report details
+012_msg_mascara									= Mask is not valid for the term "{0}".
+012_validacion									= For the method of payment '{0}' currency '{1}' inform the quantity and amount!
+012_validacionTermino							= Received value for the term '{0}', but was not informed value for your method of payment '{1}'.
+
+//VALIDA USER CONTROL ucInfAdicionales
+013_termino_invalido                            = Invalid value for the term '{0}'.
+013_termino_invalido_titulo                     = Term {0}
+013_termino_titulo                              = Additional information
+
+//CONTROLE HELPER
+014_codigo										= Code:
+014_descricion									= Description:
+014_selecao_campo								= Select a field
+014_parametro_obrigatorio						= Parameter '{0}' is mandatory.
+014_ConsiderarSectoresHijos						= Consider sectors children in search results
+
+//MEDIO PAGO
+
+014_tipopg_ticket								= Ticket
+014_tipopg_cheque								= Check
+014_tipopq_otrosvalores							= Other Values
+014_tipopg_tarjeta								= Card
+
+//CONTROLE ACCION DOCUMENTO
+015_accion_guardar								= Save
+015_accion_guardarconfirmar						= Save and Confirm
+015_accion_guardaraceptar						= Save and Aceptar
+015_accion_confirmar							= Confirm
+015_accion_aceptar								= Ok
+015_accion_rechazar								= Reject
+015_accion_anular								= Cancel
+015_accion_imprimir 							= Print 
+015_accion_cancelar 							= Cancel
+015_accion_modificar 							= Modify
+015_accion_visualizar 							= Print preview
+015_accion_volver								= Back
+015_accion_agregarDocumento						= add Document
+015_accion_agregarBulto 						= Add Objet
+015_accion_agregarParcial						= Add Parcel
+015_accion_anular_documento						= Do you want Cancel the Document?
+015_accion_guardaraceptar_documento		    	= Do you want Save and Aceptar the Document?
+015_accion_guardarconfirmar_documento			= Do you want Save and Confirm the Document?
+015_accion_modificar_terminos					= Modify Additional Information
+015_accion_salvar_terminos						= Save Additional Information
+
+//USERCONTROL UcListaElemento
+016_TituloIcono									= Icon
+016_TituloPrecinto								= Code
+016_TituloCliente								= Client
+016_TituloSubCliente							= Subclient
+016_TituloPuntoServicio							= Point of services
+016_TituloCanal									= Channel
+016_TituloSubCanal								= SubChannel
+016_TituloCodigoDivisa							= Currency code
+016_TituloDescricionDivisa						= Currency Description
+016_TituloImporte								= Amount
+016_TituloFecha									= Date
+016_TituloDetalles								= Details
+016_TituloElementos                             = Elements
+016_TituloBultos                                = Objets
+016_TituloParciales                             = Partils
+016_TituloCuenta                                = Account
+016_CodigoRemessa								= External code
+016_CodigoBulto									= Seal
+016_CodigoParcial								= Seal
+016_SequenciaParcial							= Sequence
+016_anadir                                      = Add
+016_rechazar                                    = Reject
+016_BotonAgregar								= Add
+016_BotonEliminar								= Delete
+016_LegendaCampoCodigo							= {0} Seal:
+016_TotalRegistros								= Total records:
+016_Declarado									= Declared
+016_Contado										= Counted
+016_Diferencia									= Difference
+016_Disponible									= Available
+016_NoDisponible								= Not available
+016_NoDefinido									= Not defined
+016_AgregarTodos								= Select all
+016_QuitarTodos									= Delete all
+
+//CONTROLE CUENTA
+017_Titulo_CuentaOrigen							= Origin account
+017_Titulo_CuentaDestino						= Destination account
+017_prepicion_de_la								= of the
+017_totalizaen									= Totals in
+
+//CONTROLE SECTOR
+018_Sector_Titulo								= Sector
+018_Sector_Popup_Titulo							= Search for Sector
+018_Sector_Popup_Resultado						= Sector data
+018_Sector_Popup_Filtro							= Search criteria
+
+//CONTROLE PLANTA
+019_Planta_Titulo								= Office
+019_Planta_Popup_Titulo							= Serach for office
+019_Planta_Popup_Resultado						= Office data
+019_Planta_Popup_Filtro							= Search criteria
+
+//CONTROLE DELEGACION
+020_Delegacion_Titulo							= Cash center
+020_Delegacion_Popup_Titulo						= Search for cash center
+020_Delegacion_Popup_Resultado					= Cash center data
+020_Delegacion_Popup_Filtro						= Seach criteria
+
+//CONTROLE CLIENTE
+021_Cliente_Titulo								= Client
+021_Cliente_Popup_Titulo						= Seach for Client
+021_Cliente_Popup_Resultado						= Client data
+021_Cliente_Popup_Filtro						= Search criteria
+//CONTROLE BANCO
+021_Banco_Titulo								= Bank
+021_Banco_Popup_Titulo							= Seach for Bank
+021_Banco_Popup_Resultado						= Bank data
+021_Banco_Popup_Filtro							= Search criteria
+
+//CONTROLE BANCO
+021_BancoCapital_Titulo							 = Banco Capital
+021_BancoCapital_Popup_Titulo					 = Busqueda de Banco Capital
+021_BancoCapital_Popup_Resultado				 = Datos de Banco Capital
+021_BancoCapital_Popup_Filtro					 = Critérios de Busqueda
+
+
+//CONTROLE MAQUINA
+022_Maquina_Titulo								= Maquina
+022_Maquina_Popup_Titulo						= Busqueda de Maquina
+022_Maquina_Popup_Resultado						= Dados de Maquina
+022_Maquina_Popup_Filtro						= Criterios de Busqueda
+
+
+//CONTROLE BANCO COMISION
+021_BancoComision_Titulo				    	= Banco Comisión
+021_BancoComision_Popup_Titulo					= Busqueda de Banco Comisión
+021_BancoComision_Popup_Resultado				= Datos de Banco Comisión
+021_BancoComision_Popup_Filtro					= Criterios de Busqueda
+
+//CONTROLE SUBCLIENTE
+022_SubCliente_Titulo							= SubClient
+022_SubCliente_Popup_Titulo						= Seach for SubClient
+022_SubCliente_Popup_Resultado					= SubClient data
+022_SubCliente_Popup_Filtro						= Search criteria
+
+//CONTROLE PUNTO SERVICIO
+023_PtoServicio_Titulo							= Point of service
+023_PtoServicio_Popup_Titulo					= Seach for Point of service
+023_PtoServicio_Popup_Resultado					= Point of service data
+023_PtoServicio_Popup_Filtro					= Search criteria
+
+//CONTROLE CANAL
+024_Canal_Titulo								= Channel
+024_Canal_Popup_Titulo							= Seach for Channel
+024_Canal_Popup_Resultado						= Channel data
+024_Canal_Popup_Filtro							= Search criteria
+
+//CONTROLE SUBCANAL
+025_SubCanal_Titulo								= SubCanal
+025_SubCanal_Popup_Titulo						= Seach for SubChannel
+025_SubCanal_Popup_Resultado					= SubChannel data
+025_SubCanal_Popup_Filtro						= Search criteria
+
+
+
+// USERCONTROL ELEMENTO
+026_contenedor                                  = Level
+026_remesa                                      = Remesa
+026_bulto                                       = Objet
+026_parcial                                     = Parcel
+026_precinto                                    = Seal
+026_tipo_contenedor                             = Type of Level
+026_tipo_remesa                                 = Type of seal
+026_cod_bolsa									= Bag code
+026_nel_parada									= Stop
+026_codigo_atm									= ATM code
+026_tipo_bulto                                  = Object type
+026_tipo_parcial                                = Parcel type
+026_fecha_alta                                  = Add date
+026_fecha_transporte                            = Transport date
+026_cant_elementos_contenedor                   = Elements number
+026_cant_elementos_remesa                       = Objects number
+026_cant_elementos_bulto                        = Parcels number
+026_cod_contenedor                              = Level code
+026_num_recibo_transporte                       = External code
+026_cod_ruta                                    = Route code
+026_precinto_padre_contenedor                   = Level seal
+026_precinto_padre_remesa                       = Order seal
+026_precinto_padre_bulto                        = Object seal
+026_valores_declarados                          = Declared values
+026_valores_contados                            = Counted values
+026_diferencias                                 = Differences
+026_detalhes                                    = Details
+026_ListaRemesas								= List of orders
+026_ListaRemesasVacio							= List of orders is empty.
+026_ListaBulto									= List of objects
+026_ListaBultoVacio								= List of objects is empty.
+026_ListaParciales								= List of parcel
+026_ListaParcialesVacio							= List of parcels is empty.
+026_formato_remesa								= Objects format
+026_formato_bulto                               = Object format
+026_formato_parcial                             = Parcel format
+026_Agregar_TituloElemento_Remesa				= List of bugs
+026_Agregar_TituloElemento_Bulto				= List of Parcels
+026_Agregar_TituloAgregar_Remesa				= Add new bag:
+026_Agregar_TituloAgregar_Bulto					= Add new parcel:
+026_Agregar_Precinto							= Seal
+026_Agregar_CodigoBolsa							= Bag code
+026_Agregar_TipoServicio						= Type of service
+026_Agregar_Formato								= Object format
+026_Agregar_FormatoParcial						= Parcel format
+026_Agregar_Agregar								= Add
+026_Agregar_Avanzado							= Advanced
+026_Agregar_Divisa								= Currency
+026_Agregar_TotalEfectivo						= Total Cash
+026_Agregar_TotalCheque							= Total Check
+026_Agregar_TotalTicket							= Total Ticket
+026_Agregar_TotalTarjeta						= Total Card
+026_Agregar_TotalOtros							= Total Other values
+026_Agregar_Precinto_Repetido_Bulto				= The seal of the parcels inserted already exists!
+026_Agregar_Precinto_Repetido_Remesa			= The seal of the bag inserted already exists!
+026_Historico_Valore_Elemento					= History Element Values
+
+//UserControl UcElementoFiltro
+027_titulo_contenedor							= Level
+027_titulo_remesa								= Order
+027_titulo_bulto								= Object
+027_titulo_parcial								= Parcel
+027_lbl_Precinto								= Seal
+027_lbl_parcial									= Parcel
+027_lbl_tipo									= Type
+027_lbl_tipo_servicio							= Type of service
+027_lbl_fecha_alta_desde						= Date of the addition from
+027_lbl_fecha_alta_hasta						= Date of the addition to
+027_lbl_codigo_contenedor						= Level code
+027_lbl_recibo_transporte						= External number
+027_lbl_ruta									= Route code
+027_tipo_servicio_guardar						= Save
+027_tipo_servicio_clasificar					= Classify
+027_tipo_servicio_pernocte						= Overnight
+027_tipo_servicio_procesar						= Process
+027_tipo_servicio_movimientointerno				= Internal movement
+027_trv_tipo_medio_pago_cheque					= Check
+027_trv_tipo_medio_pago_ticket					= Ticket
+027_trv_tipo_medio_pago_otros_valores			= Other values
+027_trv_tipo_medio_pago_tarjeta					= Card
+027_trv_efectivo								= Cash
+027_titulo_documento							= Document
+027_lbl_formato_bulto							= Object format:
+027_lbl_formato_parcial							= Parcel format:
+
+//Maestro Documento
+028_msg_identificador_documento_obrigatorio		= ID for document is mandatory.
+028_msg_estado_documento_gravar					= Document status must be New or In Process.
+028_msg_estado_documento_padre					= Document Status must be accepted.
+028_msg_cuenta_origen_obrigatorio				= Field account origin is mandatory.
+028_msg_cuenta_destino_obrigatorio				= Field account destination is madatory.
+028_msg_formulario_obrigatorio					= Field form ID is mandatory.
+028_msg_tipo_documento_obrigatorio				= Field documento type is mandatory.
+028_msg_esta_certificado						= A document in the states New or In process can't is as certified.
+028_msg_estado_documento_vazio					= Document status is empty.
+028_msg_usuario_modificacion_vazio				= User of the modificaction is empty.
+028_msg_caracteristica_invalida                 = The form does not have the required property.
+028_remesa_vazio								= Object Order is empty.
+028_remesa_obrigatorio							= Order is mandaroty.
+028_divisa_obrigatorio							= Currency is madatory.
+028_unidade_medida_obrigatorio					= Unit of measure is mandatory.
+028_remesa										= Order
+028_bulto										= Object
+028_parcial										= Parcel
+028_contenedor									= Level
+028_valor_termino_obrigatorio					= Term value is mandatory '{0}'.
+028_campo_obrigatorio							= Field {0} is mandatory.
+028_documento									= Documnt
+028_grupo_documento								= Group of document.
+028_medio_pago                                  = Means of payment.
+028_bulto_obrigatorio							= Order must have at least one object.
+028_bulto_vazio                                 = Object is empty.
+028_cuenta_obrigatorio							= Field Account is madatory.
+028_denominacion_obrigatoria					= Field Denomination is mandatory.
+028_denomincion_ou_total_divisa_obrigatorio		= Denomination or Currency are mandatories.
+028_documento_obrigatorio						= Field document is mandatory.
+028_documento_vazio								= Document object is empty.
+028_estado_documento_invalido_para_transicion   = Document status is not valid for this transition.
+028_estado_obrigatorio                          = Field  Status is mandatory.
+028_cuenta_destino_obrigatorio					= Field Account destination is madatory.
+028_cuenta_origen_obrigatorio                   = Field Account origin is mandatory.
+028_esta_certificado                            = Document is certificated.
+028_estado_documento_gravar                     = Document status must be new or in process.
+028_estado_documento_padre                      = Document status mus be Accepted.
+028_formulario_obrigatorio                      = Field Formulary is mandatory.
+028_identificador_documento_obrigatorio         = Field Id document is mandatory.
+028_setor_origem_obrigatorio                    = Field Sector origin is mandatory.
+028_tipo_documento_obrigatorio                  = Field Document type is mandatory.
+028_parcial_obrigatorio                         = Field Parcel is mandatory.
+028_parcial_vazio                               = Objeto Parcel is empty.
+028_precinto_obrigatorio                        = Field Seal is mandatory.
+028_sector_obrigatorio                          = Field Sector is mandatory.
+028_terminoIAC_obrigatorio                      = Field IAC Term is mandatory.
+028_tipo_valor_efectivo                         = Field Type cash value must be declared.
+028_tipo_valor_medio_pago                       = Field Type value means of payment must be declared.
+028_usuario_creacion_obrigatorio                = Field user created  is mandatoy.
+028_usuario_modification_obrigatorio            = Field user of modification is mandatory.
+028_codigo_externo_obrigatorio					= Field External code is madatory.
+028_codigo_externo_alterado						= Field External code codigo externo It can not be changed.
+028_estado_documento_padre_invalido             = Parent Document status must be canceled, Rejeted or ,Rechazado or Replaced.
+028_cuenta_saldo_destino_obrigatorio            = Field Account balance destination is mandatory. Verify that the customer has account balance target.
+028_cuenta_saldo_origen_obrigatorio             = Field Account balance origin is mandatory. Verify if the client have an account balance origin .
+028_Transicion_Invalida							= Document status is not valid for this transition. Actual status:{0}, New status:{1}.
+028_remesa_con_tipo_servicios_diferentes		= The order {0}have bags with different type of services.
+028_msg_identificador_setor_obrigatorio		    = Sector ID is mandatory.
+028_msg_identificador_formulario_obrigatorio    = Formulary ID is mandatoy.
+028_msg_fechayhoraplancertificacion_invalida	= Is not possible {0}the document planned with date/hour : '{1}'. This period was certificated.Check with the code: {2}
+028_txt_grabar									= Save
+028_txt_aceptar									= Ok
+028_txt_rechazar								= Reject
+028_txt_sustituir								= Replace
+028_formulario_inativo							= Cannot save the document.Form Requested is not active.
+028_formulario_de_reenvio_automatico_nao_cadastrado = Cannot save the document because the requested form of automatic derivation is not registered.
+028_sector_origem_nao_configurado				= Cannot create the document as the Sector of origin is not configured to use this form.
+028_sector_destino_nao_configurado				= Cannot create the document as the target Sector is not configured to receive documents created from this form.
+028_estado_remesa_invalido_conteo				= The current status of your order in the count is invalid for accepting document it. State order count: {0}. State order balances: {1}.
+028_estado_bulto_invalido_conteo				= The current status of the bag in the count is invalid for accepting document it. State bag count: {0}. Bag balances State: {1}.
+028_estado_bulto_invalido_saldos				= The State of the bag in the balances is not valid to be replaced.
+028_estado_documento_elemento_invalido_bulto	= State the document element bag is invalid. This bag is in transition of document: {0}.
+028_remesa_vinculado_outro_documento			= This order is linked to another document.(ID:{0})
+028_bulto_vinculado_outro_documento				= This bag is linked to another document.(ID:{0})
+028_fecha_hora_gestion_obrigatorio              = Field date/hour management is mandatory.
+028_fecha_hora_gestion                          = Date/Hour management
+028_documento_com_transaccion_certificado       = The document has transactions in a final certificate.
+028_setor_diferente_padre						= The sector of origin of document is  different in parent element .
+028_remesa_em_uso_conteo						= This Order is in use in the COUNTER.
+028_documento_invalido_para_transicion			= Parent document (ID:{0}) has one linked substitute document.
+028_estado_remesa_invalida						= Order state is invalid for a replacement.
+028_estado_bulto_obrigatorio					= Bug state is mandatory.
+028_remesa_com_mais_de_um_bulto					= Replacement by bag management, only allows the substitution of a bag for each time.
+028_msg_el_movimiento_produce_saldo_negativo	= El movimento produce un saldo negativo y el formulário no esta configurado para permitir llegar a un saldo negativo.
+028_msg_formulario_no_cargado_correctamente		= El formulario relacionado al documento, no fue cargado correctamente (no se puede mirar las caracteríticas vinculadas).
+028_no_hay_valores_divisas						= No hay ningún valor para las divisas informadas.
+028_msg_documento_padre_no_cargado_correctamente = El documento padre relacionado al documento, no fue cargado correctamente.
+028_msg_documento_padre_no_encontrado			= El documento padre '{0}' no fue encontrado.
+028_msg_cuenta_origen_no_encontrada				= La cuenta de origen, no fue encontrada.
+028_msg_cuenta_destino_no_encontrada			= La cuenta de destino, no fue encontrada.
+028_msg_documento_sustituto_no_cargado_correctamente = El documento sustituto relacionado al documento, no fue cargado correctamente.
+028_msg_estado_documento_sustituto_invalido     = El estado del documento sustituto debe ser Aceptado o Rechazado.
+028_msg_documento_sustituto_no_encontrado		= El documento sustituto '{0}' no fue encontrado.
+028_msg_termino_valor_obligatorio               = El término '{0}' deberá tener un valor informado.
+028_msg_documento_no_encontrado					= El documento '{0}' no fue encontrado.
+028_msg_documento_sin_elemento					= El documento es de un tipo que trabaja con elementos pero no posue un relacionado.
+028_msg_formulario_no_trabaja_con_elementos		= El documento posue un elemento pero el formulário relacionado no trabaja con elementos.
+028_msg_documento_padre_obligatorio_sustitucion = El documento padre es obligatório en una sustitución.
+028_msg_doc_elemento_remesa_existe_en_transicion = No es posible ingresar el documento pues existe una remesa con el mismo código externo en la base de datos. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_remesa_existe_sin_baja		= No es posible ingresar el documento pues existe una remesa con el mismo código externo en la base de datos que aún no fue ejecutada la baja. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_remesa_inconsistencia_hist	= No es posible ingresar el documento pues existe una inconcistencia de histórico para una remesa con el mismo código externo - no existe un documento concluído (o en transición).
+028_msg_doc_elemento_bulto_existe_en_transicion = No es posible ingresar el documento pues existe un bulto con el mismo código precinto en la base de datos. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_bulto_existe_sin_baja		= No es posible ingresar el documento pues existe un bulto con el mismo código precinto en la base de datos que aún no fue ejecutada la baja. Documento: '{0}', Identificador: '{1}', Estado: '{2}'.
+028_msg_doc_elemento_bulto_inconsistencia_hist	= No es posible ingresar el documento pues existe una inconcistencia de histórico para un bulto con el mismo código precinto - no existe un documento concluído (o en transición).
+028_Identificador_CodCompro_Documento			= Identificador e Codigo Comprobante do Documento vazios
+028_divisas										= As divisas: {0}
+028_divisa										= A divisa: {0}
+028_denominaciones								= As denominações: {0}
+028_denominacion								= A denominação: {0}
+028_mediospago									= Os meios de pagamento: {0}
+028_mediopago									= O meio de pagamento: {0}
+028_inactivos									= estão inativos.
+028_inactivas									= estão inativas.
+028_inactivo									= está inativo.
+028_inactiva									= está inativa.
+028_remesas_invalidas_conteo					= Los estados de las seguintes remesas en el conteo no son validos para aceptar el documento: 
+028_remesa_invalido_conteo						= Remesa:{0}. Estado Conteo:{1}. Estado Saldos:{2}.
+028_bultos_invalidas_conteo						= Los estados de los seguintes bultos en el conteo no son validos para aceptar el documento: 
+028_bulto_invalido_conteo						= Bulto:{0}. Estado Conteo:{1}. Estado Saldos:{2}.
+
+
+//UserControl UcFiltroElementoValor
+029_lbl_titulo									= Filters
+029_lbl_titulo_valor							= Values
+029_msg_cliente									= Select a client is mandatory.
+029_msg_tipo_sector								= Tipy of sector is empty.
+029_msg_canal									= Select a Channel is mandatory.
+
+//Seleccion Sector
+030_titulo_pagina								= Select Sector of work.
+030_lblSector									= Sector
+030_btnContinuar								= Continue
+030_msg_nenhum_setor							= It is not allowed to any of the sectors.
+030_msg_CargandoSector							= Loading selected sector.
+030_msg_ErrorCargarSector						= Setor não encontrado.
+
+//Formularios
+031_Titulo                                      = Movements - New
+031_Coluna_Icone                                = Icon
+031_Coluna_Codigo                               = Code
+031_Coluna_Descricao                            = Description
+031_Coluna_Individual                           = Individual
+031_Coluna_Grupo                                = Grup
+031_No_Hay_formulario_Configurado               = There is no form configured for the selected sector.
+
+// Pantalla GrupoDocumento
+032_Titulo										= Group of documents
+032_ListaElementos								= List of elements
+032_ListaElementosFiltro						= Filter
+032_ListaElementosSeleccionados					= List of selected items
+032_ListaValores								= List of values
+032_ListaValoresFiltro							= Filter
+032_ListaDocumentosSeleccionados				= List of Documents
+032_ListaDocumentosSeleccionadosVacio			= List of items is empty.
+032_ListaValoresSeleccionados					= List of selected values
+032_ListaElementosVacio							= List of items is empty.
+032_ListaElementosSeleccionadosVacio			= List of items is empty.
+032_ListaValoresVacio							= List of values is empty.
+032_ListaValoresSeleccionadosVacio				= List of values is empty.
+032_TituloCuentaDestino							= Destination account 
+032_ElementoObrigatorio							= It is required to report at least one element.
+032_ValoresObrigatorio							= It is required to report at least one value.
+032_InformacionesInvalidas						= Invalid information
+032_NenhumElementoSeleccionado					= No selected item.
+032_NenhumValoresSeleccionado					= No record selected.
+032_EliminarDocumento							= ¿Estás seguro en eliminar el documento?
+032_popup_saldohijos_lblTitulo					= Balance inquiry subsectors/Posts
+032_popup_saldohijos_lblResultados				= Result
+032_popup_saldohijos_canal						= Chanel
+032_popup_saldohijos_cliente					= Client
+032_popup_saldohijos_sector						= Sector
+032_popup_saldohijos_valor_disponible			= Amount Disponible
+032_lista_contenedor_titulo                     = Stents of Selected List
+032_lista_contenedor_titulo_cliente             = Client
+032_lista_contenedor_titulo_Canal               = Chanel
+032_lista_contenedor_titulo_Sector              = Sector
+032_lista_contenedor_titulo_Precinto            = Object
+032_lista_contenedor_titulo_Valores             = Amount Disponible
+
+// Pantalla Documento
+033_Titulo										= Movimientos - Búsqueda
+033_TituloCampos								= Información del documento
+033_NumeroExterno								= Número externo:
+033_Estado										= Estado:
+033_SectorOrigen								= Sector de Orige:
+033_MsgNumeroExterno							= Favor informar el numero externo antes de añadir un objeto.
+033_lblTituloFiltro                             = Filtro
+033_lblTituloFiltro2                            = Seleccione una opción
+
+033_lblDisponibilidad                           = Por disponibilidad:
+
+033_lblNumeroComprovante                        = Número de Comprobante:
+033_lblNumeroComprovanteDesde                   = Desde:
+033_lblNumeroComprovanteHasta                   = Hasta:
+033_lblFechaCreacion                            = Fecha de la creación:
+033_lblFechaCreacionDesde                       = Desde:
+033_lblFechaCreacionHasta                       = Hasta:
+
+033_lblBuscarPor								= Buscar por:
+
+033_ddlSeleccionar                              = Seleccionar
+033_ddlNumeroComprovante                        = Número de Comprobante
+033_ddlNumeroExterno                            = Número Externo
+033_lblInfValores								= Valores
+
+033_ddlAmbos                                    = Ambos
+033_ddlDisponible                               = Disponible
+033_ddlNoDisponible                             = No Disponible
+
+033_grid_cor									= Cor
+033_grid_codigo_externo							= Codigo Externo
+033_grid_codigo_comprovante						= Numero Comprobante
+033_grid_formulario								= Formulario
+033_grid_canal_cliente							= Canal
+033_grid_centro_processo_origem					= Destino
+033_grid_centro_processo_destino				= Do centro proc.
+033_grid_fecha_hora_creacion					= Fecha Hora Creacion
+033_grid_usuario_creacion						= Usuario Creacion
+033_grid_fecha_hora_modificacion				= Fecha Hora Modificacion
+033_grid_usuario_modificacion					= Usuario Modificacion
+033_titulValores								= Valores
+033_grid_sector_origem							= Origen
+033_grid_sector_destino							= Destination Sector
+033_MensajeExterna                              = Mensaje Externa
+033_datos_contenedor_Titulo                     = Level
+033_datos_contenedor_Codigo                     = Code
+033_datos_contenedor_Precintos                  = Objects
+033_lblTipoSitioDocumentos						= Origen / Destino
+033_lblCodigoEstadoDocumento					= Estado
+033_Origem										= Origen
+033_Destino										= Destino
+
+//Datos Documentos
+034_HistEstado									= Historical
+034_formulario									= Formulary
+034_tpdocumento									= Tipe of document
+034_Si											= Yes
+034_No											= No
+034_Titulo										= Document information
+034_NumeroExterno								= External number:
+034_Estado										= Status:
+034_SectorOrigen								= Origin Sector:
+034_EstaCertificado								= ¿is Certificated?
+034_FechaHoraPlanificacionCertificacion			= Date/Hour Plan Certification:
+034_DatosInvalidos								= Information wich was sent to the control are incorrect.
+034_txtErroDataMenorActual						= date/Hour plan. Certification . It can not be less than the current date!.
+034_Codigo_Comprobante						    = Voucher code:
+034_Consulta_Saldo							    = Check Sector balance
+034_NoCertificado	=	Not Certificated
+034_Certificado_Parcialmente_Origen	=	Partially Certificated (Source account)
+034_Certificado_Parcialmente_Destino	=	Partially Certificated (Target account)
+034_Certificado	=	Certificated
+034_SaldoSuprimido_image                        = Esto movimiento fue hecho en una MAE que no permite que los movimientos de recuentos impacten el saldo.
+034_SaldoSuprimido                              = No impacto saldo
+034_Notificado_image                            = This movement has already been notified.
+034_Notificado                                  = Notified movement
+
+//Lista de valores
+035_divisasnoselecionadas						= Please, select the account or currency to be inserted in the document.
+035_divisasnoseliminadas						= Please, select the account or currency to be deleted.
+035_documentovacio								= There is no document.
+
+//Grupo Documentos
+036_GrupoDocumentos								= Grupo Documentos
+036_SectorDestino								= Target sector
+036_SectorOrigem								= Origin Sector
+036_SectorIdentificadorOrigem					= ID Origin Sector
+036_SectorIdentificadorDestino					= ID  Target sector
+036_EstadoGrupoDocumentos						= Status group of documents
+036_FechaCreacionGrupoDocumento 				= Date of creation of the Group of documents
+036_UsuarioCreacionGrupoDocumento				= User's creation of the Group of documents
+036_FechaModificacionGrupoDocumento				= Date of modification of the Group of documents
+036_UsuarioModificacionGrupoDocumento   		= User of modification of the Group of documents
+036_Formulario									= Form
+036_IdentificadorFormulario						= Form ID
+036_EstadoHistorico								= Historical Status
+036_FechaCreacionHistorico		 				= Date of creation of Historical
+036_UsuarioCreacionHistorico					= User of creation of Historical
+036_FechaModificacionHistorico					= Last modification of historical
+036_UsuarioModificacionHistorico		  		= User of modification of Historical
+036_ValorTerminoIac								= IAC Term value
+036_IdentificadorTerminoIac						= ID IAC Term
+036_CodUsuarioTerminoIac						= IAC Code user Term
+036_FechaActualizacionTerminoIac				= Date of modification of Term in IAC
+036_Identificador_CodCompro_Grupo_Documento		= ID and code Voucher of Group of documents are empty
+036_HayCierreCajaEnCurso						= No es posible generar este documento. Ya existe un documento de Cierre en estado "En Curso" para este sector. Verifique.
+
+//Tipos Formato
+037_bolsa										= Bag
+037_Cartucho									= Cassette
+037_Fleje										= Fleje
+037_Lote										= Batch
+037_Saca										= Saca
+037_Sobre										= Parcel
+
+//CONTROLE DATOSDOCUMENTO
+038_hora_modificacion							= Date and time of change
+038_usu_modificacion							= User modification
+038_estado           							= Status
+
+//Menu 
+039_Documentos                                      = Movimiento
+039_Certificados                                    = Certificated
+039_Reportes                                        = Reports
+039_Configuraciones                                 = Configurations
+039_Nuevo                                           = New 
+039_Emitidos                                        = Issued 
+039_Recebidos                                       = Received 
+039_EnProceso                                       = In process
+039_Confirmado                                      = Confirmed
+039_Aceptados                                       = Accepted
+039_Rechazados                                      = Rejected
+039_Anulado                                         = Cancel
+039_Substituido                                     = Replaced
+039_ImpresoReceber                                  = Confirmed to receive
+039_RecebidoAceptados                               = Received and accepted
+039_RecebidoRechazados                              = Received and rejected
+039_Consulta                                        = Query
+039_Generar                                         = Generate
+039_Convertir                                       = Convert
+039_Provisional                                     = Provisional
+039_Definitivo                                      = Final
+039_ResultadoEjecucion                              = Execution result
+039_BasadosCertificados                             = Based on certificates
+039_CertificadoDefecto                              = Default Certificate
+039_ConfiguracionNivelSaldo                         = Query configuration level balance
+039_EnCurso                                         = In course
+039_InventarioBulto                                 = Bag inventory
+039_GenerarInventarioBulto                          = Generate Bag inventory
+039_HistoricoInventarioBulto                        = Trackking bag inventory 
+039_Saldo					                        = Balance
+039_DocumentosPendientes							= Pending documents
+039_Abono											= Abono
+039_InformacionNuevoSaldos							= Información de Nuevo Saldos
+039_Busqueda                                        = Busqueda
+
+//UserControl ucFiltro
+040_lbl_titulo									= Filters
+040_lbl_cliente									= Client / Subclient / Point of Service
+040_lbl_canal									= Channel / Subchannel
+040_NenhumRegistroEncontrado					= No records found
+040_validar_sector								= Not informed Sector.
+040_validas_campos_obligatorios					= É obrigatório informar pelo menos um dos seguintes filtros: “Cliente”, “Documento – Número Externo”, “Documento – Código comprovante”, “Remessa – Código Externo”, “Objeto – Precinto”, “Parcial – Parcial”.
+
+//UserControl ucFiltroElementos
+041_titulo_documento							= Document
+041_titulo_contenedor							= Level
+041_titulo_remesa								= Order
+041_titulo_bulto								= Object
+041_titulo_parcial								= Parcel
+041_lbl_Precinto								= Seal:
+041_lbl_parcial									= Parcel:
+041_lbl_tipo_contenedor							= level type:
+041_lbl_tipo_servicio							= Service type:
+041_lbl_fecha_alta_desde						= Date added from:
+041_lbl_fecha_alta_hasta						= Date added until:
+041_lbl_codigo_contenedor						= Level code:
+041_lbl_numero_externo							= External number:
+041_lbl_codigo_comprovante						= Cod. Proof:
+041_lbl_codigo_externo							= Cod. External:
+041_lbl_ruta									= Cod. Route:
+041_tipo_servicio_guardar						= Save
+041_tipo_servicio_clasificar					= Sorting
+041_tipo_servicio_pernocte						= Overnight
+041_tipo_servicio_procesar						= Process
+041_tipo_servicio_movimientointerno				= Internal movement
+041_lbl_formato_bulto							= Object format:
+041_lbl_formato_parcial							= Parcel format:
+
+//UserControl ucFiltroDivisa
+042_trv_tipo_medio_pago_cheque					= Check
+042_trv_tipo_medio_pago_ticket					= Ticket
+042_trv_tipo_medio_pago_otros_valores			= Other values
+042_trv_tipo_medio_pago_tarjeta					= Card
+042_trv_efectivo								= Cash
+
+//UserControl ucValores
+043_TituloDivisas								= Currency
+043_TituloValores								= Values
+043_DivisasSeleccionadas						= Currency selected
+043_DivisasSector								= Possible currency
+043_divisa_obrigatorio							= Document must have at least one currency
+043_ConsiderarSomaZero							= Considering that sum to zero total
+
+//Configuración Formularios
+044_Titulo										= Configuration of forms
+044_Exluir										= Delete
+044_Editar										= Modify
+044_FormularioHayDocumentos						= This form has already related documents.
+044_FormularioBorrado   						= Deleted form.
+044_ConfigurarFormulario  						= Configure new form
+044_ExcluirFormulario	  						= Exclude form?
+
+//Formulário (Wizard)
+045_Paso_1										= Step 1: code and description
+045_Paso_2										= Step 2: main characteristic of use
+045_Paso_3										= Step 3:
+045_Paso_4										= Step 4:
+045_Paso_5										= Step 5:
+045_Paso_6										= Step 6:
+045_Confirmacion								= Confirmation
+045_Siguiente									= Next
+045_Anterior									= Previous
+045_Grabar										= Save
+045_Cancelar									= Cancel
+045_Codigo										= Code
+045_Descripcion									= Description
+045_Color_Cabecera								= Color that occurs in the header
+045_Tipo_Documento								= Document type (grouping by type)
+045_Movimento_Individual						= Movement can be performed by Individual way?
+045_Movimento_Agrupada							= Qnd by group way?
+045_Disponible_Para_Uso							= Does the movement is available for use (active)?
+045_Cierres										= Closures
+045_Gestion_Bultos								= Bag management
+045_Gestion_Fondos								= Management funds
+045_Gestion_Remesas								= management of Orders
+045_Gestion_Contenedores						= Level management
+045_Otros_Movimentos							= Other movements
+045_Actas										= Minutes
+045_Ajustes										= Settings
+045_Altas										= Addeds
+045_Bajas										= Deletes
+045_Reenvios									= Forward
+045_Utiliza_Codigo_Barras						= To use barcode reader?
+045_Tipo_Bulto_Tratar							= Bag types to try
+045_Llegar_Saldo_Negativo						= Movement can reach negative balance?
+045_Agrupar_En_Contenedor						= Group Level
+045_Desagrupar_En_Contenedor					= Ungroup in Level
+045_Bloquear_En_Contenedor						= Block Level
+045_Desbloquear_En_Contenedor					= Unblock level
+045_Revisar_En_Contenedor						= Check level
+045_Eliminar_En_Contenedor						= Delete Level 
+045_Poner_En_Uso_Contenedor						= Put in use the level
+045_Poner_En_Desuso_Contenedor					= Put in unused  the level
+045_Movimientos_De_Fondos						= Movement of funds
+045_Cierre_De_Tesoro							= Closing of treasure
+045_Cierre_De_Caja								= Box closing
+045_Opciones_Cierre_Caja						= Option Box closing
+045_Cuadre_Fisico								=  Balance physical
+045_Baja_Remesa_Sistema							= Delete of a orden in the system
+045_Salida_Remesa_Ruta							= Output of a Orden to route
+045_Basado_Reporte								= Based on report (filter)
+045_Entre_Sectores								= Between sectors
+045_Entre_Plantas								= Between Office
+045_Acta_Recuento								= Count Act
+045_Acta_Clasificado							= Rated certificate
+045_Acta_Embolsado								= Act of bagging
+045_Baja_Bulto_Sistema							= Delete a bag in the system
+045_Salida_Bulto_Ruta							= Output of a bag to route
+045_Entre_Canales								= Between channels
+045_Entre_Clientes								= Between  Clients
+045_Estados_Posibles_Documento					= Possible Status of the document
+045_Acciones_Contables_Estados					= Actions accounting for the selected Status
+045_Disponible_Origen							= Available at origin
+045_No_Disponible_Origen						= Not  available at origin
+045_Disponible_Destino							= Available at destination
+045_No_Disponible_Destino						= Not Available at destination
+045_En_Proceso									= In process
+045_Eliminado									= Delete
+045_Confirmado									= Confirm
+045_Aceptado									= Ok
+045_Rechazado									= Rejected
+045_Sustituido									= Replaced
+045_Se_Imprime									= Do you print?
+045_Copias										= Copies
+045_Anadir										= Add
+045_Quitar										= Remove
+045_IAC_Documento								= IAC in the document (single)
+045_IAC_Documento_Grupo							= IAC in the document (Group)
+045_Buscador									= Searcher
+045_Identificacion								= identification
+045_Color										= Color:
+045_Tipo_Doc									= Document type:
+045_Permite_Generar_Individual					= Allows to generate Individual document?
+045_Permite_Generar_Agrupado					= Can generate grouped document?
+045_Objectivo									= Objective
+045_Caracteristicas								= Features:
+045_Tipo_De_Bultos								= Types of bags:
+045_Visibilidad_Uso								= Visibility and use
+045_Documento_Podra_Creado_Sectores				= Document can be created by the sectors that are of the following types:
+045_Documento_Podra_Enviado_Sectores			= Document can be sent to sectors that are of the following types:
+045_Operaciones_Contables_Otros_Datos			= Accounting operations and other data
+045_Estado										= Status
+045_Permite_Llegar_Saldo_Negativo				= Can reach negative balance?
+045_Permite_Lector_codigo_Barras				= Allows to use bar code reader?
+045_Impreso_Al_Confirmmar						= Does the document will be printed to confirm? 
+045_Copias_Impresion_Para						= Printing copies to:
+045_Cuadres_Cierres								= Balancing and closures
+045_Gestion_Bultos_Realizar						= Bag management. Action to perform.
+045_Gestion_Fondos_Realizar						= Management funds. Action to perform.
+045_Gestion_Remesas_Realizar					= Management of Orders. Action to perform.
+045_Gestion_Contenedores_Realizar				= Management of Orders. Action to perform.
+045_Gestion_Bultos_Bajas_Detalles				= Bag management. Deleteds. Details.
+045_Gestion_Bultos_Reenvio_Detalles				= Bag management. Forwards. Details.
+045_Gestion_Bultos_Actas_Detalles				= Bag management. Acts. Details.
+045_Gestion_Fondos_Movimiento_Detalles			= Management funds. Movement of funds. Details.
+045_Gestion_Remesas_Bajas_Detalles				= Management of Orders. Deletes. Details.
+045_Gestion_Remesas_Reenvio_Detalles			= Management of Orders. Forwards. Detalles.
+045_Gestion_Remesas_Actas_Detalles				= Management of Orders. Acts. Details.
+045_Gestion_Cierres_Detalles					= Management of Closures Cierre Deails.
+045_Tipos_Sectores								= Types of sectors
+045_Tipos_Sectores_Destino						= Types of destination sectors
+045_Tipos_Sectores_Movimento_Definido			= Type of Sector in which are presented the motion defined.
+045_Tipos_Sectores_Ori_Dest_Movimento_Definido	= Type of Sector origin and destination in which are presented the motion defined.
+045_Tipos_Sectores_Origen						= Type of Sectors origin
+045_Paso6_Operaciones_Otros_Datos				= Step 6: accounting operations and other data
+045_Resumen_Vision								= View overview
+045_Si											= Yes
+045_No											= No
+045_Formulario_Vazio							= Object form empty
+045_Identificador_Obligatorio					= ID Form is mandatory
+045_Tipo_Documento_Obligatorio					= ID type of document is mandatory
+045_Codigo_Obligatorio							= Form code is mandatory
+045_Descricion_Obligatorio						= Description form is madatory
+045_Color_Obligatorio							= Form Color is mandatory
+045_Cod_Nivel_Movi_Sector_Obligatorio			= Code level movement Sector is mandatory
+045_Bol_Activo_Obligatorio						= Is active required
+045_Fecha_Creacion_Obligatorio					= Mandatory form creation date
+045_Usuario_Creacion_Obligatorio				= User of creation is mandaroty
+045_Fecha_Modificacion_Obligatorio				= Date of modification of from is mandatory
+045_Usuario_Modificacion_Obligatorio			= User of modification is mandatory
+045_Caracteristicas_Obligatorio					= Form features is mandatory
+045_Utilizar_Reenvio_Automatico					= Do use this form for forwarding documents, automatic?
+045_Codigo_Formulario_Existe					= Already exists a form with the code
+045_Permite_Enviar_Salidas						= Do use this form for integration with the Packaging module?
+045_Permite_Integracion_Recepcion				= Do use this form for integration with receiving and sending module?
+045_Permite_Integracion_Legado					= Do use this form for integration with the legacy?
+045_Permite_Integracion_Conteo					= Do use this form for integration with the count module?
+045_Permite_Modificar_Termino					= Modify Terms of valid documents?
+045_Codigo_Externo_Obligatorio					= Exernal code shall be required when creating the document?
+045_Formulario_Eviar_Salidas_Existe				= Form with code {0}, is already used for integration with the Packaging module.
+045_Formulario_Integracion_Recepcion_Existe		= Form with code {0}, is already used for integration with the Reception and Sending module.
+045_Formulario_Integracion_Legado_Existe		= Form with code {0}, is already used for integration with the Legacy
+045_Formulario_Integracion_Conteo_Existe		= Form with code {0}, is already used for integration with the Count module.
+045_Titulo										= Master of forms
+045_Confirm_Cancelar							= Cancel?
+045_Accion_Contable_Obligatorio					= Accouting action is mandatory.
+045_Accion_Contable								= Accouting action 
+045_Extension_Invalido							= Extension {0} is not valid!
+045_Tamano_Maximo_Icono							= Icon should have a maximum of 150 KB.
+045_Ruta_Cargar_Icono							= Path to load / get the icon
+045_Accion_Contable_Suma						= Sum
+045_Accion_Contable_Resta						= Subtraction
+045_Sustitucion									= Replacement
+045_Solicitacion								= Request
+045_Clasificacion								= Classification
+045_Formulario_Integracion_Existe				= Não é possível configurar a opção {0} porque o formulário {1} já possuí o mesmo conjunto de característica ({2}).
+045_Permite_Solicitacion_Fondos					= Utilizar esse formulário para Solicitação de Fundos?
+045_Integracion_Salidas_Obligatorio				= O formulário para solicitação de fundos é obrigatório ter integração com o Salidas.
+045_Acta_Desembolsado							= Acta de Desembolsado
+045_Permite_Contestar_Solicitacion_Fondos		= Utilizar esse formulário para Contestar Solicitação de Fundos?
+045_Movimiento_Aceptacion_Automatica			= ¿Este formulário es aceptado automáticamente en el sector de destino?
+045_Formulario_Ya_Existe						= Ya existe un formulario con estas caracterísitcas. Por favor verifique el formulario: {0}
+045_Excluir_Sectores_Hijos						= Exclude SubSectors/Posts
+045_Resumen_Excluir_Sectores_Hijos				= Exclude SubSectors/Posts?
+045_Tipo_Documento_Certificable = CERTIFICABLE
+045_Pack_Modular								= Modular Pack
+045_Desarmar_Contenedor							= Disarm the container
+045_Salida_Contenedor							= Container output in a Route
+045_Disponible_Bloqueado_Origen					= Locked Available Origin
+045_Disponible_Bloqueado_Destino				= Locked Available Destination
+
+//ACCION CONTABLE
+046_Accion_Contable_Vazio						= Object accounting action empty.
+046_Identificador_Accion_Contable_Obrigatorio	= ID accounting action is mandatory.
+046_Codigo_Accion_Contable_Obrigatorio			= Accounting action code is mandatory.
+046_Descripcion_Accion_Contable_Obrigatorio		= Accounting action description is mandatory.
+046_Usuario_Cri_Accion_Contable_Obrigatorio		= User of creation is mandatory.
+046_Usuario_Mod_Accion_Contable_Obrigatorio		= User of modification is mandatory.
+046_Fecha_Creacion_Obrigatorio					= Date of creation is mandatory.
+046_Fecha_Modificacion_Obrigatorio				= Date of modification is mandatory.
+
+//ESTADOS ACCION CONTABLE
+047_Estados_Vazio								= Object status accounting action empty.
+047_Identificador_Vazio							= ID Status accounting action empty.
+047_Identificador_Acao_Contabil_Vazio			= ID Accounting action empty.
+047_Codigo_Estado								= Status code is empty.
+047_Origem_Disponivel							= Origin available empty.
+047_Origem_No_Disponivel						= Origin not available empty.
+047_Destino_Disponivel							= Destination available empty.
+047_Destino_No_Disponivel						= Destination not available empty.
+047_Mismo_Sector								= Same Sector empty.
+047_Fecha_Creacion_Vazia						= Date created is empty
+047_Fecha_Modificacion_Vazia					= Date of modification is empty.
+047_Usuario_Creacion_Vazia						= User cration is empty.
+047_Usuario_Modificacion_Vazia					= User modification is emprty.
+047_Accion_No_Mueve_Valores_No_Encontrada		= Not possible to find the accounting action 'Not moving values' (code 'AC_000000000001') in the database.
+
+//TIPO SECTOR
+048_Tipo_Sector_Vazia							= Object type Sector empty.
+048_Identificador_Formulario_Obligatorio		= ID form is mandatory.
+048_Relacion_formulario_Obligatorio				= Relation with form is mandatory.
+048_Tipo_Sector_Obligatorio						= Sector type is mandatory.
+048_Fecha_Creacion_Obligatorio					= Creation date for type of sector is mandatory.
+048_Fecha_Modificacion_Obligatorio				= Modification date for type of sector is mandatory.
+048_Usuario_Creacion_Obligatorio				= Creation user of type of sector is mandatory.
+048_Usuario_Modificacion_Obligatorio			= Modification user of type of sector is mandatory.
+
+//TIPO BULTO
+049_Tipo_Bulto_Vazia							= Object type bag empty.
+049_Identificador_Formulario_Obligatorio		= ID Form is mandatory.
+049_Identificador_Tipo_Bulto					= ID type of Bag is mandatory.
+049_Fecha_Creacion_Obligatorio					= Date creation type of bag is mandatory.
+049_Fecha_Modificacion_Obligatorio				= Date modification type of bag is mandatory.
+049_Usuario_Creacion_Obligatorio				= Creation user type of bag is mandatory.
+049_Usuario_Modificacion_Obligatorio			= Modification user for Type of bag is mandatory.
+
+//COPIAS
+050_Copias_Vazia								= Object copy empty.
+050_Identificador_Formulario_Obligatorio		= ID form is mandatory.
+050_Identificador_Copias						= ID copy is mandatory.
+050_Destino										= Destination copy is mandatory.
+050_Fecha_Creacion_Obligatorio					= Creation date copy is mandatory.
+050_Fecha_Modificacion_Obligatorio				= Modification date copy is mandatory.
+050_Usuario_Creacion_Obligatorio				= User of Creation of copy is mandatory.
+050_Usuario_Modificacion_Obligatorio			= User of modification of copy is mandatory.
+
+//ucFiltroDivisas
+051_divisa_vacio								= No there are currency {0}  to be selected.
+051_activo										= active
+051_efectivo_vacio								= There are not active for the {0} currency{1} selected{2}.
+051_mediopago_vacio								= There are not active means of payment for the{0} currency {1} selected{2}.
+051_efectivos									= Cashs
+051_mediospago									= Means of payment
+051_divisasinactivas							= Considered inactive currency
+051_totalesefectivos							= Considered amount total cash
+051_totalesmediospago							= Considered total means of payment
+051_divisasnoselecionadas						= Select any currency
+
+//ucListaInventario
+052_btnBuscar									= Search
+052_NenhumRegistroEncontrado					= No records found.
+052_campoSector_obrigatorio						= Sector field is mandatory!.
+052_lblCodigo									= Code	
+052_lblFechaHoraInventario						=  Date/time inventory
+052_lblDelegacion								= Cash Center
+052_lblPlanta									= Office
+052_lblSector									= Sector
+052_NenhumInventarioSeleccionado				= No inventory selected.
+
+//Relatório Generar inventario de bultos
+053_lblTitulo									= Report > Bags inventory > Generate Bags inventory
+053_lblFiltro									= Bags inventory 
+053_OrdenarPor									= Order by
+053_cliente_canal								= Client and channel
+053_documento									= Document
+053_campoSector_obrigatorio						= Sector field is mandatory!.
+053_btnGerar									= Run report
+053_formato										= Format
+053_formato_excel								= Excel
+053_formato_pdf									= PDF
+053_discriminar_subsectores						= Discriminate Sub / Posts
+053_ubicacion									= Location
+
+//Relatório Histócio inventario de bultos
+054_lblTitulo									= Report > Bags inventory  > History inventory of bags
+054_lblFiltro									= Inventory of bags
+054_OrdenarPor									= Order by
+054_cliente_canal								= Client and channel
+054_documento									= Document
+054_btnGerar									= Run report
+054_formato										= Format
+054_formato_excel								= Excel
+054_formato_pdf									= PDF
+054_fecha_hora_desde							= Date/Time from
+054_fecha_hora_hasta							= Date/Time To
+054_codigo_inventario							= Inventory code
+054_selecao_inventario							= For search to select an inventory record.
+054_campoFechaHoraDesde_obrigatorio				= Field Date/Time from is mandatory!.
+054_campoFechaHoraHasta_obrigatorio				= Field Date/Time to is mandatory!.
+
+//Controle UCValoresDivisas
+055_lblTituloComponente_Declarado				= Declared value
+055_lblTituloComponente_Contado					= Count value
+055_lblTituloComponente_Diferencia				= Difference
+055_lblTituloComponente_Disponible				= Currency
+055_lblTituloComponente_NoDisponible			= Currency
+055_lblTituloComponente_NoDefinido				= Currency
+055_divisa										= Currency 
+055_totalGeneral								= Total Amount General
+055_totalEfectivo								= Total Amount Cash
+055_totalOtroValor								= Total Amount Other value
+055_totalCheque									= Total Amount Check
+055_totalTarjeta								= Total Amount Card
+055_totalTicket									= Total Amount Ticket
+055_remover										= Delete
+055_selecione									= Select...
+055_calidadNoDefinida							= Not defined
+055_preenchaAlgumTotal							= Report any total.
+055_valorNumerico								= Field must have a numeric value.
+055_totalesPorDivisa							= Currency amount
+055_totalesEfectivo								= Cash
+055_totalesEfectivoGrilla						= Cash amount:
+055_tituloComponente							= Title of the component
+055_totalesMedioPago							= Means of payment
+055_totalesMedioPagoGrilla						= Amount Means of payment:
+055_denominacion								= Denomination
+055_billeteMoneda								= Note/Coin
+055_unidadMedida								= Un. measure
+055_cantidad									= Amount
+055_valor										= Value
+055_calidad										= Quality
+055_billete										= Note
+055_moneda										= Currency
+055_tipoMedioPago								= Type Means of payment 
+055_medioPago									= Means of payment
+055_informacionesComplementares					= Aditional information
+055_terminosMedioPago							= Terms means payment
+055_mascaratermino								= Invalid mask
+055_confirmacionExclusionTodos					= Are you sure you want to delete all the records?
+055_unidadmedidaobligatorio						= Field Unit measure of the denomination '{0}' of currency '{1}' is mandatory, because parameter '{2}' It is configured to work with units of measure.
+055_calidadobligatorio							= Field Quality of the denomination '{0}' of currency '{1}' is mandatory, because parameter '{2}' It is configured to work with qualities.
+055_importeefectivoobligatorio					= Denomination '{0}' of currency  '{1}' It is with the amount field not valid, because there is a value to the quantity field.
+055_cantidadefectivoobligatorio					= Denomination '{0}' of currency  '{1}' It is with the quantity field is not valid, because there is a value to the amount field.
+055_importemediopagoobligatorio					= Means of payment  '{0}' of currency  '{1}' It is with the invalid amount field, because there is a value to the quantity field.
+055_cantidadmediopagoobligatorio				= Means of payment '{0}' of currency '{1}' It is with the quantity field is not valid, because there is a value to the amount field.
+055_mascaraterminoinvalida						= Value '{0}' informed for the term '{1}' of means of payment '{2}' of currency '{3}' does not comply with the set mask: '{4}'.
+055_tituloMonedasAgregadas						= Added coins:
+055_nivel										= Level
+055_total										= Total
+055_detalle										= Detail
+055_cheque										= Check
+055_ticket										= Ticket
+055_otrovalor									= Other Values
+055_tarjeta										= Card
+055_importepositivomodificar					= Positive amount to modify:
+055_importenegativomodificar					= Negative amount to modify:
+055_importepositivodetallar						= Positive amount to detail:
+055_importenegativodetallar						= Negative amount to detail:
+
+//Relatório saldos
+056_menu										= Balances
+056_lblTitulo									= Report > Balances
+056_lblSubTitulo								= Balance
+056_btnGerar									= Run report
+056_formato										= Output format
+056_formato_excel								= Excel
+056_formato_pdf									= PDF
+056_detalhar_sector								= Discriminate by Sector
+056_detalhar_divisa								= Specify currency
+056_considerar_cliente_sem_saldo				= Consider Client without balance
+056_campoDelegacion_obrigatorio					= Field Cash center is mandatory.
+056_campoDivisa_obrigatorio						= Field Coin is mandatory.
+056_considerar_todos_niveis						= Consider all levels
+056_cliente_nao_totalizador_saldo				= Listed clients are not Totes of balance:{0} 
+056_clienteSubClientePontoServico_nao_totalizador = Listed clients are not Totes of balance and there are not subClient or Point of service Totes of balance:{0}  
+056_subcliente_nao_totalizador_saldo			= Listed subClients are not Totes of balance:{0}  
+056_SubClientePontoServico_nao_totalizador		= Following subClients listed  are not Totes of balance  and there are not point of service Totes of balance:{0}  
+056_pontoServicio_nao_totalizador_saldo			= Following point of service listed are not Totes of balance: {0}
+056_lengda_tipo_valor							= Type of values
+056_discriminar_subsectores						= Discriminar SubSectores/Puestos
+
+//Relatório Transações
+057_menu										= Transactions
+057_lblTitulo									= Reports > Transactions
+057_lblSubTitulo								= Transactions
+057_btnGerar									= Run report
+057_formato										= Format
+057_formato_excel								= Excel
+057_formato_pdf									= PDF
+057_fechahoradesde								= Date/time from
+057_fechahorahasta								= Date/time until
+057_considerarvalores							= Consider the values
+057_ambos										= Both
+057_disponible									= Available
+057_ndisponible									= Not available
+057_formularios									= Formularies
+057_sinformularios								= There is no form to be displayed.
+057_delegacionobligatorio						= Field Cash center is mandatory.
+057_clienteobligatorio							= Field Client is mandatory.
+057_canalobligatorio							= Field Channel is mandatory.
+057_fechadesdeobligatorio						= Field Date/time from is mandatory.
+057_fechahastaobligatorio						= Field Date/time until is mandatory.
+057_fechadesdefechahasta						= Field Date/time from must be less than or equal to the field until the date/time.
+057_columnasadicionalesdisponibles				= Colunas diponíveis
+057_columnasadicionalesseleccionados			= Colunas selecionadas
+057_puntoservicioorigen							= Ponto de Serviço Origem
+057_subclientedestino							= Sub-cliente Destino
+057_puntoserviciodestino						= Ponto de Serviço Destino
+057_NoConsiderarSectoresHijos					= No considerar sectores hijos
+057_lblTituloFiltroFecha						= Filter Date/Time for
+057_lblNotificado                               = Considerar movimientos notificados
+057_lblAcreditado                               = Considerar movimientos acreditados
+057_rbNotificadoAmbos							= Ambos
+057_rbNotificado								= Notificado
+057_rbNoNotificado								= No notificado
+057_rbAcreditadoAmboso							= Ambos
+057_rbAcreditadoo								= Acreditado
+057_rbNoAcreditadoo								= No acreditado
+057_FiltroFechaCreacion							= Creation
+057_FiltroFechaGestion							= Management
+
+058_TituloTipoServicio							= Type of service
+058_TituloFormatoObjeto							= Object format
+058_TituloCantidadObjeto_remesa					= Number of parcels
+058_TituloTipoValor_Declarado					= Declarated
+058_TituloTipoValor_Contado						= Counted
+058_quitar										= Remove
+058_Totales										= Amount:
+058_TituloDivisas								= Coins added to the group:
+058_TituloCantidad_bulto						= Nuber or parcel into the group:
+058_TituloCantidad_remesa						= Number of bag into the group:
+058_Seleccionar									= Select
+058_TituloCantidadItems							= Number of items in the group:
+
+//ucElementoSelecionar
+059_agregar										= Add
+059_remesa										= Order
+059_formulario									= Formulary
+059_setor										= Process Center name
+059_canal_cliente								= Channel/Client
+059_cliente										= Client
+059_canal										= Channel
+059_sector										= Sector
+059_valores										= Value
+059_tipo_servicio								= Type of service
+059_formato										= Object format
+059_quantidade_parcial							= Amount of parcels
+059_lblSelecionar								= Select
+059_lblEliminar									= Delete
+059_lblBulto									= Object
+059_lblConfiguracionNivelDetalle				= Configuración Nivel Detalle
+059_ConfiguracionNivel_Detalle					= Detalle
+059_ConfiguracionNivel_Total					= Total
+059_ConfiguracionNivel_Ambos					= Ambos
+
+//Relatório Seguimento de malotes
+060_menu										= Tracking bag
+060_FiltrarNumeroExterno						= External num.
+060_FiltrarCodigoBolsa							= Bag code
+060_FiltrarPrecinto								= Seal
+060_lblTitulo									= Report Tracking bag
+060_lblSubTitulo								= Report Tracking bag
+060_lblCodigo									= Code
+060_FiltrarPor									= Filter by
+060_InformaCodigo								= It is necessary to inform a search criteria
+060_btnGerar									= Run Report
+060_formato_excel								= Excel
+060_formato_pdf									= PDF
+060_TradNombreReporte							= Report Tracking bag
+060_TradPagina									= Page
+060_TradCodigoExterno							= External num.
+060_TradUsuario									= User
+060_TradFecha									= Date
+060_TradFormulario								= Formulary
+060_TradBulto									= Bag
+060_TradPrecinto								= Seal
+060_TradTipoDestino								= Destination type
+060_TradCertificado								= Certificated
+060_TradSectorOrigen							= Sector
+060_TradSectorDestino							= Sector
+060_TradSubCanalOrigen							= Channel/Subchannel
+060_TradSubCanalDestino							= Channel/Subchannel
+060_TradClienteOrigen							= Client
+060_TradClienteDestino							= Client
+060_TradOrigen									= Origin data
+060_TradDestino									= Destination data
+060_TradProsegur								= Prosegur China
+060_FormatoGenerar								= Format
+
+//SALDO
+061_Codigo_Sector_Obligatorio					= Sector code is mandatory
+061_Codigo_Planta_Obligatorio					= Office code is mandaroty
+
+//CONSULTA SALDO
+062_lblTitulo									= Check balance
+062_lblFiltro									= Filter
+062_lblResultados								= Query result
+062_menu										= Check balance
+062_btnBuscar									= Search
+062_considerarvalores							= Consider both values 
+062_ambos										= Both
+062_disponible									= Available
+062_ndisponible									= Not available
+062_plantaobligatorio							= Field Planta is mandatory.
+062_sectorobligatorio							= Field Sector is mandatory.
+062_detallar_cliente_canal						= Details by client and channel
+062_considerar_sectores_hijos					= Discriminate Subsectors/Posts
+062_todas_cuentas_saldos						= All accounts must be totalisators balances.
+062_no_hay_saldo								= There is no balance.
+062_sector										= Sector
+062_cliente_canal								= Client and Channel
+062_divisa										= Currency
+062_valor_disponible							= Value available
+062_valor_no_disponible							= Value not available
+062_suma										= Sum
+062_cuenta										= Sector, Cliente e Canal
+062_DiscriminarPor								= Discriminar Por
+062_Total										= Total
+
+// Consulta Historico Importes de Elementos
+063_Titulo										= Histórico Importes de Elementos
+
+// Controle Filtros Historico Importes de Elementos
+064_Titulo										= Filtro
+064_TipoElemento								= Tipo Elemento
+064_CodigoExterno								= Código Externo
+064_CodigoPrecinto								= Código Precinto
+064_CodigoComprobante							= Código Comprovante
+064_EstadoElemento								= Estado Elemento
+064_EstadoDocumentoElemento						= Estado Documento x Elemento
+064_Buscar										= Buscar
+064_Seleccionar									= Selecionar
+064_EstadoDocElemento_NaoDefinido				= Não Definido
+064_EstadoDocElemento_Historico					= Histórico
+064_EstadoDocElemento_Transicao					= Transição
+064_EstadoDocElemento_Concluido					= Concluído
+064_EstadoDocumento_Nuevo						= Novo
+064_EstadoDocumento_EnCurso						= Em Curso
+064_EstadoDocumento_Confirmado					= Confirmado
+064_EstadoDocumento_Anulado						= Anulado
+064_EstadoDocumento_Aceptado					= Aceitado
+064_EstadoDocumento_Rechazado					= Recusado
+064_EstadoDocumento_Sustituido					= Substituído
+064_EstadoDocumento_Eliminado					= Eliminado
+
+//Relatório histórico de saldos
+065_menu										= History of Balances
+065_lblTitulo									= Report > History of Balances
+065_lblSubTitulo								= History of Balances
+065_btnGerar									= Run report
+065_formato										= Output format
+065_formato_excel								= Excel
+065_formato_pdf									= PDF
+065_detalhar_sector								= Discriminate by Sector
+065_detalhar_divisa								= Specify currency
+065_considerar_cliente_sem_saldo				= Consider Client without balance
+065_campoDelegacion_obrigatorio					= Field Cash center is mandatory.
+065_campoDivisa_obrigatorio						= Field Coin is mandatory.
+065_considerar_todos_niveis						= Consider all levels
+065_cliente_nao_totalizador_saldo				= Listed clients are not Totes of balance:{0} 
+065_clienteSubClientePontoServico_nao_totalizador = Listed clients are not Totes of balance and there are not subClient or Point of service Totes of balance:{0}  
+065_subcliente_nao_totalizador_saldo			= Listed subClients are not Totes of balance:{0}  
+065_SubClientePontoServico_nao_totalizador		= Following subClients listed  are not Totes of balance  and there are not point of service Totes of balance:{0}  
+065_pontoServicio_nao_totalizador_saldo			= Following point of service listed are not Totes of balance: {0}
+065_lengda_tipo_valor							= Type of values
+065_fecha_saldo									= Date y Time of Balances
+065_fecha_obligatorio							= The filter Date/Time is mandatory.
+
+// DataHoraGMT
+066_NoFueInformadoDelegacion					= Para calcular el GMT, es necesario informar una delegación.
+066_Identificador_Delegacion_Invalido			= No fue encontrado ninguna delegación con el identificador informado.
+066_Codigo_Delegacion_Invalido					= No fue encontrado ninguna delegación con el codigo informado.
+
+// DataHoraGMT
+067_Titulo										= Pending documents
+067_lblTituloFiltro								= Filters
+067_lblTituloResultado							= Search result
+067_lblFechaCertDesde							= Cert. date and time (from)
+067_lblFechaCertHasta							= Cert. date and time (to)
+067_lblCliente									= Client
+067_lblSetor									= Sector
+067_lblTipoDocumento							= Document type
+067_chkIncDocSinFechaCert						= Include documents without certification date
+067_chkIncDocNoCert								= Include documents marked not certify
+067_grid_codigo_externo							= External code
+067_grid_codigo_Comprovante						= Certificate Number
+067_grid_formulario								= Form
+067_grid_cliente								= Client
+067_grid_subcliente								= Subclient
+067_grid_subcanal								= Subchanel
+067_grid_sector_origem							= Source Sector
+067_grid_sector_destino							= Destination Sector
+067_grid_fecha_hora_plan_cert					= Cert. date and time plan
+067_grid_excluir								= Delete
+067_grid_documento								= Document
+067_validar_cliente_sector						= It is mandatory to select customer or sector.
+067_documento_certificado						= The document is part of the certificate {0} generated on {1}. By changing this information, the certificate will be deleted. Continue with change?
+067_ProvisionalCon								= Provisional lockable
+067_ProvisionalSin								= Provisional without closure
+067_validaFechaHoraCertPlan						= The date and time the plan. informed of certification may not be lower than the date and time of the most recent definitive certificate for the balance of associated account
+067_registro_salvo								= Successfully saved records.
+
+// Caracteristicas Formulários
+CARACTERISTICA_PRINCIPAL_GESTION_REMESAS		= Orders of Management
+CARACTERISTICA_PRINCIPAL_GESTION_BULTOS			= pouch of Management
+CARACTERISTICA_PRINCIPAL_GESTION_CONTENEDORES	= Container of Management
+CARACTERISTICA_PRINCIPAL_GESTION_PARCIALES		= Cupping of Management
+CARACTERISTICA_PRINCIPAL_GESTION_FONDOS			= Funds of Management
+CARACTERISTICA_PRINCIPAL_CIERRES				= Locks
+CARACTERISTICA_PRINCIPAL_OTROS_MOVIMIENTOS		= Other Movements
+ACCION_ALTAS									= Insert
+ACCION_BAJAS									= Delete
+ACCION_REENVIOS									= Ruling
+ACCION_ACTAS									= Acta
+ACCION_AJUSTES									= Adjustment
+ACCION_SUSTITUCION								= Substitution	
+ACCION_MOVIMIENTO_FONDOS						= Funds Movements
+ACCION_SOLICITACION_FONDOS						= Funds Request
+PERMITE_LLEGAR_SALDO_NEGATIVO					= Allows Negative Balance
+NO_PERMITE_LLEGAR_SALDO_NEGATIVO				= No Allows Negative Balance
+CIERRE_TESORO									= Safe Lock
+CIERRE_CAJA										= Box Closing
+CUADRE_FISICO									= Physics Conference
+UTILIZA_LECTOR_CODIGO_BARRA						= Use Bar Code Reader
+ENTRE_SECTORES_MISMA_PLANTA						= Among Sectors Same Plant
+ENTRE_SECTORES_PLANTAS_DIFERENTES				= Between Different Plant Sectors
+ACTA_RECUENTO									= Count Act
+ACTA_CLASIFICACION								= Acta Classificacion
+ACTA_EMBOLSADO									= Lets Make Closing Pouch
+ACTA_DESEMBOLSADO								= Lets Make pouch opening
+ENTRE_CANALES									= Between Channels
+ENTRE_CLIENTES									= Among Customers
+MOVIMIENTO_ACEPTACION_AUTOMATICA				= Motion Auto Accept
+CONFIRMAR_CON_IMPRESION							= Print Document to Confirm
+DOCUMENTO_INDIVIDUAL							= Single Document
+DOCUMENTO_AGRUPADOR								= Document Grouper
+MOVIMIENTO_CON_IINFORMACIONES_ROTA				= Movement With Information and Route
+GESTIONAR_BULTOS_POR_REMESA						= Allows bultos Management For Shipping
+GENERA_CONTRAMOVIMIENTOS_DOC_ORIGINAL			= Generate Extorno Original Document
+BAJA_ELEMENTOS									= Delete pouch or Shipping the System
+SALIDAS_RECORRIDO								= Output with reference to a pouch or consignment that Delivers a Route
+REENVIO_AUTOMATICO								= Auto Forwarding
+INTEGRACION_SALIDAS								= Integration With Arrivals
+CODIGO_EXTERNO_OBLIGATORIO						= External Code Required
+INTEGRACION_RECEPCIONYENVIO						= Integration with Reception and Shipping
+INTEGRACION_LEGADO								= Integration with Legacy
+INTEGRACION_CONTEO								= Integration with Counting
+ACCION_CONTESTAR_SOLICITACION_FONDOS			= Contest Funds Request
+SOLO_PERMITIR_AJUSTES_POSITIVOS					= Only Allows Adjustments Positive
+SOLO_PERMITIR_AJUSTES_NEGATIVOS					= Only Allows Adjustments Negative
+
+//CONFIGURACION MULTIPLES CERTIFICADOS
+068_lblTitulo_ConfigReporte						= Reportes
+068_lblFiltro_ConfigReporte						= Filtro
+068_lblCodigo									= Codigo
+068_lblDescriccion								= Descriccion
+068_lblDireccionEnServidor						= Direccion en el Servidor de Reporting Service
+068_accion_configurarnovoreporte				= Configurar Nuevo Reporte
+068_lblTituloDadosGenerales						= Dados Generales
+068_tipo_cliente_obligatorio					= O Cliente o Tipo Cliente deveran ser informados.
+068_cliente_obligatorio							= El Cliente es obligatorio.
+068_codigo_reporte								= El Codigo es obligatorio.
+068_descripcion_reporte							= La Descripción es obligatorio.
+068_direccion_reporte							= La Dirección es obligatorio.
+068_lbl_Tipo_Reporte							= Tipo Reporte
+068_Tipo_Reporte_Certificado					= Certificación
+068_Tipo_Reporte_Abono_Vizualicacion     		= Abono Visualización
+068_Tipo_Reporte_Abono_Exportacion	    		= Abono Exportación
+068_tipo_reporte_obligatorio					= El tipo de reporte es obligatorio
+068_lblMascaraNombre							= Mask for generating the reporter's name
+068_lblExtensaoArquivo							= Extension
+068_lblParametros								= Parameters
+068_lblSeparadorArquivo							= Separator
+068_lblRenderizador								= Renderer
+068_txtMascaraNombre_obligatorio				= The Mask for generating the reporter's name is required
+068_ddlRenderizador_obligatorio					= The renderer is obbligatory
+068_txtExtensaoArquivo_obligatorio				= The extension is mandatory
+068_btnExcluirConfiguracaoReporte				= Delete Report Configuration?
+
+//Resultado de la Certificación
+069_Titulo										= Certification Result
+069_lblTitulo									= Certificate
+069_lblTitulo1									= Report
+069_lblCodigoCertificado						= Code
+069_btnEjecutarInforme							= Execute Report
+069_lblFechaCertificacion						= Date and Time Certification (Since)
+069_lblEstado									= Certificates
+069_rblEstado_definitivo						= Definitive
+069_rblEstado_provisionales						= Provisional
+069_rblEstado_consultas							= Consultation
+069_btnBuscar									= Search
+069_msgCliente_Delegacion						= Client ou Delegation
+069_estado_certificado_CO						= Consultation
+069_estado_certificado_PC						= Provisional with closing
+069_estado_certificado_PS						= Provisional without closing
+069_estado_certificado_DE						= Definitive
+069_ProcesandoReporte							= Generating the report <b>{0}</b> to the client <b>{1}</b> with subchannel <b>{2}</b>. </br> Missing {3} to process reports of the total {4}.
+069_btnConvertirProvisionalSinCierre			= Convert Provisional WITHOUT closing
+069_btnConvertirProvisionalConCierre			= Convert Provisional WITH closing
+069_btnConvertirDefinitivo						= Convert Definitive
+069_btnVolver									= Back
+
+069_grid_fyhcertificado							= Certificate Date and Time
+069_grid_tipo									= Type
+069_grid_cliente								= Client
+069_grid_subcanal								= SubChanel
+069_grid_reporte								= Report
+069_lbl_en_curso								= In action
+069_lbl_procesado								= Successful
+069_lbl_en_cola									= In runqueue
+069_lbl_erro_ejecucion							= Execution Error
+069_grid_situacion								= Situación
+
+//Historico de Elemento
+070_lblTitulo	=	Element history
+070_lblFiltro	=	Filter
+070_lblResultados	=	History
+070_formulario	=	Form
+070_sector_origem	=	Source Sector
+070_sector_destino	=	Destination Sector
+070_data_hora	=	Date time
+070_documento	=	Document
+
+info_msg_grd_vazio							= No existen datos para ser exhibidos.
+039_HistoricoImportesElementos						= Histórico Importes de Elementos
+069_msg_Arquivo_Inexistente						= El archivo no está mas disponible para bajar.
+
+// **** Abono ****
+// Comon
+071_Comon_msg_loading						= Por favor, espere un momento mientras el sistema está:&nbsp;
+071_Comon_msg_obtenerValores				= Haciendo consulta en la base de datos.
+071_Comon_msg_producidoError				= Se ha producido un error:&nbsp;
+071_Comon_msg_nenhumRegistroEncontrado		= ¡Ningun registro encontrado!
+071_Comon_msg_nenhumRegistroSeleccionado	= ¡Ningun registro seleccionado!
+071_Comon_msg_informacionesInvalidas		= ¡Informaciones invalidas!
+071_msg_FormularioNoConfigurado				= El sector actual, {0}, no está configurado para utilizar el formulario de pases {1} (código {2}) necesario para este tipo de abono. Verifique las configuraciones en el maestro de formularios o certifique que tenga ingresado en el sector correcto.
+071_Comon_msg_CamposDocPasesObligatorio		= Sector, Canal y SubCanal obligatorio.
+071_Comon_msg_CamposCadastroDatosBancarios	= Codigo Cuenta y Titularidad obligatorio.
+071_msg_CuentaEstandarYaExiste				= ¿Existe ya cuenta estándar al banco informado. Desea cambiar la cuenta predeterminada?
+071_msg_NoPermiteSaldoNegativo				= Al final de esto proceso de abono un documento de pases será creado por el formulario '{0}' (código '{1}'). Esto formulario esta configurado para no permitir llegar a un saldo negativo, por esta razón, no es posible generar un abono con valor negativo.
+071_Comon_Valores_Seleccionar				= Seleccionar
+071_Comon_Valores_Estado_EN					= En Curso
+071_Comon_Valores_Estado_PR					= Procesado
+071_Comon_Valores_Estado_AN					= Anulado
+071_Comon_Valores_TipoAbono_SA				= Por Saldos
+071_Comon_Valores_TipoAbono_EL				= Por Elemento
+071_Comon_Valores_TipoAbono_PE				= Por Pedido
+071_Comon_Valores_TipoValor_DE				= Declarados
+071_Comon_Valores_TipoValor_CO				= Contados
+071_Comon_Valores_TipoMedioPago_codtipob	= Cheque
+071_Comon_Valores_TipoMedioPago_codtipo		= Otros Valores
+071_Comon_Valores_TipoMedioPago_codtipoc	= Tarjeta
+071_Comon_Valores_TipoMedioPago_codtipoa	= Ticket
+071_Comon_Valores_TipoEfectivo				= Efectivo
+071_Comon_Campo_Banco						= Solicitante
+071_Comon_Campo_Cliente						= Destinatario
+071_Comon_Campo_SubCliente					= Sub-Cliente
+071_Comon_Campo_PtoServicio					= Punto Servicio
+071_Comon_Campo_Canal						= Canal
+071_Comon_Campo_SubCanal					= Sub-Canal
+071_Comon_Campo_Delegacion					= Delegación
+071_Comon_Campo_Planta						= Planta
+071_Comon_Campo_Sector						= Sector
+071_Comon_Campo_Divisa						= Divisas
+071_Comon_Campo_Valores						= Valores
+071_Comon_Campo_TipoAbono					= Tipo Abono
+071_Comon_Campo_NumeroExterno				= Número Externo
+071_Comon_Campo_Precinto					= Precinto
+071_Comon_Campo_Codigo						= Código
+071_Comon_Campo_Estado						= Estado
+071_Comon_Grid_TituloColumna_Aciones		= Acciones
+071_Comon_Grid_TituloColumna_Situacion		= Situación
+071_Comon_Boton_Buscar						= Buscar
+071_Comon_Boton_Limpar						= Limpar
+071_Comon_Boton_Aceptar						= Aceptar
+071_Comon_Boton_Cancelar					= Cancelar
+071_Comon_Boton_Visualizar					= Visualizar
+071_Comon_Boton_Editar						= Modificar
+071_Comon_Boton_Eliminar					= Eliminar
+071_Comon_Boton_Voltar						= Voltar
+071_Comon_Titulo_Alert						= Mensaje
+
+071_Comon_Campo_Banco_Saldos	=	Receiver
+071_Abono_Grid_TituloColumna_Cliente_Saldos	=	Sender
+071_Comon_Campo_Cliente_Saldos	=	Sender
+071_Detalle_Campo_Cliente_Saldos	=	Sender
+071_Abono_Grid2_TituloColumna_Cliente_Saldos	=	Sender
+071_Comon_Campo_Banco_Elemento	=	Requester
+071_Abono_Grid_TituloColumna_Cliente_Elemento	=	Customer
+071_Comon_Campo_Cliente_Elemento	=	Customer
+071_Detalle_Campo_Cliente_Elemento	=	Customer
+071_Abono_Grid2_TituloColumna_Cliente_Elemento	=	Customer
+071_Comon_Campo_Banco_Pedido	=	Requester
+071_Abono_Grid_TituloColumna_Cliente_Pedido	=	Requester
+071_Comon_Campo_Cliente_Pedido	=	Requester
+071_Detalle_Campo_Cliente_Pedido	=	Receiver
+071_Abono_Grid2_TituloColumna_Cliente_Pedido	=	Receiver
+
+071_Busqueda_Campo_Banco	=	Requester / Receiver
+071_Busqueda_Campo_Cliente	=	Sender / Customer
+
+// Pantalla Busqueda
+071_Busqueda_Titulo							= Abono
+071_Busqueda_Titulo_Filtro					= Filtro
+071_Busqueda_Titulo_RespuestaConsulta		= Resultado de la consulta
+071_Busqueda_Campo_FechaHoraDesde			= Fecha y Hora Desde
+071_Busqueda_Campo_FechaHoraHasta			= Fecha y Hora Hasta
+071_Busqueda_Campo_Estado					= Estado
+071_Busqueda_Grid_TituloColumna_FechaHora	= Fecha y Hora
+071_Busqueda_Grid_TituloColumna_Banco		= Solicitante
+071_Busqueda_Grid_TituloColumna_Codigo		= Código
+071_Busqueda_Grid_TituloColumna_TipoAbono	= Tipo Abono
+071_Busqueda_Grid_TituloColumna_Estado		= Estado
+071_Busqueda_Boton_VisualizarArchivo		= Visualizar Archivo
+071_Busqueda_Boton_VisualizarReporte		= Visualizar Reporte
+071_Busqueda_Boton_NuevoAbono				= Nuevo Proceso Abono
+071_Busqueda_msg_Archivos_Parciales			= ¿Es una generación parcial, pues ni todos los archivos estan listos para visualización. Desea continuar?
+071_Busqueda_msg_Reportes_Parciales			= ¿Es una generación parcial, pues ni todos los reportes estan listos para visualización. Desea continuar?
+071_Busqueda_msg_Anular_Abono				= ¿Estás seguro en anular el proceso de abono del banco | | empezado en la fecha y hora |?
+071_Busqueda_msg_Anulando_Abono				= Anulando abono
+071_Busqueda_msg_Generando_Reportes			= Generando reportes
+
+// Pantalla Abono
+071_Abono_Titulo							= Abono
+071_Abono_Titulo_TituloDefinicionProceso	= Definición del Proceso
+071_Abono_Titulo_TituloResultadoFiltro		= Filtros
+071_Abono_Titulo_TituloElementosAbonados	= Elementos Abonados
+071_Abono_Titulo_TituloSaldosAbonados		= Saldos Abonadas
+071_Abono_Campo_HacerDocumentoPases			= ¿Finalizar el proceso de abono con un documento de pases?
+071_Abono_Grid_TituloColumna_NumExterno		= Nº Externo
+071_Abono_Grid_TituloColumna_SubCanal		= Sub-Canal
+071_Abono_Grid_TituloColumna_Cliente		= Cliente
+071_Abono_Grid_TituloColumna_Valor			= Valor
+071_Abono_Grid_TituloColumna_Cuenta			= Cuenta
+071_Abono_Grid_TituloColumna_Banco          = Banco
+071_Abono_Boton_Seleccionar					= Seleccionar
+071_Abono_Boton_Eliminar					= Eliminar
+071_Abono_Boton_Grabar						= Grabar
+071_Abono_Boton_Confirmar					= Grabar y Confirmar
+071_Abono_Boton_Finalizar					= Grabar y Finalizar
+071_Abono_Boton_Anular						= Anular
+071_Abono_msg_ValidacaoFiltro				= Al cambiar el campo, el proceso de abono será reiniciado – se perderán todos los abonos creados en el dicho proceso. ¿Estás seguro en continuar?
+071_Abono_msg_ValidacionTerminosIllenos		= Existem Terminos com valores preenchidos, ao desmarcar essa opção todos os terminos serão perdidos. Deseja continuar?
+071_Abono_msg_RetornandoResultadoFiltro		= Por favor, espere un momento mientras el sistema está: Haciendo consulta en la base de datos.
+071_Abono_msg_VinculandoAbono				= Por favor, espere un momento mientras el sistema está: Vinculando el abono seleccionado.
+071_Abono_msg_VinculandoAbonos				= Por favor, espere un momento mientras el sistema está: Vinculando los abonos seleccionados.
+071_Abono_msg_EliminandoAbono				= Por favor, espere un momento mientras el sistema está: Eliminando el abono seleccionado.
+071_Abono_msg_EliminandoAbonos				= Por favor, espere un momento mientras el sistema está: Eliminando los abonos seleccionados.
+071_Abono_msg_GrabandoAbono					= Por favor, espere un momento mientras el sistema está: Grabando el abono.
+071_Abono_msg_GrabadoElAbono				= Proceso de abono grabado con éxito.
+071_Abono_msg_ConfirGrabaryFinalizarAbono	= Al finalizar el proceso de abono no más podrá ser ejecutado ninguno cambio en los abonos creados. ¿Estás seguro que desea finalizar el proceso de abono?
+071_Abono_msg_GrabandoyFinalizandoAbono		= Por favor, espere un momento mientras el sistema está: Grabando y finalizando el abono.
+071_Abono_msg_GrabadoyFinalizadoElAbono		= Proceso de abono finalizado con exito.
+071_Abono_msg_ConfirAnulandoAbono			= Al anular el proceso de abono todos los datos relacionados (abonos) serán borrados de la base de datos. ¿Estás seguro en seguir?
+071_Abono_msg_AnulandoAbono					= Por favor, espere un momento mientras el sistema está: Anulando el abono.
+071_Abono_msg_AnuladoElAbono				= Proceso de abono anulado con exito.
+071_Abono_msg_NoExistenDatosBancarios		= No existen datos bancarios configurados para el cliente (subcliente, punto de servicio) {0} para la divisa {1}. El número externo {2} no podrá ser abonado.
+071_Abono_msg_FaltaConfiguraciónDatosBanc	= Existen elementos que no podrán ser seleccionados debido a falta de configuración de datos bancarios.
+071_Abono_msg_ParametroDocPasesNoEncontrado = Parámetro para documento de pases no encontrado
+071_Abono_msg_FormularioPasesInvalido       = El formulario agrupador de pases entre clientes configurados en el parámetro ‘FormularioPasesProcesoAbono’ no es válido. Para finalizar el proceso de abono será necesario configurarlo correctamente.
+071_Abono_msg_TerminosFormPasesNoConfig		= El formulario ‘{0}’ de código ‘{1}’ configurado en el parámetro ‘FormularioPasesProcesoAbono’ no tiene configurado los términos necesarios para {2}.
+
+// Pantalla Visualizar
+071_Visualizar_Titulo						= Abono
+071_Visualizar_Titulo_DefinicionProceso 	= Definición del Proceso
+071_Visualizar_Titulo_Elementos_Abonados	= Elementos Abonados
+071_Visualizar_Titulo_Saldos_Abonados		= Saldos Abonados
+071_Visualizar_Boton_VisualizarArchivo		= Visualizar Archivo
+071_Visualizar_Boton_VisualizarReporte		= Visualizar Reporte
+071_Visualizar_Boton_GenerarPase			= Finalizar y Generar el Documento de Pases
+071_Visualizar_Boton_VisualizarPase			= Visualizar el Documento de Pases
+071_Visualizar_Grid_TituloColumna_NumExterno= Nº Externo
+071_Visualizar_Grid_TituloColumna_Cliente	= Cliente
+071_Visualizar_Grid_TituloColumna_Cuenta	= Cuenta
+071_Visualizar_Grid_TituloColumna_Documento	= Documento
+071_Visualizar_Grid_TituloColumna_Codigo	= Código
+071_Visualizar_Grid_TituloColumna_Titularid	= Titularidad
+071_Visualizar_Grid_TituloColumna_Obs		= Observaciones
+071_Visualizar_Grid_TituloColumna_Valor		= Valor
+071_Visualizar_msg_ActualizaAutomatico		= * La página se actualiza automáticamente en:
+071_Visualizar_msg_Segundos					= segundos
+071_Visualizar_msg_Error					= Ocorreu un error al generar el reporte: 
+
+// Popup Filtro
+071_Filtro_Titulo							= Filtro
+071_Filtro_Campo_ConsiderarTodosNiveis		= Consider sectors children in search results
+071_Filtro_Campo_SolamenteUnDatoBancario	= Exhibir clientes con solamente un dato bancario (cuenta)
+071_Filtro_Campo_ValoresCeroYNegativos		= Show values of zero and negative
+
+// Popup Detalle
+071_Detalle_Titulo							= Abono: Detalle
+071_Detalle_Titulo_CuentaValoresAbonos		= Cuenta y Valores Abonados
+071_Detalle_Titulo_Abonos					= Abonos
+071_Detalle_Campo_Divisa					= Divisa
+071_Detalle_Campo_NumExterno				= Número Externo
+071_Detalle_Campo_Cliente					= Cliente
+071_Detalle_Campo_Cuenta					= Cuenta
+071_Detalle_Campo_Documento					= Documento
+071_Detalle_Campo_Titularidad				= Titularidad
+071_Detalle_Campo_Codigo					= Código
+071_Detalle_Campo_Observaciones				= Observaciones
+071_Detalle_Campo_ValorTotal				= Valor Total Informado
+071_Detalle_Campo_Disponible				= Disponible:
+071_Detalle_Campo_Valor						= Valor Informado:
+071_Detalle_Campo_TotalEfectivo				= Total Efectivo
+071_Detalle_Campo_TotalOtroValor			= Total Otro Valor
+071_Detalle_Campo_TotalCheque				= Total Cheque
+071_Detalle_Campo_TotalTarjeta				= Total Tarjeta
+071_Detalle_Campo_TotalTicket				= Total Ticket
+071_Detalle_Boton_Confirmar					= Confirmar
+071_Detalle_Boton_OtraCuenta				= Informar Otra Cuenta
+071_Detalle_Boton_Cancelar					= Cancelar
+071_Detalle_Grid_TituloColumna_Denominacion	= Denominación
+071_Detalle_Grid_TituloColumna_BilleteMoneda= Billete/Moneda
+071_Detalle_Grid_TituloColumna_Disp_Cantidad= Cantidad Disponible
+071_Detalle_Grid_TituloColumna_Disp_Valor	= Valor Disponible
+071_Detalle_Grid_TituloColumna_Inf_Cantidad	= Cantidad Informada
+071_Detalle_Grid_TituloColumna_Inf_Valor	= Valor Informado
+071_Detalle_Grid_TituloColumna_Tipo_MedioPago= Tipo Medio Pago
+071_Detalle_Grid_TituloColumna_MedioPago	= Medio Pago
+071_Detalle_Grid_TituloColumna_Cuenta		= Cuenta
+071_Detalle_Grid_TituloColumna_Banco		= Banco
+071_Detalle_Grid_TituloColumna_Documento	= Documento
+071_Detalle_Grid_TituloColumna_Titularidad	= Titularidad
+071_Detalle_Grid_TituloColumna_Codigo		= Código
+071_Detalle_Grid_TituloColumna_Observaciones= Observaciones
+071_Detalle_Grid_TituloColumna_Valor		= Valor
+071_Detalle_Grid_TituloColumna_Acciones		= Acciones
+071_Detalle_Grid_TituloColumna_TotalDisponible = Total Avaiable
+071_Detalle_Grid_TituloColumna_TotalInformado = Total Set
+071_Detalle_msg_AbonoSinInformarValor		= No se puede registrar un abono sin informar un valor.
+071_Detalle_msg_NingunDivisaConValorDisp	= Ninguna divisa con valor disponible.
+071_Detalle_msg_ConfirmarExcluirAbonoEle	= ¿Estás seguro en eliminar el abono elemento?
+071_Detalle_msg_DivisasConValoresDisp		= Existen divisas con valores disponibles para abonar.
+071_Detalle_msg_DivisasConLaMismaCuenta		= Existe divisa abonada para con la misma cuenta: 
+071_Detalle_msg_ListaCuentasOCuentaVacia	= Existe abonos sem contas vinculdas.
+
+// Popup Busqueda Avanzada
+071_BusquedaAvanzada_Titulo					= Busca de 
+071_BusquedaAvanzada_Campo_Codigo			= Código
+071_BusquedaAvanzada_Campo_Descripcion		= Descripción
+071_BusquedaAvanzada_Titulo_Filtro			= Critérios de busca
+071_BusquedaAvanzada_Titulo_Respuesta		= Resultado de la consulta
+071_Comon_Campo_First						= Primera
+071_Comon_Campo_Last						= Ultima
+
+//Popup Cadastro Datos Bancarios
+071_CadastroDatosBancarios_Banco			=  Banco
+071_CadastroDatosBancarios_Tipo				= Tipo
+071_CadastroDatosBancarios_Cuenta			= Cuenta 
+071_CadastroDatosBancarios_Documento		= Documento
+071_CadastroDatosBancarios_Titularidad		= Titularidad 
+071_CadastroDatosBancarios_Observaciones	= Observacíones 
+071_CadastroDatosBancarios_CuentaPatron		= Cuenta Patrón
+071_CadastroDatosBancarios_Titulo			= Datos Bancarios
+071_CadastroDatosBancarios_BotonAceptar		= Aceptar  
+071_CadastroDatosBancarios_BotonCancelar	= Cancelar
+071_BusquedaAvanzada_Acumular_Valores_Hijos = Acumular valores de sectores hijos en sectores padres
+
+// Pantalla Clasificacion
+072_msg_valoresInsuficienteEfectivos		= Insufficient values for currencies:
+072_msg_valoresInsuficientesMediosPago		= Insufficient values for the means of payment: 
+072_msg_sinValores							= They were not informed values.
+072_elegirsaldo								= Select balance change
+072_saldomodificado							= Modified balance
+072_diferenciaefectivo						= There are differences for foreign exchange:
+072_diferenciamediopago						= There are differences in the means of payment: 
+072_cuentasinsaldo							= No account balance for informed.
+
+//Popup Generacion Documento Pases
+071_GeneracionDocPases_Titulo				= Generación del Documento de Pases
+071_GeneracionDocPases_Informacion			= Informe abajo los datos de sector y canal / subcanal para la generación de documento de pases:
+071_GeneracionDocPases_BusquedaSetor		= Sector
+071_GeneracionDocPases_BusquedaCanal		= Canal	
+071_GeneracionDocPases_BusquedaSubCanal		= Subcanal
+071_GeneracionDocPases_BotonAceptar			= Aceptar  
+071_GeneracionDocPases_BotonCancelar		= Cancelar
+
+073_Menu = Contenedores Pack Modular Vencidos
+//CONTROLE TIPOCONTENEDOR
+073_TipoContenedor_Titulo								= Tipo Contenedor
+073_TipoContenedor_Popup_Titulo							= Seach for Tipo Contenedor
+073_TipoContenedor_Popup_Resultado						= Tipo Contenedor data
+073_TipoContenedor_Popup_Filtro							= Search criteria
+
+// ucCentralNotificaciones.ascx
+073_lblTbLeida								= Read
+073_lblTbNoLeida							= Unread
+073_lblActualizacionAut						= Automatic update in
+073_lblSegundos								= seconds
+073_lblDesde								= Since:
+073_lblHasta								= Until:
+073_btnBuscar								= Search
+073_btnBuscarNoLeida						= Search
+073_btnMarcarLeida							= Mark as read
+073_btnMarcarNoLeida						= Mark as unread
+073_privadonoprivado						= Private/Not Private
+073_privado									= Private
+073_noPrivado								= Not Private
+073_colNotificaciones						= Notifications
+073_colLeida								= Read
+073_colCreacion								= Created
+073_msg_leida								= {0} in{1}
+073_msg_confirma_accion						= Running this action this notice will be considered as read and as NOT private will appear as read to other users. You are certain of this action?
+073_msg_erro_accion							= It was not possible to execute the action because the data related to the notification are inconsistent
+073_msg_erro_accion1						= It was not possible to execute the action. This version of Genesis is not ready for execution
+
+// POPUP CONVERTER CERTIFICADO
+073_btnConvertirRelacionado					= Convert Certificate Related
+073_lblConvertirCertificado					= Convert Certificate
+073_lblCertificadosSelecionados				= Selected Certificates for Conversion
+073_btnConverter							= Convert
+073_btnCancelar								= Cancel
+073_grid_fyhcertificado						= Date and Time Certificate
+073_grid_cliente							= Client
+073_grid_codigo								= Code
+073_grid_de_tipo							= Of the kind
+073_grid_para_tipo							= For Type
+073_estado_certificado_PC					= Convert Provisional Lockable
+073_estado_certificado_PS					= Convert Provisional without closure
+073_estado_certificado_DE					= Convert Definitivo
+073_lbl_certificado_nao_selecionado			= To convert a certificate is required to select at least one certification report.
+073_lbl_cerificao_converitr_nao_selecionado = To make the conversion, enter a certificate at least.
+073_lbl_convertendo							= Becoming the certificate <b>{0}</b> Client <b>{1}</b> <b>{2}</b>. Total [3] [4].
+
+//REPORT SEGUIMIENTO DEL ELEMENTO
+074_Menu									= Element Tracking
+074_Cabecera								= Reports > Element Tracking
+074_lblSubTitulo							= Element Tracking
+074_lblFiltros								= Filters - Element Tracking
+074_TituloPrecintoDelElemento               = Element Seal
+074_CabeceraGridPrecintos					= Seals
+074_CabeceraGridPrecinto					= Seal
+074_CabeceraGridFechaHoraArmado				= Date/Hour Chained
+074_CabeceraGridState						= State
+074_CabeceraGridAgrupaElementos				= Group Elements?
+074_CabeceraGridCuentas						= Accounts
+074_CabeceraGridCuenta						= Account
+074_CabeceraCodigoExterno					= External Code
+074_CabeceraGridFechaHoraCreacion		    = Date/Hour Creation
+074_CabeceraGridFechaHoraTransport		    = Date/Hour Transport
+074_CabeceraGridTipoServicio			    = Service Type
+074_LblConsultaContenedor					= Containers list - Search Sesults
+074_LblConsultaRemesa						= Consigment list - Search Sesults
+074_LblConsultaBulto						= Package list - Search Sesults
+
+074_msg_Obrigatorio_Selecionar_Uno_Registro     = Select one register to render report
+074_msg_campo_precinto_Del_Elemento_Obrigatorio = Element Seal is a mandatory field
+
+//REPORT CONTENEDORES
+075_Menu									= Containers
+075_Cabecera								= Reports > Containers
+075_lblSubTitulo							= Containers
+075_lblFechaArmadoDesde						= Date/Hour Armed Since
+075_lblFechaArmadoHasta						= Date/Hour Armed To
+075_lbl_Precinto							= Seal
+075_TituloUcDiscriminarPor					= Discriminate for
+075_TextChkNoConsiderarHijos				= Do not consider son sectors
+075_TextchkContenedoresPackModular			= Modular Pack Container
+075_OpcionDiscriminadoPorSector 			= Sector
+075_OpcionDiscriminadoPorSectorClienteYCanal= Sector, client e channel
+075_msg_campoArmadoDesdeObrigatorio			= Field Armed Since Mandatory
+075_msg_campoArmadohHastaObrigatorio		= Field Armed To Mandatory
+
+//EstadoContenedor
+EstadoContenedor							= Container State
+Nuevo										= New
+Pendiente									= Pending
+Procesado									= Processed
+Anulado										= Canceled
+Armado										= Chained
+EnTransito									= In Transit
+Desarmado									= Unchained
+NoDefinido									= No Defined
+
+//REPORT CLIENTE X CONTENEDORES
+076_Menu									= Client x Containers
+076_Cabecera								= Reports > Client x Containers
+076_lblSubTitulo							= Client x Containers
+076_lblFechaArmadoDesde						= Date/Hour Armado Desde
+076_lblFechaArmadoHasta						= Date/Hour Armado Até
+076_lbl_Precinto							= Seal
+076_TituloUcDiscriminarPor					= Discriminate for
+076_TextChkNoConsiderarHijos				= Do not consider son sectors
+076_TextchkContenedoresPackModular			= Modular Pack Container
+076_OpcionDiscriminadoPorSector 			= Sector
+076_OpcionDiscriminadoPorSectorClienteYCanal= Sector, client e channel
+
+//REPORT INVENTARIO CONTENEDORES
+077_Menu									= Containers Inventory
+077_SubMenuGenerar							= Create Inventory
+077_SubMenuConsultar						= Search Inventory
+077_CabeceraConsultar						= Reports > Search Inventory
+077_CabeceraGenerar							= Reports > Create Inventory
+077_lblSubTituloGenerar						= Create Inventory
+077_lblSubTituloConsultar					= Search Inventory
+077_lblFechaInventarioDesde					= Date/Hour Inventored Since
+077_lblFechaInventarioHasta					= Date/Hour Inventored To
+077_lbl_CodigoInventario					= Inventory Code
+077_TituloUcDiscriminarPor					= Discriminate for
+077_TextChkNoConsiderarHijos				= Do not consider son sectors
+077_lblResultadoBusqueda					= Search Results
+077_OpcionDiscriminadoPorSector 			= Sector
+077_OpcionDiscriminadoPorSectorClienteYCanal= Sector, client e channel
+077_HeaderSector							= Sector
+077_HeaderCliente							= Client
+077_HeaderCodigoInventario				    = Inventory code
+077_HeaderFechaHoraInvetario				= Date/Time Inventory
+077_HeaderCantiContTeóricos					= Quantity Containers
+077_HeaderCantiContInventariados			= Quantity Containers Inventoried
+077_HeaderDiferencia						= Diff
+
+//CONTENEDORES A VENCER VENCIDOS
+078_Menu									= Containers Modular Pack to due/dued
+078_FechaVencimentoDesde					= Due Date Since
+078_FechaVencimentoHasta					= Due Date To
+078_Cabecera								= Reports > Containers Modular Pack to due/dued
+078_lblSubTitulo							= Containers to due/dued
+
+//InformacionGenesis
+InformacionGenesis_grid_FileName = Descripción
+InformacionGenesis_grid_FileVersion = Versión del Archivo
+InformacionGenesis_grid_ProductVersion = Versión del Producto
+
+//InformacionNuevoSaldos
+InformacionNuevoSaldos_Titulo = Información de Nuevo Saldos {0}
+InformacionNuevoSaldos_btnExportar = Exportar informaciones
+
+//Transações
+079_menu										= Transactions
+079_lblTitulo									= Transactions
+079_lblSubTitulo								= Transactions
+079_delegacion									= Delegation
+079_planta										= Plant
+079_fecha_transaccion							= Date Transactions
+079_fecha_creacion								= Date Creation
+079_fecha_credito								= Date Credit
+079_modalidad									= Modality
+079_transaccion									= Type of Transaction
+079_ddl_seleccione                              = Select
+079_tituloFecha									= Dates
+079_todos										= All
+079_deposito									= Deposit
+079_coleccion									= Collect
+079_contar										= Contar
+079_credito                                     = Crédito
+
+//CONTROLE MAQUINA
+077_Maquina_Titulo								= Máquina / Sector
+077_Maquina_Popup_Titulo						= Búsqueda de Máquina / Sector
+077_Maquina_Popup_Resultado						= Datos de la Máquina / Sector
+077_Maquina_Popup_Filtro						= Criterios de busqueda
+
+
+
+//CONTROLE Planificacion
+021_Planificacion_Titulo								= Planning
+021_Planificacion_Popup_Titulo							= Planning Search
+021_Planificacion_Popup_Resultado						= Planning Data
+021_Planificacion_Popup_Filtro							= Search criteria
+
+//CONTROLE Banco Tesoreria
+022_BancoTesoreria_Titulo						= Banco Tesoreria
+022_BancoTesoreria_Popup_Titulo					= Búsqueda de Banco Tesoreria
+022_BancoTesoreria_Popup_Resultado				= Datos de la Banco Tesoreria
+022_BancoTesoreria_Popup_Filtro					= Criterios de busqueda
+
+//CONTROLE Cuenta Tesoreria
+023_CuentaTesoreria_Titulo								= Cuenta Tesoreria
+023_CuentaTesoreria_Popup_Titulo						= Búsqueda de Cuenta Tesoreria
+023_CuentaTesoreria_Popup_Resultado						= Datos de la Cuenta Tesoreria
+023_CuentaTesoreria_Popup_Filtro						= Criterios de busqueda
+
+//CONTROLE MAQUINA
+075_Maquina_Titulo								= Máquina
+075_Maquina_Popup_Titulo						= Búsqueda de Máquina
+075_Maquina_Popup_Resultado						= Datos de la Máquina
+075_Maquina_Popup_Filtro						= Criterios de busqueda
+
+//CONTROLE CAMPO EXTRA (TERMINO)
+080_CampoExtra_Titulo = Extra Field
+080_CampoExtra_Popup_Titulo = Extra Field Search
+080_CampoExtra_Popup_Resultado = Extra Field Data
+080_CampoExtra_Popup_Filtro = Search criteria
+
+081_BusquedaIntegracion_Titulo					= Pending Movements integration screen

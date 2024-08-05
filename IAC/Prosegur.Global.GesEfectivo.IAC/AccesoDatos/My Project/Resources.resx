@@ -1,0 +1,1795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ActualizarDenominacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Denominacion\ActualizarDenominacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\ActualizarDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\ActualizarSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canal\AltaCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaDenominacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Denominacion\AltaDenominacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\AltaDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\AltaSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canal\BajaCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaDenominacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Denominacion\BajaDenominacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\BajaDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\BajaSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canal\BuscaOidCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaTodosSubCanales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\BuscaTodosSubCanales.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CanalVerificaProcesoVigente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canal\CanalVerificaProcesoVigente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetCanales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canal\GetCanales.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\GetDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetProductos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Producto\GetProductos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetSubCanalesByCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\GetSubCanalesByCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SubCanalVerificaProcessoVigente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\SubCanalVerificaProcessoVigente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarCodigoDenominacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Denominacion\VerificarCodigoDenominacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\VerificarCodigoDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\VerificarCodigoSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarDescripcionCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canal\VerificarDescripcionCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarDescripcionDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\VerificarDescripcionDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarDescripcionSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\VerificarDescripcionSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarEntidadesVigentesComDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\VerificarEntidadesVigentesComDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InserirLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Log\InserirLog.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetTiposProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\GetTiposProcesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaTiposProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\BajaTiposProcesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarCodigoAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\VerificarCodigoAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaTiposProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\AltaTiposProcesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarTipoProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\ActualizarTiposProcesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarDescripcionAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\VerificarDescripcionAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaOidTipoProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\BuscaOidTipoProcesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\AltaAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarDescripcionTipoProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\VerificarDescripcionTipoProcesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="getAgrupacionesDetailObterAgrupaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\getAgrupacionesDetailObterAgrupaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetDenominacionesByDivisaObterDenominacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Denominacion\GetDenominacionesByDivisaObterDenominacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetDenominacionesByDivisaObterDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Denominacion\GetDenominacionesByDivisaObterDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getAgrupacionesDetailObterDivisasPorAgrupaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\getAgrupacionesDetailObterDivisasPorAgrupaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaDivisaPorAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaPorAgrupacion\AltaDivisaPorAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canal\ActualizarCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterOidMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MedioPago\ObterOidMedioPago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaMedioPagoPorAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MedioPagoPorAgrupacion\AltaMedioPagoPorAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\ActualizarAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\ObterOidAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BorrarDivisasPorAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaPorAgrupacion\BorrarDivisasPorAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BorrarMedioPagoPorAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MedioPagoPorAgrupacion\BorrarMedioPagoPorAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\getAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaBajaAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\AltaBajaAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarEntidadesVigentesComAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\VerificarEntidadesVigentesComAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\getIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetIacDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\GetIacDetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\BajaIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="IacVerficarSePossuiProcessoVigente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\IacVerficarSePossuiProcessoVigente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\AltaIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaTerminoPorIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoIac\AltaTerminoPorIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoIac\BuscaOidTermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\ActualizarIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarTerminoIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoIac\ActualizarTerminoIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\BuscaOidIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaTodosTerminosIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoIac\BuscaTodosTerminosIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarDescripcionIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\VerificarDescripcionIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterOidDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\ObterOidDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\gettermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetTerminoDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\getterminodetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetValoresPosibles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValorPosible\GetValoresPosibles.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarOidCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cliente\BuscarOidCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaValoresPosibles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValorPosible\AltaValoresPosibles.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaValoresPosibles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValorPosible\BajaValoresPosibles.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\bajatermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\altatermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\verificarcodigotermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarDescripcionTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\verificardescripciontermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarEntidadesVigentesComTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\verificarentidadesvigentescomtermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\actualizartermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaTerminoPorIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoIac\BajaTerminoPorIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\getmediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidAlgoritmo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\algoritmo\obteroidalgoritmo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidFormato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formato\obteroidformato.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidMascara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mascara\obteroidmascara.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cliente\BajaCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCliente\BajaSubCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\BajaPuntoServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cliente\AltaCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCliente\AltaSubCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\AltaPuntoServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaTodosPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\BuscaTodosPuntoServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\bajamediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaSubClienteNivelSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCliente\BajaSubClienteNivelSubCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;iso-8859-1</value>
+  </data>
+  <data name="BuscarOidSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCliente\BuscarOidSubCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminomediopago\bajaterminomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaValorTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\valorterminomediopago\bajavalorterminomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminomediopago\obteroidterminomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cliente\ActualizarCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarCodigoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\verificarcodigomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\verificarcodigoterminomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCliente\ActualizarSubCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaPuntoServicioNivelPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\BajaPuntoServicioNivelPuntoServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\altamediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminomediopago\altaterminomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaValorTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\valorterminomediopago\altavalorterminomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\ActualizarPuntoServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\actualizarmediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaTodosTerminos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminomediopago\buscatodosterminos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarEntidadesVigentesComMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\verificarentidadesvigentescommediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminomediopago\actualizarterminomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarValorTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\valorterminomediopago\actualizarvalorterminomediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaPuntoServicioNivelSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\bajapuntoservicionivelsubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaTodosValoresTerminos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\valorterminomediopago\buscatodosvaloresterminos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetMedioPagoDetailObterMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\getmediopagodetailobtermediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaTerminoMedioPagoPorMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminomediopago\bajaterminomediopagopormediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaValorTerminoMedioPagoPorMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\valorterminomediopago\bajavalorterminomediopagopormediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTerminoMedioPagoIntegracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\buscaterminomediopagointegracion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaValorTerminoIntegracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\buscavalorterminointegracion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\GetProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoBuscaMaquinasProducto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maquina\GetProcesoBuscaMaquinasProducto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoBuscaIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IAC\GetProcesoBuscaIac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoBuscaValorTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValorPosible\GetProcesoBuscaValorTermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoBuscaAgrupaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\GetProcesoBuscaAgrupaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoBuscaDivisaAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaPorAgrupacion\GetProcesoBuscaDivisaAgrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterTodasDenominacionesDaDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Denominacion\ObterTodasDenominacionesDaDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetProcesoBuscaTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoMedioPago\GetProcesoBuscaTerminoMedioPago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoBuscaValorTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValorTerminoMedioPago\GetProcesoBuscaValorTerminoMedioPago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoBuscaDivisaEfectivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\GetProcesoBuscaDivisaEfectivo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterTerminoPorOidMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoMedioPago\ObterTerminoPorOidMedioPago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterValorTerminoPorOidTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValorTerminoMedioPago\ObterValorTerminoPorOidTermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboSubClientesByCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCliente\GetComboSubClientesByCliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboPuntosServiciosByClienteSubcliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\GetComboPuntosServiciosByClienteSubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboCanales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canal\GetComboCanales.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboSubCanalByCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\GetComboSubCanalByCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboProductos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Producto\GetComboProductos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterTodasDelegaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\ObterTodasDelegaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidValorTermino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValorPosible\ObterOidValorTermino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetProcesoByProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\GetProcesoByProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\GetProcesoDetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaDivisaPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaPorProceso\BuscaDivisaPorProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaTerminoMedioPagoProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoMedioPago\BuscaTerminoMedioPagoProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaAgrupacionProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgrupacionPorProceso\BuscaAgrupacionProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboModalidadesRecuento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\GetComboModalidadesRecuento.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboInformacionAdicional" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iac\GetComboInformacionAdicional.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetListaAgrupaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agrupacion\GetListaAgrupaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="getComboAlgoritmos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Algoritmo\getComboAlgoritmos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboClientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cliente\GetComboClientes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboDivisas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\getComboDivisas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboDivisasByTipoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Divisa\getComboDivisasByTipoMedioPago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboFormatos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Formato\getComboFormatos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboMaquinas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maquina\getComboMaquinas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="getComboMascaras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mascara\getComboMascaras.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboMediosPagoByTipoAndDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MedioPago\getComboMediosPagoByTipoAndDivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboTerminosIAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoIac\getComboTerminosIAC.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaProcesoExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\VerificaProcesoExiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarProcesoParaVigente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\ActualizarProcesoParaVigente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaProcesoPorClienteSubClientePtoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\BuscaProcesoPorClienteSubClientePtoServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizaProcesoPorPServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorPuntoServicio\ActualizaProcesoPorPServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaProcesoPorPServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorPuntoServicio\AltaProcesoPorPServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\BuscaOidPuntoServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\AltaProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaMedioPagoPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MedioPagoPorProceso\AltaMedioPagoPorProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscarOidMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MedioPago\BuscarOidMedioPago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaAgrupacionPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgrupacionPorProceso\AltaAgrupacionPorProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaDivisaProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivisaPorProceso\AltaDivisaProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaListaA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorPuntoServicio\BuscaListaA.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaProcesoSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorSubCanal\BajaProcesoSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaMedioPagoProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoMedioPago\BajaTerminoMedioPagoPorProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaProcesoPservicioPorSubCanalVigente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorPuntoServicio\BajaProcesoPservicioPorSubCanalVigente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificaReferenciaProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorSubCanal\VerificaReferenciaProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizaReferenciaProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorSubCanal\ActualizaReferenciaProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaFisicaTerminoMedioPagoPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoMedioPago\BajaFisicaTerminoMedioPagoPorProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaTerminoMedioPagoPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoMedioPago\AltaTerminoMedioPagoPorProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaProcesoSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorSubCanal\AltaProcesoSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCanal\BuscaOidSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Actualizar_ProcessoPorSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorSubCanal\ActualizarProcessoPorSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajaProcesoPorSubCanal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorSubCanal\BajaProcesoPorSubCanal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidProcesoPServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorPuntoServicio\BuscaOidProcesoPServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarProcesoPorPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorPuntoServicio\ActualizarProcesoPorPuntoServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidProducto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Producto\BuscaOidProducto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajarTerminoMedioPagoPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoMedioPago\BajarTerminoMedioPagoPorProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\BuscaOidProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidTProcesoPServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProcesoPorPuntoServicio\BuscaOidTProcesoPServicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaOidTerminoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerminoMedioPago\BuscaOidTerminoMedioPago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\proceso\getprocesos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetProductoPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\producto\getproductoporproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetTipoProcesadoPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposprocesado\gettipoprocesadoporproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaAgrupacionesPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\agrupacionporproceso\buscaagrupacionesporproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetDivisaPorAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\divisa\getdivisaporagrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaMedioPagoEfectivoPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopagoporproceso\buscamediopagoefectivoporproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaProcesoPuntoServicioPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\procesoporpuntoservicio\buscaprocesopuntoservicioporproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarTerminoPorIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\buscarterminoporiac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetSubcanalesPorProcesoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcanal\getsubcanalesporprocesoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaMedioPagoProcesoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopagoporproceso\buscamediopagoprocesoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarTipoProcesadoReferenciaProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\VerificarTipoProcesadoReferenciaProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;iso-8859-1</value>
+  </data>
+  <data name="GetCaracteristicaTipoProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\caracteristica\getcaracteristicatipoprocesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoCaracteristica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caracteristica\VerificarCodigoCaracteristica.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoConteoCaracteristica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caracteristica\VerificarCodigoConteoCaracteristica.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarDescripcionCaracteristica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caracteristica\VerificarDescripcionCaracteristica.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboCaracteristicas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caracteristica\GetComboCaracteristicas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaCaracteristica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caracteristica\AltaCaracteristica.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetCaracteristica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caracteristica\GetCaracteristica.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaCaracteristicaEmUso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caracteristica\VerificaCaracteristicaEmUso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaCaracteristicasPorTipoProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\BajaCaracteristicasPorTipoProcesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaCaracteristicasPorTipoProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TiposProcesado\AltaCaracteristicasPorTipoProcesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaCaracteristicaPorTipoProcesado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\caracteristica\buscacaracteristicaportipoprocesado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaCaracteristicaSendoUsuada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\caracteristica\verificacaracteristicasendousuada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaDivisaPorAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\divisaporagrupacion\buscadivisaporagrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaDivisaAgrupSendoUsuada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\divisaporagrupacion\verificadivisaagrupsendousuada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizaDivisaAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\divisaporagrupacion\actualizadivisaagrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="verificaMedioPagoSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopagoporagrupacion\verificamediopagosendousado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizaMedioPagoAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopagoporagrupacion\actualizamediopagoagrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTerminoIacbyOidIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\buscaterminoiacbyoidiac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarTerminoIacSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\verificarterminoiacsendousado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UpdateTerminoPorIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\updateterminoporiac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetClientesSubClientesPuntoServicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\getclientessubclientespuntoservicios.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarClienteExportado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\actualizarclienteexportado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarPuntoServicioExportado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\actualizarpuntoservicioexportado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarSubClienteExportado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\actualizarsubclienteexportado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarTodosOidsSubClientesByOidCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\buscartodosoidssubclientesbyoidcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaPuntoServicioByOidSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\bajapuntoserviciobyoidsubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="getComboTiposMediosPagoByDivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipomediopago\getcombotiposmediospagobydivisa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetDivisaMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\divisa\getdivisamediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getAgrupacionesDetailObterTipoMPeMP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\getagrupacionesdetailobtertipompemp.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetMediosPagoIntegracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\getmediospagointegracion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoBuscaMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\getprocesobuscamediopago.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetMedioPagoPorAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopagoporagrupacion\getmediopagoporagrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetProcesoBuscaMedioPagoAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopagoporagrupacion\getprocesobuscamediopagoagrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaMedioPagoPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopagoporproceso\buscamediopagoporproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetDatosProcesoDefecto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\proceso\getdatosprocesodefecto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetDatosSubCanalDefecto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcanal\getdatossubcanaldefecto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarSeHayDenominacionConElCodigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\denominacion\verificarsehaydenominacionconelcodigo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarSeHayMediosPagosConElCodigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\verificarsehaymediospagosconelcodigo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RetornarValoresTerminoPorIac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\terminoiac\retornarvaloresterminoporiac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetMorfologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\getmorfologia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetMorfologiaDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\getmorfologiadetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertarMorfologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\insertarmorfologia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertarMorfologiaXComp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\insertarmorfologiaxcomp.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertarComponenteXObj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\insertarcomponentexobj.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BorrarMorfologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\borrarmorfologia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetMorfologiaFyhActualizacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\getmorfologiafyhactualizacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarMorfologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\actualizarmorfologia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BorrarMorfolXComp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\borrarmorfolxcomp.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarMorfologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\verificarmorfologia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObtenerOidDenominacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\denominacion\obteneroiddenominacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertarCajeroXMorfologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajeropormorfologia\insertarcajeroxmorfologia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetATMFuhActualizacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\getatmfuhactualizacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EliminarATM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\eliminaratm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetATMDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\getatmdetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetATMs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\getatms.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertarATM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\insertaratm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarATM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\actualizaratm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EliminarMorfologias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajeropormorfologia\eliminarmorfologias.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboModeloCajero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modelocajero\getcombomodelocajero.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboRedes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\red\getcomboredes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="getGrupos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupo\getgrupos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getGruposSemCajero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupo\getgrupossemcajero.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarGrupo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupo\verificargrupo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getATMsByGrupo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupo\getatmsbygrupo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertGrupo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupo\insertgrupo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetProcesoDetailByOid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\proceso\getprocesodetailbyoid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcesoPorDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\proceso\getprocesopordelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboPuntosServiciosByClienteSubclienteATM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\getcombopuntosserviciosbyclientesubclienteatm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetATMsByRegistrarTira" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cajero\GetATMsByRegistrarTira.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetATMByFiliacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cajero\GetATMByFiliacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetMorfologiaByIdAtm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\getmorfologiabyidatm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComponentesByIdMorfologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\getcomponentesbyidmorfologia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetObjetosByIdComponente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\morfologia\getobjetosbyidcomponente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarDesCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\buscardescliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarATM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\recuperaratm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboNiveles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nivel\GetComboNiveles.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboPlantas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planta\GetComboPlantas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboAplicaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aplicacion\GetComboAplicaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetPuestos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Puesto\GetPuestos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaPuesto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Puesto\AltaPuesto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificarPuestoExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Puesto\VerificarPuestoExiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetParametros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\getparametros.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarPuestoExisteByAplicacionPuestoPlantaYHost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puesto\verificarpuestoexistebyaplicacionpuestoplantayhost.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterOIDPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\obteroidplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetParametroDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\getparametrodetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetParametroOpciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\getparametroopciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOIDAplicacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\aplicacion\obteroidaplicacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOIDAgrupacionParametro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\agrupacionparametro\obteroidagrupacionparametro.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetParametroOpciones1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\getparametroopciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ValidarParametroExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\validarparametroexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ValidarParametroPermiso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\validarparametropermiso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetAgrupaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\agrupacionparametro\getagrupaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetAgrupacionDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\agrupacionparametro\getagrupaciondetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BajarAgrupacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\agrupacionparametro\bajaragrupacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ValidarAgrupacionConParametroAsociado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\agrupacionparametro\validaragrupacionconparametroasociado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetPuestoDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puesto\getpuestodetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarPuesto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puesto\actualizarpuesto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterOIDPuesto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puesto\obteroidpuesto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterOIDNivel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\nivel\obteroidnivel.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaAgrupacionParametro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\agrupacionparametro\altaagrupacionparametro.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObterOIDDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obteroiddelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarParametroValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrovalue\actualizarparametrovalue.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaParametroValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrovalue\altaparametrovalue.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetParametrosValues" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrovalue\getparametrosvalues.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListarOIDParametrosValues" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrovalue\listaroidparametrosvalues.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListarOIDParametrosValues2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrovalue\listaroidparametrosvalues2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarPuestoExistePorCodPuestoYCodHost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puesto\verificarpuestoexisteporcodpuestoycodhost.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterDatosDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obterdatosdelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InserirPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\inserirplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidPlantaPorOidDelegacionYCodPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\obteroidplantaporoiddelegacionycodplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InserirPuesto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puesto\inserirpuesto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarOidYNivelParametro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\recuperaroidynivelparametro.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOIDDelegacionyCodigoPais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obteroiddelegacionycodigopais.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetParametrosAplicacionPuesto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\getparametrosaplicacionpuesto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarValorParametroExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrovalue\verificarvalorparametroexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InserirParametroValor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrovalue\inserirparametrovalor.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarTodosParametros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\recuperartodosparametros.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarOidDelegacionYCodPais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\recuperaroiddelegacionycodpais.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarValorParametros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrovalue\recuperarvalorparametros.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperaValoresPosiblesPorNivel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValorPosible\RecuperaValoresPosiblesPorNivel.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaDivisaPorProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\divisaporproceso\bajadivisaporproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaProcesoSubCanalPorProcesoPServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\procesoporsubcanal\buscaprocesosubcanalporprocesopservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoParametroOpcion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametroopcion\verificarcodigoparametroopcion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarParametroOpcion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametroopcion\actualizarparametroopcion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaParametroOpcion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametroopcion\altaparametroopcion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaParametroOpcion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametroopcion\bajaparametroopcion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidParametroOpcion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametroopcion\obteroidparametroopcion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidParametro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\obteroidparametro.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterDatosDelegacionPorPais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obterdatosdelegacionporpais.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarDescricaoParametroOpcion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametroopcion\verificardescricaoparametroopcion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterCodigoDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obtercodigodelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetGruposCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocliente\getgruposcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetGrupoClienteDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocliente\getgrupoclientedetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarGrupoCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocliente\verificargrupocliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaGrupoCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocliente\altagrupocliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaGrupoClienteDetalle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocliente\altagrupoclientedetalle.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarGrupoCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocliente\actualizargrupocliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetOidGrupoCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocliente\getoidgrupocliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BorrarGrupoClienteDetalle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocliente\borrargrupoclientedetalle.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboPuntosServiciosByClientesSubclientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\getcombopuntosserviciosbyclientessubclientes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\buscadelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\altadelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\atualizadelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaCodigoDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\verificacodigodelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaPais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pais\buscapais.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaDelegacionPais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\buscadelegacionpais.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Actualizacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\actualizacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\altaplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\buscaplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\bajaplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaExistenciaPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\verificaexistenciaplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterDadosPlantas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\obterdadosplantas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaCodigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\verificacodigo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboDelegaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\getcombodelegaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboDelegaciones1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\getcombodelegaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BucaTipoSetor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\bucatiposetor.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboCaract" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\getcombocaract.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaTipoSetor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\altatiposetor.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaCaracteristicaTipoSetor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\altacaracteristicatiposetor.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getCaractNoPertenecTipoSector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\getcaractnopertenectiposector.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaCaracteristicasPorTipoSetor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\altacaracteristicasportiposetor.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaCaracteristicaTipoSetor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\bajacaracteristicatiposetor.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaSector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\atualizasector.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaSector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\altasector.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaCentroProcesso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\verificacentroprocesso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getSetorDetail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\getsetordetail.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTiposClientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipocliente\buscatiposclientes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertTipoClientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipocliente\inserttipoclientes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTipoPuntoSerivicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipopuntoservicio\buscatipopuntoserivicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertTipoPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipopuntoservicio\inserttipopuntoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTipoSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposubcliente\buscatiposubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="insertTipoSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposubcliente\inserttiposubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetCodigoAjeno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CodigoAjeno\GetCodigoAjeno.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetCodigoAjenoEntidade" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CodigoAjeno\GetCodigoAjenoEntidade.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SetCodigoAjenoInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CodigoAjeno\SetCodigoAjenoInsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SetCodigoAjenoUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CodigoAjeno\SetCodigoAjenoUpdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AtualizaDireccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\direccion\atualizadireccion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertDireccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\direccion\insertdireccion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SelectDireccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\direccion\selectdireccion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarIdentificadorXCodigoAjeno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CodigoAjeno\VerificarIdentificadorXCodigoAjeno.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SelectDataTablaGenesis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\direccion\selectdatatablagenesis.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetClientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\getclientes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaClienteV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\bajaclientev2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarClienteV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\actualizarclientev2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTiposProcedencias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipoprocedencia\buscatiposprocedencias.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InsertTipoProcedencias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipoprocedencia\inserttipoprocedencias.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarSubClienteV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\actualizarsubclientev2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaSubClienteV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\altasubclientev2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaSubClienteV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\bajasubclientev2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetSubClientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\getsubclientes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetConfiguraciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cargaprevia\getconfiguraciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetConfiguracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cargaprevia\getconfiguracion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SetConfiguracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cargaprevia\setconfiguracion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetParamCodDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\getparamcoddelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ParametrosReporteRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrosreporte\parametrosreporterecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ConfiguracionReporteExcluir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuracionreportes\configuracionreporteexcluir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ParametroReporteInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrosreporte\parametroreporteinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ParametroReporteRetornarOid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrosreporte\parametroreporteretornaroid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ParametroReporteActualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrosreporte\parametroreporteactualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ConfiguracionesReportesRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuracionreportes\configuracionesreportesrecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ConfiguracionReporteActualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuracionreportes\configuracionreporteactualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ConfiguracionReporteInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuracionreportes\configuracionreporteinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ConfiguracionReportesRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuracionreportes\configuracionreportesrecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarPuntoServicioV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\actualizarpuntoserviciov2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaPuntoServicioV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\altapuntoserviciov2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaPuntoServicioV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\bajapuntoserviciov2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\getpuntoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetConfigNivelSaldo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Utilidad\GetConfigNivelSaldo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetCodigoAjenos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CodigoAjeno\GetCodigoAjenos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetDelegacionByCertificado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\getdelegacionbycertificado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetSubCanalByCertificado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcanal\getsubcanalbycertificado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcedencias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\procedencia\getprocedencias.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetComboTiposProcedencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipoprocedencia\getcombotiposprocedencia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboTiposPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipopuntoservicio\getcombotipospuntoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetComboTiposSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposubcliente\getcombotipossubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarProcedencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\procedencia\actualizarprocedencia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AltaProcedencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\procedencia\altaprocedencia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetProcedenciaPorTipoSubClienteYTipoPuntoServicioYTipoProcedencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\procedencia\getprocedenciaportiposubclienteytipopuntoservicioytipoprocedencia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VerificaVinculoTipoProcedencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipoprocedencia\verificavinculotipoprocedencia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaTipoPuntoServicioProcedencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipopuntoservicio\verificatipopuntoservicioprocedencia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaTipoSubClienteProcedencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposubcliente\verificatiposubclienteprocedencia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VertificaTipoSector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\vertificatiposector.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\verificarcodigocliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarDescripcionCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\verificardescripcioncliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoPtoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\verificarcodigoptoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\verificarcodigosubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarDescripcionPtoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\verificardescripcionptoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarDescripcionSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\verificardescripcionsubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaSubClienteConformeCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\atualizasubclienteconformecliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaSubclientePuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\atualizasubclientepuntoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaUtilizacaoSectorPadre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\verificautilizacaosectorpadre.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarClienteNivelSaldo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\buscarclientenivelsaldo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarPuntoServicioNivelSaldo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\buscarpuntoservicionivelsaldo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarSubClienteNivelSaldo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\buscarsubclientenivelsaldo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetATMsSimplificado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\getatmssimplificado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\test\test.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaSubclientePuntoServicioV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\atualizasubclientepuntoserviciov2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetOidSubcliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\subcliente\getoidsubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaPlantaAtivada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\verificaplantaativada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaSectorPaiAtivado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\verificasectorpaiativado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaUtilizacaoSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposubcliente\verificautilizacaosubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaTipoSubcliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposubcliente\atualizatiposubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaTipoProcedencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipoprocedencia\atualizatipoprocedencia.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaTipoPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipopuntoservicio\atualizatipopuntoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaUtilizacaoPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipopuntoservicio\verificautilizacaopuntoservicio.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaTipoSector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\atualizatiposector.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaUtilizacaoPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\verificautilizacaoplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaUtilizacaoSector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\verificautilizacaosector.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaAtivoDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\verificaativodelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaSubclienteAtivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\verificasubclienteativo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaClienteAtivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\puntoservicio\verificaclienteativo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarConfiguracionesGeneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuraciongeneral\recuperarconfiguracionesgeneral.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InserirConfiguracionesGeneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuraciongeneral\inserirconfiguracionesgeneral.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ExcluirConfiguracionesGeneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuraciongeneral\excluirconfiguracionesgeneral.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizarConfiguracionGeneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuraciongeneral\atualizarconfiguraciongeneral.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarConfiguracionGeneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuraciongeneral\recuperarconfiguraciongeneral.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DeleteDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\deletedelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteConfiguracionDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporteconfiguracion\reporteconfiguraciondeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReportesConfiguracionInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporteconfiguracion\reportesconfiguracioninserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ParametrosReporteDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametrosreporte\parametrosreportedeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaDelegacaoCadastrada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\verificadelegacaocadastrada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidDelegacionPorPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obteroiddelegacionporplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterCodDelegacionPorOid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obtercoddelegacionporoid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterCodigoPais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obtercodigopais.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidDelegacionPorOidPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\obteroiddelegacionporoidplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaTipoSetorDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\altatiposetordelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaTipoSetorPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\altatiposetorplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterCodTipoSectorPorOid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposetor\obtercodtiposectorporoid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterCodPlantaPorOid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\obtercodplantaporoid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObterOidPaisPorOidDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\delegacion\obteroidpaisporoiddelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetSectoresIAC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\getsectoresiac.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoAccsoDivisaExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\divisa\verificarcodigoaccsodivisaexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoAccesoDenominacionExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\denominacion\verificarcodigoaccesodenominacionexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarCodigoAccesoMedioPagoExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\mediopago\verificarcodigoaccesomediopagoexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetATMsSimplificadoV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cajero\getatmssimplificadov2.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObtenerParametros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\parametro\obtenerparametros.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetValores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\listatipovalores\getvalores.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetTipoValorPorCodigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\listatipovalores\gettipovalorporcodigo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizarValor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\listatipovalores\atualizarvalor.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizarValor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\listatipovalores\atualizarvalor.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InserirValor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\listatipovalores\inserirvalor.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTipoSubClientePorCodigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposubcliente\buscatiposubclienteporcodigo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTipoPuntoServicioPorCodigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipopuntoservicio\buscatipopuntoservicioporcodigo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizarTipoModulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\atualizartipomodulo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizarTipoModuloDesglose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\atualizartipomodulodesglose.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetOidTipoModulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\getoidtipomodulo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetOidTipoModuloDesglose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\getoidtipomodulodesglose.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InserirTipoModulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\inserirtipomodulo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InserirTipoModuloDesglose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\inserirtipomodulodesglose.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarModulos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\recuperarmodulos.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetTiposModulosDesglose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\gettiposmodulosdesglose.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetTiposModulosAssociadosOuNaoClientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\gettiposmodulosassociadosounaoclientes.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaClienteV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cliente\altaclientev2.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaTipoSubClienteExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tiposubcliente\verificatiposubclienteexiste.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetSectores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\getsectores.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetClienteByCodigoAjeno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cliente\GetClienteByCodigoAjeno.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetSubclienteByCodigoAjeno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCliente\GetSubclienteByCodigoAjeno.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetPuntoServicioByCodigoAjeno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\GetPuntoServicioByCodigoAjeno.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetDatoBancario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DatoBancario\GetDatoBancario.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SetDatoBancario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DatoBancario\SetDatoBancario.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaDatoBancario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DatoBancario\BajaDatoBancario.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SetImporteMaximoInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\importemaximo\setimportemaximoinsert.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ModulosRecuperarModulos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\modulo\modulosrecuperarmodulos.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SetImporteMaximoUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\importemaximo\setimportemaximoupdate.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetImporteMaximoPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\importemaximo\getimportemaximoplanta.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetImporteMaximoSector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\importemaximo\getimportemaximosector.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetImporteMaximoPlanta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\importemaximo\getimportemaximoplanta.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetImporteMaximoSector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\importemaximo\getimportemaximosector.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GetSectoresTesoro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sector\getsectorestesoro.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DivisaObterDatosTodas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\divisa\divisaobterdatostodas.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AlterarBolDefecto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\datobancario\alterarboldefecto.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SubCliente\BuscarSubCliente.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BuscaFabricante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fabricante\BuscaFabricante.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaModelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Modelo\BuscaModelo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaMaquinaMAE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\BuscaMaquinaMAE.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaPlanificacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planificacion\BuscaPlanificacion.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaMaquinaMAE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\AltaMaquinaMAE.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarMaqPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\ActualizarMaqPuntoServicio.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTiposPlanificaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoPlanificacion\BuscaTiposPlanificaciones.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaMaquinasMAE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\BuscaMaquinasMAE.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VincularMaquina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planificacion\VincularMaquina.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTipoMaquina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoMaquina\BuscaTipoMaquina.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaMaquinaDetalleMAE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\BuscaMaquinaDetalleMAE.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaMaquinaMAE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\BajaMaquinaMAE.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DesvincularMaquina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planificacion\DesvincularMaquina.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaMAEPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\BuscaMAEPuntoServicio.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DesvincularMaqPuntoServicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuntoServicio\DesvincularMaqPuntoServicio.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ModificarMaquinaMAE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\ModificarMaquinaMAE.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaMaquinas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\BuscaMaquinas.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificaMaquinaVinculada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planificacion\VerificaMaquinaVinculada.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarPlanificaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planificacion\BuscarPlanificaciones.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActualizarVinculoMaquina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planificacion\actualizarvinculomaquina.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="consultaAccionesEnLote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\maquinamae\consultaaccionesenlote.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="updateAccionesEnLote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\maquinamae\updateaccionesenlote.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="consultaAccionesEnLoteExportar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\maquinamae\consultaaccionesenloteexportar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RecuperarConfiguracionesGeneralEmUso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\configuraciongeneral\recuperarconfiguracionesgeneralemuso.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaTransacaoMaquinas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\BuscaTransacaoMaquinas.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetDelegacionByPlanificacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\GetDelegacionByPlanificacion.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BorrarCalculoEfectivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CalculoEfectivo\BorrarCalculoEfectivo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BorrarCalculoMedioPago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CalculoMediopago\BorrarCalculoMedioPago.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BorrarPeriodoPorDocumento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PeriodoPorDocumento\BorrarPeriodoPorDocumento.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ObtenerCodigoPorIdentificador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\ObtenerCodigoPorIdentificador.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="updateAccionesEnLoteMulticliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\updateAccionesEnLoteMulticliente.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AltaDelegacionClienteFacturacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\AltaDelegacionClienteFacturacion.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BajaDelegacionClienteFacturacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\BajaDelegacionClienteFacturacion.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AtualizaConfiguracionesRegionales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\AtualizaConfiguracionesRegionales.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscarPlanificacionFacturacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planificacion\BuscarPlanificacionFacturacion.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BuscaPlanificacionCanales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\BuscaPlanificacionCanales.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VerificarClienteCapitalYBancoTesoreriaEnUso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\VerificarClienteCapitalYBancoTesoreriaEnUso.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObtenerMAESiCumplePatronDeviceID" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaquinaMAE\ObtenerMAESiCumplePatronDeviceID.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DeleteCodigosAjenos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CodigoAjeno\DeleteCodigosAjenos.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObtenerPlantaAsociada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\ObtenerPlantaAsociada.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ObtenerCodigosAjenosPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delegacion\ObtenerCodigosAjenosPlanta.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DeleteCodigoAjeno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CodigoAjeno\DeleteCodigoAjeno.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboTiposDeCuenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoDeCuenta\getComboTiposDeCuenta.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="getComboTiposDePeriodo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoPeriodo\getComboTiposDePeriodo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetProcesoSapr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Proceso\GetProcesoSapr.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetFormulario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Formulario\GetFormulario.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ActualizarPeriodosFV_Confirmacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Periodo\ActualizarPeriodosFV_Confirmacion.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BorrarCalculoMedioPagoAFuturo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Periodo\BorrarCalculoMedioPagoAFuturo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BorrarPeriodoRelacionadoAFuturo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Periodo\BorrarPeriodoRelacionadoAFuturo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BorrarPeriodoRelacionAFuturo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Periodo\BorrarPeriodoRelacionAFuturo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BorrarPeriodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Periodo\BorrarPeriodos.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BorrarPeriodosAFuturo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Periodo\BorrarPeriodosAFuturo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BorrarPeriodosPorDocumentoAFuturo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Periodo\BorrarPeriodosPorDocumentoAFuturo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BorrarSaldosAFuturo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Periodo\BorrarSaldosAFuturo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+</root>

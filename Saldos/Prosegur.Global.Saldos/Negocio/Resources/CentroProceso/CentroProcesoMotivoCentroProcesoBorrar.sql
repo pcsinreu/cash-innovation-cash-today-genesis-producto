@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_MotivoCentroProceso WHERE IdCentroProceso = :IdCentroProceso

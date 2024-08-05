@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{4DC9EE4C-7177-466C-826C-49576EFF7375}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Genesis.Comon</RootNamespace>
+    <AssemblyName>Prosegur.Genesis.Comon</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.Comon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.Comon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bugsnag, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Bugsnag.dll</HintPath>
+    </Reference>
+    <Reference Include="Bugsnag.AspNet, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Bugsnag.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Bugsnag.ConfigurationSection, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Bugsnag.ConfigurationSection.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\DevExpress\v13.2\DevExpress.Data.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\DevExpress\v13.2\DevExpress.Web.ASPxThemes.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\DevExpress\v13.2\DevExpress.Web.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalyticsTracker.Core">
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\GoogleAnalyticsTracker.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAnalyticsTracker.Simple">
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\GoogleAnalyticsTracker.Simple.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\.Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Prosegur.AgenteDispositivos.ContractoServicio, Version=1.0.1405.2900, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.AgenteDispositivos.ContractoServicio.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.BugsnagHelper">
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Prosegur.BugsnagHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.DbHelper, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=1833a9fd5e21244f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.DbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Framework.Dicionario">
+      <HintPath>..\.Referencias\Prosegur.Framework.Dicionario.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.GoogleAnalyticsHelper">
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Prosegur.GoogleAnalyticsHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Seguranca.DigitoVerificador">
+      <HintPath>..\.Referencias\Prosegur.Seguranca.DigitoVerificador.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="Atributos\ValorEnum.vb" />
+    <Compile Include="Bases\BindableBase.vb" />
+    <Compile Include="Bases\BaseClase.vb" />
+    <Compile Include="Bases\BaseEntidad.vb" />
+    <Compile Include="Bases\BasePeticion.vb" />
+    <Compile Include="Bases\BasePeticionPaginacion.vb" />
+    <Compile Include="Bases\BaseRespuesta.vb" />
+    <Compile Include="Bases\BaseRespuestaPaginacion.vb" />
+    <Compile Include="Bases\IPeticionPaginacion.vb" />
+    <Compile Include="Caracteristicas\GrupoCaracteristicas.vb" />
+    <Compile Include="Caracteristicas\Util.vb" />
+    <Compile Include="Clases\Abono\Abono.vb" />
+    <Compile Include="Clases\Abono\AbonoInformacion.vb" />
+    <Compile Include="Clases\Abono\AbonoElemento.vb" />
+    <Compile Include="Clases\Abono\AbonoSaldoCuenta.vb" />
+    <Compile Include="Clases\Abono\AbonoSaldo.vb" />
+    <Compile Include="Clases\Abono\AbonoValor.vb" />
+    <Compile Include="Clases\Abono\BancoInformacion.vb" />
+    <Compile Include="Clases\Abono\DatoBancario.vb" />
+    <Compile Include="Clases\Abono\DivisaAbono.vb" />
+    <Compile Include="Clases\Abono\EfectivoAbono.vb" />
+    <Compile Include="Clases\Abono\MedioPagoAbono.vb" />
+    <Compile Include="Clases\Abono\ReporteAbono.vb" />
+    <Compile Include="Clases\Abono\TipoValorAbono.vb" />
+    <Compile Include="Clases\Abono\TotalesAbono.vb" />
+    <Compile Include="Clases\Aplicacion.vb" />
+    <Compile Include="Clases\Assembly.vb" />
+    <Compile Include="Clases\CamposExtrasDeIAC.vb" />
+    <Compile Include="Clases\DatoBancarioComparativo.vb" />
+    <Compile Include="Clases\DatoBancarioGrilla.vb" />
+    <Compile Include="Clases\DocumentoMae.vb" />
+    <Compile Include="Clases\IntegracionGenerica\Peticion.vb" />
+    <Compile Include="Clases\IntegracionGenerica\Respuesta.vb" />
+    <Compile Include="Clases\OrdenServicio.vb" />
+    <Compile Include="Clases\Proceso.vb" />
+    <Compile Include="Clases\Limite.vb" />
+    <Compile Include="Clases\MensajeDePlanificacion.vb" />
+    <Compile Include="Clases\PeriodoAcreditacionGrilla.vb" />
+    <Compile Include="Clases\Permiso.vb" />
+    <Compile Include="Clases\PlanMaqPorCanalSubCanalPunto.vb" />
+    <Compile Include="Clases\Rol.vb" />
+    <Compile Include="Clases\RoleXUsuario.vb" />
+    <Compile Include="Clases\TipoMaquina.vb" />
+    <Compile Include="Clases\Maquina.vb" />
+    <Compile Include="Clases\Planificacion.vb" />
+    <Compile Include="Clases\PlanXProgramacion.vb" />
+    <Compile Include="Clases\PlanXmaquina.vb" />
+    <Compile Include="Clases\Modelo.vb" />
+    <Compile Include="Clases\Fabricante.vb" />
+    <Compile Include="Clases\CentralNotificaciones\DestinoNotificacion.vb" />
+    <Compile Include="Clases\CentralNotificaciones\Notificacion.vb" />
+    <Compile Include="Clases\CentralNotificaciones\TipoNotificacion.vb" />
+    <Compile Include="Clases\ConfiguracionReporte.vb" />
+    <Compile Include="Clases\CuadreDiferencia.vb" />
+    <Compile Include="Clases\CodigoAjeno.vb" />
+    <Compile Include="Clases\AccionContable.vb" />
+    <Compile Include="Clases\AccionTransaccion.vb" />
+    <Compile Include="Clases\AlgoritmoValidacion.vb" />
+    <Compile Include="Clases\ATM.vb" />
+    <Compile Include="Clases\Bulto.vb" />
+    <Compile Include="Clases\Calidad.vb" />
+    <Compile Include="Clases\Canal.vb" />
+    <Compile Include="Clases\CaracteristicaFormulario.vb" />
+    <Compile Include="Clases\Certificado.vb" />
+    <Compile Include="Clases\Cliente.vb" />
+    <Compile Include="Clases\AutoDesglose.vb" />
+    <Compile Include="Clases\ConfigGrid.vb" />
+    <Compile Include="Clases\Contenedor.vb" />
+    <Compile Include="Clases\Copia.vb" />
+    <Compile Include="Clases\Conversion.vb" />
+    <Compile Include="Clases\CuentasContenedor.vb" />
+    <Compile Include="Clases\Debug\ParametrosDebug.vb" />
+    <Compile Include="Clases\Direccion.vb" />
+    <Compile Include="Clases\DireccionBase.vb" />
+    <Compile Include="Clases\FiltroFormulario.vb" />
+    <Compile Include="Clases\ImporteTotal.vb" />
+    <Compile Include="Clases\InformacaoAdicionalCliente.vb" />
+    <Compile Include="Clases\SOL\BultoSOL.vb" />
+    <Compile Include="Clases\SOL\Desglose.vb" />
+    <Compile Include="Clases\SOL\DocumentoImporte.vb" />
+    <Compile Include="Clases\SOL\DocumentoItem.vb" />
+    <Compile Include="Clases\SOL\DocumentoSOL.vb" />
+    <Compile Include="Clases\IntegracionError.vb" />
+    <Compile Include="Clases\EmisorDocumento.vb" />
+    <Compile Include="Clases\GrupoDocumentos.vb" />
+    <Compile Include="Clases\HistoricoMovimientoDocumento.vb" />
+    <Compile Include="Clases\Integracion.vb" />
+    <Compile Include="Clases\JSON.vb" />
+    <Compile Include="Clases\Legado\DireccionServicioLegado.vb" />
+    <Compile Include="Clases\Modulo.vb" />
+    <Compile Include="Clases\Objeto.vb" />
+    <Compile Include="Clases\Parametro.vb" />
+    <Compile Include="Clases\ParametroReporte.vb" />
+    <Compile Include="Clases\PreferenciaUsuario.vb" />
+    <Compile Include="Clases\Puesto.vb" />
+    <Compile Include="Clases\ResultadoReporte.vb" />
+    <Compile Include="Clases\Saldo.vb" />
+    <Compile Include="Clases\SaldoCliente.vb" />
+    <Compile Include="Clases\SaldoCuentaDetalle.vb" />
+    <Compile Include="Clases\SaldoCuenta.vb" />
+    <Compile Include="Clases\SaldoSector.vb" />
+    <Compile Include="Clases\TipoBulto.vb" />
+    <Compile Include="Clases\TipoCliente.vb" />
+    <Compile Include="Clases\TipoImpresora.vb" />
+    <Compile Include="Clases\TipoMercancia.vb" />
+    <Compile Include="Clases\DatoBancario.vb" />
+    <Compile Include="Clases\TipoPlanificacion.vb" />
+    <Compile Include="Clases\Token.vb" />
+    <Compile Include="Clases\TotalizadorSaldo.vb" />
+    <Compile Include="Clases\Transferencias\DocumentoElementoInserir.vb" />
+    <Compile Include="Clases\Transferencias\EfectivoDocumentoInserir.vb" />
+    <Compile Include="Clases\Transferencias\FiltroDocumentosAltas.vb" />
+    <Compile Include="Clases\Transferencias\FiltroDocumentos_v2.vb" />
+    <Compile Include="Clases\Transferencias\FiltroProcesoIAC.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroConsultaAbono.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroConsultaFormulariosCertificados.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroConsultaSaldo.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroConsultaValoresAbono.vb" />
+    <Compile Include="Clases\Transferencias\ItensProcesoDuo.vb" />
+    <Compile Include="Clases\Transferencias\MedioPagoDocumentoInserir.vb" />
+    <Compile Include="Clases\Transferencias\ProcesoDuo.vb" />
+    <Compile Include="Clases\Transferencias\ValorTerminoInserir.vb" />
+    <Compile Include="Clases\Usuario.vb" />
+    <Compile Include="Converter\ParameterToConverter.vb" />
+    <Compile Include="Enumeradores\AccionActualizarMovimiento.vb" />
+    <Compile Include="Enumeradores\AgrupacionMovimiento.vb" />
+    <Compile Include="Enumeradores\EstadoPeriodo.vb" />
+    <Compile Include="Enumeradores\Mensajes.vb" />
+    <Compile Include="Enumeradores\Salidas\ModeloImpresora.vb" />
+    <Compile Include="Enumeradores\Salidas\TerminosGTV.vb" />
+    <Compile Include="Enumeradores\TipoCalidad.vb" />
+    <Compile Include="Enumeradores\NivelSaldo.vb" />
+    <Compile Include="Enumeradores\CodigoAplicacion.vb" />
+    <Compile Include="Enumeradores\ConfiguracionNivelSaldos.vb" />
+    <Compile Include="Enumeradores\Conteo\Pantallas.vb" />
+    <Compile Include="Enumeradores\EstadoAbono.vb" />
+    <Compile Include="Enumeradores\EstadoAbonoElemento.vb" />
+    <Compile Include="Enumeradores\EventoVideo.vb" />
+    <Compile Include="Enumeradores\OrigenBusquedaDocumento.vb" />
+    <Compile Include="Enumeradores\TipoCertificado.vb" />
+    <Compile Include="Enumeradores\TipoFechas.vb" />
+    <Compile Include="Enumeradores\TipoIntegracion.vb" />
+    <Compile Include="Enumeradores\TipoNotificacion.vb" />
+    <Compile Include="Enumeradores\Privacidad.vb" />
+    <Compile Include="Enumeradores\RecepcionyEnvio\AlocarDesalocarDocumento.vb" />
+    <Compile Include="Enumeradores\RecepcionyEnvio\SituacionOT.vb" />
+    <Compile Include="Enumeradores\RecepcionyEnvio\EstadoRemesaOTGenesis.vb" />
+    <Compile Include="Enumeradores\RecepcionyEnvio\TipoOT.vb" />
+    <Compile Include="Enumeradores\Salidas\CamposReciboTransporte.vb" />
+    <Compile Include="Enumeradores\Salidas\OperadorSaldo.vb" />
+    <Compile Include="Clases\TipoValor.vb" />
+    <Compile Include="Clases\TipoFormato.vb" />
+    <Compile Include="Clases\TipoServicio.vb" />
+    <Compile Include="Clases\Transaccion.vb" />
+    <Compile Include="Clases\Transferencias\DocumentoGrupoDocumento.vb" />
+    <Compile Include="Clases\Transferencias\FiltroDocumentos.vb" />
+    <Compile Include="Clases\Transferencias\FiltroElementoValor.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroInventario.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\Filtro.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroBulto.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroContenedor.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroDocumento.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroParcial.vb" />
+    <Compile Include="Clases\Transferencias\Filtro\FiltroRemesa.vb" />
+    <Compile Include="Clases\ValorEfectivo.vb" />
+    <Compile Include="Clases\Cuenta.vb" />
+    <Compile Include="Clases\Delegacion.vb" />
+    <Compile Include="Clases\Denominacion.vb" />
+    <Compile Include="Clases\DenominacionBillete.vb" />
+    <Compile Include="Clases\Divisa.vb" />
+    <Compile Include="Clases\Documento.vb" />
+    <Compile Include="Clases\Elemento.vb" />
+    <Compile Include="Clases\EstadoAccionContable.vb" />
+    <Compile Include="Clases\Transferencias\FiltroFormulario.vb" />
+    <Compile Include="Clases\Formato.vb" />
+    <Compile Include="Clases\Formulario.vb" />
+    <Compile Include="Clases\GrupoTerminos.vb" />
+    <Compile Include="Clases\GrupoTerminosIAC.vb" />
+    <Compile Include="Clases\Inventario.vb" />
+    <Compile Include="Clases\Mascara.vb" />
+    <Compile Include="Clases\MedioPago.vb" />
+    <Compile Include="Clases\NumeroSerieBillete.vb" />
+    <Compile Include="Clases\OrdenTrabajo.vb" />
+    <Compile Include="Clases\Pais.vb" />
+    <Compile Include="Clases\Parcial.vb" />
+    <Compile Include="Clases\Planta.vb" />
+    <Compile Include="Clases\PuntoServicio.vb" />
+    <Compile Include="Clases\PuntoServicioOT.vb" />
+    <Compile Include="Clases\Remesa.vb" />
+    <Compile Include="Clases\Ruta.vb" />
+    <Compile Include="Clases\Sector.vb" />
+    <Compile Include="Clases\SubCanal.vb" />
+    <Compile Include="Clases\SubCliente.vb" />
+    <Compile Include="Clases\Termino.vb" />
+    <Compile Include="Clases\TerminoIAC.vb" />
+    <Compile Include="Clases\Tipo.vb" />
+    <Compile Include="Clases\TipoContenedor.vb" />
+    <Compile Include="Clases\TipoDocumento.vb" />
+    <Compile Include="Clases\TipoFormulario.vb" />
+    <Compile Include="Clases\TipoSector.vb" />
+    <Compile Include="Clases\TipoTratamiento.vb" />
+    <Compile Include="Clases\UnidadMedida.vb" />
+    <Compile Include="Clases\Valor.vb" />
+    <Compile Include="Clases\ValorDenominacion.vb" />
+    <Compile Include="Clases\ValorDivisa.vb" />
+    <Compile Include="Clases\ValorMedioPago.vb" />
+    <Compile Include="Clases\ValorPosible.vb" />
+    <Compile Include="Clases\ValorTermino.vb" />
+    <Compile Include="Clases\ValorTipoMedioPago.vb" />
+    <Compile Include="Command\ClickBindingHelper.vb" />
+    <Compile Include="Command\DelegateCommand.vb" />
+    <Compile Include="Constantes.vb" />
+    <Compile Include="Contadoras\Contadoras.vb" />
+    <Compile Include="Contadoras\Configuracion\Interno\ContadoraInterno.vb" />
+    <Compile Include="Contadoras\Configuracion\Interno\ContadoraInternoColeccion.vb" />
+    <Compile Include="Contadoras\Configuracion\Interno\DivisaInterno.vb" />
+    <Compile Include="Contadoras\Configuracion\Contadora.vb" />
+    <Compile Include="Contadoras\Configuracion\ContadoraColeccion.vb" />
+    <Compile Include="Contadoras\Configuracion\Denominacion.vb" />
+    <Compile Include="Contadoras\Configuracion\Divisa.vb" />
+    <Compile Include="Converter\BooleanRevertConverter.vb" />
+    <Compile Include="Converter\BooleanToVisibilityConverter.vb" />
+    <Compile Include="Converter\LabelStringConverter.vb" />
+    <Compile Include="Enumeradores\ATM\Componente.vb" />
+    <Compile Include="Enumeradores\ATM\TipoCuadre.vb" />
+    <Compile Include="Enumeradores\CodigoAjeno.vb" />
+    <Compile Include="Enumeradores\Disponibilidad.vb" />
+    <Compile Include="Enumeradores\EstadoAgente.vb" />
+    <Compile Include="Enumeradores\RecepcionyEnvio\Control.vb" />
+    <Compile Include="Enumeradores\RecepcionyEnvio\Informe.vb" />
+    <Compile Include="Enumeradores\RecepcionyEnvio\Pantalla.vb" />
+    <Compile Include="Enumeradores\Salidas\TipoContadora.vb" />
+    <Compile Include="Enumeradores\Salidas\TipoContenedor.vb" />
+    <Compile Include="Enumeradores\Salidas\Helpers.vb" />
+    <Compile Include="Enumeradores\Salidas\Alineamiento.vb" />
+    <Compile Include="Enumeradores\Salidas\ComponenteHabilitacion.vb" />
+    <Compile Include="Enumeradores\Salidas\TipoEtiquetaSalidas.vb" />
+    <Compile Include="Enumeradores\Salidas\TipoReciboRemesa.vb" />
+    <Compile Include="Enumeradores\Salidas\TipoSolicitacion.vb" />
+    <Compile Include="Enumeradores\Salidas\PrecintoValido.vb" />
+    <Compile Include="Enumeradores\Salidas\Pantalla.vb" />
+    <Compile Include="Enumeradores\Salidas\Control.vb" />
+    <Compile Include="Enumeradores\Salidas\PermisosSalidas.vb" />
+    <Compile Include="Enumeradores\ModalidadRecogida.vb" />
+    <Compile Include="Enumeradores\RemesasConBultos.vb" />
+    <Compile Include="Enumeradores\EstadoObjeto.vb" />
+    <Compile Include="Enumeradores\Ordenacion.vb" />
+    <Compile Include="Enumeradores\Aplicacion.vb" />
+    <Compile Include="Enumeradores\CaracteristicaFormulario.vb" />
+    <Compile Include="Caracteristicas\TipoVerificacionCaracteristicas.vb" />
+    <Compile Include="Enumeradores\CaracteristicaTipoSector.vb" />
+    <Compile Include="Enumeradores\CodigoProcesoIntegracion.vb" />
+    <Compile Include="Enumeradores\Calidad.vb" />
+    <Compile Include="Enumeradores\EstadoDocumentoElemento.vb" />
+    <Compile Include="Enumeradores\RemesasConRuta.vb" />
+    <Compile Include="Enumeradores\DiscriminarPor.vb" />
+    <Compile Include="Enumeradores\TipoAbono.vb" />
+    <Compile Include="Enumeradores\TipoAplicacion.vb" />
+    <Compile Include="Enumeradores\TipoBuscaSaldo.vb" />
+    <Compile Include="Enumeradores\RespuestaMensajeEnum.vb" />
+    <Compile Include="Enumeradores\TipoBusqueda.vb" />
+    <Compile Include="Enumeradores\TipoCuentaBancaria.vb" />
+    <Compile Include="Enumeradores\TipoMensajeEnum.vb" />
+    <Compile Include="Enumeradores\TipoObjeto.vb" />
+    <Compile Include="Enumeradores\TipoFormato.vb" />
+    <Compile Include="Enumeradores\TipoPlanificacion.vb" />
+    <Compile Include="Enumeradores\TipoReporte.vb" />
+    <Compile Include="Enumeradores\TiposInternos.vb" />
+    <Compile Include="Enumeradores\TablaIntegracion.vb" />
+    <Compile Include="Enumeradores\EstadoIntegracion.vb" />
+    <Compile Include="Enumeradores\EstadoRuta.vb" />
+    <Compile Include="Enumeradores\EstadoCertificado.vb" />
+    <Compile Include="Enumeradores\TipoOrigen.vb" />
+    <Compile Include="Enumeradores\EstadoContenedor.vb" />
+    <Compile Include="Enumeradores\EstadoParcial.vb" />
+    <Compile Include="Enumeradores\EstadoRemesa.vb" />
+    <Compile Include="Enumeradores\EstadoBulto.vb" />
+    <Compile Include="Enumeradores\Tabela.vb" />
+    <Compile Include="Enumeradores\TipoListaValor.vb" />
+    <Compile Include="Enumeradores\Tipos.vb" />
+    <Compile Include="Enumeradores\TipoSituacionOT.vb" />
+    <Compile Include="Enumeradores\TerminosDatosRuta.vb" />
+    <Compile Include="Enumeradores\TipoContado.vb" />
+    <Compile Include="Enumeradores\TipoDetalleEfectivo.vb" />
+    <Compile Include="Enumeradores\TipoMercancia.vb" />
+    <Compile Include="Enumeradores\EstadoDocumento.vb" />
+    <Compile Include="Enumeradores\TipoNivelDetalhe.vb" />
+    <Compile Include="Enumeradores\TipoUbicacion.vb" />
+    <Compile Include="Enumeradores\TipoRenderizador.vb" />
+    <Compile Include="Enumeradores\TipoVigente.vb" />
+    <Compile Include="Enumeradores\TraspaseResponsabilidad.vb" />
+    <Compile Include="EventArgs\MensajeEventArgs.vb" />
+    <Compile Include="Extenciones\DateExtensions.vb" />
+    <Compile Include="Extenciones\GenerarCertificadoSoapExtensionAttribute.vb" />
+    <Compile Include="Extenciones\HttpResponseExtension.vb" />
+    <Compile Include="Extenciones\IEnumerableExtension.vb" />
+    <Compile Include="Extenciones\RecuperarTransaccionesSoapExtensionAttribute.vb" />
+    <Compile Include="Extenciones\StringExtension.vb" />
+    <Compile Include="Extenciones\ObjectExtension.vb" />
+    <Compile Include="Extenciones\ObservableCollectionExtension.vb" />
+    <Compile Include="Helper\BugsnagHelper.vb" />
+    <Compile Include="Helper\CustomProsegurGridView.vb" />
+    <Compile Include="Helper\DnsHelper.vb" />
+    <Compile Include="Helper\Enumeradores\EnumHelper.vb" />
+    <Compile Include="Helper\Enumeradores\Tabelas.vb" />
+    <Compile Include="Helper\GoogleAnalyticsHelper.vb" />
+    <Compile Include="Helper\PeticionHelper.vb" />
+    <Compile Include="Helper\PeticionHelperPuesto.vb" />
+    <Compile Include="Helper\PeticionHelperTipoContenedor.vb" />
+    <Compile Include="Helper\RespuestaHelper.vb" />
+    <Compile Include="Helper\RespuestaHelperPuesto.vb" />
+    <Compile Include="Helper\RespuestaHelperTipoContenedor.vb" />
+    <Compile Include="Helper\UtilHelper.vb" />
+    <Compile Include="Enumeradores\TipoCuenta.vb" />
+    <Compile Include="Enumeradores\TipoElemento.vb" />
+    <Compile Include="Enumeradores\TipoFiliacion.vb" />
+    <Compile Include="Enumeradores\TipoMedioPago.vb" />
+    <Compile Include="Enumeradores\TipoMovimiento.vb" />
+    <Compile Include="Enumeradores\TipoSaldo.vb" />
+    <Compile Include="Enumeradores\TipoServico.vb" />
+    <Compile Include="Enumeradores\TipoSitio.vb" />
+    <Compile Include="Enumeradores\TipoUnidadMedida.vb" />
+    <Compile Include="Enumeradores\TipoValor.vb" />
+    <Compile Include="Excepciones\ExcepcionLogica.vb" />
+    <Compile Include="Extenciones\EnumExtension.vb" />
+    <Compile Include="Enumeradores\Modo.vb" />
+    <Compile Include="Interfaces\Helper\IEntidadeHelper.vb" />
+    <Compile Include="Interfaces\CentralNotificaciones\IEjecutarNotificaciones.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Paginacion\AccesoDatos\PaginacionHelper.vb" />
+    <Compile Include="Paginacion\IRespuestaPaginacion.vb" />
+    <Compile Include="Paginacion\ParametrosPeticionPaginacion.vb" />
+    <Compile Include="Paginacion\ParametrosRespuestaPaginacion.vb" />
+    <Compile Include="Paginacion\Web\SelectDataEventArgs.vb" />
+    <Compile Include="Paginacion\Web\DataSourceHelper.vb" />
+    <Compile Include="Pantallas\Controle\ucInformacionGenesis.ascx.designer.vb">
+      <DependentUpon>ucInformacionGenesis.ascx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Controle\ucInformacionGenesis.ascx.vb">
+      <DependentUpon>ucInformacionGenesis.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Limites\Peticion.vb" />
+    <Compile Include="Pantallas\Limites\Respuesta.vb" />
+    <Compile Include="Pantallas\Planificacion\Respuesta.vb" />
+    <Compile Include="Peticion.vb" />
+    <Compile Include="Respuesta.vb" />
+    <Compile Include="SerializableDictionary.vb" />
+    <Compile Include="Util.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Clases\Abono\AbonoSaldoClassDiagram.cd" />
+    <None Include="Clases\Abono\AbonoClassDiagram.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Saldos\Prosegur.Global.Saldos\Servicio\ContractoServicio\Prosegur.Global.Saldos.ContractoServicio.vbproj">
+      <Project>{B03091EF-69D4-4C8F-9174-6F0286FA76C5}</Project>
+      <Name>Prosegur.Global.Saldos.ContractoServicio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AttachedProperty\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Bugsnag.vb" />
+    <Content Include="Pantallas\Controle\ucInformacionGenesis.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del "$(TargetDir)Oracle.DataAccess.dll"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

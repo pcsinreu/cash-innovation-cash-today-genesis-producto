@@ -1,0 +1,21 @@
+﻿UPDATE PD_Formulario
+   SET Descripcion         = :Descripcion,
+       IdMotivo            = :IdMotivo,
+       SoloEnGrupo         = :SoloEnGrupo,
+       ConValores          = :ConValores,
+       ConBultos           = :ConBultos,
+       ConLector           = :ConLector,
+       BasadoEnReporte     = :BasadoEnReporte,
+       IdReporte           = :IdReporte,
+       BasadoEnSaldos      = :BasadoEnSaldos,
+       SeImprime           = :SeImprime,
+       Interplantas        = :Interplantas,
+       DistinguirPorNivel  = :DistinguirPorNivel,
+       Matrices            = :Matrices,
+       SoloIndividual      = :SoloIndividual,
+       EsActaProceso       = :EsActaProceso,
+       SoloSaldoDisponible = :SoloSaldoDisponible,
+       Color               = :Color,
+       Sustituible         = :Sustituible,
+       BasadoEnExtracto    = :BasadoEnExtracto
+ WHERE IdFormulario = :IdFormulario

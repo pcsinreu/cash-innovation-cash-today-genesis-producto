@@ -1,0 +1,400 @@
+/* ÁREA PRINCIPAL--------------------- */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../imagenes/bg.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+	width:100%;
+	height:100%;
+}
+
+.principal
+{
+	position:relative;
+	background-color: #FFFFFF;
+	/*width:100%;*/
+	/*height:100%;*/
+	top:0px;
+	left:0px;	
+}
+
+/* TÍTULOS--------------------- */
+.titulo01 {
+	background-image: url(../imagenes/titulo01_bg.jpg);
+	background-repeat: repeat-x;
+	display: block;
+	height: 22px;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-left: 10px;	
+}
+.titulo02 {
+	background-image: url(../imagenes/titulo01_bg.jpg);
+	background-repeat: repeat-x;	
+	display: block;
+	height: 29px;
+	font-weight: bold;
+	font-size: 12px;	
+	padding-top: 1px;
+	padding-right: 10px;
+	padding-left: 10px;	
+}
+
+/* TEXTOS--------------------- */
+.Text01
+{
+	
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	
+}
+.Text02
+{
+	
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 13px;
+	font-weight: normal;
+	
+}
+
+.TextDesable
+{
+	
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	color: rgb(160,160,160);
+}
+
+/* GRIDS--------------------- */
+.grid {
+	width: 100%;
+}
+
+.grid td {
+	text-align: center;	
+}
+.grid th {
+	text-align: center;
+	background-image: url(../imagenes/grid_titulo_bg.jpg);
+	background-repeat: repeat-x;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 21px;
+	padding-top: 5px;
+	font-size: 12px;
+}
+.grid .linha01 {
+	text-align: center;
+	background-image: url(../imagenes/grid_linha_01.jpg);
+	background-repeat: repeat-x;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 24px;
+}
+.grid .linha00 {
+	text-align: center;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 24px;
+	background-color: #FFFFFF;
+}
+.grid .linha_destaque {
+	text-align: center;
+	background-image: url(../imagenes/grid_linha_destaque.jpg);
+	background-repeat: repeat-x;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 24px;
+	font-weight: bold;
+}
+.grid_2 th {
+	text-align: left;
+	background-image: url(../imagenes/grid_titulo_bg.jpg);
+	background-repeat: repeat-x;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 21px;
+	padding-top: 5px;
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+.grid_2 {
+	width: 100%;
+}
+.grid_2 td {
+	text-align: center;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+.grid_2 textarea {
+	font-size: 11px;
+	width: 90%;
+	height: 85px;
+	border: 1px solid #CCCCCC;
+}
+
+.GridTitulo
+{
+	background-image: url(../imagenes/grid_titulo_bg.jpg);
+	
+}
+
+.GridLinhaAlternada
+{
+	background-image: url(../imagenes/grid_linha_01.jpg);	
+	text-indent:3px;
+}
+
+.GridLinhaDestaque
+{
+	background-image: url(../imagenes/grid_linha_destaque.jpg);	
+	text-indent:3px;
+}
+.GridLinhaPadrao
+{
+	text-indent:3px;
+}
+.CabecalhoQuandoVazio
+{
+	text-align:left;
+}
+
+/* DROPDOWN--------------------- */
+.ddl100
+{
+	width: 100px;	
+}
+
+.ddl150
+{
+	width: 150px;	
+}
+
+.ddl200
+{
+	width: 200px;	
+}
+
+.ddl250
+{
+	width: 250px;	
+}
+
+/* TABELAS--------------------- */
+.tabela_interna
+{
+	width:100%;
+	height:100%;
+	border:0px;
+	background-color:#FFFFFF;
+}
+.tabela_campos
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	width:911px;
+	background-color:#FFFFFF;
+}
+.espaco_inicial
+{
+    width:20px;
+}
+.tamanho_celula
+{
+	width:120px;
+}
+.tamanho_celula_auto
+{
+	width:auto;
+}
+
+
+/* Botão em estado normal (sem foco) */
+TABLE.BotaoNormal
+{
+	border-right: white 1px solid;
+	padding-right: 0px;
+	border-top: white 1px solid;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	font: 11px Arial;
+	border-left: white 1px solid;
+	color: #8a7033;
+	padding-top: 0px;
+	border-bottom: white 1px solid;
+	height: 18px;
+	background-color: #ffffff;
+}
+
+/* Botão em estado desabilitado (sem foco) */
+TABLE.BotaoDesabilitar
+{
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* Botão quando o mouse está sobre */
+TABLE.BotaoFoco
+{
+	border-right: #bbb100 1px solid;
+	padding-right: 0px;
+	border-top: #bbb100 1px solid;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	font: 11px Arial;
+	border-left: #bbb100 1px solid;
+	cursor: pointer;
+	color: #000000;
+	padding-top: 0px;
+	border-bottom: #bbb100 1px solid;
+	height: 18px;
+	background-color: #ebebbe;
+}
+
+/* IMAGENS--------------------- */
+/* Ícone do botão */
+IMG.IconeBotao
+{
+	border-style: none;
+	vertical-align: top;
+}
+
+/* LABELS--------------------- */
+.Lbl0 /* Estilo para label pequeno */
+{
+	font-weight: normal;
+	font-size: 10px;
+	font-family: Arial, Verdana, Tahoma;
+	
+}
+
+.Lbl1 /* Estilo para label normal */
+{
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	
+}
+
+.Lbl2 /* Estilo para label médio */
+{
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 12px;
+	font-weight: normal;
+	
+}
+
+.TABLE.SemRegistro
+{		
+	border-color:Black;	
+	border-width:1px;
+	text-align:center;
+	font-size:large;
+	padding-left:5px;	
+	padding-top:0px;	
+			
+}
+
+/* OUTROS--------------------- */
+.divAguarde 
+{  
+	/*background:#FF0000;  */
+	position:absolute;  
+	left:800px;  
+	top:130px;  
+	width:50px;  
+	height:auto;
+}
+
+.TreeViewSelecionado
+{
+	background-color: #ebebbe;		
+}
+
+.TrPar /* Estilo para linha par em tabelas */
+{
+    padding-left: 15px;
+    font-weight: normal;
+    font-size: 11px;
+    color: #333333;
+    font-family: Arial, Verdana, Tahoma;
+    height: 17px;
+    background-color: #ffffff;
+}
+
+.TrImpar /* Estilo para linha ímpar em tabelas */
+{
+    padding-left: 15px;
+    font-weight: normal;
+    font-size: 11px;    
+    color: #333333;    
+    font-family: Arial, Verdana, Tahoma;
+    height: 17px;
+    background-color: #f7f7f7;
+}
+
+.TrSinCor
+{
+    padding-left: 15px;
+    font-weight: normal;
+    font-size: 11px;    
+    color: #333333;    
+    font-family: Arial, Verdana, Tahoma;
+    height: 17px;
+}
+
+
+.AlertLoading
+{
+    background: #FFFFFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    background-image: url(../Imagenes/loader1.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.JanelaCarregar
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 20000000;
+    background: #333 url("../Imagenes/loader1.gif") no-repeat center center;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    
+    
+    
+}

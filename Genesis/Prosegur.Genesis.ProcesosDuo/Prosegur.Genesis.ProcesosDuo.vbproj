@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1F759DAC-879D-470C-8429-128B77B02F7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Prosegur.Genesis.ProcesosDuo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.ProcesosDuo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.ProcesosDuo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\.Referencias\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet2">
+      <HintPath>..\.Referencias\ChilkatDotNet2.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Comunicacao">
+      <HintPath>..\.Referencias\Prosegur.Comunicacao.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Comunicacao.SFTP">
+      <HintPath>..\.Referencias\Prosegur.Comunicacao.SFTP.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.DbHelper, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=1833a9fd5e21244f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.DbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Duo.HelperProcesso">
+      <HintPath>..\.Referencias\Prosegur.Duo.HelperProcesso.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.EmailHelper, Version=3.1.1203.901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.EmailHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Framework.Dicionario, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=6bb1f230141d8049, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.Framework.Dicionario.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="ConfigurationManagerProxy.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Prosegur.Genesis.GenerarReporte\Classes\Reporte.vb" />
+    <Compile Include="Prosegur.Genesis.GenerarReporte\Classes\ReporteAbono.vb" />
+    <Compile Include="Prosegur.Genesis.GenerarReporte\Classes\ReporteCertificacion.vb" />
+    <Compile Include="Prosegur.Genesis.GenerarReporte\Classes\ReporteCertificacionAntiguo.vb" />
+    <Compile Include="Prosegur.Genesis.GenerarReporte\Classes\Util.vb" />
+    <Compile Include="Prosegur.Genesis.GenerarReporte\Proceso.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\ProxyProfatDocumentoEntradaCT\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ProxyProfat\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Util.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ProxyProfatDocumentoEntradaCT\DocumentoEntradaCT.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyProfatDocumentoEntradaCT\DocumentoEntradaCT1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyProfatDocumentoEntradaCT\DocumentoEntradaCT2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyProfatDocumentoEntradaCT\DocumentoEntradaCTBPL.wsdl" />
+    <None Include="Service References\ProxyProfatDocumentoEntradaCT\ProxyProfatDocumentoEntradaCT.RetornoCT.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProxyProfat\DocumentoEntradaTS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyProfat\DocumentoEntradaTS1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyProfat\DocumentoEntradaTS2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ProxyProfat\DocumentoEntradaTSBPL.wsdl" />
+    <None Include="Service References\ProxyProfat\ProxyProfat.RetornoTS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="wse3policyCache.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\AccesoDatos\Prosegur.Global.GesEfectivo.IAC.AccesoDatos.vbproj">
+      <Project>{8AF9CFAD-D305-45C3-B6E4-464BB14C6B01}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\Integracion.ContractoServicio\Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio.vbproj">
+      <Project>{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\LogicaNegocio\Prosegur.Global.GesEfectivo.IAC.LogicaNegocio.vbproj">
+      <Project>{8F0DBF1F-7393-4786-A83D-2AFCF9DA1D8F}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Saldos\Prosegur.Global.Saldos\Negocio\Prosegur.Global.Saldos.Negocio.vbproj">
+      <Project>{98A0B1A2-D8F4-44E1-BA90-22EB0BA83562}</Project>
+      <Name>Prosegur.Global.Saldos.Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Saldos\Prosegur.Global.Saldos\Servicio\ContractoServicio\Prosegur.Global.Saldos.ContractoServicio.vbproj">
+      <Project>{B03091EF-69D4-4C8F-9174-6F0286FA76C5}</Project>
+      <Name>Prosegur.Global.Saldos.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.AccesoDatos\Prosegur.Genesis.AccesoDatos.vbproj">
+      <Project>{1f867d49-94a8-4d3a-a498-741ee9e2ba57}</Project>
+      <Name>Prosegur.Genesis.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4DC9EE4C-7177-466C-826C-49576EFF7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comunicacion\Prosegur.Genesis.Comunicacion.vbproj">
+      <Project>{817877CA-26FE-4639-91A0-42A29091C817}</Project>
+      <Name>Prosegur.Genesis.Comunicacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.ContratoServicio\Prosegur.Genesis.ContractoServicio.vbproj">
+      <Project>{9ED42568-659A-4DD1-BE34-C14483DF71E6}</Project>
+      <Name>Prosegur.Genesis.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.DataBaseHelper\Prosegur.Genesis.DataBaseHelper.vbproj">
+      <Project>{793d4601-2eaf-46e8-8451-f14f4e156d95}</Project>
+      <Name>Prosegur.Genesis.DataBaseHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Exception\Prosegur.Genesis.Excepcion.vbproj">
+      <Project>{ED11E59E-9783-4F6C-948B-16530AE69DF8}</Project>
+      <Name>Prosegur.Genesis.Excepcion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.LogicaNegocio\Prosegur.Genesis.LogicaNegocio.vbproj">
+      <Project>{B6B90298-6FB3-4150-B1F4-F0A61055FADF}</Project>
+      <Name>Prosegur.Genesis.LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Report\Prosegur.Genesis.Report.vbproj">
+      <Project>{5687e3c6-a6f1-4c83-9103-e045c90b24c5}</Project>
+      <Name>Prosegur.Genesis.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Unificacion\Prosegur.Genesis.Unificacion.vbproj">
+      <Project>{D9BEF171-7D55-4EEB-A419-CB6AF1BF3532}</Project>
+      <Name>Prosegur.Genesis.Unificacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Utilidad\Prosegur.Genesis.Utilidad.vbproj">
+      <Project>{a9602d8d-3afe-4948-b579-05325b690dc5}</Project>
+      <Name>Prosegur.Genesis.Utilidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Prosegur.Genesis.ProcessosDuo.SincronizarSeguridad\AcesoDatos\" />
+    <Folder Include="Prosegur.Genesis.ProcessosDuo.SincronizarSeguridad\Classes\Nuevo Saldos\" />
+    <Folder Include="Prosegur.Genesis.ProcessosDuo.SincronizarSeguridad\Classes\Seguridad\" />
+    <Folder Include="Prosegur.Genesis.ProcessosDuo.SincronizarSeguridad\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProxyProfat\DocumentoEntradaTS.disco" />
+    <None Include="Service References\ProxyProfat\configuration91.svcinfo" />
+    <None Include="Service References\ProxyProfat\configuration.svcinfo" />
+    <None Include="Service References\ProxyProfat\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ProxyProfatDocumentoEntradaCT\configuration91.svcinfo" />
+    <None Include="Service References\ProxyProfatDocumentoEntradaCT\configuration.svcinfo" />
+    <None Include="Service References\ProxyProfatDocumentoEntradaCT\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="_Dicionarios\GenerarReporte\Dicionario.es-ES.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Dicionarios\GenerarReporte\Dicionario.pt-BR.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ProxyProfatDocumentoEntradaCT\" />
+    <WCFMetadataStorage Include="Service References\ProxyProfat\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

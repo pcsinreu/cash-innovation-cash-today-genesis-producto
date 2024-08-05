@@ -1,0 +1,1022 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{275AE785-D755-452A-9A75-7CA678980AC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Global.GesEfectivo.IAC.ContractoServicio</RootNamespace>
+    <AssemblyName>Prosegur.Global.GesEfectivo.IAC.ContractoServicio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Prosegur.Global.GesEfectivo.IAC.ContractoServicio/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Global.GesEfectivo.IAC.ContractoServicio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Global.GesEfectivo.IAC.ContractoServicio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Genesis\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\Agrupacion.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\AgrupacionColeccion.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\TipoMedioPago.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\TipoMedioPagoColeccion.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\Divisa.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\DivisaColeccion.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\MedioPago.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\MedioPagoColeccion.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\Agrupacion.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\AgrupacionColeccion.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\RespuestaAgrupacionColeccion.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\RespuestaAgrupacion.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\Efectivo.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\EfetivoColeccion.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\Peticion.vb" />
+    <Compile Include="Agrupacion\GetAgrupacionesDetail\Respuesta.vb" />
+    <Compile Include="Agrupacion\GetAgrupaciones\Agrupacion.vb" />
+    <Compile Include="Agrupacion\GetAgrupaciones\AgrupacionColeccion.vb" />
+    <Compile Include="Agrupacion\GetAgrupaciones\Peticion.vb" />
+    <Compile Include="Agrupacion\GetAgrupaciones\Respuesta.vb" />
+    <Compile Include="Agrupacion\IAgrupacion.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\MedioPago.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\MedioPagoColeccion.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\Peticion.vb" />
+    <Compile Include="Agrupacion\SetAgrupacion\Respuesta.vb" />
+    <Compile Include="Aplicacion\Aplicacion.vb" />
+    <Compile Include="ATM\GetATMDetail\ATM.vb" />
+    <Compile Include="ATM\GetATMDetail\Proceso.vb" />
+    <Compile Include="ATM\GetATMDetail\Morfologia.vb" />
+    <Compile Include="ATM\GetATMDetail\Peticion.vb" />
+    <Compile Include="ATM\GetATMDetail\Respuesta.vb" />
+    <Compile Include="ATM\GetATMs\ATM.vb" />
+    <Compile Include="ATM\GetATMs\Cliente.vb" />
+    <Compile Include="ATM\GetATMs\Morfologia.vb" />
+    <Compile Include="ATM\GetATMs\Peticion.vb" />
+    <Compile Include="ATM\GetATMs\PuntoServicio.vb" />
+    <Compile Include="ATM\GetATMs\Respuesta.vb" />
+    <Compile Include="ATM\GetATMs\Subcliente.vb" />
+    <Compile Include="ATM\IATM.vb" />
+    <Compile Include="ATM\SetATM\Cajero.vb" />
+    <Compile Include="ATM\SetATM\Morfologia.vb" />
+    <Compile Include="ATM\SetATM\Peticion.vb" />
+    <Compile Include="ATM\SetATM\Proceso.vb" />
+    <Compile Include="ATM\SetATM\Respuesta.vb" />
+    <Compile Include="Canal\GetSubCanalesByCertificado\Peticion.vb" />
+    <Compile Include="Canal\GetSubCanalesByCertificado\Respuesta.vb" />
+    <Compile Include="Canal\GetSubCanalesByCertificado\SubCanal.vb" />
+    <Compile Include="Canal\GetSubCanalesByCertificado\SubCanalColeccion.vb" />
+    <Compile Include="Cliente\GetClientesByCodigoAjeno\Cliente.vb" />
+    <Compile Include="Cliente\GetClientesByCodigoAjeno\Peticion.vb" />
+    <Compile Include="Cliente\GetClientesByCodigoAjeno\Respuesta.vb" />
+    <Compile Include="Cliente\GetClientesDetalle\Cliente.vb" />
+    <Compile Include="Cliente\GetClientesDetalle\ClienteColeccion.vb" />
+    <Compile Include="Cliente\GetClientesDetalle\ConfigNivelSaldo.vb" />
+    <Compile Include="Cliente\GetClientesDetalle\Peticion.vb" />
+    <Compile Include="Cliente\GetClientesDetalle\Respuesta.vb" />
+    <Compile Include="Cliente\GetClientes\Cliente.vb" />
+    <Compile Include="Cliente\GetClientes\ClienteColeccion.vb" />
+    <Compile Include="Cliente\GetClientes\Peticion.vb" />
+    <Compile Include="Cliente\GetClientes\Respuesta.vb" />
+    <Compile Include="Cliente\ICliente.vb" />
+    <Compile Include="Cliente\SetClientes\Cliente.vb" />
+    <Compile Include="Cliente\SetClientes\ClienteColeccion.vb" />
+    <Compile Include="Cliente\SetClientes\ConfigNivelMov.vb" />
+    <Compile Include="Cliente\SetClientes\ConfigNivelMovColeccion.vb" />
+    <Compile Include="Cliente\SetClientes\ConfigNivelSaldo.vb" />
+    <Compile Include="Cliente\SetClientes\Peticion.vb" />
+    <Compile Include="Cliente\SetClientes\Respuesta.vb" />
+    <Compile Include="CodigoAjeno\Constantes.vb" />
+    <Compile Include="CodigoAjeno\GetAjenoByClienteSubClientePuntoServicio\Ajeno.vb" />
+    <Compile Include="CodigoAjeno\GetAjenoByClienteSubClientePuntoServicio\AjenoColeccion.vb" />
+    <Compile Include="CodigoAjeno\GetAjenoByClienteSubClientePuntoServicio\Peticion.vb" />
+    <Compile Include="CodigoAjeno\GetAjenoByClienteSubClientePuntoServicio\Respuesta.vb" />
+    <Compile Include="CodigoAjeno\GetCodigosAjenos\CodigoAjeno.vb" />
+    <Compile Include="CodigoAjeno\GetCodigosAjenos\CodigoAjenoRespuestaColeccion.vb" />
+    <Compile Include="CodigoAjeno\GetCodigosAjenos\CodigoAjenoRespuesta.vb" />
+    <Compile Include="CodigoAjeno\GetCodigosAjenos\EntidadCodigosAjenoColeccion.vb" />
+    <Compile Include="CodigoAjeno\GetCodigosAjenos\EntidadCodigosAjeno.vb" />
+    <Compile Include="CodigoAjeno\GetCodigosAjenos\Peticion.vb" />
+    <Compile Include="CodigoAjeno\GetCodigosAjenos\Respuesta.vb" />
+    <Compile Include="CodigoAjeno\ICodigoAjeno.vb" />
+    <Compile Include="CodigoAjeno\SetCodigosAjenos\CodigoAjeno.vb" />
+    <Compile Include="CodigoAjeno\SetCodigosAjenos\CodigoAjenoRespuesta.vb" />
+    <Compile Include="CodigoAjeno\SetCodigosAjenos\CodigoAjenoRespuestaColeccion.vb" />
+    <Compile Include="CodigoAjeno\SetCodigosAjenos\CodigoAjenoColeccion.vb" />
+    <Compile Include="CodigoAjeno\SetCodigosAjenos\Peticion.vb" />
+    <Compile Include="CodigoAjeno\SetCodigosAjenos\Respuesta.vb" />
+    <Compile Include="CodigoAjeno\VerificarIdentificadorXCodigoAjeno\DatosEntidad.vb" />
+    <Compile Include="CodigoAjeno\VerificarIdentificadorXCodigoAjeno\Peticion.vb" />
+    <Compile Include="CodigoAjeno\VerificarIdentificadorXCodigoAjeno\Respuesta.vb" />
+    <Compile Include="Configuracion\General\ConfiguracionGeneral.vb" />
+    <Compile Include="Configuracion\General\Peticion.vb" />
+    <Compile Include="Configuracion\General\Respuesta.vb" />
+    <Compile Include="Configuracion\IConfiguracionGeneral.vb" />
+    <Compile Include="DatoBancario\AlterarCuentaEstandar\Peticion.vb" />
+    <Compile Include="DatoBancario\AlterarCuentaEstandar\Respuesta.vb" />
+    <Compile Include="DatoBancario\GetDatosBancarios\Peticion.vb" />
+    <Compile Include="DatoBancario\GetDatosBancarios\Respuesta.vb" />
+    <Compile Include="DatoBancario\SetDatosBancarios\Peticion.vb" />
+    <Compile Include="DatoBancario\SetDatosBancarios\Respuesta.vb" />
+    <Compile Include="Delegacion\GetDelegacionByCertificado\Delegacion.vb" />
+    <Compile Include="Delegacion\GetDelegacionByCertificado\DelegacionColeccion.vb" />
+    <Compile Include="Delegacion\GetDelegacionByCertificado\Peticion.vb" />
+    <Compile Include="Delegacion\GetDelegacionByCertificado\Respuesta.vb" />
+    <Compile Include="Delegacion\SetDelegacion\ClienteFacturacion.vb" />
+    <Compile Include="Delegacion\\GetDelegacionByPlanificacion\Peticion.vb" />
+    <Compile Include="Delegacion\\GetDelegacionByPlanificacion\Respuesta.vb" />
+    <Compile Include="Direccion\DireccionBase.vb" />
+    <Compile Include="Direccion\DireccionColeccionBase.vb" />
+    <Compile Include="DatoBancario\IDatoBancario.vb" />
+    <Compile Include="Formulario\GetFormularios\Formulario.vb" />
+    <Compile Include="Formulario\GetFormularios\FormularioColeccion.vb" />
+    <Compile Include="Formulario\GetFormularios\Peticion.vb" />
+    <Compile Include="Formulario\GetFormularios\Respuesta.vb" />
+    <Compile Include="Formulario\IFormulario.vb" />
+    <Compile Include="GrupoCliente\Cliente.vb" />
+    <Compile Include="GrupoCliente\ClienteDetalle.vb" />
+    <Compile Include="GrupoCliente\ClienteDetalleColeccion.vb" />
+    <Compile Include="GrupoCliente\GrupoClienteDetalle.vb" />
+    <Compile Include="GrupoCliente\GrupoClienteDetalleColeccion.vb" />
+    <Compile Include="GrupoCliente\PuntoServicio.vb" />
+    <Compile Include="GrupoCliente\SubCliente.vb" />
+    <Compile Include="ImporteMaximo\GetImporteMaximo\EntidadImporteMaximo.vb" />
+    <Compile Include="ImporteMaximo\GetImporteMaximo\EntidadImportesMaximoColeccion.vb" />
+    <Compile Include="ImporteMaximo\GetImporteMaximo\ImporteMaximo.vb" />
+    <Compile Include="ImporteMaximo\GetImporteMaximo\ImporteMaximoRespuesta.vb" />
+    <Compile Include="ImporteMaximo\GetImporteMaximo\ImporteMaximoRespuestaColeccion.vb" />
+    <Compile Include="ImporteMaximo\GetImporteMaximo\Peticion.vb" />
+    <Compile Include="ImporteMaximo\GetImporteMaximo\Respuesta.vb" />
+    <Compile Include="ImporteMaximo\ImporteMaximoBase.vb" />
+    <Compile Include="ImporteMaximo\ImporteMaximoColeccionBase.vb" />
+    <Compile Include="ImporteMaximo\SetImporteMaximo\ImporteMaximo.vb" />
+    <Compile Include="ImporteMaximo\SetImporteMaximo\ImporteMaximoColeccion.vb" />
+    <Compile Include="ImporteMaximo\SetImporteMaximo\ImporteMaximoRespuesta.vb" />
+    <Compile Include="ImporteMaximo\SetImporteMaximo\ImporteMaximoRespuestaColeccion.vb" />
+    <Compile Include="ImporteMaximo\SetImporteMaximo\Peticion.vb" />
+    <Compile Include="ImporteMaximo\SetImporteMaximo\Respuesta.vb" />
+    <Compile Include="Fabricante\GetFabricante\Peticion.vb" />
+    <Compile Include="Fabricante\GetFabricante\Respuesta.vb" />
+    <Compile Include="Fabricante\IFabricante.vb" />
+    <Compile Include="MAE\BajaMAE\Respuesta.vb" />
+    <Compile Include="MAE\MantenimientoAccionesEnLote\Respuesta.vb" />
+    <Compile Include="MAE\SetMAE\Peticion.vb" />
+    <Compile Include="MAE\SetMAE\Respuesta.vb" />
+    <Compile Include="Maquina\GetMaquinaDetalle\Maquina.vb" />
+    <Compile Include="Maquina\GetMaquinaDetalle\Respuesta.vb" />
+    <Compile Include="Maquina\GetMaquinaSinPlanificacion\Maquina.vb" />
+    <Compile Include="Maquina\GetMaquinaSinPlanificacion\Peticion.vb" />
+    <Compile Include="Maquina\GetMaquinaSinPlanificacion\Respuesta.vb" />
+    <Compile Include="Maquina\GetMaquina\Maquina.vb" />
+    <Compile Include="Maquina\GetMaquina\Peticion.vb" />
+    <Compile Include="Maquina\GetMaquina\Respuesta.vb" />
+    <Compile Include="Maquina\MaquinaTransacao\MaquinaTransacao.vb" />
+    <Compile Include="Maquina\MaquinaTransacao\Respuesta.vb" />
+    <Compile Include="Modelo\IModelo.vb" />
+    <Compile Include="Modelo\GetModelo\Peticion.vb" />
+    <Compile Include="Modelo\GetModelo\Respuesta.vb" />
+    <Compile Include="Maquina\IMaquina.vb" />
+    <Compile Include="Modulo\IModulo.vb" />
+    <Compile Include="Modulo\RecuperarModulo\Modulo.vb" />
+    <Compile Include="Modulo\RecuperarModulo\Peticion.vb" />
+    <Compile Include="Modulo\RecuperarModulo\Respuesta.vb" />
+    <Compile Include="Planificacion\GetPlanificacionDetalle\Maquina.vb" />
+    <Compile Include="Planificacion\GetPlanificacionDetalle\Respuesta.vb" />
+    <Compile Include="Planificacion\GetPlanificaciones\Peticion.vb" />
+    <Compile Include="Planificacion\GetPlanificaciones\PlanXProgramacion.vb" />
+    <Compile Include="Planificacion\GetPlanificaciones\Respuesta.vb" />
+    <Compile Include="Planificacion\GetPlanificacionFacturacion\Peticion.vb" />
+    <Compile Include="Planificacion\GetPlanificacionFacturacion\Planificacion.vb" />
+    <Compile Include="Planificacion\GetPlanificacionFacturacion\Respuesta.vb" />
+    <Compile Include="Planificacion\GetPlanificacionProgramacion\Peticion.vb" />
+    <Compile Include="Planificacion\GetPlanificacionProgramacion\Respuesta.vb" />
+    <Compile Include="Planificacion\IPlanificacion.vb" />
+    <Compile Include="Procedencia\GetProcedencias\Procedencia.vb" />
+    <Compile Include="Procedencia\GetProcedencias\ProcedenciaColeccion.vb" />
+    <Compile Include="Procedencia\GetProcedencias\Peticion.vb" />
+    <Compile Include="Procedencia\GetProcedencias\Respuesta.vb" />
+    <Compile Include="Procedencia\IProcedencia.vb" />
+    <Compile Include="Procedencia\SetProcedencia\Peticion.vb" />
+    <Compile Include="Procedencia\SetProcedencia\Procedencia.vb" />
+    <Compile Include="Procedencia\SetProcedencia\Respuesta.vb" />
+    <Compile Include="Procedencia\VerificarExisteProcedencia\Peticion.vb" />
+    <Compile Include="Procedencia\VerificarExisteProcedencia\Respuesta.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicioByCodigoAjeno\Peticion.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicioByCodigoAjeno\PuntoServicio.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicioByCodigoAjeno\Respuesta.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicioDetalle\PuntoServicio.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicioDetalle\PuntoServicioColeccion.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicioDetalle\Peticion.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicioDetalle\Respuesta.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicio\PuntoServicio.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicio\PuntoServicioColeccion.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicio\Peticion.vb" />
+    <Compile Include="PuntoServicio\GetPuntoServicio\Respuesta.vb" />
+    <Compile Include="PuntoServicio\IPuntoServicio.vb" />
+    <Compile Include="PuntoServicio\SetPuntoServicio\ConfigNivelMov.vb" />
+    <Compile Include="PuntoServicio\SetPuntoServicio\ConfigNivelMovColeccion.vb" />
+    <Compile Include="PuntoServicio\SetPuntoServicio\ConfigNivelSaldo.vb" />
+    <Compile Include="PuntoServicio\SetPuntoServicio\PuntoServicio.vb" />
+    <Compile Include="PuntoServicio\SetPuntoServicio\PuntoServicioColeccion.vb" />
+    <Compile Include="PuntoServicio\SetPuntoServicio\Peticion.vb" />
+    <Compile Include="PuntoServicio\SetPuntoServicio\Respuesta.vb" />
+    <Compile Include="Seguridad\Delegacion\GrabarDelegacion\Peticion.vb" />
+    <Compile Include="Seguridad\Delegacion\GrabarDelegacion\Respuesta.vb" />
+    <Compile Include="Seguridad\Planta\GrabarPlanta\Peticion.vb" />
+    <Compile Include="Seguridad\Planta\GrabarPlanta\Respuesta.vb" />
+    <Compile Include="Seguridad\TipoSector\GrabarTipoSector\Peticion.vb" />
+    <Compile Include="Seguridad\TipoSector\GrabarTipoSector\Respuesta.vb" />
+    <Compile Include="Setor\GetSectoresIAC\Peticion.vb" />
+    <Compile Include="Setor\GetSectoresIAC\Respuesta.vb" />
+    <Compile Include="Setor\GetSectoresIAC\Sector.vb" />
+    <Compile Include="Setor\GetSectoresTesoro\Peticion.vb" />
+    <Compile Include="Setor\GetSectoresTesoro\Respuesta.vb" />
+    <Compile Include="Setor\GetSectoresTesoro\Sector.vb" />
+    <Compile Include="Setor\GrabarTipoSectorDelegacion\Peticion.vb" />
+    <Compile Include="Setor\GrabarTipoSectorDelegacion\Respuesta.vb" />
+    <Compile Include="Setor\GrabarTipoSectorPlanta\Peticion.vb" />
+    <Compile Include="Setor\GrabarTipoSectorPlanta\Respuesta.vb" />
+    <Compile Include="SubCliente\GetSubclienteByCodigoAjeno\Peticion.vb" />
+    <Compile Include="SubCliente\GetSubclienteByCodigoAjeno\Respuesta.vb" />
+    <Compile Include="SubCliente\GetSubclienteByCodigoAjeno\SubCliente.vb" />
+    <Compile Include="SubCliente\GetSubClientesDetalle\SubCliente.vb" />
+    <Compile Include="SubCliente\GetSubClientesDetalle\SubClienteColeccion.vb" />
+    <Compile Include="SubCliente\GetSubClientesDetalle\Peticion.vb" />
+    <Compile Include="SubCliente\GetSubClientesDetalle\Respuesta.vb" />
+    <Compile Include="SubCliente\GetSubClientes\SubCliente.vb" />
+    <Compile Include="SubCliente\GetSubClientes\SubClienteColeccion.vb" />
+    <Compile Include="SubCliente\GetSubClientes\Peticion.vb" />
+    <Compile Include="SubCliente\GetSubClientes\Respuesta.vb" />
+    <Compile Include="SubCliente\ISubCliente.vb" />
+    <Compile Include="SubCliente\SetSubClientes\ConfigNivelMov.vb" />
+    <Compile Include="SubCliente\SetSubClientes\ConfigNivelMovColeccion.vb" />
+    <Compile Include="SubCliente\SetSubClientes\ConfigNivelSaldo.vb" />
+    <Compile Include="SubCliente\SetSubClientes\SubCliente.vb" />
+    <Compile Include="SubCliente\SetSubClientes\SubClienteColeccion.vb" />
+    <Compile Include="SubCliente\SetSubClientes\Peticion.vb" />
+    <Compile Include="SubCliente\SetSubClientes\Respuesta.vb" />
+    <Compile Include="TipoPlanificacion\GetTiposPlanificaciones\Peticion.vb" />
+    <Compile Include="TipoPlanificacion\GetTiposPlanificaciones\Respuesta.vb" />
+    <Compile Include="TipoPlanificacion\GetTiposPlanificaciones\TipoPlanificacion.vb" />
+    <Compile Include="TipoPlanificacion\ITipoPlanificacion.vb" />
+    <Compile Include="TipoProcedencia\GetTiposProcedencias\Peticion.vb" />
+    <Compile Include="TipoProcedencia\GetTiposProcedencias\Respuesta.vb" />
+    <Compile Include="TipoProcedencia\GetTiposProcedencias\TipoProcedencia.vb" />
+    <Compile Include="TipoProcedencia\GetTiposProcedencias\TipoProcedenciaColeccion.vb" />
+    <Compile Include="TipoProcedencia\ITipoProcedencia.vb" />
+    <Compile Include="TipoProcedencia\SetTiposProcedencias\Peticion.vb" />
+    <Compile Include="TipoProcedencia\SetTiposProcedencias\Respuesta.vb" />
+    <Compile Include="Delegacion\Delegacion.vb" />
+    <Compile Include="Delegacion\DelegacionColeccion.vb" />
+    <Compile Include="Delegacion\GetCodigoDelegacion\Respuesta.vb" />
+    <Compile Include="Delegacion\GetCodigoDelegacion\Peticion.vb" />
+    <Compile Include="Delegacion\GetDelegacionDetail\Delegacion.vb" />
+    <Compile Include="Delegacion\GetDelegacionDetail\DelegacionDetail.vb" />
+    <Compile Include="Delegacion\GetDelegacionDetail\DelegacionDetailColeccion.vb" />
+    <Compile Include="Delegacion\GetDelegacionDetail\Peticion.vb" />
+    <Compile Include="Delegacion\GetDelegacionDetail\Respuesta.vb" />
+    <Compile Include="Delegacion\GetDelegacion\Delegacion.vb" />
+    <Compile Include="Delegacion\GetDelegacion\DelegacionColeccion.vb" />
+    <Compile Include="Delegacion\GetDelegacion\Peticion.vb" />
+    <Compile Include="Delegacion\GetDelegacion\Respuesta.vb" />
+    <Compile Include="Delegacion\IDelegacion.vb" />
+    <Compile Include="Delegacion\SetDelegacion\Peticion.vb" />
+    <Compile Include="Delegacion\SetDelegacion\Respuesta.vb" />
+    <Compile Include="Delegacion\SetDelegacion\RespuestaDelegacion.vb" />
+    <Compile Include="Delegacion\SetDelegacion\RespuestaDelegacionColeccion.vb" />
+    <Compile Include="Delegacion\VerificaCodigoDelegacion\Peticion.vb" />
+    <Compile Include="Delegacion\VerificaCodigoDelegacion\Respuesta.vb" />
+    <Compile Include="Delegacion\VerificaCodigoPaisDelegacion\Peticion.vb" />
+    <Compile Include="Delegacion\VerificaCodigoPaisDelegacion\Respuesta.vb" />
+    <Compile Include="Direccion\Direccion.vb" />
+    <Compile Include="Direccion\GetDirecciones\DireccionColeccion.vb" />
+    <Compile Include="Direccion\GetDirecciones\Peticion.vb" />
+    <Compile Include="Direccion\GetDirecciones\Respuesta.vb" />
+    <Compile Include="Direccion\GetDirecciones\TablaGenesis.vb" />
+    <Compile Include="Direccion\IDireccion.vb" />
+    <Compile Include="Direccion\SetDirecciones\Peticion.vb" />
+    <Compile Include="Direccion\SetDirecciones\Respuesta.vb" />
+    <Compile Include="Divisa\GetDivisasPaginacion\Peticion.vb" />
+    <Compile Include="Divisa\GetDivisasPaginacion\Respuesta.vb" />
+    <Compile Include="GrupoCliente\ClienteColeccion.vb" />
+    <Compile Include="GrupoCliente\GetGruposClientesDetalle\Peticion.vb" />
+    <Compile Include="GrupoCliente\GrupoClienteColeccion.vb" />
+    <Compile Include="GrupoCliente\PuntoServicioColeccion.vb" />
+    <Compile Include="GrupoCliente\GetGruposClientesDetalle\Respuesta.vb" />
+    <Compile Include="GrupoCliente\SetGrupoCliente\Peticion.vb" />
+    <Compile Include="GrupoCliente\SubClienteColeccion.vb" />
+    <Compile Include="GrupoCliente\GetGruposCliente\Peticion.vb" />
+    <Compile Include="GrupoCliente\GetGruposCliente\Respuesta.vb" />
+    <Compile Include="GrupoCliente\GrupoCliente.vb" />
+    <Compile Include="GrupoCliente\IGrupoCliente.vb" />
+    <Compile Include="GrupoCliente\SetGrupoCliente\Respuesta.vb" />
+    <Compile Include="Grupo\GetATMsbyGrupo\Cliente.vb" />
+    <Compile Include="Grupo\GetATMsbyGrupo\PuntoServicio.vb" />
+    <Compile Include="Grupo\GetATMsbyGrupo\SubCliente.vb" />
+    <Compile Include="Grupo\GetATMsbyGrupo\Peticion.vb" />
+    <Compile Include="Grupo\GetATMsbyGrupo\Respuesta.vb" />
+    <Compile Include="Grupo\GetGrupos\Grupo.vb" />
+    <Compile Include="Grupo\GetGrupos\Peticion.vb" />
+    <Compile Include="Grupo\GetGrupos\Respuesta.vb" />
+    <Compile Include="Grupo\IGrupo.vb" />
+    <Compile Include="Grupo\SetGrupo\Peticion.vb" />
+    <Compile Include="Grupo\SetGrupo\Respuesta.vb" />
+    <Compile Include="Grupo\VerificarGrupo\Morfologia.vb" />
+    <Compile Include="Grupo\VerificarGrupo\Peticion.vb" />
+    <Compile Include="Grupo\VerificarGrupo\Respuesta.vb" />
+    <Compile Include="Login\InserirSesion\Peticion.vb" />
+    <Compile Include="Morfologia\GetMorfologia\Componente.vb" />
+    <Compile Include="Morfologia\GetMorfologia\Morfologia.vb" />
+    <Compile Include="Morfologia\GetMorfologia\Peticion.vb" />
+    <Compile Include="Morfologia\GetMorfologia\Respuesta.vb" />
+    <Compile Include="Morfologia\IMorfologia.vb" />
+    <Compile Include="Morfologia\SetMorfologia\Componente.vb" />
+    <Compile Include="Morfologia\SetMorfologia\Morfologia.vb" />
+    <Compile Include="Morfologia\SetMorfologia\Objecto.vb" />
+    <Compile Include="Morfologia\SetMorfologia\Peticion.vb" />
+    <Compile Include="Morfologia\SetMorfologia\Respuesta.vb" />
+    <Compile Include="Morfologia\VerificarMorfologia\Peticion.vb" />
+    <Compile Include="Morfologia\VerificarMorfologia\Respuesta.vb" />
+    <Compile Include="Paginacion\PeticionPaginacionBase.vb" />
+    <Compile Include="Paginacion\RespuestaPaginacionBase.vb" />
+    <Compile Include="Pais\Pais.vb" />
+    <Compile Include="Pais\PaisColeccion.vb" />
+    <Compile Include="Pais\GetPaisDetail\Pais.vb" />
+    <Compile Include="Pais\GetPaisDetail\PaisColeccion.vb" />
+    <Compile Include="Pais\GetPaisDetail\Peticion.vb" />
+    <Compile Include="Pais\GetPaisDetail\Respuesta.vb" />
+    <Compile Include="Pais\GetPais\Pais.vb" />
+    <Compile Include="Pais\GetPais\PaisColeccion.vb" />
+    <Compile Include="Pais\GetPais\Peticion.vb" />
+    <Compile Include="Pais\GetPais\Respuesta.vb" />
+    <Compile Include="Pais\IPais.vb" />
+    <Compile Include="Parametro\BajarAgrupacion\Peticion.vb" />
+    <Compile Include="Parametro\BajarAgrupacion\Respuesta.vb" />
+    <Compile Include="Parametro\TipoDato.vb" />
+    <Compile Include="Parametro\GetAgrupacionDetail\Agrupacion.vb" />
+    <Compile Include="Parametro\GetAgrupaciones\Agrupacion.vb" />
+    <Compile Include="Parametro\GetAgrupaciones\AgrupacionColeccion.vb" />
+    <Compile Include="Parametro\GetParametrosValues\Agrupacion.vb" />
+    <Compile Include="Parametro\GetParametrosValues\TipoNivel.vb" />
+    <Compile Include="Parametro\GetParametrosValues\NivelColeccion.vb" />
+    <Compile Include="Parametro\GetParametrosValues\ParametroOpciones.vb" />
+    <Compile Include="Parametro\GetParametrosValues\Nivel.vb" />
+    <Compile Include="Parametro\GetParametrosValues\Parametro.vb" />
+    <Compile Include="Parametro\SetAgrupacion\Peticion.vb" />
+    <Compile Include="Parametro\SetAgrupacion\Respuesta.vb" />
+    <Compile Include="Parametro\GetAgrupacionDetail\Peticion.vb" />
+    <Compile Include="Parametro\GetAgrupacionDetail\Respuesta.vb" />
+    <Compile Include="Parametro\GetAgrupaciones\Peticion.vb" />
+    <Compile Include="Parametro\GetAgrupaciones\Respuesta.vb" />
+    <Compile Include="Parametro\GetParametroDetail\Agrupacion.vb" />
+    <Compile Include="Parametro\GetParametroDetail\Aplicacion.vb" />
+    <Compile Include="Parametro\GetParametroDetail\Nivel.vb" />
+    <Compile Include="Parametro\GetParametroDetail\Parametro.vb" />
+    <Compile Include="Parametro\GetParametroDetail\Peticion.vb" />
+    <Compile Include="Parametro\GetParametroDetail\Respuesta.vb" />
+    <Compile Include="Parametro\GetParametroOpciones\Opcion.vb" />
+    <Compile Include="Parametro\GetParametroOpciones\OpcionColeccion.vb" />
+    <Compile Include="Parametro\GetParametroOpciones\Peticion.vb" />
+    <Compile Include="Parametro\GetParametroOpciones\Respuesta.vb" />
+    <Compile Include="Parametro\GetParametrosValues\Peticion.vb" />
+    <Compile Include="Parametro\GetParametrosValues\Respuesta.vb" />
+    <Compile Include="Parametro\GetParametros\Agrupacion.vb" />
+    <Compile Include="Parametro\GetParametros\Nivel.vb" />
+    <Compile Include="Parametro\GetParametros\Parametro.vb" />
+    <Compile Include="Parametro\GetParametros\Peticion.vb" />
+    <Compile Include="Parametro\GetParametros\Respuesta.vb" />
+    <Compile Include="Parametro\SetParametrosValues\ParametroColeccion.vb" />
+    <Compile Include="Parametro\SetParametrosValues\Parametro.vb" />
+    <Compile Include="Parametro\TipoComponente.vb" />
+    <Compile Include="Parametro\IParametro.vb" />
+    <Compile Include="Parametro\SetParametrosValues\Peticion.vb" />
+    <Compile Include="Parametro\SetParametrosValues\Respuesta.vb" />
+    <Compile Include="Parametro\SetParametro\Peticion.vb" />
+    <Compile Include="Parametro\SetParametro\Respuesta.vb" />
+    <Compile Include="Parametro\VerificarCodigoParametroOpcion\Peticion.vb" />
+    <Compile Include="Parametro\VerificarCodigoParametroOpcion\Respuesta.vb" />
+    <Compile Include="Parametro\VerificarDescricaoParametroOpcion\Peticion.vb" />
+    <Compile Include="Parametro\VerificarDescricaoParametroOpcion\Respuesta.vb" />
+    <Compile Include="CodigoAjeno\CodigoAjenoBase.vb" />
+    <Compile Include="CodigoAjeno\CodigoAjenoColeccionBase.vb" />
+    <Compile Include="Planta\GetPlantaDetail\Peticion.vb" />
+    <Compile Include="Planta\GetPlantaDetail\Planta.vb" />
+    <Compile Include="Planta\GetPlantaDetail\PlantaDetailColeccion.vb" />
+    <Compile Include="Planta\GetPlantaDetail\Respuesta.vb" />
+    <Compile Include="Planta\GetPlanta\Peticion.vb" />
+    <Compile Include="Planta\GetPlanta\PlantaColeccion.vb" />
+    <Compile Include="Planta\GetPlanta\Respuesta.vb" />
+    <Compile Include="Planta\GetPlanta\Planta.vb" />
+    <Compile Include="Planta\IPlanta.vb" />
+    <Compile Include="Planta\SetPlanta\Peticion.vb" />
+    <Compile Include="Planta\SetPlanta\Respuesta.vb" />
+    <Compile Include="Planta\VerificaCodigoPlanta\Peticion.vb" />
+    <Compile Include="Planta\VerificaCodigoPlanta\Respuesta.vb" />
+    <Compile Include="Planta\VerificaExistencia\Peticion.vb" />
+    <Compile Include="Planta\VerificaExistencia\Respuesta.vb" />
+    <Compile Include="Puesto\GetPuestoDetail\Peticion.vb" />
+    <Compile Include="Puesto\GetPuestoDetail\Puesto.vb" />
+    <Compile Include="Puesto\GetPuestoDetail\Respuesta.vb" />
+    <Compile Include="Parametro\GetParametros\ParametroColeccion.vb" />
+    <Compile Include="Puesto\GetPuestos\PuestoColeccion.vb" />
+    <Compile Include="Puesto\GetPuestos\Puesto.vb" />
+    <Compile Include="Puesto\GetPuestos\Peticion.vb" />
+    <Compile Include="Puesto\GetPuestos\Respuesta.vb" />
+    <Compile Include="Puesto\IPuesto.vb" />
+    <Compile Include="Puesto\SetPuesto\Peticion.vb" />
+    <Compile Include="Puesto\SetPuesto\Respuesta.vb" />
+    <Compile Include="Setor\GetSectoresDetail\Peticion.vb" />
+    <Compile Include="Setor\GetSectoresDetail\Respuesta.vb" />
+    <Compile Include="Setor\GetSectoresDetail\Sector.vb" />
+    <Compile Include="Setor\GetSectoresDetail\SetorColeccion.vb" />
+    <Compile Include="Setor\GetSectores\Peticion.vb" />
+    <Compile Include="Setor\GetSectores\Respuesta.vb" />
+    <Compile Include="Setor\GetSectores\Setor.vb" />
+    <Compile Include="Setor\GetSectores\SetorColeccion.vb" />
+    <Compile Include="Setor\ISetor.vb" />
+    <Compile Include="Setor\SetSectores\CodigoAjeno.vb" />
+    <Compile Include="Setor\SetSectores\CodigoAjenoColeccion.vb" />
+    <Compile Include="Setor\SetSectores\Peticion.vb" />
+    <Compile Include="Setor\SetSectores\Respuesta.vb" />
+    <Compile Include="Setor\SetSectores\RespuestaSetor.vb" />
+    <Compile Include="Setor\SetSectores\RespuestaSetorColeccion.vb" />
+    <Compile Include="Test\Respuesta.vb" />
+    <Compile Include="Agrupacion\VerificarCodigoAgrupacion\Peticion.vb" />
+    <Compile Include="Agrupacion\VerificarCodigoAgrupacion\Respuesta.vb" />
+    <Compile Include="Agrupacion\VerificarDescripcionAgrupacion\Peticion.vb" />
+    <Compile Include="Agrupacion\VerificarDescripcionAgrupacion\Respuesta.vb" />
+    <Compile Include="Canal\GetCanales\Canal.vb" />
+    <Compile Include="Canal\GetCanales\CanalColeccion.vb" />
+    <Compile Include="Canal\GetSubCanalesByCanal\Canal.vb" />
+    <Compile Include="Canal\GetSubCanalesByCanal\CanalColeccion.vb" />
+    <Compile Include="Canal\GetSubCanalesByCanal\SubCanal.vb" />
+    <Compile Include="Canal\GetSubCanalesByCanal\SubCanalColeccion.vb" />
+    <Compile Include="Canal\ICanal.vb" />
+    <Compile Include="Canal\GetCanales\Peticion.vb" />
+    <Compile Include="Canal\GetCanales\Respuesta.vb" />
+    <Compile Include="Canal\GetSubCanalesByCanal\Peticion.vb" />
+    <Compile Include="Canal\GetSubCanalesByCanal\Respuesta.vb" />
+    <Compile Include="Canal\SetCanal\Canal.vb" />
+    <Compile Include="Canal\SetCanal\CanalColeccion.vb" />
+    <Compile Include="Canal\SetCanal\Peticion.vb" />
+    <Compile Include="Canal\SetCanal\RespuestaCanal.vb" />
+    <Compile Include="Canal\SetCanal\Respuesta.vb" />
+    <Compile Include="Canal\SetCanal\RespuestaCanalColeccion.vb" />
+    <Compile Include="Canal\SetCanal\SubCanal.vb" />
+    <Compile Include="Canal\SetCanal\SubCanalColeccion.vb" />
+    <Compile Include="Canal\VerificarCodigoCanal\Peticion.vb" />
+    <Compile Include="Canal\VerificarCodigoCanal\Respuesta.vb" />
+    <Compile Include="Canal\VerificarCodigoSubCanal\Peticion.vb" />
+    <Compile Include="Canal\VerificarCodigoSubCanal\Respuesta.vb" />
+    <Compile Include="Canal\VerificarDescripcionCanal\Peticion.vb" />
+    <Compile Include="Canal\VerificarDescripcionCanal\Respuesta.vb" />
+    <Compile Include="Canal\VerificarDescripcionSubCanal\Peticion.vb" />
+    <Compile Include="Canal\VerificarDescripcionSubCanal\Respuesta.vb" />
+    <Compile Include="Caracteristica\GetCaracteristica\Caracteristica.vb" />
+    <Compile Include="Caracteristica\GetCaracteristica\CaracteristicaColeccion.vb" />
+    <Compile Include="Caracteristica\GetCaracteristica\Peticion.vb" />
+    <Compile Include="Caracteristica\GetCaracteristica\Respuesta.vb" />
+    <Compile Include="Caracteristica\ICaracteristica.vb" />
+    <Compile Include="Caracteristica\SetCaracteristica\Caracteristica.vb" />
+    <Compile Include="Caracteristica\SetCaracteristica\CaracteristicaColeccion.vb" />
+    <Compile Include="Caracteristica\SetCaracteristica\CaracteristicaRespuesta.vb" />
+    <Compile Include="Caracteristica\SetCaracteristica\CaracteristicaRespuestaColeccion.vb" />
+    <Compile Include="Caracteristica\SetCaracteristica\Peticion.vb" />
+    <Compile Include="Caracteristica\SetCaracteristica\Respuesta.vb" />
+    <Compile Include="Constantes.vb" />
+    <Compile Include="Iac\GetIac\Iac.vb" />
+    <Compile Include="Iac\GetIac\IacColeccion.vb" />
+    <Compile Include="Iac\GetIac\Peticion.vb" />
+    <Compile Include="Iac\GetIac\Respuesta.vb" />
+    <Compile Include="Iac\GetIac\TerminosIac.vb" />
+    <Compile Include="Iac\GetIac\TerminosIacColeccion.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\AgrupacionProceso.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\AgrupacionProcesoColeccion.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\MedioPagoProceso.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\MedioPagoProcesoColeccion.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\Peticion.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\PeticionProceso.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\PeticionProcesoColeccion.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\Proceso.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\DivisaProceso.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\DivisaProcesoColeccion.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\ProcesoColeccion.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\Respuesta.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\TerminoMedioPago.vb" />
+    <Compile Include="Proceso\GetProcesoDetail\TerminoMedioPagoColeccion.vb" />
+    <Compile Include="Proceso\GetProcesos\Peticion.vb" />
+    <Compile Include="Proceso\GetProcesos\Proceso.vb" />
+    <Compile Include="Proceso\GetProcesos\ProcesoColeccion.vb" />
+    <Compile Include="Proceso\GetProcesos\Respuesta.vb" />
+    <Compile Include="Proceso\IProceso.vb" />
+    <Compile Include="Proceso\SetProceso\AgrupacionProceso.vb" />
+    <Compile Include="Proceso\SetProceso\AgrupacionProcesoColeccion.vb" />
+    <Compile Include="Proceso\SetProceso\Cliente.vb" />
+    <Compile Include="Proceso\SetProceso\DivisaProceso.vb" />
+    <Compile Include="Proceso\SetProceso\DivisaProcesoColeccion.vb" />
+    <Compile Include="Proceso\SetProceso\MedioPagoProceso.vb" />
+    <Compile Include="Proceso\SetProceso\MedioPagoProcesoColeccion.vb" />
+    <Compile Include="Proceso\SetProceso\Proceso.vb" />
+    <Compile Include="Proceso\SetProceso\Peticion.vb" />
+    <Compile Include="Proceso\SetProceso\PuntoServicio.vb" />
+    <Compile Include="Proceso\SetProceso\PuntoServicioColeccion.vb" />
+    <Compile Include="Proceso\SetProceso\Respuesta.vb" />
+    <Compile Include="Proceso\SetProceso\SubCanal.vb" />
+    <Compile Include="Proceso\SetProceso\SubCanalColeccion.vb" />
+    <Compile Include="Proceso\SetProceso\SubCliente.vb" />
+    <Compile Include="Proceso\SetProceso\SubClienteColeccion.vb" />
+    <Compile Include="Proceso\SetProceso\TerminoMedioPago.vb" />
+    <Compile Include="Proceso\SetProceso\TerminoMedioPagoColeccion.vb" />
+    <Compile Include="TipoCliente\GetTiposClientes\Peticion.vb" />
+    <Compile Include="TipoCliente\GetTiposClientes\Respuesta.vb" />
+    <Compile Include="TipoCliente\GetTiposClientes\TipoCliente.vb" />
+    <Compile Include="TipoCliente\GetTiposClientes\TipoClienteColeccion.vb" />
+    <Compile Include="TipoCliente\ITipoCliente.vb" />
+    <Compile Include="TipoCliente\SetTiposClientes\Peticion.vb" />
+    <Compile Include="TipoCliente\SetTiposClientes\Respuesta.vb" />
+    <Compile Include="TipoPuntosServicio\getTiposPuntosServicio\Peticion.vb" />
+    <Compile Include="TipoPuntosServicio\getTiposPuntosServicio\Respuesta.vb" />
+    <Compile Include="TipoPuntosServicio\getTiposPuntosServicio\TipoPuntosServicio.vb" />
+    <Compile Include="TipoPuntosServicio\getTiposPuntosServicio\TipoPuntosServicioColeccion.vb" />
+    <Compile Include="TipoPuntosServicio\ITipoPuntoServicio.vb" />
+    <Compile Include="TipoPuntosServicio\setTiposPuntosServicio\Peticion.vb" />
+    <Compile Include="TipoPuntosServicio\setTiposPuntosServicio\Respuesta.vb" />
+    <Compile Include="TipoSetor\GetCaractNoPertenecTipoSector\Peticion.vb" />
+    <Compile Include="TipoSetor\GetCaractNoPertenecTipoSector\Respuesta.vb" />
+    <Compile Include="TipoSetor\GetCaractNoPertenecTipoSector\TipoSectorNotPercete.vb" />
+    <Compile Include="TipoSetor\GetCaractNoPertenecTipoSector\TipoSectorNotPerceteColeccion.vb" />
+    <Compile Include="TipoSetor\GetTiposSectores\Caracteristica.vb" />
+    <Compile Include="TipoSetor\GetTiposSectores\CaracteristicaColeccion.vb" />
+    <Compile Include="TipoSetor\GetTiposSectores\CaracteristicaRespuesta.vb" />
+    <Compile Include="TipoSetor\GetTiposSectores\CaracteristicaRespuestaColeccion.vb" />
+    <Compile Include="TipoSetor\GetTiposSectores\Peticion.vb" />
+    <Compile Include="TipoSetor\GetTiposSectores\Respuesta.vb" />
+    <Compile Include="TipoSetor\GetTiposSectores\TipoSetor.vb" />
+    <Compile Include="TipoSetor\GetTiposSectores\TipoSetorColeccion.vb" />
+    <Compile Include="TipoSetor\ITipoSetor.vb" />
+    <Compile Include="TipoSetor\SetTiposSectores\Caracteristica.vb" />
+    <Compile Include="TipoSetor\SetTiposSectores\CaracteristicaColeccion.vb" />
+    <Compile Include="TipoSetor\SetTiposSectores\CodigoAjeno.vb" />
+    <Compile Include="TipoSetor\SetTiposSectores\CodigoAjenoColeccion.vb" />
+    <Compile Include="TipoSetor\SetTiposSectores\Peticion.vb" />
+    <Compile Include="TipoSetor\SetTiposSectores\Respuesta.vb" />
+    <Compile Include="TipoSetor\VerificaTipoSectores\Peticion.vb" />
+    <Compile Include="TipoSetor\VerificaTipoSectores\Respuesta.vb" />
+    <Compile Include="TiposProcesado\GetTiposProcesado\Caracteristica.vb" />
+    <Compile Include="TiposProcesado\GetTiposProcesado\CaracteristicaColeccion.vb" />
+    <Compile Include="TiposProcesado\GetTiposProcesado\CaracteristicaRespuesta.vb" />
+    <Compile Include="TiposProcesado\GetTiposProcesado\CaracteristicaRespuestaColeccion.vb" />
+    <Compile Include="TiposProcesado\SetTiposProcesado\Caracteristica.vb" />
+    <Compile Include="TiposProcesado\SetTiposProcesado\CaracteristicaColeccion.vb" />
+    <Compile Include="TipoSubCliente\ITipoSubCliente.vb" />
+    <Compile Include="TipoSubCliente\getTiposSubclientes\Peticion.vb" />
+    <Compile Include="TipoSubCliente\getTiposSubclientes\Respuesta.vb" />
+    <Compile Include="TipoSubCliente\getTiposSubclientes\TipoSubCliente.vb" />
+    <Compile Include="TipoSubCliente\getTiposSubclientes\TipoSubClienteColeccion.vb" />
+    <Compile Include="TipoSubCliente\setTiposSubclientes\Peticion.vb" />
+    <Compile Include="TipoSubCliente\setTiposSubclientes\Respuesta.vb" />
+    <Compile Include="Utilidad\CheckSumInfGeneralSetProceso\Agrupacion.vb" />
+    <Compile Include="Utilidad\CheckSumInfGeneralSetProceso\AgrupacionColeccion.vb" />
+    <Compile Include="Utilidad\CheckSumInfGeneralSetProceso\Divisa.vb" />
+    <Compile Include="Utilidad\CheckSumInfGeneralSetProceso\DivisaColeccion.vb" />
+    <Compile Include="Utilidad\CheckSumInfGeneralSetProceso\MedioPago.vb" />
+    <Compile Include="Utilidad\CheckSumInfGeneralSetProceso\MedioPagoColeccion.vb" />
+    <Compile Include="Utilidad\CheckSumInfGeneralSetProceso\CheckSumInfGeneralSetProceso.vb" />
+    <Compile Include="Utilidad\CheckSumInfTolerancias\Agrupacion.vb" />
+    <Compile Include="Utilidad\CheckSumInfTolerancias\AgrupacionColeccion.vb" />
+    <Compile Include="Utilidad\CheckSumInfTolerancias\CheckSumInfTolerancias.vb" />
+    <Compile Include="Utilidad\CheckSumInfTolerancias\Divisa.vb" />
+    <Compile Include="Utilidad\CheckSumInfTolerancias\DivisaColeccion.vb" />
+    <Compile Include="Utilidad\CheckSumInfTolerancias\MedioPago.vb" />
+    <Compile Include="Utilidad\CheckSumInfTolerancias\MedioPagoColeccion.vb" />
+    <Compile Include="Utilidad\GetComboInformacionAdicionalConFiltros\Iac.vb" />
+    <Compile Include="Utilidad\GetComboInformacionAdicionalConFiltros\IacColeccion.vb" />
+    <Compile Include="Utilidad\GetComboInformacionAdicionalConFiltros\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboInformacionAdicionalConFiltros\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboSectores\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboSectores\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboSectores\Sector.vb" />
+    <Compile Include="Utilidad\GetComboSectores\SectorColeccion.vb" />
+    <Compile Include="Utilidad\GetComboTiposCuenta\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTiposCuenta\TipoDeCuenta.vb" />
+    <Compile Include="Utilidad\GetComboTiposCuenta\TipoDeCuentaColeccion.vb" />
+    <Compile Include="Utilidad\GetComboTiposPeriodo\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTiposPeriodo\TipoDePeriodo.vb" />
+    <Compile Include="Utilidad\GetComboTiposPeriodo\TipoDePeriodoColeccion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoAccesoDenominacion\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoAccesoDenominacion\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarCodigoAccesoDivisa\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoAccesoDivisa\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarCodigoAccesoMedioPago\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoAccesoMedioPago\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarDescripcionPtoServicio\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarDescripcionPtoServicio\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarDescripcionSubCliente\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarDescripcionSubCliente\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarDescripcionCliente\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarDescripcionCliente\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarCodigoPtoServicio\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoPtoServicio\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarCodigoSubCliente\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoSubCliente\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarCodigoCliente\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoCliente\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTiposProcedencia\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboTiposPuntoServicio\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboTiposPuntoServicio\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTiposPuntoServicio\TipoPuntoServicio.vb" />
+    <Compile Include="Utilidad\GetComboTiposPuntoServicio\TipoPuntoServicioColeccion.vb" />
+    <Compile Include="Utilidad\GetComboTiposProcedencia\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTiposProcedencia\TipoProcedencia.vb" />
+    <Compile Include="Utilidad\GetComboTiposProcedencia\TipoProcedenciaColeccion.vb" />
+    <Compile Include="Utilidad\GetComboTiposSubCliente\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboTiposSubCliente\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTiposSubCliente\TipoSubCliente.vb" />
+    <Compile Include="Utilidad\GetComboTiposSubCliente\TipoSubClienteColeccion.vb" />
+    <Compile Include="Utilidad\GetComboAplicaciones\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboAplicaciones\Aplicacion.vb" />
+    <Compile Include="Utilidad\GetComboAplicaciones\AplicacionColeccion.vb" />
+    <Compile Include="Utilidad\GetComboAplicaciones\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboCaractTipoSector\Caracteristica.vb" />
+    <Compile Include="Utilidad\GetComboCaractTipoSector\CaracteristicaColeccion.vb" />
+    <Compile Include="Utilidad\GetComboCaractTipoSector\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboDelegacionesPorPais\Delegacion.vb" />
+    <Compile Include="Utilidad\GetComboDelegacionesPorPais\DelegacionColeccion.vb" />
+    <Compile Include="Utilidad\GetComboDelegacionesPorPais\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboDelegacionesPorPais\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboModelosCajero\ModeloCajero.vb" />
+    <Compile Include="Utilidad\GetComboModelosCajero\Respuesta.vb" />
+    <Compile Include="Utilidad\getComboNivelesParametros\NivelColeccion.vb" />
+    <Compile Include="Utilidad\getComboNivelesParametros\Nivel.vb" />
+    <Compile Include="Utilidad\getComboNivelesParametros\Peticion.vb" />
+    <Compile Include="Utilidad\getComboNivelesParametros\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboPais\PaisColeccion.vb" />
+    <Compile Include="Utilidad\GetComboPais\Respuesta.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClientesSubclientes\Cliente.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClientesSubclientes\ClienteColeccion.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClientesSubclientes\Peticion.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClientesSubclientes\PuntoServicio.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClientesSubclientes\PuntoServicioColeccion.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClientesSubclientes\Respuesta.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClientesSubclientes\SubCliente.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClientesSubclientes\SubClienteColeccion.vb" />
+    <Compile Include="Utilidad\GetComboRedes\Red.vb" />
+    <Compile Include="Utilidad\GetComboRedes\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboCaracteristicas\Caracteristica.vb" />
+    <Compile Include="Utilidad\GetComboCaracteristicas\CaracteristicaColeccion.vb" />
+    <Compile Include="Utilidad\GetComboCaracteristicas\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboDelegaciones\Delegacion.vb" />
+    <Compile Include="Utilidad\GetComboDelegaciones\DelegacionColeccion.vb" />
+    <Compile Include="Utilidad\GetComboDelegaciones\Respuesta.vb" />
+    <Compile Include="Divisa\Denominacion.vb" />
+    <Compile Include="Divisa\DenominacionColeccion.vb" />
+    <Compile Include="Divisa\Divisa.vb" />
+    <Compile Include="Divisa\DivisaColeccion.vb" />
+    <Compile Include="Divisa\GetDivisas\Divisa.vb" />
+    <Compile Include="Divisa\GetDivisas\DivisaColeccion.vb" />
+    <Compile Include="Divisa\GetDenominacionesByDivisa\Peticion.vb" />
+    <Compile Include="Divisa\GetDenominacionesByDivisa\Respuesta.vb" />
+    <Compile Include="Divisa\GetDivisas\Peticion.vb" />
+    <Compile Include="Divisa\GetDivisas\Respuesta.vb" />
+    <Compile Include="Divisa\IDivisa.vb" />
+    <Compile Include="Divisa\SetDivisaDenominaciones\RespuestaDivisa.vb" />
+    <Compile Include="Divisa\SetDivisaDenominaciones\RespuestaDivisaColeccion.vb" />
+    <Compile Include="Divisa\SetDivisaDenominaciones\Peticion.vb" />
+    <Compile Include="Divisa\SetDivisaDenominaciones\Respuesta.vb" />
+    <Compile Include="Divisa\VerificarCodigoDenominacion\Peticion.vb" />
+    <Compile Include="Divisa\VerificarCodigoDenominacion\Respuesta.vb" />
+    <Compile Include="Divisa\VerificarCodigoDivisa\Peticion.vb" />
+    <Compile Include="Divisa\VerificarCodigoDivisa\Respuesta.vb" />
+    <Compile Include="Divisa\VerificarDescripcionDivisa\Peticion.vb" />
+    <Compile Include="Divisa\VerificarDescripcionDivisa\Respuesta.vb" />
+    <Compile Include="Enumeradores.vb" />
+    <Compile Include="Iac\GetIacDetail\Iac.vb" />
+    <Compile Include="Iac\GetIacDetail\IacColeccion.vb" />
+    <Compile Include="Iac\GetIacDetail\Peticion.vb" />
+    <Compile Include="Iac\GetIacDetail\Respuesta.vb" />
+    <Compile Include="Iac\GetIacDetail\TerminosIac.vb" />
+    <Compile Include="Iac\GetIacDetail\TerminosIacColeccion.vb" />
+    <Compile Include="Iac\IIac.vb" />
+    <Compile Include="Iac\SetIac\Peticion.vb" />
+    <Compile Include="Iac\SetIac\Respuesta.vb" />
+    <Compile Include="Iac\SetIac\TerminosIac.vb" />
+    <Compile Include="Iac\SetIac\TerminosIacColeccion.vb" />
+    <Compile Include="Iac\VerificarCodigoIac\Peticion.vb" />
+    <Compile Include="Iac\VerificarCodigoIac\Respuesta.vb" />
+    <Compile Include="Iac\VerificarDescripcionIac\Peticion.vb" />
+    <Compile Include="Iac\VerificarDescripcionIac\Respuesta.vb" />
+    <Compile Include="Login\ILogin.vb" />
+    <Compile Include="Login\InformacionUsuario.vb" />
+    <Compile Include="Login\Peticion.vb" />
+    <Compile Include="Login\Respuesta.vb" />
+    <Compile Include="Login\ResultadoOperacionLoginLocal.vb" />
+    <Compile Include="Log\ILog.vb" />
+    <Compile Include="Log\Peticion.vb" />
+    <Compile Include="Log\Respuesta.vb" />
+    <Compile Include="MedioPago\SetMedioPago\RespuestaMedioPagoColeccion.vb" />
+    <Compile Include="MedioPago\SetMedioPago\RespuestaMedioPago.vb" />
+    <Compile Include="MedioPago\SetMedioPago\MedioPago.vb" />
+    <Compile Include="MedioPago\SetMedioPago\MedioPagoColeccion.vb" />
+    <Compile Include="MedioPago\SetMedioPago\Peticion.vb" />
+    <Compile Include="MedioPago\SetMedioPago\Respuesta.vb" />
+    <Compile Include="MedioPago\SetMedioPago\TerminoMedioPago.vb" />
+    <Compile Include="MedioPago\SetMedioPago\TerminoMedioPagoColeccion.vb" />
+    <Compile Include="MedioPago\SetMedioPago\ValorTermino.vb" />
+    <Compile Include="MedioPago\SetMedioPago\ValorTerminoColeccion.vb" />
+    <Compile Include="MedioPago\VerificarCodigoTerminoMedioPago\Peticion.vb" />
+    <Compile Include="MedioPago\VerificarCodigoTerminoMedioPago\Respuesta.vb" />
+    <Compile Include="MedioPago\GetMedioPagos\Peticion.vb" />
+    <Compile Include="MedioPago\GetMedioPagos\Respuesta.vb" />
+    <Compile Include="MedioPago\GetMedioPagos\MedioPago.vb" />
+    <Compile Include="MedioPago\GetMedioPagos\MedioPagoColeccion.vb" />
+    <Compile Include="MedioPago\GetMedioPagoDetail\ValorTermino.vb" />
+    <Compile Include="MedioPago\GetMedioPagoDetail\ValorTerminoColeccion.vb" />
+    <Compile Include="MedioPago\GetMedioPagoDetail\MedioPago.vb" />
+    <Compile Include="MedioPago\GetMedioPagoDetail\MedioPagoColeccion.vb" />
+    <Compile Include="MedioPago\GetMedioPagoDetail\Peticion.vb" />
+    <Compile Include="MedioPago\GetMedioPagoDetail\Respuesta.vb" />
+    <Compile Include="MedioPago\GetMedioPagoDetail\TerminoMedioPago.vb" />
+    <Compile Include="MedioPago\GetMedioPagoDetail\TerminoMedioPagoColeccion.vb" />
+    <Compile Include="MedioPago\IMedioPago.vb" />
+    <Compile Include="MedioPago\VerificarCodigoMedioPago\Peticion.vb" />
+    <Compile Include="MedioPago\VerificarCodigoMedioPago\Respuesta.vb" />
+    <Compile Include="TerminoIac\GetTerminoDetail\Peticion.vb" />
+    <Compile Include="TerminoIac\GetTerminoDetail\Respuesta.vb" />
+    <Compile Include="TerminoIac\GetTerminoDetail\TerminoDetailIac.vb" />
+    <Compile Include="TerminoIac\GetTerminoDetail\TerminoDetailIacColeccion.vb" />
+    <Compile Include="TerminoIac\GetTerminoIac\Peticion.vb" />
+    <Compile Include="TerminoIac\GetTerminoIac\Respuesta.vb" />
+    <Compile Include="TerminoIac\GetTerminoIac\TerminoIac.vb" />
+    <Compile Include="TerminoIac\GetTerminoIac\TerminoIacColeccion.vb" />
+    <Compile Include="TerminoIac\ITermino.vb" />
+    <Compile Include="TerminoIac\SetTerminoIac\Peticion.vb" />
+    <Compile Include="TerminoIac\SetTerminoIac\Respuesta.vb" />
+    <Compile Include="TerminoIac\VerificarCodigoTermino\Peticion.vb" />
+    <Compile Include="TerminoIac\VerificarCodigoTermino\Respuesta.vb" />
+    <Compile Include="TerminoIac\VerificarDescripcionTermino\Peticion.vb" />
+    <Compile Include="TerminoIac\VerificarDescripcionTermino\Respuesta.vb" />
+    <Compile Include="TiposProcesado\VerificarCodigoTipoProcesado\Peticion.vb" />
+    <Compile Include="TiposProcesado\VerificarCodigoTipoProcesado\Respuesta.vb" />
+    <Compile Include="TiposProcesado\VerificarDescripcionTipoProcesado\Peticion.vb" />
+    <Compile Include="TiposProcesado\VerificarDescripcionTipoProcesado\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboCanales\Canal.vb" />
+    <Compile Include="Utilidad\GetComboCanales\CanalColeccion.vb" />
+    <Compile Include="Utilidad\GetComboCanales\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboClientes\Cliente.vb" />
+    <Compile Include="Utilidad\GetComboClientes\ClienteColeccion.vb" />
+    <Compile Include="Utilidad\GetComboClientes\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboClientes\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboDivisasByTipoMedioPago\Divisa.vb" />
+    <Compile Include="Utilidad\GetComboDivisasByTipoMedioPago\DivisaColeccion.vb" />
+    <Compile Include="Utilidad\GetComboDivisasByTipoMedioPago\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboDivisasByTipoMedioPago\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboInformacionAdicional\Iac.vb" />
+    <Compile Include="Utilidad\GetComboInformacionAdicional\IacColeccion.vb" />
+    <Compile Include="Utilidad\GetComboInformacionAdicional\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboMediosPagoByTipoAndDivisa\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboMediosPagoByTipoAndDivisa\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboMediosPagoByTipoAndDivisa\MedioPago.vb" />
+    <Compile Include="Utilidad\GetComboMediosPagoByTipoAndDivisa\MedioPagoColeccion.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Producto\GetProductos\Peticion.vb" />
+    <Compile Include="Producto\GetProductos\Respuesta.vb" />
+    <Compile Include="Producto\IProducto.vb" />
+    <Compile Include="Producto\GetProductos\Producto.vb" />
+    <Compile Include="Producto\GetProductos\ProductoColeccion.vb" />
+    <Compile Include="RespuestaGenerico.vb" />
+    <Compile Include="Utilidad\GetComboModalidadesRecuento\ModalidadeRecuento.vb" />
+    <Compile Include="Utilidad\GetComboModalidadesRecuento\ModalidadeRecuentoColeccion.vb" />
+    <Compile Include="Utilidad\GetComboModalidadesRecuento\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboProductos\Producto.vb" />
+    <Compile Include="Utilidad\GetComboProductos\ProductoColeccion.vb" />
+    <Compile Include="Utilidad\GetComboProductos\Respuesta.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClienteSubcliente\Cliente.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClienteSubcliente\Peticion.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClienteSubcliente\PuntoServicio.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClienteSubcliente\PuntoServicioColeccion.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClienteSubcliente\Respuesta.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClienteSubcliente\SubCliente.vb" />
+    <Compile Include="Utilidad\getComboPuntosServiciosByClienteSubcliente\SubClienteColeccion.vb" />
+    <Compile Include="Utilidad\GetComboSubcanalesByCanal\Canal.vb" />
+    <Compile Include="Utilidad\GetComboSubcanalesByCanal\CanalColeccion.vb" />
+    <Compile Include="Utilidad\GetComboSubcanalesByCanal\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboSubcanalesByCanal\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboSubcanalesByCanal\SubCanal.vb" />
+    <Compile Include="Utilidad\GetComboSubcanalesByCanal\SubCanalColeccion.vb" />
+    <Compile Include="Utilidad\GetComboSubclientesByCliente\Cliente.vb" />
+    <Compile Include="Utilidad\GetComboSubclientesByCliente\ClienteColeccion.vb" />
+    <Compile Include="Utilidad\GetComboSubclientesByCliente\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboSubclientesByCliente\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboSubclientesByCliente\SubCliente.vb" />
+    <Compile Include="Utilidad\GetComboSubclientesByCliente\SubClienteColeccion.vb" />
+    <Compile Include="Utilidad\GetComboTiposMedioPagoByDivisa\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboTiposMedioPagoByDivisa\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTiposMedioPagoByDivisa\TipoMedioPago.vb" />
+    <Compile Include="Utilidad\GetComboTiposMedioPagoByDivisa\TipoMedioPagoColeccion.vb" />
+    <Compile Include="TiposProcesado\GetTiposProcesado\Peticion.vb" />
+    <Compile Include="TiposProcesado\GetTiposProcesado\Respuesta.vb" />
+    <Compile Include="TiposProcesado\GetTiposProcesado\TipoProcesado.vb" />
+    <Compile Include="TiposProcesado\GetTiposProcesado\TipoProcesadoColeccion.vb" />
+    <Compile Include="TiposProcesado\ITipoProcesado.vb" />
+    <Compile Include="TiposProcesado\SetTiposProcesado\Peticion.vb" />
+    <Compile Include="TiposProcesado\SetTiposProcesado\Repuesta.vb" />
+    <Compile Include="TiposProcesado\SetTiposProcesado\TipoProcesado.vb" />
+    <Compile Include="TiposProcesado\SetTiposProcesado\TipoProcesadoColeccion.vb" />
+    <Compile Include="Utilidad\GetComboAlgoritmos\Algoritmo.vb" />
+    <Compile Include="Utilidad\GetComboAlgoritmos\AlgoritmoColeccion.vb" />
+    <Compile Include="Utilidad\GetComboAlgoritmos\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboAlgoritmos\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboDivisas\Divisa.vb" />
+    <Compile Include="Utilidad\GetComboDivisas\DivisaColeccion.vb" />
+    <Compile Include="Utilidad\GetComboDivisas\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboFormatos\Formato.vb" />
+    <Compile Include="Utilidad\GetComboFormatos\FormatoColeccion.vb" />
+    <Compile Include="Utilidad\GetComboFormatos\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboMaquinas\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboMascaras\Mascara.vb" />
+    <Compile Include="Utilidad\GetComboMascaras\MascaraColeccion.vb" />
+    <Compile Include="Utilidad\GetComboMascaras\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboMascaras\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTerminosIAC\Termino.vb" />
+    <Compile Include="Utilidad\GetComboTerminosIAC\TerminoColeccion.vb" />
+    <Compile Include="Utilidad\GetComboTerminosIAC\Peticion.vb" />
+    <Compile Include="Utilidad\GetComboTerminosIAC\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboPais\Pais.vb" />
+    <Compile Include="Utilidad\GetComboTiposMedioPago\Respuesta.vb" />
+    <Compile Include="Utilidad\GetComboTiposMedioPago\TipoMedioPago.vb" />
+    <Compile Include="Utilidad\GetComboTiposMedioPago\TipoMedioPagoColeccion.vb" />
+    <Compile Include="Utilidad\GetConfigNivel\ConfigNivelSaldo.vb" />
+    <Compile Include="Utilidad\GetConfigNivel\Peticion.vb" />
+    <Compile Include="Utilidad\GetConfigNivel\Respuesta.vb" />
+    <Compile Include="Utilidad\GetConfigNivel\ConfigNivelMovColeccion.vb" />
+    <Compile Include="Utilidad\GetConfigNivel\ConfigNivelMov.vb" />
+    <Compile Include="Utilidad\GetDivisasMedioPago\Divisa.vb" />
+    <Compile Include="Utilidad\GetDivisasMedioPago\DivisaColeccion.vb" />
+    <Compile Include="Utilidad\GetDivisasMedioPago\MedioPago.vb" />
+    <Compile Include="Utilidad\GetDivisasMedioPago\MedioPagoColeccion.vb" />
+    <Compile Include="Utilidad\GetDivisasMedioPago\Respuesta.vb" />
+    <Compile Include="Utilidad\GetDivisasMedioPago\TipoMedioPago.vb" />
+    <Compile Include="Utilidad\GetDivisasMedioPago\TipoMedioPagoColeccion.vb" />
+    <Compile Include="Utilidad\GetListaAgrupaciones\Agrupacion.vb" />
+    <Compile Include="Utilidad\GetListaAgrupaciones\AgrupacionColeccion.vb" />
+    <Compile Include="Utilidad\GetListaAgrupaciones\Respuesta.vb" />
+    <Compile Include="Utilidad\IUtilidad.vb" />
+    <Compile Include="Utilidad\VerificarCodigoCaracteristica\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoCaracteristica\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarCodigoConteoCaracteristica\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarCodigoConteoCaracteristica\Respuesta.vb" />
+    <Compile Include="Utilidad\VerificarDescripcionCaracteristica\Peticion.vb" />
+    <Compile Include="Utilidad\VerificarDescripcionCaracteristica\Respuesta.vb" />
+    <Compile Include="ValorPosible\TerminoColeccion.vb" />
+    <Compile Include="ValorPosible\Termino.vb" />
+    <Compile Include="ValorPosible\ValorPosibleColeccion.vb" />
+    <Compile Include="ValorPosible\GetValoresPosibles\Peticion.vb" />
+    <Compile Include="ValorPosible\GetValoresPosibles\Respuesta.vb" />
+    <Compile Include="ValorPosible\ValorPosible.vb" />
+    <Compile Include="ValorPosible\IValorPosible.vb" />
+    <Compile Include="ValorPosible\SetValoresPosibles\Peticion.vb" />
+    <Compile Include="ValorPosible\SetValoresPosibles\Respuesta.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4DC9EE4C-7177-466C-826C-49576EFF7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.ContratoServicio\Prosegur.Genesis.ContractoServicio.vbproj">
+      <Project>{9ED42568-659A-4DD1-BE34-C14483DF71E6}</Project>
+      <Name>Prosegur.Genesis.ContractoServicio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

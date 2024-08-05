@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{B6B90298-6FB3-4150-B1F4-F0A61055FADF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Genesis.LogicaNegocio</RootNamespace>
+    <AssemblyName>Prosegur.Genesis.LogicaNegocio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.LogicaNegocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.LogicaNegocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bugsnag">
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Bugsnag.dll</HintPath>
+    </Reference>
+    <Reference Include="Bugsnag.AspNet">
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Bugsnag.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Bugsnag.ConfigurationSection">
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Bugsnag.ConfigurationSection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens">
+      <HintPath>..\.Referencias\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>..\.Referencias\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>..\.Referencias\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Polly.7.2.3\lib\net472\Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Prosegur.BugsnagHelper">
+      <HintPath>..\.Referencias\Prosegur.Bugsnag\Prosegur.BugsnagHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.DbHelper">
+      <HintPath>..\.Referencias\Prosegur.DbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Framework.Dicionario, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=6bb1f230141d8049, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.Framework.Dicionario.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Genesis.Compresion">
+      <HintPath>..\.Referencias\Prosegur.Genesis.Compresion.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Global.GesEfectivo.Conteo.InterfazResultado">
+      <HintPath>..\.Referencias\Prosegur.Global.GesEfectivo.Conteo.InterfazResultado.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Global.GesEfectivo.NuevoSaldos.InterfacesLegado">
+      <HintPath>..\.Referencias\Prosegur.Global.GesEfectivo.NuevoSaldos.InterfacesLegado.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Global.Seguridad.ContractoServicio, Version=1.2.1311.1401, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.Global.Seguridad.ContractoServicio.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.ImacLogin, Version=4.5.1803.201, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Prosegur.ImacLogin.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Seguranca.DigitoVerificador">
+      <HintPath>..\.Referencias\Prosegur.Seguranca.DigitoVerificador.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>..\.Referencias\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="Classes\DatosParametros.vb" />
+    <Compile Include="Classes\EntidadeBase.vb" />
+    <Compile Include="Classes\LoginGlobal.vb" />
+    <Compile Include="Classes\ParametroDebugAux.vb" />
+    <Compile Include="Classes\Parametros.vb" />
+    <Compile Include="Classes\ProxySeguridad.vb" />
+    <Compile Include="Classes\Util.vb" />
+    <Compile Include="Comon\Preferencia.vb" />
+    <Compile Include="Comon\TotalizadorSaldo.vb" />
+    <Compile Include="Comon\UnidadMedida.vb" />
+    <Compile Include="Comon\Calidad.vb" />
+    <Compile Include="Comon\Sector.vb" />
+    <Compile Include="Comon\Denominacion.vb" />
+    <Compile Include="Comon\Divisa.vb" />
+    <Compile Include="Comon\Helper.vb" />
+    <Compile Include="Comon\TipoImpresora.vb" />
+    <Compile Include="Comon\TipoFormato.vb" />
+    <Compile Include="Comon\TipoServicio.vb" />
+    <Compile Include="Comon\EmisorDocumento.vb" />
+    <Compile Include="Comon\NumeroDeSerie.vb" />
+    <Compile Include="Comon\Variables.vb" />
+    <Compile Include="Dashboard\ElementosProcesados.vb" />
+    <Compile Include="Dashboard\ValoresProcesados.vb" />
+    <Compile Include="GenesisLogin\AccionGenesisLogin.vb" />
+    <Compile Include="GenesisLogin\OLD\ConsumirTokenAcceso.vb" />
+    <Compile Include="GenesisLogin\OLD\CrearTokenAcceso.vb" />
+    <Compile Include="GenesisLogin\OLD\EjecutarLogin.vb" />
+    <Compile Include="GenesisLogin\OLD\ObtenerAplicaciones.vb" />
+    <Compile Include="GenesisLogin\OLD\ObtenerDelegaciones.vb" />
+    <Compile Include="GenesisLogin\OLD\ObtenerPermisos.vb" />
+    <Compile Include="GenesisLogin\UtilAD.vb" />
+    <Compile Include="GenesisSaldos\AbonoPartial.vb" />
+    <Compile Include="GenesisSaldos\Abono.vb" />
+    <Compile Include="GenesisSaldos\Contenedor.vb" />
+    <Compile Include="GenesisSaldos\Certificacion\AccionConvertirCertificado.vb" />
+    <Compile Include="GenesisSaldos\Certificacion\AccionRecuperarFiltrosCertificado.vb" />
+    <Compile Include="GenesisSaldos\GenerarInforme.vb" />
+    <Compile Include="GenesisSaldos\Copia.vb" />
+    <Compile Include="GenesisSaldos\Documento.vb" />
+    <Compile Include="GenesisSaldos\DocumentoElemento.vb" />
+    <Compile Include="GenesisSaldos\EfectivoDocumento.vb" />
+    <Compile Include="GenesisSaldos\FormulariosCertificados.vb" />
+    <Compile Include="GenesisSaldos\Integracion\AccionGrupoTerminoIAC.vb" />
+    <Compile Include="GenesisSaldos\Pantallas\Limites\Periodos.vb" />
+    <Compile Include="GenesisSaldos\Pantallas\ProvisionEfectivo.vb" />
+    <Compile Include="GenesisSaldos\Periodo.vb" />
+    <Compile Include="Genesis\Aplicacion.vb" />
+    <Compile Include="Genesis\DatoBancario.vb" />
+    <Compile Include="Genesis\Formularios.vb" />
+    <Compile Include="Genesis\Limites.vb" />
+    <Compile Include="Genesis\Pantallas\Planificaciones.vb" />
+    <Compile Include="Genesis\Rol.vb" />
+    <Compile Include="Genesis\Usuario.vb" />
+    <Compile Include="Infraestructura\AccionRecuperaDatosEntradaMovimientos.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientoAjuste.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosBalance.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosCashIn.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosCashOut.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosMoveIn.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosMoveOut.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosProvisionEfectivo.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosShipIn.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosShipOut.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosRecuento.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosCierreFacturacion.vb" />
+    <Compile Include="Integracion\AccionAltaMovimientosAcreditacion.vb" />
+    <Compile Include="Integracion\AccionConfigurarAcuerdosServicio.vb" />
+    <Compile Include="Integracion\AccionConfigurarClientes.vb" />
+    <Compile Include="Integracion\AccionConfigurarMAEs.vb" />
+    <Compile Include="GenesisSaldos\Integracion\AccionCrearDocumentoReenvio.vb" />
+    <Compile Include="GenesisSaldos\Integracion\AccionGrabarReciboTransporteManual.vb" />
+    <Compile Include="GenesisSaldos\Integracion\AccionGenerarCertificado.vb" />
+    <Compile Include="Integracion\AccionConfirmarPeriodos.vb" />
+    <Compile Include="Integracion\AccionEnviarDocumentos.vb" />
+    <Compile Include="Integracion\AccionFechaValorOnline.vb" />
+    <Compile Include="Infraestructura\AccionInformacionVersion.vb" />
+    <Compile Include="Integracion\AccionActualizarMovimientos.vb" />
+    <Compile Include="Integracion\AccionMarcarMovimientos.vb" />
+    <Compile Include="Integracion\AccionModificarMovimientos.vb" />
+    <Compile Include="Integracion\AccionModificarPeriodos.vb" />
+    <Compile Include="Integracion\AccionReconfirmarPeriodos.vb" />
+    <Compile Include="Integracion\AccionRecuperarClientes.vb" />
+    <Compile Include="Integracion\AccionRecuperarMAEs.vb" />
+    <Compile Include="Integracion\AccionRecuperarMAEsPlanificadas.vb" />
+    <Compile Include="Integracion\AccionRecuperarMovimentos.vb" />
+    <Compile Include="Integracion\AccionRecuperarPaises.vb" />
+    <Compile Include="Integracion\AccionRecuperarSaldos.vb" />
+    <Compile Include="Integracion\AccionRecuperarPlanificaciones.vb" />
+    <Compile Include="Integracion\AccionRecuperarSaldosAcuerdo.vb" />
+    <Compile Include="Integracion\AccionRecuperarSaldosHistorico.vb" />
+    <Compile Include="Integracion\AccionRecuperarSaldosPeriodos.vb" />
+    <Compile Include="Integracion\AccionRelacionarMovimientosPeriodos.vb" />
+    <Compile Include="GenesisSaldos\Integracion\AccionSalidasRecorrido.vb" />
+    <Compile Include="GenesisSaldos\Integracion\ActualizarSaldoPuesto.vb" />
+    <Compile Include="GenesisSaldos\Integracion\CambiaEstadoDocumentoFondosSaldos.vb" />
+    <Compile Include="GenesisSaldos\Inventario.vb" />
+    <Compile Include="GenesisSaldos\MaestroFormularios.vb" />
+    <Compile Include="GenesisSaldos\MedioPagoDocumento.vb" />
+    <Compile Include="GenesisSaldos\MAE.vb" />
+    <Compile Include="GenesisSaldos\Pantallas\Transacciones.vb" />
+    <Compile Include="GenesisSaldos\ParametroReporte.vb" />
+    <Compile Include="GenesisSaldos\Pruebas\AccionCrearDocumento.vb" />
+    <Compile Include="Genesis\Cajero.vb" />
+    <Compile Include="Genesis\Canal.vb" />
+    <Compile Include="Genesis\Diccionario.vb" />
+    <Compile Include="Genesis\Direccion.vb" />
+    <Compile Include="Genesis\Log.vb" />
+    <Compile Include="GenesisSaldos\MaestroGrupoDocumentos.vb" />
+    <Compile Include="GenesisSaldos\Saldo.vb" />
+    <Compile Include="Genesis\Bulto.vb" />
+    <Compile Include="Genesis\Calidad.vb" />
+    <Compile Include="Genesis\Contenedor.vb" />
+    <Compile Include="Genesis\Efectivo.vb" />
+    <Compile Include="Genesis\GrupoTerminosIAC.vb" />
+    <Compile Include="Genesis\InformacaoAdicionalCliente.vb" />
+    <Compile Include="Genesis\Integracion.vb" />
+    <Compile Include="Genesis\ListaValor.vb" />
+    <Compile Include="Genesis\MedioPago.vb" />
+    <Compile Include="Genesis\Delegacion.vb" />
+    <Compile Include="Genesis\Denominacion.vb" />
+    <Compile Include="Genesis\EmisorDocumento.vb" />
+    <Compile Include="Genesis\DataSetReportes.vb" />
+    <Compile Include="Classes\Usuario.vb" />
+    <Compile Include="GenesisSaldos\CaracteristicaFormulario.vb" />
+    <Compile Include="GenesisSaldos\AccionContable.vb" />
+    <Compile Include="GenesisSaldos\Certificacion\AccionGenerarCertificacion.vb" />
+    <Compile Include="GenesisSaldos\Certificacion\AccionGenerarCodigoCertificado.vb" />
+    <Compile Include="GenesisSaldos\Certificacion\AccionObtenerCertificado.vb" />
+    <Compile Include="GenesisSaldos\Certificacion\AccionObtenerNivelSaldos.vb" />
+    <Compile Include="GenesisSaldos\Certificacion\AccionValidaCertificacion.vb" />
+    <Compile Include="GenesisSaldos\EstadoAccionContable.vb" />
+    <Compile Include="Genesis\Elemento.vb" />
+    <Compile Include="Genesis\MaestroCuenta.vb" />
+    <Compile Include="Genesis\Notificacion.vb" />
+    <Compile Include="Genesis\Pais.vb" />
+    <Compile Include="Genesis\Pantallas\Delegaciones.vb" />
+    <Compile Include="Genesis\Parametros.vb" />
+    <Compile Include="Genesis\Parcial.vb" />
+    <Compile Include="Genesis\Planificacion.vb" />
+    <Compile Include="Genesis\Planta.vb" />
+    <Compile Include="Genesis\Puesto.vb" />
+    <Compile Include="Genesis\Remesa.vb" />
+    <Compile Include="Genesis\Sector.vb" />
+    <Compile Include="Genesis\SubCanal.vb" />
+    <Compile Include="Genesis\TipoBulto.vb" />
+    <Compile Include="Genesis\TerminoIAC.vb" />
+    <Compile Include="Genesis\TipoCliente.vb" />
+    <Compile Include="Genesis\TipoImpresora.vb" />
+    <Compile Include="Genesis\TipoFormato.vb" />
+    <Compile Include="Genesis\TipoSector.vb" />
+    <Compile Include="Genesis\TipoServicio.vb" />
+    <Compile Include="Genesis\UnidadMedida.vb" />
+    <Compile Include="Genesis\ValorTerminoIAC.vb" />
+    <Compile Include="Genesis\Divisas.vb" />
+    <Compile Include="Genesis\TipoContenedor.vb" />
+    <Compile Include="Classes\Helper.vb" />
+    <Compile Include="Genesis\Cliente.vb" />
+    <Compile Include="Genesis\PuntoServicio.vb" />
+    <Compile Include="Genesis\SubCliente.vb" />
+    <Compile Include="Integracion\AccionConsultarSaldos.vb" />
+    <Compile Include="GenesisSaldos\Integracion\AccionCrearGrupoDocumentos.vb" />
+    <Compile Include="Integracion\AccionRecuperarTransaccionesFechas.vb" />
+    <Compile Include="Integracion\AccionCrearDocumento.vb" />
+    <Compile Include="GenesisSaldos\Integracion\AccionIngresoRemesas.vb" />
+    <Compile Include="GenesisSaldos\Integracion\AccionIngresoRemesasNuevo.vb" />
+    <Compile Include="Integracion\IntegracionSistemas\BaseIntegracion.vb" />
+    <Compile Include="Integracion\IntegracionSistemas\IntegracionFechaValorOnline.vb" />
+    <Compile Include="Integracion\IntegracionSistemas\IntegracionNotificacion.vb" />
+    <Compile Include="Job\AccionActualizarPeriodos.vb" />
+    <Compile Include="Job\AccionActualizarSaldosAcuerdos.vb" />
+    <Compile Include="Job\AccionActualizarSaldosHistorico.vb" />
+    <Compile Include="Job\AccionDepuracion.vb" />
+    <Compile Include="Job\AccionEnviarNotificacion.vb" />
+    <Compile Include="Job\AccionGenerarPeriodos.vb" />
+    <Compile Include="Job\AccionNotificarMovimientosNoAcreditados.vb" />
+    <Compile Include="Login\AccionCrearTokenAcceso.vb" />
+    <Compile Include="Login\AccionAutenticarUsuarioAplicacion.vb" />
+    <Compile Include="Login\AccionEjecutarLogin.vb" />
+    <Compile Include="Login\AccionObtenerAplicacionVersion.vb" />
+    <Compile Include="Login\AccionObtenerDelegaciones.vb" />
+    <Compile Include="Login\AccionConsumirTokenAcceso.vb" />
+    <Compile Include="GenesisSaldos\MaestroDocumentos.vb" />
+    <Compile Include="Login\AccionObtenerInformacionLogin.vb" />
+    <Compile Include="Login\AccionObtenerPaises.vb" />
+    <Compile Include="Login\AccionObtenerPermisosUsuario.vb" />
+    <Compile Include="Login\AccionObtenerVersiones.vb" />
+    <Compile Include="Login\AccionValidarPermisosUsuario.vb" />
+    <Compile Include="Mobile\ObtenerDocumento\Documento.vb" />
+    <Compile Include="Mobile\CargadorDropDown.vb" />
+    <Compile Include="Mobile\Utilidad.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Genesis\ConfigGrid.vb" />
+    <Compile Include="Genesis\PermisoIAC.vb" />
+    <Compile Include="Notificacion\AccionDeliveredMessages.vb" />
+    <Compile Include="Notificacion\AccionRegistrarEventoNilo.vb" />
+    <Compile Include="Notificacion\AcuerdoServicio\AccionAcuerdoServicio.vb" />
+    <Compile Include="Reportes\TraspaseResponsabilidad.vb" />
+    <Compile Include="Reportes\RecepcionRuta.vb" />
+    <Compile Include="Saldos\AccionCambiaEstadoDocumentoFondosSaldos.vb" />
+    <Compile Include="Saldos\AccionCrearMovimiento.vb" />
+    <Compile Include="Saldos\AccionGuardarCliente.vb" />
+    <Compile Include="Saldos\AccionGuardarDatosDocumento.vb" />
+    <Compile Include="Saldos\AccionManipularDocumentos.vb" />
+    <Compile Include="Saldos\AccionRecuperarCaracteristicaDocumento.vb" />
+    <Compile Include="Saldos\AccionRecuperarCentroProceso.vb" />
+    <Compile Include="Saldos\AccionRecuperarDatosDocumento.vb" />
+    <Compile Include="Saldos\AccionRecuperarSaldos.vb" />
+    <Compile Include="Saldos\AccionRecuperarSaldosPorSector.vb" />
+    <Compile Include="Saldos\AccionRecuperarTransaccionDetallada.vb" />
+    <Compile Include="Saldos\AccionRecuperarTransaccionesFecha.vb" />
+    <Compile Include="Saldos\AccionTest.vb" />
+    <Compile Include="Saldos\Constantes.vb" />
+    <Compile Include="Saldos\AccionRecuperarRemesasPorGrupo.vb" />
+    <Compile Include="Saldos\AccionRecuperarTransaccionNoMigrada.vb" />
+    <Compile Include="Test\AccionTest.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\AccesoDatos\Prosegur.Global.GesEfectivo.IAC.AccesoDatos.vbproj">
+      <Project>{8AF9CFAD-D305-45C3-B6E4-464BB14C6B01}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\ContractoServicio\Prosegur.Global.GesEfectivo.IAC.ContractoServicio.vbproj">
+      <Project>{275AE785-D755-452A-9A75-7CA678980AC4}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\Integracion.ContractoServicio\Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio.vbproj">
+      <Project>{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\LogicaNegocio\Prosegur.Global.GesEfectivo.IAC.LogicaNegocio.vbproj">
+      <Project>{8F0DBF1F-7393-4786-A83D-2AFCF9DA1D8F}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Saldos\Prosegur.Global.Saldos\Negocio\Prosegur.Global.Saldos.Negocio.vbproj">
+      <Project>{98A0B1A2-D8F4-44E1-BA90-22EB0BA83562}</Project>
+      <Name>Prosegur.Global.Saldos.Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Saldos\Prosegur.Global.Saldos\Servicio\ContractoServicio\Prosegur.Global.Saldos.ContractoServicio.vbproj">
+      <Project>{B03091EF-69D4-4C8F-9174-6F0286FA76C5}</Project>
+      <Name>Prosegur.Global.Saldos.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.AccesoDatos\Prosegur.Genesis.AccesoDatos.vbproj">
+      <Project>{1f867d49-94a8-4d3a-a498-741ee9e2ba57}</Project>
+      <Name>Prosegur.Genesis.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4dc9ee4c-7177-466c-826c-49576eff7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comunicacion\Prosegur.Genesis.Comunicacion.vbproj">
+      <Project>{817877CA-26FE-4639-91A0-42A29091C817}</Project>
+      <Name>Prosegur.Genesis.Comunicacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.ContratoServicio\Prosegur.Genesis.ContractoServicio.vbproj">
+      <Project>{9ED42568-659A-4DD1-BE34-C14483DF71E6}</Project>
+      <Name>Prosegur.Genesis.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.DataBaseHelper\Prosegur.Genesis.DataBaseHelper.vbproj">
+      <Project>{793D4601-2EAF-46E8-8451-F14F4E156D95}</Project>
+      <Name>Prosegur.Genesis.DataBaseHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Exception\Prosegur.Genesis.Excepcion.vbproj">
+      <Project>{ED11E59E-9783-4F6C-948B-16530AE69DF8}</Project>
+      <Name>Prosegur.Genesis.Excepcion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.LogeoEntidades\Prosegur.Genesis.LogeoEntidades.csproj">
+      <Project>{597F55CE-540E-4011-A053-4EA1E3AC5442}</Project>
+      <Name>Prosegur.Genesis.LogeoEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Logeo\Prosegur.Genesis.Logeo.csproj">
+      <Project>{5ab2966c-0c11-48e0-928e-4accd9b5d2f2}</Project>
+      <Name>Prosegur.Genesis.Logeo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Mail\Prosegur.Genesis.Mail.csproj">
+      <Project>{EED37508-2A39-4E4A-86F5-31502638A13E}</Project>
+      <Name>Prosegur.Genesis.Mail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Parametros\Prosegur.Genesis.Parametros.vbproj">
+      <Project>{c3f8b715-f1ff-4421-9922-9f3cad097dab}</Project>
+      <Name>Prosegur.Genesis.Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Report\Prosegur.Genesis.Report.vbproj">
+      <Project>{5687E3C6-A6F1-4C83-9103-E045C90B24C5}</Project>
+      <Name>Prosegur.Genesis.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Unificacion\Prosegur.Genesis.Unificacion.vbproj">
+      <Project>{D9BEF171-7D55-4EEB-A419-CB6AF1BF3532}</Project>
+      <Name>Prosegur.Genesis.Unificacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Utilidad\Prosegur.Genesis.Utilidad.vbproj">
+      <Project>{a9602d8d-3afe-4948-b579-05325b690dc5}</Project>
+      <Name>Prosegur.Genesis.Utilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Web.Login\Prosegur.Genesis.Web.Login.vbproj">
+      <Project>{63BE8B3D-AE97-4B56-BE67-184973BC259C}</Project>
+      <Name>Prosegur.Genesis.Web.Login</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

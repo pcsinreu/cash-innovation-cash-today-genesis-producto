@@ -1,0 +1,1 @@
+﻿SELECT PD_AUTOMATA_IDAUTOMATA_SEQ.nextval from dual

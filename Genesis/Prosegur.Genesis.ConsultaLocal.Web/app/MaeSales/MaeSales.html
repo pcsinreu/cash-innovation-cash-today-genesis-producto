@@ -1,0 +1,353 @@
+﻿
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="modal fade" id="modal-container-558944" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                ×
+                            </button>
+                            <!--<h4 class="modal-title" id="myModalLabel">-->
+
+                            <label class="modal-title">
+                                Busqueda de Cliente
+                            </label>
+                            <!--</h4>-->
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="ui-panel-titlebar" style="margin-bottom: 2px; padding-left: 20px">
+                                        <span style="color: #767676 !important; font-size: 9pt;">Datos de Cliente</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12" style="padding:0">
+                                        <table class="table table-bordered" style="width:100%;border-collapse:collapse;">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                    </th>
+                                                    <th>
+                                                        Banco
+                                                    </th>
+                                                    <th>
+                                                        Codigo
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="dxgvFilterRow" style="background-color:#E7E7E7">
+                                                    <td class="dxic"> &nbsp;</td>
+                                                    <td>
+                                                        <input type="text" ng-model="filtroCli.desCliente" style="background:url(App_Themes/Padrao/css/img/button/buscar.png) left center no-repeat; background-color:#ffffff; width:100%; padding-left:18px" my-enter="ChangeBankSearchPage(filtroCli,'')" />
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" ng-model="filtroCli.codCliente" style="background:url(App_Themes/Padrao/css/img/button/buscar.png) left center no-repeat; background-color:#ffffff; width:100%; padding-left:18px" my-enter="ChangeBankSearchPage(filtroCli,'')" />
+                                                    </td>
+                                                </tr>
+                                                <tr ng-repeat="bank in filtroCli.banks">
+                                                    <td>
+                                                        <input type="radio" name="bankSelection" ng-click="setCodeanddeskFilter(bank)" />
+                                                    </td>
+                                                    <td ng-bind="bank.DES_CLIENTE"></td>
+                                                    <td ng-bind="bank.COD_CLIENTE"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="pull-right">
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <label>Página {{filtroCli.banks.page + 1}} de {{filtroCli.banks.Pages}} ({{filtroCli.banks.CantReg}} items)</label>
+                                                <div class="input-group-btn">
+                                                    <button class="dxp-num" ng-if="filtroCli.banks.page > 0" ng-click="ChangeBankSearchPage(filtroCli,'previous')" style="border-radius:4px; border: solid 1px #f8f8f8 !important;"><</button>
+                                                    <button class="dxp-num" ng-click="ChangeBankSearchPageSpecific(filtroCli,'',0)" ng-if="filtroCli.banks.Pages >= 1" style="border-radius:4px; border: solid 1px #f8f8f8 !important;">1</button>
+                                                    <button class="dxp-num" ng-click="ChangeBankSearchPageSpecific(filtroCli,'',1)" ng-if="filtroCli.banks.Pages >= 2" style="border-radius:4px; border: solid 1px #f8f8f8 !important;">2</button>
+                                                    <button class="dxp-num" ng-click="ChangeBankSearchPageSpecific(filtroCli,'',2)" ng-if=" filtroCli.banks.Pages >= 3" style="border-radius:4px; border: solid 1px #f8f8f8 !important;">3</button>
+                                                    <button class="dxp-num" ng-click="ChangeBankSearchPageSpecific(filtroCli,'',3)" ng-if=" filtroCli.banks.Pages >= 4" style="border-radius:4px; border: solid 1px #f8f8f8 !important;">4</button>
+                                                    <button class="dxp-num" ng-click="ChangeBankSearchPageSpecific(filtroCli,'',4)" ng-if=" filtroCli.banks.Pages >= 5" style="border-radius:4px; border: solid 1px #f8f8f8 !important;">5</button>
+                                                    <button class="dxp-num" ng-click="ChangeBankSearchPageSpecific(filtroCli,'',5)" ng-if=" filtroCli.banks.Pages >= 6" style="border-radius:4px; border: solid 1px #f8f8f8 !important;">6</button>
+                                                    <!--<label class="dxp-num" ng-if="filtroCli.banks[filtroCli.lenght - 6] != undefined" style="border-radius:4px; border: solid 1px #f8f8f8 !important;">...</label>-->
+
+                                                    <button class="dxp-num" ng-if="filtroCli.banks.page +1 < filtroCli.banks.Pages" ng-click="ChangeBankSearchPage(filtroCli,'next')" style="border-radius:4px; border: solid 1px #f8f8f8 !important;">></button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+            <form id="convFilter" class="form-inline">
+                <div class="form-group">
+                    <label>Banco</label>
+                    <input style=" margin-left: 30px;" type="text" ng-model="filtroCodigo" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <span href="#modal-container-558944" ng-click="ResetBankSearchPage()" data-toggle="modal">
+                        <img src="App_Themes/Padrao/css/img/button/buscar.png" />
+                    </span>
+                    <input type="text" ng-model="filtroDesc" class=" form-control" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-8 col-sm-offset-2">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>Fecha desde</label>
+                    <input id="fromDate" ng-model="filtroFechaDesde" type="date" class="form-control">
+                    <!--<input id="fromDate" ng-model="filtroFechaDesde" type="datetime-local" class="form-control" step="1">-->
+                    <!--<input id="fromDate" ng-model="filtrofechadesde" type="datetime-local">-->
+                    <p ng-if="showFdesdeError" class=" help-block" style="color:red">Debe ingresar una fecha desde</p>
+                </div>
+            </form>
+            <br />
+            <form class="form-inline">
+                <div class="form-group">
+                    <label>Fecha hasta</label>
+                    <input id="toDate" ng-model="filtroFechaHasta" type="date" class="form-control" step="1">
+                    <!--<input id="toDate" ng-model="filtroFechaHasta" type="datetime-local" class="form-control" step="1">-->
+                    <p ng-if="showFhastaError" class="help-block" style="color:red">Debe ingresar una fecha hasta</p>
+                    <p ng-if="ShowDifferenceError" class="help-block" style="color:red">No puede ser menor que la fecha desde</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-8 col-sm-offset-2">
+            <input type="button" value="Buscar" ng-click="Filter()" class=" btn btn-check">
+            <input type="button" value="Limpiar" class=" btn btn-limpar" ng-click="Clean()">
+        </div>
+    </div>
+</div>
+
+<br />
+<div class="container-fluid">
+    <!--<div class="row">
+        <div class=" col-sm-8 col-sm-offset-2">
+            <div class="alert alert-warning alert-dismissable">
+
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    ×
+                </button>
+                <h4>
+                    Alert!
+                </h4> <strong>Warning!</strong> No hay Datos<a href="#" class="alert-link">alert link</a>
+            </div>
+        </div>
+    </div>-->
+    <div class="row">
+        <div class=" col-sm-8 col-sm-offset-2">
+            <div class="panel-group" id="panel-951546">
+                <div ng-repeat-start="bank in Bancos" class="panel panel-default">
+                    <div class="panel-heading" style="height:70px">
+                        <div class="col-lg-1">
+                            <a class="panel-title collapsed" ng-click="GetCollectionDetails(bank)" data-toggle="collapse" data-parent="#panel-951546" data-target="#{{bank.COD_CLIENTE}}"><span class="glyphicon glyphicon-plus-sign"></span></a>
+                        </div>
+                        <div class="col-lg-10">
+                            <h4>{{bank.DES_CLIENTE}}</h4>
+                        </div>
+                    </div>
+                    <div id="{{bank.COD_CLIENTE}}" class="panel-collapse collapse">
+                        <div class="panel-body" style="padding-right: 0px;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12" style="padding-right: 0;">
+                                        <table class=" table table-responsive table-stripped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                    </th>
+                                                    <th>
+                                                        {{'LBL_FECHA' | translate}}
+                                                    </th>
+                                                    <th>HORA</th>
+                                                    <th class="text-right">
+                                                        {{'LBL_REALES' | translate}}
+                                                    </th>
+                                                    <th class="text-right">
+                                                        {{'LBL_DOLARES' | translate}}
+                                                    </th>
+                                                    <th class="text-right">
+                                                        {{'LBL_EUROS' | translate}}
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat-start="acred in bank.DetalleAcreditaciones">
+                                                    <td>
+                                                        <button ng-if=" acred.expanded" ng-click="acred.expanded = false" class="btn btn-default">
+                                                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                                                        </button>
+                                                        <button ng-if="!acred.expanded" class="btn btn-default" ng-click="GetAcreditationDetailsxCli(acred)">
+                                                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                                                        </button>
+                                                    </td>
+                                                    <td ng-bind="acred.FYH_ACREDITACION.split('T')[0] | placeholder: 0 | date: 'dd/MM/yyyy'"></td>
+                                                    <td>{{acred.FYH_ACREDITACION.split('T')[1]}}</td>
+                                                    <td class="text-right" ng-bind="acred.REALES | placeholder: 0 | number:2 "></td>
+                                                    <td class="text-right" ng-bind="acred.DOLARES | placeholder: 0 | number:2"></td>
+                                                    <td class="text-right" ng-bind="acred.EUROS | placeholder: 0 | number:2"></td>
+                                                </tr>
+                                                <tr ng-if="acred.expanded">
+                                                    <td colspan="6" style="padding-right: 0">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12" style="padding-right: 0">
+                                                                    <table class=" table table-responsive table-stripped table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>
+
+                                                                                </th>
+                                                                                <th>
+                                                                                    {{'LBL_CLIENTE' | translate}}
+                                                                                </th>
+                                                                                <th class="text-right">
+                                                                                    {{'LBL_REALES' | translate}}
+                                                                                </th>
+                                                                                <th class="text-right">
+                                                                                    {{'LBL_DOLARES' | translate}}
+                                                                                </th>
+                                                                                <th class="text-right">
+                                                                                    {{'LBL_EUROS' | translate}}
+                                                                                </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr ng-repeat-start="axcli in acred.AcreditationbyCli">
+                                                                                <td>
+                                                                                    <button ng-if="axcli.expanded" ng-click="axcli.expanded = false" class="btn btn-default">
+                                                                                        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                                                                                    </button>
+                                                                                    <button ng-if="!axcli.expanded" class="btn btn-default" ng-click="GetMaes(axcli)">
+                                                                                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                                                                                    </button>
+                                                                                </td>
+                                                                                <td ng-bind="axcli.DES_CLIENTE | placeholder: 0 "></td>
+                                                                                <td class="text-right" ng-bind="axcli.REALES | placeholder: 0 | number:2"></td>
+                                                                                <td class="text-right" ng-bind="axcli.DOLARES | placeholder: 0 | number:2"></td>
+                                                                                <td class="text-right" ng-bind="axcli.EUROS | placeholder: 0 | number:2"></td>
+                                                                            </tr>
+                                                                            <tr ng-if="axcli.expanded">
+                                                                                <td colspan="5" style="padding-right: 0">
+                                                                                    <div class="container-fluid">
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12" style="padding-right: 0">
+                                                                                                <table class="table table-stripped table-bordered">
+                                                                                                    <thead>
+                                                                                                        <tr>
+                                                                                                            <th>
+                                                                                                                {{'LBL_SECTOR' | translate}}
+                                                                                                            </th>
+                                                                                                            <th class="text-right">
+                                                                                                                MONEDA
+                                                                                                            </th>
+                                                                                                            <th class="text-right">
+                                                                                                                SALDO CONTABLE
+                                                                                                            </th>
+                                                                                                            <th class="text-right">
+                                                                                                                SALDO FISICO
+                                                                                                            </th>
+                                                                                                        </tr>
+                                                                                                    </thead>
+                                                                                                    <tbody>
+                                                                                                        <tr ng-repeat-start="mae in axcli.Maes">
+                                                                                                            <td ng-bind="mae.DES_SECTOR | placeholder: 0"></td>
+                                                                                                            <td class="text-right" ng-bind="mae.COD_DIVISA_C  | placeholder: mae.COD_DIVISA_F | number:2"></td>
+                                                                                                            <td class="text-right" ng-bind="mae.IMPORTE_C | placeholder: 0 | number:2"></td>
+                                                                                                            <td class="text-right" ng-bind="mae.IMPORTE_F | placeholder: 0 | number:2"></td>
+                                                                                                        </tr>
+                                                                                                        <tr ng-if="$last" ng-repeat-end>
+                                                                                                            <td colspan="5">
+                                                                                                                <ul class="pagination">
+                                                                                                                    <li class="page-item" ng-if="$parent.axcli.Maes.page > 0" style="cursor:pointer"><a ng-click="ChangeMaesPage($parent.axcli,'previous')" class="page-link">{{'LBL_ATRAS' | translate}}</a></li>
+                                                                                                                    <li class="page-item"><a class="page-link">{{$parent.axcli.Maes.page + 1}}</a></li>
+                                                                                                                    <li class="page-item" ng-if="$parent.axcli.Maes.page +1 < $parent.axcli.Maes.Pages" style="cursor:pointer"><a class="page-link" ng-click="ChangeMaesPage($parent.axcli,'next')">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                                                                                                                    <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}}:  {{$parent.axcli.Maes.Pages}}</a></li>
+                                                                                                                </ul>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr ng-if="$last" ng-repeat-end>
+                                                                                <td colspan="5">
+                                                                                    <ul class="pagination">
+                                                                                        <li class="page-item" ng-if="$parent.acred.AcreditationbyCli.page > 0" style="cursor:pointer"><a class="page-link" ng-click="ChangeAcreditbyClientPage($parent.acred,axcli,'previous')">{{'LBL_ATRAS' | translate}}</a></li>
+                                                                                        <li class="page-item"><a class="page-link">{{$parent.acred.AcreditationbyCli.page + 1}}</a></li>
+                                                                                        <li class="page-item" ng-if="$parent.acred.AcreditationbyCli.page + 1 < $parent.acred.AcreditationbyCli.Pages" style="cursor:pointer"><a class="page-link" ng-click="ChangeAcreditbyClientPage($parent.acred,axcli,'next')">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                                                                                        <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}}:  {{$parent.acred.AcreditationbyCli.Pages}}</a></li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr ng-if="$last" ng-repeat-end>
+                                                    <td colspan="6">
+                                                        <nav ng-if="$last" aria-label="Page navigation" ng-repeat-end>
+                                                            <ul class="pagination">
+                                                                <li class="page-item" ng-if="$parent.bank.DetalleAcreditaciones.page > 0" style="cursor:pointer"><a ng-click="ChangeAcreditationPage($parent.bank,'previous')" class="page-link">{{'LBL_ATRAS' | translate}}</a></li>
+                                                                <li class="page-item"><a class="page-link">{{$parent.bank.DetalleAcreditaciones.page + 1}}</a></li>
+                                                                <li class="page-item" ng-if="$parent.bank.DetalleAcreditaciones.page +1 < $parent.bank.DetalleAcreditaciones.Pages" style="cursor:pointer"><a class="page-link" ng-click="ChangeAcreditationPage($parent.bank,'next')">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                                                                <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}}: {{$parent.bank.DetalleAcreditaciones.Pages}}</a></li>
+                                                            </ul>
+                                                        </nav>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav ng-if="$last" aria-label="Page navigation" ng-repeat-end>
+                    <ul class="pagination">
+                        <li class="page-item" ng-if="$parent.Bancos.page > 0"><a ng-click="ChangeBanksPage($parent.Bancos,'previous')" class="page-link">{{'LBL_ATRAS' | translate}}</a></li>
+                        <li class="page-item"><a class="page-link">{{$parent.Bancos.page + 1}}</a></li>
+                        <li class="page-item" ng-if="$parent.Bancos.page +1 < $parent.Bancos.Pages" style="cursor:pointer"><a class="page-link" ng-click="ChangeBanksPage($parent.Bancos,'next')">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                        <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}} {{$parent.Bancos.Pages}}</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</div>
+

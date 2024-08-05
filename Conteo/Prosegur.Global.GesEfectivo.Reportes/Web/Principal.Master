@@ -1,0 +1,135 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Principal.master.vb" Inherits="Prosegur.Global.GesEfectivo.Reportes.Web.Principal" %>
+<%@ Register src="Controles/Erro.ascx" tagname="Erro" tagprefix="uc1" %>
+<%@ Register src="Controles/Cabecalho.ascx" tagname="Cabecalho" tagprefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<head id="Head1" runat="server">    
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>    
+    <link href="Css/css.css" rel="stylesheet" type="text/css" />
+    <link href="Css/dhtmlgoodies_calendar.css" rel="stylesheet" type="text/css" />
+    <link href="Css/Jquery-ui/jquery-ui.custom.css" rel="stylesheet" type="text/css" />
+    <script src="JS/Funcoes.js" type="text/javascript"></script>
+    <script src="JS/dhtmlgoodies_calendar.js" type="text/javascript"></script> 
+    <script src="JS/jquery.min.js" type="text/javascript"></script>
+    <script src="JS/jquery-ui.custom.min.js" type="text/javascript"></script>    
+    <asp:Literal ID="ltr_js" runat="server"></asp:Literal>
+    <script language="javascript" type="text/javascript">
+        window.onload = function () {
+            // Recupera a tabela de menu
+            var menuTable = document.getElementById(menuId);
+            // Se existe menu
+            if (menuTable != null) {
+                // Recupera a penúltima célula da tabela
+                // Usou-se -3, pois existe uma célula de espaçamento
+                if (menuTable.cells.length > 2) {
+                    var penultimaCelula = menuTable.cells(menuTable.cells.length - 3);
+                } else {
+                    var penultimaCelula = menuTable.cells(0);
+                }
+                // Recupera o link da célula
+                var subMenuLink = penultimaCelula.getElementsByTagName("a");
+                // Se existe link e o identificador do primeiro controle foi informado
+                if (subMenuLink != null && primeiroControleId != '') {
+                    // Adiciona ao evento 'onblur' do link, para setar o foco
+                    // para o primeiro objeto                        
+                    subMenuLink[0].onblur = function () {
+                        if (document.getElementById(idControleErro) == undefined) {
+                            // se link "Detalhes" não estiver visível, seta foco no primeiro controle da tela
+                            document.getElementById(primeiroControleId).focus();
+                        }
+                        else {
+                            // se o link "Detalhes" estiver visível, seta foco para ele
+                            document.getElementById(idControleErro).focus();
+                        }
+                    }
+                }
+            }
+        }    
+
+    </script>
+</head>
+<body onkeypress="return disableEnterKey(event)">
+    <div class="principal">    
+        <form id="form1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" AsyncPostBackTimeout="270" runat="server">
+                <Scripts>
+                    <asp:ScriptReference Path="~/JS/FuncaoAjax.js" />
+                </Scripts>            
+            </asp:ScriptManager>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                <tr>
+                    <td>                        
+                        <uc3:Cabecalho ID="Cabecalho" runat="server" />                        
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <table>
+                            <tr>
+                                <td>                    
+                                    <asp:Label ID="lblVersion" runat="server" Text="[Versión]"></asp:Label>                   
+                                </td>
+                                <td>
+                                    <asp:Label ID="lblUsuario" runat="server" Text="[Usuário]"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:Label ID="lblData" runat="server" Text="[Data]"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:LinkButton ID="lbSair" tabIndex="999" runat="server">[Sair]</asp:LinkButton>
+                                </td>
+                            </tr>
+                        </table>    
+                    </td>    
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Menu ID="menuReportes" runat="server" Orientation="Horizontal"         
+                            Font-Names="Arial"
+                            BackColor="White"
+                            Font-Size="10" 
+                            ForeColor="Black"   
+                            Height="30px"
+                            StaticHoverStyle-Height="30px"
+                            StaticHoverStyle-Font-Size="10"
+                            StaticHoverStyle-BorderStyle="solid"
+                            StaticHoverStyle-BorderWidth="1px"
+                            StaticHoverStyle-BorderColor="#BBB100"
+                            StaticHoverStyle-BackColor="#EBEBBE"
+                            StaticHoverStyle-ForeColor="Black"
+                            StaticMenuItemStyle-BorderStyle="Solid"
+                            StaticMenuItemStyle-BorderWidth="1px"
+                            StaticMenuItemStyle-BorderColor="White">
+                        </asp:Menu>  
+                    </td>
+                </tr>
+                <tr runat="server">
+                    <td>
+                        <uc1:Erro ID="Erro1" runat="server" /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                        <div id="AlertDivAll" align="center" style="filter: alpha(opacity=50); /* ie */ -moz-opacity: .5; /* mozilla */ background:#FFFFFF; position:absolute; left:0px; top:0px; width:100%; height:100%; z-index: 1000; visibility:hidden; ">
+                            <img src="Imagenes/loader1.gif" style="position:absolute; left:50%; top:50%;"/>
+                        </div> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script language="javascript" type="text/javascript">
+        Sys.Browser.WebKit = {};
+        if (navigator.userAgent.indexOf('WebKit/') > -1) {
+            Sys.Browser.agent = Sys.Browser.WebKit;
+            Sys.Browser.version = parseFloat(navigator.userAgent.match(/WebKit\/(\d+(\.\d+)?)/)[1]);
+            Sys.Browser.name = 'WebKit';
+        }
+    </script>
+</body>
+</html>

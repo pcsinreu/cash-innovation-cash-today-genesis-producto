@@ -1,0 +1,569 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: transparent url(../images/body.png) 0 -2px repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	min-width: 600px;
+}
+
+img {
+	border: 0;
+}
+
+p {
+	margin: 5px 0;
+}
+
+#header {
+	height: 76px;
+	width: 100%;
+}
+
+#content {
+	width: 97%;
+	*margin: 0 0 0 15px;
+}
+
+#footer {
+	border: solid 1px green;
+	height: 60px;
+	width: 100%;
+}
+
+.mandatory {
+	color: #D20000;
+	border-right: solid 1px #D20000;
+	font-size: 10px;
+	padding: 0 4px 0 0;
+	margin: -3px 0 0 0;
+	float: left;
+	height: 15px;
+}
+
+h1 {
+	font-size: 18px;
+	letter-spacing: 5px;
+	margin: 5px 0 0 0;
+	color: #333;
+	height: 30px;
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold;
+	border-bottom: solid 1px #dfdfdf;
+}
+
+h3 {
+	font-size: 18px;
+	letter-spacing: 5px;
+	margin: 5px 0 0 195px;
+	border-bottom: solid 1px #dfdfdf;
+	color: #333;
+	height: 30px;
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 10px;
+	margin: 18px 0 5px 0;
+	width: 96%;
+	color: #999;
+}
+
+#menu {
+	width: 154px;
+	height: 56px;
+	margin: 0;
+	padding: 0;
+}
+
+#tope {
+	background: transparent url(../images/header.png) 200px 0 no-repeat;
+	width: 100%;
+	height: 33px;
+	float: left;
+	margin: -64px 0 0 0;
+	*margin: -33px 0 0 0;
+}
+
+#usuario {
+	background: transparent url(../images/iconos/icon_usuario.png) left 1px
+		no-repeat;
+	font-size: 10px;
+	margin: 10px 0 0 215px;
+	padding: 0 0 0 16px;
+	color: #666;
+	float: left;
+}
+
+#usuario a:link,a:visited {
+	color: #666;
+	text-decoration: none;
+}
+
+#usuario a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+
+#atajos {
+	float: right;
+	width: auto;
+	margin: 6px 0 0 0;
+}
+
+#atajos img {
+	margin: 2px;
+}
+
+#cerrar {
+	float: right;
+	margin: 8px 10px 0 20px;
+}
+
+#navegacion {
+	font-size: 10px;
+	float: right;
+	margin: 6px 10px 0 0;
+}
+
+#navegacion a:link,a:visited {
+	color: #666;
+	text-decoration: none;
+}
+
+#navegacion a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+#file {
+	margin: auto;
+	padding: 10px 0 40px 10px;
+	width: 96%;
+	display: table;
+	border: solid 1px #dfdfdf;
+	background: transparent url(../images/content.jpg) 0 0 repeat-x;
+}
+
+#file_panel {
+	margin: auto;
+	padding: 10px 0 40px 15px;
+	width: 900px;
+	display: table;
+	border: solid 1px #dfdfdf;
+	background: transparent url(../images/content.jpg) 0 0 repeat-x;
+}
+
+#file_panel a:link {
+	color: #666;
+	filter: alpha(opacity =   99);
+	opacity: 0.99;
+}
+
+#file_panel a:hover {
+	filter: alpha(opacity =   30);
+	opacity: 0.30;
+	color: #000;
+}
+
+#menu_left {
+	width: 200px;
+	margin: 0 10px 100px -15px;
+	border-right: solid 1px #dfdfdf;
+	float: left;
+}
+
+#menu_left b {
+	color: #000;
+}
+
+#menu_left_modulo {
+	width: auto;
+	margin: 0 10px 100px -15px;
+	float: left;
+}
+
+#abajo {
+	background: transparent url(../images/body.png) 0 27px repeat-x;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	height: 45px;
+	padding: 4px 0 0 0;
+	text-align: center;
+	font-size: 10px;
+	color: #999;
+}
+
+#panel_button {
+	background: transparent url(../images/panel_button2.png) 0 -2px no-repeat;
+	height: 75px;
+	width: 481px;
+	margin: auto;
+	padding: 15px 0 0 0;
+}
+
+.button {
+	background: #ffcc00 url(../images/button.png) 0 0 repeat-x;
+	border: solid 1px #ffcc00;
+	cursor: pointer;
+	padding: 2px;
+	margin: 0 2px;
+}
+
+a.button:hover {
+	background: transparent url(../images/button.png) 0 0 repeat-x;
+	border: solid 1px red;
+}
+
+#login_box .version {
+	background: transparent url(../images/iconos/icon_version.png) top left no-repeat;
+	height: 15px;
+	width: 100px;
+	padding: 0 0 0 20px;
+	margin: 29px 0 0 15px;
+	*margin: 27px 0 0 10px;
+	font-size: 10px;
+	float: left;
+	text-align: left;
+}
+
+
+
+/* FORMS */
+.descripcion {
+	
+}
+
+.forms_destaque {
+	margin: 0 5px 0 2px;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.forms {
+	margin: 0 10px 0 2px;
+}
+
+input {
+	background: #fff url(../images/input.png) 0 0 repeat-x;
+	border: solid 1px #ccc;
+	color: #000;
+	font-size: 12px;
+}
+
+select {
+	background: #fff url(../images/input.png) 0 0 repeat-x;
+	border: solid 1px #ccc;
+}
+
+.input_mandatory {
+	border-left: solid 1px #D20000;
+}
+
+.input_search {
+	background: transparent url(../images/input_search.png) right center
+		no-repeat;
+	padding: 0 16px 0 0;
+}
+
+input[type="checkbox"] {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+input[type="radio"] {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+.input_filter {
+	font-size: 10px;
+	border: solid 1px #888888;
+}
+
+/*PANEL*/
+
+.modulo {
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 22px 0 0 20px;
+}
+
+.icono_panel {
+	float: right;
+	width: 52px;
+	height: 52px;
+	margin: -50px 20px 0 0;
+}
+
+.table_form {
+	width: auto;
+}
+
+.table_form td {
+	padding: 5px 2px 0 0;
+}
+
+.grid {
+	border: solid 1px #dfdfdf;
+	border-top: solid 1px #fff;
+	border-bottom: solid 1px #dfdfdf;
+	width: auto;
+	margin: 5px 0;
+	*width: 50%;
+	min-width: 70%;
+	background: #F9F9F9;
+	padding: 0 2px 2px 2px;
+}
+
+.grid td {
+	padding: 0 4px;
+}
+
+.grid_titulo {
+	font-size: 14px;
+	text-align: center;
+	border-bottom: solid 1px #dfdfdf;
+	font-weight: bold;
+	background: #ccc;
+}
+
+.grid_titulo td {
+	padding: 4px 0;
+	letter-spacing: 3px;
+}
+
+.grid_td_titulo {
+	font-weight: bold;
+	text-align: center;
+	background: #E8E8E8;
+}
+
+.grid_td_titlo td {
+	padding: 2px 0;
+}
+
+.odd {
+	background: #fff;
+}
+
+.pagenation {
+	background: #fff;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.pagenation a:link {
+	color: #666;
+	padding: 1px 4px;
+	text-decoration: none;
+	border: solid 1px #f1f1f1;
+	background: #f9f9f9;
+	margin: 0 2px;
+}
+
+.pagenation a:hover {
+	color: #000;
+	background: #dfdfdf;
+	border: solid 1px #999;
+}
+
+/*com.prosegur.ws.client.login*/
+#login_barra {
+	background: transparent url(../images/login_barra.png) 0 120px repeat-x;
+	width: 100%;
+	height: 340px;
+	margin: auto;
+	margin-top: 12%;
+}
+
+#login_box .prosegur {
+	background: transparent url(../images/logo/logotipo_prosegur.png) 0 0
+		no-repeat;
+	float: right;
+	width: 64px;
+	height: 20px;
+	margin: 29px 20px 0 0;
+	*margin: 0 18px 0 0;
+}
+
+
+#login_box {
+	background: transparent url(../images/login_box.png) 0 0 no-repeat;
+	width: 494px;
+	height: 294px;
+	margin: auto;
+}
+
+#login_box table{
+margin:auto;
+}
+#login_box td{
+padding:2px;
+}
+
+#login_box .button {
+	font-size: 14px !important;
+	float: right;
+	padding: 7px 0;
+}
+
+#login_box p {
+	width: 289px;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+#login_box input {
+	width: 200px;
+	font-size: 20px !important;
+	padding: 0 0 2px 5px;
+}
+
+#login_logo {
+	background: transparent url(../images/logo/logotipo_sol.png) center 30px
+		no-repeat;
+	width: 100%;
+	height: 86px;
+	margin: 0 0 30px 0;
+}
+
+.box1 {
+	padding: 5px 0 5px 85px;
+}
+
+.camp1 {
+	margin: 5px 0 20px 0px;
+	font-size: 14px;
+}
+
+#ambito_box .prosegur {
+	background: transparent url(../images/logo/logotipo_prosegur.png) 0 0
+		no-repeat;
+	float: right;
+	width: 64px;
+	height: 20px;
+	margin: 62px -155px 0 0;
+	*margin: 0 18px 0 0;
+}
+
+#ambito_box .version {
+	float: left;
+	margin: 62px 0 0 14px;
+	*margin: 0 0 0 12px;
+
+}
+
+#ambito_box {
+	background: transparent url(../images/login_box.png) 0 0 no-repeat;
+	width: 494px;
+	height: 294px;
+	margin: auto;
+}
+
+#ambito_box .button {
+	width: 70px;
+	font-size: 14px;
+	float: right;
+	padding: 4px 0;
+}
+
+#ambito_box p {
+	width: 420px;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+#ambito_box select {
+	width: 122px;
+	font-size: 16px;
+	padding: 0 0 2px 0;
+}
+
+#ambito_box .box1 {
+	padding: 5px 0 5px 85px;
+}
+
+#ambito_box .camp1 {
+	margin: 5px 0 20px 0px;
+	position: absolute;
+	font-size: 14px;
+}
+
+.set_orden {
+	float: right;
+	margin: 1px 0 0 0;
+}
+
+.icons_grid {
+	margin: 0 2px;
+}
+
+.ui-messages-error,.ui-messages-info {
+	border: 0px !important;
+	background: none !important;
+}
+
+.ui-state-focus{
+	box-shadow: 1px 1px 6px #666!important;
+	filter: alpha(opacity =           80) !important;
+	opacity: 0.80 !important;
+	background: #ccc url(../images/hover_geral.png) 0 0 repeat-x !important;
+	border: 1px solid #666 !important;
+}
+.ui-state-hover {
+	box-shadow: 1px 1px 6px #666!important;
+	filter: alpha(opacity =           80) !important;
+	opacity: 0.80 !important;
+	background: #ccc url(../images/hover_geral.png) 0 0 repeat-x !important;
+	border: 1px solid #666 !important;
+}
+
+
+
+.ui-icon {
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	background:none!important;
+}
+.ui-button {
+	background: #ffcc00 url(../images/button.png) 0 0 repeat-x !important;
+}
+
+.carregandoFX {
+	border: 0;
+	/*background: transparent url(../images/box_prosegur.png) 0 0 no-repeat;*/
+	font-size: 10px;
+	font-family: verdana;
+	padding: 72px 0 0 0;
+	text-align: center;
+	background:transparent!important;
+	-webkit-box-shaddow:0!important;
+}
+
+.ui-sol-loading{
+	-webkit-box-shadow: none!important;
+	box-shadow:none!important;
+	background:none;
+	border:none;
+}
+.ui-sol-loading .ui-widget-header{
+	background:none!important;
+}
+
+.ui-widget-overlay{
+	background:#333!important;
+}

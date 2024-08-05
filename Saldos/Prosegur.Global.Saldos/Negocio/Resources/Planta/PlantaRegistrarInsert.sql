@@ -1,0 +1,1 @@
+﻿INSERT INTO PD_Planta(idPlanta, Descripcion, IdPS) VALUES (:idPlanta, :Descripcion,	:IdPS)

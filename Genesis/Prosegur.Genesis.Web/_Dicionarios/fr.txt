@@ -1,0 +1,50 @@
+﻿
+
+//--------------------------------------------------------------------------------------
+// GENERICOS
+//--------------------------------------------------------------------------------------
+gen_selecione                                             = Sélectionnez
+err_campo_obligatorio					                  = Le champ {0} est obligatoire.
+msg_producidoError								= L'erreur suivante s'est produite :&nbsp;
+msg_loading										= Veuillez attendre quelques instants pendant que le système est :&nbsp;
+msg_redirecionando							= Redirection en cours
+
+//--------------------------------------------------------------------------------------
+// CONTROLES
+//--------------------------------------------------------------------------------------
+gen_btnLogin                                              = Valider
+gen_btnCancelar                                           = Annuler
+gen_msg_camporequerido                                    = Le champ '{0}' est obligatoire.
+
+Default_lblUsuario                                        = Utilisateur
+Default_lblSenha                                          = Clé
+Default_lblPais                                           = Pays
+Default_sessao_expirada                                   = Session expirée, veuillez accéder à nouveau.
+
+//--------------------------------------------------------------------------------------
+// TOKEN
+//--------------------------------------------------------------------------------------
+tkn_tokenutil_token_invalida                              = Token incorrect
+tkn_creartokenacceso_erro_serializar                      = Erreur de sérialisation autorisations
+tkn_creartokenacceso_erro_gerartoken                      = Erreur de génération token
+
+//--------------------------------------------------------------------------------------
+// LOGIN
+//--------------------------------------------------------------------------------------
+lgn_usuario_nao_autenticado							      = Impossible d'authentifier l'utilisateur. Veuillez vérifier l'utilisateur et le mot de passe saisis.
+lgn_usuario_aplicacionversion_noencontrada			      = Aucune version de l'application trouvée pour l'utilisateur.
+lgn_sesion_activa									      = Impossible de réaliser l'accès dans la mesure où il existe une session correcte pour l'utilisateur indiqué.
+000_msgerrogenerico									      = Une erreur s'est produite dans l'application.
+mdl_msg_sempermissao								      = Utilisateur sans autorisation !
+lgn_lblversion										      = Version
+lgn_lblbuild										      = Build
+
+
+msg_obtenerDelegaciones									= Obtention d'agences.
+msg_cargarDelegaciones									= Chargement liste d'agences.
+msg_obtenerPaises = Obtenir les pays.
+msg_cargarPaises = Chargement de la liste des pays.
+msg_cargarPlantas										= Chargement liste de sites.
+msg_iniciarSesion										= Validation d'utilisateur.
+msg_obtenerAplicaciones 								= Obtention d'applications.
+msg_crearToken											= Création Token en cours.

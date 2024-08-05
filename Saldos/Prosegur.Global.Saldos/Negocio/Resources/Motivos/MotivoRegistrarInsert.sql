@@ -1,0 +1,1 @@
+﻿INSERT INTO PD_Motivo (IdMotivo, Descripcion, Accion) VALUES (:IdMotivo, :Descripcion, :Accion)

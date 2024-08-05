@@ -1,0 +1,8 @@
+<RecuperarSaldosAcuerdo xmlns="Integracion">
+    <peticion xmlns="urn:RecuperarSaldosAcuerdo">
+    	<Configuracion Token="" LogDetallar="false" Usuario="" IdentificadorAjeno=""/>
+        <CodigoPais>string</CodigoPais>
+        <Fecha>dateTime</Fecha>
+        <SourceReferenceId>string</SourceReferenceId>
+    </peticion>
+</RecuperarSaldosAcuerdo>

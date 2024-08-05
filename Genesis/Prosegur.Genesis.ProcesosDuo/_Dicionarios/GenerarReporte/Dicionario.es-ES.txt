@@ -1,0 +1,7 @@
+﻿//001 - GENERAR REPORTE CERTIFICACION
+
+001_cabecalho_Email							=  - Genesis - GenerarReporteCertificacion. Servidor: {0}, Fecha/Hora: {1}, Otras Informaciones: {2}
+001_parametro_iac_no_rellenado				= El parametro del IAC {0}, no fue informado.
+001_parametro_no_rellenado					= El parametro de entrada {0}, no fue informado.
+001_Identificador_Resultado_No_Encontrado	= Identificador resultado reporte no encontrado.
+001_Configuracion_Reporte_No_Encontrado		= Configuración Reporte no encontrada.

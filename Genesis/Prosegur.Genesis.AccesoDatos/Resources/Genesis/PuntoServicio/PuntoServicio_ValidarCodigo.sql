@@ -1,0 +1,5 @@
+﻿    SELECT PS.oid_pto_servicio AS IDENTIFICADOR
+      FROM GEPR_TPUNTO_SERVICIO PS
+	  {0}
+     WHERE PS.BOL_VIGENTE = 1
+      {1}  

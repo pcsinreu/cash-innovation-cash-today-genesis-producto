@@ -1,0 +1,1 @@
+﻿select pd_reporte_idreporte_seq.nextval from dual

@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AccionesRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\accion\accionesrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AutomataCentroProcesoRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\automatacentroprocesoregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AutomataCentrosProcesoBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\automatacentrosprocesoborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AutomataCentrosProcesoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\automatacentrosprocesorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AutomataRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\automatarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AutomataRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\automataregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AutomataRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\automataregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AutomatasRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\automatasrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancoEliminarCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\banco\bancoeliminarcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancoEliminarClienteBanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\banco\bancoeliminarclientebanco.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\banco\bancorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancoRegistrarClienteInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banco\BancoRegistrarClienteInsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancoRegistrarClienteUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banco\BancoRegistrarClienteUpdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancoRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banco\BancoRegistrarInsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banco\BancosRealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CampoExtraEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\campoextraeliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CampoExtraRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\campoextrarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CampoExtraRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\campoextraregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CampoExtraRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\campoextraregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoMotivoCentroProcesoBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesomotivocentroprocesoborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoMotivoCentroProcesoRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesomotivocentroprocesoregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoregistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesoregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoregistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesoregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentrosProcesoPorIdps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centrosprocesoporidps.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentrosProcesoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centrosprocesorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentrosProcesoRealizarPorUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centrosprocesorealizarporusuario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteBancoRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clientebancoregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clienteeliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteEliminarBanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clienteeliminarbanco.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clienterealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clienteregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clienteupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EstadosComprobanteRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\estadocombropante\estadoscomprobanterealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCampoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campo\formulariocamporealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCopiaRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\copia\formulariocopiarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioTipoCentroProcesoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariotipocentroprocesorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioUsuarioRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariousuariorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FuncionesRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Funciones\FuncionesRealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedaeliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedaregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedaregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedasRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedasrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MotivoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\motivos\motivorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MotivoRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\motivos\motivoregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MotivoRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\motivos\motivoregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MotivosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\motivos\motivosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaRegistrarEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantaregistrareliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantaregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantaregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantasRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantasrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SAutomata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\sautomata.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SCampoExtra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\scampoextra.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SCentroProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\scentroproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\scliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SMoneda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\smoneda.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SMotivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\smotivo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\splanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="STipoCentroProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sequences\STipoCentroProceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\susuario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TipoCampoExtraRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipocampoextra\tipocampoextrarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TipoCentroProcesoEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoCentroProceso\TipoCentroProcesoEliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TipoCentroProcesoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoCentroProceso\TipoCentroProcesoRealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TipoCentroProcesoRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoCentroProceso\TipoCentroProcesoRegistrarInsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TipoCentroProcesoRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoCentroProceso\TipoCentroProcesoRegistrarUpdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TiposCentroProcesoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipocentroproceso\tiposcentroprocesorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioBloquear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariobloquear.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioBorraCentroProcesso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuarioborracentroprocesso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioCentroProcessoRegistar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariocentroprocessoregistar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioDesbloquear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariodesbloquear.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioFormularioBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuarioformularioborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioFormularioRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usuario\UsuarioFormularioRealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioFormularioRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuarioformularioregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioFuncionBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariofuncionborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioFuncionRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariofuncionregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioIngresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usuario\UsuarioIngresar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioRealisarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariorealisarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioRgistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariorgistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuariosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancosClienteRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\banco\bancosclienterealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClientesRealizarIdPS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clientesrealizaridps.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioCambiarClave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usuario\UsuarioCambiarClave.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioRealizarCentroProcessoMatriz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariorealizarcentroprocessomatriz.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormulariosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClientesRealizarIdPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clientesrealizaridplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesoeliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaEliminarEspecie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedaeliminarespecie.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspecieEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especieeliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspecieRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especieregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspeciesRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especiesrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspeciesRealizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especiesrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SEspecie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\sespecie.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspecieRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especierealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspecieRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especieregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TiposCopiaRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipocopia\tiposcopiarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MotivosRealizarPorCentroProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\motivos\motivosrealizarporcentroproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TiposCampoExtraRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipocampoextra\tiposcampoextrarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CamposExtrasRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\camposextrasrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CamposExtrasRealizarPorIdDocumentoIdFormulario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\camposextrasrealizarporiddocumentoidformulario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CamposExtrasRealizarPorIdFormulario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\camposextrasrealizarporidformulario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCampoBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariocampoborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCopiaBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariocopiaborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SFormulario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\sformulario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioUsuarioBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariousuarioborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioTipoCentroProcesoBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariotipocentroprocesoborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCampoExtraRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariocampoextraregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCampoRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariocamporegistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCamposExtraBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariocamposextraborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCopiaRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariocopiaregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formularioregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioTipoCentroProcesoRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariotipocentroprocesoregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioUsuarioRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariousuarioregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formularioregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReportesRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reportesrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formularioeliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EstadoComprobanteRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\estadocombropante\estadocomprobanterealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BultosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bultos\bultosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SobresRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sobres\sobresrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DestinosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\destinos\destinosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DestinoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\destinos\destinorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CarpetaDocumentosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\carpeta\carpetadocumentosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CampoExtraValoresValidosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\campoextravaloresvalidosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoDetalleRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\detalles\documentodetallerealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporterealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteEstadoComprobanteRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteestadocomprobanterealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteFormularioRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteformulariorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocabecerarealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SReporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\sreporte.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraObtemDados" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocabeceraobtemdados.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EstadoComprobanteObterId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\estadocombropante\estadocomprobanteobterid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MotivoObterAccionDeFormulario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\motivos\motivoobteracciondeformulario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocabeceraatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentosObterPorGrupo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentosobterporgrupo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraRegistrarInsert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocabeceraregistrarinsert.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocabeceraregistrarupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoVerificaNumExterno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoverificanumexterno.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SDocumento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\sdocumento.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteEliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteeliminar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteEstadoComprobanteBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteestadocomprobanteborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteEstadoComprobanteRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteestadocomprobanteregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteFormularioBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteformularioborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteFormularioRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reporteformularioregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CampoExtraValorValido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\campoextravalorvalido.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CamposExtraValorBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\camposextravalorborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoDetalleBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentodetalleborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoDetalleRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentodetalleregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SeValidaCampoExtra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\sevalidacampoextra.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoBultosBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentobultosborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoBultosRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentobultosregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoSobresBorrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentosobresborrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentosSobreRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentossobreregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GravarErroNoBanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\util\gravarerronobanco.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCentroProcesoOrigemDestino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocentroprocesoorigemdestino.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoDocumentosSeanCamposFijosUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\grupodocumentosseancamposfijosupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCambiarEstado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocambiarestado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ExtractoCorrelativoFechaDesdeRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\extracto\extractocorrelativofechadesderealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ExtractoDocumentoRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\extracto\extractodocumentoregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ExtractoRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\extracto\extractoregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ExtractoSaldoFinalRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\extracto\extractosaldofinalregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SExtracto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\sextracto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoSeaExportadoUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoseaexportadoupdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteDocumentosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reportedocumentosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoDocumentosRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\grupodocumentosrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AutomataDocumentoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\automatadocumentorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="IdOrigenDesdeNumExterno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\automata\idorigendesdenumexterno.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaRealizarTodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedarealizartodos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspecieRealizarTodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especierealizartodos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoRealizarTodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesorealizartodos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaRealizarTodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantarealizartodos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CampoExtraValorRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\campoextra\campoextravalorregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClientesRealizarPorBanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clientesrealizarporbanco.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ExtractoPorDocumentoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\extracto\extractopordocumentorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ExtractoPorDocumentoSaldoFinalRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\extracto\extractopordocumentosaldofinalrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BultosPorPlanta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bultos\bultosporplanta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BultosPorRecorrido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bultos\bultosporrecorrido.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaCentrosProcesoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantacentrosprocesorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SeguimientoBultosCodigoBolsa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bultos\seguimientobultoscodigobolsa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SeguimientoBultosNumeroExterno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bultos\seguimientobultosnumeroexterno.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SeguimientoBultosNumeroPrecinto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bultos\seguimientobultosnumeroprecinto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SSaldoFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\ssaldofinal.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InventarioBultos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bultos\inventariobultos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentrosProcesoListarPorUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centrosprocesolistarporusuario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HistoricoInventarioRegistrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\historicoinventario\historicoinventarioregistrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HistoricoInventario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\historicoinventario\historicoinventario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HistoricoInventarioExcel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\historicoinventario\historicoinventarioexcel.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HistoricoInventarioPDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\historicoinventario\historicoinventariopdf.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoUsuarioCpRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentousuariocprealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspecieMonedaDefaultRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especiemonedadefaultrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaGenesisRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedagenesisrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoRegistrarRemesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoregistrarremesa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoreporteRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesoreporterealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioUsuarioListar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariousuariolistar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClientesReportRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clientesreportrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedasReportRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedasreportrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancosReportRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\banco\bancosreportrealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentosEnviarConteoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentosenviarconteorealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoModificarRemesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentomodificarremesa.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoAtualizarExportado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoatualizarexportado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BancoRealizarPorCanalGenesis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\banco\bancorealizarporcanalgenesis.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteRealizarPorClienteGenesis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clienterealizarporclientegenesis.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteDescricaoBuscarPorID" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clientedescricaobuscarporid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteDescricaoBuscarPorIDVar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clientedescricaobuscarporidvar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoDescricaoPorId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesodescricaoporid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CentroProcesoDescricaoPorIdVar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\centroproceso\centroprocesodescricaoporidvar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaDescricaoID" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedadescricaoid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedaDescricaoIDVar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedadescricaoidvar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InventarioCabeceraInsertar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inventario\InventarioCabeceraInsertar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InventarioDetalleInsertar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inventario\InventarioDetalleInsertar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InventarioCabeceraRemover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\inventario\inventariocabeceraremover.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InventarioDetalleRemover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\inventario\inventariodetalleremover.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HistoricoInventarioDisponiblesV9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\historicoinventario\historicoinventariodisponiblesv9.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspecieObtenerPorDenominacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Especie\EspecieObtenerPorDenominacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoVerificarNumExternoAssociadoRechazo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoverificarnumexternoassociadorechazo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoValidarExistenciaDocumentoNoCP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentovalidarexistenciadocumentonocp.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoIncrementaCantidadReintentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoincrementacantidadreintentos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteDocumentosRealizarPorPrecinto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reportedocumentosrealizarporprecinto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CarpetaDocumentosRealizarPorPrecinto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\carpeta\carpetadocumentosrealizarporprecinto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CarpetaDocumentosRealizarSimplificado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\carpeta\carpetadocumentosrealizarsimplificado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoDetalleRealizarSimplificado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\detalles\documentodetallerealizarsimplificado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReporteDocumentosRealizarSimplificado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\reporte\reportedocumentosrealizarsimplificado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspeciesRealizarTodas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especiesrealizartodas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioRealizarTodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariorealizartodos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoActualizarDesError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoactualizardeserror.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListarIdMonedaYIdps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Moneda\ListarIdMonedaYIdps.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ListarIdEspecieYIdGenesis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Especie\ListarIdEspecieYIdGenesis.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoActualizarMIFEnviado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documentos\DocumentoActualizarMIFEnviado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DocumentoRecuperarDetalleMIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documentos\DocumentoRecuperarDetalleMIF.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DocumentoRecuperarMIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documentos\DocumentoRecuperarMIF.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DocumentoActualizarExportadoSalidas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoactualizarexportadosalidas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SSaldoCongelado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sequences\ssaldocongelado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SaldoCongeladoSelecionar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\saldocongelado\saldocongeladoselecionar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SaldoCongeladoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\saldocongelado\saldocongeladoinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SaldoCongeladoRecuperarUltimoRegistro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\saldocongelado\saldocongeladorecuperarultimoregistro.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SaldoCongeladoSelecionarByFecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\saldocongelado\saldocongeladoselecionarbyfecha.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SaldosCongeladosSeleccionarById" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\saldocongelado\saldoscongeladosseleccionarbyid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DestinoRegistrarUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Destinos\DestinoRegistrarUpdate.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoBuscaIdDocumentoPorNumExterno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentobuscaiddocumentopornumexterno.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DocumentoAtualizarExportadoConteo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoatualizarexportadoconteo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoRecuperarEnviadoConteo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentorecuperarenviadoconteo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DocumentoAtualizarClientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoatualizarclientes.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClienteSelecionarSubCliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clienteselecionarsubcliente.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EstadoComprobanteRealizarPorDocumento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\estadocombropante\estadocomprobanterealizarpordocumento.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoBuscaPorNumExterno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentobuscapornumexterno.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraAtualizarExportadoSalidas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocabeceraatualizarexportadosalidas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EspeciesRealizarByMoneda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\especie\especiesrealizarbymoneda.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MonedasRealizarTodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\moneda\monedasrealizartodos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentosEnviarConteoRealizarByIdDocumento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentosenviarconteorealizarbyiddocumento.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraRealizarCrearMif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocabecerarealizarcrearmif.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioRecuperarId" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuario\usuariorecuperarid.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaRealizarByCodigoDelegacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantarealizarbycodigodelegacion.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaCentrosProcesoRealizarByIDPS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantacentrosprocesorealizarbyidps.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraRealizarTransaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentocabecerarealizartransaciones.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormulariosVisibleTransacaoV5Listar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariosvisibletransacaov5listar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioBorrarCondicionReporteTransicionV5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formularioborrarcondicionreportetransicionv5.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCondicionReporteTransicionV5Registrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formulario\formulariocondicionreportetransicionv5registrar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoMIFIncrementaCantidadReintentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentomifincrementacantidadreintentos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoVerificaNumExternoTipoFormulario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoverificanumexternotipoformulario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoValidarExistenciaDocumentoIdPsCentroProceso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentovalidarexistenciadocumentoidpscentroproceso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoPorGrupo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentoporgrupo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoRealizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupo\gruporealizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PlantaRealizarPorIdps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\planta\plantarealizarporidps.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoRecuperarRemesaContadaConteo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentorecuperarremesacontadaconteo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ClientesRealizarPorIdPs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clientes\clientesrealizarporidps.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TransaccionNoMigrada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\transaccionnomigrada\transaccionnomigrada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoDetalleByJoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Detalles\DocumentoDetalleByJoin.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoCabeceraRealizarTransacionesCompleto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Documentos\DocumentoCabeceraRealizarTransacionesCompleto.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FormularioCampoRealizarTodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Campo\FormularioCampoRealizarTodos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoValidarExistenciaDocumento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentovalidarexistenciadocumento.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoBuscaUltimoDocumentoRemessa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentos\documentobuscaultimodocumentoremessa.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+</root>

@@ -1,0 +1,19 @@
+﻿UPDATE PD_Reporte
+   SET Descripcion                    = :Descripcion,
+       DistinguirPorVistaDestinatario = :DistinguirPorVistaDestinatario,
+       DistinguirPorFecha             = :DistinguirPorFecha,
+       FechaDesdeHoyDiasD             = :FechaDesdeHoyDiasD,
+       FechaHastaHoyDiasD             = :FechaHastaHoyDiasD,
+       DistinguirPorDisponibilidad    = :DistinguirPorDisponibilidad,
+       Disponible                     = :Disponible,
+       DistinguirPorReenvio           = :DistinguirPorReenvio,
+       Reenviado                      = :Reenviado,
+       VistaDestinatario              = :VistaDestinatario,
+       DistinguirPorBultos            = :DistinguirPorBultos,
+       ConBultos                      = :ConBultos,
+       DistinguirPorValores           = :DistinguirPorValores,
+       ConValores                     = :ConValores,
+       ConTomados                     = :ConTomados,
+       DistinguirPorSustitucion       = :DistinguirPorSustitucion,
+       Sustituido                     = :Sustituido
+ WHERE IdReporte = :IdReporte

@@ -1,0 +1,1 @@
+﻿select PD_MOTIVO_IDMOTIVO_SEQ.nextval from dual

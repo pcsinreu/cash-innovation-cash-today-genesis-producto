@@ -1,0 +1,1 @@
+﻿DELETE FROM pd_especie WHERE IdMoneda = :IdMoneda

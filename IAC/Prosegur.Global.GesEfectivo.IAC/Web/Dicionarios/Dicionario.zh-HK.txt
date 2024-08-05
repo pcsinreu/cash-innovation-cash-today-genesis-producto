@@ -1,0 +1,1586 @@
+﻿// ************* TELAS *************
+
+// GENÉRICOS
+gen_ddl_selecione									=选择
+gen_data_invalida									= 无效的日期。
+gen_opcion_si										= 是
+gen_opcion_no										= 不
+gen_opcion_todos                                    = 一切
+gen_lbl_CriterioBusca								= 搜索条件
+lbl_gdr_eliminar									= 消除
+
+//FORM BASE
+btnAlta												= 插入
+btnBaja												= 删除
+btnConsulta											= 请教
+btnModificacion										= 修改
+btnLimpiar											= 清洁
+btnBuscar											= 寻求
+btnGrabar											= 节省
+btnCancelar											= 取消
+btnVolver											= 返回
+btnAceptar											= 接受
+btnDuplicar											= 复制
+btnAnadir											= 加
+btnValoresPosibles									= ...
+lbl_base_titulo										= IAC
+lbl_version											= 版本
+lbl_salir											= 离开
+btnDetalhes											= 详细信息
+btnCopiar											= 复制
+btnSincronizar									= 同步货币
+btnSincronizarMedioPago									= 同步支付方式
+btnCodigoAjeno										= 外部代码
+
+
+//MENU PRINCIPAL
+mn_item_canal										= 渠道
+mn_item_producto									= 产品
+mn_item_tiposprocesado								= 加工类型
+mn_item_divisas										= 外汇
+mn_item_iac											= IAC
+mn_item_modalidadrecuento							= 计数模式
+mn_mediopago										= 付款方法
+mn_agrupaciones										= 协会
+mn_terminos											= 条款
+mn_integracion										= 积分
+mn_valoresposibles									= 可能的值
+mn_proceso											= 过程
+mn_caracteristicas									= 字符
+mn_morfologia										= 形貌
+mn_atm												= 自动取款机
+mn_parametros										= 参数
+mn_puestos											= 帖子
+mn_grupocliente										= 客户端组
+mn_delegaciones										= 代表团
+mn_plantas											= 植物
+mn_tipoSetor										= 类型行业
+mn_Sector											= 扇形
+mn_TipoSubcliente									= 类型子客户端
+mn_TipoPuntoServicio								= 类型服务点
+mn_tipoCliente										= 类型客户
+mn_clientes                                         = 客户
+mn_subclientes                                      = 子客户端
+mn_pto_servicio                                     = 服务点
+mn_tipoProcedencia                                  = 来源类型
+mn_Procedencia										= 种源
+mn_MAE												= MAE
+mn_accionesLote										= MAE - Acciones en lote
+mn_planificaciones									= Planificiones
+mn_transaciones 									= Transaciones
+mn_Ayuda											= Ayuda
+mn_InformacionIAC									= Información de IAC
+mn_cuentasBancarias	= Contas Bancárias
+mn_aprobacionCuentasBancarias	= Aprovação
+mn_periodosAcreditacion = Períodos de Credenciamento
+mn_historyCuentasBancarias	= Histórico
+mn_permisos											= Permissões
+mn_roles											= Roles
+mn_usuarios											= Usuários
+
+//ERRO PADRÃO
+err_padrao_aplicacao								= 应用程序中的错误
+err_codigo_erro_ambiente_default					= 执行环境中的错误
+err_codigo_erro_negocio_sesion_invalida				= 无效的会议
+err_codigo_erro_negocio_default						= 业务的标准误差
+err_passagem_parametro								= 这些参数是不是有效的知情。
+err_descricao_invalida								= 描述或无效的代码。
+err_campo_obligatorio								= 该字段{0}是必需的。
+err_generico										= 在应用程序中有未处理的错误。请与您的系统管理员联系。
+err_msg_error_05									= 访问服务器上的数据库时出错：{0}
+err_msg_error_02									= 错误通信与目录服务器（LDAP）。
+err_msg_error_03   									= 在访问目录服务器（LDAP）错误。用户名或密码不正确。
+err_msg_chave_invalida_webapp						= 检查的url参数设置是否正确在UrlServicio WebConfig Web应用程序。
+
+//INFORMACIÓN PADRAO
+info_msg_sin_registro								= 没有发现记录的参数。
+info_msg_baja										= 记录删除成功。
+info_msg_baja_registro								= 要删除记录？
+info_msg_registro_borrado							= 已停用或删除选定的记录。
+info_msg_grabar										= 确认这个记录的变化？
+info_msg_alta										= 确认列入这个纪录吗？
+info_msg_seleccionar_registro						= 执行此操作之前选择一个记录。
+info_msg_seleccionar_cliente						= 选择一个客户端，然后再执行此操作。
+info_msg_max_registro								= 最大记录数达到。输入任何参数搜索。
+info_msg_sair_pagina								= 您确定要离开这个页面？
+info_msg_grd_vazio									= 没有任何数据显示。
+
+//TELA BUSQUEDA DE CANALES
+001_titulo_busqueda_canales							= 搜索频道
+001_lbl_codigocanal									= 码频道
+001_lbl_descricaocanal								= 说明通道
+001_lbl_vigente										= 目前
+001_lbl_subtituloscanales							= 通道
+001_lbl_subtituloscriteriosbusqueda					= 搜索条件
+001_lbl_grd_codigo									= 码
+001_lbl_grd_descripcion								= 描述
+001_lbl_grd_observacion								= 意见
+001_lbl_grd_vigente									=“有效”
+
+//TELA MANTENIMIENTO DE CANALES
+001_titulo_mantenimiento_canales					= 渠道维护
+001_lbl_subtitulossubcanales						= 子信道
+001_lbl_observaciones								= 意见
+001_msg_grabado_suceso								= 注册成功记录。
+001_msg_CodigoCanalExistente						= 信道编码已经存在。
+001_msg_descricaocanalexistente						= 通道描述已经存在。
+001_msg_CodigoSubCanalExistente						= 子信道代码已经存在。
+001_msg_DescricaoSubCanalExistente					= 存在的子信道的描述。
+001_msg_CanalCodigoobligatorio						= 的信道码是强制性的。
+001_msg_CanalDescripcionobligatorio	 				= 通道描述是强制性的。
+
+//TELA MANTENIMIENTO DE SUBCANALES
+001_titulo_mantenimiento_subcanales					= 维护子信道
+001_lbl_codigosubcanal								= 子信道代码
+001_lbl_descricaosubcanal							= 说明子信道
+001_lbl_subtitulosmantenimientosubcanales			= 维护子信道
+001_msg_subcanalcodigoobligatorio					= 的子信道的码是必需的。
+001_msg_subcanaldescripcionobligatorio	 			= 子信道的描述中是强制性的。
+001_msg_subcanalcodigoexistente					    = 子信道代码已经存在。
+001_msg_subcanaldescripcionexistente	 			= 存在的子信道的描述。
+001_msg_canal_subcanal_desactivado					= 該頻道及其相關子信道已被禁用。
+001_msg_canal_subcanal_activado						= 的信道和它的相關聯的子信道被激活，請確認子信道。
+001_msg_imposible_activar_subcanal_canal_inactivo   = 因為相關的通道被禁用，則無法激活該子信道。
+
+
+//PRODUCTOS
+
+//TELA PRODUCTOS
+002_lbl_codigoproducto								= 码
+002_lbl_descricaoproducto							= 描述
+002_lbl_manual										= 手册
+002_lbl_vigente										= 目前
+002_lbl_maquina										= 机
+002_titulo_productos								= 搜索条件
+002_subtitulo_productos								= 产品
+002_lbl_grd_codigo									= 码
+002_lbl_grd_descripcion								= 产品描述
+002_lbl_grd_billete									= 机票类别
+002_lbl_grd_correccion								= 修正系数
+002_lbl_grd_manual									= 手册
+002_lbl_grd_vigente									= 目前
+002_titulo_maquinas									= 机产品
+002_lbl_nome_productos								= 产品
+002_lbl_grd_maquina									= 机
+002_btn_consultar									= 请教机
+002_ddl_selecionar									= 选择
+002_falta_canal										= 请填写一个通道
+002_title_productos									= 产品搜索
+002_title_maquinasdelproductos						= 机产品
+002_msg_no_existen_maquinas							= 此产品有机器注册。
+
+//TELA DEFAULT
+003_lbl_titulo										= IAC
+
+//GRID_SUMMARY
+grid_lbl_pagersummary							    = 第{0} {1}（{2}项目）
+prosegurgridview_asc								= 排序升序
+prosegurgridview_desc								= 降序顺序排序
+prosegurgridview_sem_registro						= 有没有记录。
+gen_proximo											= 关闭
+gen_ultimo											= 最后
+gen_Primeiro										= 第一
+gen_anterior										= 前
+
+//TELA TIPOS PROCESADO
+004_lbl_codigotiposprocesado							= 码
+004_lbl_descripciontiposprocesado						= 描述
+004_chk_vigente											= 目前
+004_lst_caracteristicas									= 字符
+004_lbl_observacion										= 评论
+004_titulo_tiposprocesado								= 搜索条件
+004_subtitulo_tiposprocesado							= 加工类型
+004_titulo_matenimentotiposprocesado	 				= 加工类型维护
+004_titulo_caracteristicas_matenimentotiposprocesado	= 处理不同的特征
+004_lbl_grd_codigo										= 码
+004_lbl_grd_descripcion									= 描述
+004_lbl_grd_observacion									= 评论
+004_lbl_grd_vigente										= 目前
+004_msg_codigotiposprocesadoexistente					= 已经处理的类型代码。
+004_msg_descricaotiposprocesadoexistente				= 加工类型的描述已经存在。
+004_title_tiposprocesado								= 处理搜索类型
+004_title_matenimentotiposprocesado						= 加工类型维护
+004_msg_tipoprocesadocodigoobligatorio					= 呈现类型代码是强制性的。
+004_msg_tipoprocesadodescripcionobligatorio				= 加工类型的描述是强制性的。
+
+//TELA DIVISA
+005_titulo_busqueda_divisas							= 搜寻货币
+005_lbl_codigoiso									= ISO代码
+005_lbl_descricaodivisa								= 说明货币
+005_lbl_vigente										= 目前
+005_lbl_simbolo								    	= 符号
+005_lbl_cor											= 颜色
+005_lbl_Codigoacceso								= 接入码
+005_lbl_subtitulosdivisas							= 外汇
+005_lbl_subtituloscriteriosbusqueda					= 搜索条件
+005_lbl_grd_codigo									= Cod.ISO
+005_lbl_grd_descripcion								= 座右铭
+005_lbl_grd_simbolo									= 符号
+005_lbl_grd_vigente									= 目前
+
+//TELA MANTENIMIENTO DE DIVISA
+005_titulo_mantenimiento_divisas					= IAC - 维护货币
+005_lbl_subtitulosDenominaciones					= 面额
+005_lbl_grd_mantenimiento_codigo					= 码
+005_lbl_grd_mantenimiento_descripcion				= 描述
+005_lbl_grd_mantenimiento_valor						= 值
+005_lbl_grd_mantenimiento_peso						= 重量
+005_lbl_grd_mantenimiento_bilhete					= 票
+005_lbl_grd_mantenimiento_vigente					= 目前
+005_msg_grabado_suceso								= 注册成功记录。
+005_msg_divisacodigoobligatorio						= 货币代码字段是强制性的。
+005_msg_divisadescripcionobligatorio				= 描述领域的边界是必需的。
+005_msg_codigodivisaexistente						= 货币代码已经存在。
+005_msg_descripciondivisaexistente					= 货币的描述中已经存在。
+005_msg_codigocolorobligatorio						= 疼痛的来源是必需的。
+005_msg_codigoaccesoobligatorio						= 访问码是必需的。
+005_msg_codigoaccesoexistente						= 访问代码已经存在。
+
+//TELA DE DELEGAÇÕES
+013_titulo_busqueda_delegaciones					= 研究代表团
+013_lbl_codigo_pais									= 国家
+013_lbl_codigo_delegaciones							= 码
+013_lbl_descricaodelegaciones						= 描述
+013_lbl_vigente										= 目前
+013_lbl_delegaciones								= 代表团
+013_lbl_criterio							= 搜索条件
+013_titulo_mantenimiento_Delegaciones				= 维护代表团
+013_lbl_cantidadAjuste								= 分钟数/调整
+013_lbl_codigoDelegacion							= 代表团守则
+013_lbl_descDelegacion								= 该代表团的说明
+013_lbl_FechaVeranoFim								= 夏季结束日期
+013_lbl_FechaVeranoInicio							= 开始日期夏季
+013_lbl_gmtMinutos									=“GMT分钟”
+013_lbl_pais										= 国家
+013_lbl_TituloDelegaciones							= 代表团
+013_lbl_zona										= 区
+013_msg_Existente									= 该代表团的代码已经存在。
+013_msg_Delegacioncodigoobligatorio					= 这是强制性守则代表团。
+013_msg_PaisObligatorio								= 该国是强制性的。
+013_msg_Delegaciondescripcionobligatorio			= 该代表团的描述是必需的。
+013_msg_FechaVeranoFin								= 夏季结束日期是必需的。
+013_msg_FechaVeranoIncio							= 夏季的开始日期是必需的。
+013_msg_DelegacionGmtMinutos						= 需要GMT分钟。
+013_msg_delegacionZona								= 开发区是强制性的。
+013_msg_Delegacion									= 分钟数调整是必需的。
+013_ddl_selecione									= 选择
+013_lbl_grd_codigoDel								= 码
+013_lbl_grd_descripcionDelegacion					= 描述
+013_lbl_grd_vigenteDelegacion						= 目前
+013_msg_erro_Data									=“此日期必须等于或大于开始日期夏日。”
+013_msg_erro_pais									= 选择一个国家
+
+//TELA DE BUSCA DE PLANTAS
+014_lbl_codigo_planta								= 码
+014_titulo_busqueda_delegaciones					= 植物搜索
+014_lbl_delegaciones								= 代表团
+014_lbl_descricao									= 描述
+014_lbl_Plantas										= 植物
+014_lbl_criterio									= 搜索条件
+014_ddl_Selecionar									= 选择
+014_lbl_grd_descricao								= 描述
+014_lbl_grd_Ativo									= 目前
+014_titulo_mantenimiento_Planta						= 维修厂
+014_lbl_codigoPlanta								= 工厂代码
+014_lbl_Delegacion									= 代表团
+014_lbl_DescPlanta									= 植物说明
+014_lbl_TituloPlaneta								= 植物
+014_msg_PlantaExistente								= 已经注册的植物。
+014_msg_CodigoPlanta								= 植物的代码是必需的。
+014_msg_PlantaDescripcion							= 植物的描述是必需的。
+014_msg_Delegacion									= 该代表团是强制性的。
+049_msg_erro_PlantaCodigo							= 植物的代码是必需的。
+051_msg_erro_PlantaDescricao						= 植物的描述中是必需的。
+052_msg_erro_PlantaCodDelegacion					= 代表团必填字段。
+053_msg_erro_PlantaExistente						= 该工厂已经存在与选定的代表团。
+053_msg_erro_Insereregistro							= 错误插入电厂。
+053_msg_erro_Atualizaregistro						= 错误核销厂。
+053_msg_erro_BajaRegistro							= 错误刷新厂。
+049_msg_erro_PlantaGmtModificacion					= 日期修改是必要的。
+049_msg_erro_PlantaDesUsuModifi						= 它是强制性的，以通知用户进行变更的。
+msg_erro_campo_delegacion							= 需要代表团领域。
+
+//TELA DE BUSCA TIPO DE SETORES
+019_lbl_codigo										= 代码类型部门
+019_lbl_descripciontiposprocesado					= 描述
+019_lbl_caracteristicas								= 功能型部门
+019_chk_vigente										= 法律：
+019_lbl_titulo_tipossetor							= 搜索类型行业
+019_lbl_subtitulo_tipossetor						= 类型划分
+019_lbl_grd_observacion								= 特点
+
+//TELA DE MANUTENÇÂO DE TIPOS SETORES
+019_lbl_codigotiposSetor							= 代码类型部门
+019_lbl_descripciontiposSetor						= 说明类型部门
+019_titulo_matenimentotiposSetor					= 类型行业
+019_titulo_caracteristicas_matenimentotiposSetor	= 特点
+019_msg_tipoSetorcodigoobligatorio					= 码型行业是必要的。
+019_msg_tipoSetordescripcionobligatorio				= 类型行业的描述是必需的。
+019_msg_codigotiposSetorexistente					= 代码类型行业已经存在。
+019_msg_CaracteristicaObrigatoria					= 该功能是强制性的。
+019_lbl_codigoAjeno									= 代码不经意
+019_lbl_descricaoAjeno								= 描述无视
+019_lbl_delegacion									= 代表团
+
+//TELA DE BUSCA DE SETORES
+054_lbl_centro_processo								= 处理中心
+054_lbl_Codigo										= 代码行业类别
+054_lbl_Descripcion									= 部门说明
+054_lbl_planta										= 厂
+054_lbl_sector_padre								= 部门的父亲
+054_lbl_titulo_busqueda								= 搜索一般行业
+054_lbl_tiulo_Resultados							= 行业
+054_lbl_tipo_setor									= 类型行业
+054_lbl_vigente										= 目前
+054_ddl_selecione									= 选择
+054_lbl_grd_codigo									= 码
+054_lbl_grd_descripcion								= 描述
+054_lbl_grd_planta									= 厂
+054_lbl_grd_tiposector								= 类型行业
+054_lbl_grd_sectorpadre								= 父亲部门
+054_lbl_grd_centroproceso							= 处理中心
+054_lbl_grd_vigente									= 目前
+054_lblTituloBuscaSimples							= 简单搜索类别
+054_lbl_criterioBusca								= 搜索条件
+054_lbl_BuscaSimplesCodigo							= 码
+054_lbl_BuscaSimplesDescripcion						= 描述
+054_msg_erro_CodigoPlantaVazio						= 它是强制性到告知的植物。
+054_msg_erro_CodigoTipoSector						= 它是强制性的通知类型部门。
+054_msg_erro_CentroProcesso							= 处理中心是必需的。
+054_msg_BuscaSetorPai								= 简单搜索行业
+054_msg_erroDelegacion								= 它是强制性的，告知代表团
+019_lbl_centroProcessoAtivado						= 是
+019_lbl_centroProcessoDesativado					= 不
+
+//TELA DE MANUTENÇÂO SETORES
+054_lbl_titulo_manutencao_setores					= 行业
+054_ddl_planta_manutencao							= 厂
+054_ddl_TipoSector									= 类型行业
+054_lbl_centro_proceso_manutencao					= 处理中心
+054_lbl_sector_padre_manutencao						= 父亲部门
+054_lbl_Codigo_sector_manutencao					= 代码行业类别
+054_lbl_descricao_sector_manutencao					= 说明扇区
+054_lbl_codigo_prosegur_manutencao					= 代码PROSEGUR
+054_chk_Acpta_movimento								= 接受运动
+054_chk_tesoso										= 宝
+054_chk_conteo										= 算
+054_msg_erro_codigoExistente						= 扇区代码已经存在。
+054_msg_codigo_setor_obrigatorio					= 部门代码是强制性的。
+054_msg_Descricao_obrigatoria						= 该部门的描述是必需的。
+054_msg_TipoSector_obrigatorio						= 行业类型是强制性的。
+054_msg_planta_obrigatorio							= 它是强制性到告知的植物。
+054_msg_selecione_Sector							=“选择一个部门。”
+054_msg_tipo_pantalla_Sector						= 保养工程业
+
+//TELA MANTENIMIENTO DE DENOMINACION
+005_titulo_mantenimiento_denominaciones				= IAC - 维护面额
+005_lbl_subtitulosmantenimientodenominacion			= 面额
+005_lbl_denominacion_codigo							= 代码指定
+005_lbl_denominacion_descricao						= 指定的描述
+005_lbl_denominacion_codigo_acceso					= 接入码
+005_lbl_denominacion_valor							= 值
+005_lbl_denominacion_peso							= 重量
+005_lbl_indicadorbilhete							= 票
+005_msg_denominacion_codigoaccesoobligatorio		= 访问码是必需的。
+005_msg_denominacion_codigoaccesoexistente	    	= 访问代码已经存在。
+
+005_msg_denominacion_codigo_obligatorio				= 的代码名称是必需的。
+005_msg_denominacion_descripcion_obligatorio		= 指定的描述是必需的。
+005_msg_denominacion_valor_obligatorio				= name的值是必需的。
+005_msg_denominacion_peso_obligatorio				= 指定的重量是必需的。
+005_msg_denominacion_codigo_existente				= 已缴付或面额注册的输入的代码的一种手段。
+
+//TELA INFORMAÇÃO ADICIONAL AO CLIENTE
+006_lbl_codigoiac									= 码
+006_lbl_descripcioniac								= 描述
+006_chk_vigente										= 目前
+006_chk_invisible									= 无形
+006_lbl_terminos									= 条款
+006_lbl_observacion									= 评论
+006_titulo_matenimentoiac							= 维护IAC
+006_titulo_iac										= 搜索条件
+006_subtitulo_iac									= 其他信息客户端
+006_title_iac										= 其他客户信息搜索
+006_title_mantenimentoiac							= 维护IAC
+006_lbl_grd_codigo									= 码
+006_lbl_grd_descripcion								= 描述
+006_lbl_grd_vigente									= 目前
+006_lbl_grd_observaciones							= 评论
+006_lbl_grd_checkbox								
+006_lbl_grd_obligatorio								= 强制性
+006_lbl_grd_busqueda								= 搜索
+006_lbl_grd_campoclave								= 重点领域
+006_lbl_grd_copiarTermino							= 复制总结
+006_lbl_grd_Protegido								= 保护
+006_msg_iaccodigoobligatorio						= 为客户提供额外信息的代码是必需的。
+006_msg_iacdescripcionobligatorio					= 其他客户信息的描述是强制性的。
+006_msg_iacTerminoObligatorio						= 你必须选择至少一端。
+006_msg_codigoiacexistente							= 其他客户信息的代码已经存在。
+006_msg_descricaoiacexistente						= 其他客户信息的描述已经存在。
+006_lbl_copiardeclarado								= 复制宣称
+006_lbl_disponivelnuevosaldos   					= 新建保障结余
+006_lbl_grd_InvisibleRpt							= Invisible Rep
+006_lbl_grd_IdMecanizado							= Id Mecanizado
+006_msg_terminos_misma_descripcion					= Hay terminos con la misma descripción siendo añadidos.
+
+//TELA LOGIN
+007_lbl_delegacion									= 代表团
+007_lbl_login										= 用户
+007_lbl_senha										= 密码
+007_btn_confirmar									= 登录
+007_btn_cancelar									= 取消
+007_titulo											= 登录IAC
+007_msg_usuario_invalido							= 用户或密码无效。
+007_msg_usuario_sem_permisio						= 用户在这个系统中是不允许的。
+007_msg_usuario_sessao_expirada						= 您的会话已过期。请再次登录。
+007_msg_sessao_finalizada                           = 会议结束
+
+//TELA BUSQEUDA DE AGRUPACIONES
+008_titulo_busqueda_agrupaciones					= 搜索协会
+008_lbl_codigoagrupacion							= 代码分组
+008_lbl_descricaoagrupacion							= 说明分组
+008_lbl_divisa_efetivo								= 有效边界
+008_lbl_vigente										= 目前
+008_lbl_divisa_ticket								= 货币门票
+008_lbl_ticket										= 票
+008_lbl_divisa_otros_valores						= 其他货币值
+008_lbl_otros_valores								= 其他值
+008_lbl_divisa_cheques								= 货币支票
+008_lbl_cheques										= 支票簿
+008_lbl_subtitulosagrupaciones						= 协会
+008_lbl_subtituloscriteriosbusqueda					= 搜索条件
+008_lbl_grd_codigo									= 码
+008_lbl_grd_descripcion								= 描述
+008_lbl_grd_observacion								= 意见
+008_lbl_grd_vigente									= 目前
+008_ddl_selecione									= 选择
+008_ddl_selecioneDelegacion							= 所有
+
+//TELA MANTENIMIENTO DE AGRUPACIONES
+008_lbl_efectivo									= 有效
+008_titulo_mantenimiento_agrupaciones				= 维修协会
+008_lbl_titulos_mantenimento_agrupaciones			= 维修协会
+008_lbl_subtitulos_mantenimento_agrupaciones		= 付款方法
+008_lbl_observaciones								= 意见
+008_msg_agrupacioncodigoobligatorio					= 分组的代码是必需的。
+008_msg_agrupaciondescripcionobligatorio			= 分组的描述中是强制性的。
+008_msg_descricaoagrupacionexistente				= 存在分组的描述。
+008_msg_codigoagrupacionexistente					= 代码的分组已经存在。
+008_msg_treeviewnodesobligatorio					= 选择至少一个有效的付款或货币手段，它是强制性的。
+
+//TELA VALORES POSIBLES
+009_lblcliente										= 顾客
+009_lblsubcliente									= 子客户端
+009_lblpuntoservicio								= 服务点
+009_lbltermino										= 结束
+009_lbl_titulo										= 可能的值
+009_lbl_titulo_valoresposibles						= 搜索条件
+009_lbl_subtitulo_valoresposibles					= 可能的值
+009_lbl_grd_codigo									= 码
+009_lbl_grd_descripcion								= 描述
+009_lbl_grd_vigente									= 目前
+009_lbl_grd_ValorDefecto							= defecto价值
+009_msg_codigo_obligatorio							= 该代码是强制性的。
+009_msg_descripcion_obligatorio						= 的描述是强制性的。
+009_msg_codigo_existente							= 该代码已经存在。
+009_msg_descripcion_existente						= 的描述已经存在。
+009_msg_valordefecto_existente						= 有雅未记录defecto
+009_msg_codigo_cliente_obligatorio					= 客户端代码是强制性的。
+009_msg_termino_obligatorio							= 代码完成是强制性的。
+009_msg_grabado_suceso								= 记录更新成功。
+009_msg_descripcion_existe							= 此客户的描述可能值已经存在。
+009_msg_codigo_existe								= 此客户已经存在的代码可能值。
+009_ddl_selecione									= 选择
+009_btn_buscar_cliente								= 搜索客户
+009_btn_buscar_sub_cliente							= 搜索子客户端
+009_btn_buscar_punto_servicio						= 搜索服务点
+
+//TELA BUSQUEDA DE TERMINOS
+010_titulo_busqueda_terminos						= IAC的搜索条款
+010_lbl_codigotermino								= 码
+010_lbl_descricaotermino							= 描述
+010_lbl_descricaoformato							= 格式
+010_lbl_vigente										= 目前
+010_lbl_mostrarcodigo								= 显示代码
+010_lbl_subtitulosterminos							= 条款IAC
+010_lbl_subtituloscriteriosbusqueda					=“搜索条件”
+010_lbl_grd_codigo									= 码
+010_lbl_grd_descripcion								= 描述
+010_lbl_grd_vigente									=“有效”
+010_ddl_selecione									= 选择
+
+//TELA DE MANTENIMIENTO DE TERMINOS
+010_titulo_mantenimiento_terminos					= 维护条款
+010_lbl_titulosterminos								= 条款IAC
+010_lbl_observaciones 								= 评论
+010_lbl_tipoformato   								= 格式
+010_lbl_longitud      								= 经度
+010_lbl_sinvalidacion 								= 没有验证
+010_lbl_mascara	      								= 格式
+010_lbl_listavalores  								= 值列表
+010_lbl_formula	      								= 公式
+010_lbl_validacao									= 验证
+010_lbl_listavaloreseditable				= 接受打字
+010_msg_terminocodigoobligatorio					= 终止的代码是必需的。
+010_msg_terminodescripcionobligatorio				= 终止的描述中是强制性的。
+010_msg_descricaoterminoexistente					= 端的描述中已经存在。
+010_msg_codigoterminoexistente						= 终止代码已经存在。
+010_msg_grabado_suceso								= 注册成功记录。
+010_msg_formatoobligatorio							= 的格式是必需的。
+010_msg_longitudobligatoria							= 的经度是强制性的。
+010_msg_longitudvalorinvalido						= 的经度必须包含有效的值大于零且小于或等于{0}
+010_msg_mascaraobligatoria							= 的格式掩码是强制性的。
+010_msg_algoritmoobligatorio						= 该公式的算法是必需的。
+
+//TELA BUSQUEDA CLIENTES
+011_titulo_pagina									= 搜索客户
+011_titulo_busqueda									= 搜索条件
+011_titulo_resultado								= 客户
+011_lbl_gdr_codigo									= 码
+011_lbl_gdr_descripcion								= 描述
+011_codigo_cliente									= 客户端代码
+011_descricao_cliente								= 说明客户
+011_seleccione_un_cliente							= 选择客户端
+011_seleccione_al_menos_un_cliente					= 选择至少一个客户端
+
+//TELA BUSQUEDA MEDIOS DE PAGO
+014_titulo_pagina									= 搜索付款方式
+014_lbl_subtituloscriteriosbusqueda					= 搜索条件
+014_lbl_tipo_medio_pago								= 类型付款方法
+014_lbl_codigomediopago								= 码
+014_lbl_descricaomediopago							= 描述
+014_lbl_MPdivisa									= 座右铭
+014_lbl_vigente										= 目前
+014_lbl_mercancia									= 商品
+014_lbl_subtitulosmediopago							= 付款方法
+014_lbl_grd_tipo_medio_pago							= 类型
+014_lbl_grd_codigo									= 码
+014_lbl_grd_descripcion								= 名
+014_lbl_grd_divisa									= 座右铭
+014_lbl_grd_vigente									= 目前
+014_ddl_selecione									= 选择
+
+//MANTENIMINETO DE MEDIOS DE PAGO
+014_titulo_mantenimiento_mediospago					= 维护支付手段
+014_lbl_subtitulosmediospago						= 付款方法
+014_lbl_subtitulosterminomediospago					=“付款方式条款”
+014_lbl_observaciones								= 评论
+014_lbl_grd_mantenimiento_codigo					= 码
+014_lbl_grd_mantenimiento_descripcion				= 描述
+014_lbl_grd_mantenimiento_formato					= 格式
+014_lbl_grd_mantenimiento_vigente					= 目前
+014_msg_mediopagocodigoobligatorio					= 支付方法的代码是必需的。
+014_msg_codigomediopagoexistente					= 边界和代码相结合的支付方式已经存在。
+014_msg_mediopagodescripcionobligatorio				= 支付手段的描述是强制性的。
+014_msg_mediopagotipoobligatorio					= 不同的支付方法是必需的。
+014_msg_mediopagodivisaobligatorio					= 支付手段的座右铭是强制性的。
+014_msg_grabado_suceso								= 注册成功记录。
+014_lbl_codigoacceso								= 接入码
+014_msg_codigoaccesoobligatorio						= 访问码是必需的。
+014_msg_codigoaccesoexistente						= 访问代码已经存在。
+
+//TELA SINCRONIZAR MEDIOS PAGO
+014_titulo_sincronizar_mediospago						= 同步的支付手段
+014_titulo_mediospago_sincronizacion					= 货币供应量
+014_chk_selecionar_todos_mediosPago						= 选择付款方式
+014_msg_sin_actualizacion_mediosPago					= 所有付款方法已经更新。
+014_msg_selecionar_mediospago							= 必须选择至少一个付款方式。
+014_msg_confirm_sincronizacion_mediospago				= 此选项同步表禁忌，离港，新的结余和ATM数据IAC支付手段的选择。
+
+//CONTROLE RESULTADO SINCRONIZACION MEDIO PAGO
+014_lbl_resultado							= 结果：
+014_lbl_url									= 网址服务：
+014_msg_url									= 找不到URL。
+014_lbl_MediosPago_atualizadas				= 升级支付方式
+014_msg_error								= 错误 - {0}
+014_msg_MediosPago_no_atualizadas			= 无付款方法已经更新。
+014_msg_sin_error							= 支付手段的更新。
+014_msg_error_Medios Pago					= 一些支付手段无法更新。
+014_msg_error_geral							= 支付手段的更新错误。
+014_lbl_cod_MedioPago						= 付款方法守则
+014_lbl_des_MedioPago						= 付款方式说明
+014_lbl_status								= 状态
+014_lbl_valor								= 值
+014_lbl_divisa								= 付款方法
+014_lbl_cod_erro							= 错误代码
+014_lbl_des_erro							= 错误
+
+//MANTENIMINETO TERMINO DE MEDIOS DE PAGO
+014_titulo_mantenimiento_termino_mediospago			  = 维护的付款方式条款
+014_subtitulo_mantenimiento_termino_mediospago		  = 付款方式条款
+014_lbl_formato										  = 类型
+014_lbl_longitude									  = 大小
+014_lbl_valorinicial								  = 罢工
+014_lbl_mostrarcodigo								  = 显示代码
+014_lbl_validacaoformato							  = 验证格式
+014_lbl_validacaoformula							  = 验证公式
+014_msg_terminomediopago_codigoobligatorio			  = 支付手段的代码是必需的。
+014_msg_terminomediopago_codigopagoexistente		  = 的代码终止付款方法已经存在。
+014_msg_terminomediopago_descripcionobligatorio		  = 支付方法的描述中是强制性的。
+014_msg_terminomediopago_longitudobligatorio		  = 的尺寸是必需的。
+014_msg_terminomediopago_formatoobligatorio			  = 的格式类型是必需的。
+014_msg_terminomediopago_longitudeinvalidaobligatorio = 的经度必须包含有效的值大于零且小于或等于{0}
+014_lbl_valoresposibles								  = 可能的值
+
+//MANTENIMIENTO VALORES TERMINO DE MEDIOS DE PAGO
+014_titulo_mantenimiento_valorterminomediopagos		  = 维护价值观的付款方式条款
+014_lbl_codigovalorterminomediopago					  = 码
+014_lbl_descricaovalorterminomediopago				  =“说明”
+014_lbl_subtitulosmantenimientovalorterminomediopagos = 价值观条款付款方式
+014_msg_valorterminomediopagocodigoobligatorio		  = 代码值终止付款方法是必需的。
+014_msg_valorterminomediopagodescripcionobligatorio   = 支付完成的值的装置的描述中是强制性的。
+014_msg_valorterminomediopagocodigoexistente		  = 代码值终止付款方法已经存在。
+014_lbl_grd_mantenimiento_valor_termino_codigo		  = 码
+014_lbl_grd_mantenimiento_valor_termino_descripcion	  = 描述
+014_lbl_grd_mantenimiento_valor_termino_vigente		  = 目前
+
+//TELA BUSQUEDA SUBCLIENTES
+015_titulo_pagina									= 搜索子客户端
+015_titulo_busqueda									= 搜索条件
+015_titulo_resultado								= 子客户端
+015_lbl_gdr_cliente									= 顾客
+015_lbl_gdr_codigo									= 码
+015_lbl_gdr_descripcion								= 描述
+015_lbl_subcliente									= 子客户端
+015_codigo_subcliente								= 子客户端代码
+015_descricao_subcliente							= 说明子客户端
+015_seleccione_un_subcliente						= 选择至少一个子客户端
+015_lbl_cliente										= 顾客
+015_msg_numregistro_grande							= 
+
+//TELA BUSQUEDA DE PROCESOS
+016_lbl_titulo									   = 搜索过程
+016_lbl_titulo_busquedaprocesos					   = 搜索条件
+016_lbl_subtitulo_busquedaprocesos				   = 流程
+016_btncliente									   = 搜索客户
+016_btnsubcliente								   = 搜索子客户端
+016_btnpuntoservicio							   = 搜索服务点
+016_lbl_cliente									   = 顾客
+016_lbl_subcliente								   = 子客户端
+016_lbl_puntoservicio							   = 服务点
+016_lbl_grd_cliente								   = 顾客
+016_lbl_grd_subcliente							   = 子客户端
+016_lbl_grd_ptoservicio							   = PTO。服务
+016_lbl_grd_canal								   =“通道”
+016_lbl_grd_subcanal							   = 子信道
+016_lbl_grd_producto							   = 产品
+016_lbl_grd_proceso								   = 过程
+016_lbl_grd_delegacion							   = 代表团
+016_lbl_grd_vigente								   = 目前
+016_lbl_canal									   = 渠道
+016_lbl_subcanal								   = 子信道
+016_lbl_producto								   = 产品
+016_lbl_delegacion								   = 代表团
+016_lbl_vigente									   = 目前
+016_nopuedomodificacion_peroduplicar			   = 的方法，不能被修改，但它可以被复制。
+016_proceso_no_pertence_delegacion				   = 这个过程不属于连接的用户代表团。
+016_lbl_efectivo								   = 有效
+
+//TELA DE MANTENIMIENTO DE PROCESOS
+
+016_titulo_mantenimiento_procesos									= 维修过程
+016_lbl_subtitulos_mantenimento_procesos							= 过程
+016_lbl_subtitulos_mantenimento_procesos_informaciondeldeclarado	= 申报资料
+016_lbl_subtitulos_mantenimento_procesos_agrupaciones				= 协会
+016_lbl_subtitulos_mantenimento_procesos_mediospago					= 货币供应量
+016_lbl_subtitulos_mantenimento_procesos_modocontaje				= 计数模式
+016_lbl_descripcion_proceso											= 流程说明
+016_lbl_modalidad													= 形态
+016_lbl_infoadicional												= 通知。额外
+016_lbl_IACParcial													= IAC部分
+016_lbl_IACBulto													= IAC Bulto公司
+016_lbl_IACRemesa													= IAC Remesa公司
+016_lbl_cliente_faturacion											= 客户帐单
+016_lbl_observaciones												= 评论
+016_btnClienteFaturacion											= 搜索客户开票
+016_btnTerminoMedioPago												= 条款付款方式
+016_btnTolerancia													= 公差
+016_lbl_infodeclarado_pormediopago									= 按支付方法
+016_lbl_infodeclarado_poragrupaciones								= 对于一组
+016_lbl_contarchequetotales											= 告诉检查全
+016_lbl_contartickettotales											= 每满计数门票
+016_lbl_contarotrosvalorestotales									= 告诉其他值全
+016_msg_procesodescripcionobligatorio								= 描述的过程是必需的。
+016_msg_modalidadobligatorio										= 该方式是强制性的。
+016_msg_productoobligatorio											= 该产品是必需的。
+016_msg_treeviewnodesobligatorio									= 选择至少一个有效的付款或货币手段，它是强制性的。
+016_msg_agrupacionescompoenprocesoobligatorioobligatorio			= 它是强制性的，至少选择一个分组。
+016_msg_procesoclientenobligatorio									= 的顾客需要。
+016_ddl_selecione													= 选择
+016_msg_informaciondeldeclaradoobligatorio							= 所表示的信息是强制性的。
+016_lbl_nota														= 注意：您选择的货币有效的顺序，将它们出现的顺序在屏幕上如货币计数袋。
+016_msg_subcanaisobligatorio										= 子信道是必需的。
+
+
+//MANTENIMIENTO TERMINOS MEDIO DE PAGO PROCESSO
+
+016_titulo_mantenimiento_termino_pagina								= 付款方式维护半
+016_titulo_mantenimiento_termino_mediopago							= 货币供应量
+016_subtitulo_mantenimiento_termino_terminosmediopago				= 条款
+016_lbl_gdr_mantenimiento_termino_mp_descripciondivisa				= 座右铭
+016_lbl_gdr_mantenimiento_termino_mp_descripciontipomediopago		= 类型
+016_lbl_gdr_mantenimiento_termino_mp_codigomediopago				= 码
+016_lbl_gdr_mantenimiento_termino_mp_descripcionmediopago			= 描述
+016_lbl_gdr_mantenimiento_termino_mp_codigoterminomp				= 码
+016_lbl_gdr_mantenimiento_termino_mp_obligatorio					= 强制性
+016_lbl_gdr_mantenimiento_termino_mp_descripcionterminomp			= 描述
+
+
+
+//TELA BUSQUEDA DE PUNTOS DE SERVICIO
+017_titulo_pagina								   = 搜索服务点
+017_codigo_puntoservicio						   = 代码PTO。服务
+017_descricao_puntoservicio						   = 说明。 PTO。服务
+017_titulo_busqueda								   = 搜索条件
+017_titulo_resultado							   = 服务点
+017_lbl_gdr_codigocliente						   = 客户代码
+017_lbl_gdr_descripcioncliente					   = 说明。顾客
+017_lbl_gdr_codigosubcliente					   = 子客户端代码
+017_lbl_gdr_descripcionsubcliente				   = 说明。子客户端
+017_lbl_gdr_codigopuntoservicio					   = 代码PTO。服务
+017_lbl_gdr_descripcionpuntoservicio			   = 说明。 PTO。服务
+017_seleccione_un_puntoservicio					   = 选择至少一个服务点
+
+//TELA MANTENIMIENTO TOLERANCIA
+018_titulo_pagina								   = 公差
+018_subtitulo_pagina							   = 公差为{0}
+018_col_toleranciamin							   = 最小
+018_col_toleranciamax							   = 最大
+018_col_parcial									   = 局部的
+018_col_bulto									   = Bulto
+018_col_remesa									   = Remesa
+018_col_agrupaciones							   = 协会
+018_col_medios_pago								   = 货币供应量
+018_col_divisa									   = 座右铭
+018_col_tipo_medio_pago 						   = 类型
+018_col_medio_pago								   = 付款方法
+018_col_agrupacion								   = 分组
+
+//TELA BUSQUEDA DE CARACTERISTICAS
+020_titulo_pagina									= 搜索功能
+020_titulo_busqueda									= 搜索条件
+020_titulo_resultado								= 字符
+020_codigo_caracteristica							= 码
+020_codigo_conteo									= 代码conteo
+020_descricao_caracteristica						= 描述
+020_seleccione_una_caracteristica					= 选择一个功能
+020_caracteristica_vigente							= 目前
+020_lbl_gdr_codigo									= 码
+020_lbl_gdr_descripcion								= 描述
+020_lbl_gdr_observaciones							= 评论
+020_lbl_gdr_codigo_conteo							= 代码禁忌
+020_lbl_gdr_vigente									= 目前
+
+//TELA MANTENIMIENTO CARACTERISTICAS
+020_titulo_mantenimiento_caracteristicas			= 维护功能
+020_lbl_subtitulo_mantenimiento_caracteristicas		= 维护特性
+020_lbl_codigo_caracteristica						= 代码特征
+020_lbl_descricao_caracteristica					= 功能说明
+020_lbl_codigo_conteo								= 代码禁忌
+020_lbl_observaciones								= 意见
+020_lbl_vigente										= 目前
+020_msg_caracteristica_codigo_obligatorio			= 该功能的代码是强制性的。
+020_msg_caracteristica_descripcion_obligatorio		= 的功能的描述中是强制性的。
+020_msg_caracteristica_codigo_conteo_obligatorio	= 代码conteo的特点是强制性的。
+020_msg_caracteristica_codigo_existente				= 该功能的代码已经存在。
+020_msg_caracteristica_descripcion_existente		= 存在的功能的描述。
+020_msg_caracteristica_codigo_conteo_existente		= 的代码conteo功能已经存在。
+020_msg_grabado_suceso								= 注册成功记录。
+
+//TELA BUSQUEDA MORFOLOGIAS
+021_titulo_busqueda									= 搜索形貌
+021_subtitulo_morfologias							= 形貌
+021_subtitulo_criterio								= 搜索条件
+021_lbl_cod_morfologia								= 代码形态
+021_lbl_desc_morfologia								= 说明形态
+021_lbl_activo										= 目前
+021_lbl_grd_codigo									= 码
+021_lbl_grd_descricao								= 描述
+021_lbl_grd_componentes								= 组件
+021_lbl_grd_activo									= 目前
+021_lbl_dispensador									= 饮水机
+021_lbl_dispensadores								= 掌柜
+021_lbl_ingresador									= Ingresador
+021_lbl_ingresadores								= Ingresadores
+021_lbl_rechazo										= 拒绝
+021_lbl_rechazos									= Rechazos
+021_lbl_tarjeta										= TARJETA
+021_lbl_tarjetas									= Tarjetas
+021_lbl_deposito									= 存款
+021_lbl_depositos									= 存款
+
+//TELA MANTENIMIENTO MORFOLOGIAS
+021_titulo_mantenimiento							= 维护形貌
+021_subtitulo_morfologia							= 形态学
+021_subtitulo_componentes							= 组件
+021_lbl_codigo										= 码
+021_lbl_grd_codmorfologia							= 码
+021_lbl_grd_funcion									= 功能
+021_lbl_grd_tipo									= 类型
+021_lbl_grd_modalidad								= 形态
+021_lbl_grd_divida_den_mp							= 货币 - 面额/付款方式
+021_lbl_grd_orden									= 秩序
+021_msg_codigo_existente							= 形态的代码已经存在！
+021_msg_desc_existente								= 的形态的说明存在！
+021_msg_componente									= 它是强制性的至少一种成分！
+021_lbl_metodo_habilitacion							= 激活方法
+
+//TELA MANTENIMIENTO COMPONENTE
+022_titulo_mantenimiento							= 部件维修
+022_subtitulo_componente							= 元件
+022_funcion_dispensador								= 饮水机
+022_funcion_ingresador								= Ingresador
+022_funcion_deposito								= 存款
+022_funcion_rechazo									= 拒绝
+022_funcion_tarjeta									= TARJETA
+022_ddl_selecione									= 选择
+022_modalidad_en_base								= 基地
+022_modalidad_a_pie									= 现场
+022_modalidad_adicion_con_dos_tiras					= 另外有两个条
+022_lbl_codigo										= 码
+022_lbl_funcion										= 功能
+022_lbl_tipo										= 类型
+022_lbl_modalidad									= 形态
+022_lbl_divisa										= 座右铭
+022_lbl_denominacion								= 面值
+022_lbl_medio_pago									= 付款方法
+022_lbl_activo										= 目前
+022_lbl_efectivo									= 有效
+022_msg_dispensador_cajetin							= 集装箱分配器功能只能类型cajetin。
+022_lbl_tipo_bolsa									= 袋
+022_msg_codigo_unico								= 现有形态的组件的条码。
+022_msg_mediopago_unico								= 成分的形态已经有与相同类型的货币的功能{0}和付款方法！
+
+//TELA BÚSQUEDA ATM
+023_titulo_busqueda									= 自动取款机搜索
+023_subtitulo_atms									= 自动取款机
+023_lbl_subtituloscriteriosbusqueda					= 搜索条件
+023_lbl_cliente										= 顾客
+023_lbl_subcliente									= 子客户端
+023_lbl_puntoservicio								= 服务点
+023_lbl_codigoatm									= 代码自动柜员机
+023_lbl_red											= 网络
+023_lbl_modelo										= 模型
+023_lbl_grupo										= 组
+023_lbl_vigente										= 目前
+023_btncliente									    = 搜索客户
+023_btnsubcliente								    = 搜索子客户端
+023_btnpuntoservicio							    = 搜索服务点
+023_lbl_grd_codigo									= 代码自动柜员机
+023_lbl_grd_cliente_subc_pto						= 客户/小客户端/服务点
+023_lbl_grd_red										= 网络
+023_lbl_grd_modelo									= 模型
+023_lbl_grd_grupo									= 组
+023_lbl_grd_morfologia								= 形态学
+023_lbl_grd_vigente									= 目前
+
+//TELA MANTENIMIENTO ATM
+023_titulo_mantenimiento							= 自动取款机的维护
+023_subtitulo_atm									= 自动取款机
+023_subtitulo_morfologias							= 形貌
+023_subtitulo_procesos								= 流程
+023_lbl_codigo										= 码
+023_lbl_registro_tira								= 注册地带
+023_lbl_des_morfologia								= 形态学
+023_lbl_fecha_inicio								= 日
+023_grd_des_morfologia								= 形态学
+023_grd_fec_inicio									= 日
+023_grd_modificar									= 修改
+023_grd_borrar										= 删除
+023_grd_vigencia									= 合法性
+023_msg_fecha_invalida								= 生效日期无效！
+023_lbl_proceso										= 过程
+023_lbl_producto									= 产品
+023_lbl_canal										= 渠道
+023_lbl_subcanal									= 子信道
+023_lbl_modalidad									= 形态
+023_lbl_inf_adicional								= 通知。额外
+023_lbl_cliente_facturacion							= 客户帐单
+023_lbl_modo_contaje								= 计数模式
+023_chk_contar_cheque_totales						= 告诉检查总数
+023_chk_contar_tickets_totales						= 计算总门票每
+023_chk_contar_otros_totales						= 告诉OTROS总
+023_chk_tarjetas_totales							= 总卡计数
+023_btnclientefacturacion							= 搜索客户开票
+023_col_vigente										= 目前
+023_col_futura										= 未来
+023_col_historico									= 历史
+023_grd_proceso										= 过程
+023_grd_producto									= 产品
+023_grd_canal										= 渠道
+023_grd_subcanal									= 子信道
+023_grd_modalidad									= 形态
+023_grd_inf_adic									= 附加信息
+023_grd_modo_contage								= 计数模式
+023_grd_terminos									= 条款
+023_grd_cliente_fact								= 客户帐单
+023_msg_006											= 你不能选择最终支付手段的，因为那里是没有连接到ATM的形态！
+023_morf_proc_obrig									= 一个ATM必须与至少一种形态和进程相关联。
+023_msg_dejara_grupo								= 不再属于该组！
+023_msg_modificar_borrar							= 完成更新形态被排除在外。
+023_msg_modalidad_repetida							= 有形态反复的过程。
+023_msg_subcanal_repetida							= 有子信道反复过程。
+
+//TELA MANTENIMIENTO GRUPO
+024_titulo_grupo									= 添加组
+024_subtitulo_grupo									= 组
+024_codigo_grupo									= 码
+024_desc_grupo										= 描述
+024_msg_codigo_existente							= 本组代码已经存在！
+
+//TELA BÚSQUEDA PUESTO
+025_titulo_busqueda_puestos							= 搜索帖子
+025_lbl_subtitulospuestos							= 帖子
+025_lbl_subtituloscriteriosbusqueda					= 搜索条件
+025_lbl_sem_registro						        = 有没有记录。
+025_lbl_vigente										= 目前
+025_lbl_aplicacion									= 应用
+025_lbl_codigopuesto								= 代码后
+025_lbl_hostpuesto									= 主机puesto
+025_lbl_planta										= 厂
+025_chk_vigente 									= 强制
+025_chk_no_vigente 									= 尚未生效
+025_chk_cualquiera 									= 任何
+025_lbl_delegacion									= 代表团
+025_btnConfigurarParametros							= 设置参数
+025_btnCopiarPuesto									= 副本之旅
+
+//TELA MANTENIMIENTO PUESTO
+025_titulo_mantenimiento_puestos					= 维修站
+025_lbl_man_delegacion								= 代表团
+025_lbl_man_aplicacion								= 应用
+025_lbl_man_codigopuesto							= 守则之旅
+025_lbl_man_hostpuesto								= 主机之旅
+025_msg_aplicacion_no_rellenada						= 应用是必需的
+025_msg_grabar										= 要执行写操作？
+025_msg_cancelar									= 取消操作？
+025_msg_grabado_suceso								= 注册成功记录。
+025_msg_aplicacionobligatorio						= 中的应用是必需的。
+025_msg_codigopuestoobligatorio						= 邮编为必填项
+025_msg_hostpuestoobligatorio						= 主机Puesto
+
+//TELA BÚSQUEDA DE PARÁMETROS
+026_titulo_busqueda_parametros						= 搜索参数
+026_lbl_subtitulo_filtros							= 过滤器
+026_lbl_subtitulo_paramestros						= 参数
+026_lbl_aplicacion									= 应用
+026_lbl_nivel										= 水平
+026_lbl_agrupacion									= 分组
+026_btn_abm_agrupaciones							= 协会
+026_btn_modificar_parametros						= 修改参数
+026_col_aplicacion									= 应用
+026_col_nivel										= 水平
+026_col_agrupacion									= 分组
+026_col_Codparametro								= 代码参数
+026_col_parametro									= 说明参数
+
+//TELA MANTENIMENTO DE PARÁMETROS
+026_titulo_mantenimento_parametros					= 维护参数
+026_subtitulo_mantenimento_parametros				= 维护参数
+026_lbl_aplicacion_mant								= 应用
+026_lbl_nivel_mant									= 水平
+026_lbl_codparametro_mant							= 代码参数
+026_lbl_DescripcionLarga_mant						= 完整说明
+026_lbl_tipocomponent_mant							= 组件类型
+026_lbl_obligatorio_mant							= 需要吗？
+026_lbl_tipodato_mant								= 数据类型
+026_lbl_agrupacion_mant								= 分组
+026_lbl_descripcioncorto_mant						= 简短说明
+026_lbl_orden_mant									= 秩序
+026_msg_agrupacionobligatorio						= 分组是强制性的。
+026_msg_descripcioncortoobligatorio					= 简短的描述是强制性的。
+026_msg_DescripcionLargaobligatorio					= 一个完整的描述是必需的。
+026_msg_Dordenobligatorio							= 该命令是强制性的。
+026_titulo_lista_opciones									= 选项​​列表
+
+//TELA CONFIGURACIÓN DE PARÁMETROS
+027_titulo_configuracion_parametros					= 配置参数
+027_subtitulos_configuracion_parametros				= 配置参数
+027_no_permiso_configurar_permiso				= 用户没有权限访问这些参数
+
+//TELA BÚSQUEDA DE AGRUPACIONES PARÁMETROS
+028_titulo_busqueda_puestos							= 搜索参数协会
+028_subtitulo_mantenimento_agrupacion				= 分组
+028_lbl_aplicacion									= 应用
+028_lbl_nivel										= 水平
+028_lbl_agrupacion									= 分组
+028_lbl_subtituloscriteriosbusqueda					= 搜索条件
+028_lbl_subtitulosagrupaciones						= 参数协会
+028_lbl_sem_registro						        = 有没有记录。
+028_col_aplicacion									= 应用
+028_col_nivel										= 水平
+028_col_agrupacion									= 分组
+
+//TELA MANTENIMENTO DE AGRUPACIONES PARÁMETROS
+028_titulo_mantenimento_agrupacion					= 维护分组参数
+028_lbl_aplicacion_mant								= 应用
+028_lbl_nivel_mant									= 水平
+028_lbl_descripcioncorto_mant						= 简短说明
+028_lbl_DescripcionLarga_mant						= 完整说明
+028_lbl_orden_mant									= 秩序
+028_msg_aplicacionobligatorio						= 该应用程序是强制性的。
+028_msg_nivelobligatorio							= 的水平是必需的。
+028_msg_descripcioncortoobligatorio					= 简短的描述是强制性的。
+028_msg_DescripcionLargaobligatorio					= 一个完整的描述是必需的。
+028_msg_Dordenobligatorio							= 该命令是强制性的。
+
+//TELA MATENIMIENTO DE OPCIONES PARAMETRO
+029_titulo_mantenimiento_parametroopcion			= 维护参数选项
+029_subtitulo_mantenimiento_parametroopcion			= 选项​​参数
+029_lbl_codigoparametroopcion						= 代码选项
+029_lbl_descricaoparametroopcion					= 说明选项
+029_lbl_vigente										= 目前
+029_msg_parametroopcion_codigoobligatorio			= 代码选项是强制性的。
+029_msg_parametroopcion_descripcionobligatorio		= 选项​​描述是必需的。
+029_lbl_delegacion									= 代表团
+029_msg_parametroopcion_codigoExistente				= 该选项的代码已经存在。
+029_msg_parametroopcion_descripcionExistente		= 选项​​的说明中已经存在。
+
+//TELA GRUPO DE CLIENTE
+030_titulo_busqueda_grupo_cliente					= 搜索组客户
+030_lbl_codigo_grupo_cliente						= 码
+030_lbl_descricao_grupo_cliente						= 描述
+030_lbl_vigente										= 目前
+030_lbl_subtitulo_criterios_busqueda				= 搜索条件
+030_lbl_subtitulo_grupo_cliente						= 客户群
+030_lbl_cliente										= 顾客
+030_busca_cliente									= 搜索客户
+030_busca_subcliente								= 搜索子客户端
+030_busca_pto_servicio								= 搜索服务点
+030_lbl_subcliente									= 子客户端
+030_lbl_pto_servicio								= 服务点
+030_erro_excluir									= 错误删除客户端组。
+030_titulo_mantenimiento_grupo_cliente				= 维护客户群
+030_msg_codigo_obrigatorio							= 的代码客户集团是强制性的。
+030_msg_descricaco_obrigatorio						= 客户组的描述是强制性的。
+030_msg_cliente_obrigatorio							= 必须选择至少一个客户。
+030_msg_codigo_existente							= 已经存在的代码客户端集团。
+030_btnDireccion									= 地址
+030_lblClienteResultado								= 属于该组的客户。
+030_lblSubClienteResultado							= 属于该组的子客户端。
+030_lblPtoServicioResultado							= 服务点属于该组。
+030_msg_iten_existente								= {0}已经存在或已被列入名单。
+030_lblTipoGrupoCliente								= 客戶群的類型
+gen_opcion_general									= 一般 
+gen_opcion_atm										= ATM
+030_msg_TipoGrupoCliente_obrigatorio                = 顧客組的類型是強制性的
+
+
+
+//TIPO CLIENTE
+031_lbl_titulo_pagina								= 搜索客户类型
+031_lbl_codigo_tipoCliente							= 客户类型代码
+031_lbl_descricao_tipo								= 说明客户类型
+031_lbl_Tipo_vigente								= 目前
+031_lbl_tipo_cliente								= 类型客户
+031_lbl_titulo_cliente								= 搜索客户类型
+031_lbl_grd_codigo									= 码
+031_lbl_grd_descricao								= 描述
+031_lbl_grd_Ativo									= 目前
+031_lbl_msg_banco									= 这是不可能的，以降低客户端B型 - 银行！
+031_lbl_msg_Banco_modificar							= 你不能改变客户端B型 - 银行！
+031_msg_codigTipoExistente							= 代号类型的客户端已经存在。
+031_lbl_codigo_cliente								= 客户类型代码是强制性的。
+031_lbl_decricao_cliente							= 类型说明客户端是强制性的。
+
+//TIPO SUBCLIENTE
+032_titulo_pagina_sub							= 搜索类型的子客户端
+032_codigo_tipoSubCliente						= 代码类型的子客户端
+032_descricao_tipoSub							= 说明类型的子客户端
+032_Vigente										= 目前
+032_TipoSubCliente								= 类型子客户端
+032_TituloSubCliente							= 搜索类型的子客户端
+//O dicionário do GRID - Usar da demanda anterior
+032_msg_codigTipoSubExistente					= 子客户端的类型代码已经存在。
+032_lbl_codigo_Tbcliente						= 代码类型的子客户端。
+031_lbl_decricao_Tbcliente						= 类型描述子客户端是必需的。
+
+//TIPO_PUNTO_SERVICIO
+033_Titulo_punto_servicio						= 搜索类型服务点
+033_codigo_punto_servicio						= 类型的服务代码点
+033_descricao_punto_servicio					= 说明类型的服务点
+033_vigente_punto_servicio						= 目前
+033_Titulo_criterio_busca_Punto					= 搜索类型服务点
+033_Titulo_Resultado_Punto_servicio				= 类型服务点
+033_erro_codigo_obrigatorio						= 服务点类型代码是强制性的。
+033_erro_decricao_obrigatorio					= 服务点类型描述是必需的。
+033_erro_codigo_existente						= 已经存在的代码类型的服务点。
+
+//CODIGO AJENO MANTENIMENTO 
+034_titulo_codigo_ajeno							= 外部代码
+034_subtitulo_grupo								= 外部代码
+034_lbl_codigo_entidade							= 码
+034_lbl_des_entidade							= 描述
+034_lbl_identificador							= 识别码
+034_lbl_codigo_ajeno							= 外部代码
+034_lbl_descripcion_ajena						= 外部说明
+034_lbl_vigente									= 目前
+034_lbl_gdr_defecto								= 标准
+034_lbl_gdr_identificador						= 识别码
+034_lbl_gdr_codigo								= 码
+034_lbl_gdr_descripcion							= 描述
+034_lbl_gdr_vigente								= 目前
+034_lbl_gdr_modificar							= 修改
+034_msg_002 									= 有外部代码具有相同标识符{0}！
+034_msg_003 									= 外部代码重复{0}！
+034_msg_006 									= 定义一个外部的代码作为标准，它是强制性的。
+
+//DIRECCION
+035_lbl_codigo							= 码
+035_lbl_descripcion						= 描述
+035_lbl_pais							= 国家
+035_lbl_telefono						= 电话
+035_lbl_Provincia						= 州
+035_lbl_nfiscal							= NIF /发票
+035_lbl_ciudad							= 城市
+035_lbl_codigopostal					= 邮政编码
+035_lbl_email							= 电子邮件
+035_lbl_direccion1						= 地址1
+035_lbl_direccion2						= 地址2
+035_lbl_campoadicional					= 附加字段1
+035_lbl_campoadicional2					= 其他2场
+035_lbl_campoadicional3					= 其他3场
+035_lbl_categoriaadicional				= 其他类别1
+035_lbl_categoriaadicional2				= 其他类别2
+035_lbl_categoriaadicional3				= 其他类别3
+035_lbl_direccion						= 地址
+035_lbl_dados_adicionais				= 附加数据
+035_msg_erro_Direccion					= 必须填写的地址信息中的至少一个。
+
+//CLIENTES
+036_titulo_pagina                        = 搜索客户端
+036_lbl_SubTitulosCriteriosBusqueda      = 搜索条件
+036_lbl_SubTitulo                        = 客户
+036_lbl_CodCliente                       = 客户代码
+036_lbl_DescCliente                      = 说明客户
+036_lbl_TipoCliente                      = 客户类型
+036_lbl_TotSaldo                         = 积算结余
+036_lbl_Vigente                          = 目前
+036_ddl_selecione                        = 选择
+036_sim                                  = 是
+036_nao                                  = 不
+036_lbl_grd_codigo                       = 码
+036_lbl_grd_descripcion					 = 描述
+036_lbl_grd_tipo_cliente				 = 客户类型
+036_lbl_grd_tot_saldos					 = 托特。结余
+036_lbl_grd_vigente						 = 目前
+
+// MANTENIMIENTO CLIENTES
+037_titulo_mantenimiento                 = 维护客户
+037_lbl_direccion                        = 地址
+037_lbl_CodCliente                       = 客户代码
+037_lbl_CodigoAjeno                      = 代码不经意
+037_lbl_DescCliente                      = 说明客户
+037_lbl_DesCodigoAjeno                   = 说明不经意代码
+037_lbl_TipoCliente                      = 客户类型
+037_lbl_TituloCliente                    = 顾客
+037_lbl_TotSaldo                         = 积算平衡
+037_lbl_Vigente                          = 目前
+037_lbl_msgAvisoCliente					 = 重新激活的客户端，所有的子客户端，服务点也将被激活。
+037_lbl_msgAvisoClienteDelete 			 = 通过排除这个客户端，你的所有分子客户端和服务也将被删除。
+037_msg_csvCodClienteExistente			 = 客户端代码已经存在。
+037_msg_csvCodClienteObrigatorio		 = 客户端代码字段是强制性的。
+037_msg_csvDescClienteObrigatorio		 = 客户端的说明字段是必需的。
+037_msg_csvTipoClienteObrigatorio		 = 客户端的类型字段是必需的。
+037_msg_csvDescClienteExistente    		 = 描述字段已经存在的客户端。
+037_msg_cliente_nivel_saldo				 = 累加器客户余额是必需的。
+037_lbl_TituloTotSaldo					= 配置总计客户
+037_lbl_ProprioTotSaldo					= 总计实际的平衡？
+037_btn_AnadirTotalizador				= 添加累积
+037_lbl_TituloDatosBanc					= 银行账户配置为客户
+037_btn_AnadirCuenta					= 添加银行帐户
+
+037_btnBusquedaNivelSaldo                = 音量平衡
+037_btnExcepciones                       = 例外子信道
+037_lblNivelSaldo                        = 音量平衡
+037_rbOtroCliente                        = 另一个客户
+037_rbEseCliente                         = ESE客户
+037_msg_nivel_saldo                      = 只有客户端配置为累积器平衡可以responsávies，自己的总资产！
+
+// SUBCLIENTES
+038_titulo_pagina                        = 搜索子客户端
+038_lbl_SubTitulosCriteriosBusqueda      = 搜索条件
+038_lbl_SubTitulo                        = 子客户端
+038_lbl_CodSubCliente                    = 子客户端代码
+038_lbl_DescSubCliente                   = 说明子客户端
+038_lbl_TipoSubCliente                   = 类型子客户端
+038_lbl_TotSaldo                         = 积算结余
+038_lbl_Vigente                          = 目前
+038_ddl_selecione                        = 选择
+038_sim                                  = 是
+038_nao                                  = 不
+038_lbl_grd_cliente						 = 顾客
+038_lbl_grd_codigo                       = 码
+038_lbl_grd_descripcion					 = 描述
+038_lbl_grd_tipo_subcliente				 = 类型子客户端
+038_lbl_grd_tot_saldos					 = 积算平衡
+038_lbl_grd_vigente						 = 目前
+038_lbl_cliente                          = 顾客
+038_btncliente							 = 搜索客户
+038_lbl_SubclienteAvisoDelecao			 = 通过给予低子客户端，所有的服务点也将被下载。
+038_lbl_SubclienteAvisoAtivo			 = 重新激活子客户端，所有的服务点也将被激活。
+038_msg_csvClienteObrigatorio		     = 的顾客需要。
+
+// MANTENIMIENTO SUB CLIENTES
+039_titulo_mantenimiento                 = 维护子客户端
+039_lbl_direccion                        = 地址
+039_lbl_CodSubCliente                    = 子客户端代码
+039_lbl_CodigoAjeno                      = 代码不经意
+039_lbl_DescSubCliente                   = 说明子客户端
+039_lbl_DesCodigoAjeno                   = 说明不经意代码
+039_lbl_TipoSubCliente                   = 类型子客户端
+039_lbl_TituloSubCliente                 = 子客户端
+039_lbl_TotSaldo                         = 积算平衡
+039_lbl_Vigente                          = 目前
+039_lbl_TituloTotSaldo					 = 配置为子客户端累积
+039_lbl_ProprioTotSaldo					 = 总计实际的平衡？
+039_btn_AnadirTotalizador				 = 添加累积
+039_lbl_cliente                          = 顾客
+039_btncliente							 = 搜索客户
+039_btnBusquedaNivelSaldo                = 音量平衡
+039_btnExcepciones                       = 例外子信道
+039_lblNivelSaldo                        = 音量平衡
+039_rbOtroCliente                        = 另一个客户
+039_rbEseCliente                         = 该子客户端
+039_msg_nivel_saldo                      = 只有子客户端配置为累积器平衡可以responsávies，自己的总资产！
+039_msg_csvClienteObrigatorio            = “客户”字段是必需的。
+039_msg_csvCodSubClienteExistente		 = 子客户端的代码已经存在，为选定的客户。
+039_msg_csvCodSubClienteObrigatorio		 = 子客户端需要域代码。
+039_msg_csvDescSubClienteObrigatorio	 = 子客户端的说明字段是必需的。
+039_msg_csvTipoSubClienteObrigatorio	 = 字段类型描述子客户端是必需的。
+039_msg_csvDescSubClienteExistente    	 = 子客户端已经存在的描述为选定的客户。
+039_lbl_TituloDatosBanc					= 设置为子客户端的银行账户
+039_btn_AnadirCuenta					= 添加银行帐户
+
+//TIPO PROCEDENCIA
+040_lbl_titulo_pagina								= 搜索类型论文集
+040_lbl_codigo_tipoProcedencia						= 代码类型出处
+040_lbl_descricao_tipo								= 类型描述产地
+040_lbl_Tipo_vigente								= 目前
+040_lbl_tipo_procedencia							= 诉讼类型
+040_lbl_titulo_procedencia							= 搜索类型论文集
+040_lbl_grd_codigo									= 码
+040_lbl_grd_descricao								= 描述
+040_lbl_grd_Ativo									= 目前
+040_msg_codigTipoExistente							= 产地型号代码已经存在。
+040_lbl_codigo_procedencia							= 产地型号代码是强制性的。
+040_lbl_decricao_procedencia						= 类型说明产地是强制性的。
+
+// PUNTO SERVICIO
+041_titulo_pagina                        = 搜索点服务
+041_lbl_SubTitulosCriteriosBusqueda      = 搜索条件
+041_lbl_SubTitulo                        = 服务点
+041_lbl_CodPuntoServicio                 = 服务代码点
+041_lbl_DescPuntoServicio                = 说明服务点
+041_lbl_TipoPuntoServicio                = 类型的服务点
+041_lbl_TotSaldo                         = 积算结余
+041_lbl_Vigente                          = 目前
+041_ddl_selecione                        = 选择
+041_sim                                  = 是
+041_nao                                  = 不
+041_lbl_grd_codigo                       = 码
+041_lbl_grd_descripcion					 = 描述
+041_lbl_grd_tipo_PuntoServicio			 = Point类型的服务
+041_lbl_grd_tot_saldos					 = 托特。结余
+041_lbl_grd_vigente						 = 目前
+041_lbl_cliente                          = 顾客
+041_btncliente							 = 搜索客户
+041_lbl_subcliente                       = 搜索子客户端
+041_lbl_gridSubcliente					 = 子客户端
+041_msg_csvClienteObrigatorio            = 的顾客需要。
+041_msg_csvSubClienteObrigatorio         = 子客户端是必需的。
+
+// MANTENIMIENTO PUNTO SERVICIO
+042_titulo_mantenimiento                 = 维修服务点
+042_lbl_direccion                        = 地址
+042_lbl_CodPuntoServicio                 = 服务代码点
+042_lbl_CodigoAjeno                      = 代码不经意
+042_lbl_DescPuntoServicio                = 说明服务点
+042_lbl_DesCodigoAjeno                   = 说明不经意代码
+042_lbl_TipoPuntoServicio                = 类型的服务点
+042_lbl_TituloPuntoServicio              = 服务点
+042_lbl_TotSaldo                         = 积算平衡
+042_lbl_Vigente                          = 目前
+042_lbl_cliente                          = 顾客
+042_btncliente							 = 搜索客户
+042_lbl_subcliente                       = 子客户端
+042_btn_subcliente			    		 = 搜索子客户端
+
+042_msg_csvClienteObrigatorio            = “客户”字段是必需的。
+042_msg_csvCodPuntoServicioExistente	 = 代码点的服务已经存在。
+042_msg_csvCodPuntoServicioObrigatorio	 = 现场服务代码点是必需的。
+042_msg_csvDescPuntoServicioObrigatorio	 = 服务点的描述字段是必需的。
+042_msg_csvDescPuntoServicioExistente    = 描述字段已经存在的客户端。
+042_msg_csvTipoPuntoServicioObrigatorio	 = 场Point类型的服务是必需的。
+042_msg_csvSubClienteObrigatorio         = 该字段是必需的子客户端。
+
+042_btnBusquedaNivelSaldo                = 音量平衡
+042_btnExcepciones                       = 例外子信道
+042_lblNivelSaldo                        = 资产负债水平
+042_rbOtroCliente                        = 另一个客户
+042_rbEseCliente                         = 这个服务点
+042_msg_nivel_saldo                      = 只有服务点配置为累积器平衡可以responsávies，自己的总资产！
+
+042_lbl_TituloTotSaldo					 = 配置服务点累加器
+042_lbl_ProprioTotSaldo					 = 总计实际的平衡？
+042_btn_AnadirTotalizador				 = 添加累积
+042_lbl_TituloDatosBanc					= 设置银行账户服务点
+042_btn_AnadirCuenta					= 添加银行帐户
+
+//NIVEL SALDO
+043_lbl_descricao                        = 描述
+043_lbl_nivel_saldo_defecto              = 电平平衡标准
+043_lbl_titulo_pagina                    = 电平平衡子信道
+043_lbl_sub_canal                        = 子信道
+043_lbl_nivel_saldo                      = 音量平衡
+043_ddl_selecione						 = 选择
+043_lbl_gdr_modificar                    = 修改
+043_lbl_gdr_eliminar                     = 消除
+043_lbl_gdr_sub_canal                    = 子信道
+043_lbl_gdr_nivel_saldo                  = 音量平衡
+043_msg_CodClienteObrigatorio            = 客户端代码字段是强制性的。
+043_ddl_todos							 = 选择
+
+// BUSQUEDA NIVEL SERVICIO
+043_lbl_titulo                           = 搜索级别平衡
+043_lbl_cliente                          = 顾客
+043_lbl_subcliente                       = 子客户端
+043_lbl_puntoservicio                    = PUNTO服务
+043_btncliente                           = 顾客
+043_btnSubCliente                        = 子客户端
+043_btnPuntoServicio                     = PUNTO服务
+043_msg_csvClienteObrigatorio            = “客户”字段是必需的。
+043_msg_csvClienteTotalizador            = 客户未选择累加器平衡！
+043_msg_SubClienteTotalizador            = 选定子客户端不累加器平衡的！
+043_msg_csvPuntoServicioTotalizador      = 服务点没有选择累加器平衡！
+043_msg_subcanal_ya_configurado          = 子信道已经设置平衡到的实体{0}！
+
+// ucTotSaldo
+044_lbl_grd_defecto						= 默认
+044_lbl_grd_subcanal					= 子信道
+044_lbl_grd_totalizador					= 手提包
+044_lbl_grd_cambiar						= 更改
+044_lbl_grd_borrar						= 删
+044_valida_totalizador					= 作为一个整体已存在
+
+// BUSQUEDA PROCEDENCIAS
+055_lbl_titulo                           = 搜索程序
+055_lbl_tiposubcliente                   = 类型子客户端
+055_lbl_tipopuntoservicio                = Punto的服务型
+055_lbl_tipoprocedencia                  = 类型出处
+055_lbl_vigencia		                 = 合法性
+055_lbl_subtitulosprocedencias			 = 种源
+055_lbl_subtituloscriteriosbusqueda		 = 搜索条件
+055_lbl_gdr_tiposubcliente               = 类型子客户端
+055_lbl_gdr_tipopuntoservicio            = Punto的服务型
+055_lbl_gdr_tipoprocedencia              = 类型出处
+055_lbl_gdr_vigencia		             = 目前
+055_ddl_selecione						 = 选择
+055_msg_tiposubclienteobligatorio		 = 子客户端的类型是必需的。
+055_msg_tipopuntoservicioobligatorio	 = 服务点的类型是必需的。
+055_msg_tipoprocedenciaobligatorio		 = 源的类型是必需的。
+055_msg_erro_ProcedenciaExistente		 = 的起源已经存在。
+055_titulo_mantenimiento_procedencia     = 维护出处
+055_titulo_procedencia					 = 起源
+
+006_lbl_grd_checkbox								=
+008_msg_Agrupacióndescripcionobligatorio			= La descripción de la agrupación es obligatoria.
+008_msg_descricaoAgrupaciónexistente				= El código de la Agrupación ya existe.
+008_msg_codigoAgrupaciónexistente					= La descripción de la Agrupación ya existe.
+009_btncliente										= Búsqueda Cliente
+014_msg_error_MediosPago					= Alguns Medios Pago no pudieron ser actualizados.
+018_col_Agrupación								   = Agrupación
+021_subtitulo_componente							= Componentes
+tkn_token_nao_consumida                             = Token de acceso inválida o expirada
+tkn_tokenutil_token_invalida                        = Token de acceso inválida
+
+
+// ucDatosBanc
+086_lbl_grd_defecto						= 默认
+086_lbl_grd_divisa						= 徽章
+086_lbl_grd_banco						= 银行
+086_lbl_grd_tipo						= 类型
+086_lbl_grd_titular						= 持有人
+086_lbl_grd_nroCuenta					= 第账户
+086_lbl_grd_nroDocumento				= 号纸
+086_lbl_grd_cambiar						= 更改
+086_lbl_grd_borrar						= 删
+
+// BusquedaDatosBancariosPopup
+087_lbl_titulo							= IAC
+087_lbl_banco							= 银行
+087_lbl_nrodocumento					= 号纸
+087_lbl_divisa							= 徽章
+087_lbl_titularidad						= 持有人
+087_lbl_tipo							= 类型
+087_lbl_obs								= 备注
+087_lbl_cuenta							= 第账户
+087_lbl_defecto							= 默认
+
+087_msg_csvBancoObrigatorio				= 世行字段是必需的。
+087_msg_csvCuentaObrigatorio			= 没有了。账户区域是必需的。
+087_msg_csvDivisaObrigatorio			= 货币字段是必需的。
+087_msg_csvTipoObrigatorio				= 该类型字段是必需的。
+087_msg_csvTitularidadObrigatorio		= 所有制字段是必需的。
+
+
+//Importe Maximo
+056_lbl_codigoImporte = Código
+056_lbl_DescricaoImporte = Descrição
+056_lbl_Vigente = Vigente
+056_lbl_CanalImporte = Canal
+056_lbl_SubCanalImporte = SubCanal
+056_lbl_DivisaImporte = Divisa
+056_lbl_ValorMaximoImporte = Valor Máximo
+057_lbl_cliente = Cliente
+btnImporteMaximo = Importe Máximo
+
+//Tela Mensagem de Erro
+aplicacao											= IAC
+
+// WEBCONFIG
+WEBCONFIG_CHAVE_INVALIDA							= Chave {0} inexistente e ou valor {1} inválido.
+
+//Migracao do layout
+TituloDefault									= Start
+genDelegacion									= Chash Center
+genPais											= Country
+genSector										= Sector
+btnFechar											= Close
+
+//CONTROLE CLIENTE
+021_Cliente_Titulo								= Client
+021_Cliente_Popup_Titulo						= Search for Client
+021_Cliente_Popup_Resultado						= Client data
+021_Cliente_Popup_Filtro						= Search criteria
+
+//CONTROLE SUBCLIENTE
+022_SubCliente_Titulo							= SubClient
+022_SubCliente_Popup_Titulo						= Search for SubClient
+022_SubCliente_Popup_Resultado					= SubClient data
+022_SubCliente_Popup_Filtro						= Search criteria
+
+//CONTROLE SECTOR
+122_Sector_Titulo							= Sector
+122_Sector_Popup_Titulo						= Search for Sector
+122_Sector_Popup_Resultado					= Sector data
+122_Sector_Popup_Filtro						= Search criteria
+
+//CONTROLE PUNTO SERVICIO
+023_PtoServicio_Titulo							= Point of service
+023_PtoServicio_Popup_Titulo					= Search for Point of service
+023_PtoServicio_Popup_Resultado					= Point of service data
+023_PtoServicio_Popup_Filtro					= Search criteria
+
+//CONTROLE HELPER
+014_codigo										= Code:
+014_descricion									= Description:
+014_selecao_campo								= Select a field
+014_parametro_obrigatorio						= Parameter '{0}' is mandatory.
+014_ConsiderarSectoresHijos						= Consider sectors children in search results
+
+//Calendario
+bntProximo									= Next
+btnAnterior									= Previus
+btnMoverArriba								= Up
+btnMoverAbajo								= Down
+horas										= hour(s)
+minutos										= minute(s)
+segundos									= second(s)
+dias										= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+meses										= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+btnAgora										= Now 
+btnConfirma										= Confirm
+
+pagerFormatGrid									= Page {0} of {1} ({2} items)
+
+021_Resultado_busqueda_puestos					= Puestos data
+
+
+022_Resultado_busqueda_Operarios					= Operator data
+
+002_lblCodigo									= Code
+gen_sim											= Yes
+gen_nao											= No
+
+002_lblDescripcion								= Description
+btn_aceptar										= Acept
+
+//CONTROLE DE CLIENTE, SUBCLIENTE, PTO SERVICO E GRUPO CLIENTE
+028_btnBuscaCliente									= Search for Client
+028_btnBuscaSubCliente								= Search for SubClient
+028_btnBuscaPtoServicio								= Search for Point of service
+028_tituloCliente									= Search for Client
+028_tituloSubCliente								= Search for SubClient
+028_tituloPtoServico								= Search for Point of service
+028_lblCliente										= Client
+028_lblSubcliente									= SubClient
+028_lblPuntoServicio								= Point of service
+028_lblCodigo										= Cod
+028_lblDescricao									= Description
+028_lblCodigoSubCliente								= Cod. SubClient
+028_lblDescricaoSubCliente							= Des. SubClient
+028_lblCodigoPtoServico								= Cód. Point of service
+028_lblDescricaoPtoServico							= Des. Point of service
+028_lblCodigoAlheio 								= Cód. Ajeno 
+028_lblDescricaoAlheio 								= Des. Ajeno 
+028_lblCriterioBusca								= Search criteria
+028_lblGrupoClientes								= Client group
+
+btnaceitar 										= Acept
+027_lblFiltros										= Configuracion Filtro Reportes
+
+
+040_lbl_tipo_procedenciaForm							= Tipo Procedência
+
+010_lbl_titulosterminosForm								= Término IAC
+
+msg_remover_nao_selecionado						=  Select one ore more items to be eliminated!
+
+btnInserirDenominacion = Insert Denom.
+
+btnInserirTerminos = Insert Term.
+
+btnInserirSubcanal = Insert SubCanal
+
+btnInserirComponente = Insert Componente
+
+deviceIDasociado = DeviceID '{0}' is already associated with the list of machines in the planning
+
+//POPUP - TRANSACIONES MAE
+029_grid_CodigoTransaccion				= Codigo transacción
+029_grid_DescripcionFormulario			= Formulario
+029_grid_FechaGestion					= Fecha gestion
+029_grid_CodigoPuntoServicio			= Punto Servicio
+029_grid_DescripcionPuntoServicio		= Descripcion punto
+029_grid_MAE							= MAE
+029_grid_CodigoIsoDivisa				= Divisa local
+029_grid_Importe						= Importe
+029_titulo_transaciones					= Transacciones
+029_btn_transaciones					= Transacciones
+
+//InformacionGenesis
+InformacionGenesis_grid_FileName = Descripción
+InformacionGenesis_grid_FileVersion = Versión del Archivo
+InformacionGenesis_grid_ProductVersion = Versión del Producto
+
+//InformacionIAC
+InformacionIAC_titulo_pagina	= Información de IAC {0}
+InformacionIAC_lbl_SubTitulo	= Información de IAC {0}
+InformacionIAC_btnExportar		= Exportar
+
+//Tela Transaciones
+lbl_titulo_transacion					= Búsqueda de Transaciones
+
+045_Usuario_Popup_Titulo = User Search
+045_Usuario_Popup_Resultado = User Data
+045_Usuario_Popup_Filtro = Search Criteria
+
+DeviceID_Popup_Titulo = DeviceID Search
+DeviceID_Popup_Resultado = DeviceID Data
+DeviceID_Popup_Filtro = Search Criteria
+
+024_Planificacion_Titulo = Planning
+024_Planificacion_Popup_Titulo = Planning Search
+024_Planificacion_Popup_Resultado = Planning Data
+024_Planificacion_Popup_Filtro = Search Criteria

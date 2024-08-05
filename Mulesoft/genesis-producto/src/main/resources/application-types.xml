@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="RecuperarSaldosAcuerdo-Peticion" format="xml">
+      <types:example format="xml" element="{Integracion}RecuperarSaldosAcuerdo" location="examples/RecuperarSaldosAcuerdo-Peticion.xml"/>
+    </types:type>
+    <types:type name="ApiBilling-PayloadSalida" format="json">
+      <types:shape format="weave" example="examples/API-BILLING-PAYLOAD_SALIDA.json"><![CDATA[%dw 2.0
+
+type ApiBilling_PayloadSalida = {|
+  apiVersion: String, 
+  systemCode: String, 
+  eventType: String, 
+  countryCode: String, 
+  serviceUniqueId: String, 
+  contractId: String, 
+  serviceOrderId: String, 
+  serviceOrderCode: String, 
+  productCode: String, 
+  servicePointCode: String, 
+  date: String, 
+  cashIn: Array<{|    amount: Number {"typeId": "int"},     currency: String,     merchandiseType: Number {"typeId": "int"},     transactionCount: Number {"typeId": "int"}  |}>, 
+  shipOut: Array<{|    amount: Number {"typeId": "int"},     currency: String,     merchandiseType: Number {"typeId": "int"},     transactionCount: Number {"typeId": "int"}  |}>, 
+  earlyValue: Array<{|    earlyValueAdmissionDate: String,     currency: String,     earlyValueAmount: Number {"typeId": "int"},     transactionsAmount: Number {"typeId": "int"},     commissionAmount: Number {"typeId": "int"}  |}>
+|} {"example": "{\\\"apiVersion\\\":\\\"1.0\\\",\\\"systemCode\\\":\\\"genesis-producto\\\",\\\"eventType\\\":\\\"cash-today\\\",\\\"countryCode\\\":\\\"PT\\\",\\\"serviceUniqueId\\\":\\\"CB6A1684AC02FE47E05319961C0AB8EA\\\",\\\"contractId\\\":\\\"CTC-PT00229-2021\\\",\\\"serviceOrderId\\\":\\\"c70feaf1-b6d7-4eb3-8939-4a7ff1d40368\\\",\\\"serviceOrderCode\\\":\\\"OS-CTC-PT00229-2021.00066\\\",\\\"productCode\\\":\\\"PR00160\\\",\\\"servicePointCode\\\":\\\"PT0490000471\\\",\\\"date\\\":\\\"2021-09-07T23:59:59-03:00\\\",\\\"cashIn\\\":[{\\\"amount\\\":3520,\\\"currency\\\":\\\"EUR\\\",\\\"merchandiseType\\\":1,\\\"transactionCount\\\":18},{\\\"amount\\\":15,\\\"currency\\\":\\\"EUR\\\",\\\"merchandiseType\\\":2,\\\"transactionCount\\\":2},{\\\"amount\\\":890,\\\"currency\\\":\\\"EUR\\\",\\\"merchandiseType\\\":3,\\\"transactionCount\\\":5},{\\\"amount\\\":4220,\\\"currency\\\":\\\"BRL\\\",\\\"merchandiseType\\\":1,\\\"transactionCount\\\":7}],\\\"shipOut\\\":[{\\\"amount\\\":36530,\\\"currency\\\":\\\"EUR\\\",\\\"merchandiseType\\\":1,\\\"transactionCount\\\":1},{\\\"amount\\\":530,\\\"currency\\\":\\\"EUR\\\",\\\"merchandiseType\\\":2,\\\"transactionCount\\\":1},{\\\"amount\\\":4560,\\\"currency\\\":\\\"EUR\\\",\\\"merchandiseType\\\":3,\\\"transactionCount\\\":1},{\\\"amount\\\":30,\\\"currency\\\":\\\"BRL\\\",\\\"merchandiseType\\\":2,\\\"transactionCount\\\":1}],\\\"earlyValue\\\":[{\\\"earlyValueAdmissionDate\\\":\\\"2021-03-09T23:59:59-03:00\\\",\\\"currency\\\":\\\"EUR\\\",\\\"earlyValueAmount\\\":3520,\\\"transactionsAmount\\\":3520,\\\"commissionAmount\\\":0},{\\\"earlyValueAdmissionDate\\\":\\\"2021-03-09T23:59:59-03:00\\\",\\\"currency\\\":\\\"BRL\\\",\\\"earlyValueAmount\\\":1560,\\\"transactionsAmount\\\":1560,\\\"commissionAmount\\\":0}]}"}
+
+]]></types:shape>
+    </types:type>
+    <types:type name="RecuperarSaldosAcuerdo-Respuesta" format="xml">
+      <types:example format="xml" element="Body" location="examples/RecuperarSaldosAcuerdo-Respuesta.xml"/>
+    </types:type>
+    <types:type name="ApiBilling-PayloadSalidaError" format="json">
+      <types:shape format="weave" example="examples/API-BILLING-PAYLOAD_SALIDA_ERROR.json"><![CDATA[%dw 2.0
+
+type ApiBilling_PayloadSalidaError = {|
+  description: String, 
+  details: Array<String>
+|} {"example": "{\\\"description\\\":\\\"Mensaje\\\",\\\"details\\\":[\\\"detalle 1\\\",\\\"detalle 2\\\",\\\"detalle 3\\\"]}"}
+
+]]></types:shape>
+    </types:type>
+    <types:type name="ApiNotification-PayloadEntrada" format="json">
+      <types:shape format="weave" example="examples/online_event_request.json"><![CDATA[%dw 2.0
+
+type ApiNotification_PayloadEntrada = {|
+  source: String, 
+  idTran: String, 
+  integration: String, 
+  dateTime: String, 
+  object: {|
+    sourceId: String, 
+    operation: String, 
+    attributes: Array<{|      name: String,       value: String    |}>
+  |}, 
+  context: {|
+    country: String, 
+    region: String
+  |}
+|} {"example": "{\\\"source\\\":\\\"SIP\\\",\\\"idTran\\\":\\\"123e4567-e89b-42d3-a456-556642440000\\\",\\\"integration\\\":\\\"cash-service-agreement\\\",\\\"dateTime\\\":\\\"2019-10-20T20:00:00.000+01:00\\\",\\\"object\\\":{\\\"sourceId\\\":\\\"ES0200052007\\\",\\\"operation\\\":\\\"A\\\",\\\"attributes\\\":[{\\\"name\\\":\\\"att1\\\",\\\"value\\\":\\\"valatt1\\\"}]},\\\"context\\\":{\\\"country\\\":\\\"BR\\\",\\\"region\\\":\\\"LATAM\\\"}}"}
+
+]]></types:shape>
+    </types:type>
+    <types:type name="onlineNotificationEventOp-Peticion" format="java">
+      <types:shape format="raml"><![CDATA[#%RAML 1.0 DataType
+type: string]]></types:shape>
+    </types:type>
+    <types:type name="ApiNotification-PayloadSalida" format="json">
+      <types:shape format="weave" example="examples/API-NOTIFICATION-PAYLOAD_SALIDA.json"><![CDATA[%dw 2.0
+
+type ApiNotification_PayloadSalida = {|
+  statusCode: String, 
+  statusDescription: String
+|} {"example": "{\\\"statusCode\\\":\\\"200\\\",\\\"statusDescription\\\":\\\"Success\\\"}"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#1901a6a5-99c5-4ecd-8f29-e188f5a06d6e">
+    <types:processor-declaration>
+      <types:output-event>
+        <types:message>
+          <types:payload type="RecuperarSaldosAcuerdo-Peticion"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#24c465fb-d591-49ae-bdbe-8059c1ed5280">
+    <types:processor-declaration>
+      <types:output-event>
+        <types:message>
+          <types:payload type="ApiBilling-PayloadSalida"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#91029cd2-663b-4e7d-a345-50f855b83e32">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="RecuperarSaldosAcuerdo-Respuesta"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="ApiBilling-PayloadSalidaError"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#c27f3652-d1b8-4d04-a63e-6c6d5c1802ab">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="ApiNotification-PayloadEntrada"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#37b30dba-5887-41b6-936b-28f633b0abac">
+    <types:processor-declaration>
+      <types:output-event>
+        <types:message>
+          <types:payload type="ApiNotification-PayloadSalida"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>

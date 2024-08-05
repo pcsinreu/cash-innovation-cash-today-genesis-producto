@@ -1,0 +1,18 @@
+<request>
+	<source>SIP</source>
+	<idTran>123e4567-e89b-42d3-a456-556642440000</idTran>
+	<integration>cash-service-agreement</integration>
+	<dateTime>2019-10-20T20:00:00.000+01:00</dateTime>
+	<object>
+		<sourceId>ES0200052007</sourceId>
+		<operation>A</operation>
+		<attributes>
+			<name>att1</name>
+			<value>valatt1</value>
+		</attributes>
+	</object>
+	<context>
+		<country>BR</country>
+		<region>LATAM</region>
+	</context>
+</request>

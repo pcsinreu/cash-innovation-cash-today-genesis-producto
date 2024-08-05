@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{817877CA-26FE-4639-91A0-42A29091C817}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Genesis.Comunicacion</RootNamespace>
+    <AssemblyName>Prosegur.Genesis.Comunicacion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.Comunicacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Genesis.Comunicacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Global.Seguridad.ContractoServicio">
+      <HintPath>..\.Referencias\Prosegur.Global.Seguridad.ContractoServicio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\.Referencias\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="ClienteServicio.vb" />
+    <Compile Include="Agente.vb" />
+    <Compile Include="Constantes.vb" />
+    <Compile Include="DatosPeticion.vb" />
+    <Compile Include="Enum\Metodos.vb" />
+    <Compile Include="Enum\Proxy.vb" />
+    <Compile Include="Enum\Servicios.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProxyWS\IAC\ProxyAgrupacion.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyATM.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyCanal.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyCaracteristica.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyCliente.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyConfiguracionGeneral.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyDatoBancario.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyDireccion.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyDivisa.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyPlanificacion.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyMaquina.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyModelo.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyGrupo.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyIac.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyLogin.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyFabricante.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyMedioPago.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyModulo.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyGrupoClientes.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyIacIntegracion.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyMorfologia.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyPaises.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyParametro.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyLog.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyPlanta.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyProcedencia.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyProceso.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyProducto.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyPuesto.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyPuntoServicio.vb" />
+    <Compile Include="ProxyWS\IAC\ProxySector.vb" />
+    <Compile Include="ProxyWS\IAC\ProxySubCliente.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyTermino.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyTipoCliente.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyTipoProcedencia.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyTipoPuntoServicio.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyTipoSetor.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyTiposProcesado.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyTipoSubCliente.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyUtilidad.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyValorPosible.vb" />
+    <Compile Include="ProxyWS\Legado\ProxyLegadoSalidas.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyBCP.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyBilletajeSucursal.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyContadoPuesto.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyCorteParcial.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyDetalleParciales.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyDinamico.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyInformeResultadoContaje.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyLog.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyLogin.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyParteDiferencias.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyReciboF22Respaldo.vb" />
+    <Compile Include="ProxyWS\ListadosConteo\ProxyRespaldoCompleto.vb" />
+    <Compile Include="ProxyWS\GenesisMovil\ProxyGenesisMovil.vb" />
+    <Compile Include="ProxyWS\NuevoSaldos\ProxyIntegracion.vb" />
+    <Compile Include="ProxyWS\NuevoSaldos\ProxyNuevoSaldos.vb" />
+    <Compile Include="ProxyWS\NuevoSalidasIntegracion\ProxyNuevoSalidasIntegracion.vb" />
+    <Compile Include="ProxyWS\ProxyComon.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyCodigoAjeno.vb" />
+    <Compile Include="ProxyWS\IAC\ProxyDelegacion.vb" />
+    <Compile Include="ProxyWS\ProxyPreferencias.vb" />
+    <Compile Include="ProxyWS\RecepcionyEnvio\ProxyRecepcionyEnvio.vb" />
+    <Compile Include="ProxyWS\Reportes\ProxyReportes.vb" />
+    <Compile Include="ProxyWS\NuevoSalidas\ProxyNuevoSalidas.vb" />
+    <Compile Include="ProxyWS\Seguridad\ProxyGenesisLogin.vb" />
+    <Compile Include="ProxyWS\Seguridad\ProxyLoginUnificado.vb" />
+    <Compile Include="ProxyWS\Seguridad\ProxyLogin.vb" />
+    <Compile Include="ProxyWS\ServicioBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProxyWS\Sol\ProxyModulo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProxyWS\Sol\ProxyServicioService.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProxyWS\Sol\ProxyOtService.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProxyWS\Sol\ProxyRutaService.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProxyWS\Sol\ProxyDocumentoService.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProxyWS\Sol\ProxyProgramacionServicioService.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\ProxyLegadoMae\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Util.vb" />
+    <Compile Include="WebApi\HttpUtil.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ProxyLegadoMae\Prosegur.Genesis.Comunicacion.ProxyLegadoMae.crearPeriodosAcreditacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProxyLegadoMae\Untitled.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Conteo\Prosegur.Global.GesEfectivo.Reportes\ContractoServ\Prosegur.Global.GesEfectivo.Reportes.ContractoServ.vbproj">
+      <Project>{bf155e4a-6bb0-4574-a5a7-b6fdee2c55c8}</Project>
+      <Name>Prosegur.Global.GesEfectivo.Reportes.ContractoServ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\ContractoServicio\Prosegur.Global.GesEfectivo.IAC.ContractoServicio.vbproj">
+      <Project>{275AE785-D755-452A-9A75-7CA678980AC4}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\Integracion.ContractoServicio\Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio.vbproj">
+      <Project>{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Saldos\Prosegur.Global.Saldos\Servicio\ContractoServicio\Prosegur.Global.Saldos.ContractoServicio.vbproj">
+      <Project>{B03091EF-69D4-4C8F-9174-6F0286FA76C5}</Project>
+      <Name>Prosegur.Global.Saldos.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4DC9EE4C-7177-466C-826C-49576EFF7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.ContratoServicio\Prosegur.Genesis.ContractoServicio.vbproj">
+      <Project>{9ED42568-659A-4DD1-BE34-C14483DF71E6}</Project>
+      <Name>Prosegur.Genesis.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Exception\Prosegur.Genesis.Excepcion.vbproj">
+      <Project>{ed11e59e-9783-4f6c-948b-16530ae69df8}</Project>
+      <Name>Prosegur.Genesis.Excepcion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prosegur.Genesis.Logeo\Prosegur.Genesis.Logeo.csproj">
+      <Project>{5ab2966c-0c11-48e0-928e-4accd9b5d2f2}</Project>
+      <Name>Prosegur.Genesis.Logeo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProxyWS\Mobile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ProxyLegadoMae\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProxyLegadoMae\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProxyLegadoMae\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProxyLegadoMae\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

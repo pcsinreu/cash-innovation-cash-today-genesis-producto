@@ -1,0 +1,7 @@
+﻿SELECT 
+	IdEspecie
+FROM 
+	PD_ESPECIE
+WHERE 
+	IDGENESIS = :IdGenesis 
+	AND IDMONEDA = :IdMoneda

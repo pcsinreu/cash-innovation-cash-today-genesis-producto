@@ -1,0 +1,117 @@
+http:
+  port: "8081"
+ 
+servicio:
+  integracion:
+    service: "Integracion"
+    port: "IntegracionSoap"
+    path: "Prosegur.Genesis.Servicio/Integracion.asmx" 
+  notificacion:
+    service: "Notificacion"
+    port: "NotificacionSoap"
+    path: "Prosegur.Genesis.Servicio/Notificacion.asmx" 
+  DE:
+    protocol: "http"
+    host: "gesaldosmae.emea.prosegur.local"
+    port: "48200"
+    token: ""
+  AR:
+    protocol: "http"
+    host: "arsaldosmae.latam1.prosegur.local"
+    port: "54200"
+    token: ""
+  AU:
+    protocol: "http"
+    host: "ausaldosmae.apac.prosegur.local"
+    port: "55200"
+    token: "Token01"
+  BR:
+    protocol: "http"
+    host: "brsaldosmae.latam1.prosegur.local"
+    port: "55200"
+    token: ""
+  CL:
+    protocol: "http"
+    host: "clsaldosmae.latam1.prosegur.local"
+    port: "55200"
+    token: ""
+  CO:
+    protocol: "http"
+    host: "cosaldosmae.latam1.prosegur.local"
+    port: "57200"
+    token: ""
+  CR:
+    protocol: "http"
+    host: "crsaldosmae.latam1.prosegur.local"
+    port: "46000"
+    token: ""
+  EC:
+    protocol: "http"
+    host: "ecsaldosmae.latam1.prosegur.local"
+    port: "37000"
+    token: ""
+  SV:
+    protocol: "http"
+    host: "svsaldosmae.latam1.prosegur.local"
+    port: "40000"
+    token: ""
+  ES:
+    protocol: "http"
+    host: "essaldosmae.emea.prosegur.local"
+    port: "34200"
+    token: ""
+  PH:
+    protocol: "http"
+    host: "phsaldosmae.latam1.prosegur.local"
+    port: "34000" 
+    token: ""
+  FR:
+    protocol: "http"
+    host: "frsaldosmae.emea.prosegur.local"
+    port: "55200"
+    token: ""
+  GT:
+    protocol: "http"
+    host: "gtsaldosmae.latam1.prosegur.local"
+    port: "50000"
+    token: ""
+  HN:
+    protocol: "http"
+    host: "hnsaldosmae.latam1.prosegur.local"
+    port: "35000"
+    token: ""
+  IN:
+    protocol: "http"
+    host: "insaldosmae.emea.prosegur.local"
+    port: "38000"
+    token: ""
+  MX:
+    protocol: "http"
+    host: "mxsaldosmae.latam1.prosegur.local"
+    port: "52200"
+    token: ""
+  NI:
+    protocol: "http"
+    host: "nisaldosmae.latam1.prosegur.local"
+    port: "45000"
+    token: ""
+  PY:
+    protocol: "http"
+    host: "pysaldosmae.latam1.prosegur.local"
+    port: "59520" 
+    token: ""
+  PE:
+    protocol: "http"
+    host: "pesaldosmae.latam1.prosegur.local"
+    port: "45200"
+    token: ""
+  PT:
+    protocol: "http"
+    host: "ptsaldosmae.emea.prosegur.local"
+    port: "35200"
+    token: ""
+  UY:
+    protocol: "http"
+    host: "uysaldosmae.latam1.prosegur.local"
+    port: "59820"
+    token: ""

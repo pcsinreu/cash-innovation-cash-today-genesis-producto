@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8AF9CFAD-D305-45C3-B6E4-464BB14C6B01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Global.GesEfectivo.IAC.AccesoDatos</RootNamespace>
+    <AssemblyName>Prosegur.Global.GesEfectivo.IAC.AccesoDatos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Prosegur.Global.GesEfectivo.IAC.AccesoDatos/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Global.GesEfectivo.IAC.AccesoDatos.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Global.GesEfectivo.IAC.AccesoDatos.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Prosegur.CriptoHelper, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=9058cbda107a109f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.CriptoHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.DbHelper, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=1833a9fd5e21244f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.DbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Framework.Dicionario, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=6bb1f230141d8049, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Framework.Dicionario.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Genesis\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="Agrupacion.vb" />
+    <Compile Include="AgrupacionPorProceso.vb" />
+    <Compile Include="Algoritmo.vb" />
+    <Compile Include="CalculoEfectivo.vb" />
+    <Compile Include="CalculoMedioPago.vb" />
+    <Compile Include="Canal.vb" />
+    <Compile Include="Caracteristica.vb" />
+    <Compile Include="CargaPrevia\Configuracion.vb" />
+    <Compile Include="Clases\DelegacionVO.vb" />
+    <Compile Include="Clases\MapeoEntidadeCodigoAjeno.vb" />
+    <Compile Include="Clases\ParametroValueVO.vb" />
+    <Compile Include="Clases\Constantes.vb" />
+    <Compile Include="Clases\Criterio.vb" />
+    <Compile Include="Clases\CriterioColecion.vb" />
+    <Compile Include="Clases\Util.vb" />
+    <Compile Include="AgrupacionParametro.vb" />
+    <Compile Include="Cliente.vb" />
+    <Compile Include="Cajero.vb" />
+    <Compile Include="CajeroXMorfologia.vb" />
+    <Compile Include="Aplicacion.vb" />
+    <Compile Include="CodigoAjeno.vb" />
+    <Compile Include="ConfigNivelSaldo.vb" />
+    <Compile Include="ConfiguracionReportes\ConfiguracionGeneral.vb" />
+    <Compile Include="DatoBancario.vb" />
+    <Compile Include="Formulario.vb" />
+    <Compile Include="OrdenServicio.vb" />
+    <Compile Include="Periodo.vb" />
+    <Compile Include="PeriodoPorDocumento.vb" />
+    <Compile Include="TipoCuenta.vb" />
+    <Compile Include="TipoMaquina.vb" />
+    <Compile Include="MaquinaMAE.vb" />
+    <Compile Include="Planificacion.vb" />
+    <Compile Include="Modelo.vb" />
+    <Compile Include="Fabricante.vb" />
+    <Compile Include="ImporteMaximo.vb" />
+    <Compile Include="ListaTipoValores.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Procedencia.vb" />
+    <Compile Include="ReportesConfiguracionGeneral.vb" />
+    <Compile Include="Modulo.vb" />
+    <Compile Include="TipoPeriodo.vb" />
+    <Compile Include="TipoPlanificacion.vb" />
+    <Compile Include="TipoProcedencia.vb" />
+    <Compile Include="Direccion.vb" />
+    <Compile Include="GrupoCliente.vb" />
+    <Compile Include="ParametrosReporte.vb" />
+    <Compile Include="ParametroValue.vb" />
+    <Compile Include="Pais.vb" />
+    <Compile Include="Parametro.vb" />
+    <Compile Include="Planta.vb" />
+    <Compile Include="Puesto.vb" />
+    <Compile Include="Nivel.vb" />
+    <Compile Include="Grupo.vb" />
+    <Compile Include="ModeloCajero.vb" />
+    <Compile Include="Red.vb" />
+    <Compile Include="Morfologia.vb" />
+    <Compile Include="Delegacion.vb" />
+    <Compile Include="Denominacion.vb" />
+    <Compile Include="Divisa.vb" />
+    <Compile Include="DivisaPorAgrupacion.vb" />
+    <Compile Include="DivisaPorProceso.vb" />
+    <Compile Include="Formato.vb" />
+    <Compile Include="Iac.vb" />
+    <Compile Include="Log.vb" />
+    <Compile Include="Maquina.vb" />
+    <Compile Include="Mascara.vb" />
+    <Compile Include="MedioPago.vb" />
+    <Compile Include="MedioPagoPorAgrupacion.vb" />
+    <Compile Include="MedioPagoPorProceso.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Proceso.vb" />
+    <Compile Include="ProcesoPorPServicio.vb" />
+    <Compile Include="ProcesoPorSubCanal.vb" />
+    <Compile Include="Productos.vb" />
+    <Compile Include="PuntoServicio.vb" />
+    <Compile Include="ConfiguracionReportes.vb" />
+    <Compile Include="Sector.vb" />
+    <Compile Include="SubCanal.vb" />
+    <Compile Include="SubCliente.vb" />
+    <Compile Include="Termino.vb" />
+    <Compile Include="TerminoIac.vb" />
+    <Compile Include="TerminoMedioPago.vb" />
+    <Compile Include="Test.vb" />
+    <Compile Include="TipoCliente.vb" />
+    <Compile Include="TipoMedioPago.vb" />
+    <Compile Include="TipoPuntoServicio.vb" />
+    <Compile Include="TipoSetor.vb" />
+    <Compile Include="TiposProcesado.vb" />
+    <Compile Include="TipoSubCliente.vb" />
+    <Compile Include="ValorPosible.vb" />
+    <Compile Include="ValorTerminoMedioPago.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\Agrupacion\ActualizarAgrupacion.sql" />
+    <None Include="Resources\Agrupacion\AltaBajaAgrupacion.sql" />
+    <None Include="Resources\Agrupacion\getAgrupacion.sql" />
+    <None Include="Resources\Agrupacion\getAgrupacionesDetailObterAgrupaciones.sql" />
+    <None Include="Resources\Agrupacion\AltaAgrupacion.sql" />
+    <None Include="Resources\Agrupacion\ObterOidAgrupacion.sql" />
+    <None Include="Resources\Agrupacion\VerificarEntidadesVigentesComAgrupacion.sql" />
+    <None Include="Resources\DivisaPorAgrupacion\AltaDivisaPorAgrupacion.sql" />
+    <None Include="Resources\DivisaPorAgrupacion\BorrarDivisasPorAgrupacion.sql" />
+    <None Include="Resources\Divisa\getAgrupacionesDetailObterDivisasPorAgrupaciones.sql" />
+    <None Include="Resources\Divisa\GetDivisaMedioPago.sql" />
+    <None Include="Resources\MedioPagoPorAgrupacion\AltaMedioPagoPorAgrupacion.sql" />
+    <None Include="Resources\MedioPagoPorAgrupacion\BorrarMedioPagoPorAgrupacion.sql" />
+    <None Include="Resources\MedioPago\getAgrupacionesDetailObterTipoMPeMP.sql" />
+    <None Include="Resources\Agrupacion\VerificarCodigoAgrupacion.sql" />
+    <None Include="Resources\Agrupacion\VerificarDescripcionAgrupacion.sql" />
+    <None Include="Resources\Denominacion\ActualizarDenominacion.sql" />
+    <None Include="Resources\Denominacion\GetDenominacionesByDivisaObterDenominacion.sql" />
+    <None Include="Resources\Divisa\ActualizarDivisa.sql" />
+    <None Include="Resources\Denominacion\AltaDenominacion.sql" />
+    <None Include="Resources\Divisa\AltaDivisa.sql" />
+    <None Include="Resources\Denominacion\BajaDenominacion.sql" />
+    <None Include="Resources\Divisa\BajaDivisa.sql" />
+    <None Include="Resources\Denominacion\GetDenominacionesByDivisaObterDivisa.sql" />
+    <None Include="Resources\Divisa\GetDivisa.sql" />
+    <None Include="Resources\Denominacion\VerificarCodigoDenominacion.sql" />
+    <None Include="Resources\Divisa\VerificarCodigoDivisa.sql" />
+    <None Include="Resources\Divisa\VerificarDescripcionDivisa.sql" />
+    <None Include="Resources\Divisa\VerificarEntidadesVigentesComDivisa.sql" />
+    <None Include="Resources\Log\InserirLog.sql" />
+    <None Include="Resources\MedioPago\ObterOidMedioPago.sql" />
+    <None Include="Resources\Divisa\getComboDivisasByTipoMedioPago.sql" />
+    <None Include="Resources\MedioPago\getComboMediosPagoByTipoAndDivisa.sql" />
+    <None Include="Resources\TipoMedioPago\getComboTiposMediosPagoByDivisa.sql" />
+    <None Include="Resources\Algoritmo\getComboAlgoritmos.sql" />
+    <None Include="Resources\Divisa\getComboDivisas.sql" />
+    <None Include="Resources\Formato\getComboFormatos.sql" />
+    <None Include="Resources\Mascara\getComboMascaras.sql" />
+    <None Include="Resources\TerminoIac\getComboTerminosIAC.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4DC9EE4C-7177-466C-826C-49576EFF7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.ContratoServicio\Prosegur.Genesis.ContractoServicio.vbproj">
+      <Project>{9ED42568-659A-4DD1-BE34-C14483DF71E6}</Project>
+      <Name>Prosegur.Genesis.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.DataBaseHelper\Prosegur.Genesis.DataBaseHelper.vbproj">
+      <Project>{793D4601-2EAF-46E8-8451-F14F4E156D95}</Project>
+      <Name>Prosegur.Genesis.DataBaseHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Exception\Prosegur.Genesis.Excepcion.vbproj">
+      <Project>{ed11e59e-9783-4f6c-948b-16530ae69df8}</Project>
+      <Name>Prosegur.Genesis.Excepcion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContractoServicio\Prosegur.Global.GesEfectivo.IAC.ContractoServicio.vbproj">
+      <Project>{275AE785-D755-452A-9A75-7CA678980AC4}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.ContractoServicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Integracion.ContractoServicio\Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio.vbproj">
+      <Project>{AC915FC6-2DD9-4CF9-BB48-EEE4B82E4184}</Project>
+      <Name>Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caracteristica\ActualizaCaracteristicaPorTipoProcesado.sql" />
+    <None Include="Resources\Caracteristica\BuscaCaracteristicaPorTipoProcesado.sql" />
+    <None Include="Resources\Delegacion\ObterTodasDelegaciones.sql" />
+    <None Include="Resources\Denominacion\ObterTodasDenominacionesDaDivisa.sql" />
+    <None Include="Resources\DivisaPorAgrupacion\ActualizaDivisaAgrupacion.sql" />
+    <None Include="Resources\DivisaPorAgrupacion\BuscaDivisaPorAgrupacion.sql" />
+    <None Include="Resources\DivisaPorAgrupacion\VerificaDivisaAgrupSendoUsuada.sql" />
+    <None Include="Resources\MedioPagoPorAgrupacion\ActualizaMedioPagoAgrupacion.sql" />
+    <None Include="Resources\MedioPagoPorAgrupacion\verificaMedioPagoSendoUsado.sql" />
+    <None Include="Resources\TerminoIac\AltaTermino.sql" />
+    <None Include="Resources\TerminoIac\ActualizarTermino.sql" />
+    <None Include="Resources\MedioPago\GetMedioPago.sql" />
+    <None Include="Resources\TerminoIac\BuscaTerminoIacbyOidIac.sql" />
+    <None Include="Resources\TerminoIac\UpdateTerminoPorIac.sql" />
+    <None Include="Resources\TerminoIac\VerificarTerminoIacSendoUsado.sql" />
+    <None Include="Resources\TerminoMedioPago\ObterTerminoPorOidMedioPago.sql" />
+    <None Include="Resources\ValorPosible\ObterOidValorTermino.sql" />
+    <None Include="Resources\ValorTerminoMedioPago\ObterValorTerminoPorOidTermino.sql" />
+    <None Include="Resources\MedioPago\GetMedioPagoDetailObterMedioPago.sql" />
+    <None Include="Resources\MedioPago\VerificarCodigoTerminoMedioPago.sql" />
+    <None Include="Resources\MedioPago\VerificarCodigoMedioPago.sql" />
+    <None Include="Resources\MedioPago\ObterOidMedioPagoPorCodigoMedioPago.sql" />
+    <None Include="Resources\MedioPago\AltaMedioPago.sql" />
+    <None Include="Resources\MedioPago\VerificarEntidadesVigentesComMedioPago.sql" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Resources\CodigoAjeno\DeleteCodigoAjeno.sql" />
+    <Content Include="Resources\CodigoAjeno\DeleteCodigosAjenos.sql" />
+    <Content Include="Resources\Delegacion\ObtenerCodigosAjenosPlanta.sql" />
+    <Content Include="Resources\Delegacion\ObtenerPlantaAsociada.sql" />
+    <Content Include="Resources\Formulario\GetFormulario.sql" />
+    <Content Include="Resources\MaquinaMAE\ObtenerMAESiCumplePatronDeviceID.sql" />
+    <Content Include="Resources\AgrupacionParametro\BajarAgrupacion.sql" />
+    <Content Include="Resources\AgrupacionParametro\AltaAgrupacionParametro.sql" />
+    <Content Include="Resources\AgrupacionParametro\ValidarAgrupacionConParametroAsociado.sql" />
+    <Content Include="Resources\AgrupacionParametro\GetAgrupacionDetail.sql" />
+    <Content Include="Resources\AgrupacionParametro\GetAgrupaciones.sql" />
+    <Content Include="Resources\AgrupacionParametro\ObterOIDAgrupacionParametro.sql" />
+    <Content Include="Resources\AgrupacionPorProceso\BuscaAgrupacionesPorProceso.sql" />
+    <Content Include="Resources\Aplicacion\ObterOIDAplicacion.sql" />
+    <Content Include="Resources\CajeroPorMorfologia\EliminarMorfologias.sql" />
+    <Content Include="Resources\Cajero\ActualizarATM.sql" />
+    <None Include="Resources\Cajero\GetATMByFiliacion.sql" />
+    <Content Include="Resources\Cajero\GetATMsByRegistrarTira.sql" />
+    <Content Include="Resources\Cajero\GetATMFuhActualizacion.sql" />
+    <Content Include="Resources\Cajero\GetATMsSimplificado.sql" />
+    <Content Include="Resources\Cajero\GetATMsSimplificadoV2.sql" />
+    <Content Include="Resources\Cajero\InsertarATM.sql" />
+    <Content Include="Resources\Cajero\EliminarATM.sql" />
+    <Content Include="Resources\Cajero\GetATMDetail.sql" />
+    <Content Include="Resources\Cajero\GetATMs.sql" />
+    <Content Include="Resources\CajeroPorMorfologia\InsertarCajeroXMorfologia.sql" />
+    <Content Include="Resources\Cajero\RecuperarATM.sql" />
+    <Content Include="Resources\CalculoEfectivo\BorrarCalculoEfectivo.sql" />
+    <Content Include="Resources\CalculoMediopago\BorrarCalculoMedioPago.sql" />
+    <Content Include="Resources\Canal\BajaCanal.sql" />
+    <Content Include="Resources\Cliente\BuscarClienteNivelSaldo.sql" />
+    <Content Include="Resources\Cliente\GetClienteByCodigoAjeno.sql" />
+    <Content Include="Resources\Cliente\VerificarCodigoCliente.sql" />
+    <None Include="Resources\Cliente\VerificarDescripcionCliente.sql" />
+    <Content Include="Resources\ConfiguracionGeneral\AtualizarConfiguracionGeneral.sql" />
+    <Content Include="Resources\ConfiguracionGeneral\RecuperarConfiguracionesGeneralEmUso.sql" />
+    <Content Include="Resources\ConfiguracionGeneral\RecuperarConfiguracionGeneral.sql" />
+    <Content Include="Resources\ConfiguracionGeneral\ExcluirConfiguracionesGeneral.sql" />
+    <Content Include="Resources\ConfiguracionGeneral\InserirConfiguracionesGeneral.sql" />
+    <Content Include="Resources\ConfiguracionGeneral\RecuperarConfiguracionesGeneral.sql" />
+    <None Include="Resources\Delegacion\ObterOidDelegacionPorPlanta.sql" />
+    <None Include="Resources\Delegacion\ObterCodDelegacionPorOid.sql" />
+    <None Include="Resources\Delegacion\ObterOidPaisPorOidDelegacion.sql" />
+    <None Include="Resources\DatoBancario\GetDatoBancario.sql" />
+    <None Include="Resources\DatoBancario\SetDatoBancario.sql" />
+    <Content Include="Resources\DatoBancario\AlterarBolDefecto.sql" />
+    <Content Include="Resources\DatoBancario\BajaDatoBancario.sql" />
+    <None Include="Resources\Delegacion\ObtenerCodigoPorIdentificador.sql" />
+    <Content Include="Resources\Delegacion\AtualizaConfiguracionesRegionales.sql" />
+    <Content Include="Resources\Delegacion\BajaDelegacionClienteFacturacion.sql" />
+    <Content Include="Resources\Delegacion\AltaDelegacionClienteFacturacion.sql" />
+    <Content Include="Resources\Delegacion\ObterCodigoPais.sql" />
+    <Content Include="Resources\Delegacion\VerificaDelegacaoCadastrada.sql" />
+    <Content Include="Resources\Delegacion\DeleteDelegacion.sql" />
+    <Content Include="Resources\Delegacion\VerificarClienteCapitalYBancoTesoreriaEnUso.sql" />
+    <Content Include="Resources\Delegacion\VerificaUtilizacaoPlanta.sql" />
+    <Content Include="Resources\Denominacion\VerificarCodigoAccesoDenominacionExiste.sql" />
+    <Content Include="Resources\Divisa\DivisaObterDatosTodas.sql" />
+    <Content Include="Resources\Divisa\VerificarCodigoAccsoDivisaExiste.sql" />
+    <None Include="Resources\Image1.bmp" />
+    <Content Include="Resources\Fabricante\BuscaFabricante.sql" />
+    <Content Include="Resources\ImporteMaximo\GetImporteMaximoPlanta.sql" />
+    <Content Include="Resources\ImporteMaximo\GetImporteMaximoSector.sql" />
+    <Content Include="Resources\ImporteMaximo\SetImporteMaximoInsert.sql" />
+    <Content Include="Resources\ImporteMaximo\SetImporteMaximoUpdate.sql" />
+    <Content Include="Resources\ListaTipoValores\AtualizarValor.sql" />
+    <Content Include="Resources\ListaTipoValores\GetTipoValorPorCodigo.sql" />
+    <Content Include="Resources\ListaTipoValores\GetValores.sql" />
+    <Content Include="Resources\ListaTipoValores\InserirValor.sql" />
+    <Content Include="Resources\MaquinaMAE\BuscaPlanificacionCanales.sql" />
+    <Content Include="Resources\MaquinaMAE\BuscaMaquinas.sql" />
+    <Content Include="Resources\MaquinaMAE\BuscaTransacaoMaquinas.sql" />
+    <Content Include="Resources\MaquinaMAE\consultaAccionesEnLote.sql" />
+    <Content Include="Resources\MaquinaMAE\consultaAccionesEnLoteExportar.sql" />
+    <Content Include="Resources\MaquinaMAE\ModificarMaquinaMAE.sql" />
+    <Content Include="Resources\MaquinaMAE\BajaMaquinaMAE.sql" />
+    <Content Include="Resources\MaquinaMAE\AltaMaquinaMAE.sql" />
+    <Content Include="Resources\MaquinaMAE\BuscaMaquinaDetalleMAE.sql" />
+    <Content Include="Resources\MaquinaMAE\BuscaMAEPuntoServicio.sql" />
+    <Content Include="Resources\MaquinaMAE\BuscaMaquinasMAE.sql" />
+    <Content Include="Resources\MaquinaMAE\BuscaMaquinaMAE.sql" />
+    <Content Include="Resources\MaquinaMAE\updateAccionesEnLoteMulticliente.sql" />
+    <Content Include="Resources\MaquinaMAE\updateAccionesEnLote.sql" />
+    <Content Include="Resources\MedioPago\VerificarCodigoAccesoMedioPagoExiste.sql" />
+    <Content Include="Resources\Modelo\BuscaModelo.sql" />
+    <Content Include="Resources\Modulo\GetTiposModulosAssociadosOuNaoClientes.sql" />
+    <Content Include="Resources\Modulo\ModulosRecuperarModulos.sql" />
+    <Content Include="Resources\Modulo\RecuperarModulos.sql" />
+    <Content Include="Resources\Parametro\GetParametrosConfiguracoes.sql" />
+    <None Include="Resources\Planta\ObterCodPlantaPorOid.sql" />
+    <Content Include="Resources\Parametro\ObtenerParametros.sql" />
+    <Content Include="Resources\PeriodoPorDocumento\BorrarPeriodoPorDocumento.sql" />
+    <Content Include="Resources\Periodo\ActualizarPeriodosFV_Confirmacion.sql" />
+    <Content Include="Resources\Periodo\BorrarCalculoMedioPagoAFuturo.sql" />
+    <Content Include="Resources\Periodo\BorrarPeriodoRelacionadoAFuturo.sql" />
+    <Content Include="Resources\Periodo\BorrarPeriodoRelacionAFuturo.sql" />
+    <Content Include="Resources\Periodo\BorrarPeriodos.sql" />
+    <Content Include="Resources\Periodo\BorrarPeriodosAFuturo.sql" />
+    <Content Include="Resources\Periodo\BorrarPeriodosPorDocumentoAFuturo.sql" />
+    <Content Include="Resources\Periodo\BorrarSaldosAFuturo.sql" />
+    <Content Include="Resources\Planificacion\ActualizarVinculoMaquina.sql" />
+    <Content Include="Resources\Planificacion\BuscarPlanificacionFacturacion.sql" />
+    <Content Include="Resources\Planificacion\BuscarPlanificaciones.sql" />
+    <Content Include="Resources\Planificacion\VerificaMaquinaVinculada.sql" />
+    <Content Include="Resources\Planificacion\DesvincularMaquina.sql" />
+    <Content Include="Resources\Planificacion\VincularMaquina.sql" />
+    <Content Include="Resources\Planificacion\BuscaPlanificacion.sql" />
+    <Content Include="Resources\Planta\ObterOidDelegacionPorOidPlanta.sql" />
+    <Content Include="Resources\Planta\VerificaAtivoDelegacion.sql" />
+    <Content Include="Resources\Planta\VerificaUtilizacaoSector.sql" />
+    <Content Include="Resources\Procedencia\ActualizarProcedencia.sql" />
+    <Content Include="Resources\Procedencia\AltaProcedencia.sql" />
+    <Content Include="Resources\Caracteristica\AltaCaracteristica.sql" />
+    <Content Include="Resources\Caracteristica\VerificaCaracteristicaEmUso.sql" />
+    <Content Include="Resources\Caracteristica\GetCaracteristica.sql" />
+    <Content Include="Resources\Caracteristica\GetComboCaracteristicas.sql" />
+    <None Include="Resources\Caracteristica\VerificaCaracteristicaSendoUsuada.sql" />
+    <Content Include="Resources\Caracteristica\VerificarCodigoConteoCaracteristica.sql" />
+    <Content Include="Resources\Caracteristica\VerificarCodigoCaracteristica.sql" />
+    <Content Include="Resources\Caracteristica\GetCaracteristicaTipoProcesado.sql" />
+    <None Include="Resources\Caracteristica\VerificarDescripcionCaracteristica.sql" />
+    <Content Include="Resources\CargaPrevia\SetConfiguracion.sql" />
+    <Content Include="Resources\CargaPrevia\GetConfiguraciones.sql" />
+    <Content Include="Resources\CargaPrevia\GetConfiguracion.sql" />
+    <Content Include="Resources\Cliente\ActualizarClienteExportado.sql" />
+    <Content Include="Resources\Cliente\ActualizarClienteV2.sql" />
+    <Content Include="Resources\Cliente\AltaClienteV2.sql" />
+    <Content Include="Resources\Cliente\BajaClienteV2.sql" />
+    <Content Include="Resources\Cliente\BuscarDesCliente.sql" />
+    <Content Include="Resources\Cliente\GetClientes.sql" />
+    <Content Include="Resources\Cliente\GetClientesSubClientesPuntoServicios.sql" />
+    <None Include="Resources\Denominacion\ObtenerOidDenominacion.sql" />
+    <Content Include="Resources\Aplicacion\GetComboAplicaciones.sql" />
+    <None Include="Resources\Delegacion\ObterOIDDelegacion.sql" />
+    <None Include="Resources\Delegacion\ObterOIDDelegacionyCodigoPais.sql" />
+    <Content Include="Resources\CodigoAjeno\VerificarIdentificadorXCodigoAjeno.sql" />
+    <Content Include="Resources\CodigoAjeno\GetCodigoAjeno.sql" />
+    <Content Include="Resources\CodigoAjeno\GetCodigoAjenoEntidade.sql" />
+    <Content Include="Resources\CodigoAjeno\SetCodigoAjenoInsert.sql" />
+    <Content Include="Resources\CodigoAjeno\SetCodigoAjenoUpdate.sql" />
+    <Content Include="Resources\Delegacion\GetDelegacionByCertificado.sql" />
+    <Content Include="Resources\Procedencia\GetProcedenciaPorTipoSubClienteYTipoPuntoServicioYTipoProcedencia.sql" />
+    <Content Include="Resources\Procedencia\GetProcedencias.sql" />
+    <Content Include="Resources\Proceso\GetProcesoSapr.sql" />
+    <Content Include="Resources\PuntoServicio\DesvincularMaqPuntoServicio.sql" />
+    <Content Include="Resources\PuntoServicio\ActualizarMaqPuntoServicio.sql" />
+    <Content Include="Resources\PuntoServicio\GetPuntoServicioByCodigoAjeno.sql" />
+    <Content Include="Resources\PuntoServicio\VerificaClienteAtivo.sql" />
+    <Content Include="Resources\PuntoServicio\VerificaSubclienteAtivo.sql" />
+    <Content Include="Resources\PuntoServicio\AtualizaSubclientePuntoServicio.sql" />
+    <Content Include="Resources\PuntoServicio\ActualizarPuntoServicioV2.sql" />
+    <Content Include="Resources\PuntoServicio\AltaPuntoServicioV2.sql" />
+    <Content Include="Resources\PuntoServicio\BajaPuntoServicioV2.sql" />
+    <Content Include="Resources\PuntoServicio\BuscarPuntoServicioNivelSaldo.sql" />
+    <Content Include="Resources\PuntoServicio\AtualizaSubclientePuntoServicioV2.sql" />
+    <Content Include="Resources\PuntoServicio\GetPuntoServicio.sql" />
+    <Content Include="Resources\PuntoServicio\VerificarCodigoPtoServicio.sql" />
+    <None Include="Resources\PuntoServicio\VerificarDescripcionPtoServicio.sql" />
+    <Content Include="Resources\ReporteConfiguracion\ReporteConfiguracionDeletar.sql" />
+    <Content Include="Resources\ReporteConfiguracion\ReportesConfiguracionInserir.sql" />
+    <Content Include="Resources\Reportes\ReportesRecuperar.sql" />
+    <Content Include="Resources\Sector\GetSectoresIAC.sql" />
+    <Content Include="Resources\Sector\GetSectoresTesoro.sql" />
+    <Content Include="Resources\Sector\VerificaSectorPaiAtivado.sql" />
+    <Content Include="Resources\Sector\VerificaPlantaAtivada.sql" />
+    <Content Include="Resources\Sector\VerificaUtilizacaoSectorPadre.sql" />
+    <Content Include="Resources\SubCanal\GetSubCanalByCertificado.sql" />
+    <Content Include="Resources\SubCliente\AtualizaSubClienteConformeCliente.sql" />
+    <Content Include="Resources\SubCliente\ActualizarSubClienteV2.sql" />
+    <Content Include="Resources\SubCliente\AltaSubClienteV2.sql" />
+    <Content Include="Resources\SubCliente\BajaSubClienteV2.sql" />
+    <Content Include="Resources\SubCliente\BuscarSubCliente.sql" />
+    <Content Include="Resources\SubCliente\BuscarSubClienteNivelSaldo.sql" />
+    <Content Include="Resources\SubCliente\GetOidSubcliente.sql" />
+    <Content Include="Resources\SubCliente\GetSubclienteByCodigoAjeno.sql" />
+    <Content Include="Resources\SubCliente\GetSubClientes.sql" />
+    <Content Include="Resources\SubCliente\VerificarCodigoSubCliente.sql" />
+    <None Include="Resources\SubCliente\VerificarDescripcionSubCliente.sql" />
+    <Content Include="Resources\Test\Test.sql" />
+    <Content Include="Resources\Modulo\AtualizarTipoModulo.sql" />
+    <Content Include="Resources\Modulo\AtualizarTipoModuloDesglose.sql" />
+    <Content Include="Resources\Modulo\GetOidTipoModulo.sql" />
+    <Content Include="Resources\Modulo\GetOidTipoModuloDesglose.sql" />
+    <Content Include="Resources\Modulo\GetTiposModulosDesglose.sql" />
+    <Content Include="Resources\Modulo\InserirTipoModulo.sql" />
+    <Content Include="Resources\Modulo\InserirTipoModuloDesglose.sql" />
+    <Content Include="Resources\TipoCuenta\getComboTiposDeCuenta.sql" />
+    <Content Include="Resources\TipoMaquina\BuscaTipoMaquina.sql" />
+    <Content Include="Resources\TipoDeCuenta\getComboTiposDeCuenta.sql" />
+    <Content Include="Resources\TipoPeriodo\getComboTiposDePeriodo.sql" />
+    <Content Include="Resources\TipoPlanificacion\BuscaTiposPlanificaciones.sql" />
+    <Content Include="Resources\TipoProcedencia\AtualizaTipoProcedencia.sql" />
+    <Content Include="Resources\TipoProcedencia\VerificaVinculoTipoProcedencia.sql" />
+    <Content Include="Resources\TipoProcedencia\BuscaTiposProcedencias.sql" />
+    <Content Include="Resources\TipoProcedencia\GetComboTiposProcedencia.sql" />
+    <Content Include="Resources\TipoProcedencia\InsertTipoProcedencias.sql" />
+    <Content Include="Resources\Delegacion\BuscaDelegacionPais.sql" />
+    <Content Include="Resources\Delegacion\GetComboDelegaciones.sql" />
+    <Content Include="Resources\Delegacion\VerificaCodigoDelegacion.sql" />
+    <Content Include="Resources\Delegacion\AtualizaDelegacion.sql" />
+    <Content Include="Resources\Delegacion\AltaDelegacion.sql" />
+    <Content Include="Resources\Delegacion\BuscaDelegacion.sql" />
+    <Content Include="Resources\ConfiguracionReportes\ConfiguracionReporteActualizar.sql" />
+    <Content Include="Resources\ConfiguracionReportes\ConfiguracionReporteExcluir.sql" />
+    <Content Include="Resources\ConfiguracionReportes\ConfiguracionReporteInserir.sql" />
+    <Content Include="Resources\ConfiguracionReportes\ConfiguracionReportesRecuperar.sql" />
+    <Content Include="Resources\ConfiguracionReportes\ConfiguracionesReportesRecuperar.sql" />
+    <Content Include="Resources\Delegacion\ObterCodigoDelegacion.sql" />
+    <Content Include="Resources\Delegacion\ObterDatosDelegacionPorPais.sql" />
+    <Content Include="Resources\Delegacion\ObterDatosDelegacion.sql" />
+    <Content Include="Resources\Delegacion\RecuperarOidDelegacionYCodPais.sql" />
+    <Content Include="Resources\Denominacion\VerificarSeHayDenominacionConElCodigo.sql" />
+    <Content Include="Resources\Direccion\SelectDataTablaGenesis.sql" />
+    <Content Include="Resources\Direccion\AtualizaDireccion.sql" />
+    <Content Include="Resources\Direccion\InsertDireccion.sql" />
+    <Content Include="Resources\Direccion\SelectDireccion.sql" />
+    <Content Include="Resources\DivisaPorProceso\BajaDivisaPorProceso.sql" />
+    <Content Include="Resources\Divisa\GetDivisaPorAgrupacion.sql" />
+    <None Include="Resources\Grupo\getGrupos.sql" />
+    <None Include="Resources\Grupo\getGruposSemCajero.sql" />
+    <None Include="Resources\Grupo\VerificarGrupo.sql" />
+    <None Include="Resources\Grupo\getATMsByGrupo.sql" />
+    <None Include="Resources\Grupo\InsertGrupo.sql" />
+    <None Include="Resources\GrupoCliente\GetGruposCliente.sql" />
+    <Content Include="Resources\GrupoCliente\AltaGrupoCliente.sql" />
+    <Content Include="Resources\GrupoCliente\AltaGrupoClienteDetalle.sql" />
+    <Content Include="Resources\GrupoCliente\BorrarGrupoClienteDetalle.sql" />
+    <Content Include="Resources\GrupoCliente\GetGrupoClienteDetail.sql" />
+    <Content Include="Resources\GrupoCliente\ActualizarGrupoCliente.sql" />
+    <Content Include="Resources\GrupoCliente\GetOidGrupoCliente.sql" />
+    <Content Include="Resources\GrupoCliente\VerificarGrupoCliente.sql" />
+    <Content Include="Resources\MedioPagoPorAgrupacion\GetMedioPagoPorAgrupacion.sql" />
+    <Content Include="Resources\MedioPagoPorProceso\BuscaMedioPagoEfectivoPorProceso.sql" />
+    <Content Include="Resources\MedioPagoPorProceso\BuscaMedioPagoProcesoServicio.sql" />
+    <Content Include="Resources\MedioPago\VerificarSeHayMediosPagosConElCodigo.sql" />
+    <Content Include="Resources\ModeloCajero\GetComboModeloCajero.sql" />
+    <None Include="Resources\ModeloCajero\getcombomodelocajero1.sql" />
+    <Content Include="Resources\Morfologia\ActualizarMorfologia.sql" />
+    <Content Include="Resources\Morfologia\BorrarMorfologia.sql" />
+    <Content Include="Resources\Morfologia\BorrarMorfolXComp.sql" />
+    <Content Include="Resources\Morfologia\GetComponentesByIdMorfologia.sql" />
+    <Content Include="Resources\Morfologia\GetMorfologiaByIdAtm.sql" />
+    <Content Include="Resources\Morfologia\GetObjetosByIdComponente.sql" />
+    <Content Include="Resources\Morfologia\VerificarMorfologia.sql" />
+    <Content Include="Resources\Morfologia\GetMorfologiaFyhActualizacion.sql" />
+    <Content Include="Resources\Morfologia\InsertarComponenteXObj.sql" />
+    <Content Include="Resources\Morfologia\InsertarMorfologiaXComp.sql" />
+    <Content Include="Resources\Morfologia\GetMorfologiaDetail.sql" />
+    <Content Include="Resources\Morfologia\GetMorfologia.sql" />
+    <Content Include="Resources\Morfologia\InsertarMorfologia.sql" />
+    <Content Include="Resources\Nivel\ObterOIDNivel.sql" />
+    <Content Include="Resources\Nivel\GetComboNiveles.sql" />
+    <None Include="Resources\ParametroOpcion\ObterOidParametroOpcion.sql" />
+    <None Include="Resources\ParametroOpcion\VerificarDescricaoParametroOpcion.sql" />
+    <Content Include="Resources\ParametrosReporte\ParametroReporteActualizar.sql" />
+    <Content Include="Resources\ParametrosReporte\ParametroReporteInserir.sql" />
+    <Content Include="Resources\ParametrosReporte\ParametroReporteRetornarOid.sql" />
+    <Content Include="Resources\ParametrosReporte\ParametrosReporteDeletar.sql" />
+    <Content Include="Resources\ParametrosReporte\ParametrosReporteRecuperar.sql" />
+    <Content Include="Resources\Pais\BuscaPais.sql" />
+    <Content Include="Resources\ParametroValue\AltaParametroValue.sql" />
+    <Content Include="Resources\ParametroValue\ActualizarParametroValue.sql" />
+    <Content Include="Resources\ParametroValue\InserirParametroValor.sql" />
+    <Content Include="Resources\ParametroValue\ListarOIDParametrosValues.sql" />
+    <Content Include="Resources\ParametroValue\GetParametrosValues.sql" />
+    <Content Include="Resources\ParametroValue\ListarOIDParametrosValues2.sql" />
+    <Content Include="Resources\ParametroValue\RecuperarValorParametros.sql" />
+    <Content Include="Resources\ParametroValue\VerificarValorParametroExiste.sql" />
+    <Content Include="Resources\ParametroOpcion\ActualizarParametroOpcion.sql" />
+    <Content Include="Resources\ParametroOpcion\AltaParametroOpcion.sql" />
+    <Content Include="Resources\Parametro\GetParamCodDelegacion.sql" />
+    <Content Include="Resources\Parametro\GetParametrosAplicacionPuesto.sql" />
+    <Content Include="Resources\ParametroOpcion\BajaParametroOpcion.sql" />
+    <None Include="Resources\Parametro\ObterOidParametro.sql" />
+    <Content Include="Resources\Parametro\RecuperarOidYNivelParametro.sql" />
+    <Content Include="Resources\Parametro\RecuperarTodosParametros.sql" />
+    <Content Include="Resources\Parametro\ValidarParametroPermiso.sql" />
+    <Content Include="Resources\Parametro\ValidarParametroExiste.sql" />
+    <Content Include="Resources\Parametro\GetParametroOpciones.sql" />
+    <Content Include="Resources\Parametro\GetParametroDetail.sql" />
+    <Content Include="Resources\Parametro\GetParametros.sql" />
+    <None Include="Resources\ParametroOpcion\VerificarCodigoParametroOpcion.sql" />
+    <Content Include="Resources\Planta\VerificaCodigo.sql" />
+    <Content Include="Resources\Planta\ObterDadosPlantas.sql" />
+    <Content Include="Resources\Planta\Actualizacion.sql" />
+    <Content Include="Resources\Planta\AltaPlanta.sql" />
+    <Content Include="Resources\Planta\BajaPlanta.sql" />
+    <Content Include="Resources\Planta\BuscaPlanta.sql" />
+    <Content Include="Resources\Planta\InserirPlanta.sql" />
+    <Content Include="Resources\Planta\ObterOIDPlanta.sql" />
+    <Content Include="Resources\Planta\GetComboPlantas.sql" />
+    <Content Include="Resources\Planta\ObterOidPlantaPorOidDelegacionYCodPlanta.sql" />
+    <Content Include="Resources\Planta\VerificaExistenciaPlanta.sQL" />
+    <Content Include="Resources\ProcesoPorPuntoServicio\BuscaProcesoPuntoServicioPorProceso.sql" />
+    <Content Include="Resources\ProcesoPorSubCanal\BuscaProcesoSubCanalPorProcesoPServicio.sql" />
+    <Content Include="Resources\Proceso\GetProcesoPorDelegacion.sql" />
+    <Content Include="Resources\Proceso\GetProcesoDetailByOid.sql" />
+    <Content Include="Resources\Proceso\GetDatosProcesoDefecto.sql" />
+    <Content Include="Resources\Proceso\GetProcesos.sql" />
+    <Content Include="Resources\Producto\GetProductoPorProceso.sql" />
+    <Content Include="Resources\Puesto\AltaPuesto.sql" />
+    <Content Include="Resources\Puesto\ActualizarPuesto.sql" />
+    <Content Include="Resources\Puesto\InserirPuesto.sql" />
+    <Content Include="Resources\Puesto\ObterOIDPuesto.sql" />
+    <Content Include="Resources\Puesto\VerificarPuestoExiste.sql" />
+    <Content Include="Resources\Puesto\VerificarPuestoExisteByAplicacionPuestoPlantaYHost.sql" />
+    <Content Include="Resources\Puesto\GetPuestoDetail.sql" />
+    <Content Include="Resources\Puesto\GetPuestos.sql" />
+    <Content Include="Resources\Puesto\VerificarPuestoExistePorCodPuestoYCodHost.sql" />
+    <Content Include="Resources\PuntoServicio\ActualizarPuntoServicioExportado.sql" />
+    <Content Include="Resources\PuntoServicio\BajaPuntoServicioByOidSubCliente.sql" />
+    <Content Include="Resources\PuntoServicio\GetComboPuntosServiciosByClientesSubclientes.sql" />
+    <Content Include="Resources\PuntoServicio\GetComboPuntosServiciosByClienteSubclienteATM.sql" />
+    <Content Include="Resources\Red\GetComboRedes.sql" />
+    <Content Include="Resources\Sector\getSetorDetail.sql" />
+    <Content Include="Resources\Sector\VerificaCentroProcesso.sql" />
+    <Content Include="Resources\Sector\AltaSector.sql" />
+    <Content Include="Resources\Sector\AtualizaSector.sql" />
+    <Content Include="Resources\Sector\GetSectores.sql" />
+    <Content Include="Resources\SubCanal\GetDatosSubCanalDefecto.sql" />
+    <Content Include="Resources\SubCanal\GetSubcanalesPorProcesoServicio.sql" />
+    <Content Include="Resources\SubCliente\ActualizarSubClienteExportado.sql" />
+    <Content Include="Resources\SubCliente\BuscarTodosOidsSubClientesByOidCliente.sql" />
+    <Content Include="Resources\TerminoIac\BuscarTerminoPorIac.sql" />
+    <Content Include="Resources\TerminoIac\RetornarValoresTerminoPorIac.sql" />
+    <Content Include="Resources\TerminoMedioPago\BuscaOidTerminoMedioPago.sql" />
+    <Content Include="Resources\ProcesoPorPuntoServicio\BuscaOidTProcesoPServicio.sql" />
+    <Content Include="Resources\Proceso\BuscaOidProceso.sql" />
+    <Content Include="Resources\TerminoMedioPago\BajarTerminoMedioPagoPorProceso.sql" />
+    <Content Include="Resources\ProcesoPorPuntoServicio\ActualizarProcesoPorPuntoServicio.sql" />
+    <Content Include="Resources\ProcesoPorPuntoServicio\BuscaOidProcesoPServicio.sql" />
+    <Content Include="Resources\ProcesoPorSubCanal\BajaProcesoPorSubCanal.sql" />
+    <Content Include="Resources\ProcesoPorSubCanal\ActualizarProcessoPorSubCanal.sql" />
+    <Content Include="Resources\Producto\BuscaOidProducto.sql" />
+    <Content Include="Resources\SubCanal\BuscaOidSubCanal.sql" />
+    <Content Include="Resources\ProcesoPorSubCanal\AltaProcesoSubCanal.sql" />
+    <Content Include="Resources\TerminoMedioPago\AltaTerminoMedioPagoPorProceso.sql" />
+    <Content Include="Resources\TerminoMedioPago\BajaFisicaTerminoMedioPagoPorProceso.sql" />
+    <Content Include="Resources\ProcesoPorSubCanal\ActualizaReferenciaProceso.sql" />
+    <Content Include="Resources\AgrupacionPorProceso\AltaAgrupacionPorProceso.sql" />
+    <Content Include="Resources\ProcesoPorPuntoServicio\BajaProcesoPservicioPorSubCanalVigente.sql" />
+    <Content Include="Resources\TerminoMedioPago\BajaTerminoMedioPagoPorProceso.sql" />
+    <Content Include="Resources\ProcesoPorSubCanal\BajaProcesoSubCanal.sql" />
+    <Content Include="Resources\ProcesoPorPuntoServicio\BuscaListaA.sql" />
+    <Content Include="Resources\DivisaPorProceso\AltaDivisaProceso.sql" />
+    <Content Include="Resources\MedioPago\BuscarOidMedioPago.sql" />
+    <Content Include="Resources\MedioPagoPorProceso\AltaMedioPagoPorProceso.sql" />
+    <Content Include="Resources\Proceso\AltaProceso.sql" />
+    <Content Include="Resources\PuntoServicio\BuscaOidPuntoServicio.sql" />
+    <Content Include="Resources\ProcesoPorPuntoServicio\AltaProcesoPorPServicio.sql" />
+    <Content Include="Resources\ProcesoPorPuntoServicio\ActualizaProcesoPorPServicio.sql" />
+    <Content Include="Resources\Proceso\BuscaProcesoPorClienteSubClientePtoServicio.sql" />
+    <Content Include="Resources\Proceso\ActualizarProcesoParaVigente.sql" />
+    <Content Include="Resources\AgrupacionPorProceso\BuscaAgrupacionProceso.sql" />
+    <Content Include="Resources\Agrupacion\GetListaAgrupaciones.sql" />
+    <Content Include="Resources\Iac\GetComboInformacionAdicional.sql" />
+    <Content Include="Resources\TipoCliente\InsertTipoClientes.sql" />
+    <Content Include="Resources\TipoCliente\BuscaTiposClientes.sql" />
+    <Content Include="Resources\TipoPuntoServicio\BuscaTipoPuntoServicioPorCodigo.sql" />
+    <Content Include="Resources\TipoPuntoServicio\VerificaUtilizacaoPuntoServicio.sql" />
+    <Content Include="Resources\TipoPuntoServicio\AtualizaTipoPuntoServicio.sql" />
+    <Content Include="Resources\TipoPuntoServicio\VerificaTipoPuntoServicioProcedencia.sql" />
+    <Content Include="Resources\TipoPuntoServicio\GetComboTiposPuntoServicio.sql" />
+    <Content Include="Resources\TipoPuntoServicio\InsertTipoPuntoServicio.sql" />
+    <Content Include="Resources\TipoPuntoServicio\BuscaTipoPuntoSerivicio.sql" />
+    <Content Include="Resources\CodigoAjeno\GetCodigoAjenos.sql" />
+    <Content Include="Resources\TipoSetor\AtualizaTipoSector.sql" />
+    <Content Include="Resources\TipoSetor\AltaTipoSetorPlanta.sql" />
+    <Content Include="Resources\TipoSetor\AltaTipoSetorDelegacion.sql" />
+    <None Include="Resources\TipoSetor\ObterCodTipoSectorPorOid.sql" />
+    <Content Include="Resources\TipoSetor\VertificaTipoSector.sql" />
+    <Content Include="Resources\TipoSetor\BajaCaracteristicaTipoSetor.sql" />
+    <Content Include="Resources\TipoSetor\AltaCaracteristicasPorTipoSetor.sql" />
+    <Content Include="Resources\TipoSetor\getCaractNoPertenecTipoSector.sql" />
+    <Content Include="Resources\TipoSetor\AltaCaracteristicaTipoSetor.sql" />
+    <Content Include="Resources\TipoSetor\AltaTipoSetor.sql" />
+    <Content Include="Resources\TipoSetor\getComboCaract.sql" />
+    <Content Include="Resources\TipoSetor\BucaTipoSetor.sql" />
+    <Content Include="Resources\TiposProcesado\BajaCaracteristicasPorTipoProcesado.sql" />
+    <Content Include="Resources\TiposProcesado\AltaCaracteristicasPorTipoProcesado.sql" />
+    <Content Include="Resources\TiposProcesado\GetComboModalidadesRecuento.sql" />
+    <Content Include="Resources\TerminoMedioPago\BuscaTerminoMedioPagoProceso.sql" />
+    <Content Include="Resources\MedioPagoPorProceso\BuscaMedioPagoPorProceso.sql" />
+    <Content Include="Resources\DivisaPorProceso\BuscaDivisaPorProceso.sql" />
+    <Content Include="Resources\Canal\GetComboCanales.sql" />
+    <Content Include="Resources\Proceso\GetProcesoDetail.sql" />
+    <Content Include="Resources\Proceso\GetProcesoByProceso.sql" />
+    <Content Include="Resources\Producto\GetComboProductos.sql" />
+    <Content Include="Resources\SubCanal\GetComboSubCanalByCanal.sql" />
+    <Content Include="Resources\PuntoServicio\GetComboPuntosServiciosByClienteSubcliente.sql" />
+    <Content Include="Resources\TiposProcesado\GetTipoProcesadoPorProceso.sql" />
+    <None Include="Resources\TiposProcesado\VerificarTipoProcesadoReferenciaProceso2.sql" />
+    <Content Include="Resources\TipoSubCliente\AtualizaTipoSubcliente.sql" />
+    <Content Include="Resources\TipoSubCliente\BuscaTipoSubClientePorCodigo.sql" />
+    <Content Include="Resources\TipoSubCliente\VerificaTipoSubClienteExiste.sql" />
+    <Content Include="Resources\TipoSubCliente\VerificaUtilizacaoSubCliente.sql" />
+    <Content Include="Resources\TipoSubCliente\VerificaTipoSubClienteProcedencia.sql" />
+    <Content Include="Resources\TipoSubCliente\GetComboTiposSubCliente.sql" />
+    <Content Include="Resources\TipoSubCliente\insertTipoSubCliente.sql" />
+    <Content Include="Resources\TipoSubCliente\BuscaTipoSubCliente.sql" />
+    <Content Include="Resources\Utilidad\GetConfigNivelSaldo.sql" />
+    <Content Include="Resources\ValorPosible\GetProcesoBuscaValorTermino.sql" />
+    <Content Include="Resources\SubCliente\GetComboSubClientesByCliente.sql" />
+    <Content Include="Resources\Divisa\GetProcesoBuscaDivisaEfectivo.sql" />
+    <Content Include="Resources\ValorPosible\RecuperaValoresPosiblesPorNivel.sql" />
+    <Content Include="Resources\ValorTerminoMedioPago\GetProcesoBuscaValorTerminoMedioPago.sql" />
+    <Content Include="Resources\TerminoMedioPago\GetProcesoBuscaTerminoMedioPago.sql" />
+    <Content Include="Resources\MedioPago\GetProcesoBuscaMedioPago.sql" />
+    <Content Include="Resources\MedioPagoPorAgrupacion\GetProcesoBuscaMedioPagoAgrupacion.sql" />
+    <Content Include="Resources\DivisaPorAgrupacion\GetProcesoBuscaDivisaAgrupacion.sql" />
+    <Content Include="Resources\Agrupacion\GetProcesoBuscaAgrupaciones.sql" />
+    <Content Include="Resources\Iac\GetProcesoBuscaIac.sql" />
+    <Content Include="Resources\Maquina\GetProcesoBuscaMaquinasProducto.sql" />
+    <Content Include="Resources\Proceso\GetProceso.sql" />
+    <Content Include="Resources\MedioPago\BuscaValorTerminoIntegracion.sql" />
+    <Content Include="Resources\MedioPago\BuscaTerminoMedioPagoIntegracion.sql" />
+    <Content Include="Resources\MedioPago\GetMediosPagoIntegracion.sql" />
+    <Content Include="Resources\PuntoServicio\BajaPuntoServicioNivelSubCliente.sql" />
+    <Content Include="Resources\MedioPago\ActualizarMedioPago.sql" />
+    <Content Include="Resources\PuntoServicio\ActualizarPuntoServicio.sql" />
+    <Content Include="Resources\PuntoServicio\BajaPuntoServicioNivelPuntoServicio.sql" />
+    <Content Include="Resources\SubCanal\BajaSubCanal.sql" />
+    <Content Include="Resources\SubCliente\ActualizarSubCliente.sql" />
+    <Content Include="Resources\Cliente\ActualizarCliente.sql" />
+    <Content Include="Resources\SubCliente\BuscarOidSubCliente.sql" />
+    <Content Include="Resources\SubCliente\BajaSubClienteNivelSubCliente.sql" />
+    <Content Include="Resources\PuntoServicio\BuscaTodosPuntoServicio.sql" />
+    <None Include="Resources\MedioPago\BajaMedioPago.sql" />
+    <Content Include="Resources\PuntoServicio\AltaPuntoServicio.sql" />
+    <Content Include="Resources\SubCliente\AltaSubCliente.sql" />
+    <Content Include="Resources\Cliente\AltaCliente.sql" />
+    <Content Include="Resources\PuntoServicio\BajaPuntoServicio.sql" />
+    <Content Include="Resources\SubCliente\BajaSubCliente.sql" />
+    <Content Include="Resources\Cliente\BajaCliente.sql" />
+    <Content Include="Resources\TerminoIac\BajaTerminoPorIac.sql" />
+    <Content Include="Resources\TerminoIac\BuscaTodosTerminosIac.sql" />
+    <Content Include="Resources\Iac\BuscaOidIac.sql" />
+    <Content Include="Resources\TerminoIac\ActualizarTerminoIac.sql" />
+    <Content Include="Resources\Iac\ActualizarIac.sql" />
+    <Content Include="Resources\TerminoIac\BuscaOidTermino.sql" />
+    <Content Include="Resources\TerminoIac\AltaTerminoPorIac.sql" />
+    <Content Include="Resources\Iac\AltaIac.sql" />
+    <Content Include="Resources\Iac\IacVerficarSePossuiProcessoVigente.sql" />
+    <Content Include="Resources\Iac\BajaIac.sql" />
+    <Content Include="Resources\Iac\GetIacDetail.sql" />
+    <Content Include="Resources\Iac\getIac.sql" />
+    <None Include="Resources\Cliente\BuscarOidCliente.sql" />
+    <None Include="Resources\Divisa\ObterOidDivisa.sql" />
+    <None Include="Resources\Cliente\GetComboClientes.sql" />
+    <None Include="Resources\ValorPosible\BajaValoresPosibles.sql" />
+    <None Include="Resources\ValorPosible\GetValoresPosibles.sql" />
+    <None Include="Resources\ValorPosible\AltaValoresPosibles.sql" />
+    <None Include="Resources\Algoritmo\ObterOidAlgoritmo.sql" />
+    <None Include="Resources\Mascara\ObterOidMascara.sql" />
+    <None Include="Resources\Formato\ObterOidFormato.sql" />
+    <Content Include="Resources\TerminoIac\GetTermino.sql" />
+    <Content Include="Resources\TerminoIac\GetTerminoDetail.sql" />
+    <None Include="Resources\TerminoIac\VerificarCodigoTermino.sql" />
+    <None Include="Resources\TerminoIac\VerificarDescripcionTermino.sql" />
+    <None Include="Resources\TerminoIac\VerificarEntidadesVigentesComTermino.sql" />
+    <None Include="Resources\TerminoMedioPago\ObterOidTerminoMedioPago.sql" />
+    <None Include="Resources\TerminoMedioPago\BajaTerminoMedioPago.sql" />
+    <None Include="Resources\TerminoMedioPago\AltaTerminoMedioPago.sql" />
+    <Content Include="Resources\TerminoMedioPago\ActualizarTerminoMedioPago.sql" />
+    <Content Include="Resources\TerminoMedioPago\BuscaTodosTerminos.sql" />
+    <None Include="Resources\TerminoMedioPago\BajaTerminoMedioPagoPorMedioPago.sql" />
+    <Content Include="Resources\TiposProcesado\BuscaOidTipoProcesado.sql" />
+    <Content Include="Resources\TiposProcesado\ActualizarTiposProcesado.sql" />
+    <Content Include="Resources\TiposProcesado\AltaTiposProcesado.sql" />
+    <Content Include="Resources\TiposProcesado\BajaTiposProcesado.sql" />
+    <Content Include="Resources\TiposProcesado\GetTiposProcesado.sql" />
+    <Content Include="Resources\Producto\GetProductos.sql" />
+    <None Include="Resources\TerminoIac\BajaTermino.sql" />
+    <Content Include="Resources\Maquina\getComboMaquinas.sql" />
+    <Content Include="Resources\SubCanal\BuscaTodosSubCanales.sql" />
+    <Content Include="Resources\Canal\CanalVerificaProcesoVigente.sql" />
+    <Content Include="Resources\SubCanal\GetSubCanalesByCanal.sql" />
+    <Content Include="Resources\Canal\BuscaOidCanal.sql" />
+    <Content Include="Resources\Canal\AltaCanal.sql" />
+    <Content Include="Resources\SubCanal\AltaSubCanal.sql" />
+    <Content Include="Resources\Canal\GetCanales.sql" />
+    <Content Include="Resources\Canal\ActualizarCanal.sql" />
+    <Content Include="Resources\SubCanal\ActualizarSubCanal.sql" />
+    <Content Include="Resources\SubCanal\SubCanalVerificaProcessoVigente.sql" />
+    <Content Include="Resources\Canal\VerificarDescripcionCanal.sql" />
+    <Content Include="Resources\SubCanal\VerificarCodigoSubCanal.sql" />
+    <Content Include="Resources\SubCanal\VerificarDescripcionSubCanal.sql" />
+    <Content Include="Resources\TiposProcesado\VerificarDescripcionTipoProcesado.sql" />
+    <Content Include="Resources\Iac\VerificarDescripcionIac.sql" />
+    <Content Include="Resources\ValorTerminoMedioPago\ActualizarValorTerminoMedioPago.sql" />
+    <Content Include="Resources\ValorTerminoMedioPago\BuscaTodosValoresTerminos.sql" />
+    <Content Include="Resources\Proceso\VerificaProcesoExiste.sql" />
+    <Content Include="Resources\ProcesoPorSubCanal\VerificaReferenciaProceso.sql" />
+    <Content Include="Resources\TiposProcesado\VerificarTipoProcesadoReferenciaProceso.sql" />
+    <None Include="Resources\ValorTerminoMedioPago\BajaValorTerminoMedioPago.sql" />
+    <None Include="Resources\ValorTerminoMedioPago\AltaValorTerminoMedioPago.sql" />
+    <None Include="Resources\ValorTerminoMedioPago\BajaValorTerminoMedioPagoPorMedioPago.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+﻿SELECT IdEstadoComprobante FROM PD_EstadoComprobante WHERE Codigo = :Codigo

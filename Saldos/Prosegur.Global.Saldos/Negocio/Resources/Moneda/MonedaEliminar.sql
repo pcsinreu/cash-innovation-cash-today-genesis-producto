@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_Moneda WHERE IdMoneda = :IdMoneda

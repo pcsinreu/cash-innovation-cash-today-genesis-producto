@@ -1,0 +1,53 @@
+﻿SELECT
+                      DOCU.OID_DOCUMENTO,
+                      DOCU.OID_FORMULARIO,
+                      DOCU.OID_CUENTA_ORIGEN,
+                      DOCU.OID_CUENTA_DESTINO,
+                      DOCU.OID_CUENTA_SALDO_ORIGEN,
+                      DOCU.OID_CUENTA_SALDO_DESTINO,
+                      DOCU.OID_DOCUMENTO_PADRE,
+                      DOCU.OID_DOCUMENTO_SUSTITUTO,
+                      DOCU.OID_TIPO_DOCUMENTO,
+                      DOCU.OID_SECTOR_ORIGEN,
+                      DOCU.OID_SECTOR_DESTINO,
+                      DOCU.OID_MOVIMENTACION_FONDO,
+                      DOCU.OID_GRUPO_DOCUMENTO,
+                      DOCU.FYH_PLAN_CERTIFICACION,
+                      DOCU.FYH_GESTION,
+                      DOCU.BOL_CERTIFICADO,
+                      DOCU.COD_EXTERNO,
+                      DOCU.COD_ESTADO,
+                      DOCU.GMT_CREACION,
+                      DOCU.DES_USUARIO_CREACION,
+                      DOCU.GMT_MODIFICACION,
+                      DOCU.DES_USUARIO_MODIFICACION,
+                      DOCU.COD_COMPROBANTE                     
+                      
+              FROM
+                      SAPR_TDOCUMENTO DOCU
+                      
+                      INNER JOIN SAPR_TCUENTA CUOR ON DOCU.OID_CUENTA_ORIGEN = CUOR.OID_CUENTA
+                      INNER JOIN GEPR_TSECTOR SEOR ON CUOR.OID_SECTOR = SEOR.OID_SECTOR
+                      INNER JOIN GEPR_TPLANTA PLOR ON SEOR.OID_PLANTA = PLOR.OID_PLANTA
+                      INNER JOIN GEPR_TDELEGACION DELOR ON DELOR.OID_DELEGACION = PLOR.OID_DELEGACION
+                      INNER JOIN GEPR_TCLIENTE CLIOR ON CLIOR.OID_CLIENTE = CUOR.OID_CLIENTE
+                      LEFT JOIN GEPR_TSUBCLIENTE SUBCLIOR ON SUBCLIOR.OID_SUBCLIENTE = CUOR.OID_SUBCLIENTE
+                      LEFT JOIN GEPR_TPUNTO_SERVICIO PTOSERVOR ON PTOSERVOR.OID_PTO_SERVICIO = CUOR.OID_PTO_SERVICIO
+                      INNER JOIN GEPR_TSUBCANAL SUBCANALOR ON SUBCANALOR.OID_SUBCANAL = CUOR.OID_SUBCANAL
+                      INNER JOIN GEPR_TCANAL CANALOR ON CANALOR.OID_CANAL = SUBCANALOR.OID_CANAL
+                      
+                      INNER JOIN SAPR_TCUENTA CUDE ON DOCU.OID_CUENTA_DESTINO = CUDE.OID_CUENTA
+                      INNER JOIN GEPR_TSECTOR SEDE ON CUDE.OID_SECTOR = SEDE.OID_SECTOR        
+                      INNER JOIN GEPR_TPLANTA PLDE ON SEDE.OID_PLANTA = PLDE.OID_PLANTA
+                      INNER JOIN GEPR_TDELEGACION DELDE ON DELDE.OID_DELEGACION = PLDE.OID_DELEGACION                      
+                      INNER JOIN GEPR_TCLIENTE CLIDE ON CLIDE.OID_CLIENTE = CUDE.OID_CLIENTE
+                      LEFT JOIN GEPR_TSUBCLIENTE SUBCLIDE ON SUBCLIDE.OID_SUBCLIENTE = CUDE.OID_SUBCLIENTE
+                      LEFT JOIN GEPR_TPUNTO_SERVICIO PTOSERVDE ON PTOSERVDE.OID_PTO_SERVICIO = CUDE.OID_PTO_SERVICIO
+                      INNER JOIN GEPR_TSUBCANAL SUBCANALDE ON SUBCANALDE.OID_SUBCANAL = CUDE.OID_SUBCANAL
+                      INNER JOIN GEPR_TCANAL CANALDE ON CANALDE.OID_CANAL = SUBCANALDE.OID_CANAL                      
+              WHERE
+					  DOCU.OID_GRUPO_DOCUMENTO IS NULL 
+                      {0} 
+                      AND (
+                      {1}
+                    )                    

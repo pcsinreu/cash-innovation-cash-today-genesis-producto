@@ -1,0 +1,136 @@
+﻿//AccionGuardarDatosDocumento
+01_msg_iddocumento_invalido								= El ID del documento debe ser informado.
+01_msg_idformulario_invalido							= El ID del formulario debe ser informado.
+01_msg_iddocumento_nao_pode_ser_informafo				= El ID del documento no debe ser informado.
+01_msg_iddocumentoorigem_invalido						= El ID del documento origen debe ser informado.
+01_msg_dados_usuario_invalido							= Ningún dato del usuario fue informado.
+01_msg_dados_login_invalido								= Nombre invalido
+01_msg_dados_usuario_bloqueado							= Usuario bloqueado
+01_msg_dados_usuario_expirou							= Usuario expirou
+01_msg_dados_documento_agrupado							= El documento no puede ser aceptado porque es un documento agrupado.
+01_msg_dados_documento_estado_impreso					= El documento no puede ser aceptado. Su estado no es Impreso.
+01_msg_dados_documento_estado_proceso					= El documento no puede ser aceptado. Su estado no es En Proceso.
+01_msg_dados_documento_centro_proceso_destino			= El documento no puede ser aceptado porque no fue especificado el centro de proceso destino.
+01_msg_dados_documento_documentos						= El documento no puede ser aceptado porque los documentos foran especificados.
+01_msg_dados_documento_bultos							= El documento no puede ser aceptado porque los bultos foran especificados.
+01_msg_dados_documento_detalles							= El documento no puede ser aceptado porque los detalles foran especificados.
+01_msg_dados_documento_sobres							= El documento no puede ser aceptado porque los sobres foran especificados.
+01_msg_dados_documento_permiso							= El usuario no tiene permiso para actualizar documento con las características y el centro de proceso especificados.
+01_msg_dados_documento_bulto							= Los valores de los campos de los bultos no pueden ser alterados.
+01_msg_dados_documento_campo							= El campo {0} no fue informado.
+01_msg_dados_documento_campo_valor						= No es permitido cambiar el valor del campo {0}.
+01_msg_dados_documento_campo_extra						= El campo extra {0} no fue informado.
+01_msg_dados_documento_campo_extra_valor				= No es permitido cambiar el valor del campo extra {0}.
+01_msg_dados_documento_permiso_crear_acta				= El usuario no tiene permiso para crear Acta con las características y el centro de proceso especificados.
+01_msg_dados_documento_documento_origen					= Ya fue creado una acta de proceso para el documento origen.
+01_msg_dados_documento_origen							= El ID del documento origen debe ser informado.
+01_msg_dados_documento_idps_no_encontrado				= El IdPS {0} no fue encontrado.
+01_msg_dados_documento_documentos_agrupados				= El documento {0} no puede ser agrupado.
+01_msg_dados_documento_saldo							= Documento no posue saldo disponible.
+01_msg_dados_documento_informar_bultos					= El documento no puede ser aceptado porque los bultos no foran especificados.
+01_msg_dados_documento_cliente_no_encontrado			= No hay cliente correspondente en Saldos para el Cliente: {0}, Sub cliente: {1} y Punto Servicio {2}.
+01_msg_dados_documento_canal_no_encontrado				= No hay canal correspondente en Saldos para el Canal: {0} y Sub Canal: {1}.
+
+//AccionIngresoRemesas
+02_msg_error_malotes_cliente_canal						= Los bultos de la remesa no son del mismo cliente o canal.
+02_msg_error_serializar_remesa							= Erro al serializar la remesa.
+02_msg_error_campos_extra								= El Campo Extra {0}, no es valido para el formulario.
+02_msg_dados_documento_moneda							= La moneda {0} no esta mapeada en el sistema Gestión de Saldos.
+02_msg_dados_documento_especie_default					= La moneda {0} no posué especie default mapeada en el sistema Gestión de Saldos.
+02_msg_dados_campo_fixo									= No fue posible crear los campos fixos.
+02_msg_documento_reenvio								= Remesa enviado con éxito. Pero hubo un error en el envío al sector de destino.
+02_msg_descricao_especie								= La descripción de la especie no es un numero.
+02_msg_nao_encontrou_especie							= No encontró la moneda y especie para la denominación {0}.
+02_msg_remesa_estado_invalido							= La remesa no fue enviada. Su estado está diferente de pendiente o rechazado en el Conteo.
+02_msg_dados_campo_naoinformado							= El campo {0} no fue informado.
+02_msg_campo_delegacion									= Delegación
+02_msg_error_malotes									= La remesa no fue enviada. Sus bultos no fueron informados correctamente.
+02_msg_error_cliente_origen_nao_encontrado_automatas	= No fue posible encontrar el Cliente Origen con los datos ingresados (Código Cliente = '{0}' y Código SubCliente = '{1}') utilizando las reglas de Automatas.
+
+//Documentos
+023_msg_valida_numexterno								= El numero externo ya existe.
+023_msg_valida_centroprocesso_selecionado				= Seleccione uno Centro de Proceso.
+
+//Clientes
+03_msg_erro_cliente										= El cliente no puede ser salvo, el código o la descripción del cliente no fueron informados.
+
+//GneracionF22
+04_msg_dados_usuario_naoinformado						= Ningún dato del usuario fue informado.
+04_msg_erro_parametro_naoencontrado						= Código de identificación del formulario no se encontra en archivo de configuración.
+04_msg_dados_campo_naoinformado							= El campo {0} no fue informado.
+04_msg_campo_fechaentrega								= Fecha de entrega
+04_msg_campo_codigocanal								= Código canal
+04_msg_campo_codigocentroproceso						= Código centro de proceso
+04_msg_campo_codigoclientemandante						= Código cliente mandante
+04_msg_campo_codigorecibo								= Código de recibo
+
+//Creacion Mif Intersector
+05_msg_dados_usuario_naoinformado						= Ningún dato del usuario fue informado.
+05_msg_erro_parametro_naoencontrado						= Código de identificación del formulario no se encontra en archivo de configuración.
+05_msg_dados_campo_naoinformado							= El campo {0} no fue informado.
+05_msg_campo_codigocanal								= Código canal
+05_msg_campo_codigocliente								= Código cliente
+05_msg_campo_codigocentroprocesoorigem					= Código centro de proceso origen
+05_msg_campo_codigocentroprocesodestino					= Código centro de processo destino
+05_srv_requerido_coddenominacion						= Código denominación
+05_srv_requerido_codisodivisa							= Código isoDivisa
+05_srv_msg_divisanoencontrada							= Divisa no encontrada en la base de datos.
+05_srv_msg_centroprocessodestinonoencontrado			= Centro de proceso destino no localizado.
+05_srv_msg_centroprocessoorigennoencontrado				= Centro de proceso origen no localizado.
+05_msg_documento_impreso								= El documento ya fue Impreso  en saldos.
+05_msg_documento_aceptado								= El documento ya fue Aceptado  en saldos.
+05_msg_documento_rechazado								= El documentoya fue Rechazado  en saldos.
+
+//Cambia Estado Documento Fundos
+06_msg_datos_documento									= No fue informado los datos del documento.
+06_msg_IdentificadorDocSaldos							= No fue informado el identificador del documento.
+06_msg_datos_Usuario									= No fue informado los datos del usuario.
+06_msg_Estado											= No fue informado el estado del documento.
+06_msg_usuario											= No fue informado el usuário.
+06_msg_clave											= No fue informado la contraseña.
+06_msg_rechazado										= El documento ya fue rechazado en saldos y no podrá ser actualizado.
+06_msg_aceptado											= El documento ya fue aceptado en saldos y no podrá ser actualizado.
+06_msg_usuario_sin_permiso								= El usuario no ha permiso para ejecutar la operación.
+
+//Crear Movimiento
+07_msg_dados_usuario_naoinformado						= Ningún dato del usuario fue informado.
+07_msg_erro_parametro_naoencontrado						= Código identificador del formulario no existe.
+07_msg_tipodocumento_invalido							= Código del tipo de documento no es valido.
+07_msg_dados_campo_naoinformado							= El campo {0} no fue informado.
+07_msg_campo_accion										= Accion
+07_msg_campo_codigotipodocumento						= Código Tipo Documento
+07_msg_campo_codigoplanta								= Código Planta
+07_msg_campo_codigocliente								= Código Cliente
+07_msg_campo_codigocanal								= Código Canal
+07_msg_campo_codigocanalorigen							= Código Canal Origen
+07_msg_campo_codigocanaldestino							= Código Canal Destino
+07_msg_campo_codigocentroprocesoorigem					= Código Centro de Proceso Origen
+07_msg_campo_codigocentroprocesodestino					= Código Centro de Proceso Destino
+07_msg_campo_oidtransaccion								= Identificador Transaccion
+07_msg_campo_desglose									= Negún dato del desglose fue informado.
+07_srv_requerido_coddenominacion						= Código Denominación
+07_srv_requerido_codisodivisa							= Código IsoDivisa
+07_srv_msg_divisanoencontrada							= Divisa no encontrada en la base de datos.
+07_srv_msg_centroprocessodestinonoencontrado			= Centro de proceso destino no localizado.
+07_srv_msg_centroprocessoorigennoencontrado				= Centro de proceso origen no localizado.
+07_msg_documento_impreso								= El documento ya fue impresso en saldos y no podrá ser actualizado.
+07_msg_documento_aceptado 								= El documento ya fue aceptado en saldos y no podrá ser actualizado.
+07_msg_documento_rechazado								= El documento ya fue rechazado en saldos y no podrá ser actualizado.
+
+//Recuperar Saldo
+08_msg_dados_usuario_naoinformado						= Ningún dato del usuario fue informado.
+08_msg_dados_campo_naoinformado							= El campo {0} no fue informado.
+08_msg_campo_codigoplanta								= Código Planta
+08_msg_campo_codigomoneda								= Código de la Moneda
+
+//Recuperar Transaciones
+09_msg_dados_usuario_naoinformado						= Ningún dato del usuario fue informado.
+09_msg_dados_campo_naoinformado							= El campo {0} no fue informado.
+09_msg_campo_codigoplanta								= Código Planta
+09_msg_campo_codigofechahoradesde						= Fecha Hora Desde
+09_msg_campo_codigofechahorahasta						= Fecha Hora Hasta
+
+//Recuperar Transacion Detallada
+10_msg_dados_usuario_naoinformado						= Nenhum dato do usuario foi informado.
+10_msg_dados_campo_naoinformado							= O campo {0} não foi informado.
+10_msg_campo_oidtransacion								= Identificador de la transación.

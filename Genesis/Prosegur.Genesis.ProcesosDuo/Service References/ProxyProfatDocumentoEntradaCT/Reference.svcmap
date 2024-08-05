@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7a70587b-0ced-429b-83e7-78648ed16382" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://brbhzsvd00075/Prosegur.Profat.Integracao.Servico/DocumentoEntradaCT.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DocumentoEntradaCT.xsd" MetadataType="Schema" ID="c7c563e9-aa49-4eb5-a626-d4e4cdc3ac33" SourceId="1" SourceUrl="http://brbhzsvd00075/Prosegur.Profat.Integracao.Servico/DocumentoEntradaCT.svc?xsd=xsd1" />
+    <MetadataFile FileName="DocumentoEntradaCTBPL.wsdl" MetadataType="Wsdl" ID="4abd5c6f-4574-4858-8e2b-d3ba3a08a6d0" SourceId="1" SourceUrl="http://brbhzsvd00075/Prosegur.Profat.Integracao.Servico/DocumentoEntradaCT.svc?wsdl" />
+    <MetadataFile FileName="DocumentoEntradaCT1.xsd" MetadataType="Schema" ID="852b26a6-dc7c-408f-b356-079f7e00d623" SourceId="1" SourceUrl="http://brbhzsvd00075/Prosegur.Profat.Integracao.Servico/DocumentoEntradaCT.svc?xsd=xsd0" />
+    <MetadataFile FileName="DocumentoEntradaCT2.xsd" MetadataType="Schema" ID="0b428b1c-3ae1-4915-b38c-659ed352c587" SourceId="1" SourceUrl="http://brbhzsvd00075/Prosegur.Profat.Integracao.Servico/DocumentoEntradaCT.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

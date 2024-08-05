@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="Login.asmx.vb" Class="Prosegur.Global.GesEfectivo.Reportes.Servicio.Login" %>

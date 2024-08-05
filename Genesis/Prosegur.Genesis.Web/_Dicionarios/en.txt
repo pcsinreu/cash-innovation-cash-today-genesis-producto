@@ -1,0 +1,46 @@
+﻿
+
+//--------------------------------------------------------------------------------------
+// GENERICOS
+//--------------------------------------------------------------------------------------
+gen_selecione                                             = Select
+err_campo_obligatorio					                  = The field {0} is required.
+msg_loading										= Plase, wait a moment while the system is:&nbsp;
+
+//--------------------------------------------------------------------------------------
+// CONTROLES
+//--------------------------------------------------------------------------------------
+gen_btnLogin                                              = Accept
+gen_btnCancelar                                           = Cancel
+gen_msg_camporequerido                                    = The field {0} is required..
+
+Default_lblUsuario                                        = User
+Default_lblSenha                                          = Key
+Default_lblPais                                           = Country
+Default_sessao_expirada                                   = Session expired, please, log again
+
+//--------------------------------------------------------------------------------------
+// TOKEN
+//--------------------------------------------------------------------------------------
+tkn_tokenutil_token_invalida                              = Token invalid
+tkn_creartokenacceso_erro_serializar                      = Failed to serialize permits
+tkn_creartokenacceso_erro_gerartoken                      = Failed to generate token
+
+//--------------------------------------------------------------------------------------
+// LOGIN
+//--------------------------------------------------------------------------------------
+lgn_usuario_nao_autenticado                              = It was not possible to authenticate the user. Check the informed user and password.
+lgn_usuario_aplicacionversion_noencontrada		 = It was not found version of the application to the user.
+lgn_sesion_activa					 = Unable to login because there is already valid for the reporting user session.
+000_msgerrogenerico					 = It happened an error in the application.
+mdl_msg_sempermissao					 = User without permission!
+lgn_lblversion						 = Version
+lgn_lblbuild						 = Build
+msg_obtenerDelegaciones				= Getting delegations.
+msg_cargarDelegaciones				= Loading list of delegations.
+msg_obtenerPaises					= Getting countries.
+msg_cargarPaises					= Loading list of countries.
+msg_cargarPlantas					= Loading list of plants.
+msg_iniciarSesion					= Validating user.
+msg_obtenerAplicaciones 			= Get applications.
+msg_crearToken						= Creating Token.

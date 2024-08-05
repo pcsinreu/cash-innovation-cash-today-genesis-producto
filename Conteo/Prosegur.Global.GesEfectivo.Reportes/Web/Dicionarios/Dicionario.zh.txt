@@ -1,0 +1,1134 @@
+﻿// ************* TELAS *************
+
+//FORM BASE
+btnAlta												=插入
+btnBaja												= 删除
+btnConsulta											= 请教
+btnModificacion										= 修改
+btnLimpiar											= 清洁
+btnBuscar											= 寻求
+btnGrabar											= 节省
+btnCancelar											= 取消
+btnVolver											= 返回
+btnAceptar											= 接受
+btnDuplicar											= 复制
+btnValoresPosibles									= ...
+lbl_btn_calendario									= 日历
+lbl_base_titulo										= 算报告
+lbl_version											= 版本
+lbl_salir											= 离开
+lbl_formato_salida_csv								= CSV
+lbl_formato_salida_pdf								= PDF
+lbl_desde											= 的
+lbl_hasta											= 至
+lbl_btnDetalhes										= 详细信息
+lbl_btnCopiar										= 复制
+btnFechar											= 关闭
+
+gen_csv_lbl_billete									= 乙
+gen_csv_lbl_moneda									= 中号
+
+gen_Cheque											= 查
+gen_Ticket											= 票
+gen_OtroValor										= 其他值
+gen_Efectivo										= 有效
+
+gen_selecione                                       = 选择
+gen_todos											= 一切
+
+//MENU PRINCIPAL
+mn_billetaje_sucursal								= 票务分公司
+mn_corte_parcial									= 半切
+mn_respaldo_completo								= 全面支持
+mn_detalle_parciales								= 部分细节
+mn_contado_posto									= 告诉旅游
+mn_recibo_f22_respaldo								= 收据F22背书
+mn_relaciones_habilitacion_tira_conteo				= 启用X X地带计数的关系
+mn_parte_diferencias								= 部分差异
+mn_reportar_pedido_bcp								= 报告请求BCP
+mn_informe_resultado_contaje						= 结果计数
+mn_reportes											= 报告
+mn_InformacionReportes								= Información de Reportes
+mn_acreditaciones  = Acreditaciones
+
+//ERRO PADRÃO
+err_padrao_aplicacao								= 应用程序中的错误
+err_codigo_erro_ambiente_default					= 执行环境中的错误
+err_codigo_erro_negocio_sesion_invalida				= 无效的会议
+err_codigo_erro_negocio_default						= 业务的标准误差
+err_passagem_parametro								= 这些参数是不是有效的知情。
+err_descricao_invalida								= 描述或无效的代码。
+err_campo_obrigatorio								= 字段“{0}”是强制性的。
+err_generico										= 在应用程序中有未处理的错误。请与您的系统管理员联系。
+lbl_campo_nao_preenchido							= 字段“{0}”不填。
+lbl_campos_obrigatorios_nao_preenchidos				= 字段“{0}”和“{1}”不填。
+lbl_campo_nao_selecionado							= 字段“{0}”不被选中。
+lbl_campo_invalido									= 字段“{0}”不能被告知了这一报告。
+lbl_nenhum_registro_encontrado						= 没有找到记录
+lbl_campo_data_invalida								= 字段“{0}”不填充具有有效日期。
+lbl_campo_hora_invalida								= 字段“{0}”未填写有效时间。
+lbl_campo_datahora_invalida							= 字段“{0}”是不是充斥着一个有效的日期或时间。
+lbl_campo_selecion_unica							= 字段“{0}”是不是多选。
+lbl_campo_periodo_invalido							= “{0}”应为大于该字段“{1}”。
+lbl_campo_periodo_dias_distintos					= 字段“{0}”必须是在同一天，该字段为“{1}”。
+lbl_campo_periodo_ja_informado						= 只有一个字段{0}，{1}或{2}报告期内必须完成。
+lbl_campo_periodo_ja_informado_2					= 只有一个字段{0}或{1}报告期内必须完成。
+err_msg_error_05									= 访问服务器上的数据库时出错：{0}
+err_msg_error_02									= 错误通信与目录服务器（LDAP）。
+err_msg_error_03   									= 在访问目录服务器（LDAP）错误。用户名或密码不正确。
+err_msg_error_apagar_arquivo						= 无法替换文件{0}。
+
+//INFORMACIÓN PADRAO
+info_msg_sin_registro								= 没有发现记录的参数。
+info_msg_baja										= 记录删除成功。
+info_msg_baja_registro								= 要删除记录？
+info_msg_seleccionar_registro						= 执行此操作之前选择一个记录。
+info_msg_seleccionar_registro_unico					= 选择只有一条记录，然后再执行此操作。
+info_msg_max_registro								= 最大记录数达到。输入任何参数搜索。
+info_msg_sair_pagina								= 你确定你要离开这个页面，并失去所有输入的数据吗？
+info_msg_grd_vazio									= 没有任何数据显示。
+info_msg_sucesso									= 请求发送成功！
+info_msg_ruta										= 報告所產生的轉向是{0}。
+info_msg_grabadosucesso								= 记录保存成功！
+
+//TIPOS EFETIVOS
+lbl_billete											= 抽签
+lbl_moneda											= 货币
+
+//Tela Mensagem de Erro
+aplicacao											= 算报告
+
+//TELA DEFAULT
+001_lbl_titulo										= 算报告
+
+//RELATORIO
+lbl_titulo_empresa									= PROSEGUR S / A
+lbl_pagina											= 页：
+lbl_de												= 的
+
+//GRID_SUMMARY
+grid_lbl_pagersummary							    = 第{0} {1}（{2}项目）
+prosegurgridview_asc								= 排序升序
+prosegurgridview_desc								= 降序顺序排序
+gen_primeiro										= 第一
+gen_anterior										= 前
+gen_proximo											= 关闭
+gen_ultimo											= 最后
+
+//TELA LOGIN
+002_lbl_delegacion									= 代表团
+002_lbl_login										= 用户
+002_lbl_senha										= 密码
+002_btn_confirmar									= 登录
+002_btn_cancelar									= 取消
+002_titulo											= 登录计数有效的管理报告
+002_msg_usuario_invalido							= 在访问目录服务器（LDAP）错误。用户名或密码不正确。
+002_msg_usuario_sem_permisio						= 用户在这个系统中是不允许的。
+002_msg_usuario_sessao_expirada						= 您的会话已过期。请再次登录。
+002_msg_sessao_finalizada                           = 会议结束
+
+// TELA BILLETAJE SUCURSAL
+003_titulo_pagina									= 报告 - 票务分公司
+003_lbl_titulo_busqueda								= 搜索票务分公司
+003_lbl_delegacion									= 代表团
+003_lbl_cliente										= 顾客
+003_lbl_sector										= 扇形
+003_lbl_proceso										= 过程
+003_lbl_fecha_transporte							= 数据传输
+003_lbl_fecha										= 日
+003_lbl_fecha_fin_conteo							= 结束日期计数
+003_lbl_remesas_pendientes							= 待发运
+003_lbl_formato_salida								= 输出格式
+003_btn_cliente										= 搜索客户
+003_btn_proceso										= 搜索过程
+
+003_csv_lbl_recuento								= 过程
+003_csv_lbl_fecha									= 日
+003_csv_lbl_letra									= 信
+003_csv_lbl_f22										= F22
+003_csv_lbl_oidRemesaOri                            = OID Remesa大利
+003_csv_lbl_codSubCliente                           = 鳕子客户端
+003_csv_lbl_estacion								= 分公司
+003_csv_lbl_descricion_estacion						= 说明科
+003_csv_lbl_descricion_divisa						= 说明货币
+003_csv_lbl_medio_pago								= 付款方法
+003_csv_lbl_unidad									= 单元
+003_csv_lbl_calidad									= 质量
+003_csv_lbl_multiplicador							= 乘数
+003_csv_lbl_cantidad								= 量
+003_csv_lbl_valor									= 值
+003_csv_lbl_deteriorado								= 坏
+003_csv_lbl_codigo_calidad							= 坏
+
+rpt_003_txt_lbl_titulo								= 票务分公司
+rpt_003_txt_lbl_planta								= 植物..............：
+rpt_003_txt_lbl_cliente								= 客户.............：
+rpt_003_txt_lbl_transporte_del_dia					= D.反式脂肪。首页：
+rpt_003_txt_lbl_transporte_ate						= D.反式脂肪。决赛.....：
+rpt_003_txt_lbl_del_dia								= D.初始过程。
+rpt_003_txt_lbl_ate									= D.决赛过程：
+rpt_003_txt_lbl_conteo_del_dia						= D.结束连续。主页：
+rpt_003_txt_lbl_conteo_ate							= D.结束连续。最终..：
+rpt_003_txt_lbl_recuento							= 流程............：
+rpt_003_txt_lbl_sucursal							= 分行............：
+rpt_003_txt_lbl_divisa								= 区划..............：
+rpt_003_txt_lbl_medio_pago							= 付款方法
+rpt_003_txt_lbl_unidad								= 单元
+rpt_003_txt_lbl_valor_recontado						= 新编值
+rpt_003_txt_lbl_declarado							= 宣
+rpt_003_txt_lbl_recontado							= 述说
+rpt_003_txt_lbl_deferencia							= 差异
+rpt_003_txt_lbl_total_sucursal						= 总分行
+rpt_003_txt_lbl_cant_respaldos						= QUANT。靠背
+rpt_003_txt_lbl_declarado_general					= 宣
+rpt_003_txt_lbl_recontado_general					= 述说
+rpt_003_txt_lbl_deferencia_general					= 差异
+rpt_003_txt_lbl_total_general						= 总计
+rpt_003_txt_lbl_cant_respaldos_general				= QUANT。靠背
+rpt_003_txt_lbl_divisa_general						= 座右铭
+rpt_003_txt_lbl_medio_pago_general					= 付款方法
+rpt_003_txt_lbl_efectivo							= 有效
+rpt_003_txt_lbl_deteriorado							= 坏
+rpt_003_txt_lbl_codigo_transporte					= 收据..............：
+rpt_003_txt_lbl_subcliente       					= SUB客户.........：
+rpt_003_txt_lbl_oid_remesa_ori    					= OID Remesa的东方......：
+rpt_003_txt_lbl_resumo			   					= 分析报告
+rpt_003_txt_lbl_calidad			   					= 质量
+rpt_003_txt_lbl_codido_calidad	   					= 坏
+
+// TELA CORTE PARCIAL
+004_titulo_pagina									= 报告 - 半切
+004_lbl_titulo_busqueda								= 搜索部分剪切
+004_lbl_delegacion									= 代表团
+004_lbl_cliente										= 顾客
+004_lbl_sector										= 扇形
+004_lbl_proceso										= 过程
+004_lbl_canal                                       = 渠道
+004_lbl_fecha_transporte							= 数据传输
+004_lbl_fecha										= 日
+004_lbl_fecha_fin_conteo							= 结束日期计数
+004_lbl_formato_salida								= 输出格式
+004_btn_cliente										= 搜索客户
+004_btn_proceso										= 搜索过程
+
+004_csv_lbl_recuento								= 过程
+004_csv_lbl_fecha									= 日
+004_csv_lbl_letra									= 信
+004_csv_lbl_f22										= F22
+004_csv_lbl_oidRemesaOri                            = OID Remesa大利
+004_csv_lbl_codSubCliente                           = 鳕子客户端
+004_csv_lbl_estacion								= 站
+004_csv_lbl_descricion_estacion						= 说明站
+004_csv_lbl_descricion_divisa						= 说明货币
+004_csv_lbl_medio_pago								= 付款方法
+004_csv_lbl_descricion_medio_pago					= 说明付款方法
+004_csv_lbl_declarado_f22							= 宣布每票快件
+004_csv_lbl_ingresado_por_sobre						= 关于由SumaxRemessa加入
+004_csv_lbl_recontado								= 新编
+004_csv_lbl_recontado_declarado_remesa				= 新编 - 申报一批
+004_csv_lbl_ingresado_declarado_remesa				= 关于注册 - 申报一批
+004_csv_lbl_observaciones							= 评论
+004_csv_lbl_falsos									= 假
+
+rpt_004_txt_lbl_titulo								= 半切
+rpt_004_txt_lbl_recuento							= 流程.............：
+rpt_004_txt_lbl_transporte_del_dia					= D.首页运输：
+rpt_004_txt_lbl_transporte_ate						= D.最终运费..：
+rpt_004_txt_lbl_del_dia								= D.初始过程。
+rpt_004_txt_lbl_ate									= D.决赛的过程....：
+rpt_004_txt_lbl_conteo_del_dia						= D.结束连续。首页：
+rpt_004_txt_lbl_conteo_ate							= D.结束连续。决赛：
+rpt_004_txt_lbl_planta								= 植物...............：
+rpt_004_txt_lbl_cliente								= 客户..............：
+rpt_004_txt_lbl_letra								= 函件................：
+rpt_004_txt_lbl_subcliente       					= 客户SUB ..........：
+rpt_004_txt_lbl_oid_remesa_ori    					= OID出货...... ORI：
+rpt_004_txt_lbl_sucursal							= 分行.............：
+rpt_004_txt_lbl_fecha_transporte					= 日期.................：
+rpt_004_txt_lbl_letra_f22							= 函件................：
+rpt_004_txt_lbl_f22									= F22 ..................：
+rpt_004_txt_lbl_subcliente_f22     					= 客户SUB ..........：
+rpt_004_txt_lbl_sucursal_f22						= 分行.............：
+rpt_004_txt_lbl_fecha_transporte_f22				= 日期.................：
+rpt_004_txt_lbl_total								= 总
+rpt_004_txt_lbl_divisa								= 座右铭
+rpt_004_txt_lbl_declarado							= 声明
+rpt_004_txt_lbl_ingresado							= INGRESADO
+rpt_004_txt_lbl_recontado							= 新编
+rpt_004_txt_lbl_rec_declarado						= 拍摄。 - 东方电气。
+rpt_004_txt_lbl_ing_declarado						= ING。 - 东方电气。
+rpt_004_txt_lbl_sobre								= 关于
+rpt_004_txt_lbl_observaciones						= 评论
+rpt_004_txt_lbl_resumen_recuento					= 原则：
+rpt_004_txt_lbl_cantidad_cortes						= 法院：
+rpt_004_txt_lbl_falso								= 假
+
+// TELA RESPALDO COMPLETO
+005_titulo_pagina									= 报告 - 完整背书
+005_lbl_titulo_busqueda								= 搜索完全赞同
+005_lbl_delegacion									= 代表团
+005_lbl_cliente										= 顾客
+005_lbl_sector										= 扇形
+005_lbl_proceso										= 过程
+005_lbl_fecha_transporte							= 数据传输
+005_lbl_fecha										= 日
+005_lbl_fecha_fin_conteo							= 结束日期计数
+005_lbl_formato_salida								= 输出格式
+005_lbl_remesas_en_curso							= 汇款正在进行
+005_btn_cliente										= 搜索客户
+005_btn_proceso										= 搜索普罗塞索
+
+005_csv_lbl_recuento								= 过程
+005_csv_lbl_fecha									= 日
+005_csv_lbl_letra									= 信
+005_csv_lbl_f22										= F22
+005_csv_lbl_oidRemesaOri                            = OID Remesa大利
+005_csv_lbl_codSubCliente                           = 鳕子客户端
+005_csv_lbl_estacion								= 分公司
+005_csv_lbl_descricion_estacion						= 说明科
+005_csv_lbl_medio_pago								= 付款方法
+005_csv_lbl_descricion_divisa						= 说明货币
+005_csv_lbl_ingresado_por_sobre						= 关于输入
+005_csv_lbl_recontado								= 新编
+005_csv_lbl_recontado_ingresado						= 新编 - 加入
+005_csv_lbl_observaciones							= 评论
+005_csv_lbl_falsos									= 假
+
+rpt_005_txt_lbl_titulo								= 全面支持
+rpt_005_txt_lbl_transporte_del_dia					= D.运输INIT：
+rpt_005_txt_lbl_transporte_ate						= D.最终运费..：
+rpt_005_txt_lbl_del_dia								= D.初始过程。
+rpt_005_txt_lbl_ate									= D.决赛的过程....：
+rpt_005_txt_lbl_conteo_del_dia						= D.结束连续。首页：
+rpt_005_txt_lbl_conteo_ate							= D.结束连续。决赛：
+rpt_005_txt_lbl_planta								= 植物...............：
+rpt_005_txt_lbl_cliente								= 客户..............：
+rpt_005_txt_lbl_recuento							= 流程.............：
+rpt_005_txt_lbl_letra								= 函件................：
+rpt_005_txt_lbl_f22									= F22 ..................：
+rpt_005_txt_lbl_subcliente       					= 客户SUB ..........：
+rpt_005_txt_lbl_oid_remesa_ori    					= OID Remesa ORI .......：
+rpt_005_txt_lbl_sucursal							= 分行.............：
+rpt_005_txt_lbl_nrosobre							= 号............：
+rpt_005_txt_lbl_divisa								= 座右铭
+rpt_005_txt_lbl_medio_pago							= 支付手段
+rpt_005_txt_lbl_unidad								= 单位
+rpt_005_txt_lbl_valor_recontado						= 价值重述
+rpt_005_txt_lbl_declarado							= 声明
+rpt_005_txt_lbl_ingressado							= 进入
+rpt_005_txt_lbl_recontado							= 新编
+rpt_005_txt_lbl_diferencia							= 差分
+rpt_005_txt_lbl_total_nro_sobre						= 总号开
+rpt_005_txt_lbl_cant_respaldo						= QUANT。支持
+rpt_005_txt_lbl_total_general						= 总计
+rpt_005_txt_lbl_total								= 总
+rpt_005_txt_lbl_informacion_iac						= 信息公开法
+rpt_005_txt_lbl_meiopgto							= 支付手段
+rpt_005_txt_lbl_descripiciondivisa					= 座右铭
+rpt_005_txt_lbl_observaciones						= 评论
+
+//TELA BUSQUEDA CLIENTES
+006_titulo_pagina									= 搜索客户
+006_titulo_busqueda									= 搜索条件
+006_titulo_resultado								= 客户
+006_lbl_gdr_codigo									= 码
+006_lbl_gdr_descripcion								= 描述
+006_codigo_cliente									= 客户端代码
+006_descricao_cliente								= 说明客户
+006_seleccione_un_cliente							= 选择客户端
+
+// TELA DETALLE PARCIALES
+007_titulo_pagina									= 报告 - 部分细节
+007_lbl_titulo_busqueda								= 搜索部分细节
+007_lbl_delegacion									= 代表团
+007_lbl_fecha										= 日
+007_lbl_fecha_transporte							= 数据传输
+007_lbl_numero_remesa								= 数航运
+007_lbl_numero_precinto								= 数字专用区
+007_lbl_cliente										= 顾客
+007_lbl_subcliente									= 子客户端
+007_lbl_con_denominacion							= 随着指定
+007_lbl_con_incidencia								= 随着发病率
+007_lbl_formato_salida								= 输出格式
+007_btn_cliente										= 搜索客户
+007_btn_subcliente									= 搜索子客户端
+
+007_lbl_cheque										= 查
+007_lbl_ticket										= 票
+007_lbl_otro_valor									= 另一种价值
+
+007_csv_lbl_codigo_cliente							= 客户代码
+007_csv_lbl_nombre_cliente							= 客户名称
+007_csv_lbl_codigo_subcliente						= 代码SubCl
+007_csv_lbl_nombre_subcliente						= 命名SubCl“
+007_csv_lbl_punto_servicio							= PTO服务
+007_csv_lbl_fecha_proceso							= 数据处理
+007_csv_lbl_fecha_transporte						= 日期运输
+007_csv_lbl_numero_remesa							= 不出货
+007_csv_lbl_numero_precinto							= 号院内
+007_csv_lbl_valor_declarado_bulto					= 五， DECL袋
+007_csv_lbl_valor_declarado_remesa					= 五，陈述优惠。
+007_csv_lbl_numero_parcial							= 无偏
+007_csv_lbl_valor_declarado_parcial					= 五，部分陈述
+007_csv_lbl_valor_contado							= 计数值
+007_csv_lbl_diferencia								= 差异
+007_csv_lbl_falsos									= 假
+007_csv_lbl_observaciones							= 评论
+007_csv_lbl_denominacion							= 面值
+007_csv_lbl_cantidad								= 量
+007_csv_lbl_importe									= 总和
+007_csv_lbl_calidad									= 质量
+007_csv_lbl_codigo_calidad							= 坏
+
+rpt_007_lbl_titulo									= 部分细节
+rpt_007_lbl_planta									= 植物...............：
+rpt_007_lbl_cliente_filtro							= 客户..............：
+rpt_007_lbl_subcliente_filtro						= 子客户端...........：
+rpt_007_lbl_transporte_del_dia						= D.运输。首页：
+rpt_007_lbl_del_dia									= D.初始过程。
+rpt_007_lbl_hora_inicio								= 开始时间..........：
+
+rpt_007_lbl_ate										= D.决赛的过程....：
+rpt_007_lbl_transporte_ate							= D.最终运费..：
+rpt_007_lbl_hora_fim								= 结束时间.............：
+rpt_007_lbl_operario								= 工人.............：
+rpt_007_lbl_fecha_transp							= 运输日期......
+
+rpt_007_lbl_operario_filtro							= 工人.............：
+rpt_007_lbl_puesto_filtro							= 旅游................：
+rpt_007_lbl_num_remesa_filtro						= 一批.........编号：
+rpt_007_lbl_num_precinto_filtro						= 民........选区：
+
+rpt_007_lbl_posto									= 旅游................：
+rpt_007_lbl_cliente									= 客户..............：
+rpt_007_lbl_subcliente								= 子客户端...........：
+rpt_007_lbl_pto_servicio							= PTO ..​​........服务：
+rpt_007_lbl_fecha_proc								= 处理日期........：
+rpt_007_lbl_num_precinto							= 分局号..........：
+rpt_007_lbl_num_remesa								= 数...............：
+rpt_007_lbl_num_parcial								= 数...............：
+
+rpt_007_lbl_remesa									= 运输
+rpt_007_lbl_num_bulto								= POUCH
+rpt_007_lbl_parcial									= 局部
+rpt_007_lbl_val_dec_remesa							= 申报价值
+rpt_007_lbl_val_dec_bulto							= 申报价值
+rpt_007_lbl_val_dec_parcial							= 申报价值
+rpt_007_lbl_val_contado								= 计数值
+rpt_007_lbl_falsos									= 假
+rpt_007_lbl_denominaciones							= 面额
+rpt_007_lbl_importe									= 总和
+rpt_007_lbl_diferencias								= 差异
+rpt_007_lbl_diferenca_dec							= 宣
+rpt_007_lbl_diferenca_contado						= 计数
+rpt_007_lbl_diferenca_total							= 总
+rpt_007_lbl_diferenca_obs							= 评论
+rpt_007_lbl_efetivo									= 有效
+rpt_007_lbl_iacs									= 其他信息客户端
+rpt_007_lbl_qtde									= 量
+
+// TELA CONTADO POR PUESTO
+008_titulo_pagina									= 报告 - 告诉旅游
+008_lbl_titulo_busqueda								= 算旅游搜索
+008_lbl_delegacion									= 代表团
+008_lbl_fecha										= 日
+008_lbl_fecha_transporte							= 数据传输
+008_lbl_fecha_conteo								= 日期禁忌
+008_lbl_puesto										= 邮寄
+008_lbl_operario									= 工人
+008_lbl_hora										= 时间
+008_lbl_inicio										= 第一
+008_lbl_finalizacion								= 完成
+008_lbl_numero_remesa								= 多家船
+008_lbl_numero_precinto								= 专用区数
+008_lbl_cliente										= 顾客
+008_lbl_subcliente									= 子客户端
+008_lbl_con_denominacion							= 随着指定
+008_lbl_con_incidencia								= 调焦
+008_lbl_formato										= 输出格式
+008_msg_datas										= 填充字段“{0}”，“{1}”和“{2}”。
+008_msg_uma_data									= 填充字段为“{0}”或字段“{1}”或字段“{2}”。
+008_btn_cliente										= 搜索客户
+008_btn_subcliente									= 搜索子客户端
+008_btn_puesto										= 搜游
+008_btn_operario									= 搜寻工人
+
+008_csv_lbl_puesto									= 鳕鱼之旅
+008_csv_lbl_operario								= COD_（Operario）
+008_csv_lbl_codcliente								= 鳕客户
+008_csv_lbl_nombrecliente							= 客户名称
+008_csv_lbl_codsubcl								= 鳕子客户端
+008_csv_lbl_nombresubcl								= 名称的子客户端
+008_csv_lbl_pto_servicio							= 点SERVICO
+008_csv_lbl_fecha_proc								= 数据处理
+008_csv_lbl_fecha_transp							= 数据传输
+008_csv_lbl_num_remesa								= 在装运
+008_csv_lbl_num_precinto							= 在院内
+008_csv_lbl_val_dec_rem								= 申报一批
+008_csv_lbl_val_dec_bulto							= 申报袋
+008_csv_lbl_val_dec_parcial							= 宣布部分
+008_csv_lbl_val_contado								= 计数值
+008_csv_lbl_diferencia								= 差异
+008_csv_lbl_cheques									= 支票簿
+008_csv_lbl_falsos									= 假
+008_csv_lbl_obs										= 观察
+008_csv_lbl_efetivo									= 有效
+
+008_msg_soloamete_fecha_3dias						= 如果只填写字段{0}，{1} {2}的日期范围不能超过3天。
+008_msg_OperarioPuestoHora							= 为完成此字段{0}和{1}填写所要求的范围{2}。
+
+rpt_008_lbl_titulo									= 算的上游
+rpt_008_lbl_planta									= 植物：..............：
+rpt_008_lbl_cliente_filtro							= 客户端：.............：
+rpt_008_lbl_subcliente_filtro						= 端：..........：
+rpt_008_lbl_transporte_del_dia						= D.运输。首页：
+rpt_008_lbl_del_dia									= D.初始过程。
+rpt_008_lbl_hora_inicio								= 开始时间..........：
+
+rpt_008_lbl_ate										= D.决赛的过程....：
+rpt_008_lbl_transporte_ate							= D.最终运费..：
+rpt_008_lbl_hora_fim								= 结束时间.............：
+rpt_008_lbl_operario								= 工人.............：
+rpt_008_lbl_fecha_transp							= 运输日期......
+
+rpt_008_lbl_operario_filtro							= 工人.............：
+rpt_008_lbl_puesto_filtro							= 旅游................：
+rpt_008_lbl_num_remesa_filtro						= 一批.........编号：
+rpt_008_lbl_num_precinto_filtro						= 民........选区：
+
+rpt_008_lbl_posto									= 旅游................：
+rpt_008_lbl_cliente									= 客户..............：
+rpt_008_lbl_subcliente								= 子客户端...........：
+rpt_008_lbl_pto_servicio							= PTO ..​​........服务：
+rpt_008_lbl_fecha_proc								= 处理日期........：
+rpt_008_lbl_num_precinto							= 分局号..........：
+rpt_008_lbl_num_remesa								= 数...............：
+rpt_008_lbl_num_parcial								= 数...............：
+
+rpt_008_lbl_remesa									= 运输
+rpt_008_lbl_num_bulto								= POUCH
+rpt_008_lbl_parcial									= 局部
+rpt_008_lbl_val_dec_remesa							= 申报价值
+rpt_008_lbl_val_dec_bulto							= 申报价值
+rpt_008_lbl_val_dec_parcial							= 申报价值
+rpt_008_lbl_val_contado								= 计数值
+rpt_008_lbl_falsos									= 假
+rpt_008_lbl_denominaciones							= 面额
+rpt_008_lbl_diferencias								= 差异
+rpt_008_lbl_diferenca_dec							= 宣
+rpt_008_lbl_diferenca_contado						= 计数
+rpt_008_lbl_diferenca_total							= 总
+rpt_008_lbl_diferenca_obs							= 评论
+rpt_008_lbl_efetivo									= 有效
+rpt_008_lbl_qtde									= 量
+
+//TELA BUSQUEDA SUBCLIENTES
+009_titulo_pagina									= 搜索子客户端
+009_titulo_busqueda									= 搜索条件
+009_titulo_resultado								= 客户
+009_lbl_gdr_cliente									= 顾客
+009_lbl_gdr_codigo									= 码
+009_lbl_gdr_descripcion								= 描述
+009_codigo_subcliente								= 子客户端代码
+009_descricao_subcliente							= 说明子客户端
+009_seleccione_un_subcliente						= 选择子客户端
+009_lbl_cliente										= 顾客
+
+
+//TELA BUSQUEDA PROCESOS
+010_titulo_pagina									= 搜索过程
+010_titulo_busqueda									= 搜索条件
+010_titulo_resultado								= 流程
+010_lbl_delegacion									= 代表团
+010_lbl_cliente										= 顾客
+010_lbl_subcliente									= 子客户端
+010_lbl_puntoservicio								= 服务点
+010_lbl_canal										= 渠道
+010_lbl_subcanal									= 子信道
+010_grd_selecionar									= 选择
+010_grd_cliente										= 顾客
+010_grd_subcliente									= 子客户端
+010_grd_puntoservicio								= 服务点
+010_grd_canal										= 渠道
+010_grd_subcanal									= 子信道
+010_grd_proceso										= 过程
+010_grd_vigente										= 目前
+010_btn_subcliente									= 搜索子客户端
+010_btn_puntoservicio								= 搜索服务点
+010_seleccione_un_proceso							= 选择一个过程
+
+//TELA PRINCIPAL - SELECCIONAR DELEGACIÓN
+012_btn_confirmar									= 访问
+012_lbl_delegacion									= 代表团
+012_titulo											= 上市禁忌
+
+//TELA BUSQUEDA RECIBO F22 RESPALDO
+013_titulo_pagina									= 收据F22背书
+013_lbl_titulo_busqueda								= 搜索收据F22和背书
+013_lbl_delegacion									= 代表团
+013_lbl_cliente										= 顾客
+013_lbl_fecha_fin_conteo							= 结束日期计数
+013_lbl_fecha										= 日
+013_cod_pes											= 重量
+013_des_pes											= 重量
+013_cod_rea											= REAL
+013_des_rea											= REAL
+013_cod_dol											= DOLLAR
+013_des_dol											= DOLLARS
+013_cod_res											= RESPA
+013_des_res											= 数量。下
+013_cod_eur											= EUROS
+013_des_eur											= EUROS
+013_des_cheque										= 支票
+013_des_ticket										= 订票
+013_des_outro_valor								= 其他资产
+
+//TELA BUSQUEDA REGISTRO DE TIRAS
+014_titulo_pagina									= 选择注册地带
+014_pnlFiltros										= 过滤器
+014_lblCodigoATM									= ATM代码
+014_lblCliente										= 顾客
+014_lblSubcliente									= 子客户端
+014_lblPuntoServicio								= 服务点
+014_lblPeriodoContable								= 期间可计算
+014_btn_cliente										= 搜索客户
+014_btn_subcliente									= 搜索子客户端
+014_btn_punto_servicio								= 搜索点服务
+014_lblFechaInicio									= 开始日期
+014_lblFechaFim										= 年终
+014_btnBuscar										= 过滤
+014_lblTituloTabela									= 记录地带
+014_colFecha										= 日
+014_colCodigoAtm									= ATM代码
+014_colDesPeriodoContable							= P.可数
+014_colCliente										= 顾客
+014_colSubCliente									= 子客户端
+014_colPuntoServicio								= PTO服务
+014_colConsultar									= 请教
+
+//TELA BUSQUEDA REGISTRO DE TIRAS
+015_titulo_pagina									= 启用X X地带禁忌关系
+015_pnlATM											= 鉴定ATM
+015_lblCodigoATM									= ATM代码
+015_lblCliente										= 顾客
+015_lblSubcliente									= 子客户端
+015_lblPuntoServicio								= 服务点
+015_lblDescripcion									= 描述
+015_pnlHabilitaciones								= 资格
+
+015_colCodRemesaLegado								= 装船
+015_colFyhHabilitacion								= 日
+015_colCodInventarioContenedor						= 库存股
+015_colCodPrecintoContenedor						= 密封问题
+015_colCodMorfologiaComponente						= 识别码
+015_colDesDivisa									= 座右铭
+015_colCodDenominacion								= 面值
+015_colNelCantidadHabilitada						= 量
+015_colNumImporteHabilitado							= 总和
+015_colTotalDivisa									= 总货币
+015_colDivisa										= 座右铭
+
+015_TotalHabilitado									= 总计启用
+
+015_lblTiraRegistrada								= 剥去记录
+015_tdDeclaradoDispensadores						= 声明的掌柜
+015_tdCajetines										= 墨盒
+015_tdCantidad										= 量
+015_tdImporte										= 总和
+
+015_TcolCodMorfologiaComponente						= 识别码
+015_TcolDesDivisa									= 座右铭
+015_TcolDesDenominacion								= 面值
+015_TcolNelCantidadIntroducida						= 加载
+015_TcolNelCantidadDispensada						= DISP。
+015_TcolNelCantidadRechazada						= 拒绝
+015_TcolNelCantidadRemanente						= 其余
+015_TcolNumImporteIntroducido						= 加载
+015_TcolNumImporteDispensado						= DISP。
+015_TcolNumImporteRechazado							= 拒绝
+015_TcolNumImporteRemanente							= 其余
+015_TcolnumImporteDeclarado							= 宣
+
+015_tdDivisa										= 总的货币
+015_TotcolDesDivisa									= 座右铭
+015_TotcolNumImporteIntroducido						= 加载
+015_TotcolNumImporteRechazado						= 拒绝
+015_TotcolNumImporteRemanente						= 其余
+015_TotcolnumImporteDeclarado						= 宣
+
+015_tdConteoDispensadores							= 计数掌柜
+015_tdCajetinesConteo								= 墨盒
+
+015_ContcolCodRemesaConteo							= 装船
+015_ContcolDesDivisa								= 座右铭
+015_ContcolDesDenominacion							= 面值
+015_ContcolNumImporteContado						= 计数
+
+015_tdDivisaConteo									= 总的货币
+
+015_ContTotcolDesDivisa								= 座右铭
+015_ContTotcolNumImporteContado						= 计数
+
+015_lblDeclaradosIngresadores						= 插入宣布
+015_lblDeclaradosDepositos							= 宣布存款
+015_DecIngcolDesDivisa								= 座右铭
+015_DecIngcolDesTipoMedioPago						= 通过光电倍增管。
+015_DecIngcolNumImporteIngresado					= 宣
+
+015_lblPeriodoContable								= 期间可计算
+015_lblFecha										= 日
+
+015_lblContadosIngresadores							= 插入计数
+015_lblContadosDepositos							= 算作存款
+015_ContIngcolCodRemesaConteo						= 装船
+015_ContIngcolDesDivisa								= 座右铭
+015_ContIngcolDesTipoMedioPago						= 通过光电倍增管。
+015_ContIngcolNumImporteIngresado					= 计数
+
+015_msg001											= 无间隙补偿与记录的条状！
+015_msg002											= 宣布没有价值的掌柜！
+015_msg003											= 没有指望掌柜！
+015_msg004											= 没有计入插入！
+015_msg005											= 没有指望存款！
+015_msg006											= 没有价值声明的ingresadores！
+015_msg007											= 宣布存款没有价值！
+
+//TELA BUSQUEDA PARTE DE DIFERENCIAS
+016_titulo_pagina									= 部分差异
+016_lbl_titulo_busqueda								= 零件搜索的差异
+016_lbl_delegacion									= 代表团
+016_lbl_precinto_remesa								= 密封出货
+016_lbl_precinto_bulto								= 密封袋
+016_lbl_numero_albaran								= 交通号
+016_lbl_cliente										= 顾客
+016_btn_cliente										= 搜索客户
+016_lbl_subcliente									= 子客户端
+016_btn_subcliente									= 搜索子客户端
+016_lbl_punto_servicio								= PUNTO服务
+016_btn_punto_servicio								= 搜索Punto的服务
+016_lbl_fecha_conteo								= 日期计数
+016_lbl_fecha_conteo_desde							= 的
+016_lbl_fecha_conteo_hasta							= 至
+016_lbl_fecha_transporte							= 数据传输
+016_lbl_fecha_transporte_desde						= 的
+016_lbl_fecha_transporte_hasta						= 至
+016_lbl_contador									= 计数器
+016_lbl_supervisor									= 监
+016_btn_buscar										= 寻求
+016_btn_limpar										= 清洁
+016_titulo_grid										= 发现汇款
+016_btn_visualizar									= 想象
+016_btn_voltar										= 返回
+016_col_fecha_conteo								= 日期计数
+016_col_precinto_remesa								= 密封出货
+016_col_codigo_transporte							= 运输代号
+016_col_fecha_transporte							= 数据传输
+016_col_cliente										= 顾客
+016_col_subcliente									= 子客户端
+016_col_punto_servicio								= 服务点
+016_msg_remesa_obligatoria							= 你必须选择一个出货。
+
+//TELA BUSQUEDA PARTE DE DIFERENCIAS - DOCUMENTOS
+017_titulo_pagina									= 部分差异 - 文件
+017_lbl_precinto									= 密封出货
+017_col_fecha_creacion								= 创建日期
+017_col_numero_documento							= 文件编号
+017_col_doc_general									= 文件一般/袋/部分
+017_col_doc_incidencia								= 发病文件
+017_col_doc_justificacion							= 理由说明文件
+017_btn_visualizar									= 想象
+017_btn_volver										= 返回
+017_msg_documento_obligatorio						= 你必须至少选择一个文档。
+
+//TELA BUSQUEDA PUNTO SERVICIO
+018_titulo_pagina									= 搜索服务点
+018_titulo_busqueda									= 搜索条件
+018_titulo_resultado								= 客户
+018_lbl_gdr_codigo									= 码
+018_lbl_gdr_descripcion								= 描述
+018_codigo_puntoservicio							= 服务代码点
+018_descricao_puntoservicio							= 说明服务点
+018_seleccione_un_puntoservicio						= 选择一个服务点
+018_lbl_gdr_codigocliente						    = 客户代码
+018_lbl_gdr_descripcioncliente					    = 说明。顾客
+018_lbl_gdr_codigosubcliente					    = 子客户端代码
+018_lbl_gdr_descripcionsubcliente				    = 说明。子客户端
+018_lbl_gdr_codigopuntoservicio					    = 代码PTO。服务
+018_lbl_gdr_descripcionpuntoservicio			    = 说明。 PTO。服务
+
+//TELA REPORTAR PEDIDO BCP
+020_titulo_pagina												= 报告请求BCP
+020_lbl_delegacion											= 代表团
+020_lbl_tipo_especie											= 类型种类
+020_lbl_tipo_deposito										= 矿床类型
+020_lbl_fecha_conteo										= 日期计数
+020_lbl_fecha_conteo_desde							= 的
+020_lbl_fecha_conteo_hasta							= 至
+020_btn_reportar													= 报告
+020_btn_limpar													= 清洁
+020_lbl_titulo_busqueda								    = 搜索Request集合
+020_lbl_titulo_reportado							    = 报告的要求
+020_lst_especie_moneda									=  0 - 货币
+020_lst_especie_billete										=  1 - 请注意
+020_lst_deposito_centralizado						=  1 - 集中
+020_lst_deposito_servilock								=  2 - Servilock
+020_lbl_fecha_ultimo_envio								= 最后日期时间出货：
+020_btn_atualizar									= 更新
+020_col_especie										= 种类
+020_col_deposito									= 存款
+020_col_fecha_desde									= 日期由
+020_col_fecha_hasta									= 截至日期
+020_col_delegacion									= 代表团
+020_col_estado										= 州
+020_col_observacion									= 意见
+020_col_fecha_creacion								= 创建日期
+020_msg_sin_datos_retorno							= 没有注册过程中要显示的项目。
+
+//TELA BUSQUEDA INFORME RESULTADO CONTAJE
+019_titulo_pagina									= 信息结果计数
+019_lbl_titulo_busqueda								= 搜索结果计数信息
+019_lbl_delegacion									= 代表团
+019_lbl_precinto_remesa								= 密封出货
+019_lbl_precinto_bulto								= 密封袋
+019_lbl_numero_albaran								= 交通号
+019_lbl_cliente										= 顾客
+019_btn_cliente										= 搜索客户
+019_lbl_subcliente									= 子客户端
+019_btn_subcliente									= 搜索子客户端
+019_lbl_punto_servicio								= PUNTO服务
+019_btn_punto_servicio								= 搜索Punto的服务
+019_lbl_fecha_conteo								= 日期计数
+019_lbl_fecha_conteo_desde							= 的
+019_lbl_fecha_conteo_hasta							= 至
+019_lbl_fecha_transporte							= 数据传输
+019_lbl_fecha_transporte_desde						= 的
+019_lbl_fecha_transporte_hasta						= 至
+019_btn_buscar										= 寻求
+019_btn_limpar										= 清洁
+019_titulo_grid										= 发现汇款
+019_btn_visualizar									= 想象
+019_btn_voltar										= 返回
+019_msg_remesa_obligatoria							= 你必须选择一个出货。
+019_col_fecha_conteo								= 日期计数
+019_col_precinto_remesa								= 密封出货
+019_col_codigo_transporte							= 运输代号
+019_col_fecha_transporte							= 数据传输
+019_col_cliente										= 顾客
+019_col_subcliente									= 子客户端
+019_col_punto_servicio								= 服务点
+
+rpt_019_lbl_titulo_projecto							= 忌讳
+rpt_019_lbl_titulo_reporte							= 报告结果计数
+rpt_019_lbl_titulo_empresa							= 巴西PROSEGUR的S / A
+rpt_019_lbl_datos_cliente							= 客户数据
+rpt_019_lbl_cod_delegacion							= 代码代表团
+rpt_019_lbl_cliente									= 顾客
+rpt_019_lbl_sucursal								= 分公司
+rpt_019_lbl_fecha_recorida							= 数据传输
+rpt_019_lbl_datos_prosegur							= 数据PROSEGUR
+rpt_019_lbl_fecha_conteo							= 日期计数
+rpt_019_lbl_codigo_transporte						= 发行代码运输。
+rpt_019_lbl_codigo_usuario							= 用户
+rpt_019_lbl_parciales_contados						= 完整的电话号码
+rpt_019_lbl_titulo_iac								= 字段IAC
+rpt_019_precintobulto 				                = 密封袋
+rpt_019_precintoparcial                         	= 型号
+rpt_019_precintoremesa				                = 密封出货
+rpt_019_precintosbultos                         	= 密封袋
+rpt_019_precintosparciales                     		= 完整的电话号码
+rpt_019_lbl_resultado_general_titulo				= 一般结果计数
+rpt_019_lbl_nro_parciales_declarados				= 发行部分声明
+rpt_019_lbl_nro_parciales_contados					= 发行部分的计数
+rpt_019_lbl_nro_parciales_diferencia				= 部分差异
+rpt_019_lbl_resultado_general_moneda				= 货币
+rpt_019_lbl_resultado_general_declarado				= 宣
+rpt_019_lbl_resultado_general_contado				= 计数
+rpt_019_lbl_resultado_general_falta					= 缺乏
+rpt_019_lbl_resultado_general_sobra					= 吃剩的
+rpt_019_lbl_resultado_general_falsos				= 假
+rpt_019_lbl_detalle_conteo_titulo					= 详细计数
+rpt_019_lbl_detalle_denominacion					= 面值
+rpt_019_lbl_detalle_importe							= 进口
+rpt_019_lbl_detalle_contado							= 计数
+rpt_019_lbl_detalle_unidades						= 单位
+rpt_019_lbl_detalle_falsos							= 假
+rpt_019_lbl_detalle_deteriorados					= 恶化
+rpt_019_lbl_detalle_grandtotal						= 总总
+rpt_019_lbl_detalle_parciales_titulo				= 细节部分
+rpt_019_lbl_detalle_parciales_parcial				= 无偏
+rpt_019_lbl_detalle_parciales_divisa				= 座右铭
+rpt_019_lbl_detalle_parciales_cliente				= 顾客
+rpt_019_lbl_detalle_parciales_subcliente			= 子客户端
+rpt_019_lbl_detalle_parciales_punto_servicio		= PTO服务
+rpt_019_lbl_detalle_parciales_declarado				= 宣
+rpt_019_lbl_detalle_parciales_contado				= 计数
+rpt_019_lbl_observaciones_titulo					= 评论
+rpt_019_lbl_precintos_parciales						= 部分关闭
+rpt_019_lbl_numero_parcial							= 型号
+rpt_019_lbl_comentario								= 评论
+rpt_019_lbl_supervisor								= 监
+rpt_019_lbl_codigo_motivo							= 故障代码
+
+//TELA BÚSQUEDA PUESTO
+
+021_titulo_busqueda_puestos							= 搜索帖子
+021_lbl_subtitulospuestos							= 帖子
+021_lbl_subtituloscriteriosbusqueda					= 搜索条件
+021_lbl_sem_registro						        = 有没有记录。
+021_lbl_vigente										= 目前
+021_lbl_codigopuesto								= 代码后
+021_lbl_hostpuesto									= 主机puesto
+021_chk_vigente 									= 强制
+021_chk_no_vigente 									= 尚未生效
+021_chk_cualquiera 									= 任何
+021_lbl_delegacion									= 代表团
+021_seleccione_un_puesto							= 选择一个电台
+
+//TELA BÚSQUEDA OPERARIO
+
+022_titulo_busqueda_operario						= 工人搜索
+022_lbl_subtitulosoperario							= 工人
+022_lbl_subtituloscriteriosbusqueda					= 搜索条件
+022_lbl_sem_registro						        = 有没有记录。
+022_lbl_nombre										= 名
+022_lbl_apellido									= 姓
+022_lbl_login										= 注册
+022_lbl_delegacion									= 代表团
+022_seleccione_un_operario							= 选择一个工人
+
+// token
+tkn_token_nao_consumida                             = 访问令牌无效或过期
+tkn_tokenutil_token_invalida                        = 访问令牌无效
+
+//TELA REPORTES
+023_titulo_pagina									= 报告
+023_lblSubTituloreportes							= 报告
+023_lblDelegacion									= 代表团
+023_lblFechaConteo									= 日期禁忌
+023_lblFechaTransporte								= 数据传输
+023_btnAdicionar									= 新的配置
+023_btnEditar										= 设置报表
+023_btnExcluir										= 删除配置报告
+023_btnGerarRelatorio								= 生成选定报告
+023_msg_error_rangofecha							= 中的至少一个日期范围来填补。
+023_msg_error_reporte_vazio							= 报告至少有一个必须选择。
+023_msg_error_reporte_unico							= 请选择只有一个配置。
+023_msg_alert_excluir								= 要删除吗？
+023_err_campo_data_invalida							= 字段“{0}”不填充具有有效日期。
+023_msg_error_selecionar_reporte					= 请选择一个报告。
+023_col_selecionar									= 选择
+023_col_reporte										= 报告
+023_col_descricao									= 描述
+023_msg_erro_generico_configuracion_reporte 		= 报告“{0}”配置“{1}”并没有产生。错误：“{2}”。
+023_msg_erro_sinParametros							= 配置的报告“{0}”没有参数。
+023_msg_erro_sinParametrosCliente					= 配置的报告“{0}”有没有客户或集团客户。
+023_msg_erro_singrupoCliente						= 找不到客户集团“{0}”知情配置“{1}”。
+023_msg_erro_campoObrigatorioConfiguracion			= 字段“{0}”是必需的配置“{1}”。
+023_msg_erro_reporteNaoEncontrado					= 报告没有被发现或报告的基础上，配置有错误“{0}”。错误详细信息：{1}。
+023_msgDiretorioInvalido							= 无效配置目录“{0}”。
+023_msg_erro_formatoArchivoInvalido					= 配置在输入输出格式为“{0}”是无效的。
+023_msg_erro_clienteObrigatorio						= 客户端配置“{0}”没有被告知。
+023_msg_erro_subclienteObrigatorio					= 客户端配置“{0}”没有被告知。
+023_msg_erro_ptoServicoObrigatorio					= 服务点配置“{0}”不通知。
+023_msg_erro_grupoClienteObrigatorio				= 本集团的客户端配置“{0}”没有被告知。
+023_msg_erro_canalObrigatorio						= 通道设置为“{0}”没有被告知。
+023_msg_erro_subCanalObrigatorio					= 子信道配置“{0}”没有被告知。
+023_msg_erro_divisaObrigatorio						= 配置的座右铭“{0}”不通知。
+023_msg_erro_puestoObrigatorio						= puesto配置“{0}”没有被告知。
+023_msg_erro_contadorObrigatorio					= 计数器配置“{0}”没有被告知。
+023_msg_erro_delegacaoObrigatorio					= 代表团配置“{0}”没有被告知。
+023_btnConfiguracionGeneral							= 常规设置
+023_msg_erro_parametro_obligatorio					= 参数“{0}”是强制性的。
+023_msg_erro_reporte_nao_localizado 				= 报告 "{0}" 配置 "{1}" 未发现在报告服务器。
+023_msg_diretorio_reportes_invalido					= 报告定义的目录不存在或无法访问。
+
+
+//TELA CONFIGURAÇÃO REPORTES
+024_titulo_pagina									= 配置报告
+024_lblDescricaoConfiguracao						= 说明设置
+024_lblReporte										= 报告
+024_lblDelegacion									= 代表团
+024_lblFechaRecaudacionIni							= 日期计数
+024lblFechaTransporteIni							= 数据传输
+024_lblCliente										= 顾客
+024_btnCliente										= 搜索客户
+024_lblSubCliente									= 子客户端
+024_btnSubCliente									= 搜索子客户端
+024_lblPuntoServicio								= 服务点
+024_btnPuntoServicio								= 搜索服务点
+024_lblGrupoClientes								= 集团客户
+024_lblCanal										= 渠道
+024_lblSubCanal										= 子信道
+024_lblPuesto										= 邮寄
+024_lblDivisa										= 座右铭
+024_lblContador										= 计数器
+024_chkAgruparClientes								= 集团客户
+024_chkAgruparSubClientes							= 集团子客户端
+024_chkAgruparPuntosServicios						= 集团服务点
+024_chkAgruparGrupoClientes							= 按客户集团
+024_lblRuta											= 路线
+024_lblFormatoArchivo								= 输出格式
+024_rbnCSV											= CSV
+024_rbnPDF											= PDF
+024_rbnEXCEL										= EXCEL
+024_rbnEXCEL2010									= EXCELOPENXML
+024_rbnHTML											= MHTML
+024_btnGenerarInforme								= 生成报告
+024_msgDiretorioInvalido							= 无效目录
+024_lblCodigoConfiguracion							= 代码设置
+024_lblDescripcion 									= 说明设置
+024_lblNombreArchivo 								= 文件名
+024_msg_erro_reporte_nao_localizado 				= 残留 "{0}" 在报表服务器中没有被发现。
+024_erro_config_reporte								= 該報告“{0}”不是所有正確的設置。請檢查參數“{1}”
+
+//USER CONTROL DELEGACION E DATA
+025_lbldelegacion									= 代表团
+
+//TELA CONFIGURAÇÃO GERAL DE RELATÓRIO
+026_titulo_pagina									= 一般配置报告
+026_col_selecionar									= 选择
+026_col_DesReporte									= 报告
+026_col_CodReporte									= ID
+026_col_FormatoArchivo								= 文件格式
+026_col_NombreArchivo								= 文件名
+026_col_ExtensionArchivo							= 文件扩展名
+026_col_Separador									= 分离器
+
+//TELA CONFIGURAÇÃO GERAL DE RELATÓRIO E CONFIRGURACIONREPORT
+027_titulo_pagina									= Manuntenção一般配置报告
+027_lbl_Reporte										= 报告
+027_lbl_IDReporte									= ID报告
+027_lbl_FormatoArchivo								= 文件格式
+027_lbl_NombreArchivo								= 文件名
+027_lbl_ExtensionArchivo							= 文件扩展名
+027_lbl_Separador									= 分离器
+027_campoObrigatorio								= 该字段{0}是必需的。
+027_separador_invalido								= 字段分隔符不能为空。输入T为制表F固定，或其他字符，如标签。
+027_msg_tag_fechamento								= 现场：{0}。标签：{1}没有正确关闭。
+027_msg_formato_invalido							= 现场：{0}。无效的格式。
+027_msg_falta_igual									= 现场：{0}。标签（）必须有两个标签和内部
+027_msg_falta_parametro_anterior					= 现场：{0}。前标签：{1}：必须被告知的标签：[XX]，{XX}}，@ XX（XX
+027_msg_campo										= 现场：{0}。
+027_msg_campo_vazio									= 现场：{0}。标签：{1}不能为空。
+027_msg_tag_invalida								= 现场：{0}。标签：{1}是无效的。标签：[XX]，{XX}}，@ XX（XX
+027_msg_error_selecionar_reporte					= 请选择一个报告。
+027_msg_tag_substituicao							= 現場：{0}。標籤：^ ^應告知R或L前收盤標籤。例如^[ - ] R^：{1}。
+027_msg_parametro_permitir_nulo						= 参数 {0} 报告 {1} 不正确配置报表服务器上。必须允许空值。
+
+//CONTROLE DE CLIENTE, SUBCLIENTE, PTO SERVICO E GRUPO CLIENTE
+028_btnBuscaCliente									= 搜索客户
+028_btnBuscaSubCliente								= 搜索子客户端
+028_btnBuscaPtoServicio								= 搜索服务点
+028_tituloCliente									= 搜索客户
+028_tituloSubCliente								= 搜索子客户端
+028_tituloPtoServico								= 搜索服务点
+028_lblCliente										= 顾客
+028_lblSubcliente									= 子客户端
+028_lblPuntoServicio								= 服务点
+028_lblCodigo										= 码
+028_lblDescricao									= 描述
+028_lblCodigoSubCliente								= 子客户端代码
+028_lblDescricaoSubCliente							= 德。子客户端
+028_lblCodigoPtoServico								= 代码PTO服务
+028_lblDescricaoPtoServico							= 德。 PTO服务
+028_lblCodigoAlheio 								= 代码不经意
+028_lblDescricaoAlheio 								= 德。外侨
+028_lblCriterioBusca								= 搜索条件
+028_lblGrupoClientes								= 集团客户
+
+//PARAMETROS REPORTE SERVICE
+029_msg_formato_data_invalido						= 日期格式：{0}无效。
+029_msg_parametro_fecha_no_existe					= 该的参数P_FYH_CONTEO_DESDE，P_FEC_CONTEO_DESDE在报告中。
+029_msg_prefixo_fecha_invalido						= 前缀数据：{0}无效。
+029_msg_parametro_no_existe							= 参数{0}不存在在报告中。
+029_msg_valor_parametro_cantidad					= 参数量输入的值应该是R或L：{0}
+029_msg_valor_parametro_cantidad_numerico			= 参数量输入的值应该是，或LXX RXX XX应该是数字：{0}
+029_msg_parametro_sin_cerrar						= 参数：{0}是不正确关闭。
+029_msg_formato_invalido							= 无效的格式
+029_msg_fecha_conteo_sin_valor						= 价值不迄今报道的计数。
+029_msg_fecha_conteo_invalida						= 日期计数无效：{0}。
+029_msg_fecha_transporte_sin_valor					= 价值不迄今报道的航运。
+029_msg_fecha_transporte_invalida					= 数据传输无效：{0}。
+029_msg_valor_no_informado							= 参数值{0}没有被告知。
+029_msg_valor_parametro_cantidad_max				= 输入的值的参数量应该还是LXX RXX XX应该有最大值2147483647。
+
+//CONTROLE INVENTARIO
+030_lblSector										= 扇形
+030_lblInventario									= 庫存
+030_col_selecionar									= 選擇
+030_col_inventario									= 庫存
+030_col_data										= 日
+030_lblNovo											= 新
+030_lblHistorico									= 歷史
+
+// WEBCONFIG
+WEBCONFIG_CHAVE_INVALIDA							= Clave {0} no existe y o valor no válido {1}.
+
+//Migracao do layout
+genDelegacion									= Delegação
+genPais											= País
+genSector										= Setor
+
+//CONTROLE CLIENTE
+021_Cliente_Titulo								= Cliente
+021_Cliente_Popup_Titulo						= Busqueda de Cliente
+021_Cliente_Popup_Resultado						= Datos de Cliente
+021_Cliente_Popup_Filtro						= Criterios de Busqueda
+
+//CONTROLE SUBCLIENTE
+022_SubCliente_Titulo							= SubCliente
+022_SubCliente_Popup_Titulo						= Busqueda de SubCliente
+022_SubCliente_Popup_Resultado					= Datos de SubCliente
+022_SubCliente_Popup_Filtro						= Criterios de Busqueda
+
+//CONTROLE PUNTO SERVICIO
+023_PtoServicio_Titulo							= Punto de Servicio
+023_PtoServicio_Popup_Titulo					= Busqueda de Punto de Servicio
+023_PtoServicio_Popup_Resultado					= Datos de Punto de Servicio
+023_PtoServicio_Popup_Filtro					= Criterios de Busqueda
+
+//CONTROLE HELPER
+014_codigo										= Código:
+014_descricion									= Descripción:
+014_selecao_campo								= Seleccione un campo
+014_parametro_obrigatorio						= El parámetro '{0}' es obligatorio.
+014_ConsiderarSectoresHijos						= Considerar los sectores hijos en el resultado de la búsqueda
+
+//Calendario
+bntProximo										= Próximo 
+btnAnterior										= Anterior
+btnMoverArriba									= Acima
+btnMoverAbajo									= Abaixo
+horas											= hora(s)
+minutos											= minuto(s)
+segundos										= segundo(s)
+dias											= [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ]
+meses											= [ "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" ]
+btnAgora										= Agora 
+btnConfirma										= Confirma
+
+pagerFormatGrid									= Página {0} de {1} ({2} itens)
+
+021_Resultado_busqueda_puestos					= Dados de Postos
+
+
+022_Resultado_busqueda_Operarios					= Dados de Operários
+
+002_lblCodigo									= Codigo
+gen_sim											= Sim
+gen_nao											= Não
+
+002_lblDescripcion								= Descripción
+btnaceitar									= Aceptar
+
+027_lblFiltros										= Configuracion Filtro Reportes
+
+//InformacionGenesis
+InformacionGenesis_grid_FileName = Descripción
+InformacionGenesis_grid_FileVersion = Versión del Archivo
+InformacionGenesis_grid_ProductVersion = Versión del Producto
+
+//InformacionReportes
+InformacionReportes_titulo_pagina	= Información de Reportes {0}
+InformacionReportes_lbl_SubTitulo	= Información de Reportes {0}
+InformacionReportes_btnExportar		= Exportar

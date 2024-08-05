@@ -1,0 +1,315 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Master.master.vb" EnableTheming="true"
+    Inherits="Prosegur.Global.GesEfectivo.IAC.Web.Master.Master" %>
+
+<%@ Register Src="~/Controles/Erro.ascx" TagName="Erro" TagPrefix="uc1" %>
+<%@ Import Namespace="Prosegur.Framework.Dicionario" %>
+<!DOCTYPE html>
+
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/genesis.css")%>" rel="stylesheet" />
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/dhtmlgoodies_calendar.css")%>" rel="stylesheet" />
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/genesis_customization_theme.css")%>" rel="stylesheet" />
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/jquery-ui.custom.min.css")%>" rel="stylesheet" />
+<link href="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/js_color_picker_v2.css")%>" rel="stylesheet" />
+
+<!-- SCRIPT -->
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/jquery.min.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/jquery-ui.custom.min.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/jquery-ui-timepicker-addon.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/date-en-US.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/genesis.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/ie10fix.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/shortcut.js")%>"></script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/JS/Funcoes.js")%>"> </script>
+<script type="text/javascript" src="<%=Page.ResolveUrl("~/js/Master/Funcoes.js")%>"></script>
+
+<script type="text/javascript">
+    window.onerror = function()
+    {
+        PageMethods.isSessionExpired(OnSucceeded, OnFailed);
+        function OnSucceeded(result, usercontext, methodName) {
+            retorna(result);
+
+            function retorna(response) {
+
+                if (response != undefined) {
+                    if (response != '' || response)
+                    {
+                        funcUrlLoginExpired()
+                    }
+                }
+            }
+        }
+        function OnFailed(error, userContext, methodName) {
+            alert('<%= Tradutor.Traduzir("007_msg_usuario_sessao_expirada") %>');
+        }
+    }
+    
+
+    window.alert = function (message) {
+        ExibirMensagem(message, '<%= Tradutor.Traduzir("aplicacao") %>', '', '<%= Tradutor.Traduzir("btnFechar") %>');
+    }
+    var objIframe;
+
+    function AddRemovIdSelect(obj, hidden, isRadio, btnAceptar) {
+        if (isRadio) {
+            document.getElementById(hidden).value = '';
+        }
+        if (obj.checked) {
+            //Caso id já exista na lista o id duplicado é descartado.
+            if (document.getElementById(hidden).value.indexOf(obj.value + "|") < 0) {
+                document.getElementById(hidden).value += obj.value + "|";
+            } 
+        }
+        else {
+
+            var strtemp = document.getElementById(hidden).value.replace(obj.value + "|", "");
+            document.getElementById(hidden).value = strtemp;
+        }
+        if (isRadio) {
+            if (btnAceptar !== "") {
+                document.getElementById(btnAceptar).click();
+            }
+        }
+    }
+    function ExibirUrlModal(modal, iframe, url, tituloModal, altura, largura,efetuarReload,disparaEvento,btn) {
+        $(modal).attr('style', 'height:' + (altura + 20) + 'px; width:' + (largura + 10) + 'px; padding:0px;');
+        $(iframe).attr('style', 'height:' + altura + 'px; width:' + largura + 'px;');
+        $(iframe).attr('src', url);
+        $(iframe).ready(function () {
+            $('#dvBloquearTela').css('display', 'block');
+        });
+        $(iframe).load(function () {
+            $('#dvBloquearTela').css('display', 'none');
+        });
+    
+        $(modal).dialog({
+            autoOpen: false,
+            width: largura,
+            position: { my: "center center", at: "center center", of: window },
+            title: tituloModal,
+            resizable: false,
+            modal: true,
+            close: function () {
+                $(iframe).contents().find("body").html('');
+                if (efetuarReload) {
+                    window.location.reload();
+                }
+                else if (disparaEvento) {
+                    ExecutarClick(btn);
+                }
+            }
+        });
+        $(modal).dialog('open');
+        objIframe = iframe;
+    }
+
+    function FecharModal(divModal, iframe, btn) {
+        $(iframe).contents().find("body").html('');
+        $(divModal).dialog('close');
+        ExecutarClick(btn);
+    }
+    function ExecutarClick(btn) {
+        var button = document.getElementById(btn);
+        if(button)
+            button.click();
+    }
+    function SelecionarConfirmarExclusao(grid, msgSelecionar, msgItensMais, msgConfirmar, btn) {
+
+        if (VerificarRegistrosSelecionadosGridView(grid, msgSelecionar, msgItensMais, msgConfirmar)) {
+            $(document).ready(function () {
+                $('#dvBloquearTela').css('display', 'block');
+            });
+            $(document).load(function () {
+                $('#dvBloquearTela').css('display', 'none');
+            });
+            ExecutarClick(btn);
+        }
+    }
+    function ConfirmarExclusao(msg, btn) {
+        if (confirm(msg)) {
+            ExecutarClick(btn);
+            return true;
+        } else {
+            return false;
+        }
+    };
+
+    function SetValorHidden(hidden, valor) {
+        document.getElementById(hidden).value = valor;
+    }
+</script>
+<html>
+<head runat="server">
+    <title>Genesis</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True" AsyncPostBackTimeout="600">
+        </asp:ScriptManager>
+        <uc1:Erro ID="Erro1" runat="server" Visible="False" />
+        <div id="dvAlert" class="genesisAlert" style="display: none;">
+            <div class="fundo"></div>
+            <div id="dvAlertPanel" class="painel loading">
+                <div id="dvAlertLabel" class="Label">Loading</div>
+                <div id="dvAlertClose" class="Close" style="visibility: hidden;">
+                    <button type="button" onclick="Javascript: genesisAlertError('','');">x</button>
+                </div>
+            </div>
+            <div id="dvAlertErro" style="display: none;"></div>
+        </div>
+        <div id="divModal" runat="server" style="display: none">
+            <iframe id="ifrModal" runat="server"></iframe>
+        </div>
+        <div class="page">
+            <asp:Panel ID="pnlCabecalho" runat="server">
+                <div class="header">
+                    <div class="ui-gn-menu">
+                        <div class="menu-trigger">
+                            <asp:LinkButton runat="server" ID="linkImagemMenu" CausesValidation="false">
+                            <img src="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/img/logo.png")%>" alt="<%= Tradutor.Traduzir("TituloDefault")%>" />
+                            </asp:LinkButton>
+                        </div>
+                        <div class="menu-box">
+                            <div id="divMenu" runat="server" style="margin-top: 5px;">
+                                <ul id="menu" class="ui-menu-list ui-helper-reset">
+                                    <asp:Repeater runat="server" ID="repeatMenu" OnItemDataBound="repeatMenu_OnItemDataBound">
+                                        <ItemTemplate>
+                                            <li><a href="<%# DataBinder.Eval(Container.DataItem, "NavigateUrl")%>">
+                                                <img src="<%#DataBinder.Eval(Container.DataItem, "ImageUrl")%>" />
+                                                &nbsp; <span><%#DataBinder.Eval(Container.DataItem, "Text")%></span></a>
+                                                <ul id="menu" class="ui-menu-list ui-helper-reset">
+                                                    <asp:Repeater runat="server" ID="repeatSubMenu" OnItemDataBound="repeatSubMenu_OnItemDataBound">
+                                                        <ItemTemplate>
+                                                            <li><a href="<%# DataBinder.Eval(Container.DataItem, "NavigateUrl")%>">
+                                                                <img src="<%#DataBinder.Eval(Container.DataItem, "ImageUrl")%>" />
+                                                                &nbsp; <span><%#DataBinder.Eval(Container.DataItem, "Text")%></span></a>
+                                                                <ul id="SubSubMenu" class="ui-menu-list ui-helper-reset" runat="server">
+                                                                    <asp:Repeater runat="server" ID="repeatSubSubMenu">
+                                                                        <ItemTemplate>
+                                                                            <li><a href="<%# DataBinder.Eval(Container.DataItem, "NavigateUrl")%>">
+                                                                                <img src="<%#DataBinder.Eval(Container.DataItem, "ImageUrl")%>" />
+                                                                                &nbsp; <span><%#DataBinder.Eval(Container.DataItem, "Text")%></span></a>
+                                                                            </li>
+                                                                        </ItemTemplate>
+                                                                    </asp:Repeater>
+                                                                </ul>
+                                                            </li>
+                                                        </ItemTemplate>
+                                                    </asp:Repeater>
+                                                </ul>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-navigarion">
+                        <div class="page-title">
+                            <asp:Label runat="server" ID="lblHeaderTitulo"></asp:Label>
+                        </div>
+                        <div>
+                            <asp:HyperLink ID="linkSalir" CssClass="ui-gn-logoff" runat="server" NavigateUrl="~/LoginUnificado.aspx?Salir=1" />
+                        </div>
+                        <div class="gn-user">
+                            <div style="max-width: 600px; float: left">
+                                <asp:Label runat="server" ID="lblUsuarioLogado" Style="margin-right: 5px;"></asp:Label>
+                                <asp:Label runat="server" ID="lblPais" CssClass="limitText" Style="margin-right: 5px;"></asp:Label>
+                                <asp:Label runat="server" ID="lblDelegacion" CssClass="limitText" Style="margin-right: 5px;"></asp:Label>
+                            </div>
+                            <asp:HyperLink ID="linkSector" CssClass="limitText" runat="server"></asp:HyperLink>
+                        </div>
+                    </div>
+                    <asp:UpdatePanel runat="server" ID="updMenu">
+                        <ContentTemplate>
+                            <div class="ui-gn-navigation">
+                                <div class="ui-breadcrumb">
+                                    <ul>
+                                        <asp:Repeater ID="rptHistorico" runat="server" DataSource="<%#Historico%>">
+                                            <ItemTemplate>
+                                                <li><a href='<%#DataBinder.Eval(Container, "DataItem.Key")%>'>
+                                                    <img alt='<%#DataBinder.Eval(Container, "DataItem.Value")%>' src="<%=Page.ResolveUrl("~/App_Themes/Padrao/css/img/iconos/sub.png")%>">
+                                                    <%#DataBinder.Eval(Container, "DataItem.Value")%>
+                                                </a>&nbsp;&nbsp;&nbsp;</li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+            </asp:Panel>
+            <div class="layout-center" id="pnlConteudo">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <div id="dvBloquearTela" class="AlertLoading" style="display: none;">
+                </div>
+
+            </div>
+            <asp:Panel ID="pnlRodape" runat="server">
+                <asp:UpdatePanel runat="server">
+                    <ContentTemplate>
+                        <div class="ui-gn-panel-footer">
+                            <div class="ui-gn-version-panel">
+                                <div>
+                                    <asp:Label ID="lblVersao" runat="server"></asp:Label>
+                                </div>
+                            </div>
+                            <asp:Panel ID="pnlMenuRodape" CssClass="ui-gn-panel-left" runat="server" Visible="False">
+                                <div runat="server" id="divButtonsRodape" class="ui-gn-panel-center ui-gn-footer-panel-simple-main-template">
+                                    <div class="ui-gn-panel-left-2" runat="server">
+                                    </div>
+                                    <div runat="server" id="divButtonArea" class="ui-gn-simple-buttons-panel">
+                                        <div class="ui-gn-simple-buttons">
+                                            <asp:ContentPlaceHolder ID="cphBotonesRodapie" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+                                    </div>
+                                    <div class="ui-gn-panel-right" runat="server">
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <div class="ui-gn-institucional-panel">
+                            </div>
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </asp:Panel>
+        </div>
+
+        <asp:UpdateProgress ID="upp" runat="server" DisplayAfter="0" DynamicLayout="False">
+            <ProgressTemplate>
+                <div id="AlertDivAll" class="AlertLoading">
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+        <script type="text/javascript">
+            //Script necessário para evitar que dê erro ao clicar duas vezes em algum controle que esteja dentro do updatepanel.
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_initializeRequest(initializeRequest);
+
+            function initializeRequest(sender, args) {
+                if (prm.get_isInAsyncPostBack()) {
+
+                    args.set_cancel(true);
+
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>
+
+<style type="text/css">
+    .style1 {
+        height: 28px;
+    }
+
+    .botaoOcultar {
+        display: none;
+    }
+</style>

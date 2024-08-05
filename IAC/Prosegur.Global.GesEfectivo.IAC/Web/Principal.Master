@@ -1,0 +1,192 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Principal.master.vb"
+    Inherits="Prosegur.Global.GesEfectivo.IAC.Web.Principal" %>
+
+<%@ Register Src="Controles/Erro.ascx" TagName="Erro" TagPrefix="uc1" %>
+<%@ Register Src="Controles/Cabecalho.ascx" TagName="Cabecalho" TagPrefix="uc3" %>
+<%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dxmn" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>IAC</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     
+    
+    <asp:Literal ID="ltr_js" runat="server"></asp:Literal>
+    <script language="javascript" type="text/javascript">
+        window.onload = function () {
+
+            // Define o foco do primeiro controle
+            if (primeiroControleId != null && trim(primeiroControleId) != "") {
+
+                // Verifica se já definiu o primeiro controle
+                var definiuPrimeiroControle = false;
+
+                // Recupera os controles do tipo "input", "select", "textarea"
+                // document.getElementsByTagName() retorna uma lista não array
+                var controles = new Array();
+                addRange(controles, document.getElementsByTagName("input"));
+                addRange(controles, document.getElementsByTagName("select"));
+                addRange(controles, document.getElementsByTagName("textarea"));
+
+                // Se existe controles
+                if (controles != null && controles.length > 0) {
+
+                    // Para cada controle
+                    for (var i = 0; i < controles.length; i++) {
+
+                        // Procura o identificador do primeiro controle
+                        if (controles[i].id.indexOf(primeiroControleId) >= 0 && isVisible(controles[i])) {
+
+                            // Define o foco para o primeiro controle
+                            controles[i].focus();
+                            definiuPrimeiroControle = true;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // Recupera a tabela de menu
+            var menuTable = document.getElementById(menuId);
+            // Se existe menu
+            if (menuTable != null) {
+
+                var subMenuLink = null
+
+                if (menuTable.cells != null) {
+                    if (menuTable.cells.length >= 3) {
+
+                        // Recupera a penúltima célula da tabela
+                        // Usou-se -3, pois existe uma célula de espaçamento
+                        var penultimaCelula = menuTable.cells(menuTable.cells.length - 3);
+                        // Recupera o link da célula
+                        subMenuLink = penultimaCelula.getElementsByTagName("a");
+
+                    }
+                }
+
+                // Se existe link e o identificador do primeiro controle foi informado
+                if (subMenuLink != null && primeiroControleId != '') {
+                    // Adiciona ao evento 'onblur' do link, para setar o foco
+                    // para o primeiro objeto                        
+                    subMenuLink[0].onblur = function () {
+                        if (document.getElementById(idControleErro) == undefined) {
+                            // se link "Detalhes" não estiver visível, seta foco no primeiro controle da tela
+                            var primeroControle = document.getElementById(primeiroControleId)
+
+                            // Se o primeiro controle não foi achado
+                            if (primeroControle != null) {
+                                primeroControle.focus();
+                            }
+                            else {
+
+                                // Verifica se já definiu o primeiro controle
+                                var definiuPrimeiroControle = false;
+
+                                // Recupera os controles do tipo "input"
+                                var controles = document.getElementsByTagName("input");
+
+                                // Se existe controles
+                                if (controles != null && controles.length > 0) {
+
+                                    // Para cada controle
+                                    for (var i = 0; i < controles.length; i++) {
+
+                                        // Procura o identificador do primeiro controle
+                                        if (controles[i].id.indexOf(primeiroControleId) >= 0 && isVisible(controles[i])) {
+
+                                            // Define o foco para o primeiro controle
+                                            controles[i].focus();
+                                            definiuPrimeiroControle = true;
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                // Se não definiu o primeiro controle
+                                if (!definiuPrimeiroControle) {
+
+                                    // Recupera os controles do tipo "input", "select", "textarea"
+                                    var controles = new Array();
+                                    addRange(controles, document.getElementsByTagName("input"));
+                                    addRange(controles, document.getElementsByTagName("select"));
+                                    addRange(controles, document.getElementsByTagName("textarea"));
+                                    if (controles != null && controles.length > 0) {
+
+                                        // Para cada controle
+                                        for (var i = 0; i < controles.length; i++) {
+
+                                            if (controles[i].id.indexOf(primeiroControleId) >= 0 && isVisible(controles[i])) {
+                                                controles[i].focus();
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                        else {
+                            // se o link "Detalhes" estiver visível, seta foco para ele
+                            document.getElementById(idControleErro).focus();
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="principal">
+        <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/JS/FuncaoAjax.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tr>
+                <td>
+                    <uc3:Cabecalho ID="Cabecalho" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <dxmn:ASPxMenu ID="menuIAC" runat="server" AllowSelectItem="False" ShowPopOutImages="True" Width="100%" ItemAutoWidth="false" />
+                </td>
+            </tr>
+            <tr runat="server">
+                <td align="right">
+                    <uc1:Erro ID="Erro1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <div id="dvBloquearTela" class="AlertLoading" style='display: none;'></div>
+                        <div id="AlertDivAll" class="AlertLoading" style="visibility: hidden;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    <script language="javascript" type="text/javascript">
+        Sys.Browser.WebKit = {};
+        if (navigator.userAgent.indexOf('WebKit/') > -1) {
+            Sys.Browser.agent = Sys.Browser.WebKit;
+            Sys.Browser.version = parseFloat(navigator.userAgent.match(/WebKit\/(\d+(\.\d+)?)/)[1]);
+            Sys.Browser.name = 'WebKit';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.Abono">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="AbonosValor" Type="Prosegur.Genesis.Comon.Clases.Abono.AbonoValor" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="2.188" />
+        <Point X="4.25" Y="2.188" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.662" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="SnapshotsAbonoSaldo" Type="Prosegur.Genesis.Comon.Clases.Abono.AbonoValor" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="3.187" />
+        <Point X="4.25" Y="3.187" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.12" Y="0.07" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgECAAAAAQAiAAEAAAAFAAAAAAgAgAAEISAAAEAAgEA=</HashCode>
+      <FileName>Clases\Abono\Abono.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="AbonosValor" />
+      <Property Name="SnapshotsAbonoSaldo" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.AbonoValor">
+    <Position X="4.25" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Divisa" Type="Prosegur.Genesis.Comon.Clases.Abono.DivisaAbono" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="1.25" />
+        <Point X="8.75" Y="1.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.025" Y="0.066" Height="0.182" Width="0.707" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Abono" Type="Prosegur.Genesis.Comon.Clases.Abono.Abono" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="2.653" />
+        <Point X="2.5" Y="2.653" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.973" Y="0.023" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="AbonoSaldo" Type="Prosegur.Genesis.Comon.Clases.Abono.AbonoSaldo" FixedFromPoint="true">
+      <Path>
+        <Point X="5.438" Y="4.363" />
+        <Point X="5.438" Y="4.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgACQAAAAAAgAAAAAAGFABAECAAigAAgAAAAAAAEBAA=</HashCode>
+      <FileName>Clases\Abono\AbonoValor.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Divisa" />
+      <Property Name="Abono" />
+      <Property Name="AbonoSaldo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.DivisaAbono">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="ListaEfectivo" Type="Prosegur.Genesis.Comon.Clases.Abono.EfectivoAbono">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.088" Y="0.039" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ListaMedioPago" Type="Prosegur.Genesis.Comon.Clases.Abono.MedioPagoAbono" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="2.75" />
+        <Point X="12.312" Y="2.75" />
+        <Point X="12.312" Y="3.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.137" Y="0.104" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAACAAAEAAAAAAABAAAIgAAAAAAAgAAAAFA=</HashCode>
+      <FileName>Clases\Abono\DivisaAbono.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Totales" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListaEfectivo" />
+      <Property Name="ListaMedioPago" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.AbonoInformacion">
+    <Position X="0.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAABAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\Abono\AbonoInformacion.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.EfectivoAbono">
+    <Position X="8.75" Y="3.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAAAAFAAQBgAQAAAAEFAQAFBAAAgAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Clases\Abono\EfectivoAbono.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.MedioPagoAbono">
+    <Position X="11" Y="3.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAAAAFAAQAgAAAAAEEFAQABAAAAgAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Clases\Abono\MedioPagoAbono.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.TotalesAbono">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAwAAAAAgABAAAAAgAAAAEAAAA=</HashCode>
+      <FileName>Clases\Abono\TotalesAbono.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.SnapshotSaldo">
+    <Position X="6.75" Y="5.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Divisa" Type="Prosegur.Genesis.Comon.Clases.Abono.DivisaAbono" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.375" Y="5.25" />
+        <Point X="8.406" Y="5.142" />
+        <Point X="8.406" Y="2.125" />
+        <Point X="8.75" Y="2.125" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.12" Y="0.07" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAgAAAAEAEFAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\Abono\AbonoSaldoCuenta.vb</FileName>
+      <NewMemberFileName>Clases\Abono\AbonoSaldo.vb</NewMemberFileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Divisa" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.Abono.AbonoSaldo">
+    <Position X="3.5" Y="4.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Divisa" Type="Prosegur.Genesis.Comon.Clases.Abono.DivisaAbono" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="4.938" />
+        <Point X="6.45" Y="4.938" />
+        <Point X="6.45" Y="1.712" />
+        <Point X="8.75" Y="1.712" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ListaSaldoCuenta" Type="Prosegur.Genesis.Comon.Clases.Abono.SnapshotSaldo">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.012" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ListaTerminoIAC" Type="Prosegur.Genesis.Comon.Clases.TerminoIAC" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="5.125" />
+        <Point X="6.875" Y="5.125" />
+        <Point X="6.875" Y="4.3" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.241" Y="0.069" Height="0.182" Width="1.209" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAgAAAAAAEFSAAAAAAAgAAgAAAAAAAgAAE=</HashCode>
+      <FileName>Clases\Abono\AbonoSaldo.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Divisa" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListaSaldoCuenta" />
+      <Property Name="ListaTerminoIAC" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Prosegur.Genesis.Comon.Clases.TerminoIAC">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAEAEAABAASAAAAAAAAAAAAQAQAAAAAAAAAABAAA=</HashCode>
+      <FileName>Clases\TerminoIAC.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

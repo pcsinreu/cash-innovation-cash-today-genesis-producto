@@ -1,0 +1,1 @@
+﻿delete from inventariodetalle where idinventario = :idinventario

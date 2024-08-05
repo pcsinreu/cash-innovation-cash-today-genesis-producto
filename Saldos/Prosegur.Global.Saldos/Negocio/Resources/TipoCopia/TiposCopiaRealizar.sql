@@ -1,0 +1,1 @@
+﻿SELECT IdTipoCopia as Id, Descripcion FROM PD_TipoCopia

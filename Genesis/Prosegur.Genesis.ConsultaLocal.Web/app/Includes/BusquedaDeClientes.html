@@ -1,0 +1,51 @@
+﻿<div class="modal fade" id="BusquedaDeClientes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#ffe800;">
+                <h5 class="modal-title">Clientes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-stripped">
+                    <thead>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Cliente</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat-start="clipla in ClientesPla">
+                            <td>
+                                {{clipla.COD_CLIENTE}}
+                            </td>
+                            <td>
+                                {{clipla.DES_CLIENTE}}
+                            </td>
+                            <td>
+                                <input type="button" class="btn btn-primary" value="Seleccionar" ng-click="SeleccionarBanco(clipla)" />
+                            </td>
+                        </tr>
+                        <tr ng-if="$last" ng-repeat-end>
+                            <td colspan="3">
+                                <ul class="pagination">
+                                    <li class="page-item" ng-if="$parent.ClientesPla.page > 0" style="cursor:pointer"><a ng-click="ChangeClientesPlanificaion($parent.ClientesPla,'previous')" class="page-link">{{'LBL_ATRAS' | translate}}</a></li>
+                                    <li class="page-item"><a class="page-link">{{$parent.page + 1}}</a></li>
+                                    <li class="page-item" ng-if="$parent.ClientesPla.page +1 < $parent.ClientesPla.Pages" style="cursor:pointer"><a ng-click="ChangeClientesPlanificaion($parent.ClientesPla,'next')" class="page-link">{{'LBL_SIGUIENTE' | translate}}</a></li>
+                                    <li class="page-item"><a class="page-link" style="pointer-events:none">{{'LBL_TOTAL_PAGINAS' | translate}}:  {{$parent.ClientesPla.Pages}}</a></li>
+                                </ul>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

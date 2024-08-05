@@ -1,0 +1,72 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/Master.Master" AutoEventWireup="false" CodeBehind="ABMMaster.master.vb" Inherits="Prosegur.Global.GesEfectivo.NuevoSaldos.Web.ABMMaster" %>
+<%@ MasterType VirtualPath="~/Master/Master.Master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div class="content">
+        <!-- O fieldset serão os formulários de filtro da tela, possuindo os campos de filtro e o botão buscar -->
+        <fieldset class="ui-fieldset ui-fieldset-toggleable">
+            <legend class="ui-fieldset-legend ui-corner-all ui-state-default">
+                <span class="ui-fieldset-toggler ui-icon ui-icon-plusthick"></span>
+                <asp:Label ID="Label1" runat="server" Text="Filtro Saldos" />
+            </legend>
+            <div class="ui-fieldset-content">
+                <asp:ContentPlaceHolder ID="formFilter" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </fieldset>
+                
+         <div class="ui-datatable ui-widget">
+            <asp:UpdatePanel ID="upnSearchResults" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="true">
+                <ContentTemplate>
+                    <asp:ContentPlaceHolder ID="searchResults" runat="server"></asp:ContentPlaceHolder>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+       
+         <div class="ui-panel ui-widget ui-corner-all ui-entity">
+            <div class="ui-panel-titlebar ui-corner-all">
+                <span class="ui-panel-title">Nuevo: Cerradura</span></div>
+            <div class="ui-panel-content ">
+                <asp:UpdatePanel ID="upnFormEdit" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:ContentPlaceHolder ID="formEdit" runat="server"></asp:ContentPlaceHolder>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+    </div>
+
+
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBotonesRodapie" runat="server">
+   
+        <asp:Panel ID="pnlRodape" runat="server">
+            <div class="ui-gn-panel-footer">
+                <div class="ui-gn-version-panel">
+                    <div>
+                        <asp:Label ID="lblVersao" runat="server"></asp:Label></div>
+                </div>
+                <asp:Panel ID="pnlMenuRodape" class="ui-gn-panel-left" runat="server">
+                    <div class="ui-gn-panel-center ui-gn-footer-panel-simple-main-template">
+
+                        <div class="ui-gn-simple-buttons-panel">
+                            <div class="ui-gn-simple-buttons">
+                                <asp:ContentPlaceHolder ID="cphBotonesRodapieABM" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                        <div class="ui-gn-panel-right">
+                        </div>
+
+                    </div>
+                </asp:Panel>
+                <div class="ui-gn-institucional-panel">
+                </div>
+            </div>
+        </asp:Panel>
+  
+</asp:Content>
+
+

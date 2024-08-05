@@ -1,0 +1,1 @@
+﻿DELETE PD_Formulario WHERE IdFormulario = :IdFormulario

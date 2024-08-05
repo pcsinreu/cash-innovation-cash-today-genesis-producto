@@ -1,0 +1,1330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+	<PropertyGroup>
+		<VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+		<FileUpgradeFlags>
+		</FileUpgradeFlags>
+		<UpgradeBackupLocation>
+		</UpgradeBackupLocation>
+		<OldToolsVersion>4.0</OldToolsVersion>
+		<PublishUrl>publish\</PublishUrl>
+		<Install>true</Install>
+		<InstallFrom>Disk</InstallFrom>
+		<UpdateEnabled>false</UpdateEnabled>
+		<UpdateMode>Foreground</UpdateMode>
+		<UpdateInterval>7</UpdateInterval>
+		<UpdateIntervalUnits>Days</UpdateIntervalUnits>
+		<UpdatePeriodically>false</UpdatePeriodically>
+		<UpdateRequired>false</UpdateRequired>
+		<MapFileExtensions>true</MapFileExtensions>
+		<ApplicationRevision>0</ApplicationRevision>
+		<ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+		<IsWebBootstrapper>false</IsWebBootstrapper>
+		<UseApplicationTrust>false</UseApplicationTrust>
+		<BootstrapperEnabled>true</BootstrapperEnabled>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProductVersion>
+		</ProductVersion>
+		<SchemaVersion>
+		</SchemaVersion>
+		<ProjectGuid>{1F867D49-94A8-4D3A-A498-741EE9E2BA57}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Prosegur.Genesis.AccesoDatos</RootNamespace>
+		<AssemblyName>Prosegur.Genesis.AccesoDatos</AssemblyName>
+		<FileAlignment>512</FileAlignment>
+		<MyType>Windows</MyType>
+		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+		<SccProjectName>SAK</SccProjectName>
+		<SccLocalPath>SAK</SccLocalPath>
+		<SccAuxPath>SAK</SccAuxPath>
+		<SccProvider>SAK</SccProvider>
+		<TargetFrameworkProfile />
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<DefineDebug>true</DefineDebug>
+		<DefineTrace>true</DefineTrace>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DocumentationFile>Prosegur.Genesis.AccesoDatos.xml</DocumentationFile>
+		<NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<Prefer32Bit>false</Prefer32Bit>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+		<DefineDebug>false</DefineDebug>
+		<DefineTrace>true</DefineTrace>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DocumentationFile>Prosegur.Genesis.AccesoDatos.xml</DocumentationFile>
+		<NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+		<Prefer32Bit>false</Prefer32Bit>
+	</PropertyGroup>
+	<PropertyGroup>
+		<OptionExplicit>On</OptionExplicit>
+	</PropertyGroup>
+	<PropertyGroup>
+		<OptionCompare>Binary</OptionCompare>
+	</PropertyGroup>
+	<PropertyGroup>
+		<OptionStrict>Off</OptionStrict>
+	</PropertyGroup>
+	<PropertyGroup>
+		<OptionInfer>On</OptionInfer>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="DevExpress.Data.v10.1, Version=10.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\.Referencias\DevExpress\v10.1\DevExpress.Data.v10.1.dll</HintPath>
+		</Reference>
+		<Reference Include="DevExpress.Data.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\.Referencias\DevExpress\v13.2\DevExpress.Data.v13.2.dll</HintPath>
+		</Reference>
+		<Reference Include="DevExpress.Utils.v10.1, Version=10.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\.Referencias\DevExpress\v10.1\DevExpress.Utils.v10.1.dll</HintPath>
+		</Reference>
+		<Reference Include="DevExpress.Xpo.v13.2, Version=13.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\.Referencias\DevExpress\v13.2\DevExpress.Xpo.v13.2.dll</HintPath>
+		</Reference>
+		<Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\.Referencias\DevExpress\v10.1\DevExpress.XtraEditors.v10.1.dll</HintPath>
+		</Reference>
+		<Reference Include="Oracle.DataAccess, Version=4.112.4.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\..\..\..\..\..\..\oracle\product\11.2.0.4\client_x64\ODP.NET\bin\4\Oracle.DataAccess.dll</HintPath>
+		</Reference>
+		<Reference Include="Prosegur.DbHelper, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=1833a9fd5e21244f, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\.Referencias\Prosegur.DbHelper.dll</HintPath>
+		</Reference>
+		<Reference Include="Prosegur.Framework.Dicionario, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=6bb1f230141d8049, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\.Referencias\Prosegur.Framework.Dicionario.dll</HintPath>
+		</Reference>
+		<Reference Include="System" />
+		<Reference Include="System.configuration" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Data.Entity" />
+		<Reference Include="System.Data.Linq" />
+		<Reference Include="System.Data.OracleClient" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Runtime.Serialization" />
+		<Reference Include="System.Security" />
+		<Reference Include="System.ServiceModel" />
+		<Reference Include="System.Transactions" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Xml.Linq" />
+		<Reference Include="System.Data.DataSetExtensions" />
+	</ItemGroup>
+	<ItemGroup>
+		<Import Include="Microsoft.VisualBasic" />
+		<Import Include="System" />
+		<Import Include="System.Collections" />
+		<Import Include="System.Collections.Generic" />
+		<Import Include="System.Data" />
+		<Import Include="System.Diagnostics" />
+		<Import Include="System.Linq" />
+		<Import Include="System.Xml.Linq" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\GlobalAssemblyInfo.vb">
+			<Link>GlobalAssemblyInfo.vb</Link>
+		</Compile>
+		<Compile Include="Classes\Constantes.vb" />
+		<Compile Include="Classes\Util.vb" />
+		<Compile Include="Comon.vb" />
+		<Compile Include="Conteo\Remesa.vb" />
+		<Compile Include="Conteo\Parcial.vb" />
+		<Compile Include="Conteo\BultoParcializado.vb" />
+		<Compile Include="Conteo\RegistroMovimiento.vb" />
+		<Compile Include="Dashboard\ElementosProcesados.vb" />
+		<Compile Include="Dashboard\ValoresProcesados.vb" />
+		<Compile Include="GenesisSaldos\Abono\Comun.vb" />
+		<Compile Include="GenesisSaldos\Abono\Elemento.vb" />
+		<Compile Include="GenesisSaldos\Abono\Saldo.vb" />
+		<Compile Include="GenesisSaldos\Abono\SaldoEfectivo.vb" />
+		<Compile Include="GenesisSaldos\Abono\SaldoMedioPago.vb" />
+		<Compile Include="GenesisSaldos\Abono\SaldoTermino.vb" />
+		<Compile Include="GenesisSaldos\Abono\SnapShot.vb" />
+		<Compile Include="GenesisSaldos\Abono\Valor.vb" />
+		<Compile Include="GenesisSaldos\Abono\ValorEfectivo.vb" />
+		<Compile Include="GenesisSaldos\Abono\ValorMedioPago.vb" />
+		<Compile Include="GenesisSaldos\AcuerdosServicio.vb" />
+		<Compile Include="GenesisSaldos\Certificado\Filtros.vb" />
+		<Compile Include="GenesisSaldos\Cliente.vb" />
+		<Compile Include="GenesisSaldos\Clientes.vb" />
+		<Compile Include="GenesisSaldos\ConfirmarPeriodos.vb" />
+		<Compile Include="GenesisSaldos\Contenedor.vb" />
+		<Compile Include="GenesisSaldos\ContenedoresSector.vb" />
+		<Compile Include="GenesisSaldos\Copia.vb" />
+		<Compile Include="GenesisSaldos\Integracion\FechaValorOnline.vb" />
+		<Compile Include="GenesisSaldos\Integracion\ModificarMovimientos.vb" />
+		<Compile Include="GenesisSaldos\Integracion\RecuperarMAEsPlanificadas.vb" />
+		<Compile Include="GenesisSaldos\Logeo\Logeo.vb" />
+		<Compile Include="GenesisSaldos\Maquina.vb" />
+		<Compile Include="GenesisSaldos\Movimiento.vb" />
+		<Compile Include="GenesisSaldos\DocumentoElemento.vb" />
+		<Compile Include="GenesisSaldos\DocumentoPadre.vb" />
+		<Compile Include="GenesisSaldos\EfectivoDocumento.vb" />
+		<Compile Include="GenesisSaldos\EfectivoAnteriorDocumento.vb" />
+		<Compile Include="GenesisSaldos\Certificado\Formularios.vb" />
+		<Compile Include="GenesisSaldos\GrupoDocumentos.vb" />
+		<Compile Include="GenesisSaldos\HistoricoMovimentoGrupoDocumentos.vb" />
+		<Compile Include="GenesisSaldos\HistoricoMovimentacionDocumento.vb" />
+		<Compile Include="GenesisSaldos\Integracion\GrabarReciboTransporteManual.vb" />
+		<Compile Include="GenesisSaldos\Inventario.vb" />
+		<Compile Include="GenesisSaldos\MAE.vb" />
+		<Compile Include="GenesisSaldos\MedioPagoAnteriorDocumento.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\Ajuste.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\Balance.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\CashIn.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\CashOut.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\MoveIn.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\MoveOut.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\ProvisionEfectivo.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\Recuento.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\ShipIn.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\ShipOut.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\CierreFacturacion.vb" />
+		<Compile Include="GenesisSaldos\Movimientos\Acreditacion.vb" />
+		<Compile Include="GenesisSaldos\Pantallas\Transacciones.vb" />
+		<Compile Include="GenesisSaldos\ParametroReporte.vb" />
+		<Compile Include="GenesisSaldos\Periodos.vb" />
+		<Compile Include="GenesisSaldos\ReconfirmarPeriodos.vb" />
+		<Compile Include="GenesisSaldos\ResultadoReporte.vb" />
+		<Compile Include="GenesisSaldos\Saldos.vb" />
+		<Compile Include="GenesisSaldos\SaldosHistorico.vb" />
+		<Compile Include="GenesisSaldos\SaldosPorAcuerdo.vb" />
+		<Compile Include="GenesisSaldos\SaldosPorPeriodo.vb" />
+		<Compile Include="Genesis\ActualizarSaldosHistorico.vb" />
+		<Compile Include="Genesis\Aplicacion.vb" />
+		<Compile Include="Genesis\Cajero.vb" />
+		<Compile Include="Genesis\Canal.vb" />
+		<Compile Include="Genesis\ConfigGrid.vb" />
+		<Compile Include="Genesis\DatoBancario.vb" />
+		<Compile Include="Genesis\DelegacionPorFacturacion.vb" />
+		<Compile Include="Genesis\Diccionario.vb" />
+		<Compile Include="Genesis\Direccion.vb" />
+		<Compile Include="Genesis\Formularios.vb" />
+		<Compile Include="Genesis\Limites.vb" />
+		<Compile Include="Genesis\Log.vb" />
+		<Compile Include="GenesisSaldos\MedioPagoDocumento.vb" />
+		<Compile Include="GenesisSaldos\Saldo.vb" />
+		<Compile Include="Genesis\CodigoAjeno.vb" />
+		<Compile Include="Genesis\Calidad.vb" />
+		<Compile Include="Genesis\CaracteristicaTipoSector.vb" />
+		<Compile Include="Genesis\Cliente.vb" />
+		<Compile Include="Genesis\Elemento.vb" />
+		<Compile Include="Genesis\InformacaoAdicionalCliente.vb" />
+		<Compile Include="Genesis\Integracion.vb" />
+		<Compile Include="Genesis\Login.vb" />
+		<Compile Include="Genesis\Maquina.vb" />
+		<Compile Include="Genesis\Notificacion.vb" />
+		<Compile Include="Genesis\CargadorDropDown.vb" />
+		<Compile Include="Genesis\Pais.vb" />
+		<Compile Include="Genesis\Pantallas\Delegaciones.vb" />
+		<Compile Include="Genesis\Parametros.vb" />
+		<Compile Include="Genesis\Permiso.vb" />
+		<Compile Include="Genesis\Planificacion.vb" />
+		<Compile Include="Genesis\Puesto.vb" />
+		<Compile Include="Genesis\PuntoServicio.vb" />
+		<Compile Include="Genesis\Rol.vb" />
+		<Compile Include="Genesis\SubCanal.vb" />
+		<Compile Include="Genesis\ContadoEfectivo.vb" />
+		<Compile Include="Genesis\ContadoMedioPago.vb" />
+		<Compile Include="Genesis\Contenedor.vb" />
+		<Compile Include="Genesis\Delegacion.vb" />
+		<Compile Include="Genesis\EmisorDocumento.vb" />
+		<Compile Include="Genesis\DeclaradoEfectivo.vb" />
+		<Compile Include="Genesis\DeclaradoMedioPago.vb" />
+		<Compile Include="Genesis\Denominacion.vb" />
+		<Compile Include="Genesis\DiferenciaEfectivo.vb" />
+		<Compile Include="Genesis\DiferenciaMedioPago.vb" />
+		<Compile Include="Genesis\Efectivo.vb" />
+		<Compile Include="Genesis\MedioPago.vb" />
+		<Compile Include="Genesis\Parcial.vb" />
+		<Compile Include="Genesis\Planta.vb" />
+		<Compile Include="Genesis\Remesa.vb" />
+		<Compile Include="Genesis\Bulto.vb" />
+		<Compile Include="Genesis\DataSetReportes.vb" />
+		<Compile Include="GenesisSaldos\AccionContable.vb" />
+		<Compile Include="GenesisSaldos\AccionTransaccion.vb" />
+		<Compile Include="GenesisSaldos\CaracteristicaFormulario.vb" />
+		<Compile Include="GenesisSaldos\Certificado\Comun.vb" />
+		<Compile Include="GenesisSaldos\Certificado\Delegacion.vb" />
+		<Compile Include="GenesisSaldos\Certificado\SaldoEfectivo.vb" />
+		<Compile Include="GenesisSaldos\Certificado\SaldoMedioPago.vb" />
+		<Compile Include="GenesisSaldos\Certificado\Sector.vb" />
+		<Compile Include="GenesisSaldos\Certificado\SubCanal.vb" />
+		<Compile Include="GenesisSaldos\ConfiguracionNivelSaldo.vb" />
+		<Compile Include="GenesisSaldos\Cuenta.vb" />
+		<Compile Include="GenesisSaldos\EstadoAccionContable.vb" />
+		<Compile Include="GenesisSaldos\FiltroFormulario.vb" />
+		<Compile Include="GenesisSaldos\Formulario.vb" />
+		<Compile Include="GenesisSaldos\TipoDocumento.vb" />
+		<Compile Include="Genesis\AlgoritmoValidacion.vb" />
+		<Compile Include="Genesis\Sector.vb" />
+		<Compile Include="Genesis\SubCliente.vb" />
+		<Compile Include="Genesis\TerminoMedioPago.vb" />
+		<Compile Include="Genesis\Divisas.vb" />
+		<Compile Include="GenesisSaldos\Documento.vb" />
+		<Compile Include="GenesisSaldos\SaldoEfectivo.vb" />
+		<Compile Include="GenesisSaldos\SaldoMedioPago.vb" />
+		<Compile Include="GenesisSaldos\TransaccionEfectivo.vb" />
+		<Compile Include="GenesisSaldos\TransaccionMedioPago.vb" />
+		<Compile Include="Genesis\Formato.vb" />
+		<Compile Include="Genesis\GrupoTerminosIAC.vb" />
+		<Compile Include="Genesis\Mascara.vb" />
+		<Compile Include="Genesis\TerminoIAC.vb" />
+		<Compile Include="Genesis\TipoCliente.vb" />
+		<Compile Include="Genesis\TipoContenedor.vb" />
+		<Compile Include="Genesis\ListaValor.vb" />
+		<Compile Include="Genesis\TipoImpresora.vb" />
+		<Compile Include="Genesis\TiposBultos.vb" />
+		<Compile Include="Genesis\TipoSector.vb" />
+		<Compile Include="Genesis\TipoFormato.vb" />
+		<Compile Include="Genesis\TipoServicio.vb" />
+		<Compile Include="Genesis\Totales.vb" />
+		<Compile Include="Genesis\UnidadMedida.vb" />
+		<Compile Include="Genesis\Utilidad.vb" />
+		<Compile Include="Genesis\ValorIACBulto.vb" />
+		<Compile Include="Genesis\ValorIACParcial.vb" />
+		<Compile Include="Genesis\ValorIACRemesa.vb" />
+		<Compile Include="Helper\Denominacion.vb" />
+		<Compile Include="Helper\Maquina.vb" />
+		<Compile Include="Helper\Termino.vb" />
+		<Compile Include="Helper\TipoContenedor.vb" />
+		<Compile Include="Helper\TipoSector.vb" />
+		<Compile Include="Helper\Usuario.vb" />
+		<Compile Include="Job\ActualizarPeriodos.vb" />
+		<Compile Include="Job\ActualizarSaldosAcuerdos.vb" />
+		<Compile Include="Job\Depuracion.vb" />
+		<Compile Include="Job\GenerarPeriodos.vb" />
+		<Compile Include="Job\NotificarMovimientosNoAcreditados.vb" />
+		<Compile Include="Job\RecuperarNotificacion.vb" />
+		<Compile Include="My Project\Resources.Designer.vb">
+			<AutoGen>True</AutoGen>
+			<DesignTime>True</DesignTime>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<Compile Include="NuevoSalidas\ValorTerminoRemesa.vb" />
+		<Compile Include="Genesis\ValorTerminoMedioPagoElemento.vb" />
+		<Compile Include="Genesis\ValorTerminoDocumento.vb" />
+		<Compile Include="Genesis\ValorTerminoGrupoDocumento.vb" />
+		<Compile Include="Genesis\ValorTerminoIAC.vb" />
+		<Compile Include="Genesis\ValorTerminoMedioPago.vb" />
+		<Compile Include="Helper\Puesto.vb" />
+		<Compile Include="Helper\Canal.vb" />
+		<Compile Include="Helper\Cliente.vb" />
+		<Compile Include="Helper\Delegacion.vb" />
+		<Compile Include="Helper\HelperBuscaDatos.vb" />
+		<Compile Include="Helper\HelperGenerico.vb" />
+		<Compile Include="Helper\Planta.vb" />
+		<Compile Include="Helper\PuntoServicio.vb" />
+		<Compile Include="Helper\Sector.vb" />
+		<Compile Include="Helper\SubCanal.vb" />
+		<Compile Include="Helper\SubCliente.vb" />
+		<Compile Include="Helper\Util.vb" />
+		<Compile Include="My Project\AssemblyInfo.vb" />
+		<Compile Include="My Project\Application.Designer.vb">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Application.myapp</DependentUpon>
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Include="My Project\Settings.Designer.vb">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+		</Compile>
+		<Compile Include="NuevoSalidas\AutoDesglose.vb" />
+		<Compile Include="NuevoSalidas\BultoConverter.vb" />
+		<Compile Include="NuevoSalidas\Bulto.vb" />
+		<Compile Include="NuevoSalidas\Divisa.vb" />
+		<Compile Include="NuevoSalidas\Modulo.vb" />
+		<Compile Include="NuevoSalidas\Objeto.vb" />
+		<Compile Include="NuevoSalidas\Denominacion.vb" />
+		<Compile Include="NuevoSalidas\Puesto.vb" />
+		<Compile Include="NuevoSalidas\Remesa.vb" />
+		<Compile Include="NuevoSalidas\TipoModulo.vb" />
+		<Compile Include="NuevoSalidas\TipoBulto.vb" />
+		<Compile Include="NuevoSalidas\TipoMercancia.vb" />
+		<Compile Include="Preferencia.vb" />
+		<Compile Include="Reportes\InterfazResultado.vb" />
+		<Compile Include="Reportes\RecepcionRuta.vb" />
+		<None Include="Resources\BuscaClientesPorTipoPlanificacion.sql" />
+		<Content Include="Resources\Conteo\Parcial\ConteoRecuperarParcialesBulto.sql" />
+		<Content Include="Resources\Conteo\BultoParcializado\ConteoBultoParcializadoActualizarBultoPadre.sql" />
+		<Content Include="Resources\Conteo\RegistroMovimiento\ConteoRegistroMovimientoValidarModificacion.sql" />
+		<Content Include="Resources\Conteo\RegistroMovimiento\ConteoRegistroMovimientoActualizarBulto.sql" />
+		<Content Include="Resources\Dashboard\ValoresProcesados\Dashboard_ValoresProcesados_RetornaValoresProcesadosHora.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoElemento\AbonoElementoActualizarEstadoAbonoBulto.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoElemento\AbonoElementoActualizarEstadoAbonoRemesa.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoElemento\AbonoElementoDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoElemento\AbonoElementoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoSnapshotEfectivo\AbonoSaldoSnapshotEfectivoAnadir.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoSnapshotEfectivo\AbonoSaldoSnapshotEfectivoBorrar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoSnapshotMedioPago\AbonoSaldoSnapshotMedioPagoAnadir.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoSnapshotMedioPago\AbonoSaldoSnapshotMedioPagoBorrar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoSnapshot\AbonoSaldoSnapshotAnadir.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoSnapshot\AbonoSaldoSnapshotBorrar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoSnapshot\RecuperarAbonosSnapShot.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoTermino\ObtenerTerminosAbonoSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoTermino\AbonoSaldoTerminoAnadir.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldoTermino\AbonoSaldoTerminoBorrar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldo\AbonoSaldoAnadir.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldo\AbonoSaldoBorrar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldo\RecuperarAbonosSaldos.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldo\RecuperarTerminosSaldos.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoValorEfectivo\AbonoValorEfectivoDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoValorEfectivo\AbonoValorEfectivoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoValorMedioPago\AbonoValorMedioPagoDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoValorMedioPago\AbonoValorMedioPagoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoValor\AbonoValorDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoValor\AbonoValorInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoActualizar.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoCambiarEstadoRemesa.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoCamibarEstadoBulto.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoObtenerSaldosEfectivoCuentas.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoObtenerSaldosMedioPagoCuentas.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoRecuperarAbonoValores.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoRecuperarValoresAbonosValores.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\RecuperaFechaUltimoCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReporteExcluirParametrosResultado.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReporteExcluirResultado.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReporteExcluirParametros.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\ActualizarIdentificadorGrupoDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\AbonoSaldo\ActualizarIdentificadorDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfiguracionReporteRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\Contenedor\ObtenerFechaCreacionContenedor.sql" />
+		<Content Include="Resources\GenesisSaldos\Contenedor\ObtenerPosicionesSector.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\ActualizarBolEnviadoSOL.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\AtualizaEstadoDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoRecuperarRowVer.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentoRecuperarRowVer.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\ObtenerDocumentosFiltro.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\RecuperarDocumentosSinSalidaRecorrido.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\RecuperarDocumentoParaAlocacion.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoRecuperarCodigoComprobante.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_ExportadoSOL.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_LimparMensajeExterna.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_ValidarSiExisteCodigoExternoEnTransito.sql" />
+		<Content Include="Resources\GenesisSaldos\EfectivoAnteriorDocumento\EfectivoAnteriorDocumentoExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\EfectivoAnteriorDocumento\EfectivoAnteriorDocumentoRecuperarPorDoc.sql" />
+		<Content Include="Resources\GenesisSaldos\EfectivoAnteriorDocumento\EfectivoAnteriorDocumentoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentosRecuperarCaracteristicasPorCodigoComprobante.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\RecuperarEstadoGrupoDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\MedioPagoAnteriorDocumento\MedioPagoAnteriorDocumentoExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\MedioPagoAnteriorDocumento\MedioPagoAnteriorDocumentoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\MedioPagoAnteriorDocumento\MedioPagoAnteriorDocumentoRecuperarPorDoc.sql" />
+		<Content Include="Resources\GenesisSaldos\Movimientos\ActualizarExtradataMovimiento.sql" />
+		<Content Include="Resources\GenesisSaldos\ParametroReporte\ExcluirParametrosConfigCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\ParametroReporte\InserirParametrosConfigCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\ParametroReporte\ParametroReporteExcluirValor.sql" />
+		<Content Include="Resources\GenesisSaldos\ParametroReporte\ParametroReporteInserirValor.sql" />
+		<Content Include="Resources\GenesisSaldos\ParametroReporte\RecuperarParametrosPorTipo.sql" />
+		<Compile Include="Reportes\TraspaseResponsabilidad.vb" />
+		<Compile Include="Test.vb" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="My Project\Resources.resx">
+			<Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+			<CustomToolNamespace>My.Resources</CustomToolNamespace>
+			<SubType>Designer</SubType>
+			<LastGenOutput>Resources.Designer.vb</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="app.config" />
+		<None Include="My Project\Application.myapp">
+			<Generator>MyApplicationCodeGenerator</Generator>
+			<LastGenOutput>Application.Designer.vb</LastGenOutput>
+		</None>
+		<None Include="My Project\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<CustomToolNamespace>My</CustomToolNamespace>
+			<LastGenOutput>Settings.Designer.vb</LastGenOutput>
+		</None>
+		<None Include="Resources\Helper\BuscaCanal.sql" />
+		<None Include="Resources\Helper\BuscaPuntoServicio.sql" />
+		<None Include="Resources\Helper\BuscaSubCanal.sql" />
+		<None Include="Resources\Helper\BuscaSubCliente.sql" />
+		<None Include="Resources\NuevoSalidas\AutoDesglose\Salidas_AutoDesglose_RecuperarAutoDesglosePorDivisa.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarBolPreparadoPorBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarBolPreparadoPorRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarEstado.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarEstadoBultoConcorrencia.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarEstadoPorRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarPuestoAsignado.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_AsignarPuesto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_BloquearBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_BorrarBultosDeUnaRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_BorrarEfectivosBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_DesBloquearBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_InsertarBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_InsertarEfectivoBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarPrecintos.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ValidarCantidadPrecintos.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ValidarPrecintoDuplicadoPorBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ValidarServicioBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_VerificarActualizacionBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarEstadoRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarEstadoRemesaBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarEstadoRemesaConcorrencia.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarEstadoRemesaEArmado.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarPuestoAsignado.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarUsuarioDataPorDelegacionRemesaLegado.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_AsignarPuesto.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_BloquearRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_BorrarEfectivosRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_DesBloquearRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_InsertarEfectivoRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ObtenerSituacionRemesas.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarEstadoRemesa.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ValidarAlterarEstadoRemesaAsignado.sql" />
+		<None Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ValidarServicioRemesa.sql" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\IAC\Prosegur.Global.GesEfectivo.IAC\Integracion.ContractoServicio\Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio.vbproj">
+			<Project>{ac915fc6-2dd9-4cf9-bb48-eee4b82e4184}</Project>
+			<Name>Prosegur.Global.GesEfectivo.IAC.Integracion.ContractoServicio</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+			<Project>{4DC9EE4C-7177-466C-826C-49576EFF7375}</Project>
+			<Name>Prosegur.Genesis.Comon</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\Prosegur.Genesis.ContratoServicio\Prosegur.Genesis.ContractoServicio.vbproj">
+			<Project>{9ED42568-659A-4DD1-BE34-C14483DF71E6}</Project>
+			<Name>Prosegur.Genesis.ContractoServicio</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\Prosegur.Genesis.DataBaseHelper\Prosegur.Genesis.DataBaseHelper.vbproj">
+			<Project>{793d4601-2eaf-46e8-8451-f14f4e156d95}</Project>
+			<Name>Prosegur.Genesis.DataBaseHelper</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\Prosegur.Genesis.Exception\Prosegur.Genesis.Excepcion.vbproj">
+			<Project>{ED11E59E-9783-4F6C-948B-16530AE69DF8}</Project>
+			<Name>Prosegur.Genesis.Excepcion</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\Prosegur.Genesis.LogeoEntidades\Prosegur.Genesis.LogeoEntidades.csproj">
+			<Project>{597f55ce-540e-4011-a053-4ea1e3ac5442}</Project>
+			<Name>Prosegur.Genesis.LogeoEntidades</Name>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Resources\GenesisSaldos\Plantas\" />
+		<Folder Include="Resources\Genesis\ListaValorBulto\" />
+		<Folder Include="Resources\Genesis\Procedure\" />
+		<Folder Include="Test\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+	</ItemGroup>
+	<ItemGroup>
+		<BootstrapperPackage Include=".NETFramework,Version=v4.0">
+			<Visible>False</Visible>
+			<ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+			<Install>true</Install>
+		</BootstrapperPackage>
+		<BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+			<Visible>False</Visible>
+			<ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+			<Install>false</Install>
+		</BootstrapperPackage>
+		<BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+			<Visible>False</Visible>
+			<ProductName>.NET Framework 3.5 SP1</ProductName>
+			<Install>false</Install>
+		</BootstrapperPackage>
+		<BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+			<Visible>False</Visible>
+			<ProductName>Windows Installer 4.5</ProductName>
+			<Install>true</Install>
+		</BootstrapperPackage>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Resources\Comon\ComonRecuperarTotalizadoresSaldo.sql" />
+		<Content Include="Resources\Dashboard\ElementosProcesados\Dashboard_ElementosProcesados_InserirActualizar.sql" />
+		<Content Include="Resources\Dashboard\ValoresProcesados\Dashboard_RetornaSomaValoresProcesadosCliente.sql" />
+		<Content Include="Resources\Dashboard\ValoresProcesados\Dashboard_ValoresProcesados_InserirActualizar.sql" />
+		<Content Include="Resources\Dashboard\ValoresProcesados\Dashboard_ValoresProcesados_RetornaValoresProcesados.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoCambiarEstado.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoRecuperarAbonos.sql" />
+		<Content Include="Resources\GenesisSaldos\Abono\AbonoRecuperarAchivosGenerados.sql" />
+		<Content Include="Resources\GenesisSaldos\AccionContable\AccionContableInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\AccionContable\AccionContableRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\AccionContable\AccionContableRecuperarPorCodigo.sql" />
+		<Content Include="Resources\GenesisSaldos\AccionContable\AccionContableRecuperarPorIdentificador.sql" />
+		<Content Include="Resources\GenesisSaldos\AccionContable\AccionContableRecuperarSoloConEstadoAceptado.sql" />
+		<Content Include="Resources\GenesisSaldos\AccionContable\AccionContableVerificaMasDeUnoFormulario.sql" />
+		<Content Include="Resources\GenesisSaldos\AccionTransaccion\AccionTransaccionRecuperarPorAccionContable.sql" />
+		<Content Include="Resources\GenesisSaldos\CaracteristicaFormulario\CaracteristicaFormularioBorrarPorFormulario.sql" />
+		<Content Include="Resources\GenesisSaldos\CaracteristicaFormulario\CaracteristicaFormularioInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\CaracteristicaFormulario\CaracteristicaFormularioRecuperarIdentificador.sql" />
+		<Content Include="Resources\GenesisSaldos\CaracteristicaFormulario\CaracteristicaFormularioRecuperarPorFormulario.sql" />
+		<Content Include="Resources\GenesisSaldos\CaracteristicaFormulario\ObtenerCaracteristicasFormularioPorIdentificadorDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoDelegacion\CertificadoDelegacionDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoDelegacion\CertificadoDelegacionInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoFiltros\RecuperarDelegacionesPlantas.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoFiltros\RecuperarDetalles.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoFiltros\RecuperarSectores.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoFiltros\RecuperarSubCanales.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoEfectivo\CertificadoSaldoEfectivoDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoEfectivo\CertificadoSaldoEfectivoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoEfectivo\CertificadoSaldoEfectivoRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoEfectivo\CertificadoSaldoEfectivoRecuperarByOidSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoEfectivo\CertificadoSaldoEfectivoRecuperarUltimoDefinitivoPorCuenta.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoEfectivo\CertificadoSaldoEfectivoRecuperarUltimoDefinitivoPorCuentaConFiltros.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoMedioPago\CertificadoSaldoMedioPagoByOidSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoMedioPago\CertificadoSaldoMedioPagoDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoMedioPago\CertificadoSaldoMedioPagoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoMedioPago\CertificadoSaldoMedioPagoRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoMedioPago\CertificadoSaldoMedioPagoRecuperarUltimoDefinitivoPorCuenta.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSaldoMedioPago\CertificadoSaldoMedioPagoRecuperarUltimoDefinitivoPorCuentaConFiltros.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSector\CertificadoSectorDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSector\CertificadoSectorInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSubCanal\CertificadoSubCanalDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\CertificadoSubCanal\CertificadoSubCanalInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoObtenerNivelSaldosClienteTotalizador.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\BuscaCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoActualizarEstado.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoEsFechaHoraPlanCertificacionValida.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoRecuperarCodigo.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoRetornarCertificadosRelatorio.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\CertificadoRetornarOid.sql" />
+		<Content Include="Resources\GenesisSaldos\Certificado\ObtenerNivelSaldos.SQL" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReportAlterar.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReporteClienteExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReporteClienteInserir.SQL" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReporteExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReporteTipoClienteExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfigReporteTipoClienteInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ConfiguracionReporteInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ObtenerClientesReporte.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ObtenerConfiguracionReporte.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\ObtenerTipoClientesReporte.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionReporte\RecuperarConfiguracionReporte.sql" />
+		<Content Include="Resources\GenesisSaldos\ClienteTotalizador\ActualizarClienteTotalizadorSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\ConfiguracionNivelSaldo\ConfiguracionNivelSaldoRetornarOid.sql" />
+		<Content Include="Resources\GenesisSaldos\Copia\CopiaExcluirPorFormulario.sql" />
+		<Content Include="Resources\GenesisSaldos\Copia\CopiaInserirPorFormulario.sql" />
+		<Content Include="Resources\GenesisSaldos\Copia\CopiaRecuperarCopiaFormulario.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaActualizarConfiguracionNivelMovimientoDefecto.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaActualizarConfiguracionNivelMovimiento.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaActualizarNivelSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaActualizarTipoCuenta.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaDesactivarConfiguracionNivelMovimiento.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaGenerarConfiguracionNivelMovimiento.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaGenerarConfiguracionNivelSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaGenerarCuenta.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaGenerarNivelSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaObtenerCuenta_v2.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaReciclarAtajosNivelSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarConfiguracionNivelMovimiento1.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarConfiguracionNivelMovimiento.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarConfiguracionNivelSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarConfiguracionNivelSaldoPorIdentificador.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarCuenta.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarCuentaPorCodigos.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarCuentaPorIdentificador.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarCuentas.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarCuentasCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarCuentasPorCodigos.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarDatos.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarIdentificadoresPorCuentas.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarNivelSaldo.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarNivelSaldoPorConfiguracionMovimiento.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\CuentaRecuperarPorCodCliente.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\Cuente_ObtenerIdentificaroPorCodigosAjeno.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\ObtenerCuentasPorCodigos.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\Cuente_ObtenerIdentificaroCuentaPorCodigos.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\VerificaIntegridadIdentificadoresCanalSubCanal.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\VerificaIntegridadIdentificadoresClienteSubClientePuntoServicio.sql" />
+		<Content Include="Resources\GenesisSaldos\Cuenta\VerificaIntegridadIdentificadoresDelegacionPlantaSector.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoActualizar.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoAtualizarEstadoBulto.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoAtualizarEstadoRemesa.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoBultoExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoHistoricoElemento.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoPorDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoRecuperarInformacionesAdicionales.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoRecuperarPorIdentificadorBulto.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoRecuperarPorIdentificadorRemesa.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoRemesaExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\DocumentoElemento\DocumentoElementoVerificarDuplicidadeRemesa.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoEsGeneracionF22.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\ValidaCertificadoProvisional.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\ActualizarUsuarioFechaAlocarDesalocarDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoActualizarBolNoCertificar.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\ObtenerDocumentosPendientes.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoActualizaEstadoCodComprobante.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoRecuperarIdentificadorF22PorRemesa.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\ObtenerDocumentos.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoActualizaBolImpreso.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoActualizarFechaHoraPlanCertificacion.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoAtualizar.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoAtualizarCodigoComprobante.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoAtualizarEstado.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoConsultaDocumentos.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoDetalheElemento.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoETransaccionCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentoRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentosRecuperarNaoAlocados.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\DocumentosRecuperarPorRuta.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento\RecuperarEstadoDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_RecuperarDocumentosElementosConcluidos.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_HayCierreCajaEnCurso.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_ObtenerDocumentoPadreNoSustituto.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_ObtenerDocumento_Base.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_ObtenerDocumento_NoEnviadasSol.sql" />
+		<Content Include="Resources\GenesisSaldos\Documento_v2\Documento_ValidarSiExisteCodigoExterno.sql" />
+		<Content Include="Resources\GenesisSaldos\EfectivoDocumento\EfectivoDocumentoExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\EfectivoDocumento\EfectivoDocumentoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\EfectivoDocumento\EfectivoDocumentoRecuperarPorDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\EstadoAccionContable\EstadoAccionContableBorrarPorAccionContable.sql" />
+		<Content Include="Resources\GenesisSaldos\EstadoAccionContable\EstadoAccionContableInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\EstadoAccionContable\EstadoAccionContableRecuperarPorAccionContable.sql" />
+		<Content Include="Resources\GenesisSaldos\FiltroFormulario\FiltroFormularioRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioAtualizar.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioRecuperarOidPorCaracteristicas.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioRecuperarOidPorCaracteristicas_V2.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioRecuperarPorCaracteristicas.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioRecuperarPorCodigo.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioRecuperarPorConjuntoCaracteristicas.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioRecuperarPorIdentificador.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioRecuperarPorTipoSector.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioReenvioAutomatico.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioSubSelectRecuperarPorConjuntoCaracteristicas.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioVerificaHayDocumentos.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\FormularioVerificarSector.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\Formulario_ObtenerFormularioSimplificado.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerAccionContable_v2.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerCaracteristicas_v2.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerFormularios.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerFormulariosConLasCaracteristicas.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerFormulariosSimplificado.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerFormularios_v2.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerIAC_v2.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerIAC_v3.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerTerminos_v2.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\ObtenerTerminos_v3.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\RecuperarFormulario.sql" />
+		<Content Include="Resources\GenesisSaldos\Formulario\RecuperarTodosFormularios.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentoConsultaDocumentos.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentosActualizaBolImpreso.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentosActualizaBolImpresoIndividuales.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentosActualizaCodigoComprobante.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentosActualizar.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentosInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentosPorIDPadre.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\ObtenerGrupoDocumentosPorOid.sql" />
+		<Content Include="Resources\GenesisSaldos\GrupoDocumentos\GrupoDocumentosRecuperarIdentificadorPorCodigoComprobante.sql" />
+		<Content Include="Resources\GenesisSaldos\HistoricoGrupoDocumentos\HistoricoMovimentoGrupoDocumentosDeletar.sql" />
+		<Content Include="Resources\GenesisSaldos\HistoricoGrupoDocumentos\HistoricoMovimentoGrupoDocumentosInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\HistoricoGrupoDocumentos\HistoricoMovimentoGrupoDocumentosSelect.sql" />
+		<Content Include="Resources\GenesisSaldos\HistoricoMovimentacionDocumento\HistoricoMovimentacionDocumentoExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\HistoricoMovimentacionDocumento\HistoricoMovimentacionDocumentoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\HistoricoMovimentacionDocumento\HistoricoMovimentacionDocumentosObtener.sql" />
+		<Content Include="Resources\GenesisSaldos\HistoricoMovimentacionDocumento\HistoricoMovimentacionDocumentosRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\Inventario\InventarioRecuperar.sql" />
+		<None Include="Resources\GenesisSaldos\Saldo\SaldoDisponivelMedioPago.sql" />
+		<Content Include="Resources\GenesisSaldos\MAE\RetornaCantidadMAESPorClientes.sql" />
+		<Content Include="Resources\GenesisSaldos\MAE\RetornaSaldoClienteMAEDetallado.sql" />
+		<Content Include="Resources\GenesisSaldos\MAE\RetornaSaldoMAEPorCliente.sql" />
+		<Content Include="Resources\GenesisSaldos\MAE\RetornaSaldoTodasMAEPorDelegacion.sql" />
+		<Content Include="Resources\GenesisSaldos\MedioPagoDocumento\MedioPagoDocumentoInserir_v2.sql" />
+		<Content Include="Resources\GenesisSaldos\ResultadoReporte\ResultadoReporteActualizarConIdentificador.sql" />
+		<Content Include="Resources\GenesisSaldos\ResultadoReporte\ResultadoReporteAcutalizar.sql" />
+		<Content Include="Resources\GenesisSaldos\ResultadoReporte\ResultadoReporteInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\ResultadoReporte\ResultadoReporteRecuperarConParametros.sql" />
+		<Content Include="Resources\GenesisSaldos\ResultadoReporte\ResultadoReporteRecuperarIdentificador.sql" />
+		<Content Include="Resources\GenesisSaldos\ResultadoReporte\ResultadoReporteRecuperarIdentificadorConParametros.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoEfectivo\SaldoMedioPagoRecuperarDetallePorCuenta.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoEfectivo\SaldoObtenerPorSector.sql" />
+		<None Include="Resources\GenesisSaldos\Saldo\SaldoRecuperarTotalSinCanalSF.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\ValidarSaldoMedioPagoAnteriorXAtual.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\ValidarSaldoEfectivoAnteriorXAtual.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\CuadreSaldoMedioPagoAnteriorXAtual.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoConsultarSaldos.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\CuadreSaldoEfectivoAnteriorXAtual.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoEfectivoAnteriorModificacion.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoEfectivoAnterior.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoMedioPagoAnteriorModificacion.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoMedioPagoAnterior.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoMedioPagoModificar.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoEfectivoModificar.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionEfectivo\TransaccionEfectivo_ActualizarFechaHoraPlanCertificacion.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionEfectivo\TransaccionRecuperarTransaccionesFechas.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionEfectivo\TransaccionEfectivoHayTransacciones.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionMedioPago\TransaccionMedioPagoHayTransacciones.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionMedioPago\TransaccionMedioPago_ActualizarFechaHoraPlanCertificacion.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoRecuperarBultosRemesas.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoVerificarCantidadBultosMismoSector.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoActualizaPrecinto.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoActualizaPrecintoCodigoBolsa.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoActualizarCuadrado.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoActualizarCuenta.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoAtualizarEstadoAbono.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoHayDocumentoSalidasRecorrigoRelacionado.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoMismoSectorPadreDelBultoYPuesto.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoObtenerUltimoDocumentoIdBulto.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoObtenerUltimoDocumentoIdDocumento.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoSinCuadrar.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoVerificarEstado.sql" />
+		<Content Include="Resources\Genesis\Bulto\RecuperarIdentificadoresDocumentosBultos.sql" />
+		<Content Include="Resources\Genesis\Cajero\CajeroEsDatosATMValidos.sql" />
+		<Content Include="Resources\Genesis\Calidad\ObtenerCalidad_v2.sql" />
+		<Content Include="Resources\Genesis\Canal\Canal_ValidarCodigo.sql" />
+		<Content Include="Resources\Genesis\Canal\ObtenerCanalPorCodigo_v2.sql" />
+		<Content Include="Resources\Genesis\Canal\ObtenerCanalPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\Cliente\Cliente_ValidarCodigo.sql" />
+		<Content Include="Resources\Genesis\Cliente\ObtenerClientePorSubCliente.sql" />
+		<Content Include="Resources\Genesis\Cliente\ObtenerClientePorCodigo_v2.sql" />
+		<Content Include="Resources\Genesis\Cliente\ObtenerCodigoClientePorIdentificador.sql" />
+		<Content Include="Resources\Genesis\Cliente\RecuperarClienteTotalizadorSaldo.sql" />
+		<Content Include="Resources\Genesis\DatoBancario\AlterarBolDefecto.sql" />
+		<Content Include="Resources\Genesis\DatoBancario\BajaDatoBancario.sql" />
+		<None Include="Resources\Genesis\DatoBancario\GetDatoBancario.sql" />
+		<None Include="Resources\Genesis\DatoBancario\SetDatoBancario.sql" />
+		<Content Include="Resources\Genesis\Delegacion\DelegacionObtenerIdentificadorPorCodigo.sql" />
+		<Content Include="Resources\Genesis\Delegacion\Delegacion_ObtenerCodigoPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\Delegacion\Delegacion_ValidarCodigo.sql" />
+		<Content Include="Resources\Genesis\Delegacion\ObtenerCodigoDelegacionPorCodigoAjeno.sql" />
+		<Content Include="Resources\Genesis\Delegacion\ObtenerDelegacionesPorCodigos_V2.sql" />
+		<Content Include="Resources\Genesis\Denominacion\DenominacionObtener_v2.sql" />
+		<Content Include="Resources\Genesis\Denominacion\ValoresDenominacionAbonoContado.sql" />
+		<Content Include="Resources\Genesis\Denominacion\ValoresDenominacionAbonoDeclarado.sql" />
+		<Content Include="Resources\Genesis\Denominacion\ValoresDenominacionElemento_v3.sql" />
+		<Content Include="Resources\Genesis\Denominacion\ValoresDenominacionElemento_v2.sql" />
+		<Content Include="Resources\Genesis\Diccionario\ObtenerValorDiccionarioConGenericos.sql" />
+		<Content Include="Resources\Genesis\Diccionario\ObtenerValoresDiccionario.sql" />
+		<Content Include="Resources\Genesis\Diccionario\ObtenerValorDiccionario.sql" />
+		<Content Include="Resources\Genesis\Direccion\ObtenerDirecciones.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisasObtenerCodigosAjenos.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisasObtenerIdentificadoresDenominaciones.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisasObtenerIdentificadoresDivisas.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisasObtenerIdentificadoresMediosDePago.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisasObtenerValoresDelDocumento_v2.sql" />
+		<Content Include="Resources\Genesis\Divisas\ObtenerDivisas_v2.sql" />
+		<Content Include="Resources\Genesis\Divisas\ObtenerPlanxDivisas.sql" />
+		<Content Include="Resources\Genesis\Formulario\ObtenerPlanXMovimientos.sql" />
+		<Content Include="Resources\Genesis\GrupoTerminosIAC\ObtenerGrupoIAC_v2.sql" />
+		<Content Include="Resources\Genesis\GrupoTerminosIAC\obtenerGrupoTerminosIACPorProcesoIAC.sql" />
+		<Content Include="Resources\Genesis\ListaValor\ListaValorRecuperarComModulos.sql" />
+		<Content Include="Resources\Genesis\ListaValor\ObtenerListaValorPorElemento_v2.sql" />
+		<Content Include="Resources\Genesis\Log\GuardarLogExecucaoGenesisSalidas.sql" />
+		<Content Include="Resources\Genesis\Log\GuardarLogExecucaoGenesisATM.sql" />
+		<Content Include="Resources\Genesis\Log\GuardarLogExecucaoGenesisSaldos.sql" />
+		<Content Include="Resources\GenesisSaldos\MedioPagoDocumento\MedioPagoDocumentoExcluir.sql" />
+		<Content Include="Resources\GenesisSaldos\MedioPagoDocumento\MedioPagoDocumentoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\MedioPagoDocumento\MedioPagoDocumentoRecuperarPorDocumento.sql" />
+		<Content Include="Resources\GenesisSaldos\ObtenerCertificado\obterCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoEfectivo\SaldoEfectivoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoEfectivo\SaldoEfectivoRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoEfectivo\SaldoEfectivoRecuperarDetallePorCuenta.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoEfectivo\SaldoEfectivoRecuperarPorSector.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoEfectivo\VerificaSaldoEfectivoNegativoUltimaTransaccion.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoMedioPago\SaldoMedioPagoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoMedioPago\SaldoMedioPagoRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\SaldoMedioPago\VerificaSaldoMedioPagoNegativoUltimaTransaccion.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoBilletajexSector.sql" />
+		<None Include="Resources\GenesisSaldos\Saldo\SaldoDisponivelEfetivo.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoRankingClientes.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoRecuperarPorClienteCanal.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoRecuperarPorCuenta.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoRecuperarPorSector.sql" />
+		<Content Include="Resources\GenesisSaldos\Saldo\SaldoRecuperarTotal.sql" />
+		<None Include="Resources\GenesisSaldos\Saldo\SaldosCliente.sql" />
+		<Content Include="Resources\GenesisSaldos\Sequencies\SCodigoComprovante.sql" />
+		<Content Include="Resources\GenesisSaldos\TipoDocumento\TipoDocumentoRecuperarPorCodigo.sql" />
+		<Content Include="Resources\GenesisSaldos\TipoDocumento\TipoDocumentoRecuperarTodos.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionEfectivo\TransaccionEfectivoActualizarOidCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionEfectivo\TransaccionEfectivoEstornoSustituicion.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionEfectivo\TransaccionEfectivoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionEfectivo\TransaccionEfectivoRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionEfectivo\TransaccionEfectivoRecuperarParaEstorno.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionMedioPago\TransaccionMedioPagoActualizarOidCertificado.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionMedioPago\TransaccionMedioPagoEstornoSustituicion.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionMedioPago\TransaccionMedioPagoInserir.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionMedioPago\TransaccionMedioPagoRecuperar.sql" />
+		<Content Include="Resources\GenesisSaldos\TransaccionMedioPago\TransaccionMedioPagoRecuperarParaEstorno.sql" />
+		<Content Include="Resources\GenesisSaldos\ValidaCertificacion\BuscaClienteCertificado.sql" />
+		<Content Include="Resources\Genesis\BilleteFalso\BilleteFalsoInserir.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoAtualizar.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoAtualizarEstado.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoAtualizarIdentificadorDocumento.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoCerradoPorIdentificadorRemesa.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoExcluir.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoInserir.sql" />
+		<Content Include="Resources\Genesis\Bulto\BultoRecuperarPorDocumento.sql" />
+		<Content Include="Resources\Genesis\Calidad\CalidadRecuperar.sql" />
+		<Content Include="Resources\Genesis\Calidad\ObtenerCalidades.sql" />
+		<Content Include="Resources\Genesis\Calidad\ObtenerCalidadPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\CaracteristicaTipoSector\CaracteristicaTipoSectorPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\Cliente\ClienteIdentificadoresTotalizadorSaldo.sql" />
+		<Content Include="Resources\Genesis\Cliente\ClienteIdentificadoresTotalizadorSaldoSubCliPtoServicio.sql" />
+		<Content Include="Resources\Genesis\Cliente\ObtenerClientePorCodigo.sql" />
+		<Content Include="Resources\Genesis\Cliente\ObtenerIdentificadorClientePorCodigo.sql" />
+		<Content Include="Resources\Genesis\Cliente\RecuperarCodigoMigracion.sql" />
+		<Content Include="Resources\Genesis\CodigoAjeno\RecuperarCodigosAjenos.sql" />
+		<Content Include="Resources\Genesis\CodigoAjeno\RecuperarValorCodigoAjeno.sql" />
+		<Content Include="Resources\Genesis\ContadoEfectivo\ContadoEfectivoExcluirBulto.sql" />
+		<Content Include="Resources\Genesis\ContadoEfectivo\ContadoEfectivoExcluirParcial.sql" />
+		<Content Include="Resources\Genesis\ContadoEfectivo\ContadoEfectivoExcluirRemesa.sql" />
+		<Content Include="Resources\Genesis\ContadoEfectivo\ContadoEfectivoInserir.sql" />
+		<Content Include="Resources\Genesis\ContadoMedioPago\ContadoMedioPagoExcluirrBulto.sql" />
+		<Content Include="Resources\Genesis\ContadoMedioPago\ContadoMedioPagoExcluirRemesa.sql" />
+		<Content Include="Resources\Genesis\ContadoMedioPago\ContadoMedioPagoExcluirrParcial.sql" />
+		<Content Include="Resources\Genesis\ContadoMedioPago\ContadoMedioPagoInserir.sql" />
+		<Content Include="Resources\Genesis\Contenedor\ContenedorVerificarRemesaTieneContenedor.sql" />
+		<Content Include="Resources\Genesis\DeclaradoEfectivo\DeclaradoEfectivoExcluirBulto.sql" />
+		<Content Include="Resources\Genesis\DeclaradoEfectivo\DeclaradoEfectivoExcluirParcial.sql" />
+		<Content Include="Resources\Genesis\DeclaradoEfectivo\DeclaradoEfectivoExcluirRemesa.sql" />
+		<Content Include="Resources\Genesis\DeclaradoEfectivo\DeclaradoEfectivoInserir.sql" />
+		<Content Include="Resources\Genesis\DeclaradoEfectivo\DeclaradoEfectivoRecuperarValor.sql" />
+		<Content Include="Resources\Genesis\DeclaradoEfectivo\DeclaradoEfectivoRecuperarValorDivisa.sql" />
+		<Content Include="Resources\Genesis\DeclaradoMedioPago\DeclaradoMedioPagoExcluirBulto.sql" />
+		<Content Include="Resources\Genesis\DeclaradoMedioPago\DeclaradoMedioPagoExcluirParcial.sql" />
+		<Content Include="Resources\Genesis\DeclaradoMedioPago\DeclaradoMedioPagoExcluirRemesa.sql" />
+		<Content Include="Resources\Genesis\DeclaradoMedioPago\DeclaradoMedioPagoInserir.sql" />
+		<Content Include="Resources\Genesis\DeclaradoMedioPago\DeclaradoMedioPagoRecuperarValor.sql" />
+		<Content Include="Resources\Genesis\DeclaradoMedioPago\DeclaradoMedioPagoRecuperarValorDivisa.sql" />
+		<Content Include="Resources\Genesis\Delegacion\ObtenerDelegacionesPorCodigos.sql" />
+		<Content Include="Resources\Genesis\Delegacion\ObtenerDelegacionPorIdentificadorPlanta.sql" />
+		<Content Include="Resources\Genesis\Delegacion\ObtenerDelegacionPorIdentificadorSector.sql" />
+		<Content Include="Resources\Genesis\Delegacion\ObtenerDelegacionPorOid.sql" />
+		<Content Include="Resources\Genesis\Denominacion\DenominacionesRecuperar.sql" />
+		<Content Include="Resources\Genesis\Denominacion\DenominacionRecuperar.sql" />
+		<Content Include="Resources\Genesis\Denominacion\ObtenerDenominaciones.sql" />
+		<Content Include="Resources\Genesis\Denominacion\RecuperarDenominacionesInactivas.sql" />
+		<Content Include="Resources\Genesis\DiferenciaEfectivo\DiferenciaEfectivoExcluirBulto.sql" />
+		<Content Include="Resources\Genesis\DiferenciaEfectivo\DiferenciaEfectivoExcluirParcial.sql" />
+		<Content Include="Resources\Genesis\DiferenciaEfectivo\DiferenciaEfectivoExcluirRemesa.sql" />
+		<Content Include="Resources\Genesis\DiferenciaEfectivo\DiferenciaEfectivoInserir.sql" />
+		<Content Include="Resources\Genesis\DiferenciaEfectivo\DiferenciaEfectivoRecuperar.sql" />
+		<Content Include="Resources\Genesis\DiferenciaEfectivo\DiferenciaEfectivoRecuperarValorDivisa.sql" />
+		<Content Include="Resources\Genesis\DiferenciaMedioPago\DiferenciaMedioPagoExcluirBulto.sql" />
+		<Content Include="Resources\Genesis\DiferenciaMedioPago\DiferenciaMedioPagoExcluirParcial.sql" />
+		<Content Include="Resources\Genesis\DiferenciaMedioPago\DiferenciaMedioPagoExcluirRemesa.sql" />
+		<Content Include="Resources\Genesis\DiferenciaMedioPago\DiferenciaMedioPagoInserir.sql" />
+		<Content Include="Resources\Genesis\DiferenciaMedioPago\DiferenciaMedioPagoRecuperarValor.sql" />
+		<Content Include="Resources\Genesis\DiferenciaMedioPago\DiferenciaMedioPagoRecuperarValorDivisa.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisaRecuperarPorCodigoDenominacion.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisaRecuperarValorConIdBulto.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisaRecuperarValorConIdParcial.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisaRecuperarValorConIdRemesa.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisaRecuperarValoresPorCuentaEfectivo.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisaRecuperarValoresPorCuentaMedioPago.sql" />
+		<Content Include="Resources\Genesis\Divisas\DivisasRecuperarValoresPorDocumento.sql" />
+		<Content Include="Resources\Genesis\Divisas\ObtenerAlgoritmoValidacion.sql" />
+		<Content Include="Resources\Genesis\Divisas\ObtenerDenominacionesPorDivisa.sql" />
+		<Content Include="Resources\Genesis\Divisas\ObtenerDivisas.sql" />
+		<Content Include="Resources\Genesis\Divisas\ObtenerFormato.sql" />
+		<Content Include="Resources\Genesis\Divisas\ObtenerMascara.sql" />
+		<Content Include="Resources\Genesis\Divisas\ObtenerValoresPosiblesPorTermino.sql" />
+		<Content Include="Resources\Genesis\Divisas\RecuperarDivisasInactivas.sql" />
+		<Content Include="Resources\Genesis\Efectivo\EfectivoRecuperarValorContadoNivelBulto.sql" />
+		<Content Include="Resources\Genesis\Efectivo\EfectivoRecuperarValorContadoNivelParcial.sql" />
+		<Content Include="Resources\Genesis\Efectivo\EfectivoRecuperarValorContadoNivelRemesa.sql" />
+		<Content Include="Resources\Genesis\Efectivo\EfectivoRecuperarValorDivisa.sql" />
+		<Content Include="Resources\Genesis\Elemento\ObtenerElementos.sql" />
+		<Content Include="Resources\Genesis\EmisorDocumento\EmisorDocumentoRecuperar.sql" />
+		<Content Include="Resources\Genesis\Formato\FormatoRecuperarPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\GrupoTerminosIAC\GrupoTerminosIACRecuperarPorCodigo.sql" />
+		<Content Include="Resources\Genesis\GrupoTerminosIAC\GrupoTerminosIACRecuperarPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\InformacaoAdicionalCliente\InformacaoAdicionalRecuperar.sql" />
+		<Content Include="Resources\Genesis\InformacaoAdicionalCliente\InformacaoAdicionalRecuperarTodos.sql" />
+		<Content Include="Resources\Genesis\IntegracionSalidas\ObtenerFormularioGestionFondosSalidas.sql" />
+		<Content Include="Resources\Genesis\Integracion\ActualizarIntegracion.sql" />
+		<Content Include="Resources\Genesis\Integracion\InserirIntegracion.sql" />
+		<Content Include="Resources\Genesis\Integracion\InserirIntegracionError.sql" />
+		<Content Include="Resources\Genesis\Integracion\ObtenerIntegracion.sql" />
+		<Content Include="Resources\Genesis\ListaValor\ExcluirListaValorPorElemento.sql" />
+		<Content Include="Resources\Genesis\ListaValor\InserirListaValorPorElemento.sql" />
+		<Content Include="Resources\Genesis\ListaValor\ListaValorBultoObtenerValor.sql" />
+		<Content Include="Resources\Genesis\ListaValor\ListaValorRecuperar.sql" />
+		<Content Include="Resources\Genesis\ListaValor\ObtenerListaValorPorCodigoTipo.sql" />
+		<Content Include="Resources\Genesis\ListaValor\ObtenerListaValorPorElemento.sql" />
+		<Content Include="Resources\Genesis\ListaValor\ObtenerListaValorPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\ListaValor\RecuperarIdentificadorValorNoDefinido.sql" />
+		<Content Include="Resources\Genesis\MedioPago\MedioPagoRecuperar.sql" />
+		<Content Include="Resources\Genesis\MedioPago\MedioPagoRecuperarPorCodigo.sql" />
+		<Content Include="Resources\Genesis\MedioPago\MedioPagoRecuperarValorContadoPorBulto.sql" />
+		<Content Include="Resources\Genesis\MedioPago\MedioPagoRecuperarValorContadoPorParcial.sql" />
+		<Content Include="Resources\Genesis\MedioPago\MedioPagoRecuperarValorContadoPorRemesa.sql" />
+		<Content Include="Resources\Genesis\MedioPago\MediosPagoRecuperar.sql" />
+		<Content Include="Resources\Genesis\MedioPago\ObtenerMedioPagoPorDivisa.sql" />
+		<Content Include="Resources\Genesis\MedioPago\ObtenerMediosPago.sql" />
+		<Content Include="Resources\Genesis\MedioPago\ObtenerMediosPago_v2.sql" />
+		<Content Include="Resources\Genesis\MedioPago\RecuperarMediosPagoInactivos.sql" />
+		<Content Include="Resources\Genesis\MedioPago\ValoresMedioPagoAbonoContado.sql" />
+		<Content Include="Resources\Genesis\MedioPago\ValoresMedioPagoAbonoDeclarado.sql" />
+		<Content Include="Resources\Genesis\MedioPago\ValoresMedioPagoElemento_v3.sql" />
+		<Content Include="Resources\Genesis\MedioPago\ValoresMedioPagoElemento_v2.sql" />
+		<Content Include="Resources\Genesis\MonedaFalsa\MonedaFalsaInserir.sql" />
+		<Content Include="Resources\Genesis\Notificacion\Notificacion_CargarNotificaciones.sql" />
+		<Content Include="Resources\Genesis\Notificacion\Notificacion_GrabarNotificacionLeido.sql" />
+		<Content Include="Resources\Genesis\Notificacion\Notificacion_ObtenerCantidadNotificaciones.sql" />
+		<Content Include="Resources\Genesis\Notificacion\Notificacion_ObtenerIdentificadores.sql" />
+		<Content Include="Resources\Genesis\Pais\ObtenerPaises.sql" />
+		<Content Include="Resources\Genesis\Pais\PaisObtener.sql" />
+		<Content Include="Resources\Genesis\Pais\PaisObtenerAjeno.sql" />
+		<Content Include="Resources\Genesis\Pais\PaisObtenerDefault.sql" />
+		<Content Include="Resources\Genesis\Pais\PaisObtenerPorDelegacion.sql" />
+		<Content Include="Resources\Genesis\Pais\PaisObtenerPorDelegacionPorCodigoAjeno.sql" />
+		<Content Include="Resources\Genesis\Parametros\ObtenerParametrosDelegacionPais.sql" />
+		<Content Include="Resources\Genesis\Parametros\ObtenerParametrosDelegacionPais_v2.sql" />
+		<Content Include="Resources\Genesis\Parametros\ObtenerParametrosPuesto_v2.sql" />
+		<Content Include="Resources\Genesis\Parcial\ObtenerParciales.sql" />
+		<Content Include="Resources\Genesis\Parcial\ParcialAtualizar.sql" />
+		<Content Include="Resources\Genesis\Parcial\ParcialAtualizarEstado.sql" />
+		<Content Include="Resources\Genesis\Parcial\ParcialExcluir.sql" />
+		<Content Include="Resources\Genesis\Parcial\ParcialInserir.sql" />
+		<Content Include="Resources\Genesis\Parcial\ParcialRecuperarPorBulto.sql" />
+		<Content Include="Resources\Genesis\Planificacion\BuscaPlanificacion.sql" />
+		<Content Include="Resources\Genesis\Planificacion\RecuperarVigenciaPlanificacionMAE.sql" />
+		<Content Include="Resources\Genesis\Planificacion\VerificaPeriodosVinculados.sql" />
+		<Content Include="Resources\Genesis\Planificacion\VerificaPlanificacionExistente.sql" />
+		<Content Include="Resources\Genesis\Planificacion\VerificaMaquinaVinculada.sql" />
+		<Content Include="Resources\Genesis\Planta\ObtenerCodigosMigracionPlantas.sql" />
+		<Content Include="Resources\Genesis\Planta\ObtenerPlantaPorCodigo_v2.sql" />
+		<Content Include="Resources\Genesis\Planta\ObtenerPlantaPorOid.sql" />
+		<Content Include="Resources\Genesis\Planta\ObtenerPlantasPorCodigos.sql" />
+		<Content Include="Resources\Genesis\Planta\PlantaObtenerIdentificadorPorCodigo.sql" />
+		<Content Include="Resources\Genesis\Planta\PlantaRecuperar.sql" />
+		<Content Include="Resources\Genesis\Planta\Planta_ValidarCodigo.sql" />
+		<Content Include="Resources\Genesis\Preferencia\BorraPreferenciasAplicacion.sql" />
+		<Content Include="Resources\Genesis\Preferencia\ExcluiPreferencia.sql" />
+		<Content Include="Resources\Genesis\Preferencia\GuardarPreferencia.sql" />
+		<Content Include="Resources\Genesis\Preferencia\GuardarPreferenciasBinario.sql" />
+		<Content Include="Resources\Genesis\Preferencia\InserePreferencia.sql" />
+		<Content Include="Resources\Genesis\Preferencia\ObtenerPreferencias.sql" />
+		<Content Include="Resources\Genesis\Preferencia\SelecionaPreferencia.sql" />
+		<Content Include="Resources\Genesis\Puesto\Genesis_Puesto_ObtenerPuestos.sql" />
+		<Content Include="Resources\Genesis\PuntoServicio\ObtenerIdentificadorPuntoServicioPorCodigo.sql" />
+		<Content Include="Resources\Genesis\PuntoServicio\ObtenerIdentificadorPuntoServicioPorCodigo_v2.sql" />
+		<Content Include="Resources\Genesis\PuntoServicio\ObtenerPuntoServicioPorCodigo.sql" />
+		<Content Include="Resources\Genesis\PuntoServicio\ObtenerPuntoServicioPorCodigo_v2.sql" />
+		<Content Include="Resources\Genesis\PuntoServicio\PuntoServicioIdentificadoresTotalizadorSaldo.sql" />
+		<Content Include="Resources\Genesis\PuntoServicio\PuntoServicio_ValidarCodigo.sql" />
+		<Content Include="Resources\Conteo\Remesa\ConteoRecuperarDatosParcializacionErronea.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaDocumentoPadrePorCodigoExterno.sql" />
+		<Content Include="Resources\Genesis\Remessa\AlocarPedidosExternos.sql" />
+		<Content Include="Resources\Genesis\Remessa\MarcarNoEntregue.sql" />
+		<Content Include="Resources\Genesis\Remessa\ObtenerRemesasAbono.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaActualizarTerminoDocumento.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaAcutalizarRotaConOIdExterno.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaRecuperarElementosPrecintados_v3.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaRecuperarElementosPrecintados.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaRecuperarIdentificadorDocumento.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaActualizaRuta.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaActualizarBolAnuladoSalidas.sql" />
+		<Content Include="Resources\Genesis\Remessa\AlocarDesalocarRemesa.sql" />
+		<Content Include="Resources\Genesis\Remessa\ObtenerRemesas.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaActualizarCuenta.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaExcluir.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaObtenerUltimoDocumentoIdDocumento.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaObtenerUltimoDocumentoIdRemesa.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaRecuperarIdentificadoresRemesasYBultos.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesaRecuperarIdentificadoresRemesasYBultosNoCuadrados.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemesasObtener_v2.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemessaAtualizar.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemessaAtualizarEstado.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemessaAtualizarEstadoAbono.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemessaAtualizarIdentificadorDocumento.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemessaHayDiferenca.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemessaInserir.sql" />
+		<Content Include="Resources\Genesis\Remessa\RemessaRecuperarPorDocumento.sql" />
+		<Content Include="Resources\Genesis\Sector\ActualizarPlantaEnSector.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerIdentificadorSectorPorCodigoyDelegacion.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectoresPorCaracteristicasSimultaneas.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectoresPorCodigos.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectoresTesoro.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectorPadrePrimerNivel.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectorPorCodigoConsiderandoTodosNiveis.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectorPorCodigo_v2.sql" />
+		<Content Include="Resources\Genesis\Sector\RecuperarSectoresSalidas.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerCodigoSectoresPorCodTipoSector.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerCodigosSectoresPorSectorPadre.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerDatosResumidosSectores.sql" />
+		<Content Include="Resources\Genesis\Sector\ObteneridentificadoresSectoresHijos.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerIdentificadorSectorPorCodigo.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerPermisoSectorOrigenPorIDPS.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSector.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectores.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectoresConCodSector.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectoresPorCaracteristicas.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectoresPorCodigoDelegacion.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectoresPorDelegacion.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectoresPorSectorPadre.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectores_V2.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectorPorDelegacion.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectorPorIDPS.sql" />
+		<Content Include="Resources\Genesis\Sector\ObtenerSectorPorOid.sql" />
+		<Content Include="Resources\Genesis\Sector\SectorRecuperarPorDeviceID.sql" />
+		<Content Include="Resources\Genesis\Sector\SectorEsHijo.sql" />
+		<Content Include="Resources\Genesis\Sector\Sector_ValidarCodigo.sql" />
+		<Content Include="Resources\Genesis\SubCanal\ObtenerCodigosSubCanalPorCodigoCanal.sql" />
+		<Content Include="Resources\Genesis\SubCanal\ObtenerIdentificadorSubCanalPorCodigo.sql" />
+		<Content Include="Resources\Genesis\SubCanal\ObtenerSubCanalPorCodigo_v2.sql" />
+		<Content Include="Resources\Genesis\SubCanal\SubCanalObtenerSubCanales.sql" />
+		<Content Include="Resources\Genesis\SubCanal\ObtenerSubCanalyCanalPorCodigo.sql" />
+		<Content Include="Resources\Genesis\SubCanal\ObtenerSubCanalPorCodigo.sql" />
+		<Content Include="Resources\Genesis\SubCanal\ObtenerSubCanalPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\SubCanal\ObtenerSubCanalPorIdentificadorCanal.sql" />
+		<Content Include="Resources\Genesis\SubCanal\ObtenerSubCanalPorIDPS.sql" />
+		<Content Include="Resources\Genesis\SubCanal\SubCanal_ValidarCodigo.sql" />
+		<Content Include="Resources\Genesis\SubCliente\ObtenerIdentificadorSubClientePorCodigo.sql" />
+		<Content Include="Resources\Genesis\SubCliente\ObtenerSubClientePorCodigo_v2.sql" />
+		<Content Include="Resources\Genesis\SubCliente\ObtenerSubClientePorPuntoServicio.sql" />
+		<Content Include="Resources\Genesis\SubCliente\ObtenerSubClientePorCodigo.sql" />
+		<Content Include="Resources\Genesis\SubCliente\SubClienteIdentificadoresTotalizadorSaldo.sql" />
+		<Content Include="Resources\Genesis\SubCliente\SubClienteIdentificadoresTotalizadorSaldoPtoServicio.sql" />
+		<Content Include="Resources\Genesis\SubCliente\SuCliente_ValidarCodigo.sql" />
+		<Content Include="Resources\Genesis\TerminoIAC\ObtenerGrupoTerminoIACPorFormulario.sql" />
+		<Content Include="Resources\Genesis\TerminoIAC\ObtenerTerminos_v4.sql" />
+		<Content Include="Resources\Genesis\TerminoIAC\TerminoIACRecuperarPorCodigo.sql" />
+		<Content Include="Resources\Genesis\TerminoIAC\TerminoIACRecuperarPorEmissorDocumento.sql" />
+		<Content Include="Resources\Genesis\TerminoIAC\TerminoIACRecuperarPorGrupoTermino.sql" />
+		<Content Include="Resources\Genesis\TerminoMedioPago\ObtenerTerminosPorMedioPago.sql" />
+		<Content Include="Resources\Genesis\TerminoMedioPago\TerminoMedioPagoRecuperar.sql" />
+		<Content Include="Resources\Genesis\TerminoMedioPago\TerminoMedioPagoRecuperarValorPossivel.sql" />
+		<Content Include="Resources\Genesis\TipoBulto\TipoBultoExluirPorFormulario.sql" />
+		<Content Include="Resources\Genesis\TipoBulto\TipoBultoInserirPorFormulario.sql" />
+		<Content Include="Resources\Genesis\TipoBulto\TipoBultoRecuperarTipoBultoFormulario.sql" />
+		<Content Include="Resources\Genesis\TipoBulto\TipoBultoRecuperarTodos.sql" />
+		<Content Include="Resources\Genesis\TipoCliente\TipoClienteRecuperar.sql" />
+		<Content Include="Resources\Genesis\TipoContenedor\TipoContenedorObtener.sql" />
+		<Content Include="Resources\Genesis\TipoContenedor\TipoContenedorObtenerSencillo.sql" />
+		<Content Include="Resources\Genesis\TipoSector\ObtenerTiposSectoresFormulario.sql" />
+		<Content Include="Resources\Genesis\TipoSector\ObtenerTiposSectoresPorCodigos.sql" />
+		<Content Include="Resources\Genesis\TipoSector\TipoSectoresInserirPorFormulario.sql" />
+		<Content Include="Resources\Genesis\TipoSector\TipoSectorExcluirPorFormulario.sql" />
+		<Content Include="Resources\Genesis\TipoSector\TipoSectorPorCodigos.sql" />
+		<Content Include="Resources\Genesis\TipoSector\TipoSectorPorIdentificador.sql" />
+		<Content Include="Resources\Genesis\TipoSector\TipoSectorPorIdentificadorSector.sql" />
+		<Content Include="Resources\Genesis\TipoSector\TipoSectorPorDelegacionYPlanta.sql" />
+		<Content Include="Resources\Genesis\TipoSector\TipoSectorRecuperar.sql" />
+		<Content Include="Resources\Genesis\TipoSector\TipoSectorRecuperarTodos.sql" />
+		<Content Include="Resources\Genesis\Totales\ValoresTotalesContadosElemento.sql" />
+		<Content Include="Resources\Genesis\Totales\ValoresTotalesDeclaradosElemento.sql" />
+		<Content Include="Resources\Genesis\Totales\ValoresTotalesElemento_v3.sql" />
+		<Content Include="Resources\Genesis\Totales\ValoresTotalesElemento_v2.sql" />
+		<Content Include="Resources\Genesis\UnidadMedida\ObtenerUnidadesMedida.sql" />
+		<Content Include="Resources\Genesis\UnidadMedida\ObtenerUnidadesMedida_v2.sql" />
+		<Content Include="Resources\Genesis\UnidadMedida\UnidadMedidaRecuperarDefecto.sql" />
+		<Content Include="Resources\Genesis\Util\ObtenerDescripcionesFiltroExtracion.sql" />
+		<Content Include="Resources\Genesis\ValorIACBulto\ValorIACBultoExcluir.sql" />
+		<Content Include="Resources\Genesis\ValorIACBulto\ValorIACBultoInserir.sql" />
+		<Content Include="Resources\Genesis\ValorIACBulto\ValorIacBultoRecuperar.sql" />
+		<Content Include="Resources\Genesis\ValorIACParcial\ValorIACParcialExcluir.sql" />
+		<Content Include="Resources\Genesis\ValorIACParcial\ValorIACParcialInserir.sql" />
+		<Content Include="Resources\Genesis\ValorIACParcial\ValorIACParcialRecuperar.sql" />
+		<Content Include="Resources\Genesis\ValorIACRemesa\ValorIACRemesaExcluir.sql" />
+		<Content Include="Resources\Genesis\ValorIACRemesa\ValorIACRemesaInserir.sql" />
+		<Content Include="Resources\Genesis\ValorIACRemesa\ValorIacRemesaRecuperar.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoDocumento\ObtenerValorTerminoDocumento.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoDocumento\ValorTerminoDocumentoExcluir.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoDocumento\ValorTerminoDocumentoInserir.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoDocumento\ValorTerminoDocumentoInserir_v2.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoDocumento\ValorTerminoDocumentoObtener_v2.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoGrupoDocumento\ValorTerminoGrupoDocumentoExcluir.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoGrupoDocumento\ValorTerminoGrupoDocumentoInserir.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoGrupoDocumento\ValorTerminoGrupoDocumentoRecuperar.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoIAC\ObtenerValorTerminoIACElemento.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoIAC\ValorTerminosIACRecuperarPorTerminos.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoIAC\ValorTerminoIACRecuperarPorTermino.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPagoElemento\ValorTerminoMedioPagoElementoExcluirBulto.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPagoElemento\ValorTerminoMedioPagoElementoExcluirParcial.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPagoElemento\ValorTerminoMedioPagoElementoExcluirRemesa.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPagoElemento\ValorTerminoMedioPagoElementoInserir.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPagoElemento\ValorTerminoMedioPagoElementoRecuperar.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPagoElemento\ValorTerminoMedioPagoElementoRecuperar_v2.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPago\ValorTerminoMedioPagoExcluirBulto.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPago\ValorTerminoMedioPagoExcluirDocumento.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPago\ValorTerminoMedioPagoExcluirRemesa.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPago\ValorTerminoMedioPagoInserir.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPago\ValorTerminoMedioPagoObtener_v2.sql" />
+		<Content Include="Resources\Genesis\ValorTerminoMedioPago\ValorTerminoMedioPagoRecuperarValorTerminoPorDocumento.sql" />
+		<None Include="Resources\Helper\BuscaPuesto.sql" />
+		<None Include="Resources\Helper\BuscaClientesPorTipoPlanificacion.sql" />
+		<Content Include="Resources\Helper\BuscaDenominacion.sql" />
+		<Content Include="Resources\Helper\BuscaMaquina.sql" />
+		<Content Include="Resources\Helper\BuscaMaquinaDelegacion.sql" />
+		<Content Include="Resources\Helper\BuscaPuesto2.sql" />
+		<None Include="Resources\Helper\BuscaPuntoServicioMaquina.sql" />
+		<None Include="Resources\Helper\BuscaPuntoServicio2.sql" />
+		<Content Include="Resources\Helper\BuscaTermino.sql" />
+		<Content Include="Resources\Helper\BuscaTipoContenedor.sql" />
+		<Content Include="Resources\Helper\BuscaTipoSector.sql" />
+		<Content Include="Resources\Helper\BuscaUsuario.sql" />
+		<Content Include="Resources\Mobile\ObtenerItensDropDown.sql" />
+		<Content Include="Resources\Mobile\ObtenerRemesaMobile.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_AnularBultosRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ObtenerDivisasBultosProcesados.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarIdentificadorBultosPorCodigosPrecintos.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesas_ValidarCantidadRemesas.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesas_VerificarRemesaDividida.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarBolEnviadoLegado.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarBolEnviadoSOL.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ValidarClaveSolicitudGeCambiada.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_GrabarIntentosEnvioSOL_PARAM.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarValoresRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperaRemesasNaoEnviadasSOL.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_GrabarIntentosEnvioSOL.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_GrabarErrorEnviadoSOL.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_BorrarCodigoReciboRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\ValorTerminoRemesa\ValorTerminoRemesaRecuperar.sql" />
+		<Content Include="Resources\NuevoSalidas\ValorTerminoRemesa\ValorTerminoRemesaBorrar.sql" />
+		<Content Include="Resources\NuevoSalidas\ValorTerminoRemesa\ValorTerminoRemesaInserir.sql" />
+		<Content Include="Resources\Helper\BuscaClientes.sql" />
+		<Content Include="Resources\Helper\BuscaDelegacion.sql" />
+		<Content Include="Resources\Helper\BuscaPlanta.sql" />
+		<Content Include="Resources\Helper\BuscaSector.sql" />
+		<Content Include="Resources\Mobile\ObtenerDocumentoMobile.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarBolCuadrado.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarBultoEfectivoBultoPorDenominacion.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarCodigoBolsa.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarPrecinto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_BorrarBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarCantidadEfectivoBulto.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_BorrarEfectivosBultos.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_BorrarBultos.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_BloquearBultoRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ActualizarPrecintos.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_BorrarListaTrabajo.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_HayCodigoCajetinRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ObterEfectivoBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarBloqueadosPorOutroUsuario.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarBultosPorRemesas.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarBultosNoArqueados.sql" />
+		<None Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarBultoConEfectivo.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarDatos.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarIdentificadorBultoPorCodigoPrecinto.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_RecuperarIdentificadorBultoPorIdentificador.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ValidarCantidadCodigoBolsa.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ValidarCodigoBolsaDuplicadoPorBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ValidarModificarEstadoBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_ValidarModificarEstadoRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_VerificarEsUltimoBultoObjeto.sql" />
+		<Content Include="Resources\NuevoSalidas\Bulto\Salidas_Bulto_VerificarTodosBultosFueronPreparados.sql" />
+		<Content Include="Resources\Genesis\ConfigGrid\Genesis_ConfigGrid_Borrar.sql" />
+		<Content Include="Resources\Genesis\ConfigGrid\Genesis_ConfigGrid_Grabar.sql" />
+		<Content Include="Resources\Genesis\ConfigGrid\Genesis_ConfigGrid_Recuperar.sql" />
+		<Content Include="Resources\NuevoSalidas\Denominacion\Salidas_Denominacion_DividirEnBultos.sql" />
+		<Content Include="Resources\NuevoSalidas\Denominacion\Salidas_Denominacion_RecuperarPorTipoModulo.sql" />
+		<Content Include="Resources\NuevoSalidas\Denominacion\Salidas_Denominacion_RecuperarValoresDenominacionesPorDivisa.sql" />
+		<Content Include="Resources\NuevoSalidas\Denominacion\Salidas_Denominacion_RetornarDenominaciones.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_DivisasRecuperarEfectivosTotalesBultosModulos.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_Divisa_RecuperarEfectivoBultoDetallado.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_Divisa_RecuperarEfectivoRemesaDetallado.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_Divisa_RecuperarEfectivosBultos.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_Divisa_RecuperarEfectivosBultoTotais.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_Divisa_RecuperarEfectivosRemesasDetallado.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_Divisa_RecuperarEfectivosRemesasTotales.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_Divisa_RecuperarEfectivosRemesaTotais.sql" />
+		<Content Include="Resources\NuevoSalidas\Divisa\Salidas_Divisa_RecuperarIdentificadorDivisa.sql" />
+		<Content Include="Resources\NuevoSalidas\Modulo\Salidas_Modulo_BorrarModulosBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\Modulo\Salidas_Modulo_InsertarModuloBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\Modulo\Salidas_Modulo_Recuperar.sql" />
+		<Content Include="Resources\NuevoSalidas\Modulo\Salidas_Modulo_Recuperar_Valores.sql" />
+		<Content Include="Resources\NuevoSalidas\Modulo\Salidas_Modulo_Recuperar_Valores_Remesas.sql" />
+		<Content Include="Resources\NuevoSalidas\Objeto\Salidas_Objetos_Recuperar_Remesas.sql" />
+		<Content Include="Resources\NuevoSalidas\Objeto\Salidas_Objeto_Borrar.sql" />
+		<Content Include="Resources\NuevoSalidas\Objeto\Salidas_Objeto_Insertar.sql" />
+		<Content Include="Resources\NuevoSalidas\Objeto\Salidas_Objeto_Recuperar.sql" />
+		<Content Include="Resources\NuevoSalidas\Puesto\Salidas_Puesto_ObtenerIdentificadorPuesto.sql" />
+		<Content Include="Resources\NuevoSalidas\Puesto\Salidas_Puesto_ObtenerIdentificadorSaldoPuestoPorDivisaYPuesto.sql" />
+		<Content Include="Resources\NuevoSalidas\Puesto\Salidas_Puesto_ObtenerNecesidadFondoPuesto.sql" />
+		<Content Include="Resources\NuevoSalidas\Puesto\Salidas_Puesto_ObtenerPuestos.sql" />
+		<Content Include="Resources\NuevoSalidas\Puesto\Salidas_Puesto_ObtenerPuestosPorDelegacion.sql" />
+		<Content Include="Resources\NuevoSalidas\Puesto\Salidas_Puesto_SaldoPuestoDivisaActualizar.sql" />
+		<Content Include="Resources\NuevoSalidas\Puesto\Salidas_Puesto_SaldoPuestoDivisaInserir.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesas_DesbloquearRemesas.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarDatosRuta.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarRemesasPorOT.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarRemesasAnuladas.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ValidarImporte.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ValidarServiciosArmados.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarRemesas.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ValidarRemesaAnulada.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarFyhInicioRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarRemesasSaldos.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_AnularRemesas.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ActualizarCodigoReciboRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_CantidadBilhetesContadosSetor.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_CantidadBilhetesDelDia.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_CantidadContadosDenominacao.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_CantidadRemesasPorSector.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_BorrarRemesas.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_BorrarRemesasListaTrabajo.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarBloqueadasPorOutroUsuario.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_InsertarRemesaHija.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarDatosRemesaPadreYHija.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarDatos.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarIdentificadorRemesaConCodigoPrecinto.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_RecuperarOidRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_ValidarModificarEstadoRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\Remesa\Salidas_Remesa_VerificarRemesaFueAlterada.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoBulto\Salidas_TipoBulto_DividirEnBultos.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoBulto\Salidas_TipoBulto_Obtener.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoBulto\Salidas_TipoBulto_ObtenerPorTipoModulo.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoBulto\Salidas_TipoBulto_ObtenerTiposBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoBulto\Salidas_TipoBulto_ObtenerTiposBultoDisponibles.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoBulto\Salidas_TipoBulto_RecuperarOidsTipoBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMedioPago\Salidas_TipoMedioPagoRecuperar.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMedioPago\Salidas_TipoMedioPagoRecuperarValoresRemesas.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_BorrarTipoMercanciasBultos.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_BorrarTipoMercanciasBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_BorrarTipoMercanciasRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_InsertarTipoMercanciaBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_InsertarTipoMercanciaRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_ObtenerTiposMercanciaPorCodigo.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_ObtenerTiposMercancia.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_RecuperarMercanciaRemesas.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_RecuperarMercanciasBulto.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_RecuperarMercanciasBultos.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoMercancia\Salidas_TipoMercancia_RecuperarMercanciasRemesa.sql" />
+		<Content Include="Resources\NuevoSalidas\TipoModulo\Salidas_TipoModulo_RecuperarOidTipoModulo.sql" />
+		<Content Include="Resources\NumeroDeSerie\GetNumeroDeSerieBillete.sql" />
+		<Content Include="Resources\NumeroDeSerie\GetNumeroDeSerieBilletebyBulto.sql" />
+		<Content Include="Resources\NumeroDeSerie\SelecionaOidDenominacionByCod.sql" />
+		<Content Include="Resources\NumeroDeSerie\SetNumeroDeSerieBilleteExcluir.sql" />
+		<Content Include="Resources\NumeroDeSerie\SetNumeroDeSerieBilleteInserir.sql" />
+		<Content Include="Resources\Reportes\Reportes_RecepcionRutaInserir.sql" />
+		<Content Include="Resources\Reportes\Reportes_TraspaseResponsabilidad.sql" />
+		<Content Include="Resources\Test\Test.sql" />
+	</ItemGroup>
+	<PropertyGroup>
+		<VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+		<VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+	</PropertyGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+	<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

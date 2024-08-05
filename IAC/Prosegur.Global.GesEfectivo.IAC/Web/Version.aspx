@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Version.aspx.vb" Inherits="Prosegur.Global.GesEfectivo.IAC.Web.Version" EnableTheming="false"  StylesheetTheme="" Theme="" EnableSessionState="False" %>

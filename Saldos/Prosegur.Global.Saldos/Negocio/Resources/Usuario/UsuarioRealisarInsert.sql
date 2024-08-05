@@ -1,0 +1,20 @@
+﻿INSERT INTO PD_Usuario
+  (IdUsuario,
+   Nombre,
+   Clave,
+   ApellidoNombre,
+   SeleccionCP,
+   Caduca,
+   Caduco,
+   DiasDeValidez,
+   FechaCambioClave)
+VALUES
+  (:idUsuario,
+   :Nombre,
+   :Clave,
+   :ApellidoNombre,
+   :ElijeCP,
+   :Caduca,
+   :Caduco,
+   :DiasDeValidez,
+   sysdate)

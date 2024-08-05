@@ -1,0 +1,1 @@
+﻿SELECT SeValida, Nombre FROM PD_CampoExtra WHERE IdCampoExtra = :IdCampoExtra

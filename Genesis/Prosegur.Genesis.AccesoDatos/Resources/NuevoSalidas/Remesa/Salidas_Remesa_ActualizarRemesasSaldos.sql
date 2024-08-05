@@ -1,0 +1,3 @@
+UPDATE SAPR_TREMESA R SET R.COD_RUTA = []COD_RUTA
+                         ,R.FYH_TRANSPORTE = []FYH_SALIDA
+{0}

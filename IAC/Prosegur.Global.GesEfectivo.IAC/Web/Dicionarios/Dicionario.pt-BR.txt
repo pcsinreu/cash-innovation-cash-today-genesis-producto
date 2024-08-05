@@ -1,0 +1,1613 @@
+﻿// ************* TELAS *************
+
+// GENÉRICOS
+gen_ddl_selecione									= Selecionar
+gen_data_invalida									= Data Inválida.
+gen_opcion_si										= Sim
+gen_opcion_no										= Não
+gen_opcion_todos                                    = Todos
+gen_lbl_CriterioBusca								= Critérios de Busca
+lbl_gdr_eliminar									= Eliminar
+
+
+//FORM BASE
+btnAlta												= Inserir
+btnBaja												= Deletar
+btnConsulta											= Consultar
+btnModificacion										= Modificar
+btnLimpiar											= Limpar
+btnBuscar											= Buscar
+btnGrabar											= Salvar
+btnCancelar											= Cancelar
+btnVolver											= Voltar
+btnAceptar											= Aceitar
+btnDuplicar											= Duplicar
+btnAnadir											= Adicionar
+btnValoresPosibles									= ...
+lbl_base_titulo										= IAC
+lbl_version											= Versão
+lbl_salir											= Sair
+btnDetalhes											= Detalhes
+btnCopiar											= Copiar
+btnSincronizar									= Sincronizar Divisas
+btnSincronizarMedioPago									= Sincronizar Meio de Pagamento
+btnCodigoAjeno										= Código Externo
+mn_Ayuda											= Ajuda
+mn_InformacionIAC									= Sobre o IAC
+mn_cuentasBancarias	= Contas Bancárias
+mn_aprobacionCuentasBancarias	= Aprovação
+mn_periodosAcreditacion = Períodos de Credenciamento
+mn_historyCuentasBancarias	= Histórico
+mn_permisos											= Permissões
+mn_roles											= Roles
+mn_usuarios											= Usuários
+//MENU PRINCIPAL
+mn_item_canal										= Canal
+mn_item_producto									= Produto
+mn_item_tiposprocesado								= Tipos Processados
+mn_item_divisas										= Divisas
+mn_item_iac											= IAC
+mn_item_modalidadrecuento							= Modalidade Contagem
+mn_mediopago										= Meio de Pagamento
+mn_agrupaciones										= Agrupações
+mn_terminos											= Términos
+mn_integracion										= Integração
+mn_valoresposibles									= Valores Possíveis
+mn_proceso											= Processo
+mn_caracteristicas									= Características
+mn_morfologia										= Morfologias
+mn_atm												= ATM
+mn_parametros										= Parâmetros
+mn_puestos											= Postos
+mn_grupocliente										= Grupo de Clientes
+mn_delegaciones										= Delegações
+mn_plantas											= Plantas
+mn_tipos											= Tipos
+mn_tipoSetor										= Tipo Setor
+mn_Sector											= Setor
+mn_TipoSubcliente									= Tipos Subclientes
+mn_TipoPuntoServicio								= Tipos Pontos de Serviço
+mn_tipoCliente										= Tipos Clientes
+mn_clientes                                         = Clientes
+mn_subclientes                                      = Subclientes
+mn_pto_servicio                                     = Ponto de Serviço
+mn_tipoProcedencia                                  = Tipo de Procedência
+mn_Procedencia										= Procedências
+mn_estrutura										= Estrutura
+mn_MAE												= MAE
+mn_accionesLote										= MAE - Ações em lote
+mn_planificaciones									= Planificações
+mn_transaciones  									= Transações
+
+//ERRO PADRÃO
+err_padrao_aplicacao								= Erro na aplicação
+err_codigo_erro_ambiente_default					= Erro no ambiente de execução
+err_codigo_erro_negocio_sesion_invalida				= Sessão inválida
+err_codigo_erro_negocio_default						= Erro padrão de negócio
+err_passagem_parametro								= Os parâmetros informados não são válidos.
+err_descricao_invalida								= Descrição ou código inválido.
+err_campo_obligatorio								= O campo {0} é obrigatório.
+err_generico										= Aconteceu um erro não tratado na aplicação. Contate o administrador do sistema.
+err_msg_error_05									= Erro no acesso a base de dados no servidor: {0}
+err_msg_error_02									= Erro de comunicação com o servidor de diretório (LDAP).
+err_msg_error_03   									= Erro no acesso ao servidor de diretório (LDAP). Usuário ou senha incorretos.
+err_msg_chave_invalida_webapp						= Verifique se a Url do parâmetro UrlServicio está configurada corretamente no WebConfig da aplicação web.
+
+//INFORMACIÓN PADRAO
+info_msg_sin_registro								= Não foram encontrados registros com os parâmetros informados. 
+info_msg_baja										= Registro excluído com sucesso.
+info_msg_baja_registro								= Deseja excluir o registro?
+info_msg_registro_borrado							= O registro selecionado já foi desativado ou excluído.
+info_msg_grabar										= Confirma a alteração deste registro?
+info_msg_alta										= Confirma a inclusão deste registro?
+info_msg_seleccionar_registro						= Selecione um registro antes de realizar esta operação.
+info_msg_seleccionar_cliente						= Selecione um cliente antes de realizar esta operação.
+info_msg_max_registro								= Número máximo de registros alcançados. Informe algum parâmetro para a busca.
+info_msg_sair_pagina								= Tem certeza que deseja sair desta página?
+info_msg_grd_vazio									= Não existem dados para serem exibidos.
+
+//TELA BUSQUEDA DE CANALES
+001_titulo_busqueda_canales							= Busca de Canais
+001_lbl_codigocanal									= Código Canal  
+001_lbl_descricaocanal								= Descrição do Canal
+001_lbl_vigente										= Vigente
+001_lbl_subtituloscanales							= Canais
+001_lbl_subtituloscriteriosbusqueda					= Critérios de Busca
+001_lbl_grd_codigo									= Código
+001_lbl_grd_descripcion								= Descrição
+001_lbl_grd_observacion								= Observação
+001_lbl_grd_vigente									= Vigente		
+
+//TELA MANTENIMIENTO DE CANALES
+001_titulo_mantenimiento_canales					= Manutenção de Canais
+001_lbl_subtitulossubcanales						= Subcanais
+001_lbl_observaciones								= Observação
+001_msg_grabado_suceso								= Registro gravado com sucesso.
+001_msg_CodigoCanalExistente						= O código do canal já existe.
+001_msg_descricaocanalexistente						= A descrição do canal já existe.
+001_msg_CodigoSubCanalExistente						= O código do subcanal já existe.
+001_msg_DescricaoSubCanalExistente					= A descrição do subcanal já existe.
+001_msg_CanalCodigoobligatorio						= O código do canal é obrigatório.
+001_msg_CanalDescripcionobligatorio	 				= A descrição do canal é obrigatória.
+001_msg_canal_subcanal_desactivado					= O canal e seus subcanais associados foram desativados.
+001_msg_canal_subcanal_activado						= O canal e seus subcanais associados foram ativados, favor validar os subcanais.
+
+
+//TELA MANTENIMIENTO DE SUBCANALES
+001_titulo_mantenimiento_subcanales					= Manutenção de Subcanais
+001_lbl_codigosubcanal								= Código Subcanal
+001_lbl_descricaosubcanal							= Descrição do Subcanal
+001_lbl_subtitulosmantenimientosubcanales			= Manutenção do Subcanal
+001_msg_subcanalcodigoobligatorio					= O código do subcanal é obrigatório.
+001_msg_subcanaldescripcionobligatorio	 			= A descrição do subcanal é obrigatória.
+001_msg_subcanalcodigoexistente					    = O código do subcanal já existe.
+001_msg_subcanaldescripcionexistente	 			= A descrição do subcanal já existe.
+001_msg_imposible_activar_subcanal_canal_inactivo   = Não será possível ativar este subcanal pois o canal associado se encontra desativado.
+
+//PRODUCTOS
+
+//TELA PRODUCTOS
+002_lbl_codigoproducto								= Código
+002_lbl_descricaoproducto							= Descrição
+002_lbl_manual										= Manual
+002_lbl_vigente										= Vigente
+002_lbl_maquina										= Máquina
+002_titulo_productos								= Critérios de Busca
+002_subtitulo_productos								= Produtos
+002_lbl_grd_codigo									= Código
+002_lbl_grd_descripcion								= Descrição do Produto
+002_lbl_grd_billete									= Classe do Bilhete
+002_lbl_grd_correccion								= Fator de Correção
+002_lbl_grd_manual									= Manual
+002_lbl_grd_vigente									= Vigente
+002_titulo_maquinas									= Máquinas do Produto
+002_lbl_nome_productos								= Produto
+002_lbl_grd_maquina									= Máquinas
+002_btn_consultar									= Consultar Máquinas
+002_ddl_selecionar									= Selecionar
+002_falta_canal										= Favor Preencher um canal
+002_title_productos									= Busca de Produtos
+002_title_maquinasdelproductos						= Máquinas do Produto
+002_msg_no_existen_maquinas							= Não existem Máquinas cadastradas para este Produto.
+
+//TELA DEFAULT
+003_lbl_titulo										= IAC
+
+//GRID_SUMMARY
+grid_lbl_pagersummary							    = Página {0} de {1} ({2} itens)
+prosegurgridview_asc								= Ordenação Ascendente
+prosegurgridview_desc								= Ordenação Descendente
+prosegurgridview_sem_registro						= Não existem registros.
+gen_proximo											= Próximo
+gen_ultimo											= Último
+gen_Primeiro										= Primeiro
+gen_anterior										= Anterior
+
+//TELA TIPOS PROCESADO
+004_lbl_codigotiposprocesado							= Código 
+004_lbl_descripciontiposprocesado						= Descrição
+004_chk_vigente											= Vigente
+004_lst_caracteristicas									= Características
+004_lbl_observacion										= Observações
+004_titulo_tiposprocesado								= Critérios de Busca
+004_subtitulo_tiposprocesado							= Tipos Processado
+004_titulo_matenimentotiposprocesado	 				= Manutenção de Tipos de Processado
+004_titulo_caracteristicas_matenimentotiposprocesado	= Características do tipo de processado
+004_lbl_grd_codigo										= Código
+004_lbl_grd_descripcion									= Descrição
+004_lbl_grd_observacion									= Observações
+004_lbl_grd_vigente										= Vigente
+004_msg_codigotiposprocesadoexistente					= O código do tipo processado já existe.
+004_msg_descricaotiposprocesadoexistente				= A descrição do tipo processado já existe.
+004_title_tiposprocesado								= Busca de Tipos Processado
+004_title_matenimentotiposprocesado						= Manutenção de Tipos de Processado
+004_msg_tipoprocesadocodigoobligatorio					= O código do tipo processado é obrigatório.
+004_msg_tipoprocesadodescripcionobligatorio				= A descrição do tipo processado é obrigatória.
+
+//TELA DIVISA
+005_titulo_busqueda_divisas							= Busca de Divisas
+005_lbl_codigoiso									= Código ISO
+005_lbl_descricaodivisa								= Descrição Divisa
+005_lbl_vigente										= Vigente
+005_lbl_simbolo  									= Símbolo
+005_lbl_cor											= Cor
+005_lbl_Codigoacceso								= Código Acesso
+005_lbl_subtitulosdivisas							= Divisas
+005_lbl_subtituloscriteriosbusqueda					= Critérios de Busca
+005_lbl_grd_codigo									= Cod.ISO
+005_lbl_grd_descripcion								= Divisa
+005_lbl_grd_simbolo									= Símbolo
+005_lbl_grd_vigente									= Vigente
+
+//TELA MANTENIMIENTO DE DIVISA
+005_titulo_mantenimiento_divisas					= IAC - Manutenção de Divisas
+005_lbl_subtitulosDenominaciones					= Denominações
+005_lbl_grd_mantenimiento_codigo					= Código
+005_lbl_grd_mantenimiento_descripcion				= Descrição
+005_lbl_grd_mantenimiento_valor						= Valor
+005_lbl_grd_mantenimiento_peso						= Peso
+005_lbl_grd_mantenimiento_bilhete					= Bilhete
+005_lbl_grd_mantenimiento_vigente					= Vigente
+005_msg_grabado_suceso								= Registro gravado com sucesso.
+005_msg_divisacodigoobligatorio						= O campo código da divisa é obrigatório.
+005_msg_divisadescripcionobligatorio				= O campo descrição da divisa é obrigatório.
+005_msg_codigodivisaexistente						= O código da divisa já existe.
+005_msg_descripciondivisaexistente					= A descrição da divisa já existe.
+005_msg_codigocolorobligatorio						= O código da cor é obrigatório.
+005_msg_codigoaccesoobligatorio						= O código acesso é obrigatório.
+005_msg_codigoaccesoexistente						= O código acesso já existe.
+
+//TELA DE DELEGAÇÕES
+013_titulo_busqueda_delegaciones					= Pesquisa de Delegações
+013_lbl_codigo_pais									= País 
+013_lbl_codigo_delegaciones							= Código 
+013_lbl_descricaodelegaciones						= Descrição 
+013_lbl_vigente										= Vigente
+013_lbl_delegaciones								= Delegações
+013_lbl_criterio							= Critérios de Busca
+013_titulo_mantenimiento_Delegaciones				= Manutenção de delegações
+013_lbl_cantidadAjuste								= Quantidade de Minutos p/ Ajuste
+013_lbl_codigoDelegacion							= Código da Delegação
+013_lbl_descDelegacion								= Descrição da Delegação
+013_lbl_FechaVeranoFim								= Fim Data de Verão
+013_lbl_FechaVeranoInicio							= Inicio Data de Verão
+013_lbl_gmtMinutos									= GMT Minutos	
+013_lbl_pais										= País
+013_lbl_TituloDelegaciones							= Delegação
+013_lbl_zona										= Zona
+013_msg_Existente									= O Código Delegação já existe.
+013_msg_Delegacioncodigoobligatorio					= É obrigatório o Código da Delegação.
+013_msg_PaisObligatorio								= O País é obrigatório.
+013_msg_Delegaciondescripcionobligatorio			= A Descrição da Delegação é obrigatório.
+013_msg_FechaVeranoFin								= Fim da Data de Verão é obrigatório.
+013_msg_FechaVeranoIncio							= Inicío da Data de Verão é obrigatório.
+013_msg_DelegacionGmtMinutos						= GMT minutos é obrigatório.
+013_msg_delegacionZona								= A Zona é obrigatória.
+013_msg_Delegacion									= Quantidade de Minutos de Ajustes é obrigatório.
+013_ddl_selecione									= Selecione
+013_lbl_grd_codigoDel								= Código
+013_lbl_grd_descripcionDelegacion					= Descrição
+013_lbl_grd_vigenteDelegacion						= Vigente
+013_msg_erro_Data									= Esta data deve ser igual ou maior a Início de Verão Data.	
+013_msg_erro_pais									= Selecione um País
+
+//TELA DE BUSCA DE PLANTAS
+014_lbl_codigo_planta								= Código
+014_titulo_busqueda_delegaciones					= Busca de Plantas
+014_lbl_delegaciones								= Delegação
+014_lbl_descricao									= Descrição
+014_lbl_Plantas										= Plantas
+014_lbl_criterio									= Critérios de Busca
+014_ddl_Selecionar									= Selecione
+014_lbl_grd_descricao								= Descrição
+014_lbl_grd_Ativo									= Vigente
+014_titulo_mantenimiento_Planta						= Manutenção de Planta
+014_lbl_codigoPlanta								= Código Planta
+014_lbl_Delegacion									= Delegação
+014_lbl_DescPlanta									= Descrição Planta
+014_lbl_TituloPlaneta								= Plantas
+014_msg_PlantaExistente								= Planta já cadastrada.
+014_msg_CodigoPlanta								= O Código da Planta é obrigatório.
+014_msg_PlantaDescripcion							= Descrição da Planta é obrigatória.
+014_msg_Delegacion									= A Delegação é obrigatória.
+049_msg_erro_PlantaCodigo							= O Código da Planta é obrigatório.
+051_msg_erro_PlantaDescricao						= A Descrição da Planta é obrigatória.
+052_msg_erro_PlantaCodDelegacion					= Campo Delegação obrigatório. 
+053_msg_erro_PlantaExistente						= A Planta já existe com a Delegação selecionada.
+053_msg_erro_Insereregistro							= Erro ao inserir de Planta.
+053_msg_erro_Atualizaregistro						= Erro ao dar baixa na Planta.
+053_msg_erro_BajaRegistro							= Erro ao Atualizar a Planta.
+049_msg_erro_PlantaGmtModificacion					= A data da modificação é necessária.
+049_msg_erro_PlantaDesUsuModifi						= É obrigatório informar o usuário que efetuou a modificação.
+msg_erro_campo_delegacion							= Campo Delegação é obrigatório.
+
+//TELA DE BUSCA TIPO DE SETORES
+019_lbl_codigo										= Código Tipo Setor
+019_lbl_descripciontiposprocesado					= Descrição
+019_lbl_caracteristicas								= Característica Tipo Setor
+019_chk_vigente										= Vigente:
+019_lbl_titulo_tipossetor							= Busca Tipo Setores
+019_lbl_subtitulo_tipossetor						= Tipo Setores
+019_lbl_grd_observacion								= Característica
+
+//TELA DE MANUTENÇÂO DE TIPOS SETORES
+019_lbl_codigotiposSetor							= Código Tipo Setor
+019_lbl_descripciontiposSetor						= Descrição Tipo Setor
+019_titulo_matenimentotiposSetor					= Tipos Setores
+019_titulo_caracteristicas_matenimentotiposSetor	= Característica
+019_msg_tipoSetorcodigoobligatorio					= O Código Tipo Setor é obrigatório.
+019_msg_tipoSetordescripcionobligatorio				= A Descrição do Tipo Setor é obrigatório.
+019_msg_codigotiposSetorexistente					= O Código Tipo Setor já existe.
+019_msg_CaracteristicaObrigatoria					= A Característica é obrigatória.
+019_lbl_codigoAjeno									= Código Alheio
+019_lbl_descricaoAjeno								= Descrição alheia
+019_lbl_delegacion									= Delegação
+
+//TELA DE BUSCA DE SETORES
+054_lbl_centro_processo								= Centro de Processo
+054_lbl_Codigo										= Código setor
+054_lbl_Descripcion									= Setor Descrição
+054_lbl_planta										= Planta
+054_lbl_sector_padre								= Setor pai
+054_lbl_titulo_busqueda								= Busca Geral de Setores
+054_lbl_tiulo_Resultados							= Setores
+054_lbl_tipo_setor									= Tipo Setor
+054_lbl_vigente										= Vigente
+054_ddl_selecione									= Selecione
+054_lbl_grd_codigo									= Código
+054_lbl_grd_descripcion								= Descrição
+054_lbl_grd_planta									= Planta
+054_lbl_grd_tiposector								= Tipo Setor
+054_lbl_grd_sectorpadre								= Setor Pai
+054_lbl_grd_centroproceso							= Centro Processo
+054_lbl_grd_vigente									= Vigente
+054_lblTituloBuscaSimples							= Pesquisa Simples de Setores
+054_lbl_criterioBusca								= Critérios de pesquisa
+054_lbl_BuscaSimplesCodigo							= Código
+054_lbl_BuscaSimplesDescripcion						= Descrição
+054_msg_erro_CodigoPlantaVazio						= É obrigatório informar a Planta.
+054_msg_erro_CodigoTipoSector						= É obrigatório informar o Tipo Setor.
+054_msg_erro_CentroProcesso							= Centro Processo é obrigatório.
+054_msg_BuscaSetorPai								= Busca Simples Setor
+054_msg_erroDelegacion								= É obrigatório informar a Delegação
+019_lbl_centroProcessoAtivado						= Sim
+019_lbl_centroProcessoDesativado					= Não
+
+//TELA DE MANUTENÇÂO SETORES
+054_lbl_titulo_manutencao_setores					= Setores
+054_ddl_planta_manutencao							= Planta
+054_ddl_TipoSector									= Tipo Setor
+054_lbl_centro_proceso_manutencao					= Centro Processo
+054_lbl_sector_padre_manutencao						= Setor Pai
+054_lbl_Codigo_sector_manutencao					= Código Setor
+054_lbl_descricao_sector_manutencao					= Descrição Setor
+054_lbl_codigo_prosegur_manutencao					= Código Prosegur
+054_chk_Acpta_movimento								= Aceita Movimento
+054_chk_tesoso										= Tesouro
+054_chk_conteo										= Contar
+054_msg_erro_codigoExistente						= O Código do Setor já existe.
+054_msg_codigo_setor_obrigatorio					= O Código do Setor é obrigatório.
+054_msg_Descricao_obrigatoria						= A Descrição do setor é obrigatório.
+054_msg_TipoSector_obrigatorio						= É obrigatório o Tipo Setor.
+054_msg_planta_obrigatorio							= É obrigatório informar a Planta.
+054_msg_selecione_Sector							= Selecione um Setor.	
+054_msg_tipo_pantalla_Sector						= Manutenção de Setor
+
+//TELA MANTENIMIENTO DE DENOMINACION
+005_titulo_mantenimiento_denominaciones				= IAC - Manutenção de Denominações
+005_lbl_subtitulosmantenimientodenominacion			= Denominações
+005_lbl_denominacion_codigo							= Código da denominação
+005_lbl_denominacion_descricao						= Descrição da denominação
+005_lbl_denominacion_codigo_acceso					= Código Acesso
+005_lbl_denominacion_valor							= Valor
+005_lbl_denominacion_peso							= Peso
+005_lbl_indicadorbilhete							= Bilhete
+005_msg_denominacion_codigoaccesoobligatorio		= O código acesso é obrigatório.
+005_msg_denominacion_codigoaccesoexistente	    	= O código acesso já existe.
+
+005_msg_denominacion_codigo_obligatorio				= O código da denominação é obrigatório.
+005_msg_denominacion_descripcion_obligatorio		= A descrição da denominação é obrigatório.
+005_msg_denominacion_valor_obligatorio				= O valor da denominação é obrigatório.
+005_msg_denominacion_peso_obligatorio				= O peso da denominação é obrigatório.
+005_msg_denominacion_codigo_existente				= Já existe denominação ou meio de pagamento cadastrado com o código informado.
+
+//TELA INFORMAÇÃO ADICIONAL AO CLIENTE
+006_lbl_codigoiac									= Código
+006_lbl_descripcioniac								= Descrição
+006_chk_vigente										= Vigente
+006_chk_invisible									= Invisível
+006_lbl_terminos									= Términos
+006_lbl_observacion									= Observações
+006_titulo_matenimentoiac							= Manutenção do IAC
+006_titulo_iac										= Critérios de Busca
+006_subtitulo_iac									= Informação Adicional Cliente
+006_title_iac										= Busca de Informação Adicional Cliente
+006_title_mantenimentoiac							= Manutenção do IAC
+006_lbl_grd_codigo									= Código
+006_lbl_grd_descripcion								= Descrição
+006_lbl_grd_vigente									= Vigente
+006_lbl_grd_observaciones							= Observações
+006_lbl_grd_checkbox								=
+006_lbl_grd_obligatorio								= Obrigatório
+006_lbl_grd_busqueda								= Busca
+006_lbl_grd_campoclave								= Campo Chave
+006_lbl_grd_copiarTermino							= Copiar Termino
+006_lbl_grd_Protegido								= Protegido
+006_msg_iaccodigoobligatorio						= O código da informação adicional cliente é obrigatório.
+006_msg_iacdescripcionobligatorio					= A descrição da informação adicional cliente é obrigatória.
+006_msg_iacTerminoObligatorio						= É necessário selecionar pelo menos um término.
+006_msg_codigoiacexistente							= O código da informação adicional cliente já existe.
+006_msg_descricaoiacexistente						= A descrição da informação adicional cliente já existe.
+006_lbl_copiardeclarado								= Copiar Declarados
+006_lbl_disponivelnuevosaldos   					= Disponível Novo Saldos
+006_lbl_grd_InvisibleRpt							= Invisível Rep
+006_lbl_grd_IdMecanizado							= Id Mecanizado
+006_msg_terminos_misma_descripcion					= Existem términos com a mesma descrição sendo adicionados.
+
+//TELA LOGIN
+007_lbl_delegacion									= Delegação
+007_lbl_login										= Usuário
+007_lbl_senha										= Senha
+007_btn_confirmar									= Logar
+007_btn_cancelar									= Cancelar
+007_titulo											= Login IAC
+007_msg_usuario_invalido							= Usuário ou senha inválido.
+007_msg_usuario_sem_permisio						= O usuário não tem permissão neste sistema.
+007_msg_usuario_sessao_expirada						= A sua sessão expirou. Favor efetuar o login novamente.
+007_msg_sessao_finalizada                           = Sessão finalizada
+
+//TELA BUSQEUDA DE AGRUPACIONES
+008_titulo_busqueda_agrupaciones					= Busca de Agrupações
+008_lbl_codigoagrupacion							= Código Agrupação
+008_lbl_descricaoagrupacion							= Descrição Agrupação
+008_lbl_divisa_efetivo								= Divisa Efetivo
+008_lbl_vigente										= Vigente
+008_lbl_divisa_ticket								= Divisa Ticket
+008_lbl_ticket										= Ticket
+008_lbl_divisa_otros_valores						= Divisa Outros Valores
+008_lbl_otros_valores								= Outros Valores
+008_lbl_divisa_cheques								= Divisa Cheques
+008_lbl_cheques										= Cheques
+008_lbl_subtitulosagrupaciones						= Agrupações
+008_lbl_subtituloscriteriosbusqueda					= Critérios de Busca
+008_lbl_grd_codigo									= Código
+008_lbl_grd_descripcion								= Descrição
+008_lbl_grd_observacion								= Observação
+008_lbl_grd_vigente									= Vigente
+008_ddl_selecione									= Selecionar
+008_ddl_selecioneDelegacion							= Todas
+
+//TELA MANTENIMIENTO DE AGRUPACIONES
+008_lbl_efectivo									= Efetivo
+008_titulo_mantenimiento_agrupaciones				= Manutenção de Agrupações
+008_lbl_titulos_mantenimento_agrupaciones			= Manutenção de Agrupações
+008_lbl_subtitulos_mantenimento_agrupaciones		= Meio de Pagamento
+008_lbl_observaciones								= Observação
+008_msg_agrupacioncodigoobligatorio					= O código da agrupação é obrigatório.
+008_msg_agrupaciondescripcionobligatorio			= A descrição da agrupação é obrigatória.
+008_msg_descricaoagrupacionexistente				= A descrição da agrupação já existe.
+008_msg_codigoagrupacionexistente					= O código da agrupação já existe.
+008_msg_treeviewnodesobligatorio					= É obrigatório selecionar pelo menos um meio de pagamento ou divisa de efetivo.
+
+//TELA VALORES POSIBLES
+009_lblcliente										= Cliente
+009_lblsubcliente									= Subcliente
+009_lblpuntoservicio								= Ponto de Serviço
+009_lbltermino										= Término
+009_lbl_titulo										= Valores Possíveis
+009_lbl_titulo_valoresposibles						= Critérios de Busca
+009_lbl_subtitulo_valoresposibles					= Valores Possíveis
+009_lbl_grd_codigo									= Código
+009_lbl_grd_descripcion								= Descrição
+009_lbl_grd_vigente									= Vigente
+009_lbl_grd_ValorDefecto							= Valor por Defecto
+009_msg_codigo_obligatorio							= O código é obrigatório.
+009_msg_descripcion_obligatorio						= A descrição é obrigatória.
+009_msg_codigo_existente							= O código já existe.
+009_msg_descripcion_existente						= A descrição já existe.
+009_msg_valordefecto_existente						= ya existe un registro defecto
+009_msg_codigo_cliente_obligatorio					= O código do cliente é obrigatório.
+009_msg_termino_obligatorio							= O código término é obrigatório.
+009_msg_grabado_suceso								= Registros atualizados com sucesso.
+009_msg_descripcion_existe							= A descrição valor possível já existe para este cliente.
+009_msg_codigo_existe								= O código valor possível já existe para este cliente.
+009_ddl_selecione									= Selecionar
+009_btn_buscar_cliente								= Buscar Cliente
+009_btn_buscar_sub_cliente							= Buscar Subcliente
+009_btn_buscar_punto_servicio						= Buscar Ponto de Serviço
+
+//TELA BUSQUEDA DE TERMINOS
+010_titulo_busqueda_terminos						= Busca de Términos por IAC
+010_lbl_codigotermino								= Código
+010_lbl_descricaotermino							= Descrição
+010_lbl_descricaoformato							= Formato
+010_lbl_vigente										= Vigente
+010_lbl_mostrarcodigo								= Mostrar Código
+010_lbl_subtitulosterminos							= Términos IAC
+010_lbl_subtituloscriteriosbusqueda					= Critérios de Busca						
+010_lbl_grd_codigo									= Código
+010_lbl_grd_descripcion								= Descrição
+010_lbl_grd_vigente									= Vigente		
+010_ddl_selecione									= Selecione
+
+//TELA DE MANTENIMIENTO DE TERMINOS
+010_titulo_mantenimiento_terminos					= Manutenção de Términos
+010_lbl_titulosterminos								= Términos IAC
+010_lbl_observaciones 								= Observações
+010_lbl_tipoformato   								= Formato
+010_lbl_longitud      								= Longitude
+010_lbl_sinvalidacion 								= Sem Validação
+010_lbl_mascara	      								= Formato
+010_lbl_listavalores  								= Lista de Valores
+010_lbl_formula	      								= Fórmula
+010_lbl_validacao									= Validação
+010_lbl_listavaloreseditable				= Aceitar Digitação
+010_msg_terminocodigoobligatorio					= O código do término é obrigatório.
+010_msg_terminodescripcionobligatorio				= A descrição do término é obrigatória.
+010_msg_descricaoterminoexistente					= A descrição do término já existe.
+010_msg_codigoterminoexistente						= O código do término já existe.
+010_msg_grabado_suceso								= Registro gravado com sucesso.
+010_msg_formatoobligatorio							= O formato é obrigatório.
+010_msg_longitudobligatoria							= A longitude é obrigatória.
+010_msg_longitudvalorinvalido						= A longitude deve conter um valor válido maior que zero e menor ou igual a {0} 
+010_msg_mascaraobligatoria							= O formato da máscara é obrigatória.
+010_msg_algoritmoobligatorio						= A fórmula do algorítmo é obrigatória.
+
+//TELA BUSQUEDA CLIENTES
+011_titulo_pagina									= Busca de clientes
+011_titulo_busqueda									= Critérios de Busca
+011_titulo_resultado								= Clientes
+011_lbl_gdr_codigo									= Código
+011_lbl_gdr_descripcion								= Descrição
+011_codigo_cliente									= Código cliente
+011_descricao_cliente								= Descrição cliente
+011_seleccione_un_cliente							= Selecione um cliente
+011_seleccione_al_menos_un_cliente					= Selecione pelo menos um cliente
+
+//TELA BUSQUEDA MEDIOS DE PAGO
+014_titulo_pagina									= Busca de Meio de Pagamento
+014_lbl_subtituloscriteriosbusqueda					= Critérios de Busca
+014_lbl_tipo_medio_pago								= Tipo Meio de Pagamento
+014_lbl_codigomediopago								= Código
+014_lbl_descricaomediopago							= Descrição 
+014_lbl_MPdivisa									= Divisa
+014_lbl_mercancia									= Mercadoria
+014_lbl_vigente										= Vigente
+014_lbl_subtitulosmediopago							= Meio de Pagamento
+014_lbl_grd_tipo_medio_pago							= Tipo 
+014_lbl_grd_codigo									= Código
+014_lbl_grd_descripcion								= Nome
+014_lbl_grd_divisa									= Divisa
+014_lbl_grd_vigente									= Vigente
+014_ddl_selecione									= Selecionar
+
+//MANTENIMINETO DE MEDIOS DE PAGO
+014_titulo_mantenimiento_mediospago					= Manutenção de Meios de Pagamento
+014_lbl_subtitulosmediospago						= Meio de Pagamento
+014_lbl_subtitulosterminomediospago					= Términos de Meio de Pagamento								
+014_lbl_observaciones								= Observações
+014_lbl_grd_mantenimiento_codigo					= Código
+014_lbl_grd_mantenimiento_descripcion				= Descrição
+014_lbl_grd_mantenimiento_formato					= Formato
+014_lbl_grd_mantenimiento_vigente					= Vigente
+014_lbl_codigoacceso								= Código Acesso
+014_msg_mediopagocodigoobligatorio					= O código do meio de pagamento é obrigatório.
+014_msg_codigomediopagoexistente					= A combinação de Divisa e Código do meio de pagamento já existe.
+014_msg_mediopagodescripcionobligatorio				= A descrição do meio de pagamento é obrigatória.
+014_msg_mediopagotipoobligatorio					= O tipo do meio de pagamento é obrigatório.
+014_msg_mediopagodivisaobligatorio					= A divisa do meio de pagamento é obrigatória.
+014_msg_grabado_suceso								= Registro gravado com sucesso.
+014_msg_codigoaccesoobligatorio						= O código acesso é obrigatório.
+014_msg_codigoaccesoexistente						= O código acesso já existe.
+
+//TELA SINCRONIZAR MEDIOS PAGO
+014_titulo_sincronizar_mediospago						= Sincronização de Meios de Pagamento
+014_titulo_mediospago_sincronizacion					= Meios de Pagamento
+014_chk_selecionar_todos_mediosPago						= Selecionar todos os Meios de Pagamento
+014_msg_sin_actualizacion_mediosPago					= Todos os meios de pagamento ja estão atualizados.
+014_msg_selecionar_mediospago							= Deve selecionar ao menos um meio de pagamento.
+014_msg_confirm_sincronizacion_mediospago				= Esta opção sincroniza as tabelas de Conteo, Salidas, Nuevo Saldos e ATM com os dados de IAC para os meios de pagamentos selecionados.
+
+//CONTROLE RESULTADO SINCRONIZACION MEDIO PAGO
+014_lbl_resultado							= Resultado:
+014_lbl_url									= URL Servicio:
+014_msg_url									= URL não encontrada.
+014_lbl_MediosPago_atualizadas				= Meios de Pagamento Atualizados
+014_msg_error								= Erro - {0}
+014_msg_MediosPago_no_atualizadas			= Nenhum Meio de Pagamento foi atualizado.
+014_msg_sin_error							= Os Meios de Pagamentos foram atualizados.
+014_msg_error_Medios Pago					= Alguns Meios de Pagamentos não puderam ser atualizados.
+014_msg_error_geral							= Erro na Atualização dos Meios de Pagamento.
+014_lbl_cod_MedioPago						= Codigo do Meio de Pagamento
+014_lbl_des_MedioPago						= Descrição do Meio de Pagamento
+014_lbl_status								= Status
+014_lbl_valor								= Valor
+014_lbl_divisa								= Meio de Pagamento 
+014_lbl_cod_erro							= Código do Erro
+014_lbl_des_erro							= Erro
+
+//MANTENIMINETO TERMINO DE MEDIOS DE PAGO
+014_titulo_mantenimiento_termino_mediospago			  = Manutenção de Términos de Meios de Pagamento
+014_subtitulo_mantenimiento_termino_mediospago		  = Términos de Meios de Pagamento
+014_lbl_formato										  = Tipo
+014_lbl_longitude									  = Tamanho
+014_lbl_valorinicial								  = Valor Inicial
+014_lbl_mostrarcodigo								  = Mostrar Código
+014_lbl_validacaoformato							  = Validação Formato
+014_lbl_validacaoformula							  = Validação Fórmula
+014_msg_terminomediopago_codigoobligatorio			  = O código do término de meio de pagamento é obrigatório.
+014_msg_terminomediopago_codigopagoexistente		  = O código do término de meio de pagamento já existe.
+014_msg_terminomediopago_descripcionobligatorio		  = A descrição de término de meio de pagamento é obrigatória.
+014_msg_terminomediopago_longitudobligatorio		  = O tamanho é obrigatório.
+014_msg_terminomediopago_formatoobligatorio			  = O tipo do formato é obrigatório.
+014_msg_terminomediopago_longitudeinvalidaobligatorio = A longitude deve conter um valor válido maior que zero e menor ou igual a {0}  
+014_lbl_valoresposibles								  = Valores possíveis
+
+//MANTENIMIENTO VALORES TERMINO DE MEDIOS DE PAGO
+014_titulo_mantenimiento_valorterminomediopagos		  = Manutenção de Valores de Términos de Meios de Pagamento
+014_lbl_codigovalorterminomediopago					  = Código 
+014_lbl_descricaovalorterminomediopago				  = Descrição	
+014_lbl_subtitulosmantenimientovalorterminomediopagos = Valores de Términos de Meio de Pagamento
+014_msg_valorterminomediopagocodigoobligatorio		  = O código do valor de término de meio de pagamento é obrigatório.
+014_msg_valorterminomediopagodescripcionobligatorio   = A descrição do valor de término de meio de pagamento é obrigatória.
+014_msg_valorterminomediopagocodigoexistente		  = O código do valor de término de meio de pagamento já existe.
+014_lbl_grd_mantenimiento_valor_termino_codigo		  = Código
+014_lbl_grd_mantenimiento_valor_termino_descripcion	  = Descrição
+014_lbl_grd_mantenimiento_valor_termino_vigente		  = Vigente
+
+//TELA BUSQUEDA SUBCLIENTES
+015_titulo_pagina									= Busca de Subclientes
+015_titulo_busqueda									= Critérios de Busca
+015_titulo_resultado								= Subclientes
+015_lbl_gdr_cliente									= Cliente
+015_lbl_gdr_codigo									= Código
+015_lbl_gdr_descripcion								= Descrição
+015_lbl_subcliente									= Subcliente
+015_codigo_subcliente								= Código subcliente
+015_descricao_subcliente							= Descrição subcliente 
+015_seleccione_un_subcliente						= Selecione pelo menos um subcliente
+015_lbl_cliente										= Cliente
+015_msg_numregistro_grande							= 
+
+//TELA BUSQUEDA DE PROCESOS
+016_lbl_titulo									   = Busca de Processos
+016_lbl_titulo_busquedaprocesos					   = Critérios de Busca
+016_lbl_subtitulo_busquedaprocesos				   = Processos
+016_btncliente									   = Buscar Cliente
+016_btnsubcliente								   = Buscar Sub Cliente
+016_btnpuntoservicio							   = Buscar Ponto de Serviço
+016_lbl_cliente									   = Cliente
+016_lbl_subcliente								   = Subcliente
+016_lbl_puntoservicio							   = Ponto de Serviço
+016_lbl_grd_cliente								   = Cliente
+016_lbl_grd_subcliente							   = SubCliente
+016_lbl_grd_ptoservicio							   = Pto. Serviço
+016_lbl_grd_canal								   = Canal	
+016_lbl_grd_subcanal							   = Subcanal
+016_lbl_grd_producto							   = Produto
+016_lbl_grd_proceso								   = Processo
+016_lbl_grd_delegacion							   = Delegação
+016_lbl_grd_vigente								   = Vigente
+016_lbl_canal									   = Canal
+016_lbl_subcanal								   = Subcanal
+016_lbl_producto								   = Produto
+016_lbl_delegacion								   = Delegação
+016_lbl_vigente									   = Vigente
+016_nopuedomodificacion_peroduplicar			   = O processo não pode ser modificado, mas pode ser duplicado.
+016_proceso_no_pertence_delegacion				   = O processo não pertence a delegação do usuário conectado.
+016_lbl_efectivo								   = Efetivo
+
+//TELA DE MANTENIMIENTO DE PROCESOS
+
+016_titulo_mantenimiento_procesos									= Manutenção de Processos
+016_lbl_subtitulos_mantenimento_procesos							= Processo
+016_lbl_subtitulos_mantenimento_procesos_informaciondeldeclarado	= Informação do Declarado
+016_lbl_subtitulos_mantenimento_procesos_agrupaciones				= Agrupações
+016_lbl_subtitulos_mantenimento_procesos_mediospago					= Meios de Pagamento
+016_lbl_subtitulos_mantenimento_procesos_modocontaje				= Modo de Contagem
+016_lbl_descripcion_proceso											= Descrição do Processo
+016_lbl_modalidad													= Modalidade
+016_lbl_infoadicional												= Inform. Adicional
+016_lbl_IACParcial													= IAC Parcial
+016_lbl_IACBulto													= IAC Bulto
+016_lbl_IACRemesa													= IAC Remesa
+016_lbl_cliente_faturacion											= Cliente Faturação
+016_lbl_observaciones												= Observações
+016_btnClienteFaturacion											= Busca Cliente Faturação
+016_btnTerminoMedioPago												= Términos Meio de Pagamento
+016_btnTolerancia													= Tolerância
+016_lbl_infodeclarado_pormediopago									= Por meio de pagamento
+016_lbl_infodeclarado_poragrupaciones								= Por agrupações
+016_lbl_contarchequetotales											= Contar cheques por total
+016_lbl_contartickettotales											= Contar tickets por total
+016_lbl_contarotrosvalorestotales									= Contar outros valores por total
+016_msg_procesodescripcionobligatorio								= A descrição do processo é obrigatória.
+016_msg_modalidadobligatorio										= A modalidade é obrigatória.
+016_msg_productoobligatorio											= O produto é obrigatório.
+016_msg_treeviewnodesobligatorio									= É obrigatório selecionar pelo menos um meio de pagamento ou divisa  de efetivo.
+016_msg_agrupacionescompoenprocesoobligatorioobligatorio			= É obrigatório selecionar pelo menos uma agrupação.
+016_msg_procesoclientenobligatorio									= O cliente é obrigatório.
+016_ddl_selecione													= Selecione
+016_msg_informaciondeldeclaradoobligatorio							= A informação do declarado é obrigatória.
+016_lbl_nota														= Nota: A ordem que se selecione a divisa de efetivo, será a ordem que essa divisa aparecerá na tela de Contagem de Malotes.
+016_msg_subcanaisobligatorio										= O subcanal é obrigatório.
+
+
+//MANTENIMIENTO TERMINOS MEDIO DE PAGO PROCESSO
+
+016_titulo_mantenimiento_termino_pagina								= Manutenção de Términos de Meio de pagamento
+016_titulo_mantenimiento_termino_mediopago							= Meios de Pagamento
+016_subtitulo_mantenimiento_termino_terminosmediopago				= Términos
+016_lbl_gdr_mantenimiento_termino_mp_descripciondivisa				= Divisa
+016_lbl_gdr_mantenimiento_termino_mp_descripciontipomediopago		= Tipo 
+016_lbl_gdr_mantenimiento_termino_mp_codigomediopago				= Código
+016_lbl_gdr_mantenimiento_termino_mp_descripcionmediopago			= Descrição
+016_lbl_gdr_mantenimiento_termino_mp_codigoterminomp				= Código
+016_lbl_gdr_mantenimiento_termino_mp_obligatorio					= Obrigatório
+016_lbl_gdr_mantenimiento_termino_mp_descripcionterminomp			= Descrição
+
+
+
+//TELA BUSQUEDA DE PUNTOS DE SERVICIO
+017_titulo_pagina								   = Busca de Pontos de Serviço
+017_codigo_puntoservicio						   = Código Pto. Serviço
+017_descricao_puntoservicio						   = Desc. Pto. Serviço
+017_titulo_busqueda								   = Critérios de Busca
+017_titulo_resultado							   = Pontos de Serviço
+017_lbl_gdr_codigocliente						   = Cód. Cliente
+017_lbl_gdr_descripcioncliente					   = Desc. Cliente
+017_lbl_gdr_codigosubcliente					   = Cód. Subcliente
+017_lbl_gdr_descripcionsubcliente				   = Desc. Subcliente
+017_lbl_gdr_codigopuntoservicio					   = Cód. Pto. Serviço
+017_lbl_gdr_descripcionpuntoservicio			   = Desc. Pto. Serviço 
+017_seleccione_un_puntoservicio					   = Selecione pelo menos um ponto de serviço
+
+//TELA MANTENIMIENTO TOLERANCIA
+018_titulo_pagina								   = Tolerâncias
+018_subtitulo_pagina							   = Tolerâncias de {0}
+018_col_toleranciamin							   = Min.
+018_col_toleranciamax							   = Max.
+018_col_parcial									   = Parcial
+018_col_bulto									   = Bulto
+018_col_remesa									   = Remesa
+018_col_agrupaciones							   = Agrupações
+018_col_medios_pago								   = Meios de Pagamento
+018_col_divisa									   = Divisa
+018_col_tipo_medio_pago 						   = Tipo
+018_col_medio_pago								   = Meio de Pagamento
+018_col_agrupacion								   = Agrupação
+
+//TELA BUSQUEDA DE CARACTERISTICAS
+020_titulo_pagina									= Busca de características
+020_titulo_busqueda									= Critérios de Busca
+020_titulo_resultado								= Características
+020_codigo_caracteristica							= Código
+020_codigo_conteo									= Código conteo
+020_descricao_caracteristica						= Descrição
+020_seleccione_una_caracteristica					= Selecione uma característica
+020_caracteristica_vigente							= Vigente
+020_lbl_gdr_codigo									= Código
+020_lbl_gdr_descripcion								= Descrição
+020_lbl_gdr_observaciones							= Observações
+020_lbl_gdr_codigo_conteo							= Código Conteo
+020_lbl_gdr_vigente									= Vigente
+
+//TELA MANTENIMIENTO CARACTERISTICAS
+020_titulo_mantenimiento_caracteristicas			= Manutenção de Características
+020_lbl_subtitulo_mantenimiento_caracteristicas		= Manutenção da Característica
+020_lbl_codigo_caracteristica						= Código Característica
+020_lbl_descricao_caracteristica					= Descrição Característica
+020_lbl_codigo_conteo								= Código Conteo
+020_lbl_observaciones								= Observação
+020_lbl_vigente										= Vigente
+020_msg_caracteristica_codigo_obligatorio			= O código da característica é obrigatório.
+020_msg_caracteristica_descripcion_obligatorio		= A descrição da característica é obrigatória.
+020_msg_caracteristica_codigo_conteo_obligatorio	= O código conteo da característica é obrigatório.
+020_msg_caracteristica_codigo_existente				= O código da característica já existe.
+020_msg_caracteristica_descripcion_existente		= A descrição da característica já existe.
+020_msg_caracteristica_codigo_conteo_existente		= O código conteo da característica já existe.
+020_msg_grabado_suceso								= Registro gravado com sucesso.
+
+//TELA BUSQUEDA MORFOLOGIAS
+021_titulo_busqueda									= Busca de Morfologias
+021_subtitulo_morfologias							= Morfologias
+021_subtitulo_criterio								= Critérios de Busca
+021_lbl_cod_morfologia								= Código Morfologia
+021_lbl_desc_morfologia								= Descrição Morfologia
+021_lbl_activo										= Vigente
+021_lbl_grd_codigo									= Código
+021_lbl_grd_descricao								= Descrição
+021_lbl_grd_componentes								= Componentes
+021_lbl_grd_activo									= Vigente
+021_lbl_dispensador									= Dispensador
+021_lbl_dispensadores								= Dispensadores
+021_lbl_ingresador									= Ingresador
+021_lbl_ingresadores								= Ingresadores
+021_lbl_rechazo										= Rechazo
+021_lbl_rechazos									= Rechazos
+021_lbl_tarjeta										= Tarjeta
+021_lbl_tarjetas									= Tarjetas
+021_lbl_deposito									= Depósito
+021_lbl_depositos									= Depósitos
+
+//TELA MANTENIMIENTO MORFOLOGIAS
+021_titulo_mantenimiento							= Manutenção de Morfologias
+021_subtitulo_morfologia							= Morfologia
+021_subtitulo_componentes							= Componentes
+021_lbl_codigo										= Código
+021_lbl_grd_codmorfologia							= Código
+021_lbl_grd_funcion									= Função
+021_lbl_grd_tipo									= Tipo
+021_lbl_grd_modalidad								= Modalidade
+021_lbl_grd_divida_den_mp							= Divisa - Denominação / Meios de Pagamento
+021_lbl_grd_orden									= Ordem
+021_msg_codigo_existente							= O código da morfologia já existe!
+021_msg_desc_existente								= A descrição da morfologia já existe!
+021_msg_componente									= É obrigatório pelo menos um componente!
+021_lbl_metodo_habilitacion							= Método Habilitação
+
+//TELA MANTENIMIENTO COMPONENTE
+022_titulo_mantenimiento							= Manutenção de Componentes
+022_subtitulo_componente							= Componente
+022_funcion_dispensador								= Dispensador
+022_funcion_ingresador								= Ingresador
+022_funcion_deposito								= Depósito
+022_funcion_rechazo									= Rechazo
+022_funcion_tarjeta									= Tarjeta
+022_ddl_selecione									= Selecionar
+022_modalidad_en_base								= Na Base
+022_modalidad_a_pie									= No Local
+022_modalidad_adicion_con_dos_tiras					= Adição com duas Tiras
+022_lbl_codigo										= Código
+022_lbl_funcion										= Função
+022_lbl_tipo										= Tipo
+022_lbl_modalidad									= Modalidade
+022_lbl_divisa										= Divisa
+022_lbl_denominacion								= Denominação
+022_lbl_medio_pago									= Meio de Pagamento
+022_lbl_activo										= Vigente
+022_lbl_efectivo									= Efetivo
+022_msg_dispensador_cajetin							= Um Contenedor com função dispensador só poderá ser do tipo cajetin.
+022_lbl_tipo_bolsa									= Bolsa
+022_msg_codigo_unico								= Codigo do componente já existente para morfologia.
+022_msg_mediopago_unico								= A morfologia já possui componente para a função {0} com a mesma divisa e tipo de meio de pagamento!
+
+//TELA BÚSQUEDA ATM
+023_titulo_busqueda									= Busca de ATMs
+023_subtitulo_atms									= ATMs
+023_lbl_subtituloscriteriosbusqueda					= Critérios de Busca
+023_lbl_cliente										= Cliente
+023_lbl_subcliente									= Subcliente
+023_lbl_puntoservicio								= Ponto de Serviço
+023_lbl_codigoatm									= Código ATM
+023_lbl_red											= Rede
+023_lbl_modelo										= Modelo
+023_lbl_grupo										= Grupo
+023_lbl_vigente										= Vigente
+023_btncliente									    = Busca Cliente
+023_btnsubcliente								    = Busca Sub Cliente
+023_btnpuntoservicio							    = Busca Ponto de Serviço
+023_lbl_grd_codigo									= Código ATM
+023_lbl_grd_cliente_subc_pto						= Cliente / Sub Cliente / Ponto Serviço
+023_lbl_grd_red										= Rede
+023_lbl_grd_modelo									= Modelo
+023_lbl_grd_grupo									= Grupo
+023_lbl_grd_morfologia								= Morfologia
+023_lbl_grd_vigente									= Vigente
+
+//TELA MANTENIMIENTO ATM
+023_titulo_mantenimiento							= Manutenção de ATMs
+023_subtitulo_atm									= ATM
+023_subtitulo_morfologias							= Morfologias
+023_subtitulo_procesos								= Processos
+023_lbl_codigo										= Código
+023_lbl_registro_tira								= Registro Tira
+023_lbl_des_morfologia								= Morfologia
+023_lbl_fecha_inicio								= Data
+023_grd_des_morfologia								= Morfologia
+023_grd_fec_inicio									= Data
+023_grd_modificar									= Modificar
+023_grd_borrar										= Excluir
+023_grd_vigencia									= Vigência
+023_msg_fecha_invalida								= Data de vigência inválida!
+023_lbl_proceso										= Processo
+023_lbl_producto									= Produto
+023_lbl_canal										= Canal
+023_lbl_subcanal									= Subcanal
+023_lbl_modalidad									= Modalidade
+023_lbl_inf_adicional								= Inform. Adicional
+023_lbl_cliente_facturacion							= Cliente Faturação
+023_lbl_modo_contaje								= Modo Contagem
+023_chk_contar_cheque_totales						= Contar cheques por totais
+023_chk_contar_tickets_totales						= Contar tickets por totais
+023_chk_contar_otros_totales						= Contar otros por totais
+023_chk_tarjetas_totales							= Contar cartão por totais
+023_btnclientefacturacion							= Buscar Cliente Faturação
+023_col_vigente										= Vigente
+023_col_futura										= Futura
+023_col_historico									= Histórico
+023_grd_proceso										= Processo
+023_grd_producto									= Produto
+023_grd_canal										= Canal
+023_grd_subcanal									= Subcanal
+023_grd_modalidad									= Modalidade
+023_grd_inf_adic									= Inf. Adicional
+023_grd_modo_contage								= Modo Contagem
+023_grd_terminos									= Términos
+023_grd_cliente_fact								= Cliente Faturação
+023_msg_006											= Não é possível selecionar o término de meio de pagamento, pois, não há nenhuma morfologia vinculada ao ATM!
+023_morf_proc_obrig									= Um ATM deve estar associado a, pelo menos, uma morfologia e a um processo.
+023_msg_dejara_grupo								= Deixará de pertencer ao grupo!
+023_msg_modificar_borrar							= Finalize a atualização da morfologia para poder excluir.
+023_msg_modalidad_repetida							= Existe Modalidade repetida nos processos.
+023_msg_subcanal_repetida							= Existe Subcanal repetido nos processos.
+
+//TELA MANTENIMIENTO GRUPO
+024_titulo_grupo									= Adicionar Grupo
+024_subtitulo_grupo									= Grupo
+024_codigo_grupo									= Código
+024_desc_grupo										= Descrição
+024_msg_codigo_existente							= O código do grupo já existe!
+
+//TELA BÚSQUEDA PUESTO
+025_titulo_busqueda_puestos							= Busca de Postos
+025_lbl_subtitulospuestos							= Postos
+025_lbl_subtituloscriteriosbusqueda					= Critérios de Busca
+025_lbl_sem_registro						        = Não existem registros.
+025_lbl_vigente										= Vigente
+025_lbl_aplicacion									= Aplicação
+025_lbl_codigopuesto								= Código posto
+025_lbl_hostpuesto									= Host puesto
+025_lbl_planta										= Planta
+025_chk_vigente 									= Vigentes
+025_chk_no_vigente 									= Não Vigentes
+025_chk_cualquiera 									= Qualquer
+025_lbl_delegacion									= Delegação
+025_btnConfigurarParametros							= Configurar Parâmetros
+025_btnCopiarPuesto									= Copiar Posto
+
+//TELA MANTENIMIENTO PUESTO
+025_titulo_mantenimiento_puestos					= Manutenção de Postos
+025_lbl_man_delegacion								= Delegação
+025_lbl_man_aplicacion								= Aplicação
+025_lbl_man_codigopuesto							= Código Posto
+025_lbl_man_hostpuesto								= Host Posto
+025_msg_aplicacion_no_rellenada						= Aplicação é de preenchimento obrigatório
+025_msg_grabar										= Deseja realizar a operação de gravar?
+025_msg_cancelar									= Deseja cancelar a operação ?
+025_msg_grabado_suceso								= Registro gravado com sucesso.
+025_msg_aplicacionobligatorio						= A aplicação é obrigatório.
+025_msg_codigopuestoobligatorio						= O código do posto é obrigatório
+025_msg_hostpuestoobligatorio						= O Host Puesto é obrigatório
+
+//TELA BÚSQUEDA DE PARÁMETROS
+026_titulo_busqueda_parametros						= Busca de parâmetros
+026_lbl_subtitulo_filtros							= Filtros
+026_lbl_subtitulo_paramestros						= Parâmetros
+026_lbl_aplicacion									= Aplicação
+026_lbl_nivel										= Nível
+026_lbl_agrupacion									= Agrupação
+026_btn_abm_agrupaciones							= Agrupações
+026_btn_modificar_parametros						= Modificar Parâmetros
+026_col_aplicacion									= Aplicação
+026_col_nivel										= Nível
+026_col_agrupacion									= Agrupação
+026_col_Codparametro								= Código Parâmetro
+026_col_parametro									= Descrição Parâmetro
+
+//TELA MANTENIMENTO DE PARÁMETROS
+026_titulo_mantenimento_parametros					= Manutenção de parâmetro
+026_subtitulo_mantenimento_parametros				= Manutenção de parâmetro
+026_lbl_aplicacion_mant								= Aplicação
+026_lbl_nivel_mant									= Nível
+026_lbl_codparametro_mant							= Código Parâmetro
+026_lbl_DescripcionLarga_mant						= Descrição Completa
+026_lbl_tipocomponent_mant							= Tipo de Componente
+026_lbl_obligatorio_mant							= Obrigatório?
+026_lbl_tipodato_mant								= Tipo de Dado
+026_lbl_agrupacion_mant								= Agrupação
+026_lbl_descripcioncorto_mant						= Descrição Curta
+026_lbl_orden_mant									= Ordem
+026_msg_agrupacionobligatorio						= A agrupação é obrigatória.
+026_msg_descripcioncortoobligatorio					= A descrição curta é obrigatória.
+026_msg_DescripcionLargaobligatorio					= A descrição completa é obrigatória.
+026_msg_Dordenobligatorio							= A ordem é obrigatória.
+026_titulo_lista_opciones									= Lista de Opções
+
+//TELA CONFIGURACIÓN DE PARÁMETROS
+027_titulo_configuracion_parametros					= Configuração de parâmetros
+027_subtitulos_configuracion_parametros				= Configuração de parâmetros
+027_no_permiso_configurar_permiso				= Usuário não tem permissão para acessar estes parâmetros
+
+//TELA BÚSQUEDA DE AGRUPACIONES PARÁMETROS
+028_titulo_busqueda_puestos							= Busca de Agrupações Parâmetros
+028_subtitulo_mantenimento_agrupacion				= Agrupação
+028_lbl_aplicacion									= Aplicação
+028_lbl_nivel										= Nível
+028_lbl_agrupacion									= Agrupação
+028_lbl_subtituloscriteriosbusqueda					= Critérios de Busca
+028_lbl_subtitulosagrupaciones						= Agrupações de Parâmetros
+028_lbl_sem_registro						        = Não existem registros.
+028_col_aplicacion									= Aplicação
+028_col_nivel										= Nível
+028_col_agrupacion									= Agrupação
+
+//TELA MANTENIMENTO DE AGRUPACIONES PARÁMETROS
+028_titulo_mantenimento_agrupacion					= Manutenção de Agrupação de Parâmetro
+028_lbl_aplicacion_mant								= Aplicação
+028_lbl_nivel_mant									= Nível
+028_lbl_descripcioncorto_mant						= Descrição Curta
+028_lbl_DescripcionLarga_mant						= Descrição Completa
+028_lbl_orden_mant									= Ordem
+028_msg_aplicacionobligatorio						= A aplicação é obrigatória.
+028_msg_nivelobligatorio							= O nível é obrigatório.
+028_msg_descripcioncortoobligatorio					= A descrição curta é obrigatória.
+028_msg_DescripcionLargaobligatorio					= A descrição completa é obrigatória.
+028_msg_Dordenobligatorio							= A ordem é obrigatória.
+
+//TELA MATENIMIENTO DE OPCIONES PARAMETRO
+029_titulo_mantenimiento_parametroopcion			= Manutenção de opções de Parâmetro
+029_subtitulo_mantenimiento_parametroopcion			= Opção de Parâmetro
+029_lbl_codigoparametroopcion						= Código Opção
+029_lbl_descricaoparametroopcion					= Descrição Opção
+029_lbl_vigente										= Vigente
+029_msg_parametroopcion_codigoobligatorio			= O código da opção é obrigatório.
+029_msg_parametroopcion_descripcionobligatorio		= A descrição da opção é obrigatório.
+029_lbl_delegacion									= Delegação
+029_msg_parametroopcion_codigoExistente				= O código da opção já existe.
+029_msg_parametroopcion_descripcionExistente		= A descrição da opção já existe.
+
+//TELA GRUPO DE CLIENTE
+030_titulo_busqueda_grupo_cliente					= Busca de Grupos de Cliente
+030_lbl_codigo_grupo_cliente						= Código
+030_lbl_descricao_grupo_cliente						= Descrição
+030_lbl_vigente										= Vigente
+030_lbl_subtitulo_criterios_busqueda				= Critérios de Busca
+030_lbl_subtitulo_grupo_cliente						= Grupos de Cliente
+030_lbl_cliente										= Cliente
+030_busca_cliente									= Buscar Cliente
+030_busca_subcliente								= Buscar Subcliente
+030_busca_pto_servicio								= Buscar Ponto de Serviço
+030_lbl_subcliente									= Subcliente
+030_lbl_pto_servicio								= Ponto de Serviço
+030_erro_excluir									= Erro ao excluir o Grupo de Cliente.
+030_titulo_mantenimiento_grupo_cliente				= Manutenção de Grupos de Cliente
+030_msg_codigo_obrigatorio							= O código do Grupo de Cliente é obrigatório.
+030_msg_descricaco_obrigatorio						= A descrição do Grupo de Cliente é obrigatória.
+030_msg_cliente_obrigatorio							= Pelo menos um cliente deve ser selecionado.
+030_msg_codigo_existente							= O código do Grupo de Cliente já existe.
+030_btnDireccion									= Endereço
+030_lblClienteResultado								= Clientes pertencentes ao grupo.
+030_lblSubClienteResultado							= Subclientes pertencentes ao grupo.
+030_lblPtoServicioResultado							= Pontos de Serviço pertencentes ao grupo.
+030_msg_iten_existente								= O {0} ja foi incluido ou já existe na lista.
+030_lblTipoGrupoCliente								= Tipo de Grupo de Clientes
+gen_opcion_general									= General 
+gen_opcion_atm										= ATM
+030_msg_TipoGrupoCliente_obrigatorio                = O tipo de Grupo de Cliente é obrigatório.
+
+
+//TIPO CLIENTE
+031_lbl_titulo_pagina								= Busca Tipos Clientes
+031_lbl_codigo_tipoCliente							= Código Tipo Cliente
+031_lbl_descricao_tipo								= Descrição Tipo Cliente
+031_lbl_Tipo_vigente								= Vigente
+031_lbl_tipo_cliente								= Tipos Clientes
+031_lbl_titulo_cliente								= Busca Tipos Clientes
+031_lbl_grd_codigo									= Código
+031_lbl_grd_descricao								= Descrição
+031_lbl_grd_Ativo									= Vigente
+031_lbl_msg_banco									= Não é possível dar baixa no cliente tipo B - Banco!
+031_lbl_msg_Banco_modificar							= Não é possível modificar o tipo cliente B – Banco!
+031_msg_codigTipoExistente							= O Código Tipo Cliente já existe.
+031_lbl_codigo_cliente								= O Código Tipo Cliente é obrigatório.
+031_lbl_decricao_cliente							= A Descrição Tipo Cliente é obrigatória.
+
+//TIPO SUBCLIENTE
+032_titulo_pagina_sub							= Busca Tipos Subclientes
+032_codigo_tipoSubCliente						= Código Tipo Subcliente
+032_descricao_tipoSub							= Descrição Tipo Subcliente
+032_Vigente										= Vigente
+032_TipoSubCliente								= Tipos Subclientes
+032_TituloSubCliente							= Busca Tipos Subclientes
+//O dicionário do GRID - Usar da demanda anterior
+032_msg_codigTipoSubExistente					= O código tipo subcliente já existe .
+032_lbl_codigo_Tbcliente						= O código Tipo Subcliente é obrigatório.
+031_lbl_decricao_Tbcliente						= A Descrição Tipo Subcliente é obrigatório.
+
+//TIPO_PUNTO_SERVICIO
+033_Titulo_punto_servicio						= Busca Tipos Pontos de Serviço
+033_codigo_punto_servicio						= Código Tipo Ponto de Serviço
+033_descricao_punto_servicio					= Descrição Tipo Ponto de Serviço
+033_vigente_punto_servicio						= Vigente
+033_Titulo_criterio_busca_Punto					= Busca Tipos Pontos de Serviço
+033_Titulo_Resultado_Punto_servicio				= Tipos Pontos de Serviço
+033_erro_codigo_obrigatorio						= O Código Tipo Ponto Serviço é obrigatório.
+033_erro_decricao_obrigatorio					= A Descrição Tipo Ponto Serviço é obrigatório.
+033_erro_codigo_existente						= O código tipo ponto de serviço já existe.
+
+//CODIGO AJENO MANTENIMENTO 
+034_titulo_codigo_ajeno							= Códigos Externos
+034_subtitulo_grupo								= Códigos Externos
+034_lbl_codigo_entidade							= Código
+034_lbl_des_entidade							= Descrição
+034_lbl_identificador							= Identificador
+034_lbl_codigo_ajeno							= Código Externo
+034_lbl_descripcion_ajena						= Descrição Externa
+034_lbl_vigente									= Vigente
+034_lbl_gdr_defecto								= Padrão
+034_lbl_gdr_identificador						= Identificador
+034_lbl_gdr_codigo								= Código
+034_lbl_gdr_descripcion							= Descrição
+034_lbl_gdr_vigente								= Vigente
+034_lbl_gdr_modificar							= Modificar
+034_msg_002 									= Existem códigos externos com o mesmo identificador para {0}!
+034_msg_003 									= Existem códigos externos repetidos para {0}!
+034_msg_006 									= É obrigatório definir um código externo como padrão.
+
+//DIRECCION
+035_lbl_codigo							= Código
+035_lbl_descripcion						= Descrição
+035_lbl_pais							= País
+035_lbl_telefono						= Telefone
+035_lbl_Provincia						= Estado
+035_lbl_nfiscal							= NIF/Nota Fiscal
+035_lbl_ciudad							= Cidade
+035_lbl_codigopostal					= Código Postal
+035_lbl_email							= E-mail 
+035_lbl_direccion1						= Endereço 1
+035_lbl_direccion2						= Endereço 2
+035_lbl_campoadicional					= Campo Adicional 1
+035_lbl_campoadicional2					= Campo Adicional 2
+035_lbl_campoadicional3					= Campo Adicional 3
+035_lbl_categoriaadicional				= Categoria Adicional 1
+035_lbl_categoriaadicional2				= Categoria Adicional 2
+035_lbl_categoriaadicional3				= Categoria Adicional 3
+035_lbl_direccion						= Endereço
+035_lbl_dados_adicionais				= Dados Adicionais
+035_msg_erro_Direccion					= Pelo menos um dos campos de endereço deve ser preenchido.
+
+//CLIENTES
+036_titulo_pagina                        = Busca Clientes
+036_lbl_SubTitulosCriteriosBusqueda      = Critérios de Busca
+036_lbl_SubTitulo                        = Clientes
+036_lbl_CodCliente                       = Código Cliente
+036_lbl_DescCliente                      = Descrição Cliente
+036_lbl_TipoCliente                      = Tipo Cliente 
+036_lbl_TotSaldo                         = Totalizador de Saldos
+036_lbl_Vigente                          = Vigente
+036_ddl_selecione                        = Selecione
+036_sim                                  = Sim
+036_nao                                  = Não
+036_lbl_grd_codigo                       = Código
+036_lbl_grd_descripcion					 = Descrição
+036_lbl_grd_tipo_cliente				 = Tipo Cliente
+036_lbl_grd_tot_saldos					 = Tot. Saldos
+036_lbl_grd_vigente						 = Vigente
+
+// MANTENIMIENTO CLIENTES
+037_titulo_mantenimiento                 = Manutenção Clientes
+037_lbl_direccion                        = Endereço 
+037_lbl_CodCliente                       = Código Cliente
+037_lbl_CodigoAjeno                      = Código Alheio
+037_lbl_DescCliente                      = Descrição Cliente
+037_lbl_DesCodigoAjeno                   = Descrição Código Alheio
+037_lbl_TipoCliente                      = Tipo Cliente
+037_lbl_TituloCliente                    = Cliente
+037_lbl_TotSaldo                         = Totalizador de Saldo
+037_lbl_Vigente                          = Vigente
+037_lbl_msgAvisoCliente					 = Reativando o cliente, todos os subcliente e pontos de serviço também serão reativadas.
+037_lbl_msgAvisoClienteDelete 			 = Ao excluir esse cliente, todos os seus subclientes e pontos de serviços também serão excluídos.
+037_msg_csvCodClienteExistente			 = O código do cliente já existe.
+037_msg_csvCodClienteObrigatorio		 = O campo código do cliente é obrigatório.
+037_msg_csvDescClienteObrigatorio		 = O campo descrição do cliente é obrigatório.
+037_msg_csvTipoClienteObrigatorio		 = O campo tipo do cliente é obrigatório.
+037_msg_csvDescClienteExistente    		 = O campo descrição do cliente já existe.
+037_msg_cliente_nivel_saldo				 = O cliente totalizador de saldos é obrigatório.
+037_lbl_TituloTotSaldo					= Totalizadores Configurados para o Cliente
+037_lbl_ProprioTotSaldo					= Totaliza o próprio saldo?
+037_btn_AnadirTotalizador				= Adicionar Totalizador
+037_lbl_TituloDatosBanc					= Contas Bancárias Configuradas para o Cliente
+037_btn_AnadirCuenta					= Adicionar Conta Bancária
+037_titulo_banco						= Banco
+037_titulo_facturacion					= Faturação
+037_lbl_tipoBanco						= Tipo Banco
+037_lblCodigoBancarioForm				= Código Bancario
+037_lblBancoCapitalForm					= Banco Capital?
+037_lblBancoComisionForm				= Banco Comissão?
+037_lblComisionCliente					= Perc. Comissão Cliente
+
+
+037_btnBusquedaNivelSaldo                = Nivel Saldo
+037_btnExcepciones                       = Exceções por Subcanal
+037_lblNivelSaldo                        = Nivel Saldo
+037_rbOtroCliente                        = Outro Cliente
+037_rbEseCliente                         = Ese Cliente
+037_msg_nivel_saldo                      = Somente clientes que estão configurados como Totalizadores de Saldo podem ser responsávies por totalizar seu próprio saldo!
+037_lbl_AbonaPorSaldoTotal				 = Abona por Saldo Total?
+
+// SUBCLIENTES
+038_titulo_pagina                        = Busca SubClientes
+038_lbl_SubTitulosCriteriosBusqueda      = Critérios de Busca
+038_lbl_SubTitulo                        = SubClientes
+038_lbl_CodSubCliente                    = Código SubCliente
+038_lbl_DescSubCliente                   = Descrição SubCliente
+038_lbl_TipoSubCliente                   = Tipo SubCliente 
+038_lbl_TotSaldo                         = Totalizador de Saldos
+038_lbl_Vigente                          = Vigente
+038_ddl_selecione                        = Selecione
+038_sim                                  = Sim
+038_nao                                  = Não
+038_lbl_grd_cliente						 = Cliente
+038_lbl_grd_codigo                       = Código
+038_lbl_grd_descripcion					 = Descrição
+038_lbl_grd_tipo_subcliente				 = Tipo SubCliente
+038_lbl_grd_tot_saldos					 = Totalizador de Saldo
+038_lbl_grd_vigente						 = Vigente
+038_lbl_cliente                          = Cliente
+038_btncliente							 = Buscar Cliente
+038_lbl_SubclienteAvisoDelecao			 = Ao dar baixa no subcliente, todos os pontos de serviço também serão baixados. 
+038_lbl_SubclienteAvisoAtivo			 = Reativando o subcliente, todos os pontos de serviço também serão reativados.
+038_msg_csvClienteObrigatorio		     = O cliente é obrigatório.
+
+// MANTENIMIENTO SUB CLIENTES
+039_titulo_mantenimiento                 = Manutenção SubClientes
+039_lbl_direccion                        = Endereço
+039_lbl_CodSubCliente                    = Código SubCliente
+039_lbl_CodigoAjeno                      = Código Alheio
+039_lbl_DescSubCliente                   = Descrição SubCliente
+039_lbl_DesCodigoAjeno                   = Descrição Código Alheio
+039_lbl_TipoSubCliente                   = Tipo SubCliente
+039_lbl_TituloSubCliente                 = SubCliente
+039_lbl_TotSaldo                         = Totalizador de Saldo
+039_lbl_Vigente                          = Vigente
+039_lbl_TituloTotSaldo					 = Totalizadores Configurados para o SubCliente
+039_lbl_ProprioTotSaldo					 = Totaliza o próprio saldo?
+039_btn_AnadirTotalizador				 = Adicionar Totalizador
+039_lbl_cliente                          = Cliente
+039_btncliente							 = Buscar Cliente
+039_btnBusquedaNivelSaldo                = Nivel Saldo
+039_btnExcepciones                       = Exceções por Subcanal
+039_lblNivelSaldo                        = Nivel Saldo
+039_rbOtroCliente                        = Outro Cliente
+039_rbEseCliente                         = Esse SubCliente
+039_msg_nivel_saldo                      = Somente subclientes que estão configurados como Totalizadores de Saldo podem ser responsávies por totalizar seu próprio saldo!
+039_msg_csvClienteObrigatorio            = O campo cliente é obrigatório.
+039_msg_csvCodSubClienteExistente		 = O código do subcliente já existe para o cliente selecionado.
+039_msg_csvCodSubClienteObrigatorio		 = O campo código do subcliente é obrigatório.
+039_msg_csvDescSubClienteObrigatorio	 = O campo descrição do subcliente é obrigatório.
+039_msg_csvTipoSubClienteObrigatorio	 = O campo descrição do tipo de subcliente é obrigatório.
+039_msg_csvDescSubClienteExistente    	 = A descrição do subcliente já existe para o cliente selecionado.
+039_lbl_TituloDatosBanc					= Contas Bancárias Configuradas para o SubCliente
+039_btn_AnadirCuenta					= Adicionar Conta Bancária
+
+//TIPO PROCEDENCIA
+040_lbl_titulo_pagina								= Busca Tipos Procedências
+040_lbl_codigo_tipoProcedencia						= Código Tipo Procedência
+040_lbl_descricao_tipo								= Descrição Tipo Procedência
+040_lbl_Tipo_vigente								= Vigente
+040_lbl_tipo_procedencia							= Tipos Procedências
+040_lbl_titulo_procedencia							= Busca Tipos Procedências
+040_lbl_grd_codigo									= Código
+040_lbl_grd_descricao								= Descrição
+040_lbl_grd_Ativo									= Vigente
+040_msg_codigTipoExistente							= O Código Tipo Procedência já existe.
+040_lbl_codigo_procedencia							= O Código Tipo Procedência é obrigatório.
+040_lbl_decricao_procedencia						= A Descrição Tipo Procedência é obrigatória.
+
+// PUNTO SERVICIO
+041_titulo_pagina                        = Busca Ponto de Serviços
+041_lbl_SubTitulosCriteriosBusqueda      = Critérios de Busca
+041_lbl_SubTitulo                        = Ponto de Serviço
+041_lbl_CodPuntoServicio                 = Código Ponto de Serviço
+041_lbl_DescPuntoServicio                = Descrição Ponto de Serviço
+041_lbl_TipoPuntoServicio                = Tipo Ponto de Serviço 
+041_lbl_TotSaldo                         = Totalizador de Saldos
+041_lbl_Vigente                          = Vigente
+041_ddl_selecione                        = Selecione
+041_sim                                  = Sim
+041_nao                                  = Não
+041_lbl_grd_codigo                       = Código
+041_lbl_grd_descripcion					 = Descrição
+041_lbl_grd_tipo_PuntoServicio			 = Tipo Ponto de Serviço
+041_lbl_grd_tot_saldos					 = Tot. Saldos
+041_lbl_grd_vigente						 = Vigente
+041_lbl_cliente                          = Cliente
+041_btncliente							 = Buscar Cliente
+041_lbl_subcliente                       = Buscar SubCliente
+041_lbl_gridSubcliente					 = Subcliente
+041_msg_csvClienteObrigatorio            = O cliente é obrigatório.
+041_msg_csvSubClienteObrigatorio         = O subcliente é obrigatório.
+
+// MANTENIMIENTO PUNTO SERVICIO
+042_titulo_mantenimiento                 = Manutenção Ponto de Serviços
+042_lbl_direccion                        = Endereço
+042_lbl_CodPuntoServicio                 = Código Ponto de Serviço
+042_lbl_CodigoAjeno                      = Código Alheio
+042_lbl_DescPuntoServicio                = Descrição Ponto de Serviço
+042_lbl_DesCodigoAjeno                   = Descrição Código Alheio
+042_lbl_TipoPuntoServicio                = Tipo Ponto de Serviço
+042_lbl_TituloPuntoServicio              = Ponto de Serviço
+042_lbl_TotSaldo                         = Totalizador de Saldo
+042_lbl_Vigente                          = Vigente
+042_lbl_cliente                          = Cliente
+042_btncliente							 = Buscar Cliente
+042_lbl_subcliente                       = SubCliente
+042_btn_subcliente			    		 = Buscar SubCliente
+
+042_msg_csvClienteObrigatorio            = O campo cliente é obrigatório.
+042_msg_csvCodPuntoServicioExistente	 = O código do Ponto de Serviço já existe.
+042_msg_csvCodPuntoServicioObrigatorio	 = O campo código do Ponto de Serviço é obrigatório.
+042_msg_csvDescPuntoServicioObrigatorio	 = O campo descrição do Ponto de Serviço é obrigatório.
+042_msg_csvDescPuntoServicioExistente    = O campo descrição do cliente já existe.
+042_msg_csvTipoPuntoServicioObrigatorio	 = O campo tipo de Ponto de Serviço é obrigatório.
+042_msg_csvSubClienteObrigatorio         = O campo SubCliente é obrigatório.
+
+042_btnBusquedaNivelSaldo                = Nivel Saldo
+042_btnExcepciones                       = Exceções por Subcanal
+042_lblNivelSaldo                        = Nivel de Saldo
+042_rbOtroCliente                        = Outro Cliente
+042_rbEseCliente                         = Esse Ponto de Serviço
+042_msg_nivel_saldo                      = Somente ponto de serviço que estão configurados como Totalizadores de Saldo podem ser responsávies por totalizar seu próprio saldo!
+
+042_lbl_TituloTotSaldo					 = Totalizadores Configurados para o Ponto de Serviço
+042_lbl_ProprioTotSaldo					 = Totaliza o próprio saldo?
+042_btn_AnadirTotalizador				 = Adicionar Totalizador
+042_lbl_TituloDatosBanc					= Contas Bancárias Configuradas para o Ponto de Serviço
+042_btn_AnadirCuenta					= Adicionar Conta Bancária
+
+//NIVEL SALDO
+043_lbl_descricao                        = Descrição
+043_lbl_nivel_saldo_defecto              = Nivel Saldo Padrão
+043_lbl_titulo_pagina                    = Nivel Saldo por SubCanal
+043_lbl_sub_canal                        = SubCanal
+043_lbl_nivel_saldo                      = Nivel Saldo
+043_ddl_selecione						 = Selecione
+043_lbl_gdr_modificar                    = Modificar
+043_lbl_gdr_eliminar                     = Eliminar
+043_lbl_gdr_sub_canal                    = SubCanal
+043_lbl_gdr_nivel_saldo                  = Nivel Saldo
+043_msg_CodClienteObrigatorio            = O campo código do cliente é obrigatório.
+043_ddl_todos							 = Todos
+
+// BUSQUEDA NIVEL SERVICIO
+043_lbl_titulo                           = Busca Nivel Saldo
+043_lbl_cliente                          = Cliente
+043_lbl_subcliente                       = SubCliente
+043_lbl_puntoservicio                    = Punto de Serviço
+043_btncliente                           = Cliente
+043_btnSubCliente                        = SubCliente
+043_btnPuntoServicio                     = Punto de Serviço
+043_msg_csvClienteObrigatorio            = O campo cliente é obrigatório.
+043_msg_csvClienteTotalizador            = O cliente selecionado não é totalizador de saldo!
+043_msg_SubClienteTotalizador            = O subcliente selecionado não é totalizador de saldo!
+043_msg_csvPuntoServicioTotalizador      = O ponto de serviço selecionado não é totalizador de saldo!
+043_msg_subcanal_ya_configurado          = Subcanal já possue configuração de nível de saldo para a entidade {0}!
+
+// ucTotSaldo
+044_lbl_grd_defecto						= Padrão
+044_lbl_grd_subcanal					= SubCanal
+044_lbl_grd_totalizador					= Totalizador
+044_lbl_grd_cambiar						= Modificar
+044_lbl_grd_borrar						= Apagar
+044_valida_totalizador					= Já existe um totalizador igual
+
+// BUSQUEDA PROCEDENCIAS
+055_lbl_titulo                           = Busca Procedências
+055_lbl_tiposubcliente                   = Tipo SubCliente
+055_lbl_tipopuntoservicio                = Tipo Punto de Serviço
+055_lbl_tipoprocedencia                  = Tipo Procedencia
+055_lbl_vigencia		                 = Vigencia
+055_lbl_subtitulosprocedencias			 = Procedencias
+055_lbl_subtituloscriteriosbusqueda		 = Critérios de Busca
+055_lbl_gdr_tiposubcliente               = Tipo SubCliente
+055_lbl_gdr_tipopuntoservicio            = Tipo Punto de Serviço
+055_lbl_gdr_tipoprocedencia              = Tipo Procedência
+055_lbl_gdr_vigencia		             = Vigente
+055_ddl_selecione						 = Selecionar
+055_msg_tiposubclienteobligatorio		 = O tipo de subcliente é obrigatório.
+055_msg_tipopuntoservicioobligatorio	 = O tipo de ponto de serviço é obrigatório.
+055_msg_tipoprocedenciaobligatorio		 = O tipo de procedência é obrigatório.
+055_msg_erro_ProcedenciaExistente		 = A Procedencia ja existe.
+055_titulo_mantenimiento_procedencia     = Manutenção Procedência
+055_titulo_procedencia					 = Procedência
+
+008_msg_Agrupacióndescripcionobligatorio			= La descripción de la agrupación es obligatoria.
+008_msg_descricaoAgrupaciónexistente				= El código de la Agrupación ya existe.
+008_msg_codigoAgrupaciónexistente					= La descripción de la Agrupación ya existe.
+009_btncliente										= Búsqueda Cliente
+014_msg_error_MediosPago					= Alguns Medios Pago no pudieron ser actualizados.
+018_col_Agrupación								   = Agrupación
+021_subtitulo_componente							= Componentes
+tkn_token_nao_consumida                             = Token de acceso inválida o expirada
+tkn_tokenutil_token_invalida                        = Token de acceso inválida
+
+// ucDatosBanc
+086_lbl_grd_defecto						= Padrão
+086_lbl_grd_divisa						= Divisa
+086_lbl_grd_banco						= Banco
+086_lbl_grd_tipo						= Tipo
+086_lbl_grd_titular						= Titular
+086_lbl_grd_nroCuenta					= Nro. Conta
+086_lbl_grd_nroDocumento				= Nro. Documento
+086_lbl_grd_cambiar						= Modificar
+086_lbl_grd_borrar						= Apagar
+
+// BusquedaDatosBancariosPopup
+087_lbl_titulo							= IAC
+087_lbl_banco							= Banco
+087_lbl_nrodocumento					= Nro. Documento
+087_lbl_divisa							= Divisa
+087_lbl_titularidad						= Titularidade
+087_lbl_tipo							= Tipo
+087_lbl_obs								= Observações
+087_lbl_cuenta							= Nro. Conta
+087_lbl_defecto							= Padrão
+
+087_msg_csvBancoObrigatorio				= O campo Banco é obrigatório.
+087_msg_csvCuentaObrigatorio			= O campo Nro. Conta é obrigatório.
+087_msg_csvDivisaObrigatorio			= O campo Divisa é obrigatório.
+087_msg_csvTipoObrigatorio				= O campo Tipo é obrigatório.
+087_msg_csvTitularidadObrigatorio		= O campo Titularidade é obrigatório.
+
+//Importe Maximo
+056_lbl_codigoImporte = Código
+056_lbl_DescricaoImporte = Descrição
+056_lbl_Vigente = Vigente
+056_lbl_CanalImporte = Canal
+056_lbl_SubCanalImporte = SubCanal
+056_lbl_DivisaImporte = Divisa
+056_lbl_ValorMaximoImporte = Valor Máximo
+057_lbl_cliente = Cliente
+btnImporteMaximo = Importe Máximo
+
+//Tela Mensagem de Erro
+aplicacao											= IAC
+
+// WEBCONFIG
+WEBCONFIG_CHAVE_INVALIDA							= Chave {0} inexistente e ou valor {1} inválido.
+
+//Migracao do layout
+TituloDefault									= Inicial
+genDelegacion									= Delegação
+genPais											= País
+genSector										= Setor
+btnFechar											= Fechar
+
+//CONTROLE CLIENTE
+021_Cliente_Titulo								= Cliente
+021_Cliente_Popup_Titulo						= Busca de Cliente
+021_Cliente_Popup_Resultado						= Dados de Cliente
+021_Cliente_Popup_Filtro						= Criterios de Busca
+
+//CONTROLE SUBCLIENTE
+022_SubCliente_Titulo							= SubCliente
+022_SubCliente_Popup_Titulo						= Busca de SubCliente
+022_SubCliente_Popup_Resultado					= Dados de SubCliente
+022_SubCliente_Popup_Filtro						= Criterios de Busca
+
+//CONTROLE SECTOR
+122_Sector_Titulo							= Setor
+122_Sector_Popup_Titulo						= Busca de Sector
+122_Sector_Popup_Resultado					= Dados de Sector
+122_Sector_Popup_Filtro						= Criterios de Busca
+
+
+//CONTROLE PUNTO SERVICIO
+023_PtoServicio_Titulo							= Ponto de Serviço
+023_PtoServicio_Popup_Titulo					= Busca de Ponto de Serviço
+023_PtoServicio_Popup_Resultado					= Dados de Ponto de Serviço
+023_PtoServicio_Popup_Filtro					= Criterios de Busca
+
+//CONTROLE HELPER
+014_codigo										= Código:
+014_descricion									= Descrição:
+014_selecao_campo								= Selecione um campo
+014_parametro_obrigatorio						= O parãmetro '{0}' é obrigatório.
+014_ConsiderarSectoresHijos						= Considerar os setores filhos no resultado da busca.
+
+//Calendario
+bntProximo										= Próximo 
+btnAnterior										= Anterior
+btnMoverArriba									= Acima
+btnMoverAbajo									= Abaixo
+horas											= hora(s)
+minutos											= minuto(s)
+segundos										= segundo(s)
+dias											= [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ]
+meses											= [ "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" ]
+btnAgora										= Agora 
+btnConfirma										= Confirma
+
+pagerFormatGrid									= Página {0} de {1} ({2} itens)
+
+021_Resultado_busqueda_puestos					= Dados de Postos
+
+
+022_Resultado_busqueda_Operarios					= Dados de Operários
+
+002_lblCodigo									= Codigo
+gen_sim											= Sim
+gen_nao											= Não
+
+002_lblDescripcion								= Descrição
+btn_aceptar										= Aceitar
+
+//CONTROLE DE CLIENTE, SUBCLIENTE, PTO SERVICO E GRUPO CLIENTE
+028_btnBuscaCliente									= Busca Cliente
+028_btnBuscaSubCliente								= Busca Subcliente
+028_btnBuscaPtoServicio								= Busca Ponto de Serviço
+028_tituloCliente									= Busca de Clientes
+028_tituloSubCliente								= Busca de SubClientes
+028_tituloPtoServico								= Busca de Pontos de Serviço
+028_lblCliente										= Cliente
+028_lblSubcliente									= Subcliente
+028_lblPuntoServicio								= Ponto de Serviço
+028_lblCodigo										= Código
+028_lblDescricao									= Descrição
+028_lblCodigoSubCliente								= Cód. SubCliente
+028_lblDescricaoSubCliente							= Des. SubCliente
+028_lblCodigoPtoServico								= Cód. Pto Serviço
+028_lblDescricaoPtoServico							= Des. Pto Serviço
+028_lblCodigoAlheio 								= Cód. Alheio 
+028_lblDescricaoAlheio 								= Des. Alheio 
+028_lblCriterioBusca								= Criterios de busca
+028_lblGrupoClientes								= Grupo Clientes
+
+btnaceitar 										= Aceitar
+027_lblFiltros										= Configurar Filtros Reportes
+
+
+040_lbl_tipo_procedenciaForm							= Tipo Procedência
+
+010_lbl_titulosterminosForm								= Término IAC
+
+msg_remover_nao_selecionado						= Selecione um ou mais itens a serem removidos!
+
+btnInserirDenominacion = Inserir Denom.
+
+btnInserirTerminos = Inserir Term.
+
+btnInserirSubcanal = Inserir SubCanal
+
+btnInserirComponente = Inserir Componente
+
+
+deviceIDasociado = O DeviceID '{0}' já está associado a lista de maquinas da planificação.
+
+//POPUP - TRANSACIONES MAE
+029_grid_CodigoTransaccion				= Código transação
+029_grid_DescripcionFormulario			= Formulário
+029_grid_FechaGestion					= Data gestão
+029_grid_CodigoPuntoServicio			= Código ponto
+029_grid_DescripcionPuntoServicio		= Descrição ponto
+029_grid_MAE							= MAE
+029_grid_CodigoIsoDivisa				= Divisa local
+029_grid_Importe						= Valor
+029_titulo_transaciones					= Transações
+029_btn_transaciones					= Transações
+
+//InformacionGenesis
+InformacionGenesis_grid_FileName = Descrição
+InformacionGenesis_grid_FileVersion = Versão do Arquivo
+InformacionGenesis_grid_ProductVersion = Versão do Produto
+
+//InformacionIAC
+InformacionIAC_titulo_pagina	= Sobre o IAC {0}
+InformacionIAC_lbl_SubTitulo	= Sobre o IAC {0}
+InformacionIAC_btnExportar		= Exportar
+
+//Tela Transaciones
+lbl_titulo_transacion					= Buscar Transações
+
+024_Canal_Titulo = Canal
+024_Canal_Popup_Titulo = Busca de Canal
+024_Canal_Popup_Resultado = Dados de Canal
+024_Canal_Popup_Filtro = Critérios de Busca
+
+025_SubCanal_Titulo = SubCanal
+025_SubCanal_Popup_Titulo = Busca de SubCanal
+025_SubCanal_Popup_Resultado = Dados de SubCanal
+025_SubCanal_Popup_Filtro = Critérios de Busca
+
+
+
+024_PuntoServicio_Titulo = Ponto de Serviço
+024_PuntoServicio_Popup_Titulo = Busca de Ponto de Serviço
+024_PuntoServicio_Popup_Resultado = Dados de Ponto de Serviço
+024_PuntoServicio_Popup_Filtro = Critérios de Busca
+
+045_Usuario_Popup_Titulo = Busca de Usuário
+045_Usuario_Popup_Resultado = Dados do Usuário
+045_Usuario_Popup_Filtro = Critérios de Busca
+
+
+DeviceID_Popup_Titulo = Busca de DeviceID
+DeviceID_Popup_Resultado = Datos do DeviceID
+DeviceID_Popup_Filtro = Critérios de Busca
+
+
+024_Planificacion_Titulo = Planificação
+024_Planificacion_Popup_Titulo = Busca de Planificação
+024_Planificacion_Popup_Resultado = Dados de Planificação
+024_Planificacion_Popup_Filtro = Critérios de Busca

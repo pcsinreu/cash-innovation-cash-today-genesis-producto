@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98A0B1A2-D8F4-44E1-BA90-22EB0BA83562}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Global.Saldos.Negocio</RootNamespace>
+    <AssemblyName>Prosegur.Global.Saldos.Negocio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Prosegur.Global.Saldos.Negocio/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Global.Saldos.Negocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Global.Saldos.Negocio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.CriptoHelper, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=9058cbda107a109f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.CriptoHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.DbHelper, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=1833a9fd5e21244f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.DbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Framework.Dicionario, Version=3.1.1203.901, Culture=neutral, PublicKeyToken=6bb1f230141d8049, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Framework.Dicionario.dll</HintPath>
+    </Reference>
+    <Reference Include="Prosegur.Global.Seguridad.ContractoServicio, Version=1.2.1311.1401, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Genesis\.Referencias\Prosegur.Global.Seguridad.ContractoServicio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Genesis\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="Accion.vb" />
+    <Compile Include="Acciones.vb" />
+    <Compile Include="Automata.vb" />
+    <Compile Include="Automatas.vb" />
+    <Compile Include="Banco.vb" />
+    <Compile Include="Bancos.vb" />
+    <Compile Include="Bulto.vb" />
+    <Compile Include="Bultos.vb" />
+    <Compile Include="Campo.vb" />
+    <Compile Include="CampoExtra.vb" />
+    <Compile Include="CampoExtraValoresValidos.vb" />
+    <Compile Include="Campos.vb" />
+    <Compile Include="CamposExtra.vb" />
+    <Compile Include="Carpeta.vb" />
+    <Compile Include="CentroProceso.vb" />
+    <Compile Include="CentrosProceso.vb" />
+    <Compile Include="Classes\CustomUsernameTokenManager.vb" />
+    <Compile Include="Classes\LoginGlobal.vb" />
+    <Compile Include="Cliente.vb" />
+    <Compile Include="Clientes.vb" />
+    <Compile Include="Constantes.vb" />
+    <Compile Include="Copia.vb" />
+    <Compile Include="Copias.vb" />
+    <Compile Include="TransaccionNoMigrada.vb" />
+    <Compile Include="Documentos.vb" />
+    <Compile Include="dsInventarioBultos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInventarioBultos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSaldos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSaldos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTransaccionesV4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTransaccionesV4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTransaccionesV4.vb">
+      <DependentUpon>dsTransaccionesV4.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Grupo.vb" />
+    <Compile Include="Destino.vb" />
+    <Compile Include="Destinos.vb" />
+    <Compile Include="Detalle.vb" />
+    <Compile Include="Detalles.vb" />
+    <Compile Include="Documento.vb" />
+    <Compile Include="DSBultos.Designer.vb">
+      <DependentUpon>DSBultos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DSBultos.vb">
+      <DependentUpon>DSBultos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTransacciones.Designer.vb">
+      <DependentUpon>dsTransacciones.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="dsTransaccionesV5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTransaccionesV5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTransaccionesV5.vb">
+      <DependentUpon>dsTransaccionesV5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Elemento.vb" />
+    <Compile Include="Enumeradores.vb" />
+    <Compile Include="Esel.vb" />
+    <Compile Include="Especie.vb" />
+    <Compile Include="Especies.vb" />
+    <Compile Include="EstadoComprobante.vb" />
+    <Compile Include="EstadosComprobante.vb" />
+    <Compile Include="Extracto.vb" />
+    <Compile Include="Fajo.vb" />
+    <Compile Include="Fajos.vb" />
+    <Compile Include="Formulario.vb" />
+    <Compile Include="Formularios.vb" />
+    <Compile Include="Funcion.vb" />
+    <Compile Include="Funciones.vb" />
+    <Compile Include="HistoricoInventario.vb" />
+    <Compile Include="HistoricoInventarios.vb" />
+    <Compile Include="HistoricoSaldoCongelado.vb" />
+    <Compile Include="HistoricoSaldosCongelados.vb" />
+    <Compile Include="Inventario.vb" />
+    <Compile Include="Moneda.vb" />
+    <Compile Include="Monedas.vb" />
+    <Compile Include="Motivo.vb" />
+    <Compile Include="Motivos.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Planta.vb" />
+    <Compile Include="Plantas.vb" />
+    <Compile Include="QSConexionABDD.vb" />
+    <Compile Include="QSEventLog.vb" />
+    <Compile Include="Reporte.vb" />
+    <Compile Include="Reportes.vb" />
+    <Compile Include="Saldo.vb" />
+    <Compile Include="SaldoCongelado.vb" />
+    <Compile Include="SaldoCongeladoDetalle.vb" />
+    <Compile Include="Saldos.vb" />
+    <Compile Include="SaldosCongelados.vb" />
+    <Compile Include="SaldosCongeladosDetalle.vb" />
+    <Compile Include="SelDocumentos.vb" />
+    <Compile Include="SelFormularios.vb" />
+    <Compile Include="Sobre.vb" />
+    <Compile Include="Sobres.vb" />
+    <Compile Include="TipoCampoExtra.vb" />
+    <Compile Include="TipoCentroProceso.vb" />
+    <Compile Include="TipoCopia.vb" />
+    <Compile Include="TiposCampoExtra.vb" />
+    <Compile Include="TiposCentroProceso.vb" />
+    <Compile Include="TiposCopia.vb" />
+    <Compile Include="Total.vb" />
+    <Compile Include="Totales.vb" />
+    <Compile Include="Transaccion.vb" />
+    <Compile Include="Transacciones.vb" />
+    <Compile Include="TransaccionesV4.vb" />
+    <Compile Include="TransaccionesV5.vb" />
+    <Compile Include="Usuario.vb" />
+    <Compile Include="Usuarios.vb" />
+    <Compile Include="Util.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DSBultos.xsc">
+      <DependentUpon>DSBultos.xsd</DependentUpon>
+    </None>
+    <None Include="DSBultos.xsd" />
+    <None Include="DSBultos.xss">
+      <DependentUpon>DSBultos.xsd</DependentUpon>
+    </None>
+    <None Include="dsInventarioBultos.xsc">
+      <DependentUpon>dsInventarioBultos.xsd</DependentUpon>
+    </None>
+    <None Include="dsInventarioBultos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventarioBultos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsInventarioBultos.xss">
+      <DependentUpon>dsInventarioBultos.xsd</DependentUpon>
+    </None>
+    <None Include="dsSaldos.xsc">
+      <DependentUpon>dsSaldos.xsd</DependentUpon>
+    </None>
+    <None Include="dsSaldos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSaldos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsSaldos.xss">
+      <DependentUpon>dsSaldos.xsd</DependentUpon>
+    </None>
+    <None Include="dsTransacciones.xsc">
+      <DependentUpon>dsTransacciones.xsd</DependentUpon>
+    </None>
+    <None Include="dsTransacciones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransacciones.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsTransacciones.xss">
+      <DependentUpon>dsTransacciones.xsd</DependentUpon>
+    </None>
+    <None Include="dsTransaccionesV4.xsc">
+      <DependentUpon>dsTransaccionesV4.xsd</DependentUpon>
+    </None>
+    <None Include="dsTransaccionesV4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransaccionesV4.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsTransaccionesV4.xss">
+      <DependentUpon>dsTransaccionesV4.xsd</DependentUpon>
+    </None>
+    <None Include="dsTransaccionesV5.xsc">
+      <DependentUpon>dsTransaccionesV5.xsd</DependentUpon>
+    </None>
+    <None Include="dsTransaccionesV5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransaccionesV5.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsTransaccionesV5.xss">
+      <DependentUpon>dsTransaccionesV5.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Resources\Campo\FormularioCampoRealizarTodos.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoreporteRealizar.sql" />
+    <Content Include="Resources\Banco\BancosReportRealizar.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoDescricaoPorId.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoDescricaoPorIdVar.sql" />
+    <None Include="Resources\Clientes\ClientesRealizarPorBanco.sql" />
+    <None Include="Resources\Clientes\ClientesReportRealizar.sql" />
+    <Content Include="Resources\Clientes\ClienteDescricaoBuscarPorID.sql" />
+    <Content Include="Resources\Clientes\ClienteDescricaoBuscarPorIDVar.sql" />
+    <None Include="Resources\Documentos\DocumentoCabeceraAtualizar.sql" />
+    <None Include="Resources\Documentos\DocumentoCabeceraObtemDados.sql" />
+    <None Include="Resources\Documentos\DocumentosObterPorGrupo.sql" />
+    <None Include="Resources\Documentos\DocumentoValidarExistenciaDocumentoNoCP.sql" />
+    <None Include="Resources\Documentos\DocumentoVerificarNumExternoAssociadoRechazo.sql" />
+    <None Include="Resources\Documentos\GrupoDocumentosRealizar.sql" />
+    <None Include="Resources\Especie\EspecieObtenerPorDenominacion.sql" />
+    <None Include="Resources\EstadoCombropante\EstadoComprobanteObterId.sql" />
+    <None Include="Resources\Extracto\ExtractoPorDocumentoSaldoFinalRealizar.sql" />
+    <None Include="Resources\Extracto\ExtractoPorDocumentoRealizar.sql" />
+    <None Include="Resources\Documentos\DocumentoValidarExistenciaDocumentoIdPsCentroProceso.sql" />
+    <Content Include="Resources\Clientes\ClientesRealizarPorIdPs.sql" />
+    <Content Include="Resources\Detalles\DocumentoDetalleByJoin.sql" />
+    <Content Include="Resources\Documentos\DocumentoBuscaUltimoDocumentoRemessa.sql" />
+    <Content Include="Resources\Documentos\DocumentoCabeceraRealizarTransacionesCompleto.sql" />
+    <Content Include="Resources\Documentos\DocumentoCabeceraRealizarTransaciones.sql" />
+    <Content Include="Resources\Documentos\DocumentoCabeceraAtualizarExportadoSalidas.sql" />
+    <Content Include="Resources\Documentos\DocumentoCabeceraRealizarCrearMif.sql" />
+    <Content Include="Resources\Documentos\DocumentoMIFIncrementaCantidadReintentos.sql" />
+    <Content Include="Resources\Documentos\DocumentoPorGrupo.sql" />
+    <Content Include="Resources\Documentos\DocumentoRecuperarRemesaContadaConteo.sql" />
+    <Content Include="Resources\Documentos\DocumentosEnviarConteoRealizarByIdDocumento.sql" />
+    <Content Include="Resources\Documentos\DocumentoBuscaPorNumExterno.sql" />
+    <Content Include="Resources\Documentos\DocumentoValidarExistenciaDocumento.sql" />
+    <Content Include="Resources\Documentos\DocumentoVerificaNumExternoTipoFormulario.sql" />
+    <Content Include="Resources\Especie\EspeciesRealizarByMoneda.sql" />
+    <Content Include="Resources\EstadoCombropante\EstadoComprobanteRealizarPorDocumento.sql" />
+    <Content Include="Resources\Formulario\FormularioBorrarCondicionReporteTransicionV5.sql" />
+    <Content Include="Resources\Formulario\FormularioCondicionReporteTransicionV5Registrar.sql" />
+    <Content Include="Resources\Formulario\FormulariosVisibleTransacaoV5Listar.sql" />
+    <Content Include="Resources\Formulario\FormularioUsuarioListar.sql" />
+    <None Include="Resources\Funciones\FuncionesRealizar.sql" />
+    <Content Include="Resources\Grupo\GrupoRealizar.sql" />
+    <Content Include="Resources\Moneda\MonedasRealizarTodos.sql" />
+    <None Include="Resources\Planta\PlantaCentrosProcesoRealizarByIDPS.sql" />
+    <Content Include="Resources\Planta\PlantaRealizarPorIdps.sql" />
+    <Content Include="Resources\Planta\PlantaRealizarByCodigoDelegacion.sql" />
+    <Content Include="Resources\TipoCentroProceso\TiposCentroProcesoRealizar.sql" />
+    <Content Include="Resources\Moneda\MonedasReportRealizar.sql" />
+    <Content Include="Resources\Moneda\MonedaDescricaoID.sql" />
+    <Content Include="Resources\Moneda\MonedaDescricaoIDVar.sql" />
+    <None Include="Resources\Inventario\InventarioCabeceraInsertar.sql" />
+    <None Include="Resources\Inventario\InventarioDetalleInsertar.sql" />
+    <None Include="Resources\Motivos\MotivoObterAccionDeFormulario.sql" />
+    <None Include="Resources\Planta\PlantaCentrosProcesoRealizar.sql" />
+    <None Include="Resources\Sequences\SSaldoFinal.sql" />
+    <None Include="Resources\Sequences\STipoCentroProceso.sql" />
+    <None Include="Resources\TipoCentroProceso\TipoCentroProcesoEliminar.sql" />
+    <None Include="Resources\TipoCentroProceso\TipoCentroProcesoRealizar.sql" />
+    <None Include="Resources\TipoCentroProceso\TipoCentroProcesoRegistrarInsert.sql" />
+    <None Include="Resources\TipoCentroProceso\TipoCentroProcesoRegistrarUpdate.sql" />
+    <None Include="Resources\Usuario\UsuarioCambiarClave.sql" />
+    <None Include="Resources\Usuario\UsuarioFormularioRealizar.sql" />
+    <None Include="Resources\Usuario\UsuarioIngresar.sql" />
+    <None Include="Resources\Util\GravarErroNoBanco.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Banco\BancoRealizarPorCanalGenesis.sql" />
+    <Content Include="Resources\Carpeta\CarpetaDocumentosRealizarPorPrecinto.sql" />
+    <Content Include="Resources\Carpeta\CarpetaDocumentosRealizarSimplificado.sql" />
+    <Content Include="Resources\Clientes\ClienteRealizarPorClienteGenesis.sql" />
+    <Content Include="Resources\Clientes\ClienteSelecionarSubCliente.sql" />
+    <Content Include="Resources\Destinos\DestinoRegistrarUpdate.sql" />
+    <Content Include="Resources\Detalles\DocumentoDetalleRealizarSimplificado.sql" />
+    <None Include="Resources\Documentos\DocumentoRecuperarEnviadoConteo.sql" />
+    <Content Include="Resources\Documentos\DocumentoAtualizarClientes.sql" />
+    <Content Include="Resources\Documentos\DocumentoAtualizarExportadoConteo.sql" />
+    <Content Include="Resources\Documentos\DocumentoActualizarDesError.sql" />
+    <None Include="Resources\Documentos\DocumentoActualizarMIFEnviado.sql" />
+    <Content Include="Resources\Documentos\DocumentoActualizarExportadoSalidas.sql" />
+    <Content Include="Resources\Documentos\DocumentoAtualizarExportado.sql" />
+    <Content Include="Resources\Documentos\DocumentoBuscaIdDocumentoPorNumExterno.sql">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Resources\Documentos\DocumentoIncrementaCantidadReintentos.sql" />
+    <Content Include="Resources\Documentos\DocumentoModificarRemesa.sql" />
+    <Content Include="Resources\Bultos\BultosPorPlanta.sql" />
+    <Content Include="Resources\Bultos\BultosPorRecorrido.sql" />
+    <Content Include="Resources\Bultos\InventarioBultos.sql" />
+    <Content Include="Resources\Bultos\SeguimientoBultosNumeroPrecinto.sql" />
+    <Content Include="Resources\Bultos\SeguimientoBultosNumeroExterno.sql" />
+    <Content Include="Resources\CampoExtra\CampoExtraValorRegistrar.sql" />
+    <Content Include="Resources\Automata\AutomataDocumentoRealizar.sql" />
+    <Content Include="Resources\Automata\IdOrigenDesdeNumExterno.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoRealizarTodos.sql" />
+    <Content Include="Resources\CentroProceso\CentrosProcesoListarPorUsuario.sql" />
+    <Content Include="Resources\Documentos\CampoExtraValorValido.sql" />
+    <Content Include="Resources\Documentos\CamposExtraValorBorrar.sql" />
+    <Content Include="Resources\Documentos\DocumentoBultosBorrar.sql" />
+    <Content Include="Resources\Documentos\DocumentoBultosRegistrar.sql" />
+    <Content Include="Resources\Documentos\DocumentoCabeceraRegistrarInsert.sql" />
+    <Content Include="Resources\Documentos\DocumentoCabeceraRegistrarUpdate.sql" />
+    <Content Include="Resources\Documentos\DocumentoCambiarEstado.sql" />
+    <Content Include="Resources\Documentos\DocumentoCentroProcesoOrigemDestino.sql" />
+    <Content Include="Resources\Documentos\DocumentoDetalleBorrar.sql" />
+    <Content Include="Resources\Documentos\DocumentoDetalleRegistrar.sql" />
+    <None Include="Resources\Documentos\DocumentoRecuperarDetalleMIF.sql" />
+    <None Include="Resources\Documentos\DocumentoRecuperarMIF.sql" />
+    <Content Include="Resources\Documentos\DocumentoRegistrarRemesa.sql" />
+    <Content Include="Resources\Documentos\DocumentoSeaExportadoUpdate.sql" />
+    <Content Include="Resources\Documentos\DocumentosEnviarConteoRealizar.sql" />
+    <Content Include="Resources\Documentos\DocumentoSobresBorrar.sql" />
+    <Content Include="Resources\Documentos\DocumentosSobreRegistrar.sql" />
+    <Content Include="Resources\Documentos\DocumentoUsuarioCpRealizar.sql" />
+    <Content Include="Resources\Documentos\DocumentoVerificaNumExterno.sql" />
+    <Content Include="Resources\Documentos\GrupoDocumentosSeanCamposFijosUpdate.sql" />
+    <Content Include="Resources\Documentos\SeValidaCampoExtra.sql" />
+    <Content Include="Resources\Especie\ListarIdEspecieYIdGenesis.sql" />
+    <Content Include="Resources\Especie\EspecieMonedaDefaultRealizar.sql" />
+    <Content Include="Resources\Especie\EspecieRealizarTodos.sql" />
+    <Content Include="Resources\Especie\EspeciesRealizarTodas.sql" />
+    <Content Include="Resources\Extracto\ExtractoCorrelativoFechaDesdeRealizar.sql" />
+    <Content Include="Resources\Extracto\ExtractoDocumentoRegistrar.sql" />
+    <Content Include="Resources\Extracto\ExtractoRegistrar.sql" />
+    <Content Include="Resources\Extracto\ExtractoSaldoFinalRegistrar.sql" />
+    <Content Include="Resources\Formulario\FormularioRealizarTodos.sql" />
+    <Content Include="Resources\HistoricoInventario\HistoricoInventarioDisponiblesV9.sql" />
+    <Content Include="Resources\HistoricoInventario\HistoricoInventarioPDF.sql" />
+    <Content Include="Resources\HistoricoInventario\HistoricoInventarioExcel.sql" />
+    <Content Include="Resources\HistoricoInventario\HistoricoInventario.sql" />
+    <Content Include="Resources\HistoricoInventario\HistoricoInventarioRegistrar.sql" />
+    <Content Include="Resources\Inventario\InventarioCabeceraRemover.sql" />
+    <Content Include="Resources\Inventario\InventarioDetalleRemover.sql" />
+    <Content Include="Resources\Moneda\ListarIdMonedaYIdps.sql" />
+    <Content Include="Resources\Moneda\MonedaGenesisRealizar.sql" />
+    <Content Include="Resources\Moneda\MonedaRealizarTodos.sql" />
+    <Content Include="Resources\Planta\PlantaRealizarTodos.sql" />
+    <Content Include="Resources\Reporte\ReporteDocumentosRealizarPorPrecinto.sql" />
+    <Content Include="Resources\Reporte\ReporteDocumentosRealizar.sql" />
+    <Content Include="Resources\Reporte\ReporteDocumentosRealizarSimplificado.sql" />
+    <Content Include="Resources\Reporte\ReporteEliminar.sql" />
+    <Content Include="Resources\Reporte\ReporteEstadoComprobanteBorrar.sql" />
+    <Content Include="Resources\Reporte\ReporteEstadoComprobanteRegistrar.sql" />
+    <Content Include="Resources\Reporte\ReporteFormularioBorrar.sql" />
+    <Content Include="Resources\Reporte\ReporteFormularioRegistrar.sql" />
+    <Content Include="Resources\Reporte\ReporteRegistrarInsert.sql" />
+    <Content Include="Resources\Documentos\DocumentoCabeceraRealizar.sql" />
+    <Content Include="Resources\Reporte\ReporteEstadoComprobanteRealizar.sql" />
+    <Content Include="Resources\Reporte\ReporteFormularioRealizar.sql" />
+    <Content Include="Resources\Reporte\ReporteRealizar.sql" />
+    <Content Include="Resources\Automata\AutomataCentrosProcesoRealizar.sql" />
+    <Content Include="Resources\Automata\AutomataRealizar.sql" />
+    <Content Include="Resources\Automata\AutomataCentroProcesoRegistrar.sql" />
+    <Content Include="Resources\Automata\AutomataCentrosProcesoBorrar.sql" />
+    <Content Include="Resources\Accion\AccionesRealizar.sql" />
+    <Content Include="Resources\Automata\AutomataRegistrarInsert.sql" />
+    <Content Include="Resources\Automata\AutomataRegistrarUpdate.sql" />
+    <Content Include="Resources\Automata\AutomatasRealizar.sql" />
+    <Content Include="Resources\Banco\BancoEliminarCliente.sql" />
+    <Content Include="Resources\Banco\BancoEliminarClienteBanco.sql" />
+    <Content Include="Resources\Banco\BancoRealizar.sql" />
+    <Content Include="Resources\Banco\BancoRegistrarClienteInsert.sql" />
+    <Content Include="Resources\Banco\BancoRegistrarClienteUpdate.sql" />
+    <Content Include="Resources\Banco\BancoRegistrarInsert.sql" />
+    <Content Include="Resources\Banco\BancosRealizar.sql" />
+    <Content Include="Resources\Banco\BancosClienteRealizar.sql" />
+    <Content Include="Resources\Bultos\BultosRealizar.sql" />
+    <Content Include="Resources\CampoExtra\CampoExtraEliminar.sql" />
+    <Content Include="Resources\CampoExtra\CampoExtraRealizar.sql" />
+    <Content Include="Resources\CampoExtra\CampoExtraRegistrarInsert.sql" />
+    <Content Include="Resources\CampoExtra\CampoExtraRegistrarUpdate.sql" />
+    <Content Include="Resources\CampoExtra\CampoExtraValoresValidosRealizar.sql" />
+    <Content Include="Resources\CampoExtra\CamposExtrasRealizar.sql" />
+    <Content Include="Resources\CampoExtra\CamposExtrasRealizarPorIdDocumentoIdFormulario.sql" />
+    <Content Include="Resources\CampoExtra\CamposExtrasRealizarPorIdFormulario.sql" />
+    <Content Include="Resources\Campo\FormularioCampoRealizar.sql" />
+    <Content Include="Resources\Carpeta\CarpetaDocumentosRealizar.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoEliminar.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoMotivoCentroProcesoRegistrar.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoRealizar.sql" />
+    <Content Include="Resources\CentroProceso\CentrosProcesoPorIdps.sql" />
+    <Content Include="Resources\CentroProceso\CentrosProcesoRealizar.sql" />
+    <Content Include="Resources\CentroProceso\CentrosProcesoRealizarPorUsuario.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoregistrarInsert.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoregistrarUpdate.sql" />
+    <Content Include="Resources\CentroProceso\CentroProcesoMotivoCentroProcesoBorrar.sql" />
+    <Content Include="Resources\Clientes\ClienteBancoRegistrar.sql" />
+    <Content Include="Resources\Clientes\ClienteEliminar.sql" />
+    <Content Include="Resources\Clientes\ClienteEliminarBanco.sql" />
+    <Content Include="Resources\Clientes\ClienteRealizar.sql" />
+    <Content Include="Resources\Clientes\ClienteRegistrar.sql" />
+    <Content Include="Resources\Clientes\ClientesRealizarIdPlanta.sql" />
+    <Content Include="Resources\Clientes\ClientesRealizarIdPS.sql" />
+    <Content Include="Resources\Clientes\ClienteUpdate.sql" />
+    <Content Include="Resources\Copia\FormularioCopiaRealizar.sql" />
+    <Content Include="Resources\Destinos\DestinoRealizar.sql" />
+    <Content Include="Resources\Destinos\DestinosRealizar.sql" />
+    <Content Include="Resources\Detalles\DocumentoDetalleRealizar.sql" />
+    <Content Include="Resources\Especie\EspecieEliminar.sql" />
+    <Content Include="Resources\Especie\EspecieRealizar.sql" />
+    <Content Include="Resources\Especie\EspecieRegistrarInsert.sql" />
+    <Content Include="Resources\Especie\EspecieRegistrarUpdate.sql" />
+    <Content Include="Resources\Especie\EspeciesRealizar.sql" />
+    <Content Include="Resources\EstadoCombropante\EstadoComprobanteRealizar.sql" />
+    <Content Include="Resources\EstadoCombropante\EstadosComprobanteRealizar.sql" />
+    <Content Include="Resources\Formulario\FormularioCampoBorrar.sql" />
+    <Content Include="Resources\Formulario\FormularioCampoExtraRegistrar.sql" />
+    <Content Include="Resources\Formulario\FormularioCampoRegistrar.sql" />
+    <Content Include="Resources\Formulario\FormularioCamposExtraBorrar.sql" />
+    <Content Include="Resources\Formulario\FormularioCopiaBorrar.sql" />
+    <Content Include="Resources\Formulario\FormularioCopiaRegistrar.sql" />
+    <Content Include="Resources\Formulario\FormularioEliminar.sql" />
+    <Content Include="Resources\Formulario\FormularioRealizar.sql" />
+    <Content Include="Resources\Formulario\FormularioRealizarCentroProcessoMatriz.sql" />
+    <Content Include="Resources\Formulario\FormularioRegistrarInsert.sql" />
+    <Content Include="Resources\Formulario\FormularioRegistrarUpdate.sql" />
+    <Content Include="Resources\Formulario\FormulariosRealizar.sql" />
+    <Content Include="Resources\Formulario\FormularioTipoCentroProcesoBorrar.sql" />
+    <Content Include="Resources\Formulario\FormularioTipoCentroProcesoRealizar.sql" />
+    <Content Include="Resources\Formulario\FormularioTipoCentroProcesoRegistrar.sql" />
+    <Content Include="Resources\Formulario\FormularioUsuarioBorrar.sql" />
+    <Content Include="Resources\Formulario\FormularioUsuarioRealizar.sql" />
+    <Content Include="Resources\Formulario\FormularioUsuarioRegistrar.sql" />
+    <Content Include="Resources\Moneda\MonedaEliminar.sql" />
+    <Content Include="Resources\Moneda\MonedaEliminarEspecie.sql" />
+    <Content Include="Resources\Moneda\MonedaRealizar.sql" />
+    <Content Include="Resources\Moneda\MonedaRegistrarInsert.sql" />
+    <Content Include="Resources\Moneda\MonedaRegistrarUpdate.sql" />
+    <Content Include="Resources\Moneda\MonedasRealizar.sql" />
+    <Content Include="Resources\Motivos\MotivoRealizar.sql" />
+    <Content Include="Resources\Motivos\MotivoRegistrarInsert.sql" />
+    <Content Include="Resources\Motivos\MotivoRegistrarUpdate.sql" />
+    <Content Include="Resources\Motivos\MotivosRealizar.sql" />
+    <Content Include="Resources\Motivos\MotivosRealizarPorCentroProceso.sql" />
+    <Content Include="Resources\Planta\PlantaRealizar.sql" />
+    <Content Include="Resources\Planta\PlantaRegistrarEliminar.sql" />
+    <Content Include="Resources\Planta\PlantaRegistrarInsert.sql" />
+    <Content Include="Resources\Planta\PlantaRegistrarUpdate.sql" />
+    <Content Include="Resources\Planta\PlantasRealizar.sql" />
+    <Content Include="Resources\Reporte\ReporteRegistrarUpdate.sql" />
+    <Content Include="Resources\Reporte\ReportesRealizar.sql" />
+    <Content Include="Resources\SaldoCongelado\SaldoCongeladoInserir.sql" />
+    <Content Include="Resources\SaldoCongelado\SaldoCongeladoRecuperarUltimoRegistro.sql" />
+    <Content Include="Resources\SaldoCongelado\SaldoCongeladoSelecionar.sql" />
+    <Content Include="Resources\SaldoCongelado\SaldoCongeladoSelecionarByFecha.sql" />
+    <Content Include="Resources\SaldoCongelado\SaldosCongeladosSeleccionarById.sql" />
+    <Content Include="Resources\Sequences\SAutomata.sql" />
+    <Content Include="Resources\Sequences\SCampoExtra.sql" />
+    <Content Include="Resources\Sequences\SCentroProceso.sql" />
+    <Content Include="Resources\Sequences\SCliente.sql" />
+    <Content Include="Resources\Sequences\SDocumento.sql" />
+    <Content Include="Resources\Sequences\SEspecie.sql" />
+    <Content Include="Resources\Sequences\SExtracto.sql" />
+    <Content Include="Resources\Sequences\SMoneda.sql" />
+    <Content Include="Resources\Sequences\SMotivo.sql" />
+    <Content Include="Resources\Sequences\SPlanta.sql" />
+    <Content Include="Resources\Sequences\SReporte.sql" />
+    <Content Include="Resources\Sequences\SSaldoCongelado.sql" />
+    <Content Include="Resources\Sequences\SUsuario.sql" />
+    <Content Include="Resources\Sequences\SFormulario.sql" />
+    <Content Include="Resources\Sobres\SobresRealizar.sql" />
+    <Content Include="Resources\TipoCampoExtra\TipoCampoExtraRealizar.sql" />
+    <Content Include="Resources\TipoCampoExtra\TiposCampoExtraRealizar.sql" />
+    <Content Include="Resources\TipoCopia\TiposCopiaRealizar.sql" />
+    <Content Include="Resources\TransaccionNoMigrada\TransaccionNoMigrada.sql" />
+    <Content Include="Resources\Usuario\UsuarioBloquear.sql" />
+    <Content Include="Resources\Usuario\UsuarioBorraCentroProcesso.sql" />
+    <Content Include="Resources\Usuario\UsuarioCentroProcessoRegistar.sql" />
+    <Content Include="Resources\Usuario\UsuarioDesbloquear.sql" />
+    <Content Include="Resources\Usuario\UsuarioFormularioBorrar.sql" />
+    <Content Include="Resources\Usuario\UsuarioFormularioRegistrar.sql" />
+    <Content Include="Resources\Usuario\UsuarioFuncionBorrar.sql" />
+    <Content Include="Resources\Usuario\UsuarioFuncionRegistrar.sql" />
+    <Content Include="Resources\Usuario\UsuarioRealisarInsert.sql" />
+    <Content Include="Resources\Usuario\UsuarioRealizar.sql" />
+    <Content Include="Resources\Usuario\UsuarioRecuperarId.sql" />
+    <Content Include="Resources\Usuario\UsuarioRgistrarUpdate.sql" />
+    <Content Include="Resources\Usuario\UsuariosRealizar.sql" />
+    <Content Include="Resources\Bultos\SeguimientoBultosCodigoBolsa.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Comon\Prosegur.Genesis.Comon.vbproj">
+      <Project>{4dc9ee4c-7177-466c-826c-49576eff7375}</Project>
+      <Name>Prosegur.Genesis.Comon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Genesis\Prosegur.Genesis.Web.Login\Prosegur.Genesis.Web.Login.vbproj">
+      <Project>{63BE8B3D-AE97-4B56-BE67-184973BC259C}</Project>
+      <Name>Prosegur.Genesis.Web.Login</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicio\ContractoServicio\Prosegur.Global.Saldos.ContractoServicio.vbproj">
+      <Project>{B03091EF-69D4-4C8F-9174-6F0286FA76C5}</Project>
+      <Name>Prosegur.Global.Saldos.ContractoServicio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

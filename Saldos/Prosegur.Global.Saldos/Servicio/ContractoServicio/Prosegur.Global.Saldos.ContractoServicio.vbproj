@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B03091EF-69D4-4C8F-9174-6F0286FA76C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Prosegur.Global.Saldos.ContractoServicio</RootNamespace>
+    <AssemblyName>Prosegur.Global.Saldos.ContractoServicio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Prosegur.Global.Saldos.ContractoServicio/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Prosegur.Global.Saldos.ContractoServicio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Prosegur.Global.Saldos.ContractoServicio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\Genesis\GlobalAssemblyInfo.vb">
+      <Link>GlobalAssemblyInfo.vb</Link>
+    </Compile>
+    <Compile Include="CambiaEstadoDocumentoFondosSaldos\DatosDocumento.vb" />
+    <Compile Include="CambiaEstadoDocumentoFondosSaldos\Peticion.vb" />
+    <Compile Include="CambiaEstadoDocumentoFondosSaldos\Respuesta.vb" />
+    <Compile Include="CambiaEstadoDocumentoFondosSaldos\Usuario.vb" />
+    <Compile Include="Constantes.vb" />
+    <Compile Include="CreacionMifIntersector\Efectivo.vb" />
+    <Compile Include="CreacionMifIntersector\EfectivoColeccion.vb" />
+    <Compile Include="GeneracionF22\MedioPago.vb" />
+    <Compile Include="GeneracionF22\MedioPagoColeccion.vb" />
+    <Compile Include="IngresoRemesasNuevo\Bulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\BultoOk.vb" />
+    <Compile Include="IngresoRemesasNuevo\Bultos.vb" />
+    <Compile Include="IngresoRemesasNuevo\BultosOk.vb" />
+    <Compile Include="IngresoRemesasNuevo\CampoExtra.vb" />
+    <Compile Include="IngresoRemesasNuevo\CamposExtras.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoAgrupacionBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoAgrupacionParcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoAgrupacionRemesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoDetalleBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoDetalleParcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoDetalleRemesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoMedioPagoBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoMedioPagoRemesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosAgrupacionBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosAgrupacionParcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosAgrupacionRemesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosDetalleBultoMedioPago.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosDetalleBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosDetalleParcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosDetalleRemesaMedioPago.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosDetalleRemesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosTotalBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradosTotalRemesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoTotaisParcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoTotalBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoTotalParcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\DeclaradoTotalRemesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\Parcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\Parciales.vb" />
+    <Compile Include="IngresoRemesasNuevo\Peticion.vb" />
+    <Compile Include="IngresoRemesasNuevo\Remesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\RemesaError.vb" />
+    <Compile Include="IngresoRemesasNuevo\RemesaOk.vb" />
+    <Compile Include="IngresoRemesasNuevo\Remesas.vb" />
+    <Compile Include="IngresoRemesasNuevo\RemesasError.vb" />
+    <Compile Include="IngresoRemesasNuevo\RemesasOk.vb" />
+    <Compile Include="IngresoRemesasNuevo\Respuesta.vb" />
+    <Compile Include="IngresoRemesasNuevo\TerminoMedioPago.vb" />
+    <Compile Include="IngresoRemesasNuevo\ValorBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\ValoresBulto.vb" />
+    <Compile Include="IngresoRemesasNuevo\ValoresParcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\ValoresRemesa.vb" />
+    <Compile Include="IngresoRemesasNuevo\ValorParcial.vb" />
+    <Compile Include="IngresoRemesasNuevo\ValorRemesa.vb" />
+    <Compile Include="IIntegracion.vb" />
+    <Compile Include="IngresoRemesas\TerminoMedioPago.vb" />
+    <Compile Include="IngresoRemesas\ValoresBulto.vb" />
+    <Compile Include="IngresoRemesas\ValorBulto.vb" />
+    <Compile Include="IngresoRemesas\ValoresRemesa.vb" />
+    <Compile Include="IngresoRemesas\ValorRemesa.vb" />
+    <Compile Include="Login\InformacionPlanta.vb" />
+    <Compile Include="Login\InformacionUsuario.vb" />
+    <Compile Include="Login\InserirSesion\Peticion.vb" />
+    <Compile Include="Login\ResultadoOperacionLoginLocal.vb" />
+    <Compile Include="ManipularDocumentos\CamposExtras.vb" />
+    <Compile Include="ManipularDocumentos\CamposExtra.vb" />
+    <Compile Include="ManipularDocumentos\Bultos.vb" />
+    <Compile Include="ManipularDocumentos\Bulto.vb" />
+    <Compile Include="ManipularDocumentos\Resultado.vb" />
+    <Compile Include="ManipularDocumentos\Resultados.vb" />
+    <Compile Include="ManipularDocumentos\Reglas.vb" />
+    <Compile Include="ManipularDocumentos\Parcial.vb" />
+    <Compile Include="ManipularDocumentos\Parciales.vb" />
+    <Compile Include="ManipularDocumentos\Detalle.vb" />
+    <Compile Include="ManipularDocumentos\Detalles.vb" />
+    <Compile Include="ManipularDocumentos\Documento.vb" />
+    <Compile Include="ManipularDocumentos\Documentos.vb" />
+    <Compile Include="ManipularDocumentos\Peticion.vb" />
+    <Compile Include="ManipularDocumentos\Respuesta.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Cliente.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\CanalOrigen.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\CanalDestino.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Grupos.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Grupo.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Especies.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Monedas.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Documento.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Especie.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Moneda.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\SectorDestino.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\SectorOrigen.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Planta.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Transacciones.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Transaccion.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Filtro.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Peticion.vb" />
+    <Compile Include="RecuperarRemesasPorGrupo\Respuesta.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Canal.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Cliente.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Especie.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Especies.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Moneda.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Monedas.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Peticion.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Planta.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Respuesta.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Sector.vb" />
+    <Compile Include="RecuperarTransaccionDetallada\Transacion.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Canal.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Cliente.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Especie.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Especies.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Transacciones.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Planta.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Moneda.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Monedas.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Peticion.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Respuesta.vb" />
+    <Compile Include="RecuperarSaldos\Canal.vb" />
+    <Compile Include="RecuperarSaldos\Cliente.vb" />
+    <Compile Include="RecuperarSaldos\Clientes.vb" />
+    <Compile Include="RecuperarSaldos\Canales.vb" />
+    <Compile Include="RecuperarSaldos\Monedas.vb" />
+    <Compile Include="RecuperarSaldos\Sector.vb" />
+    <Compile Include="RecuperarSaldos\Sectores.vb" />
+    <Compile Include="RecuperarSaldos\Especie.vb" />
+    <Compile Include="RecuperarSaldos\Especies.vb" />
+    <Compile Include="RecuperarSaldos\Moneda.vb" />
+    <Compile Include="RecuperarSaldos\Peticion.vb" />
+    <Compile Include="RecuperarSaldos\Respuesta.vb" />
+    <Compile Include="RecuperarSaldos\Saldo.vb" />
+    <Compile Include="CrearMovimiento\Desglose.vb" />
+    <Compile Include="CrearMovimiento\Desgloses.vb" />
+    <Compile Include="CrearMovimiento\Movimiento.vb" />
+    <Compile Include="CrearMovimiento\Peticion.vb" />
+    <Compile Include="CrearMovimiento\Respuesta.vb" />
+    <Compile Include="IIntegracionMiProsegur.vb" />
+    <Compile Include="CreacionMifIntersector\Movimentacion.vb" />
+    <Compile Include="CreacionMifIntersector\Peticion.vb" />
+    <Compile Include="CreacionMifIntersector\Respuesta.vb" />
+    <Compile Include="GeneracionF22\Bulto.vb" />
+    <Compile Include="GeneracionF22\BultoColeccion.vb" />
+    <Compile Include="GeneracionF22\Efectivo.vb" />
+    <Compile Include="GeneracionF22\EfectivoColeccion.vb" />
+    <Compile Include="GeneracionF22\InfoRemesa.vb" />
+    <Compile Include="GeneracionF22\InfoRemesaColeccion.vb" />
+    <Compile Include="GeneracionF22\Peticion.vb" />
+    <Compile Include="GeneracionF22\Remesa.vb" />
+    <Compile Include="GeneracionF22\RemesaColeccion.vb" />
+    <Compile Include="GeneracionF22\Respuesta.vb" />
+    <Compile Include="GuardarCliente\Cliente.vb" />
+    <Compile Include="GuardarCliente\ClienteColeccion.vb" />
+    <Compile Include="GuardarCliente\ClienteError.vb" />
+    <Compile Include="GuardarCliente\ClienteErrorColeccion.vb" />
+    <Compile Include="GuardarCliente\ClienteOk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GuardarCliente\ClienteOkColeccion.vb" />
+    <Compile Include="GuardarCliente\Peticion.vb" />
+    <Compile Include="GuardarCliente\PuntoServicio.vb" />
+    <Compile Include="GuardarCliente\PuntoServicioColeccion.vb" />
+    <Compile Include="GuardarCliente\PuntoServicioError.vb" />
+    <Compile Include="GuardarCliente\PuntoServicioErrorColeccion.vb" />
+    <Compile Include="GuardarCliente\PuntoServicioOk.vb" />
+    <Compile Include="GuardarCliente\PuntoServicioOkColeccion.vb" />
+    <Compile Include="GuardarCliente\Respuesta.vb" />
+    <Compile Include="GuardarCliente\SubCliente.vb" />
+    <Compile Include="GuardarCliente\SubClienteColeccion.vb" />
+    <Compile Include="GuardarCliente\SubClienteError.vb" />
+    <Compile Include="GuardarCliente\SubClienteErrorColeccion.vb" />
+    <Compile Include="GuardarCliente\SubClienteOk.vb" />
+    <Compile Include="GuardarCliente\SubClienteOkColeccion.vb" />
+    <Compile Include="GuardarDatosDocumento\Bulto.vb" />
+    <Compile Include="GuardarDatosDocumento\Bultos.vb" />
+    <Compile Include="GuardarDatosDocumento\Campo.vb" />
+    <Compile Include="GuardarDatosDocumento\CampoExtra.vb" />
+    <Compile Include="GuardarDatosDocumento\Campos.vb" />
+    <Compile Include="GuardarDatosDocumento\CamposExtras.vb" />
+    <Compile Include="GuardarDatosDocumento\Detalle.vb" />
+    <Compile Include="GuardarDatosDocumento\Detalles.vb" />
+    <Compile Include="GuardarDatosDocumento\Documento.vb" />
+    <Compile Include="GuardarDatosDocumento\DocumentosAgrupados.vb" />
+    <Compile Include="GuardarDatosDocumento\Peticion.vb" />
+    <Compile Include="GuardarDatosDocumento\Respuesta.vb" />
+    <Compile Include="GuardarDatosDocumento\Sobre.vb" />
+    <Compile Include="GuardarDatosDocumento\Sobres.vb" />
+    <Compile Include="GuardarDatosDocumento\Usuario.vb" />
+    <Compile Include="ICliente.vb" />
+    <Compile Include="IIngresoRemesa.vb" />
+    <Compile Include="IngresoContado\BilleteFalso.vb" />
+    <Compile Include="IngresoContado\BilleteFalsoColeccion.vb" />
+    <Compile Include="IngresoContado\BilletesFalso.vb" />
+    <Compile Include="IngresoContado\Bulto.vb" />
+    <Compile Include="IngresoContado\BultoColeccion.vb" />
+    <Compile Include="IngresoContado\ConteoEfectivo.vb" />
+    <Compile Include="IngresoContado\ConteosEfectivo.vb" />
+    <Compile Include="IngresoContado\Declarado.vb" />
+    <Compile Include="IngresoContado\DeclaradoAgrupacion.vb" />
+    <Compile Include="IngresoContado\DeclaradoColeccion.vb" />
+    <Compile Include="IngresoContado\DeclaradoDet.vb" />
+    <Compile Include="IngresoContado\DeclaradoDetalle.vb" />
+    <Compile Include="IngresoContado\DeclaradoDetColeccion.vb" />
+    <Compile Include="IngresoContado\DeclaradosAgrupacion.vb" />
+    <Compile Include="IngresoContado\DeclaradosAgrupacionColeccion.vb" />
+    <Compile Include="IngresoContado\DeclaradosDetalle.vb" />
+    <Compile Include="IngresoContado\DeclaradosTotal.vb" />
+    <Compile Include="IngresoContado\DeclaradoTotal.vb" />
+    <Compile Include="IngresoContado\Efectivo.vb" />
+    <Compile Include="IngresoContado\EfectivoColeccion.vb" />
+    <Compile Include="IngresoContado\InfoAdicionalCliente.vb" />
+    <Compile Include="IngresoContado\InfoAdicionalClienteColeccion.vb" />
+    <Compile Include="IngresoContado\IntervencionSupervisorBulto.vb" />
+    <Compile Include="IngresoContado\IntervencionSupervisorBultoColeccion.vb" />
+    <Compile Include="IngresoContado\IntervencionSupervisorGenerico.vb" />
+    <Compile Include="IngresoContado\IntervencionSupervisorParcial.vb" />
+    <Compile Include="IngresoContado\IntervencionSupervisorParcialColeccion.vb" />
+    <Compile Include="IngresoContado\IntervencionSupervisorRemesa.vb" />
+    <Compile Include="IngresoContado\IntervencionSupervisorRemesaColeccion.vb" />
+    <Compile Include="IngresoContado\MedioPago.vb" />
+    <Compile Include="IngresoContado\MedioPagoColeccion.vb" />
+    <Compile Include="IngresoContado\MediosPago.vb" />
+    <Compile Include="IngresoContado\MonedaFalsa.vb" />
+    <Compile Include="IngresoContado\MonedaFalsaColeccion.vb" />
+    <Compile Include="IngresoContado\MonedasFalsa.vb" />
+    <Compile Include="IngresoContado\Parcial.vb" />
+    <Compile Include="IngresoContado\ParcialColeccion.vb" />
+    <Compile Include="IngresoContado\Parciales.vb" />
+    <Compile Include="IngresoContado\Peticion.vb" />
+    <Compile Include="IngresoContado\Remesa.vb" />
+    <Compile Include="IngresoContado\Respuesta.vb" />
+    <Compile Include="IngresoContado\Termino.vb" />
+    <Compile Include="IngresoContado\TerminoMedioPago.vb" />
+    <Compile Include="IngresoContado\TerminoMedioPagoColeccion.vb" />
+    <Compile Include="IngresoContado\Terminos.vb" />
+    <Compile Include="IngresoRemesas\Bulto.vb" />
+    <Compile Include="IngresoRemesas\BultoOk.vb" />
+    <Compile Include="IngresoRemesas\Bultos.vb" />
+    <Compile Include="IngresoRemesas\BultosOk.vb" />
+    <Compile Include="IngresoRemesas\CampoExtra.vb" />
+    <Compile Include="IngresoRemesas\CamposExtras.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoAgrupacionBulto.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoAgrupacionParcial.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoAgrupacionRemesa.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoDetalleBulto.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoDetalleParcial.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoDetalleRemesa.vb" />
+    <Compile Include="IngresoRemesas\DeclaradosAgrupacionBulto.vb" />
+    <Compile Include="IngresoRemesas\DeclaradosAgrupacionParcial.vb" />
+    <Compile Include="IngresoRemesas\DeclaradosAgrupacionRemesa.vb" />
+    <Compile Include="IngresoRemesas\DeclaradosDetalleBulto.vb" />
+    <Compile Include="IngresoRemesas\DeclaradosDetalleParcial.vb" />
+    <Compile Include="IngresoRemesas\DeclaradosDetalleRemesa.vb" />
+    <Compile Include="IngresoRemesas\DeclaradosTotalBulto.vb" />
+    <Compile Include="IngresoRemesas\DeclaradosTotalRemesa.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoTotaisParcial.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoTotalBulto.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoTotalParcial.vb" />
+    <Compile Include="IngresoRemesas\DeclaradoTotalRemesa.vb" />
+    <Compile Include="IngresoRemesas\Parcial.vb" />
+    <Compile Include="IngresoRemesas\Parciales.vb" />
+    <Compile Include="IngresoRemesas\Peticion.vb" />
+    <Compile Include="IngresoRemesas\Remesa.vb" />
+    <Compile Include="IngresoRemesas\RemesaError.vb" />
+    <Compile Include="IngresoRemesas\RemesaOk.vb" />
+    <Compile Include="IngresoRemesas\Remesas.vb" />
+    <Compile Include="IngresoRemesas\RemesasError.vb" />
+    <Compile Include="IngresoRemesas\RemesasOk.vb" />
+    <Compile Include="IngresoRemesas\Respuesta.vb" />
+    <Compile Include="IngresoRemesas\ValoresParcial.vb" />
+    <Compile Include="IngresoRemesas\ValorParcial.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\Campo.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\CampoExtra.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\Campos.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\CamposExtras.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\Caracteristica.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\Peticion.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\Respuesta.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\TipoCampoExtra.vb" />
+    <Compile Include="RecuperarCaracteristicasDocumento\TiposCampoExtra.vb" />
+    <Compile Include="RecuperarCentroProceso\CentroProceso.vb" />
+    <Compile Include="RecuperarCentroProceso\CentroProcesoColeccion.vb" />
+    <Compile Include="RecuperarCentroProceso\Peticion.vb" />
+    <Compile Include="RecuperarCentroProceso\Respuesta.vb" />
+    <Compile Include="RecuperarDatosDocumento\Bulto.vb" />
+    <Compile Include="RecuperarDatosDocumento\Bultos.vb" />
+    <Compile Include="RecuperarDatosDocumento\Campo.vb" />
+    <Compile Include="RecuperarDatosDocumento\CampoExtra.vb" />
+    <Compile Include="RecuperarDatosDocumento\Campos.vb" />
+    <Compile Include="RecuperarDatosDocumento\CamposExtra.vb" />
+    <Compile Include="RecuperarDatosDocumento\Destino.vb" />
+    <Compile Include="RecuperarDatosDocumento\Detalle.vb" />
+    <Compile Include="RecuperarDatosDocumento\Detalles.vb" />
+    <Compile Include="RecuperarDatosDocumento\Documento.vb" />
+    <Compile Include="RecuperarDatosDocumento\Documentos.vb" />
+    <Compile Include="RecuperarDatosDocumento\Especie.vb" />
+    <Compile Include="RecuperarDatosDocumento\EstadoComprobante.vb" />
+    <Compile Include="RecuperarDatosDocumento\Moneda.vb" />
+    <Compile Include="RecuperarDatosDocumento\Peticion.vb" />
+    <Compile Include="RecuperarDatosDocumento\Respuesta.vb" />
+    <Compile Include="Enumeradores.vb" />
+    <Compile Include="ISaldos.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RecuperarDatosDocumento\Sobre.vb" />
+    <Compile Include="RecuperarDatosDocumento\Sobres.vb" />
+    <Compile Include="RecuperarDatosDocumento\TipoCampoExtra.vb" />
+    <Compile Include="RecuperarDatosDocumento\TiposCampoExtra.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Canal.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Cliente.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Fajo.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Fajos.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Moneda.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Transacion.vb" />
+    <Compile Include="RecuperarTransaccionesFecha\Sector.vb" />
+    <Compile Include="RecuperarTransaccionNoMigrada\TransaccionMigracion.vb" />
+    <Compile Include="RecuperarTransaccionNoMigrada\Peticion.vb" />
+    <Compile Include="RecuperarTransaccionNoMigrada\Respuesta.vb" />
+    <Compile Include="RecuperarTransaccionNoMigrada\Util.vb" />
+    <Compile Include="RespuestaGenerico.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Peticion.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Respuesta.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Saldo.vb" />
+    <Compile Include="RecuperarSaldosPorSector\Saldos.vb" />
+    <Compile Include="Test\Respuesta.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

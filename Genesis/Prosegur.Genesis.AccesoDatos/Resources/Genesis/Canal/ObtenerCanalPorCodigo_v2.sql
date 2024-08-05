@@ -1,0 +1,7 @@
+﻿SELECT OID_CANAL,
+       COD_CANAL,
+       DES_CANAL
+FROM GEPR_TCANAL
+ {0}
+WHERE 1 = 1
+ {1}

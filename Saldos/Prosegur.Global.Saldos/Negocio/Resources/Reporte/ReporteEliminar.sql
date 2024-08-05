@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_Reporte WHERE IdReporte = :IdReporte

@@ -1,0 +1,29 @@
+﻿Imports Prosegur.Genesis.Comon
+Imports System.Xml.Serialization
+
+Namespace NuevoSalidas.Remesa.CerrarRemesaAdministracion
+
+    <XmlType(Namespace:="urn:CerrarRemesaAdministracion")> _
+    <XmlRoot(Namespace:="urn:CerrarRemesaAdministracion")> _
+    <Serializable()>
+    Public NotInheritable Class Respuesta
+        Inherits BaseRespuesta
+
+        Sub New()
+            MyBase.New()
+        End Sub
+
+        Sub New(mensaje As String)
+            MyBase.New(mensaje)
+        End Sub
+
+        Sub New(exception As Exception)
+            MyBase.New(exception)
+        End Sub
+
+        Public Property RemesaProcesada As Boolean
+        Public Property ErrorIntegracionSOL As String
+
+    End Class
+
+End Namespace

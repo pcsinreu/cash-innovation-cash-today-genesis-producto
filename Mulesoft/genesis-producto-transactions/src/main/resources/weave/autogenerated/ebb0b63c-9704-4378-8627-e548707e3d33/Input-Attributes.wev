@@ -1,0 +1,41 @@
+%dw 2.0
+
+type auto_ebb0b63c_9704_4378_8627_e548707e3d33_Input_Attributes = {|
+  clientCertificate?: {|
+    publicKey?: {|  |}, 
+    "type"?: String, 
+    encoded?: Binary
+  |}, 
+  headers: {|  |}, 
+  listenerPath: String, 
+  method: String, 
+  queryParams: {|
+    countryCode: "DE" | "SV" | "PT" | "UY" | "IN" | "HN" | "CL" | "PY" | "MX" | "CO" | "FR" | "GT" | "ES" | "CR" | "BR" | "AR" | "AU" | "PE" | "PH" | "NI" | "EC", 
+    deviceId: Array<String> {"description": "DeviceID de la MAE."}, 
+    startDate: String, 
+    endDate: String, 
+    channelCode?: Array<String> {"description": "Código del canal."}, 
+    subChannelCode?: Array<String> {"description": "Código del subcanal."}, 
+    typeCode?: Array<String> {"description": "Código del tipo de transacción (movimiento)."}, 
+    code?: Array<String> {"description": "Código de la transacción."}, 
+    actualId?: Array<String> {"description": "Código del ActualId."}, 
+    collectionId?: Array<String> {"description": "Código del CollectionId."}, 
+    notified?: Boolean, 
+    notifiedStartDate?: String, 
+    notifiedEndDate?: String, 
+    earlyValued?: Boolean, 
+    earlyValuedStartDate?: String, 
+    earlyValuedEndDate?: String, 
+    fields?: Array<String> {"description": "Indica los campos que deberán ser regresados por la consulta en cada una de las transacciones (movimientos). Los campos \"deviceId\", \"transactionDate\", \"typeGroup\", \"code\", \"currencyCode\", \"total\" y \"virtual\" siempre serán regresados por patrón."}
+  |}, 
+  queryString: String, 
+  relativePath: String, 
+  remoteAddress: String, 
+  requestPath: String, 
+  requestUri: String, 
+  scheme: String, 
+  uriParams: {|  |}, 
+  version: String, 
+  localAddress: String
+|}
+

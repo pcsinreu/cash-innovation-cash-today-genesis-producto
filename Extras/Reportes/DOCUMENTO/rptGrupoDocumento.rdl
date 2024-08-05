@@ -1,0 +1,1135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="GENESIS">
+      <DataSourceReference>Reporte</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>aa6ef4c8-0de3-495e-8389-7a2de5238e0f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsCopias">
+      <Query>
+        <DataSourceName>GENESIS</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT
+        DISTINCT
+        COPI.NEL_CANTIDAD_COPIA,
+        COPI.DES_DESTINO_COPIA
+FROM
+        SAPR_TGRUPO_DOCUMENTO GRDO
+        INNER JOIN SAPR_TFORMULARIO FORM ON GRDO.OID_FORMULARIO = FORM.OID_FORMULARIO
+        INNER JOIN SAPR_TCOPIA COPI ON FORM.OID_FORMULARIO = COPI.OID_FORMULARIO
+WHERE
+        GRDO.COD_COMPROBANTE = :P_COD_COMPROBANTE</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="NEL_CANTIDAD_COPIA">
+          <DataField>NEL_CANTIDAD_COPIA</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DES_DESTINO_COPIA">
+          <DataField>DES_DESTINO_COPIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsCabecalho">
+      <Query>
+        <DataSourceName>GENESIS</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT
+        GRDO.COD_COMPROBANTE CODIGO_COMPROBANTE,
+        CASE GRDO.COD_ESTADO
+          WHEN 'AC' THEN
+            'ACEPTADO'
+          WHEN 'AN' THEN
+            'ANULADO'
+          WHEN 'CF' THEN
+            'CONFIRMADO'
+          WHEN 'EC' THEN
+            'EN CURSO'
+          WHEN 'RC' THEN
+            'RECHEZADO'
+          WHEN 'SU' THEN
+            'SUSTITUIDO'
+          ELSE
+            'ERROR'
+        END ESTADO,
+        GRDO.GMT_CREACION FECHA, 
+        SYSDATE FECHA_IMPRESSION,
+        FORM.DES_FORMULARIO FORMULARIO,        
+        SEOR.DES_SECTOR SECTOR_ORIGEN,
+        SEDE.DES_SECTOR SECTOR_DESTINO
+FROM
+        SAPR_TGRUPO_DOCUMENTO GRDO
+        INNER JOIN SAPR_TFORMULARIO FORM ON GRDO.OID_FORMULARIO = FORM.OID_FORMULARIO
+        INNER JOIN GEPR_TSECTOR SEOR ON GRDO.OID_SECTOR_ORIGEN = SEOR.OID_SECTOR
+        INNER JOIN GEPR_TSECTOR SEDE ON GRDO.OID_SECTOR_DESTINO = SEDE.OID_SECTOR        
+WHERE
+        GRDO.COD_COMPROBANTE = :P_COD_COMPROBANTE</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="CODIGO_COMPROBANTE">
+          <DataField>CODIGO_COMPROBANTE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ESTADO">
+          <DataField>ESTADO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FECHA">
+          <DataField>FECHA</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FECHA_IMPRESSION">
+          <DataField>FECHA_IMPRESSION</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FORMULARIO">
+          <DataField>FORMULARIO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SECTOR_ORIGEN">
+          <DataField>SECTOR_ORIGEN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SECTOR_DESTINO">
+          <DataField>SECTOR_DESTINO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="tabDocumentos">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>168.20885mm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>11.23mm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="retDocumentoItem">
+                          <ReportItems>
+                            <Subreport Name="subDocumento">
+                              <ReportName>rptGrupoDocumentoItem</ReportName>
+                              <Parameters>
+                                <Parameter Name="P_COD_COMPROBANTE">
+                                  <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+                                </Parameter>
+                              </Parameters>
+                              <OmitBorderOnPageBreak>true</OmitBorderOnPageBreak>
+                              <Top>0mm</Top>
+                              <Left>0.39026mm</Left>
+                              <Height>10.9125mm</Height>
+                              <Width>167.42832mm</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Subreport>
+                          </ReportItems>
+                          <PageBreak>
+                            <BreakLocation>StartAndEnd</BreakLocation>
+                            <ResetPageNumber>true</ResetPageNumber>
+                          </PageBreak>
+                          <PageName>=Fields!NEL_CANTIDAD_COPIA.Value &amp; " / " &amp; Fields!DES_DESTINO_COPIA.Value</PageName>
+                          <KeepTogether>true</KeepTogether>
+                          <OmitBorderOnPageBreak>true</OmitBorderOnPageBreak>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Detalhes">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!NEL_CANTIDAD_COPIA.Value</GroupExpression>
+                    </GroupExpressions>
+                    <PageBreak>
+                      <BreakLocation>End</BreakLocation>
+                    </PageBreak>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!NEL_CANTIDAD_COPIA.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <NoRowsMessage>Documento no encontrado con el codigo comprobante informado o sin copias de impresión configuradas.</NoRowsMessage>
+            <DataSetName>dsCopias</DataSetName>
+            <Top>0.3175mm</Top>
+            <Left>0mm</Left>
+            <Height>11.23mm</Height>
+            <Width>168.20885mm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>11.5475mm</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>168.20885mm</Width>
+      <Page>
+        <PageHeader>
+          <Height>4.936cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Image Name="imgLogo">
+              <Source>Embedded</Source>
+              <Value>logo</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>7.94433mm</Top>
+              <Left>0.39026mm</Left>
+              <Height>13.94167mm</Height>
+              <Width>30.51528mm</Width>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+              <cl:ComponentMetadata>
+                <cl:ComponentId>d2db0489-e6be-412d-b54e-7eaf22c37b4e</cl:ComponentId>
+                <cl:SourcePath>/Report Parts/imgLogo</cl:SourcePath>
+                <cl:SyncDate>2013-12-16T13:40:11.1132500-02:00</cl:SyncDate>
+              </cl:ComponentMetadata>
+            </Image>
+            <Textbox Name="txtDadosProsegur">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Transportadora de Caudales</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>PROSEGUR</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Tres Arroyos 2835 - Tel. 4585-8200 Líneas Rotativas</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>7.94433mm</Top>
+              <Left>32.35193mm</Left>
+              <Height>13.94167mm</Height>
+              <Width>135.46665mm</Width>
+              <ZIndex>1</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtEstado">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!ESTADO.Value, "dsCabecalho")</Value>
+                      <Style>
+                        <Color>Red</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.30316mm</Top>
+              <Left>68.70568mm</Left>
+              <Height>6mm</Height>
+              <Width>30.29167mm</Width>
+              <ZIndex>2</ZIndex>
+              <Visibility>
+                <Hidden>=((Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0) Or First(Fields!ESTADO.Value, "dsCabecalho") = "CONFIRMADO")</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>Red</Color>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtDatosDocumento">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!FORMULARIO.Value, "dsCabecalho")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>N</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>º: </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Página: </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Code.PaginaActualGrupo(Globals!PageName)</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value> de </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Globals!OverallTotalPages / Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias")</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>23.60766mm</Top>
+              <Left>0.39026mm</Left>
+              <Height>13.22917mm</Height>
+              <Width>83.62949mm</Width>
+              <ZIndex>3</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtFechasDocumento">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Data: </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!FECHA.Value, "dsCabecalho")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Data Gestão:</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Data </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=IIf(First(Fields!ESTADO.Value, "dsCabecalho") = "EN CURSO", "Impresión", "Reimpresión")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>: </Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!FECHA_IMPRESSION.Value, "dsCabecalho")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>23.60766mm</Top>
+              <Left>84.01975mm</Left>
+              <Height>13.22917mm</Height>
+              <Width>83.79884mm</Width>
+              <ZIndex>4</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtOrigen">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>ORIGEN</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>38.44471mm</Top>
+              <Left>0.39026mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>83.62949mm</Width>
+              <ZIndex>5</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <BackgroundColor>LightGrey</BackgroundColor>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtDestino">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>DESTINO</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>38.44471mm</Top>
+              <Left>84.01975mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>83.79884mm</Width>
+              <ZIndex>6</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <BackgroundColor>LightGrey</BackgroundColor>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtSectorDestino">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Sector: </Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!SECTOR_DESTINO.Value, "dsCabecalho")</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>42.85721mm</Top>
+              <Left>84.01975mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>83.79884mm</Width>
+              <ZIndex>7</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtSectorOrigen">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Sector: </Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!SECTOR_ORIGEN.Value, "dsCabecalho")</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>42.85721mm</Top>
+              <Left>0.39026mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>83.62949mm</Width>
+              <ZIndex>8</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>2.69742cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="txtImpresion">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>(</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=IIf(First(Fields!ESTADO.Value, "dsCabecalho") = "CONFIRMADO", "Impresión", "Reimpresión")</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>) Cópia </Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Globals!PageName</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>21.83833mm</Top>
+              <Left>0.39026mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>77.79102mm</Width>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtEntregadoPorArea">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>6.31333mm</Top>
+              <Left>0.39026mm</Left>
+              <Height>15.525mm</Height>
+              <Width>32.98825mm</Width>
+              <ZIndex>1</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <RightBorder>
+                  <Style>None</Style>
+                </RightBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtEntregadoPor">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Entregado por</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.90083mm</Top>
+              <Left>0.39026mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>32.98825mm</Width>
+              <ZIndex>2</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtRecebidoPor">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Recebido por</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.90083mm</Top>
+              <Left>33.37852mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>32.98825mm</Width>
+              <ZIndex>3</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <LeftBorder>
+                  <Style>None</Style>
+                </LeftBorder>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtV">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>V</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>º</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.90083mm</Top>
+              <Left>66.36676mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>12.52008mm</Width>
+              <ZIndex>4</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtRegistradoPor">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Registrado por</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.90083mm</Top>
+              <Left>78.88684mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>32.98825mm</Width>
+              <ZIndex>5</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtSelo">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Selo</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.90083mm</Top>
+              <Left>111.87509mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>55.94349mm</Width>
+              <ZIndex>6</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtSelo2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Usuário solicitante: </Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Parameters!P_DES_USUARIO_SOLICITANTE.Value</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>21.83833mm</Top>
+              <Left>78.88684mm</Left>
+              <Height>4.4125mm</Height>
+              <Width>88.93174mm</Width>
+              <ZIndex>7</ZIndex>
+              <Visibility>
+                <Hidden>=(Count(Fields!NEL_CANTIDAD_COPIA.Value, "dsCopias") = 0 Or Count(Fields!CODIGO_COMPROBANTE.Value, "dsCabecalho") = 0)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>2cm</LeftMargin>
+        <RightMargin>2cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="P_DES_USUARIO_SOLICITANTE">
+      <DataType>String</DataType>
+      <Prompt>Usuario solicitante de la impresión.</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="P_COD_COMPROBANTE">
+      <DataType>String</DataType>
+      <Prompt>Codigo comprobante del Documento.</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public GrupoActual As String = ""
+Public IndicePaginaActualGrupo As Int32 = 0
+
+Public Function PaginaActualGrupo(ByVal Grupo As String) As String
+
+	If GrupoActual &lt;&gt; Grupo Then
+		GrupoActual = Grupo
+		IndicePaginaActualGrupo = 1
+	Else
+		IndicePaginaActualGrupo = IndicePaginaActualGrupo + 1
+	End If
+
+	PaginaActualGrupo = CStr(IndicePaginaActualGrupo)
+
+End Function</Code>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo">
+      <MIMEType>image/bmp</MIMEType>
+      <ImageData>Qk1+cQAAAAAAADYAAAAoAAAAfQAAADoAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/wMDA/8DAwP/AwMD/////////////////////////////////////////////////wMDA/8DAwP/AwMD/wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/8DAwP/AwMD/wMDA///////////////////////////////////////////////////////AwMD/wMDA/8DAwP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP/AwMD///////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD//////////////////////wAAAP8AAAD/AAAA//////////////////////+AgID/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/wMDA////////////
+////////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/8DAwP////////////////8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID/////////////////wMDA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA/8DAwP8AAAD/AAAA//////////////////////+AgID/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID//////////////////////4CAgP8AAAD/AAAA///////////////////////AwMD/AAAA/wAAAP+AgID//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/AAAA/4CAgP///////////////////////////////////////////4CAgP8AAAD/AAAA/8DAwP//////////////////////AAAA/wAAAP+AgID/////////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA/////////////////wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/8DAwP//////wMDA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////4CAgP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/////////////////AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/////////////////AAAA/wAAAP8AAAD//////////////////////8DAwP8AAAD/AAAA/8DA
+wP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP8AAAD/gICA////////////////////////////////////////////gICA/wAAAP8AAAD/wMDA//////////////////////8AAAD/AAAA/4CAgP///////////8DAwP8AAAD/AAAA/wAAAP/AwMD////////////AwMD/AAAA/wAAAP8AAAD/wMDA///////AwMD/AAAA/wAAAP+AgID/////////////////wMDA/wAAAP8AAAD/gICA///////AwMD/AAAA/wAAAP+AgID/wMDA/8DAwP/AwMD/wMDA/8DAwP/AwMD/wMDA///////AwMD/AAAA/wAAAP8AAAD/gICA////////////wMDA/4CAgP8AAAD/AAAA/wAAAP///////////8DAwP8AAAD/AAAA/4CAgP/AwMD///////////+AgID/AAAA/wAAAP/AwMD///////////8AAAD/AAAA/wAAAP//////////////////////wMDA/wAAAP8AAAD/wMDA///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP+AgID///////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD//////////////////////wAAAP8AAAD/gICA////////////AAAA/wAAAP8AAAD/wMDA///////////////////////AwMD/AAAA/wAAAP+AgID/
+/////4CAgP8AAAD/AAAA////////////////////////////gICA/wAAAP8AAAD//////8DAwP8AAAD/AAAA/4CAgP///////////////////////////////////////////4CAgP8AAAD/AAAA/8DAwP///////////////////////////wAAAP8AAAD/AAAA////////////gICA/wAAAP8AAAD/wMDA/////////////////8DAwP8AAAD/AAAA/4CAgP///////////wAAAP8AAAD/AAAA//////////////////////+AgID/AAAA/wAAAP/AwMD//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP/AwMD//////////////////////4CAgP8AAAD/AAAA/8DAwP/AwMD/wMDA/8DAwP+AgID/AAAA/wAAAP+AgID///////////8AAAD/AAAA/4CAgP////////////////////////////////8AAAD/AAAA/wAAAP//////////////////////////////////////wMDA/4CAgP8AAAD/AAAA/wAAAP//////wMDA/wAAAP8AAAD/gICA////////////////////////////////////////////AAAA/wAAAP8AAAD/////////////////wMDA/8DAwP/AwMD/gICA/wAAAP8AAAD///////////+AgID/AAAA/wAAAP/AwMD/////////////////wMDA/wAAAP8AAAD/gICA////////////AAAA/wAAAP8AAAD/wMDA/8DAwP/AwMD/wMDA/wAAAP8AAAD/AAAA/8DA
+wP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA////////////wMDA/wAAAP8AAAD/gICA/////////////////////////////////4CAgP8AAAD/AAAA///////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA///////AwMD/AAAA/wAAAP8AAAD/gICA/4CAgP+AgID/gICA/4CAgP/AwMD///////////8AAAD/AAAA/wAAAP////////////////+AgID/AAAA/wAAAP8AAAD/AAAA/wAAAP///////////4CAgP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID///////////8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP8AAAD/gICA/4CAgP8AAAD/AAAA/wAAAP8AAAD/wMDA//////+AgID/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID////////////AwMD/AAAA/wAAAP+AgID/////////////////////////////////gICA/wAAAP8AAAD/
+///////////AwMD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////8DAwP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////wAAAP8AAAD/AAAA/////////////////8DAwP8AAAD/AAAA/wAAAP8AAAD/gICA////////////gICA/wAAAP8AAAD/wMDA/////////////////8DAwP8AAAD/AAAA/4CAgP///////////wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/AAAA/4CAgP////////////////+AgID/AAAA/wAAAP+AgID//////4CAgP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID//////8DAwP8AAAD/AAAA/4CAgP////////////////////////////////8AAAD/AAAA/wAAAP//////wMDA/wAAAP8AAAD/AAAA/wAAAP+AgID/gICA/8DAwP//////////////////////wMDA/wAAAP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP+AgID/gICA////////////AAAA/wAAAP8AAAD///////////////////////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD/////////////////wMDA/wAAAP8AAAD/gICA////////////AAAA/wAAAP8AAAD//////////////////////4CAgP8AAAD/AAAA/8DA
+wP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP8AAAD/gICA/////////////////8DAwP8AAAD/AAAA/4CAgP//////gICA/wAAAP8AAAD/wMDA//////////////////////+AgID/AAAA/wAAAP///////////wAAAP8AAAD/AAAA/////////////////////////////////wAAAP8AAAD/AAAA///////AwMD/AAAA/wAAAP+AgID//////////////////////8DAwP/AwMD////////////AwMD/AAAA/wAAAP+AgID///////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD////////////////////////////AwMD/wMDA/8DAwP///////////4CAgP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID///////////8AAAD/AAAA/wAAAP///////////////////////////wAAAP8AAAD/gICA///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP+AgID/////////////////wMDA/wAAAP8AAAD/gICA//////+AgID/AAAA/wAAAP/AwMD//////////////////////wAAAP8AAAD/AAAA////////////gICA/wAAAP8AAAD/wMDA//////////////////////+AgID/AAAA/wAAAP+AgID/
+/////8DAwP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID//////8DAwP8AAAD/AAAA/4CAgP///////////////////////////////////////////8DAwP8AAAD/AAAA/4CAgP//////////////////////wMDA/wAAAP8AAAD/gICA////////////gICA/wAAAP8AAAD/wMDA/////////////////8DAwP8AAAD/AAAA/4CAgP///////////wAAAP8AAAD/AAAA///////////////////////AwMD/AAAA/wAAAP+AgID//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/AAAA/wAAAP+AgID/gICA/4CAgP8AAAD/AAAA/wAAAP/AwMD//////4CAgP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP8AAAD/AAAA/wAAAP+AgID////////////AwMD/AAAA/wAAAP8AAAD/gICA/8DAwP/AwMD/gICA/wAAAP8AAAD/AAAA////////////wMDA/wAAAP8AAAD/AAAA/8DAwP/AwMD/gICA/wAAAP8AAAD/AAAA////////////wMDA/wAAAP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP+AgID/gICA/8DAwP///////////4CAgP8AAAD/AAAA/wAAAP+AgID/wMDA/4CAgP8AAAD/AAAA/wAAAP/AwMD///////////+AgID/AAAA/wAAAP/AwMD/////////////////wMDA/wAAAP8AAAD/gICA////////////AAAA/wAAAP8AAAD/gICA/4CAgP+AgID/gICA/wAAAP8AAAD/AAAA/8DA
+wP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP/AwMD/////////////////gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID////////////AwMD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/wMDA/////////////////4CAgP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA/////////////////4CAgP8AAAD/AAAA/8DAwP/////////////////AwMD/AAAA/wAAAP+AgID///////////8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/gICA/4CAgP+AgID/gICA/4CAgP+AgID/gICA/8DAwP/////////////////AwMD/gICA/4CAgP+AgID/gICA/4CAgP+AgID/gICA/8DAwP/////////////////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/wAAAP+AgID/////////////////
+////////////////wMDA/4CAgP8AAAD/AAAA/wAAAP+AgID/wMDA//////////////////////+AgID/gICA/4CAgP+AgID/gICA/4CAgP+AgID/gICA/4CAgP/AwMD//////////////////////8DAwP+AgID/AAAA/wAAAP8AAAD/gICA/8DAwP//////////////////////wMDA/4CAgP+AgID///////////////////////////+AgID/gICA/4CAgP///////////4CAgP+AgID/gICA/4CAgP+AgID/gICA/4CAgP+AgID/wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP/AwMD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/4CAgP+AgID/gICA/4CAgP8AAAD/AAAA/wAAAP8AAAD/gICA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////gICA/wAAAP8AAAD/gICA/8DAwP/////////////////AwMD/gICA/8DAwP/AwMD/gICA/wAAAP8AAAD/gICA/8DAwP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////4CAgP8AAAD/AAAA/4CAgP+AgID/////////////////gICA/4CAgP///////////8DAwP+AgID//////wAAAP8AAAD/AAAA/8DAwP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////AwMD/AAAA/4CAgP///////////8DAwP+AgID/gICA/4CAgP/AwMD/////////////////gICA////////////gICA/4CAgP8AAAD/AAAA///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD///////////////////////////+AgID/gICA/4CAgP/AwMD//////8DAwP+AgID////////////AwMD/wMDA/4CAgP8AAAD/gICA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+AgID/wMDA////////////////////////////gICA/8DAwP///////////4CAgP+AgID/gICA/8DAwP///////////8DAwP/AwMD//////4CAgP8AAAD/wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+wMDA/wAAAP8AAAD/gICA/8DAwP///////////8DAwP+AgID//////////////////////8DAwP+AgID/gICA/8DAwP//////wMDA/8DAwP//////wMDA/wAAAP+AgID///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+AgID/AAAA/4CAgP8AAAD/AAAA/wAAAP/AwMD/gICA////////////////////////////gICA/8DAwP//////wMDA/4CAgP+AgID/wMDA////////////gICA/wAAAP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAP8AAAD///////////+AgID/AAAA/wAAAP8AAAD/gICA//////////////////////+AgID//////////////////////4CAgP+AgID/gICA//////+AgID/AAAA/8DAwP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+AAAA/4CAgP//////////////////////AAAA/wAAAP8AAAD/AAAA/4CAgP//////gICA/8DAwP//////////////////////gICA/8DAwP/AwMD/gICA/4CAgP8AAAD/gICA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8DAwP8AAAD/gICA/////////////////8DAwP+AgID//////8DAwP8AAAD/AAAA/wAAAP8AAAD/wMDA//////////////////////+AgID/////////////////wMDA/wAAAP+AgID/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/wAAAP+AgID/////////////////gICA/8DAwP/////////////////AwMD/AAAA/wAAAP8AAAD/gICA/8DAwP///////////4CAgP//////////////////////AAAA/4CAgP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+AAAA/wAAAP+AgID/wMDA//////+AgID///////////////////////////+AgID/wMDA/4CAgP8AAAD/AAAA/4CAgP+AgID/wMDA/////////////////8DAwP8AAAD/gICA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAD/AAAA/8DAwP+AgID/gICA/4CAgP//////////////////////wMDA/8DAwP///////////8DAwP+AgID/AAAA/wAAAP8AAAD/wMDA////////////gICA/wAAAP/AwMD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////4CAgP8AAAD/wMDA////////////gICA/4CAgP/AwMD///////////+AgID////////////////////////////AwMD/gICA/wAAAP8AAAD/AAAA/4CAgP+AgID/AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+wMDA/wAAAP+AgID///////////+AgID//////8DAwP+AgID/gICA/4CAgP///////////////////////////4CAgP///////////4CAgP8AAAD/AAAA/wAAAP+AgID/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA/wAAAP/AwMD//////4CAgP////////////////+AgID/gICA/4CAgP////////////////+AgID/wMDA///////////////////////AwMD/gICA/8DAwP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/AAAA/wAAAP//////gICA////////////wMDA/4CAgP//////wMDA/4CAgP+AgID/gICA/8DAwP//////////////////////wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////+AgID/AAAA/4CAgP+AgID///////////+AgID//////////////////////4CAgP+AgID/gICA/8DAwP///////////8DAwP8AAAD/AAAA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+AgID/AAAA/wAAAP/AwMD/wMDA/4CAgP///////////8DAwP+AgID/wMDA////////////gICA/4CAgP+AgID/AAAA/wAAAP/AwMD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+AgID/AAAA/wAAAP8AAAD/wMDA//////+AgID/gICA///////////////////////AwMD/AAAA/wAAAP8AAAD/wMDA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////AwMD/AAAA/wAAAP8AAAD/AAAA/wAAAP+AgID/gICA/4CAgP+AgID/AAAA/wAAAP8AAAD/gICA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wMDA/4CAgP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/gICA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AwMD/wMDA/8DAwP/AwMD/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportServerUrl>http://172.1.0.84/ReportServer</rd:ReportServerUrl>
+  <rd:ReportID>b15ac75b-1f06-4761-8e92-b98d83f1b948</rd:ReportID>
+</Report>

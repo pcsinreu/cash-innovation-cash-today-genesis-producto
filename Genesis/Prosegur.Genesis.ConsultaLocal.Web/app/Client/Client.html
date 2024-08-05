@@ -1,0 +1,44 @@
+﻿<div ng-controller="Clientctrl">
+    <table class="ui-datatable ui-datatable-data" style="border-style:None;width:98%;border-collapse:collapse;">
+        <tbody>
+            <tr>
+                <th style="font-size:11px;">Sector</th>
+                <th style="font-size:11px;"></th>
+                <th style="font-size:11px;">Divisa</th>
+                <th style="font-size:11px;">Valor Disponible</th>
+                <th style="font-size:11px;">Valor No Disponible</th>
+                <th style="font-size:11px;">Suma</th>
+            </tr>
+            <tr ng-repeat="saldo in Saldos">
+                <td ng-bind="saldo.DES_SECTOR" ng-if="saldo.cuantity != undefined" rowspan="{{saldo.cuantity}}"></td>
+                <td style="background:#{{saldo.COD_COLOR}}"></td>
+                <td ng-bind="saldo.DES_DIVISA"></td>
+                <td ng-bind="saldo.NUM_IMPORTE_DISP | currency"></td>
+                <td ng-bind="saldo.NUM_IMPORTE_NODISP | currency"></td>
+                <td>{{(saldo.NUM_IMPORTE_DISP + saldo.NUM_IMPORTE_NODISP) | currency}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+
+    <table class="ui-datatable ui-datatable-data" cellspacing="0" rules="all" border="1" style="border-style:None;border-collapse:collapse;">
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="col" style="font-size:11px;width:101px;">Totales</th>
+                <th class="ColunaSemMargin" scope="col" style="font-size:10px;width:7px;"></th>
+                <th scope="col" style="width:200px;">Divisa</th>
+                <th scope="col" style="width:150px;">Valor Disponible</th>
+                <th scope="col" style="width:150px;">Valor No Disponible</th>
+                <th scope="col" style="width:150px;">Suma</th>
+            </tr>
+            <tr ng-repeat="total in Totales">
+                <td style="background:#{{total.COD_COLOR}}"></td>
+                <td ng-bind="total.DES_DIVISA"></td>
+                <td ng-bind="total.NUM_IMPORTE_DISP | currency"></td>
+                <td ng-bind="total.NUM_IMPORTE_NODISP | currency"></td>
+                <td>{{(total.NUM_IMPORTE_DISP + total.NUM_IMPORTE_NODISP) | currency }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

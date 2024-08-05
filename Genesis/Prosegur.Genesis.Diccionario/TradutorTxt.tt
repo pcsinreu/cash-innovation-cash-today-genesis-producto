@@ -1,0 +1,116 @@
+﻿<#@ output extension="generated.vb" #>
+<#@ template debug="false" hostspecific="true" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="System.Globalization" #>
+<#@ import namespace="System.Xml" #>
+<#
+    Dim chavesDicionario As List(Of String)
+    Dim todosDicionarios As New Dictionary(Of String, List(Of String))()
+    Dim cultura As CultureInfo = Nothing
+    Dim chaveTraducao As String
+    Dim validaCultura As New Regex("^((.+)(\.|\\))?([a-z]{2}(-[a-z]{2})?)\.txt$", RegexOptions.Compiled Or RegexOptions.IgnoreCase) 'valida as culturas para os seguintes exemplos de máscara: *.pt.txt pt.txt *.pt-br.txt pt-br.txt
+    Dim resultadoCultura As Match = Nothing
+    Dim info As FileInfo = Nothing
+
+    Dim xDocProj As New XmlDocument()
+    Dim ns As New XmlNamespaceManager(xDocProj.NameTable)
+    ns.AddNamespace("ns", "http://schemas.microsoft.com/developer/msbuild/2003")
+    xDocProj.LoadXml(File.ReadAllText(Me.Host.ResolvePath("Prosegur.Genesis.Diccionario.vbproj")).ToLower())
+
+    Dim dicionarios As XmlNodeList = xDocProj.SelectNodes("/ns:project/ns:itemgroup/ns:content/ns:link[starts-with(., 'diccionarios\')]/..", ns)
+	
+    For Each item As XmlNode In dicionarios
+        Dim arquivo As String = Me.Host.ResolvePath(item.Attributes("include").Value)
+
+        Try
+            info = New FileInfo(arquivo)
+            'verifica a mascara do nome do arquivo.
+            resultadoCultura = validaCultura.Match(info.Name)
+            If resultadoCultura.Success Then
+                'verifica se é uma cultura válida.
+                Try
+                    cultura = New CultureInfo(resultadoCultura.Groups(4).Value) 'o grupo 4 representa a cultura informada
+                Catch
+                    If resultadoCultura.Groups(4).Value.ToLower().Equals("zh") Then
+                        cultura = New CultureInfo("zh-CN") 'o grupo 4 representa a cultura informada
+                    Else
+                        Continue For
+                    End If
+                End Try
+            Else
+                Continue For
+            End If
+        Catch ex As Exception
+            Continue For
+        End Try
+
+        'Verifica se o dicionário da cultura já existe para continuar a popular o mesmo.
+        If todosDicionarios.ContainsKey(resultadoCultura.Groups(2).Value.ToLower()) Then
+            chavesDicionario = todosDicionarios(resultadoCultura.Groups(2).Value.ToLower())
+        Else
+            chavesDicionario = New List(Of String)()
+            todosDicionarios.Add(resultadoCultura.Groups(2).Value.ToLower(), chavesDicionario)
+        End If
+				
+        'Lê cada linha do dicionário txt e cria uma coleção na memória
+        For Each s As String In File.ReadAllLines(arquivo)
+            If (Not s.StartsWith("//") AndAlso Not s.StartsWith("#") AndAlso s <> String.Empty AndAlso s.Contains("=") _
+				AndAlso (s.Contains("GenesisSalidas") OrElse s.Contains("REyD"))) Then
+                Dim indice As Integer = s.IndexOf("=")
+                chaveTraducao = s.Substring(0, indice).Trim()
+                Try
+				    				
+				    if not chavesDicionario.contains(chaveTraducao) then
+						chavesDicionario.Add(chaveTraducao)
+					end if
+                Catch ex As Exception
+                    'Ignora chaves duplicadas
+                End Try
+            End If
+        Next
+    Next
+
+    For Each nomeDicionario As String In todosDicionarios.Keys
+        chavesDicionario = todosDicionarios(nomeDicionario)
+#>
+Namespace genesis
+    Public Class Chaves
+<#
+        For Each chave As String In chavesDicionario
+#>
+        Public Const <#=chave#> As String = "<#=chave#>"
+<#
+        Next
+#>
+    End Class
+
+    Public Class Tradutor
+
+        Private Shared _runtime As Boolean = False
+        Public Shared Sub Inicializar()
+            _runtime = True
+        End Sub
+<#
+        chavesDicionario = todosDicionarios(nomeDicionario)
+        For Each chave As String In chavesDicionario
+#>
+        Public Shared ReadOnly Property <#=chave#> As String
+            Get
+                Return If(_runtime, Prosegur.Framework.Dicionario.Tradutor.Traduzir(Chaves.<#=chave#>), Chaves.<#=chave#>)
+            End Get
+        End Property
+<#
+        Next
+#>
+    End Class
+End Namespace
+
+<#
+    Next
+#>

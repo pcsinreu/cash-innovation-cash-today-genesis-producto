@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:validation="http://www.mulesoft.org/schema/mule/validation" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+    xmlns:db="http://www.mulesoft.org/schema/mule/db"
+    xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd">
+    <flow name="GetTransactions" doc:id="8dc553ab-052e-4ec7-9c36-17acc44eecba" >
+        <ee:transform doc:name="InputPayload" doc:id="76232178-a939-4a4b-ab1c-4ac218658ddd">
+            <ee:message>
+            </ee:message>
+            <ee:variables>
+                <ee:set-variable variableName="transactionEndDate"><![CDATA[%dw 2.0
+output application/json skipNullOn="everywhere"
+---
+if (matches(payload.transactionEndDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])[+-]([0-1][0-9]|2[0-4]):([0-5][0-9])/))
+	true
+else if (matches(payload.transactionEndDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])/))
+	false
+else
+	null]]></ee:set-variable>
+                <ee:set-variable variableName="transactionStartDate" ><![CDATA[%dw 2.0
+output application/json skipNullOn="everywhere"
+---
+if (matches(payload.transactionStartDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])[+-]([0-1][0-9]|2[0-4]):([0-5][0-9])/))
+	true
+else if (matches(payload.transactionStartDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])/))
+	false
+else
+	null]]></ee:set-variable>
+        <ee:set-variable variableName="notifiedFilter" ><![CDATA[%dw 2.0
+output application/json skipNullOn="everywhere"
+---
+if (payload.notifiedStartDate? and payload.notifiedEndDate?)
+    "\n AND MOV.FYH_NOTIFICACION BETWEEN GMT.FEC_INICIO_NOT AND GMT.FYH_FIN_NOT" 
+else
+    if (payload.notifiedStartDate?)
+        "\n AND MOV.FYH_NOTIFICACION >= GMT.FEC_INICIO_NOT" 
+    else
+        if (payload.notifiedEndDate?)
+            "\n AND MOV.FYH_NOTIFICACION <= GMT.FYH_FIN_NOT" 
+        else
+        ""]]></ee:set-variable>
+        <ee:set-variable variableName="earlyValuedFilter" ><![CDATA[%dw 2.0
+output application/json skipNullOn="everywhere"
+---
+if (payload.earlyValuedStartDate? and payload.earlyValuedEndDate?)
+    "\n AND MOV.FYH_ACREDITACION BETWEEN GMT.FEC_INICIO_ACR AND GMT.FYH_FIN_ACR" 
+else
+    if (payload.earlyValuedStartDate?)
+        "\n AND MOV.FYH_ACREDITACION >= GMT.FEC_INICIO_ACR" 
+    else
+        if (payload.earlyValuedEndDate?)
+            "\n AND MOV.FYH_ACREDITACION <= GMT.FYH_FIN_ACR" 
+        else
+        ""]]></ee:set-variable>
+        <ee:set-variable variableName="notifiedDate" ><![CDATA[%dw 2.0
+output application/json skipNullOn="everywhere"
+
+var fechaInicio = if (payload.notifiedStartDate?) 
+	if (matches(payload.notifiedStartDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])[+-]([0-1][0-9]|2[0-4]):([0-5][0-9])/))
+	", \n TO_TIMESTAMP_TZ('" ++ payload.notifiedStartDate as DateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM') AS FEC_INICIO_NOT"
+	else if (matches(payload.notifiedStartDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])/))
+	", \n  TO_TIMESTAMP_TZ('" ++ payload.notifiedStartDate as LocalDateTime ++ "' || TRIM(TO_CHAR(ROUND((NVL(DELE.NEC_GMT_MINUTOS, 0) +
+	CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.notifiedStartDate as LocalDateTime ++ "','YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.notifiedStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END)/ 60), '09')) || ':' ||
+	TRIM(TO_CHAR(MOD((NVL(DELE.NEC_GMT_MINUTOS, 0) + CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.notifiedStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.notifiedStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END), 60), '09')),
+	'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM') AS FEC_INICIO_NOT "
+	else
+	""
+else
+""
+var fechaFin = if (payload.notifiedEndDate?) 
+	if (matches(payload.notifiedEndDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])[+-]([0-1][0-9]|2[0-4]):([0-5][0-9])/))
+	", \n TO_TIMESTAMP_TZ('" ++ payload.notifiedEndDate as DateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM') AS FYH_FIN_NOT"
+	else if (matches(payload.notifiedEndDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])/))
+	", \n  TO_TIMESTAMP_TZ('" ++ payload.notifiedEndDate as LocalDateTime ++ "' || TRIM(TO_CHAR(ROUND((NVL(DELE.NEC_GMT_MINUTOS, 0) +
+	CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.notifiedEndDate as LocalDateTime ++ "','YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.notifiedEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END)/ 60), '09')) || ':' ||
+	TRIM(TO_CHAR(MOD((NVL(DELE.NEC_GMT_MINUTOS, 0) + CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.notifiedEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.notifiedEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END), 60), '09')),
+	'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM') AS FYH_FIN_NOT "
+	else
+	""
+else
+""
+---
+fechaInicio ++ fechaFin]]></ee:set-variable>
+        <ee:set-variable variableName="earlyValuedDate" ><![CDATA[%dw 2.0
+output application/json skipNullOn="everywhere"
+
+var fechaInicio = if (payload.earlyValuedStartDate?) 
+	if (matches(payload.earlyValuedStartDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])[+-]([0-1][0-9]|2[0-4]):([0-5][0-9])/))
+		", \n TO_TIMESTAMP_TZ('" ++ payload.earlyValuedStartDate as DateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM') AS FEC_INICIO_ACR"
+	else if (matches(payload.earlyValuedStartDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])/))
+		", \n  TO_TIMESTAMP_TZ('" ++ payload.earlyValuedStartDate as LocalDateTime ++ "' || TRIM(TO_CHAR(ROUND((NVL(DELE.NEC_GMT_MINUTOS, 0) +
+		CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.earlyValuedStartDate as LocalDateTime ++ "','YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.earlyValuedStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END)/ 60), '09')) || ':' ||
+		TRIM(TO_CHAR(MOD((NVL(DELE.NEC_GMT_MINUTOS, 0) + CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.earlyValuedStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.earlyValuedStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END), 60), '09')),
+		'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM') AS FEC_INICIO_ACR "
+	else
+	""
+else ""
+
+var fechaFin = if (payload.earlyValuedEndDate?) 
+	if (matches(payload.earlyValuedEndDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])[+-]([0-1][0-9]|2[0-4]):([0-5][0-9])/))
+	", \n TO_TIMESTAMP_TZ('" ++ payload.earlyValuedEndDate as DateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM') AS FYH_FIN_ACR"
+	else if (matches(payload.earlyValuedEndDate, /[0-9]{4}-((0[1-9])|(1[0-2]))-(0[1-9]|[1-2][0-9]|3[01])T([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])/))
+	", \n  TO_TIMESTAMP_TZ('" ++ payload.earlyValuedEndDate as LocalDateTime ++ "' || TRIM(TO_CHAR(ROUND((NVL(DELE.NEC_GMT_MINUTOS, 0) +
+	CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.earlyValuedEndDate as LocalDateTime ++ "','YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.earlyValuedEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END)/ 60), '09')) || ':' ||
+	TRIM(TO_CHAR(MOD((NVL(DELE.NEC_GMT_MINUTOS, 0) + CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.earlyValuedEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.earlyValuedEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END), 60), '09')),
+	'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM') AS FYH_FIN_ACR "
+	else
+	""
+else
+""
+---
+fechaInicio ++ fechaFin]]></ee:set-variable>
+            </ee:variables>
+        </ee:transform>
+        <choice doc:name="Choice" doc:id="ded1a6d7-8379-4eb4-853b-eddcb9d38cb5" >
+      <when expression="#[(vars.transactionStartDate == null or vars.transactionEndDate == null)]">
+        <raise-error doc:name="Raise error" doc:id="0e5f6f4d-d85b-46bd-80a7-5f1617b9a774" type="TRANSACTIONDATE:INVALIDDATE" description="Transaction (Start or End) date is invalid" />
+      </when>
+    </choice>
+    <set-variable value="${env}" doc:name="Set Entorno" doc:id="37de507d-25bf-4aa0-bc31-48183b327f53" variableName="Entorno"/>
+        <set-variable value="#[%dw 2.0&#10;output application/java&#10;--- &#10;if(vars.Entorno != 'uat')&#10;(&#10;    upper(payload.countryCode)&#10;)&#10;else&#10;(&#10;    upper(payload.countryCode) match {&#10;     case 'ES' -&gt; upper(payload.countryCode)&#10;     case 'PT' -&gt; upper(payload.countryCode)&#10;     case 'DE' -&gt; 'ES'&#10;     else -&gt; 'BR'&#10;    }&#10;)]" doc:name="Set CodPais" doc:id="5904e184-614a-4124-b6ec-a658deba138d" variableName="CodPais" />
+        <set-variable value="#[output application/java
+&#10;--- 
+&#10;upper(payload.countryCode)]" doc:name="Set CodPaisOriginal" doc:id="f6f85d19-5413-4e05-b989-4a91a04e5a50" variableName="CodPaisOriginal"/>
+    <set-variable value="#[p('dataBase.' ++ vars.CodPais as String ++ '.schema')]" doc:name="Set Schema" doc:id="64bfe72a-7f03-48b9-a4bb-667bf2187bf0" variableName="Schema" doc:description="Variable utilizada en la consulta (variable Query) para definir el Schema dependiendo el pais"/>
+        <set-variable value="#[if (!isEmpty(payload.fields))&#10;(&#10; payload.fields map(field, index) -&gt; (&#10;       field match {&#10;          case &quot;deviceName&quot; -&gt; &quot;MOV.DES_MAQUINA&quot;&#10;          case &quot;branchCode&quot; -&gt; &quot;MOV.COD_DELEGACION_OPE&quot;&#10;           case &quot;branchUniqueCode&quot; -&gt; &quot;MOV.COD_DELEGACION_MDM&quot;&#10;         case &quot;branchName&quot; -&gt; &quot;MOV.DES_DELEGACION&quot;&#10;           case &quot;entityCode&quot; -&gt; &quot;MOV.COD_CLIENTE_OPE&quot;&#10;          case &quot;entityUniqueCode&quot; -&gt; &quot;MOV.COD_CLIENTE_MDM&quot;&#10;            case &quot;entityName&quot; -&gt; &quot;MOV.DES_CLIENTE&quot;&#10;          case &quot;centerCode&quot; -&gt; &quot;MOV.COD_SUBCLIENTE_OPE&quot;&#10;           case &quot;centerUniqueCode&quot; -&gt; &quot;MOV.COD_SUBCLIENTE_MDM&quot;&#10;         case &quot;centerName&quot; -&gt; &quot;MOV.DES_SUBCLIENTE&quot;&#10;           case &quot;servicePointCode&quot; -&gt; &quot;MOV.COD_PTO_SERVICIO_OPE&quot;&#10;           case &quot;servicePointUniqueCode&quot; -&gt; &quot;MOV.COD_PTO_SERVICIO_MDM&quot;&#10;         case &quot;servicePointName&quot; -&gt; &quot;MOV.DES_PTO_SERVICIO&quot;&#10;           case &quot;channelCode&quot; -&gt; &quot;MOV.COD_CANAL&quot;&#10;           case &quot;channelName&quot; -&gt; &quot;MOV.DES_CANAL&quot;&#10;           case &quot;subChannelCode&quot; -&gt; &quot;MOV.COD_SUBCANAL&quot;&#10;         case &quot;subChannelName&quot; -&gt; &quot;MOV.DES_SUBCANAL&quot;&#10;         case &quot;accountingDate&quot; -&gt; &quot;TO_CHAR(MOV.FYH_CONTABLE, 'YYYY-MM-DD\&quot;T\&quot;HH24:MI:SSTZH:TZM') AS FYH_CONTABLE&quot;&#10;          case &quot;creationDate&quot; -&gt; &quot;TO_CHAR(MOV.GMT_CREACION, 'YYYY-MM-DD\&quot;T\&quot;HH24:MI:SSTZH:TZM') AS GMT_CREACION&quot;&#10;            case &quot;typeCode&quot; -&gt; &quot;MOV.COD_TIPO_MOVIMIENTO&quot;&#10;            case &quot;typeName&quot; -&gt; &quot;MOV.DES_TIPO_MOVIMIENTO&quot;&#10;            case &quot;actualId&quot; -&gt; &quot;MOV.COD_ACTUAL_ID&quot;&#10;          case &quot;collectionId&quot; -&gt; &quot;MOV.COD_COLLECTION_ID&quot;&#10;          case &quot;notified&quot; -&gt; &quot;MOV.BOL_NOTIFICADO&quot;&#10;         case &quot;notifiedDate&quot; -&gt; &quot;TO_CHAR(MOV.FYH_NOTIFICACION, 'YYYY-MM-DD\&quot;T\&quot;HH24:MI:SSTZH:TZM') AS FYH_NOTIFICACION&quot;&#10;            case &quot;earlyValued&quot; -&gt; &quot;MOV.BOL_ACREDITADO&quot;&#10;          case &quot;earlyValuedDate&quot; -&gt; &quot;TO_CHAR(MOV.FYH_ACREDITACION, 'YYYY-MM-DD\&quot;T\&quot;HH24:MI:SSTZH:TZM') AS FYH_ACREDITACION&quot;&#10;         case &quot;currencyName&quot; -&gt; &quot;MOV.DES_DIVISA&quot;&#10;         else -&gt; &quot;&quot;&#10;        }&#10;  )&#10;)&#10;else&#10;(&quot;&quot;)]" doc:name="Set Fields" doc:id="7237d19b-1af8-4596-b59d-1b0dd3b80d29" variableName="Fields" doc:description="Variable utilizada en la consulta (variable Query) para definir las columnas a mostrar"/>
+        <set-variable value='#[if (!isEmpty(payload.fields))&#10;(&#10; payload.fields map(field, index) -&gt; (&#10;       field match {&#10;          case "denominations" -&gt; "MOVDET.OID_MOVIMIENTO_DETALLE, MOVDET.COD_DENOMINACION, MOVDET.DES_DENOMINACION, MOVDET.BOL_BILLETE, MOVDET.NEL_CANTIDAD, MOVDET.NUM_IMPORTE AS NUM_IMPORTE_DET"&#10;           case "extraDatas" -&gt; "MOVEXT.OID_MOVIMIENTO_CAMPO_EXTRA, MOVEXT.COD_CAMPO_EXTRA, MOVEXT.DES_VALOR_CAMPO_EXTRA"&#10;          else -&gt; ""&#10;      }&#10;  )&#10;)&#10;else&#10;("")]' doc:name="Set FieldsDetallesExtras" doc:id="7ae46180-7e50-4e1e-b287-6482963bfb6a" variableName="FieldsDetallesExtras" doc:description="Variable utilizada en la consulta (variable Query) para definir las columnas de detalles y campos extras"/>
+        <set-variable value='#[if (!isEmpty(payload.sort))
+&#10;(
+&#10;   payload.sort map(field, index) -&gt; (
+&#10;       field match {
+&#10;           case "transactionDate" -&gt; "MOV.HOR_MOVIMIENTO"
+&#10;           case "+transactionDate" -&gt; "MOV.HOR_MOVIMIENTO"
+&#10;           case "-transactionDate" -&gt; "MOV.HOR_MOVIMIENTO DESC"
+&#10;           case "branchCode" -&gt; "MOV.COD_DELEGACION_OPE"
+&#10;           case "+branchCode" -&gt; "MOV.COD_DELEGACION_OPE"
+&#10;           case "-branchCode" -&gt; "MOV.COD_DELEGACION_OPE DESC"
+&#10;           case "branchUniqueCode" -&gt; "MOV.COD_DELEGACION_MDM"
+&#10;           case "+branchUniqueCode" -&gt; "MOV.COD_DELEGACION_MDM"
+&#10;           case "-branchUniqueCode" -&gt; "MOV.COD_DELEGACION_MDM DESC"
+&#10;           case "branchName" -&gt; "MOV.DES_DELEGACION"
+&#10;           case "+branchName" -&gt; "MOV.DES_DELEGACION"
+&#10;           case "-branchName" -&gt; "MOV.DES_DELEGACION DESC"
+&#10;           case "entityCode" -&gt; "MOV.COD_CLIENTE_OPE"
+&#10;           case "+entityCode" -&gt; "MOV.COD_CLIENTE_OPE"
+&#10;           case "-entityCode" -&gt; "MOV.COD_CLIENTE_OPE DESC"
+&#10;           case "entityUniqueCode" -&gt; "MOV.COD_CLIENTE_MDM"
+&#10;           case "+entityUniqueCode" -&gt; "MOV.COD_CLIENTE_MDM"
+&#10;           case "-entityUniqueCode" -&gt; "MOV.COD_CLIENTE_MDM DESC"
+&#10;           case "entityName" -&gt; "MOV.DES_CLIENTE"
+&#10;           case "+entityName" -&gt; "MOV.DES_CLIENTE"
+&#10;           case "-entityName" -&gt; "MOV.DES_CLIENTE DESC"
+&#10;           case "centerCode" -&gt; "MOV.COD_SUBCLIENTE_OPE"
+&#10;           case "+centerCode" -&gt; "MOV.COD_SUBCLIENTE_OPE"
+&#10;           case "-centerCode" -&gt; "MOV.COD_SUBCLIENTE_OPE DESC"
+&#10;           case "centerUniqueCode" -&gt; "MOV.COD_SUBCLIENTE_MDM"
+&#10;           case "+centerUniqueCode" -&gt; "MOV.COD_SUBCLIENTE_MDM"
+&#10;           case "-centerUniqueCode" -&gt; "MOV.COD_SUBCLIENTE_MDM DESC"
+&#10;           case "centerName" -&gt; "MOV.DES_SUBCLIENTE"
+&#10;           case "+centerName" -&gt; "MOV.DES_SUBCLIENTE"
+&#10;           case "-centerName" -&gt; "MOV.DES_SUBCLIENTE DESC"
+&#10;           case "servicePointCode" -&gt; "MOV.COD_PTO_SERVICIO_OPE"
+&#10;           case "+servicePointCode" -&gt; "MOV.COD_PTO_SERVICIO_OPE"
+&#10;           case "-servicePointCode" -&gt; "MOV.COD_PTO_SERVICIO_OPE DESC"
+&#10;           case "servicePointUniqueCode" -&gt; "MOV.COD_PTO_SERVICIO_MDM"
+&#10;           case "+servicePointUniqueCode" -&gt; "MOV.COD_PTO_SERVICIO_MDM"
+&#10;           case "-servicePointUniqueCode" -&gt; "MOV.COD_PTO_SERVICIO_MDM DESC"
+&#10;           case "servicePointName" -&gt; "MOV.DES_PTO_SERVICIO"
+&#10;           case "+servicePointName" -&gt; "MOV.DES_PTO_SERVICIO"
+&#10;           case "-servicePointName" -&gt; "MOV.DES_PTO_SERVICIO DESC"
+&#10;           case "channelCode" -&gt; "MOV.COD_CANAL"
+&#10;           case "+channelCode" -&gt; "MOV.COD_CANAL"
+&#10;           case "-channelCode" -&gt; "MOV.COD_CANAL DESC"
+&#10;           case "channelName" -&gt; "MOV.DES_CANAL"
+&#10;           case "+channelName" -&gt; "MOV.DES_CANAL"
+&#10;           case "-channelName" -&gt; "MOV.DES_CANAL DESC"
+&#10;           case "subChannelCode" -&gt; "MOV.COD_SUBCANAL"
+&#10;           case "+subChannelCode" -&gt; "MOV.COD_SUBCANAL"
+&#10;           case "-subChannelCode" -&gt; "MOV.COD_SUBCANAL DESC"
+&#10;           case "subChannelName" -&gt; "MOV.DES_SUBCANAL"
+&#10;           case "+subChannelName" -&gt; "MOV.DES_SUBCANAL"
+&#10;           case "-subChannelName" -&gt; "MOV.DES_SUBCANAL DESC"
+&#10;           case "accountingDate" -&gt; "MOV.FYH_CONTABLE"
+&#10;           case "+accountingDate" -&gt; "MOV.FYH_CONTABLE"
+&#10;           case "-accountingDate" -&gt; "MOV.FYH_CONTABLE DESC"
+&#10;           case "creationDate" -&gt; "MOV.GMT_CREACION"
+&#10;           case "+creationDate" -&gt; "MOV.GMT_CREACION"
+&#10;           case "-creationDate" -&gt; "MOV.GMT_CREACION DESC"
+&#10;           case "typeCode" -&gt; "MOV.COD_TIPO_MOVIMIENTO"
+&#10;           case "+typeCode" -&gt; "MOV.COD_TIPO_MOVIMIENTO"
+&#10;           case "-typeCode" -&gt; "MOV.COD_TIPO_MOVIMIENTO DESC"
+&#10;           case "typeName" -&gt; "MOV.DES_TIPO_MOVIMIENTO"
+&#10;           case "+typeName" -&gt; "MOV.DES_TIPO_MOVIMIENTO"
+&#10;           case "-typeName" -&gt; "MOV.DES_TIPO_MOVIMIENTO DESC"
+&#10;           case "actualId" -&gt; "MOV.COD_ACTUAL_ID"
+&#10;           case "+actualId" -&gt; "MOV.COD_ACTUAL_ID"
+&#10;           case "-actualId" -&gt; "MOV.COD_ACTUAL_ID DESC"
+&#10;           case "collectionId" -&gt; "MOV.COD_COLLECTION_ID"
+&#10;           case "+collectionId" -&gt; "MOV.COD_COLLECTION_ID"
+&#10;           case "-collectionId" -&gt; "MOV.COD_COLLECTION_ID DESC"
+&#10;           case "notified" -&gt; "MOV.BOL_NOTIFICADO"
+&#10;           case "+notified" -&gt; "MOV.BOL_NOTIFICADO"
+&#10;           case "-notified" -&gt; "MOV.BOL_NOTIFICADO DESC"
+&#10;           case "notifiedDate" -&gt; "FYH_NOTIFICACION"
+&#10;           case "+notifiedDate" -&gt; "FYH_NOTIFICACION"
+&#10;           case "-notifiedDate" -&gt; "FYH_NOTIFICACION DESC"
+&#10;           case "earlyValued" -&gt; "MOV.BOL_ACREDITADO"
+&#10;           case "+earlyValued" -&gt; "MOV.BOL_ACREDITADO"
+&#10;           case "-earlyValued" -&gt; "MOV.BOL_ACREDITADO DESC"
+&#10;           case "earlyValuedDate" -&gt; "MOV.FYH_ACREDITACION"
+&#10;           case "+earlyValuedDate" -&gt; "MOV.FYH_ACREDITACION"
+&#10;           case "-earlyValuedDate" -&gt; "MOV.FYH_ACREDITACION DESC"
+&#10;           else -&gt; ""
+&#10;       }
+&#10;   )
+&#10;)
+&#10;else
+&#10;("")]' doc:name="Set Order" doc:id="b3bdeb63-4c8c-4ba2-9fab-b912d51c667d" variableName="Order" doc:description="Variable utilizada en la consulta (variable Query) para definir el ordenamiento"/>
+        <set-variable value="#[if(payload.limit != null and payload.limit &gt; 0)
+&#10;(payload.limit)
+&#10;else
+&#10;(1000)]" doc:name="Set Fetch" doc:id="f0517358-33e3-480a-96fe-68e2f31b95ef" variableName="Fetch" doc:description="Variable utilizada en la consulta (variable Query) para definir el limite de los registros (Fetch)"/>
+        <set-variable value="#[if(payload.offset != null and payload.offset &gt; 0)
+&#10;   (payload.offset)
+&#10;   else
+&#10;   (0)]" doc:name="Set Offset" doc:id="29e64e9e-536f-4bc4-9049-26864164d7d9" variableName="Offset" doc:description="Variable utilizada en la consulta (variable Query) para definir la cantidad de registros a omitir (Offset)"/>
+        <set-variable value="#[%dw 2.0&#10;var filtro_channelCode = if (!isEmpty(payload.channelCode))&#10; (&#10;      &quot;\n AND MOV.COD_CANAL IN ('&quot; ++ (payload.channelCode joinBy &quot;','&quot;) ++ &quot;') &quot;&#10;  )else&#10;  (&quot;&quot;)&#10;&#10;var filtro_subChannelCode = if (!isEmpty(payload.subChannelCode))&#10;  (&#10;      &quot;\n AND MOV.COD_SUBCANAL IN ('&quot; ++ (payload.subChannelCode joinBy &quot;','&quot;) ++ &quot;') &quot;&#10;    )else&#10;  (&quot;&quot;)&#10;&#10;var filtro_typeCode = if (!isEmpty(payload.typeCode))&#10;  (&#10;      &quot;\n AND MOV.COD_TIPO_MOVIMIENTO IN ('&quot; ++ (payload.typeCode joinBy &quot;','&quot;) ++ &quot;') &quot;&#10;   )else&#10;  (&quot;&quot;)&#10;&#10;var filtro_code = if (!isEmpty(payload.code))&#10;  (&#10;      &quot;\n AND MOV.COD_MOVIMIENTO IN ('&quot; ++ (payload.code joinBy &quot;','&quot;) ++ &quot;') &quot;&#10;    )else&#10;  (&quot;&quot;)&#10;&#10;var filtro_actualId = if (!isEmpty(payload.actualId))&#10;  (&#10;      &quot;\n AND MOV.COD_ACTUAL_ID IN ('&quot; ++ (payload.actualId joinBy &quot;','&quot;) ++ &quot;') &quot;&#10; )else&#10;  (&quot;&quot;)&#10;&#10;var filtro_collectionId = if (!isEmpty(payload.collectionId))&#10;  (&#10;      &quot;\n AND MOV.COD_COLLECTION_ID IN ('&quot; ++ (payload.collectionId joinBy &quot;','&quot;) ++ &quot;') &quot;&#10; )else&#10;  (&quot;&quot;)&#10;&#10;var filtro_notified = if (payload.notified != null)&#10;    (&#10;      if(payload.notified == true)&#10;       (&quot;\n AND MOV.BOL_NOTIFICADO = 1&quot;)&#10;        else&#10;       (&quot;\n AND MOV.BOL_NOTIFICADO = 0&quot;)&#10;    )else&#10;  (&quot;&quot;)&#10;&#10;&#10;var filtro_earlyValued = if (payload.earlyValued != null)&#10; (&#10;      if(payload.earlyValued == true)&#10;        (&quot;\n AND MOV.BOL_ACREDITADO = 1&quot;)&#10;        else&#10;       (&quot;\n AND MOV.BOL_ACREDITADO = 0&quot;)&#10;    )else&#10;  (&quot;&quot;)&#10;&#10;---&#10;filtro_channelCode ++ filtro_subChannelCode ++ filtro_typeCode ++ filtro_code ++ filtro_actualId ++ &#10;filtro_collectionId ++ filtro_notified ++ filtro_earlyValued]" doc:name="Set Where" doc:id="98e1c541-df01-4fbc-8fed-d2d948e02a79" variableName="Where" doc:description="Variable utilizada en la consulta (variable Query) para definir el filtro de los registros"/>
+        <ee:transform doc:name="Set Query" doc:id="8777b45f-e5b1-4e6b-a601-705fc354aa52" >
+            <ee:message >
+            </ee:message>
+            <ee:variables >
+                <ee:set-variable variableName="Query" ><![CDATA[%dw 2.0
+output application/java
+---
+// WITH
+"\n WITH GMT AS (
+        SELECT 
+        MAQUI.OID_MAQUINA,
+        MAQUI.COD_IDENTIFICACION,
+        TRIM(TO_CHAR(ROUND((NVL(DELE.NEC_GMT_MINUTOS, 0) +
+        CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END)/ 60), '09')) || ':' ||
+        TRIM(TO_CHAR(MOD((NVL(DELE.NEC_GMT_MINUTOS, 0) + CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END), 60), '09'))
+        AS GMT_DELEGACION,
+        CASE WHEN " ++ (if(vars.transactionStartDate == true) "'TRUE'" else 'NULL') ++ " IS NOT NULL THEN
+        	TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate  ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')
+        ELSE
+        	TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "' || TRIM(TO_CHAR(ROUND((NVL(DELE.NEC_GMT_MINUTOS, 0) +
+        	CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "','YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END)/ 60), '09')) || ':' ||
+        	TRIM(TO_CHAR(MOD((NVL(DELE.NEC_GMT_MINUTOS, 0) + CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionStartDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END), 60), '09')),
+        	'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')
+        END FEC_INICIO_MOV,
+        CASE WHEN "++ (if(vars.transactionEndDate == true) "'TRUE'" else 'NULL') ++ " IS NOT NULL THEN
+            TO_TIMESTAMP_TZ('" ++ payload.transactionEndDate ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')
+        ELSE
+            TO_TIMESTAMP_TZ('" ++ payload.transactionEndDate as LocalDateTime ++ "' || TRIM(TO_CHAR(ROUND((NVL(DELE.NEC_GMT_MINUTOS, 0) +
+            CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END)/ 60), '09')) || ':' ||
+            TRIM(TO_CHAR(MOD((NVL(DELE.NEC_GMT_MINUTOS, 0) + CASE WHEN TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) >= DELE.FYH_VERANO_INICIO AND TRUNC(TO_TIMESTAMP_TZ('" ++ payload.transactionEndDate as LocalDateTime ++ "', 'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')) <= DELE.FYH_VERANO_FIN THEN NVL(DELE.NEC_VERANO_AJUSTE, 0) ELSE 0 END), 60), '09')),
+            'YYYY-MM-DD' || CHR(34) || 'T' ||  CHR(34) || 'HH24:MI:SSTZH:TZM')
+        END FYH_FIN_MOV"  ++ vars.notifiedDate  ++ vars.earlyValuedDate ++ "
+        FROM " ++
+    vars.Schema ++ ".SAPR_TMAQUINA MAQUI
+        INNER JOIN  " ++
+    vars.Schema ++ ".GEPR_TSECTOR SECT ON MAQUI.OID_SECTOR = SECT.OID_SECTOR
+        INNER JOIN " ++
+    vars.Schema ++ ".GEPR_TPLANTA PLAN ON PLAN.OID_PLANTA = SECT.OID_PLANTA
+        INNER JOIN " ++
+    vars.Schema ++ ".GEPR_TDELEGACION DELE ON DELE.OID_DELEGACION = PLAN.OID_DELEGACION
+        WHERE MAQUI.COD_IDENTIFICACION IN ('" ++ (payload.deviceId joinBy "','") ++ "')
+    ),
+     MOV AS (SELECT DISTINCT
+     MOV.OID_MOVIMIENTO,
+     MOV.COD_DEVICEID,
+     MOV.COD_PAIS,
+     MOV.FEC_MOVIMIENTO,
+     TO_CHAR(MOV.HOR_MOVIMIENTO, 'YYYY-MM-DD\"T\"HH24:MI:SSTZH:TZM') AS HOR_MOVIMIENTO,
+     MOV.COD_GRUPO_MOVIMIENTO,
+     MOV.COD_MOVIMIENTO,
+     MOV.COD_DIVISA,
+     MOV.NUM_IMPORTE,
+     MOV.BOL_VIRTUAL" ++
+    (if(!isEmpty(vars.Fields as Array<String> default[] filter $ != ""))
+        (
+            ",\n " ++ (vars.Fields as Array<String> default[] filter $ != "" joinBy ",\n ")
+        )
+        else("")
+    ) ++
+    "\n FROM " ++
+    vars.Schema ++ ".SAPR_TMOVIMIENTO MOV " ++
+    "INNER JOIN GMT ON GMT.COD_IDENTIFICACION = MOV.COD_DEVICEID
+    AND MOV.FEC_MOVIMIENTO BETWEEN TRUNC(GMT.FEC_INICIO_MOV) AND TRUNC(GMT.FYH_FIN_MOV)
+    AND MOV.HOR_MOVIMIENTO BETWEEN GMT.FEC_INICIO_MOV AND GMT.FYH_FIN_MOV" ++ 
+    " " ++ vars.notifiedFilter ++ " " ++ vars.earlyValuedFilter ++
+    // WHERE
+    "\n WHERE " ++ 
+    "\n MOV.COD_PAIS = '" ++ vars.CodPais ++ "'"  ++
+    vars.Where as String default '' ++ 
+        // ORDER
+        (if(!isEmpty(vars.Order as Array<String> default[] filter $ != ""))
+            (
+                "\n ORDER BY " ++ (vars.Order as Array<String> default[] filter $ != "" joinBy ", ")
+            )
+            else("\n ORDER BY MOV.HOR_MOVIMIENTO ")
+        ) ++
+    // OFFSET
+    "\n OFFSET " ++ vars.Offset ++ " ROWS " ++
+    // FETCH
+    "\n FETCH NEXT " ++ vars.Fetch ++ " ROWS ONLY " ++
+    ")" ++
+    // SELECT
+    "\n SELECT MOV.*" ++ 
+    (if(!isEmpty(vars.FieldsDetallesExtras as Array<String> default[] filter $ != ""))
+        (
+            ",\n " ++ (vars.FieldsDetallesExtras as Array<String> default[] filter $ != "" joinBy ",\n ")
+        )
+        else("")
+    ) ++
+    "\n FROM MOV " ++
+    // LEFT JOIN
+    (if((!isEmpty(payload.fields)) and (payload.fields contains "denominations"))
+        (
+            "\n LEFT JOIN " ++ vars.Schema ++ ".SAPR_TMOVIMIENTO_DETALLE MOVDET ON  MOV.OID_MOVIMIENTO = MOVDET.OID_MOVIMIENTO AND MOVDET.COD_PAIS =  MOV.COD_PAIS AND MOVDET.FEC_MOVIMIENTO = MOV.FEC_MOVIMIENTO"
+        )
+        else("")
+    ) ++
+    // LEFT JOIN
+    (if((!isEmpty(payload.fields)) and (payload.fields contains "extraDatas"))
+        (
+            "\n LEFT JOIN " ++ vars.Schema ++ ".SAPR_TMOVIMIENTO_CAMPO_EXTRA MOVEXT ON  MOV.OID_MOVIMIENTO = MOVEXT.OID_MOVIMIENTO AND MOVEXT.COD_PAIS =  MOV.COD_PAIS AND MOVEXT.FEC_MOVIMIENTO = MOV.FEC_MOVIMIENTO"
+        )
+        else("")
+    ) ]]></ee:set-variable>
+            </ee:variables>
+        </ee:transform>
+        <logger level="INFO" doc:name="Consulta generada" doc:id="c6f59c42-71f0-4854-9ba9-aa8f02be1b12" message="#['\nConsulta generada: ' ++ vars.Query as String default &quot;&quot;]"/>
+        <choice doc:name="Choice" doc:id="690a01e2-464e-4382-a2ea-42fface68dbf">
+    <when expression='vars.CodPais == "DE"'>
+        <db:select doc:name="Select_DE" doc:id="56f71c03-5be8-479b-9419-817a86492771" config-ref="Database_Config_DE">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "AR"'>
+        <db:select doc:name="Select_AR" doc:id="483d92bd-7e4d-4257-af45-170e04b80b0d" config-ref="Database_Config_AR">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "AU"'>
+        <db:select doc:name="Select_AU" doc:id="bc5c7422-e612-4d10-99a2-d5492af2981a" config-ref="Database_Config_AU">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "BR"'>
+        <db:select doc:name="Select_BR" doc:id="2c69516d-00b5-4c3f-873c-4b1910c5a568" config-ref="Database_Config_BR">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "CL"'>
+        <db:select doc:name="Select_CL" doc:id="de02dc55-fbd6-47c9-8c9a-e3bff24d6068" config-ref="Database_Config_CL">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "CO"'>
+        <db:select doc:name="Select_CO" doc:id="82c61cf3-fa99-4d25-bb8b-8c206750397d" config-ref="Database_Config_CO">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "CR"'>
+        <db:select doc:name="Select_CR" doc:id="f224b794-24f1-4b70-823b-03da466597c3" config-ref="Database_Config_CR">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "EC"'>
+        <db:select doc:name="Select_EC" doc:id="9df69cd8-8bd7-469c-9d1e-6f561cdd489a" config-ref="Database_Config_EC">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "SV"'>
+        <db:select doc:name="Select_SV" doc:id="b4d29343-8724-4405-9663-94381446293c" config-ref="Database_Config_SV">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "ES"'>
+        <db:select doc:name="Select_ES" doc:id="c9f0e502-53e5-470c-ae88-aeda95a4dd5b" config-ref="Database_Config_ES">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "PH"'>
+        <db:select doc:name="Select_PH" doc:id="fccc1bbe-4236-48fa-bec7-2c061b83b561" config-ref="Database_Config_PH">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "FR"'>
+        <db:select doc:name="Select_FR" doc:id="cb8a12ce-3295-46f1-b7a0-f2e807aefb01" config-ref="Database_Config_FR">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "GT"'>
+        <db:select doc:name="Select_GT" doc:id="37f6ab59-e501-4d88-9bef-b3df08b671cd" config-ref="Database_Config_GT">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "HN"'>
+        <db:select doc:name="Select_HN" doc:id="8c434517-5e1b-4caf-98bf-4f6770899495" config-ref="Database_Config_HN">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "IN"'>
+        <db:select doc:name="Select_IN" doc:id="b8e0dd48-2450-4d50-ae33-ea946661ed1b" config-ref="Database_Config_IN">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "MX"'>
+        <db:select doc:name="Select_MX" doc:id="adbf2c4f-f012-4184-8639-bdae50307ea3" config-ref="Database_Config_MX">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "NI"'>
+        <db:select doc:name="Select_NI" doc:id="fb28a52c-a788-4349-8e61-8b629d43dc28" config-ref="Database_Config_NI">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "PY"'>
+        <db:select doc:name="Select_PY" doc:id="6c29be7e-fea9-4ddc-8df1-de888110c11f" config-ref="Database_Config_PY">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "PE"'>
+        <db:select doc:name="Select_PE" doc:id="3c7bf9d4-336a-47bf-b180-6eed4dd3aec3" config-ref="Database_Config_PE">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "PT"'>
+        <db:select doc:name="Select_PT" doc:id="cac6580a-1ddf-4363-a0a1-27f70bf5da79" config-ref="Database_Config_PT">
+            <db:sql>
+                <![CDATA[#[vars.Query]]]>
+            </db:sql>
+        </db:select>
+    </when>
+    <when expression='vars.CodPais == "UY"'>
+        <db:select doc:name="Select_UY" doc:id="f0fc8dcd-142c-4281-89e8-ca197fbe08f7" config-ref="Database_Config_UY">
+                    <db:sql ><![CDATA[#[vars.Query]]]></db:sql>
+        </db:select>
+    </when>
+</choice>
+        <logger level="INFO" doc:name="Logger" doc:id="a4d70768-0621-47f2-b405-50a1ff9c570d" message="#[payload]"/>
+    </flow>
+</mule>

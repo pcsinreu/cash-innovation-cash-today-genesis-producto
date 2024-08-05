@@ -1,0 +1,117 @@
+http:
+  port: "8081"
+ 
+servicio:
+  integracion:
+    service: "Integracion"
+    port: "IntegracionSoap"
+    path: "Prosegur.Genesis.Servicio/Integracion.asmx" 
+  notificacion:
+    service: "Notificacion"
+    port: "NotificacionSoap"
+    path: "Prosegur.Genesis.Servicio/Notificacion.asmx" 
+  DE:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  AR:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  AU:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  BR:
+    protocol: "http"
+    host: "10.83.0.97"
+    port: "8291"
+    token: "t0k3n"
+  CL:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  CO:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  CR:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  EC:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  SV:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  ES:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  PH:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  FR:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  GT:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  HN:
+    protocol: ""
+    host: ""
+    port: "" 
+    token: ""
+  IN:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  MX:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  NI:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  PY:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  PE:
+    protocol: ""
+    host: ""
+    port: ""
+    token: ""
+  PT:
+    protocol: "http"
+    host: "ptsaldosmaehomo.emea.prosegur.local"
+    port: "54200"
+    token: ""
+  UY:
+    protocol: "http"
+    host: "10.83.0.47"
+    port: "8302"
+    token: ""

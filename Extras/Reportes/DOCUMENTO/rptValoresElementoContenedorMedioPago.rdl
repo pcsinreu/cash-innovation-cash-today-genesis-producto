@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix3">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>2.94337cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>15.41977cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.98958in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="DES_VALOR">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!DES_VALOR.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>DES_VALOR</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </Border>
+                        <BottomBorder>
+                          <Width>0.5pt</Width>
+                        </BottomBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <BackgroundColor>#c6d9f1</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle3">
+                      <ReportItems>
+                        <Tablix Name="Tablix4">
+                          <TablixBody>
+                            <TablixColumns>
+                              <TablixColumn>
+                                <Width>2.49583in</Width>
+                              </TablixColumn>
+                              <TablixColumn>
+                                <Width>1.88157in</Width>
+                              </TablixColumn>
+                              <TablixColumn>
+                                <Width>1.69337in</Width>
+                              </TablixColumn>
+                            </TablixColumns>
+                            <TablixRows>
+                              <TablixRow>
+                                <Height>0.16667in</Height>
+                                <TablixCells>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox22">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Descripción</Value>
+                                                <Style>
+                                                  <FontSize>7pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox21</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                      <ColSpan>2</ColSpan>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell />
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox24">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Importe</Value>
+                                                <Style>
+                                                  <FontSize>7pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox23</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                </TablixCells>
+                              </TablixRow>
+                              <TablixRow>
+                                <Height>0.19792in</Height>
+                                <TablixCells>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="DES_DENOMINACION2">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=Fields!DES_DIVISA.Value</Value>
+                                                <Style>
+                                                  <FontSize>7pt</FontSize>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>DES_DENOMINACION</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <RightBorder>
+                                            <Style>None</Style>
+                                          </RightBorder>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="DES_MEDIO_PAGO">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=IIF(Fields!ES_TOTAL.Value ="1",Fields!DES_VALOR.Value, Fields!DES_MEDIO_PAGO.Value)</Value>
+                                                <Style>
+                                                  <FontSize>7pt</FontSize>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>DES_MEDIO_PAGO</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <LeftBorder>
+                                            <Style>None</Style>
+                                          </LeftBorder>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="NUM_IMPORTE2">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=Fields!NUM_IMPORTE.Value</Value>
+                                                <Style>
+                                                  <FontSize>7pt</FontSize>
+                                                  <Format>#,0.00;(#,0.00)</Format>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>NUM_IMPORTE</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <TopBorder>
+                                            <Style>None</Style>
+                                          </TopBorder>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                </TablixCells>
+                              </TablixRow>
+                              <TablixRow>
+                                <Height>0.20833in</Height>
+                                <TablixCells>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox41">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Total </Value>
+                                                <Style>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                </Style>
+                                              </TextRun>
+                                              <TextRun>
+                                                <Value>=Fields!DES_DIVISA.Value</Value>
+                                                <Style>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox39</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <BackgroundColor>#c6d9f1</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                      <ColSpan>2</ColSpan>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell />
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox42">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=Sum(Fields!NUM_IMPORTE.Value)</Value>
+                                                <Style>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Format>#,0.00</Format>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox40</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <BackgroundColor>#c6d9f1</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                </TablixCells>
+                              </TablixRow>
+                              <TablixRow>
+                                <Height>0.20833in</Height>
+                                <TablixCells>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox15">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Declarado</Value>
+                                                <Style>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox15</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <BackgroundColor>#dbe5f1</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                      <ColSpan>2</ColSpan>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell />
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox17">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=IIF(Len(Lookup(Fields!OID_TIPO_MEDIO_PAGO_DIVISA.Value,Fields!OID_TIPO_MEDIO_PAGO_DIVISA.Value,Fields!IMPORTE.Value, "ds_declarado_medio_pago")) = 0,"---",Lookup(Fields!OID_TIPO_MEDIO_PAGO_DIVISA.Value,Fields!OID_TIPO_MEDIO_PAGO_DIVISA.Value,Fields!IMPORTE.Value, "ds_declarado_medio_pago"))</Value>
+                                                <Style>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Format>#,0.00</Format>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox17</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <BackgroundColor>#dbe5f1</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                      <rd:Selected>true</rd:Selected>
+                                    </CellContents>
+                                  </TablixCell>
+                                </TablixCells>
+                              </TablixRow>
+                              <TablixRow>
+                                <Height>0.20833in</Height>
+                                <TablixCells>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox18">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>Diferencia</Value>
+                                                <Style>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox18</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <BackgroundColor>#dbe5f1</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                      <ColSpan>2</ColSpan>
+                                    </CellContents>
+                                  </TablixCell>
+                                  <TablixCell />
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="Textbox20">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=IIF(Len(Lookup(Fields!OID_TIPO_MEDIO_PAGO_DIVISA.Value,Fields!OID_TIPO_MEDIO_PAGO_DIVISA.Value,Fields!IMPORTE.Value, "ds_diferencia_medio_pago")) = 0,"---",Lookup(Fields!OID_TIPO_MEDIO_PAGO_DIVISA.Value,Fields!OID_TIPO_MEDIO_PAGO_DIVISA.Value,Fields!IMPORTE.Value, "ds_diferencia_medio_pago"))</Value>
+                                                <Style>
+                                                  <FontSize>8pt</FontSize>
+                                                  <FontWeight>Bold</FontWeight>
+                                                  <Format>#,0.00</Format>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style>
+                                              <TextAlign>Right</TextAlign>
+                                            </Style>
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>Textbox20</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>Solid</Style>
+                                            <Width>0.5pt</Width>
+                                          </Border>
+                                          <BackgroundColor>#dbe5f1</BackgroundColor>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                </TablixCells>
+                              </TablixRow>
+                            </TablixRows>
+                          </TablixBody>
+                          <TablixColumnHierarchy>
+                            <TablixMembers>
+                              <TablixMember />
+                              <TablixMember />
+                              <TablixMember />
+                            </TablixMembers>
+                          </TablixColumnHierarchy>
+                          <TablixRowHierarchy>
+                            <TablixMembers>
+                              <TablixMember />
+                              <TablixMember>
+                                <Group Name="DES_DIVISA3">
+                                  <GroupExpressions>
+                                    <GroupExpression>=Fields!DES_DIVISA.Value</GroupExpression>
+                                  </GroupExpressions>
+                                </Group>
+                                <SortExpressions>
+                                  <SortExpression>
+                                    <Value>=Fields!DES_DIVISA.Value</Value>
+                                  </SortExpression>
+                                </SortExpressions>
+                                <TablixMembers>
+                                  <TablixMember>
+                                    <Group Name="Details2" />
+                                    <SortExpressions>
+                                      <SortExpression>
+                                        <Value>=Fields!ES_TOTAL.Value</Value>
+                                        <Direction>Descending</Direction>
+                                      </SortExpression>
+                                    </SortExpressions>
+                                  </TablixMember>
+                                  <TablixMember>
+                                    <KeepWithGroup>Before</KeepWithGroup>
+                                  </TablixMember>
+                                  <TablixMember>
+                                    <KeepWithGroup>Before</KeepWithGroup>
+                                  </TablixMember>
+                                  <TablixMember>
+                                    <KeepWithGroup>Before</KeepWithGroup>
+                                  </TablixMember>
+                                </TablixMembers>
+                              </TablixMember>
+                            </TablixMembers>
+                          </TablixRowHierarchy>
+                          <DataSetName>ds_medio_pago</DataSetName>
+                          <Height>0.98958in</Height>
+                          <Width>6.07077in</Width>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Tablix>
+                      </ReportItems>
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.03125in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox14">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox74">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox71</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="G_MEDIO_PAGO">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!DES_VALOR.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!DES_DIVISA.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>ds_medio_pago</DataSetName>
+        <Top>0.03175cm</Top>
+        <Height>1.02083in</Height>
+        <Width>18.36314cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>2.62466cm</Height>
+    <Style />
+  </Body>
+  <Width>18.55292cm</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
+    <ColumnSpacing>1.27cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Reporte">
+      <DataSourceReference>REPORTES_PRE</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>5dfed308-a0f7-4135-903d-c063f131b1ec</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ds_medio_pago">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT 
+       decode(MPD.COD_TIPO_MEDIO_PAGO,'codtipoa','Tickets','codtipob','Cheque','codtipoc','Tarjetas','codtipo','Otros Valores')as des_valor,
+       DIV.OID_DIVISA, 
+       DIV.COD_ISO_DIVISA, 
+       DIV.DES_DIVISA,
+       NULL OID_MEDIO_PAGO,
+       NULL COD_MEDIO_PAGO,
+       NULL DES_MEDIO_PAGO,
+       NULL CANTIDAD,
+       SUM(MPD.NUM_IMPORTE) NUM_IMPORTE,
+       MPD.COD_TIPO_MEDIO_PAGO || DIV.OID_DIVISA OID_TIPO_MEDIO_PAGO_DIVISA,
+       '1' ES_TOTAL
+FROM RPGE_YDOCUMENTO D
+INNER JOIN RPGE_YMEDIO_PAGOXDOCUMENTO MPD ON MPD.OID_DOCUMENTO = D.OID_DOCUMENTO
+INNER JOIN RPGE_YDIVISA DIV ON DIV.OID_DIVISA = MPD.OID_DIVISA
+WHERE MPD.COD_NIVEL_DETALLE = 'T' AND D.COD_COMPROBANTE = :P_COD_COMPROBANTE
+GROUP BY MPD.COD_TIPO_MEDIO_PAGO,DIV.OID_DIVISA,DIV.COD_ISO_DIVISA,DIV.DES_DIVISA
+UNION
+SELECT decode(MPD.COD_TIPO_MEDIO_PAGO,'codtipoa','Tickets','codtipob','Cheque','codtipoc','Tarjetas','codtipo','Otros Valores')as des_valor,
+       DIV.OID_DIVISA,
+       DIV.COD_ISO_DIVISA, 
+       DIV.DES_DIVISA,
+       MP.OID_MEDIO_PAGO,
+       MP.COD_MEDIO_PAGO,
+       MP.DES_MEDIO_PAGO,
+       SUM(MPD.NEL_CANTIDAD) CANTIDAD,
+       SUM(MPD.NUM_IMPORTE) NUM_IMPORTE,
+       MPD.COD_TIPO_MEDIO_PAGO || DIV.OID_DIVISA OID_TIPO_MEDIO_PAGO_DIVISA,
+       '0' ES_TOTAL
+FROM RPGE_YDOCUMENTO D
+INNER JOIN RPGE_YMEDIO_PAGOXDOCUMENTO MPD ON MPD.OID_DOCUMENTO = D.OID_DOCUMENTO
+INNER JOIN RPGE_YDIVISA DIV ON DIV.OID_DIVISA = MPD.OID_DIVISA
+INNER JOIN RPGE_YMEDIO_PAGO MP ON MP.OID_MEDIO_PAGO = MPD.OID_MEDIO_PAGO
+WHERE MPD.COD_NIVEL_DETALLE = 'D' AND D.COD_COMPROBANTE = :P_COD_COMPROBANTE
+GROUP BY MPD.COD_TIPO_MEDIO_PAGO,DIV.OID_DIVISA,DIV.COD_ISO_DIVISA,DIV.DES_DIVISA, MP.OID_MEDIO_PAGO,MP.COD_MEDIO_PAGO,MP.DES_MEDIO_PAGO</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DES_VALOR">
+          <DataField>DES_VALOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OID_DIVISA">
+          <DataField>OID_DIVISA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_ISO_DIVISA">
+          <DataField>COD_ISO_DIVISA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_DIVISA">
+          <DataField>DES_DIVISA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OID_MEDIO_PAGO">
+          <DataField>OID_MEDIO_PAGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_MEDIO_PAGO">
+          <DataField>COD_MEDIO_PAGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_MEDIO_PAGO">
+          <DataField>DES_MEDIO_PAGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CANTIDAD">
+          <DataField>CANTIDAD</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NUM_IMPORTE">
+          <DataField>NUM_IMPORTE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="OID_TIPO_MEDIO_PAGO_DIVISA">
+          <DataField>OID_TIPO_MEDIO_PAGO_DIVISA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ES_TOTAL">
+          <DataField>ES_TOTAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ds_declarado_medio_pago">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT  
+
+  CASE WHEN BULTO.TIPO_ELEMENTO IS NOT NULL THEN BULTO.TIPO_ELEMENTO 
+       WHEN PARCIAL.TIPO_ELEMENTO IS NOT NULL THEN PARCIAL.TIPO_ELEMENTO
+  END TIPO_ELEMENTO,
+
+  CASE WHEN BULTO.DOCUMENTO IS NOT NULL THEN BULTO.DOCUMENTO 
+       WHEN PARCIAL.DOCUMENTO IS NOT NULL THEN PARCIAL.DOCUMENTO
+  END DOCUMENTO,
+  
+  CASE WHEN BULTO.OID_TIPO_MEDIO_PAGO_DIVISA IS NOT NULL THEN BULTO.OID_TIPO_MEDIO_PAGO_DIVISA 
+       WHEN PARCIAL.OID_TIPO_MEDIO_PAGO_DIVISA IS NOT NULL THEN PARCIAL.OID_TIPO_MEDIO_PAGO_DIVISA
+  END OID_TIPO_MEDIO_PAGO_DIVISA,
+  
+  CASE WHEN BULTO.IMPORTE IS NOT NULL THEN BULTO.IMPORTE 
+       WHEN PARCIAL.IMPORTE IS NOT NULL THEN PARCIAL.IMPORTE
+  END IMPORTE
+
+FROM
+
+  (SELECT 'G' TIPO_ELEMENTO,DOC.OID_DOCUMENTO DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA OID_DIVISA,
+        SUM(DMP.NEL_CANTIDAD),SUM(DMP.NUM_IMPORTE) IMPORTE,DMP.COD_TIPO_MEDIO_PAGO || DMP.OID_DIVISA OID_TIPO_MEDIO_PAGO_DIVISA
+       FROM RPGE_YDOCUMENTO DOC
+       INNER JOIN RPGE_YDOCUMENTOXELEMENTO DE ON DE.OID_DOCUMENTO = DOC.OID_DOCUMENTO
+       INNER JOIN RPGE_YDECLARADO_MEDIO_PAGO DMP ON DMP.OID_REMESA = DE.OID_REMESA
+       WHERE DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE AND DMP.OID_BULTO IS NOT NULL 
+       GROUP BY DOC.OID_DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA ) GERAL
+
+LEFT JOIN
+
+  (SELECT 'P' TIPO_ELEMENTO,DOC.OID_DOCUMENTO DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA OID_DIVISA,
+        SUM(DMP.NEL_CANTIDAD),SUM(DMP.NUM_IMPORTE) IMPORTE,DMP.COD_TIPO_MEDIO_PAGO || DMP.OID_DIVISA OID_TIPO_MEDIO_PAGO_DIVISA
+       FROM RPGE_YDOCUMENTO DOC
+       INNER JOIN RPGE_YDOCUMENTOXELEMENTO DE ON DE.OID_DOCUMENTO = DOC.OID_DOCUMENTO
+       INNER JOIN RPGE_YDECLARADO_MEDIO_PAGO DMP ON DMP.OID_REMESA = DE.OID_REMESA
+       WHERE DE.OID_BULTO IS NOT NULL 
+       AND DMP.OID_BULTO IS NOT NULL 
+       AND DMP.OID_PARCIAL IS NOT NULL
+       AND DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE
+       GROUP BY DOC.OID_DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA ) PARCIAL ON GERAL.OID_TIPO_MEDIO_PAGO_DIVISA = PARCIAL.OID_TIPO_MEDIO_PAGO_DIVISA
+       
+LEFT JOIN
+
+ (SELECT 'B' TIPO_ELEMENTO,DOC.OID_DOCUMENTO DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA OID_DIVISA,
+        SUM(DMP.NEL_CANTIDAD),SUM(DMP.NUM_IMPORTE) IMPORTE,DMP.COD_TIPO_MEDIO_PAGO || DMP.OID_DIVISA OID_TIPO_MEDIO_PAGO_DIVISA
+       FROM RPGE_YDOCUMENTO DOC
+       INNER JOIN RPGE_YDOCUMENTOXELEMENTO DE ON DE.OID_DOCUMENTO = DOC.OID_DOCUMENTO
+       INNER JOIN RPGE_YDECLARADO_MEDIO_PAGO DMP ON DMP.OID_BULTO = DE.OID_BULTO
+       WHERE DE.OID_BULTO IS NOT NULL 
+       AND DMP.OID_BULTO IS NOT NULL 
+       AND DMP.OID_PARCIAL IS NULL
+       AND DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE
+       GROUP BY DOC.OID_DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA ) BULTO ON GERAL.OID_TIPO_MEDIO_PAGO_DIVISA = BULTO.OID_TIPO_MEDIO_PAGO_DIVISA</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="TIPO_ELEMENTO">
+          <DataField>TIPO_ELEMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOCUMENTO">
+          <DataField>DOCUMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OID_TIPO_MEDIO_PAGO_DIVISA">
+          <DataField>OID_TIPO_MEDIO_PAGO_DIVISA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IMPORTE">
+          <DataField>IMPORTE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ds_diferencia_medio_pago">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT  
+
+  CASE WHEN BULTO.TIPO_ELEMENTO IS NOT NULL THEN BULTO.TIPO_ELEMENTO 
+       WHEN PARCIAL.TIPO_ELEMENTO IS NOT NULL THEN PARCIAL.TIPO_ELEMENTO
+  END TIPO_ELEMENTO,
+
+  CASE WHEN BULTO.DOCUMENTO IS NOT NULL THEN BULTO.DOCUMENTO 
+       WHEN PARCIAL.DOCUMENTO IS NOT NULL THEN PARCIAL.DOCUMENTO
+  END DOCUMENTO,
+  
+  CASE WHEN BULTO.OID_TIPO_MEDIO_PAGO_DIVISA IS NOT NULL THEN BULTO.OID_TIPO_MEDIO_PAGO_DIVISA 
+       WHEN PARCIAL.OID_TIPO_MEDIO_PAGO_DIVISA IS NOT NULL THEN PARCIAL.OID_TIPO_MEDIO_PAGO_DIVISA
+  END OID_TIPO_MEDIO_PAGO_DIVISA,
+  
+  CASE WHEN BULTO.IMPORTE IS NOT NULL THEN BULTO.IMPORTE 
+       WHEN PARCIAL.IMPORTE IS NOT NULL THEN PARCIAL.IMPORTE
+  END IMPORTE
+
+FROM
+
+  (SELECT 'G' TIPO_ELEMENTO,DOC.OID_DOCUMENTO DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA OID_DIVISA,
+        SUM(DMP.NEL_CANTIDAD),SUM(DMP.NUM_IMPORTE) IMPORTE,DMP.COD_TIPO_MEDIO_PAGO || DMP.OID_DIVISA OID_TIPO_MEDIO_PAGO_DIVISA
+       FROM RPGE_YDOCUMENTO DOC
+       INNER JOIN RPGE_YDOCUMENTOXELEMENTO DE ON DE.OID_DOCUMENTO = DOC.OID_DOCUMENTO
+       INNER JOIN RPGE_YDIFERENCIA_MEDIO_PAGO DMP ON DMP.OID_REMESA = DE.OID_REMESA
+       WHERE DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE AND DMP.OID_BULTO IS NOT NULL 
+       GROUP BY DOC.OID_DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA ) GERAL
+
+LEFT JOIN
+
+  (SELECT 'P' TIPO_ELEMENTO,DOC.OID_DOCUMENTO DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA OID_DIVISA,
+        SUM(DMP.NEL_CANTIDAD),SUM(DMP.NUM_IMPORTE) IMPORTE,DMP.COD_TIPO_MEDIO_PAGO || DMP.OID_DIVISA OID_TIPO_MEDIO_PAGO_DIVISA
+       FROM RPGE_YDOCUMENTO DOC
+       INNER JOIN RPGE_YDOCUMENTOXELEMENTO DE ON DE.OID_DOCUMENTO = DOC.OID_DOCUMENTO
+       INNER JOIN RPGE_YDIFERENCIA_MEDIO_PAGO DMP ON DMP.OID_REMESA = DE.OID_REMESA
+       WHERE DE.OID_BULTO IS NOT NULL 
+       AND DMP.OID_BULTO IS NOT NULL 
+       AND DMP.OID_PARCIAL IS NOT NULL
+       AND DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE
+       GROUP BY DOC.OID_DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA ) PARCIAL 
+       ON GERAL.OID_TIPO_MEDIO_PAGO_DIVISA = PARCIAL.OID_TIPO_MEDIO_PAGO_DIVISA
+       
+LEFT JOIN
+
+ (SELECT 'B' TIPO_ELEMENTO,DOC.OID_DOCUMENTO DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA OID_DIVISA,
+        SUM(DMP.NEL_CANTIDAD),SUM(DMP.NUM_IMPORTE) IMPORTE,DMP.COD_TIPO_MEDIO_PAGO || DMP.OID_DIVISA OID_TIPO_MEDIO_PAGO_DIVISA
+       FROM RPGE_YDOCUMENTO DOC
+       INNER JOIN RPGE_YDOCUMENTOXELEMENTO DE ON DE.OID_DOCUMENTO = DOC.OID_DOCUMENTO
+       INNER JOIN RPGE_YDIFERENCIA_MEDIO_PAGO DMP ON DMP.OID_BULTO = DE.OID_BULTO
+       WHERE DE.OID_BULTO IS NOT NULL 
+       AND DMP.OID_BULTO IS NOT NULL 
+       AND DMP.OID_PARCIAL IS NULL
+       AND DOC.COD_COMPROBANTE = :P_COD_COMPROBANTE
+       GROUP BY DOC.OID_DOCUMENTO,DMP.COD_TIPO_MEDIO_PAGO,DMP.OID_DIVISA ) BULTO 
+       ON GERAL.OID_TIPO_MEDIO_PAGO_DIVISA = BULTO.OID_TIPO_MEDIO_PAGO_DIVISA</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="TIPO_ELEMENTO">
+          <DataField>TIPO_ELEMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOCUMENTO">
+          <DataField>DOCUMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OID_TIPO_MEDIO_PAGO_DIVISA">
+          <DataField>OID_TIPO_MEDIO_PAGO_DIVISA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IMPORTE">
+          <DataField>IMPORTE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="P_COD_COMPROBANTE">
+      <DataType>String</DataType>
+      <Prompt>P COD COMPROBANTE</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>39dc76ce-e6b3-4810-8f66-c2b12af3223c</rd:ReportID>
+</Report>

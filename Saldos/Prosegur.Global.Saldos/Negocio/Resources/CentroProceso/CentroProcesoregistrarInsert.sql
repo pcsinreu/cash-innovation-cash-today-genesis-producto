@@ -1,0 +1,21 @@
+﻿INSERT INTO PD_CentroProceso
+  (
+   IdCentroProceso,
+   IdPlanta,
+   Descripcion,
+   IdCentroProcesoMatriz,
+   IdTipoCentroProceso,
+   SeDispone,
+   EsTesoro,
+   {0}
+   IdPS)
+VALUES
+  (:IdCentroProceso,
+   :IdPlanta,
+   :Descripcion,
+   :IdCentroProcesoMatriz,
+   :IdTipoCentroProceso,
+   :SeDispone,
+   :EsTesoro,
+   {1}
+   :IdPs)

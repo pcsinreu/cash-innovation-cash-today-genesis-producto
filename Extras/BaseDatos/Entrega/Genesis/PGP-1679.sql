@@ -1,0 +1,9 @@
+BEGIN
+
+    UPDATE SAPR_TAPLICACION SET DES_APLICACION = 'Saldos' WHERE COD_APLICACION = 'GenesisSaldos';
+    COMMIT;
+
+    
+
+END;
+/

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:amqp="http://www.mulesoft.org/schema/mule/amqp"
+	xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd
+http://www.mulesoft.org/schema/mule/amqp http://www.mulesoft.org/schema/mule/amqp/current/mule-amqp.xsd
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd">
+	<http:listener-config name="HTTP_Listener_config"
+		doc:name="HTTP Listener config"
+		doc:id="29ea776b-5eb8-439c-b556-46ed0751a5d2">
+		<http:listener-connection host="0.0.0.0"
+			port="${http.port}" />
+	</http:listener-config>
+	<global-property doc:name="Global Property"
+		doc:id="ed9181aa-fec8-46e0-8865-dc43c8f5e974" name="env" value="sit"
+		doc:description='Setear la variable con los siguientes valores: sit, uat o prod&#10;&#10;- "sit" 		(entorno de desarrollo)&#10;- "uat"		(entorno de homologación)&#10;- "prod"	(entorno de producción)' />
+	<configuration-properties
+		doc:name="Configuration properties"
+		doc:id="dab661b0-38cc-4937-bd3d-6e20b870a7d5"
+		file="properties/${env}-config.yaml" />
+
+
+
+
+	<db:config name="Database_Config_DE"
+		doc:name="Database Config"
+		doc:description="ALEMANIA"
+		doc:id="21691c1f-1120-4e09-9f7b-81539aeb607f">
+		<db:oracle-connection host="${dataBase.DE.host}"
+			user="${dataBase.DE.user}" password="${dataBase.DE.password}"
+			serviceName="${dataBase.UY.serviceName}" port="${dataBase.DE.port}" />
+	</db:config>
+	<db:config name="Database_Config_AR"
+		doc:name="Database Config"
+		doc:description="ARGENTINA"
+		doc:id="a08f6fa2-6601-4ca7-816c-dcf1d440f7fb">
+		<db:oracle-connection host="${dataBase.AR.host}"
+			user="${dataBase.AR.user}" password="${dataBase.AR.password}"
+			serviceName="${dataBase.AR.serviceName}" port="${dataBase.AR.port}" />
+	</db:config>
+	<db:config name="Database_Config_AU"
+		doc:name="Database Config"
+		doc:description="AUSTRALIA"
+		doc:id="3ff0d25c-78e5-44d9-88c6-6d03650a5874">
+		<db:oracle-connection host="${dataBase.AU.host}"
+			user="${dataBase.AU.user}" password="${dataBase.AU.password}"
+			serviceName="${dataBase.AU.serviceName}" port="${dataBase.AU.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_BR"
+		doc:name="Database Config"
+		doc:description="BRASIL"
+		doc:id="c97d1821-f2ec-4d36-8943-52d282400e69">
+		<db:oracle-connection host="${dataBase.BR.host}"
+			user="${dataBase.BR.user}" password="${dataBase.BR.password}"
+			serviceName="${dataBase.BR.serviceName}" port="${dataBase.BR.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_CL"
+		doc:name="Database Config"
+		doc:description="CHILE"
+		doc:id="674a9b95-1850-4626-a6c7-d1acfc679aad">
+		<db:oracle-connection host="${dataBase.CL.host}"
+			user="${dataBase.CL.user}" password="${dataBase.CL.password}"
+			serviceName="${dataBase.CL.serviceName}" port="${dataBase.CL.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_CO"
+		doc:name="Database Config"
+		doc:description="COLOMBIA"
+		doc:id="3306457a-9bc1-4bef-a6a6-9e2e843c946e">
+		<db:oracle-connection host="${dataBase.CO.host}"
+			user="${dataBase.CO.user}" password="${dataBase.CO.password}"
+			serviceName="${dataBase.CO.serviceName}" port="${dataBase.CO.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_CR"
+		doc:name="Database Config"
+		doc:description="COSTA RICA"
+		doc:id="88b4744c-7e1e-4ff9-a437-1f76016c9c6e">
+		<db:oracle-connection host="${dataBase.CR.host}"
+			user="${dataBase.CR.user}" password="${dataBase.CR.password}"
+			serviceName="${dataBase.CR.serviceName}" port="${dataBase.CR.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_EC"
+		doc:name="Database Config"
+		doc:description="ECUADOR"
+		doc:id="2ab6c681-c098-4216-bf6c-509d5809ebad">
+		<db:oracle-connection host="${dataBase.EC.host}"
+			user="${dataBase.EC.user}" password="${dataBase.EC.password}"
+			serviceName="${dataBase.EC.serviceName}" port="${dataBase.EC.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_SV"
+		doc:name="Database Config"
+		doc:description="EL SALVADOR"
+		doc:id="de097aa7-d327-4140-b459-4f6c97339d0e">
+		<db:oracle-connection host="${dataBase.SV.host}"
+			user="${dataBase.SV.user}" password="${dataBase.SV.password}"
+			serviceName="${dataBase.SV.serviceName}" port="${dataBase.SV.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_ES"
+		doc:name="Database Config"
+		doc:description="ESPAÑA"
+		doc:id="24f78fd0-8556-4b47-827e-25535ba6653e">
+		<db:oracle-connection host="${dataBase.ES.host}"
+			user="${dataBase.ES.user}" password="${dataBase.ES.password}"
+			serviceName="${dataBase.ES.serviceName}" port="${dataBase.ES.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_PH"
+		doc:name="Database Config"
+		doc:description="FILIPINAS"
+		doc:id="b5ab19a4-0cc2-446b-8d09-29470aa3558f">
+		<db:oracle-connection host="${dataBase.PH.host}"
+			user="${dataBase.PH.user}" password="${dataBase.PH.password}"
+			serviceName="${dataBase.PH.serviceName}" port="${dataBase.PH.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_FR"
+		doc:name="Database Config"
+		doc:description="FRANCIA"
+		doc:id="d1c3867b-fbfd-412c-a386-01c552b927c6">
+		<db:oracle-connection host="${dataBase.FR.host}"
+			user="${dataBase.FR.user}" password="${dataBase.FR.password}"
+			serviceName="${dataBase.FR.serviceName}" port="${dataBase.FR.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_GT"
+		doc:name="Database Config"
+		doc:description="GUATEMALA"
+		doc:id="c512885d-427c-452e-8570-02a8462937fc">
+		<db:oracle-connection host="${dataBase.GT.host}"
+			user="${dataBase.GT.user}" password="${dataBase.GT.password}"
+			serviceName="${dataBase.GT.serviceName}" port="${dataBase.GT.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_HN"
+		doc:name="Database Config"
+		doc:description="HONDURAS"
+		doc:id="afa1b5e5-2712-4a33-905b-7765cc6ea3e2">
+		<db:oracle-connection host="${dataBase.HN.host}"
+			user="${dataBase.HN.user}" password="${dataBase.HN.password}"
+			serviceName="${dataBase.HN.serviceName}" port="${dataBase.HN.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_IN"
+		doc:name="Database Config"
+		doc:description="INDONESIA"
+		doc:id="edda23a1-a7a6-48d3-ab0a-1710d44a7ede">
+		<db:oracle-connection host="${dataBase.IN.host}"
+			user="${dataBase.IN.user}" password="${dataBase.IN.password}"
+			serviceName="${dataBase.IN.serviceName}" port="${dataBase.IN.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_MX"
+		doc:name="Database Config"
+		doc:description="MEXICO"
+		doc:id="887c42e3-9eae-4773-a5bd-e636a8de8eb8">
+		<db:oracle-connection host="${dataBase.MX.host}"
+			user="${dataBase.MX.user}" password="${dataBase.MX.password}"
+			serviceName="${dataBase.MX.serviceName}" port="${dataBase.MX.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_NI"
+		doc:name="Database Config"
+		doc:description="NICARAGUA"
+		doc:id="139dcd73-929a-41e6-90f2-19776437f971">
+		<db:oracle-connection host="${dataBase.NI.host}"
+			user="${dataBase.NI.user}" password="${dataBase.NI.password}"
+			serviceName="${dataBase.NI.serviceName}" port="${dataBase.NI.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_PY"
+		doc:name="Database Config"
+		doc:description="PARAGUAY"
+		doc:id="ca64c92e-f3c8-4e3c-aaf4-d44f20582134">
+		<db:oracle-connection host="${dataBase.PY.host}"
+			user="${dataBase.PY.user}" password="${dataBase.PY.password}"
+			serviceName="${dataBase.PY.serviceName}" port="${dataBase.PY.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_PE"
+		doc:name="Database Config"
+		doc:description="PERU"
+		doc:id="1441bbbb-7d9c-4cd0-b934-c127b9b1c0d4">
+		<db:oracle-connection host="${dataBase.PE.host}"
+			user="${dataBase.PE.user}" password="${dataBase.PE.password}"
+			serviceName="${dataBase.PE.serviceName}" port="${dataBase.PE.port}" />
+	</db:config>
+
+	<db:config name="Database_Config_PT"
+		doc:name="Database Config"
+		doc:description="PORTUGAL"
+		doc:id="5c2110a1-f053-4801-afba-3717b9129d74">
+		<db:oracle-connection host="${dataBase.PT.host}"
+			user="${dataBase.PT.user}" password="${dataBase.PT.password}"
+			serviceName="${dataBase.PT.serviceName}" port="${dataBase.PT.port}" />
+	</db:config>
+	<db:config name="Database_Config_UY"
+		doc:name="Database Config"
+		doc:description="URUGUAY"
+		doc:id="a2f9a6d0-0684-436a-8953-bda8d6aac864">
+		<db:oracle-connection host="${dataBase.UY.host}"
+			user="${dataBase.UY.user}" password="${dataBase.UY.password}"
+			serviceName="${dataBase.UY.serviceName}" port="${dataBase.UY.port}" />
+	</db:config>
+  <api-gateway:autodiscovery apiId="${apiId}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="ea0b1d6b-6b6c-4d84-bb5a-156624bdb285" flowRef="genesis-producto-api-transactions-main" />
+</mule>

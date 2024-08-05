@@ -1,0 +1,1 @@
+select * from SAPR_TCONFIGRPXTIPOCLI where oid_config_reporte = []oid_config_reporte 

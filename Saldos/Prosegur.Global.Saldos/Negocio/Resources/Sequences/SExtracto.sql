@@ -1,0 +1,1 @@
+﻿select PD_EXTRACTO_IDEXTRACTO_SEQ.NEXTVAL from dual

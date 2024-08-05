@@ -1,0 +1,1160 @@
+﻿// ************* TELAS *************
+
+//FORM BASE
+btnAlta												= Inserir
+btnBaja												= Eliminar
+btnConsulta											= Consultar
+btnModificacion										= Modificar
+btnLimpiar											= Limpar
+btnBuscar											= Procurar
+btnGrabar											= Gravar
+btnCancelar											= Cancelar
+btnVolver											= Voltar
+btnAceptar											= Aceitar
+btnDuplicar											= Duplicar
+btnValoresPosibles									= ...
+lbl_btn_calendario									= Calendário
+lbl_base_titulo										= Contagem Relatórios
+lbl_version											= Versão
+lbl_salir											= Sair
+lbl_formato_salida_csv								= CSV
+lbl_formato_salida_pdf								= PDF
+lbl_desde											= de
+lbl_hasta											= até
+lbl_btnDetalhes										= Detalhes
+lbl_btnCopiar										= Copiar
+btnFechar											= Fechar
+
+gen_csv_lbl_billete									= B
+gen_csv_lbl_moneda									= M
+
+gen_Cheque											= Cheque
+gen_Ticket											= Ticket
+gen_OtroValor										= Outros Valores
+gen_Efectivo										= Efetivo
+
+gen_selecione                                       = Selecione
+gen_todos											= Todos
+
+//MENU PRINCIPAL
+mn_billetaje_sucursal								= Relatório de Contagem
+mn_corte_parcial									= Relatório por Parciais
+mn_respaldo_completo								= Relatório Completo
+mn_detalle_parciales								= Detalhe Parciais
+mn_contado_posto									= Contado por Posto
+mn_recibo_f22_respaldo								= Listagem de Serviços
+mn_relaciones_habilitacion_tira_conteo				= Relação Habilitação x Tira x Contagem
+mn_parte_diferencias								= Listagem de Diferenças
+mn_reportar_pedido_bcp								= Reportar BCP
+mn_informe_resultado_contaje						= Resultado Contagem
+mn_reportes											= Reportes
+mn_InformacionReportes								= Sobre o Reportes
+mn_acreditaciones  = Acreditaciones
+
+
+//ERRO PADRÃO
+err_padrao_aplicacao								= Erro na aplicação
+err_codigo_erro_ambiente_default					= Erro no ambiente de execução
+err_codigo_erro_negocio_sesion_invalida				= Sessão inválida
+err_codigo_erro_negocio_default						= Erro padrão de negócio
+err_passagem_parametro								= Os parâmetros informados não são válidos.
+err_descricao_invalida								= Descrição ou código inválido.
+err_campo_obrigatorio								= O campo "{0}" é obrigatório.
+err_generico										= Aconteceu um erro não tratado na aplicação. Contate o administrador do sistema.
+lbl_campo_nao_preenchido							= O campo "{0}" não está preenchido.
+lbl_campos_obrigatorios_nao_preenchidos				= O campo "{0}" ou "{1}" não foi preenchido.
+lbl_campo_nao_selecionado							= O campo "{0}" não está selecionado.
+lbl_campo_invalido									= O campo "{0}" não deve ser informado para este relatório.
+lbl_nenhum_registro_encontrado						= Nenhum registro encontrado
+lbl_campo_data_invalida								= O campo "{0}" não está preenchido com uma data válida.
+lbl_campo_hora_invalida								= O campo "{0}" não está preenchido com uma hora válida.
+lbl_campo_datahora_invalida							= O campo "{0}" não está preenchido com uma data ou hora válida.
+lbl_campo_selecion_unica							= O campo "{0}" não é multi seleção.
+lbl_campo_periodo_invalido							= O campo "{0}" deve ser maior do que o campo "{1}".
+lbl_campo_periodo_dias_distintos					= O campo "{0}" deve ter o mesmo dia que o campo "{1}".
+lbl_campo_periodo_ja_informado						= Somente um dos campos {0}, {1} ou {2} deve ser preenchido para o período do relatório.
+lbl_campo_periodo_ja_informado_2					= Somente um dos campos {0} ou {1} deve ser preenchido para o período do relatório.
+err_msg_error_05									= Erro no acesso a base de dados no servidor: {0}
+err_msg_error_02									= Erro de comunicação com o servidor de diretório (LDAP).
+err_msg_error_03   									= Erro no acesso ao servidor de diretório (LDAP). Usuário ou senha incorretos.
+err_msg_error_apagar_arquivo						= Não foi possível substituir o arquivo {0}.
+
+//INFORMACIÓN PADRAO
+info_msg_sin_registro								= Não foram encontrados registros com os parâmetros informados. 
+info_msg_baja										= Registro excluído com sucesso.
+info_msg_baja_registro								= Deseja excluir o registro?
+info_msg_seleccionar_registro						= Selecione um registro antes de realizar esta ação.
+info_msg_seleccionar_registro_unico					= Selecione somente um registro antes de realizar esta ação. 
+info_msg_max_registro								= Número máximo de registros alcançados. Informe algum parâmetro para a pesquisa.
+info_msg_sair_pagina								= Tem certeza que deseja sair desta página e perder todos os dados digitados?
+info_msg_grd_vazio									= Não existem dados para serem exibidos.
+info_msg_sucesso									= Solicitação enviada com sucesso!
+info_msg_ruta										= O(s) relatorio(s) gerado(s) encontra(m)-se na localização: {0}.
+info_msg_grabadosucesso								= Registro gravado com sucesso!
+
+//TIPOS EFETIVOS
+lbl_billete											= Nota
+lbl_moneda											= Moeda
+
+//Tela Mensagem de Erro
+aplicacao											= Relatórios
+
+//TELA DEFAULT
+001_lbl_titulo										= Contagem Relatórios
+
+//RELATORIO
+lbl_titulo_empresa									= PROSEGUR S/A
+lbl_pagina											= Página:
+lbl_de												= de
+
+//GRID_SUMMARY
+grid_lbl_pagersummary							    = Página {0} de {1} ({2} itens)
+prosegurgridview_asc								= Ordenação ascendente
+prosegurgridview_desc								= Ordenação descendente
+gen_primeiro										= Primeiro
+gen_anterior										= Anterior
+gen_proximo											= Próximo
+gen_ultimo											= Último
+
+//TELA LOGIN
+002_lbl_delegacion									= Delegação
+002_lbl_login										= Usuário
+002_lbl_senha										= Senha
+002_btn_confirmar									= Login
+002_btn_cancelar									= Cancelar
+002_titulo											= Login Gestão de Efetivo Contagem Relatórios
+002_msg_usuario_invalido							= Erro no acesso ao servidor de diretório (LDAP). Usuário ou senha incorretos.
+002_msg_usuario_sem_permisio						= O usuário não tem permissão neste sistema.
+002_msg_usuario_sessao_expirada						= A sua sessão expirou. Favor efetuar o login novamente.
+002_msg_sessao_finalizada                           = Sessão finalizada
+
+// TELA BILLETAJE SUCURSAL
+003_titulo_pagina									= Relatórios de Contagem
+003_lbl_titulo_busqueda								= Procurar Contagem por Cliente
+003_lbl_delegacion									= Delegação
+003_lbl_cliente										= Cliente
+003_lbl_sector										= Setor
+003_lbl_proceso										= Processo
+003_lbl_fecha_transporte							= Data Transporte
+003_lbl_fecha										= Data
+003_lbl_fecha_fin_conteo							= Data Fim Contagem
+003_lbl_remesas_pendientes							= Remessas Pendentes
+003_lbl_formato_salida								= Formato Saída
+003_btn_cliente										= Procurar Cliente
+003_btn_proceso										= Procurar Processo
+
+003_csv_lbl_recuento								= Processo
+003_csv_lbl_fecha									= Data
+003_csv_lbl_letra									= Letra
+003_csv_lbl_f22										= Nr Serviço
+003_csv_lbl_oidRemesaOri                            = Id Remesa Ori
+003_csv_lbl_codSubCliente                           = Cod SubCliente
+003_csv_lbl_estacion								= Pto.Serv
+003_csv_lbl_descricion_estacion						= Descrição Pto.Serv
+003_csv_lbl_descricion_divisa						= Divisa
+003_csv_lbl_medio_pago								= Meio de Pagamento
+003_csv_lbl_unidad									= Denominação
+003_csv_lbl_calidad									= Qualidade
+003_csv_lbl_multiplicador							= Factor Multiplicador
+003_csv_lbl_cantidad								= Quantidade
+003_csv_lbl_valor									= Valor
+003_csv_lbl_deteriorado								= Deteriorado
+003_csv_lbl_codigo_calidad							= Deteriorado
+
+rpt_003_txt_lbl_titulo								= Contagem por Cliente
+rpt_003_txt_lbl_planta								= Delegação...........:
+rpt_003_txt_lbl_cliente								= Cliente.............:
+rpt_003_txt_lbl_transporte_del_dia					= D. Trans. Inicial...:
+rpt_003_txt_lbl_transporte_ate						= D. Trans. Final.....:
+rpt_003_txt_lbl_del_dia								= D. Processo Inicial.:
+rpt_003_txt_lbl_ate									= D. Processo Final...:
+rpt_003_txt_lbl_conteo_del_dia						= D. Fim Cont. Inicial:
+rpt_003_txt_lbl_conteo_ate							= D. Fim Cont. Final..:
+rpt_003_txt_lbl_recuento							= Processo............:
+rpt_003_txt_lbl_sucursal							= Pto.Serv.Cliente............:
+rpt_003_txt_lbl_divisa								= DIVISA..............:
+rpt_003_txt_lbl_medio_pago							= Meio de Pagamento
+rpt_003_txt_lbl_unidad								= Unidade
+rpt_003_txt_lbl_valor_recontado						= Valor Contado
+rpt_003_txt_lbl_declarado							= Declarado
+rpt_003_txt_lbl_recontado							= Contado
+rpt_003_txt_lbl_deferencia							= Diferença
+rpt_003_txt_lbl_total_sucursal						= TOTAL Pto.Serv.Cliente
+rpt_003_txt_lbl_cant_respaldos						= Quant. Rejeitadas
+rpt_003_txt_lbl_declarado_general					= Declarado
+rpt_003_txt_lbl_recontado_general					= Contagem
+rpt_003_txt_lbl_deferencia_general					= Diferença
+rpt_003_txt_lbl_total_general						= TOTAL GERAL
+rpt_003_txt_lbl_cant_respaldos_general				= Quant. Rejeitadas
+rpt_003_txt_lbl_divisa_general						= Divisa
+rpt_003_txt_lbl_medio_pago_general					= Meio de Pagamento
+rpt_003_txt_lbl_efectivo							= Efetivo
+rpt_003_txt_lbl_deteriorado							= Deteriorado
+rpt_003_txt_lbl_codigo_transporte					= Nr.SERV..............:
+rpt_003_txt_lbl_subcliente       					= SUB CLIENTE.........:
+rpt_003_txt_lbl_oid_remesa_ori    					= ID REMESSA ORI......:
+rpt_003_txt_lbl_resumo			   					= Relatório Analítico
+rpt_003_txt_lbl_calidad			   					= Qualidade
+rpt_003_txt_lbl_codido_calidad	   					= Deteriorado
+
+// TELA CORTE PARCIAL
+004_titulo_pagina									= Relatório por Parciais
+004_lbl_titulo_busqueda								= Procurar por Parciais
+004_lbl_delegacion									= Delegação
+004_lbl_cliente										= Cliente
+004_lbl_sector										= Setor
+004_lbl_proceso										= Processo
+004_lbl_canal                                       = Canal
+004_lbl_fecha_transporte							= Data Transporte
+004_lbl_fecha										= Data
+004_lbl_fecha_fin_conteo							= Data Fim Contagem
+004_lbl_formato_salida								= Formato Saída
+004_btn_cliente										= Procurar Cliente
+004_btn_proceso										= Procurar Processo
+
+004_csv_lbl_recuento								= Processo
+004_csv_lbl_fecha									= Data
+004_csv_lbl_letra									= Letra
+004_csv_lbl_f22										= Nr.Serviço
+004_csv_lbl_oidRemesaOri                            = Id Remessa Ori
+004_csv_lbl_codSubCliente                           = Cod SubCliente
+004_csv_lbl_estacion								= Pto. Serv
+004_csv_lbl_descricion_estacion						= Descrição Pto.Serv
+004_csv_lbl_descricion_divisa						= Descrição Divisa
+004_csv_lbl_medio_pago								= Meio de Pagamento
+004_csv_lbl_descricion_medio_pago					= Descrição Meio de Pagamento
+004_csv_lbl_declarado_f22							= Declarado por Remessa
+004_csv_lbl_ingresado_por_sobre						= Soma da Remessa
+004_csv_lbl_recontado								= Contado
+004_csv_lbl_recontado_declarado_remesa				= Declarado
+004_csv_lbl_ingresado_declarado_remesa				= Diferença
+004_csv_lbl_observaciones							= Observações
+004_csv_lbl_falsos									= Falsas
+
+rpt_004_txt_lbl_titulo								= Relatório por Parciais
+rpt_004_txt_lbl_recuento							= Processo.............:
+rpt_004_txt_lbl_transporte_del_dia					= D. Transporte Inicial:
+rpt_004_txt_lbl_transporte_ate						= D. Transporte Final..:
+rpt_004_txt_lbl_del_dia								= D. Processo Inicial..:
+rpt_004_txt_lbl_ate									= D. Processo Final....:
+rpt_004_txt_lbl_conteo_del_dia						= D. Fim Cont. Inicial.:
+rpt_004_txt_lbl_conteo_ate							= D. Fim Cont. Final...:
+rpt_004_txt_lbl_planta								= Delegação............:
+rpt_004_txt_lbl_cliente								= Cliente..............:
+rpt_004_txt_lbl_letra								= LETRA................:
+rpt_004_txt_lbl_subcliente       					= SUB CLIENTE..........:
+rpt_004_txt_lbl_oid_remesa_ori    					= ID REMESSA ORI......:
+rpt_004_txt_lbl_sucursal							= Pto.Serv.Cliente............:
+rpt_004_txt_lbl_fecha_transporte					= DATA.................:
+rpt_004_txt_lbl_letra_f22							= LETRA................:
+rpt_004_txt_lbl_f22									= Nr. Serviço..................:
+rpt_004_txt_lbl_subcliente_f22     					= SUB CLIENTE..........:
+rpt_004_txt_lbl_sucursal_f22						= Pto.Serv.Cliente.............:
+rpt_004_txt_lbl_fecha_transporte_f22				= DATA.................:
+rpt_004_txt_lbl_total								= TOTAL
+rpt_004_txt_lbl_divisa								= DIVISA
+rpt_004_txt_lbl_declarado							= DECLARADO
+rpt_004_txt_lbl_ingresado							= INGRESSADO
+rpt_004_txt_lbl_recontado							= CONTADO
+rpt_004_txt_lbl_rec_declarado						= CONT.- DECL.
+rpt_004_txt_lbl_ing_declarado						= ING.- DECL.
+rpt_004_txt_lbl_sobre								= Parcial
+rpt_004_txt_lbl_observaciones						= OBSERVAÇÕES
+rpt_004_txt_lbl_resumen_recuento					= RESUMO DO PROCESSO:
+rpt_004_txt_lbl_cantidad_cortes						= Quantidade de Parciais:
+rpt_004_txt_lbl_falso								= Falsas
+
+// TELA RESPALDO COMPLETO
+005_titulo_pagina									= Relatório - Completo
+005_lbl_titulo_busqueda								= Procurar Contagens Clientes
+005_lbl_delegacion									= Delegação
+005_lbl_cliente										= Cliente
+005_lbl_sector										= Setor
+005_lbl_proceso										= Processo
+005_lbl_fecha_transporte							= Data Transporte
+005_lbl_fecha										= Data
+005_lbl_fecha_fin_conteo							= Data Fim Contagem
+005_lbl_formato_salida								= Formato Saída
+005_lbl_remesas_en_curso							= Remessas em curso
+005_btn_cliente										= Procurar Cliente
+005_btn_proceso										= Procurar Processo
+
+005_csv_lbl_recuento								= Processo
+005_csv_lbl_fecha									= Data
+005_csv_lbl_letra									= Letra
+005_csv_lbl_f22										= Nr. Serviço
+005_csv_lbl_oidRemesaOri                            = Id Remessa Ori
+005_csv_lbl_codSubCliente                           = Cod SubCliente
+005_csv_lbl_estacion								= Pto Serviço
+005_csv_lbl_descricion_estacion						= Descrição Pto Serviço
+005_csv_lbl_medio_pago								= Meio de Pagamento
+005_csv_lbl_descricion_divisa						= Descrição Divisa
+005_csv_lbl_ingresado_por_sobre						= Ingressado por Parcial
+005_csv_lbl_recontado								= Contado
+005_csv_lbl_recontado_ingresado						= Diferença
+005_csv_lbl_observaciones							= Observações
+005_csv_lbl_falsos									= Falsas
+
+rpt_005_txt_lbl_titulo								= Listagem Completa
+rpt_005_txt_lbl_transporte_del_dia					= D. Transporte Inic...:
+rpt_005_txt_lbl_transporte_ate						= D. Transporte Final..:
+rpt_005_txt_lbl_del_dia								= D. Processo Inicial..:
+rpt_005_txt_lbl_ate									= D. Processo Final....:
+rpt_005_txt_lbl_conteo_del_dia						= D. Fim Cont. Inicial.:
+rpt_005_txt_lbl_conteo_ate							= D. Fim Cont. Final...:
+rpt_005_txt_lbl_planta								= Delegação...............:
+rpt_005_txt_lbl_cliente								= Cliente..............:
+rpt_005_txt_lbl_recuento							= Processo.............:
+rpt_005_txt_lbl_letra								= LETRA................:
+rpt_005_txt_lbl_f22									= Nr. Serviço..................:
+rpt_005_txt_lbl_subcliente       					= SUB CLIENTE..........:
+rpt_005_txt_lbl_oid_remesa_ori    					= ID REMESSA ORI.......:
+rpt_005_txt_lbl_sucursal							= Pto. Serv.............:
+rpt_005_txt_lbl_nrosobre							= Nº Parcial ............:
+rpt_005_txt_lbl_divisa								= DIVISA
+rpt_005_txt_lbl_medio_pago							= MEIO DE PAGAMENTO
+rpt_005_txt_lbl_unidad								= UNIDADE
+rpt_005_txt_lbl_valor_recontado						= VALOR CONTADO
+rpt_005_txt_lbl_declarado							= DECLARADO
+rpt_005_txt_lbl_ingressado							= INGRESSADO
+rpt_005_txt_lbl_recontado							= CONTADO
+rpt_005_txt_lbl_diferencia							= DIFERENÇA
+rpt_005_txt_lbl_total_nro_sobre						= TOTAL Nº PARCIAIS
+rpt_005_txt_lbl_cant_respaldo						= QUANT. PARCIAIS
+rpt_005_txt_lbl_total_general						= TOTAL GERAL
+rpt_005_txt_lbl_total								= TOTAL
+rpt_005_txt_lbl_informacion_iac						= INFORMAÇÃO IAC
+rpt_005_txt_lbl_meiopgto							= MEIO DE PAGAMENTO
+rpt_005_txt_lbl_descripiciondivisa					= DIVISA
+rpt_005_txt_lbl_observaciones						= OBSERVAÇÕES
+
+//TELA BUSQUEDA CLIENTES
+006_titulo_pagina									= Pesquisa de clientes
+006_titulo_busqueda									= Critérios de Pesquisa
+006_titulo_resultado								= Clientes
+006_lbl_gdr_codigo									= Código
+006_lbl_gdr_descripcion								= Descrição
+006_codigo_cliente									= Código cliente
+006_descricao_cliente								= Descrição cliente
+006_seleccione_un_cliente							= Selecione um cliente
+
+// TELA DETALLE PARCIALES
+007_titulo_pagina									= Reportes - Detalhe Parciais
+007_lbl_titulo_busqueda								= Pesquisa por Detalhe Parciais
+007_lbl_delegacion									= Delegação
+007_lbl_fecha										= Data
+007_lbl_fecha_transporte							= Data Transporte
+007_lbl_numero_remesa								= Número Remessa
+007_lbl_numero_precinto								= Número Selo
+007_lbl_cliente										= Cliente
+007_lbl_subcliente									= SubCliente
+007_lbl_con_denominacion							= Com Denominação
+007_lbl_con_incidencia								= Com Incidência
+007_lbl_formato_salida								= Formato Saída
+007_btn_cliente										= Procurar Cliente
+007_btn_subcliente									= Procurar SubCliente
+
+007_lbl_cheque										= Cheque
+007_lbl_ticket										= Ticket
+007_lbl_otro_valor									= Outro Valor
+
+007_csv_lbl_codigo_cliente							= Cód Cliente
+007_csv_lbl_nombre_cliente							= Nome Cliente
+007_csv_lbl_codigo_subcliente						= Cód SubCl
+007_csv_lbl_nombre_subcliente						= Nome SubCl
+007_csv_lbl_punto_servicio							= Pto. Serv. Cliente
+007_csv_lbl_fecha_proceso							= Data Processo
+007_csv_lbl_fecha_transporte						= Data Transp
+007_csv_lbl_numero_remesa							= Nº Remessa
+007_csv_lbl_numero_precinto							= Nº Selo
+007_csv_lbl_valor_declarado_bulto					= V. Decl Saco
+007_csv_lbl_valor_declarado_remesa					= V. Decl Remessa
+007_csv_lbl_numero_parcial							= Nº Parcial
+007_csv_lbl_valor_declarado_parcial					= V. Decl Parcial
+007_csv_lbl_valor_contado							= Valor Contado
+007_csv_lbl_diferencia								= Diferença
+007_csv_lbl_falsos									= Falsas
+007_csv_lbl_observaciones							= Observacões
+007_csv_lbl_denominacion							= Denominação
+007_csv_lbl_cantidad								= Quantidade
+007_csv_lbl_importe									= Montante
+007_csv_lbl_calidad									= Qualidade
+007_csv_lbl_codigo_calidad							= Deteriorado
+
+rpt_007_lbl_titulo									= Detalhe Parciais
+rpt_007_lbl_planta									= Delegação...............:
+rpt_007_lbl_cliente_filtro							= Cliente..............:
+rpt_007_lbl_subcliente_filtro						= SubCliente...........:
+rpt_007_lbl_transporte_del_dia						= D. Transp. Inicial...:
+rpt_007_lbl_del_dia									= D. Processo Inicial..:
+rpt_007_lbl_hora_inicio								= Hora Inicio..........:
+
+rpt_007_lbl_ate										= D. Processo Final....:
+rpt_007_lbl_transporte_ate							= D. Transporte Final..:
+rpt_007_lbl_hora_fim								= Hora Fim.............:
+rpt_007_lbl_operario								= Colaborador.............:
+rpt_007_lbl_fecha_transp							= Data Transporte......:
+
+rpt_007_lbl_operario_filtro							= Colaborador.............:
+rpt_007_lbl_puesto_filtro							= Posto................:
+rpt_007_lbl_num_remesa_filtro						= Núm. Remessa.........:
+rpt_007_lbl_num_precinto_filtro						= Núm. Selo........:
+
+rpt_007_lbl_posto									= Posto................:
+rpt_007_lbl_cliente									= Cliente..............:
+rpt_007_lbl_subcliente								= SubCliente...........:
+rpt_007_lbl_pto_servicio							= Pto Serviço..........:
+rpt_007_lbl_fecha_proc								= Data Processo........:
+rpt_007_lbl_num_precinto							= Nº Selo..........:
+rpt_007_lbl_num_remesa								= Número Remessa...............:
+rpt_007_lbl_num_parcial								= Número Parcial...............:
+
+rpt_007_lbl_remesa									= REMESSA
+rpt_007_lbl_num_bulto								= SACO
+rpt_007_lbl_parcial									= PARCIAL
+rpt_007_lbl_val_dec_remesa							= Valor Declarado
+rpt_007_lbl_val_dec_bulto							= Valor Declarado
+rpt_007_lbl_val_dec_parcial							= Valor Declarado
+rpt_007_lbl_val_contado								= Valor Contado
+rpt_007_lbl_falsos									= Falsas
+rpt_007_lbl_denominaciones							= Denominações
+rpt_007_lbl_importe									= Montante
+rpt_007_lbl_diferencias								= Diferença 
+rpt_007_lbl_diferenca_dec							= Declarado
+rpt_007_lbl_diferenca_contado						= Contado
+rpt_007_lbl_diferenca_total							= Total
+rpt_007_lbl_diferenca_obs							= Observações
+rpt_007_lbl_efetivo									= Efetivo
+rpt_007_lbl_iacs									= Informação Adicional Cliente
+rpt_007_lbl_qtde									= Quantidade
+
+// TELA CONTADO POR PUESTO
+008_titulo_pagina									= Relatório - Contado por Posto
+008_lbl_titulo_busqueda								= Procurar Contagem por Posto
+008_lbl_delegacion									= Delegação
+008_lbl_fecha										= Data
+008_lbl_fecha_transporte							= Data Transporte
+008_lbl_fecha_conteo								= Data Contagem
+008_lbl_puesto										= Posto
+008_lbl_operario									= Colaborador
+008_lbl_hora										= Hora
+008_lbl_inicio										= início
+008_lbl_finalizacion								= Fim
+008_lbl_numero_remesa								= Número de Remessa
+008_lbl_numero_precinto								= Número de Selo
+008_lbl_cliente										= Cliente
+008_lbl_subcliente									= SubCliente
+008_lbl_con_denominacion							= Com denominação
+008_lbl_con_incidencia								= Com diferenças
+008_lbl_formato										= Formato Saída
+008_msg_datas										= Preencha um dos campos "{0}", "{1}" ou "{2}".
+008_msg_uma_data									= Preencha apenas o campo "{0}" ou o campo "{1}" ou o campo "{2}".
+008_btn_cliente										= Procurar Cliente
+008_btn_subcliente									= Procurar Subcliente
+008_btn_puesto										= Procurar Posto
+008_btn_operario									= Procurar Colaborador
+
+008_csv_lbl_puesto									= Cod Posto
+008_csv_lbl_operario								= Cod Colaborador
+008_csv_lbl_codcliente								= Cod Cliente
+008_csv_lbl_nombrecliente							= Nome Cliente
+008_csv_lbl_codsubcl								= Cod Subcliente
+008_csv_lbl_nombresubcl								= Nome Subcliente
+008_csv_lbl_pto_servicio							= Ponto Servico
+008_csv_lbl_fecha_proc								= Data Processo
+008_csv_lbl_fecha_transp							= Data Transporte
+008_csv_lbl_num_remesa								= Num Remessa
+008_csv_lbl_num_precinto							= Num Selo
+008_csv_lbl_val_dec_rem								= Declarado Remessa
+008_csv_lbl_val_dec_bulto							= Declarado Saco
+008_csv_lbl_val_dec_parcial							= Declarado Parcial
+008_csv_lbl_val_contado								= Valor Contado
+008_csv_lbl_diferencia								= Diferença
+008_csv_lbl_cheques									= Cheques
+008_csv_lbl_falsos									= Falsas
+008_csv_lbl_obs										= Observacões
+008_csv_lbl_efetivo									= Efetivo
+
+008_msg_soloamete_fecha_3dias						= Para preenchimento apenas dos campos {0}, {1} y {2} o intervalo das datas não poderá ser superior a 3 dias.
+008_msg_OperarioPuestoHora							= Para preenchimento dos campos {0} ou {1} obrigatório preencher o intervalo de {2}.
+
+rpt_008_lbl_titulo									= Contado Por Posto
+rpt_008_lbl_planta									= Delegação:..............:
+rpt_008_lbl_cliente_filtro							= Cliente:.............:
+rpt_008_lbl_subcliente_filtro						= SubCliente:..........:
+rpt_008_lbl_transporte_del_dia						= D. Transp. Inicial...:
+rpt_008_lbl_del_dia									= D. Processo Inicial..:
+rpt_008_lbl_hora_inicio								= Hora Inicio..........:
+
+rpt_008_lbl_ate										= D. Processo Final....:
+rpt_008_lbl_transporte_ate							= D. Transporte Final..:
+rpt_008_lbl_hora_fim								= Hora Fim.............:
+rpt_008_lbl_operario								= Colaborador.............:
+rpt_008_lbl_fecha_transp							= Data Transporte......:
+
+rpt_008_lbl_operario_filtro							= Colaborador.............:
+rpt_008_lbl_puesto_filtro							= Posto................:
+rpt_008_lbl_num_remesa_filtro						= Núm. Remessa.........:
+rpt_008_lbl_num_precinto_filtro						= Núm. Selo........:
+
+rpt_008_lbl_posto									= Posto................:
+rpt_008_lbl_cliente									= Cliente..............:
+rpt_008_lbl_subcliente								= SubCliente...........:
+rpt_008_lbl_pto_servicio							= Pto Serviço..........:
+rpt_008_lbl_fecha_proc								= Data Processo........:
+rpt_008_lbl_num_precinto							= Nº Selo..........:
+rpt_008_lbl_num_remesa								= Número...............:
+rpt_008_lbl_num_parcial								= Número...............:
+
+rpt_008_lbl_remesa									= REMESSA
+rpt_008_lbl_num_bulto								= SACO
+rpt_008_lbl_parcial									= PARCIAL
+rpt_008_lbl_val_dec_remesa							= Valor Declarado
+rpt_008_lbl_val_dec_bulto							= Valor Declarado
+rpt_008_lbl_val_dec_parcial							= Valor Declarado
+rpt_008_lbl_val_contado								= Valor Contado
+rpt_008_lbl_falsos									= Falsas
+rpt_008_lbl_denominaciones							= Denominações
+rpt_008_lbl_diferencias								= Diferença
+rpt_008_lbl_diferenca_dec							= Declarado
+rpt_008_lbl_diferenca_contado						= Contado
+rpt_008_lbl_diferenca_total							= Total
+rpt_008_lbl_diferenca_obs							= Observações
+rpt_008_lbl_efetivo									= Efetivo
+rpt_008_lbl_qtde									= Quantidade
+
+//TELA BUSQUEDA SUBCLIENTES
+009_titulo_pagina									= Pesquisa de subclientes
+009_titulo_busqueda									= Critérios de Pesquisa
+009_titulo_resultado								= SubClientes
+009_lbl_gdr_cliente									= Cliente
+009_lbl_gdr_codigo									= Código
+009_lbl_gdr_descripcion								= Descrição
+009_codigo_subcliente								= Código subcliente
+009_descricao_subcliente							= Descrição subcliente
+009_seleccione_un_subcliente						= Selecione um subcliente
+009_lbl_cliente										= Cliente
+
+
+//TELA BUSQUEDA PROCESOS
+010_titulo_pagina									= Pesquisa de processos
+010_titulo_busqueda									= Critérios de Pesquisa
+010_titulo_resultado								= Processos
+010_lbl_delegacion									= Delegação
+010_lbl_cliente										= Cliente
+010_lbl_subcliente									= SubCliente
+010_lbl_puntoservicio								= Ponto de Serviço
+010_lbl_canal										= Canal
+010_lbl_subcanal									= SubCanal
+010_grd_selecionar									= Selecionar
+010_grd_cliente										= Cliente
+010_grd_subcliente									= SubCliente
+010_grd_puntoservicio								= Ponto de Serviço
+010_grd_canal										= Canal
+010_grd_subcanal									= SubCanal
+010_grd_proceso										= Processo
+010_grd_vigente										= Vigente
+010_btn_subcliente									= Pesquisar SubCliente
+010_btn_puntoservicio								= Pesquisar Ponto de Serviço
+010_seleccione_un_proceso							= Selecione um processo
+
+//TELA PRINCIPAL - SELECCIONAR DELEGACIÓN
+012_btn_confirmar									= Confirmar
+012_lbl_delegacion									= Delegação
+012_titulo											= Listagens de Contagem
+
+//TELA BUSQUEDA RECIBO F22 RESPALDO
+013_titulo_pagina									= Listagem de Serviços
+013_lbl_titulo_busqueda								= Procura Listagem de Serviços
+013_lbl_delegacion									= Delegação
+013_lbl_cliente										= Cliente
+013_lbl_fecha_fin_conteo							= Data Fim Contagem
+013_lbl_fecha										= Data
+013_cod_pes											= PESOS
+013_des_pes											= PESOS
+013_cod_rea											= REAL
+013_des_rea											= REAIS
+013_cod_dol											= DOLAR
+013_des_dol											= DOLARES
+013_cod_res											= RESPA
+013_des_res											= QUANTID. DE SOB
+013_cod_eur											= EUROS
+013_des_eur											= EUROS
+013_des_cheque										= CHEQUES
+013_des_ticket										= TICKETS
+013_des_outro_valor								= OUTROS VALORES
+
+//TELA BUSQUEDA REGISTRO DE TIRAS
+014_titulo_pagina									= Listagem ATM
+014_pnlFiltros										= Filtros
+014_lblCodigoATM									= Código Atm
+014_lblCliente										= Cliente
+014_lblSubcliente									= Subcliente
+014_lblPuntoServicio								= Ponto de serviço
+014_lblPeriodoContable								= Período contabilístico
+014_btn_cliente										= Procurar Cliente
+014_btn_subcliente									= Procurar Subcliente
+014_btn_punto_servicio								= Procurar Ponto Serviço
+014_lblFechaInicio									= Data Inicio
+014_lblFechaFim										= Data Fim
+014_btnBuscar										= Filtrar
+014_lblTituloTabela									= Registros de Tira
+014_colFecha										= Data
+014_colCodigoAtm									= Código Atm
+014_colDesPeriodoContable							= P. Contabilístico
+014_colCliente										= Cliente
+014_colSubCliente									= Subcliente
+014_colPuntoServicio								= Pto Serviço
+014_colConsultar									= Consultar
+
+//TELA BUSQUEDA REGISTRO DE TIRAS
+015_titulo_pagina									= Relação Habilitação X Tira X Contagem 
+015_pnlATM											= Identificação do ATM
+015_lblCodigoATM									= Código Atm
+015_lblCliente										= Cliente
+015_lblSubcliente									= Subcliente
+015_lblPuntoServicio								= Ponto de Serviço
+015_lblDescripcion									= Descrição
+015_pnlHabilitaciones								= Habilitações
+
+015_colCodRemesaLegado								= Remessa
+015_colFyhHabilitacion								= Data
+015_colCodInventarioContenedor						= Nro cacifo
+015_colCodPrecintoContenedor						= Nro Selo
+015_colCodMorfologiaComponente						= Identificador
+015_colDesDivisa									= Divisa
+015_colCodDenominacion								= Denominação
+015_colNelCantidadHabilitada						= Quantidade
+015_colNumImporteHabilitado							= Montante
+015_colTotalDivisa									= Total Divisa
+015_colDivisa										= Divisa
+
+015_TotalHabilitado									= Total habilitado
+
+015_lblTiraRegistrada								= Tira registrada em
+015_tdDeclaradoDispensadores						= Declarados Dispensadores
+015_tdCajetines										= Cacifos
+015_tdCantidad										= Quantidade
+015_tdImporte										= Montante
+
+015_TcolCodMorfologiaComponente						= Identificador
+015_TcolDesDivisa									= Divisa
+015_TcolDesDenominacion								= Denominação
+015_TcolNelCantidadIntroducida						= Carregamento
+015_TcolNelCantidadDispensada						= Dispensada
+015_TcolNelCantidadRechazada						= Rejeitada
+015_TcolNelCantidadRemanente						= Remanescente
+015_TcolNumImporteIntroducido						= Carga
+015_TcolNumImporteDispensado						= Disp.
+015_TcolNumImporteRechazado							= Rejeitado
+015_TcolNumImporteRemanente							= Remanescente
+015_TcolnumImporteDeclarado							= Declarado
+
+015_tdDivisa										= Total por Divisa
+015_TotcolDesDivisa									= Divisa
+015_TotcolNumImporteIntroducido						= Carga
+015_TotcolNumImporteRechazado						= Rejeitada
+015_TotcolNumImporteRemanente						= Remanescente
+015_TotcolnumImporteDeclarado						= Declarado
+
+015_tdConteoDispensadores							= Contagem Dispensadores
+015_tdCajetinesConteo								= Cacifos
+
+015_ContcolCodRemesaConteo							= Remessa
+015_ContcolDesDivisa								= Divisa
+015_ContcolDesDenominacion							= Denominação
+015_ContcolNumImporteContado						= Contado
+
+015_tdDivisaConteo									= Total por Divisa
+
+015_ContTotcolDesDivisa								= Divisa
+015_ContTotcolNumImporteContado						= Contado
+
+015_lblDeclaradosIngresadores						= Declarados Inseridos
+015_lblDeclaradosDepositos							= Declarados Depósitos
+015_DecIngcolDesDivisa								= Divisa
+015_DecIngcolDesTipoMedioPago						= Meio de Pgto.
+015_DecIngcolNumImporteIngresado					= Declarado
+
+015_lblPeriodoContable								= Período Contabilístico
+015_lblFecha										= Data
+
+015_lblContadosIngresadores							= Contados Inseridos
+015_lblContadosDepositos							= Contados Depósitados
+015_ContIngcolCodRemesaConteo						= Remessa
+015_ContIngcolDesDivisa								= Divisa
+015_ContIngcolDesTipoMedioPago						= Meio de Pgto.
+015_ContIngcolNumImporteIngresado					= Contado
+
+015_msg001											= Nenhuma habilitação foi compensada com o registro da tira!
+015_msg002											= Nenhum valor foi declarado para dispensadores!
+015_msg003											= Não há resultado de contagem para os dispensadores!
+015_msg004											= Não há resultado de contagem para os inseridos!
+015_msg005											= Não há resultado de contagem para os depósitos!
+015_msg006											= Nenhum valor foi declarado para ingressadores!
+015_msg007											= Nenhum valor foi declarado para depósitos!
+
+//TELA BUSQUEDA PARTE DE DIFERENCIAS
+016_titulo_pagina									= Listagem de Diferenças
+016_lbl_titulo_busqueda								= Procurar Diferenças
+016_lbl_delegacion									= Delegação
+016_lbl_precinto_remesa								= Selo Remessa
+016_lbl_precinto_bulto								= Selo Saco
+016_lbl_numero_albaran								= Nº Transporte
+016_lbl_cliente										= Cliente
+016_btn_cliente										= Procurar Cliente
+016_lbl_subcliente									= Subcliente
+016_btn_subcliente									= Procurar Subcliente
+016_lbl_punto_servicio								= Ponto Serviço
+016_btn_punto_servicio								= Procurar Ponto Serviço
+016_lbl_fecha_conteo								= Data Contagem
+016_lbl_fecha_conteo_desde							= De
+016_lbl_fecha_conteo_hasta							= Até
+016_lbl_fecha_transporte							= Data Transporte
+016_lbl_fecha_transporte_desde						= De
+016_lbl_fecha_transporte_hasta						= Até
+016_lbl_contador									= Colaborador
+016_lbl_supervisor									= Supervisor
+016_btn_buscar										= Procurar
+016_btn_limpar										= Limpar
+016_titulo_grid										= Remessas Encontradas
+016_btn_visualizar									= Visualizar
+016_btn_voltar										= Voltar
+016_col_fecha_conteo								= Data Contagem
+016_col_precinto_remesa								= Selo Remessa
+016_col_codigo_transporte							= Código Transporte
+016_col_fecha_transporte							= Data Transporte
+016_col_cliente										= Cliente
+016_col_subcliente									= SubCliente
+016_col_punto_servicio								= Ponto de Serviço
+016_msg_remesa_obligatoria							= É necessário selecionar uma Remessa.
+
+//TELA BUSQUEDA PARTE DE DIFERENCIAS - DOCUMENTOS
+017_titulo_pagina									= Relatório de Anomalia - Documentos
+017_lbl_precinto									= Selo Remessa
+017_col_fecha_creacion								= Data Criação
+017_col_numero_documento							= Número Documento
+017_col_doc_general									= Documento Geral/Saco/Parcial
+017_col_doc_incidencia								= Documento Incidência
+017_col_doc_justificacion							= Documento Justificação
+017_btn_visualizar									= Visualizar
+017_btn_volver										= Voltar
+017_msg_documento_obligatorio						= É necessário selecionar pelo menos um documento.
+
+//TELA BUSQUEDA PUNTO SERVICIO
+018_titulo_pagina									= Pesquisa de ponto de serviço
+018_titulo_busqueda									= Critérios de Pesquisa
+018_titulo_resultado								= Pontos de Serviço
+018_lbl_gdr_codigo									= Código
+018_lbl_gdr_descripcion								= Descrição
+018_codigo_puntoservicio							= Código ponto de serviço
+018_descricao_puntoservicio							= Descrição ponto de serviço
+018_seleccione_un_puntoservicio						= Selecione um ponto de serviço
+018_lbl_gdr_codigocliente						    = Cód. Cliente
+018_lbl_gdr_descripcioncliente					    = Desc. Cliente
+018_lbl_gdr_codigosubcliente					    = Cód. Subcliente
+018_lbl_gdr_descripcionsubcliente				    = Desc. Subcliente
+018_lbl_gdr_codigopuntoservicio					    = Cód. Pto. Serviço
+018_lbl_gdr_descripcionpuntoservicio			    = Desc. Pto. Serviço 
+
+//TELA REPORTAR PEDIDO BCP
+020_titulo_pagina												= Reportar BCP
+020_lbl_delegacion											= Delegação
+020_lbl_tipo_especie											= Tipo Espécie
+020_lbl_tipo_deposito										= Tipo Depósito
+020_lbl_fecha_conteo										= Data Contagem
+020_lbl_fecha_conteo_desde							= De
+020_lbl_fecha_conteo_hasta							= Até
+020_btn_reportar													= Reportar
+020_btn_limpar													= Limpar
+020_lbl_titulo_busqueda								    = Pesquisa Pedido Recolha
+020_lbl_titulo_reportado							    = Pedidos Reportados
+020_lst_especie_moneda									=  0 - Moeda
+020_lst_especie_billete										=  1 - Nota
+020_lst_deposito_centralizado						=  1 - Centralizado
+020_lst_deposito_servilock								=  2 - Servilock
+020_lbl_fecha_ultimo_envio								= Data-Hora Último Envio:
+020_btn_atualizar									= Atualizar
+020_col_especie										= Espécie
+020_col_deposito									= Depósito
+020_col_fecha_desde									= Data Desde
+020_col_fecha_hasta									= Data Até
+020_col_delegacion									= Delegação
+020_col_estado										= Estado
+020_col_observacion									= Observação
+020_col_fecha_creacion								= Data Criação
+020_msg_sin_datos_retorno							= Não há registro de item de processo a ser exibido.
+
+//TELA BUSQUEDA INFORME RESULTADO CONTAJE
+019_titulo_pagina									= Informações Resultado de Contagem
+019_lbl_titulo_busqueda								= Pesquisa Informações Resultado de Contagem
+019_lbl_delegacion									= Delegação
+019_lbl_precinto_remesa								= Selo Remessa
+019_lbl_precinto_bulto								= Selo Saco
+019_lbl_numero_albaran								= Nº Transporte
+019_lbl_cliente										= Cliente
+019_btn_cliente										= Procurar Cliente
+019_lbl_subcliente									= Subcliente
+019_btn_subcliente									= Procurar Subcliente
+019_lbl_punto_servicio								= Ponto Serviço
+019_btn_punto_servicio								= Procurar Ponto Serviço
+019_lbl_fecha_conteo								= Data Contagem
+019_lbl_fecha_conteo_desde							= De
+019_lbl_fecha_conteo_hasta							= Até
+019_lbl_fecha_transporte							= Data Transporte
+019_lbl_fecha_transporte_desde						= De
+019_lbl_fecha_transporte_hasta						= Até
+019_btn_buscar										= Procurar
+019_btn_limpar										= Limpar
+019_titulo_grid										= Remessas Encontradas
+019_btn_visualizar									= Visualizar
+019_btn_voltar										= Voltar
+019_msg_remesa_obligatoria							= É necessário selecionar uma Remessa.
+019_col_fecha_conteo								= Data Contagem
+019_col_precinto_remesa								= Selo Remessa
+019_col_codigo_transporte							= Nº Serviço
+019_col_fecha_transporte							= Data Transporte
+019_col_cliente										= Cliente
+019_col_subcliente									= SubCliente
+019_col_punto_servicio								= Ponto de Serviço
+
+rpt_019_lbl_titulo_projecto							= Contagem
+rpt_019_lbl_titulo_reporte							= Relatório Resultado de Contagem
+rpt_019_lbl_titulo_empresa							= Prosegur
+rpt_019_lbl_datos_cliente							= Dados Cliente
+rpt_019_lbl_cod_delegacion							= Código Delegação
+rpt_019_lbl_cliente									= Cliente
+rpt_019_lbl_sucursal								= Pto. Serviço
+rpt_019_lbl_fecha_recorida							= Data Transporte
+rpt_019_lbl_datos_prosegur							= Dados Prosegur
+rpt_019_lbl_fecha_conteo							= Data Contagem
+rpt_019_lbl_codigo_transporte						= Nro Código Transp.
+rpt_019_lbl_codigo_usuario							= Usuário
+rpt_019_lbl_parciales_contados						= Números Parciais
+rpt_019_lbl_titulo_iac								= Campos IAC
+rpt_019_precintobulto 				                = Selo Saco
+rpt_019_precintoparcial                         	= Número Parcial
+rpt_019_precintoremesa				                = Selo Remessa
+rpt_019_precintosbultos                         	= Selos Sacos
+rpt_019_precintosparciales                     		= Números de Parciais
+rpt_019_lbl_resultado_general_titulo				= Resultado Geral Contagem
+rpt_019_lbl_nro_parciales_declarados				= Nro Parciais Declarados
+rpt_019_lbl_nro_parciales_contados					= Nro Parciais Contados
+rpt_019_lbl_nro_parciales_diferencia				= Diferenças de Parciais
+rpt_019_lbl_resultado_general_moneda				= Moeda
+rpt_019_lbl_resultado_general_declarado				= Declarado
+rpt_019_lbl_resultado_general_contado				= Contado
+rpt_019_lbl_resultado_general_falta					= Falta
+rpt_019_lbl_resultado_general_sobra					= Sobra
+rpt_019_lbl_resultado_general_falsos				= Falsas
+rpt_019_lbl_detalle_conteo_titulo					= Detalhe Contagem
+rpt_019_lbl_detalle_denominacion					= Denominação
+rpt_019_lbl_detalle_importe							= Montante
+rpt_019_lbl_detalle_contado							= Contado
+rpt_019_lbl_detalle_unidades						= Unidades
+rpt_019_lbl_detalle_falsos							= Falsas
+rpt_019_lbl_detalle_deteriorados					= Deteriorados
+rpt_019_lbl_detalle_grandtotal						= Total Geral
+rpt_019_lbl_detalle_parciales_titulo				= Detalhe de Parciais
+rpt_019_lbl_detalle_parciales_parcial				= Nº Parcial
+rpt_019_lbl_detalle_parciales_divisa				= Divisa
+rpt_019_lbl_detalle_parciales_cliente				= Cliente
+rpt_019_lbl_detalle_parciales_subcliente			= Subcliente
+rpt_019_lbl_detalle_parciales_punto_servicio		= Pto Serviço
+rpt_019_lbl_detalle_parciales_declarado				= Declarado
+rpt_019_lbl_detalle_parciales_contado				= Contado
+rpt_019_lbl_observaciones_titulo					= Observações
+rpt_019_lbl_precintos_parciales						= Selos Parciais
+rpt_019_lbl_numero_parcial							= Número Parcial
+rpt_019_lbl_comentario								= Comentário
+rpt_019_lbl_supervisor								= Supervisor
+rpt_019_lbl_codigo_motivo							= Códigos de Incidências
+
+//TELA BÚSQUEDA PUESTO
+
+021_titulo_busqueda_puestos							= Pesquisa de Postos
+021_lbl_subtitulospuestos							= Postos
+021_lbl_subtituloscriteriosbusqueda					= Critérios de Pesquisa
+021_lbl_sem_registro						        = Não existem registros.
+021_lbl_vigente										= Vigente
+021_lbl_codigopuesto								= Código posto
+021_lbl_hostpuesto									= Host puesto
+021_chk_vigente 									= Vigentes
+021_chk_no_vigente 									= Não Vigentes
+021_chk_cualquiera 									= Qualquer
+021_lbl_delegacion									= Delegação
+021_seleccione_un_puesto							= Selecione um posto
+
+//TELA BÚSQUEDA OPERARIO
+
+022_titulo_busqueda_operario						= Pesquisa de Colaborador
+022_lbl_subtitulosoperario							= Colaborador
+022_lbl_subtituloscriteriosbusqueda					= Critérios de Pesquisa
+022_lbl_sem_registro						        = Não existem registos.
+022_lbl_nombre										= Nome
+022_lbl_apellido									= Apelido
+022_lbl_login										= Login
+022_lbl_delegacion									= Delegação
+022_seleccione_un_operario							= Selecione um Colaborador
+
+// token
+tkn_token_nao_consumida                             = Token de acesso inválida ou expirada
+tkn_tokenutil_token_invalida                        = Token de acesso inválida
+
+//TELA REPORTES
+023_titulo_pagina									= Reportes
+023_lblSubTituloreportes							= Reportes
+023_lblDelegacion									= Delegação
+023_lblFechaConteo									= Data Contagem
+023_lblFechaTransporte								= Data Transporte
+023_btnAdicionar									= Nova configuração
+023_btnEditar										= Configurar Reporte
+023_btnExcluir										= Excluir Configuração de Reporte
+023_btnGerarRelatorio								= Gerar relatórios selecionados
+023_msg_error_rangofecha							= Ao menos um intervalo de datas deve ser preenchido.
+023_msg_error_reporte_vazio							= Ao menos um reporte deverá estar selecionado.
+023_msg_error_reporte_unico							= Por favor, selecione somente uma configuração.
+023_msg_alert_excluir								= Deseja excluir?
+023_err_campo_data_invalida							= O campo "{0}" não está preenchido com uma data válida.
+023_msg_error_selecionar_reporte					= Por favor, selecione um reporte.
+023_col_selecionar									= Selecionar
+023_col_reporte										= Reporte
+023_col_descricao									= Descrição
+023_msg_erro_generico_configuracion_reporte 		= O reporte "{0}" da configuração "{1}" não foi gerado. Erro: "{2}".
+023_msg_erro_sinParametros							= O reporte da configuração "{0}" não possui parametros.
+023_msg_erro_sinParametrosCliente					= O reporte da configuração "{0}" não possui clientes ou grupo clientes.
+023_msg_erro_singrupoCliente						= Não foi localizado o Grupo Cliente "{0}" informado na configuração "{1}". 
+023_msg_erro_campoObrigatorioConfiguracion			= O campo "{0}" é obrigatório para a configuração "{1}". 
+023_msg_erro_reporteNaoEncontrado					= O reporte não foi localizado ou apresenta erros na base de relatórios para a configuração "{0}". Detalhes do Erro: {1}.
+023_msgDiretorioInvalido							= Diretório Inválido para a configuração "{0}".
+023_msg_erro_formatoArchivoInvalido					= O formato de saída informado na configuração "{0}" é inválido.
+023_msg_erro_clienteObrigatorio						= O cliente da configuração "{0}" não foi informado.
+023_msg_erro_subclienteObrigatorio					= O SubCliente da configuração "{0}" não foi informado.
+023_msg_erro_ptoServicoObrigatorio					= O Ponto de Serviço da configuração "{0}" não foi informado.
+023_msg_erro_grupoClienteObrigatorio				= O Grupo Clientes da configuração "{0}" não foi informado.
+023_msg_erro_canalObrigatorio						= O Canal da configuração "{0}" não foi informado.
+023_msg_erro_subCanalObrigatorio					= O SubCanal da configuração "{0}" não foi informado.
+023_msg_erro_divisaObrigatorio						= O divisa da configuração "{0}" não foi informado.
+023_msg_erro_puestoObrigatorio						= O posto da configuração "{0}" não foi informado.
+023_msg_erro_contadorObrigatorio					= O colaborador da configuração "{0}" não foi informado.
+023_msg_erro_delegacaoObrigatorio					= A delegação da configuração "{0}" não foi informado.
+023_btnConfiguracionGeneral							= Configuração Geral
+023_msg_erro_parametro_obligatorio					= O Parâmetro "{0}" é obrigatório.
+023_msg_erro_reporte_nao_localizado 				= O reporte "{0}" da configuração "{1}" não foi localizado no Report Server.
+023_msg_diretorio_reportes_invalido					= O diretório definido para os reportes não existe ou não está acessível.
+
+
+//TELA CONFIGURAÇÃO REPORTES
+024_titulo_pagina									= Configuração de Reportes
+024_lblDescricaoConfiguracao						= Descrição Configuração
+024_lblReporte										= Reporte
+024_lblDelegacion									= Delegação
+024_lblFechaRecaudacionIni							= Data Contagem
+024lblFechaTransporteIni							= Data Transporte
+024_lblCliente										= Cliente
+024_btnCliente										= Procurar Cliente
+024_lblSubCliente									= SubCliente
+024_btnSubCliente									= Procurar SubCliente
+024_lblPuntoServicio								= Ponto de Serviço
+024_btnPuntoServicio								= Procurar Ponto de Serviço
+024_lblGrupoClientes								= Grupo Clientes
+024_lblCanal										= Canal
+024_lblSubCanal										= SubCanal
+024_lblPuesto										= Posto
+024_lblDivisa										= Divisa
+024_lblContador										= Colaborador
+024_chkAgruparClientes								= Agrupar Clientes
+024_chkAgruparSubClientes							= Agrupar SubClientes
+024_chkAgruparPuntosServicios						= Agrupar Pontos de Serviços
+024_chkAgruparGrupoClientes							= Agrupar por Grupo Cliente
+024_lblRuta											= Rota
+024_lblFormatoArchivo								= Formato Saída
+024_rbnCSV											= CSV
+024_rbnPDF											= PDF
+024_rbnEXCEL										= EXCEL
+024_rbnEXCEL2010									= EXCELOPENXML
+024_rbnHTML											= MHTML
+024_btnGenerarInforme								= Gerar Relatório
+024_msgDiretorioInvalido							= Diretório Invalido
+024_lblCodigoConfiguracion							= Código Configuração
+024_lblDescripcion 									= Descrição da Configuração
+024_lblNombreArchivo 								= Nome do Arquivo
+024_msg_erro_reporte_nao_localizado 				= O reporte "{0}" não foi localizado no Report Server.
+024_erro_config_reporte								= O relatório "{0}" não está com todas as configurações corretas. Favor verificar o parâmetro "{1}"
+
+//USER CONTROL DELEGACION E DATA
+025_lbldelegacion									= Delegação
+
+//TELA CONFIGURAÇÃO GERAL DE RELATÓRIO
+026_titulo_pagina									= Configuração Geral de Relatório
+026_col_selecionar									= Selecionar
+026_col_DesReporte									= Relatório
+026_col_CodReporte									= ID
+026_col_FormatoArchivo								= Formato do Arquivo
+026_col_NombreArchivo								= Nome do Arquivo
+026_col_ExtensionArchivo							= Extensão do Arquivo
+026_col_Separador									= Separador
+
+//TELA CONFIGURAÇÃO GERAL DE RELATÓRIO E CONFIRGURACIONREPORT
+027_titulo_pagina									= Manuntenção de Configuração Geral de Relatório
+027_lbl_Reporte										= Relatório
+027_lbl_IDReporte									= ID Reporte
+027_lbl_FormatoArchivo								= Formato do Arquivo
+027_lbl_NombreArchivo								= Nome do Arquivo
+027_lbl_ExtensionArchivo							= Extensão do Arquivo
+027_lbl_Separador									= Separador
+027_campoObrigatorio								= O campo {0} é obrigatório.
+027_separador_invalido								= O campo separador não pode ser vazio. Informe T para tabulação F para Fixo, ou outro caracter como separador.
+027_msg_tag_fechamento								= Campo: {0}. A tag: {1} não foi fechada corretamente.
+027_msg_formato_invalido							= Campo: {0}. Formato inválido.
+027_msg_falta_igual									= Campo: {0}. A tag () deve possuir duas tags internas e = serparando as duas, exemplo: (@PARAMTRO_01@=@PARAMETRO_02@).
+027_msg_falta_parametro_anterior					= Campo: {0}. Antes da tag:{1}: deve ser informado uma das tags:[xx],{{xx}},@xx@,(xx=xx) ou #Rxx# de onde serão retirados os valores para a tag:{1}.
+027_msg_campo										= Campo: {0}.
+027_msg_campo_vazio									= Campo: {0}. As tags: {1} não podem ser vazias. 
+027_msg_tag_invalida								= Campo: {0}. A tag: {1} não é válida. As tags válidas são: [xx],{{xx}},@xx@,(xx=xx) ou #Rxx# .
+027_msg_error_selecionar_reporte					= Por favor, selecione um reporte.
+027_msg_tag_substituicao							= Campo: {0}. Para a tag: ^^ deve ser informado R ou L antes do fecho da tag. Exemplo ^[-]R^ e não: {1}.
+027_msg_parametro_permitir_nulo						= O parâmetro {0} do relatório {1} está configurado incorretamente no Report Server. Ele deve permitir valor nulo.
+
+//PARAMETROS REPORTE SERVICE
+029_msg_formato_data_invalido						= Formato data/hora:{0} inválido.
+029_msg_parametro_fecha_no_existe					= O parametro P_FYH_CONTEO_DESDE,P_FEC_CONTEO_DESDE não existe no relatório.
+029_msg_prefixo_fecha_invalido						= Prefixo data:{0} inválido.
+029_msg_parametro_no_existe							= O parâmetro {0} não existe no relatório.
+029_msg_valor_parametro_cantidad					= O valor informado para o parametro de quantidade dever ser R ou L e não:{0}
+029_msg_valor_parametro_cantidad_numerico			= O valor informado para o parametro de quantidade dever ser RXX ou LXX onde XX deve ser numérico:{0}
+029_msg_parametro_sin_cerrar						= O parâmetro:{0} não foi fechado corretamente.
+029_msg_formato_invalido							= Formato inválido
+029_msg_fecha_conteo_sin_valor						= Valor não informado para data de contagem.
+029_msg_fecha_conteo_invalida						= Data de contagem inválida:{0}.
+029_msg_fecha_transporte_sin_valor					= Valor não informado para data transporte.
+029_msg_fecha_transporte_invalida					= Data de transporte inválida:{0}.
+029_msg_valor_no_informado							= Valor do parâmetro {0} não foi informado.
+029_msg_valor_parametro_cantidad_max				= O valor informado para o parametro de quantidade deve ser RXX ou LXX onde XX deve ter como valor máximo 2147483647.
+
+//CONTROLE INVENTARIO
+030_lblSector										= Setor
+030_lblInventario									= Inventário
+030_col_selecionar									= Selecionar
+030_col_inventario									= Inventário
+030_col_data										= Data
+030_lblNovo											= Novo
+030_lblHistorico									= Histórico
+
+
+// WEBCONFIG
+WEBCONFIG_CHAVE_INVALIDA							= Chave {0} inexistente e ou valor {1} inválido.
+
+//Migracao do layout
+TituloDefault									= Inicial
+genDelegacion									= Delegação
+genPais											= País
+genSector										= Setor
+
+//CONTROLE CLIENTE
+021_Cliente_Titulo								= Cliente
+021_Cliente_Popup_Titulo						= Busca de Cliente
+021_Cliente_Popup_Resultado						= Dados de Cliente
+021_Cliente_Popup_Filtro						= Criterios de Busca
+
+//CONTROLE SUBCLIENTE
+022_SubCliente_Titulo							= SubCliente
+022_SubCliente_Popup_Titulo						= Busca de SubCliente
+022_SubCliente_Popup_Resultado					= Dados de SubCliente
+022_SubCliente_Popup_Filtro						= Criterios de Busca
+
+//CONTROLE SECTOR
+122_Sector_Titulo							= Setor
+122_Sector_Popup_Titulo						= Busca de Sector
+122_Sector_Popup_Resultado					= Dados de Sector
+122_Sector_Popup_Filtro						= Criterios de Busca
+
+
+//CONTROLE PUNTO SERVICIO
+023_PtoServicio_Titulo							= Ponto de Serviço
+023_PtoServicio_Popup_Titulo					= Busca de Ponto de Serviço
+023_PtoServicio_Popup_Resultado					= Dados de Ponto de Serviço
+023_PtoServicio_Popup_Filtro					= Criterios de Busca
+
+//CONTROLE HELPER
+014_codigo										= Código:
+014_descricion									= Descrição:
+014_selecao_campo								= Selecione um campo
+014_parametro_obrigatorio						= O parãmetro '{0}' é obrigatório.
+014_ConsiderarSectoresHijos						= Considerar os setores filhos no resultado da busca.
+
+//Calendario
+bntProximo										= Próximo 
+btnAnterior										= Anterior
+btnMoverArriba									= Acima
+btnMoverAbajo									= Abaixo
+horas											= hora(s)
+minutos											= minuto(s)
+segundos										= segundo(s)
+dias											= [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ]
+meses											= [ "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" ]
+btnAgora										= Agora 
+btnConfirma										= Confirma
+
+pagerFormatGrid									= Página {0} de {1} ({2} itens)
+
+021_Resultado_busqueda_puestos					= Dados de Postos
+
+
+022_Resultado_busqueda_Operarios					= Dados de Operários
+
+002_lblCodigo									= Codigo
+gen_sim											= Sim
+gen_nao											= Não
+
+002_lblDescripcion								= Descrição
+btn_aceptar										= Aceitar
+
+//CONTROLE DE CLIENTE, SUBCLIENTE, PTO SERVICO E GRUPO CLIENTE
+028_btnBuscaCliente									= Busca Cliente
+028_btnBuscaSubCliente								= Busca Subcliente
+028_btnBuscaPtoServicio								= Busca Ponto de Serviço
+028_tituloCliente									= Busca de Clientes
+028_tituloSubCliente								= Busca de SubClientes
+028_tituloPtoServico								= Busca de Pontos de Serviço
+028_lblCliente										= Cliente
+028_lblSubcliente									= Subcliente
+028_lblPuntoServicio								= Ponto de Serviço
+028_lblCodigo										= Código
+028_lblDescricao									= Descrição
+028_lblCodigoSubCliente								= Cód. SubCliente
+028_lblDescricaoSubCliente							= Des. SubCliente
+028_lblCodigoPtoServico								= Cód. Pto Serviço
+028_lblDescricaoPtoServico							= Des. Pto Serviço
+028_lblCodigoAlheio 								= Cód. Alheio 
+028_lblDescricaoAlheio 								= Des. Alheio 
+028_lblCriterioBusca								= Criterios de busca
+028_lblGrupoClientes								= Grupo Clientes
+
+btnaceitar 										= Aceitar
+027_lblFiltros										= Configurar Filtros Reportes
+
+
+040_lbl_tipo_procedenciaForm							= Tipo Procedência
+
+010_lbl_titulosterminosForm								= Término IAC
+
+msg_remover_nao_selecionado						= Selecione um ou mais itens a serem removidos!
+
+btnInserirDenominacion = Inserir Denom.
+
+btnInserirTerminos = Inserir Term.
+
+btnInserirSubcanal = Inserir SubCanal
+
+btnInserirComponente = Inserir Componente
+
+//InformacionGenesis
+InformacionGenesis_grid_FileName = Descrição
+InformacionGenesis_grid_FileVersion = Versão do Arquivo
+InformacionGenesis_grid_ProductVersion = Versão do Produto
+
+//InformacionReportes
+InformacionReportes_titulo_pagina	= Sobre o Reportes {0}
+InformacionReportes_lbl_SubTitulo	= Sobre o Reportes {0}
+InformacionReportes_btnExportar		= Exportar

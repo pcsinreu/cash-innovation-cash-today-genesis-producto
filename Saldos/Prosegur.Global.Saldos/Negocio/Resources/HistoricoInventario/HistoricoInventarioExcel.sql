@@ -1,0 +1,6 @@
+﻿select 
+	H.ARCHIVOEXCEL
+from 
+	PD_HISTORICOINVENTARIO H
+where 
+	H.IDINVENTARIO = :IdInventario

@@ -1,0 +1,1 @@
+﻿select PD_PLANTA_IDPLANTA_SEQ.nextval from dual

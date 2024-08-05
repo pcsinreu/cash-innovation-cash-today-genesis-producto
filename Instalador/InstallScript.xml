@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InstallScript EngineVersion="1.0" InstallationName="Genesis" InstallationVersion="4.0" WelcomeMessage="User_Form_Welcome_Text_Welcome_Message">
+  <Parameters>
+    <InstallationParameters>
+      <Parameter Name="FechaLiberacionVersion" Value="01/01/0001 00:00:00" />
+      <Parameter Name="VersionGeneral" Value="2.9" />
+      <Parameter Name="VersionAnteriorServicio" Value="2.8" />
+      <!--Aplicaciones Web -->
+      <Parameter Name="VersionIAC" Value="[VersionGeneral]" />
+      <Parameter Name="VersionReportes" Value="[VersionGeneral]" />
+      <Parameter Name="VersionNuevoSaldos" Value="[VersionGeneral]" />
+      <Parameter Name="VersionWeb" Value="[VersionGeneral]" />
+      <Parameter Name="VersionServicio" Value="[VersionGeneral]" />
+      <Parameter Name="BuildIAC" Value="[VersionIAC]" />
+      <Parameter Name="BuildReportes" Value="[VersionReportes]" />
+      <Parameter Name="BuildNuevoSaldos" Value="[VersionNuevoSaldos]" />
+      <Parameter Name="BuildWeb" Value="[VersionWeb]" />
+      <Parameter Name="BuildServicio" Value="[VersionServicio]" />
+    </InstallationParameters>
+    <UserParameters>
+      <ParametersSection SectionName="Versión Anterior Web Site">
+        <Parameter Name="VersionAnterior" Type="Text" DefaultValue="[VersionAnteriorServicio]" Required="True" Description="User_Local_Previous_Version_Installation" RequiredMessage="User_Local_Previous_Version_Installation_Required_Message" />
+      </ParametersSection>
+      <ParametersSection SectionName="Web Site IAC">
+        <Parameter Name="IACSiteInstallDir" Type="LocalDirectory" DefaultValue="" Required="True" Description="User_Local_Site_Installation_Folder" RequiredMessage="User_Local_Site_Installation_Folder_Required_Message" />
+        <Parameter Name="IACSiteIISSite" Type="IISSite" DefaultValue="Default" Required="True" Description="User_Local_Site_IIS_Site" RequiredMessage="User_Local_Site_IIS_Site_Required_Message" />
+        <Parameter Name="IACSiteVirtualDirectory" Type="Text" DefaultValue="Prosegur.Genesis.IAC" Required="True" Description="User_Local_Site_Virtual_Directory" RequiredMessage="User_Local_Site_Virtual_Directory_Required_Message" />
+        <Parameter Name="IACSiteIISSiteApplicationPool" Type="IISApplicationPool" DefaultValue="" Required="True" Description="User_Local_Site_IIS_Site_Application_Pool" RequiredMessage="User_Local_Site_IIS_Site_Application_Pool_Required_Message" />
+      </ParametersSection>
+      <ParametersSection SectionName="Web Site Reportes">
+        <Parameter Name="ReportesSiteInstallDir" Type="LocalDirectory" DefaultValue="" Required="True" Description="User_Local_Site_Installation_Folder" RequiredMessage="User_Local_Site_Installation_Folder_Required_Message" />
+        <Parameter Name="ReportesSiteIISSite" Type="IISSite" DefaultValue="Default" Required="True" Description="User_Local_Site_IIS_Site" RequiredMessage="User_Local_Site_IIS_Site_Required_Message" />
+        <Parameter Name="ReportesSiteVirtualDirectory" Type="Text" DefaultValue="Prosegur.Genesis.Listado.Conteo" Required="True" Description="User_Local_Site_Virtual_Directory" RequiredMessage="User_Local_Site_Virtual_Directory_Required_Message" />
+        <Parameter Name="ReportesSiteIISSiteApplicationPool" Type="IISApplicationPool" DefaultValue="" Required="True" Description="User_Local_Site_IIS_Site_Application_Pool" RequiredMessage="User_Local_Site_IIS_Site_Application_Pool_Required_Message" />
+      </ParametersSection>
+      <ParametersSection SectionName="Web Site Nuevo Saldos">
+        <Parameter Name="NuevoSaldosSiteInstallDir" Type="LocalDirectory" DefaultValue="" Required="True" Description="User_Local_Site_Installation_Folder" RequiredMessage="User_Local_Site_Installation_Folder_Required_Message" />
+        <Parameter Name="NuevoSaldosSiteIISSite" Type="IISSite" DefaultValue="Default" Required="True" Description="User_Local_Site_IIS_Site" RequiredMessage="User_Local_Site_IIS_Site_Required_Message" />
+        <Parameter Name="NuevoSaldosSiteVirtualDirectory" Type="Text" DefaultValue="Prosegur.Genesis.NuevoSaldos" Required="True" Description="User_Local_Site_Virtual_Directory" RequiredMessage="User_Local_Site_Virtual_Directory_Required_Message" />
+        <Parameter Name="NuevoSaldosSiteIISSiteApplicationPool" Type="IISApplicationPool" DefaultValue="" Required="True" Description="User_Local_Site_IIS_Site_Application_Pool" RequiredMessage="User_Local_Site_IIS_Site_Application_Pool_Required_Message" />
+      </ParametersSection>
+      <ParametersSection SectionName="Web Site Genesis">
+        <Parameter Name="WebSiteInstallDir" Type="LocalDirectory" DefaultValue="" Required="True" Description="User_Local_Site_Installation_Folder" RequiredMessage="User_Local_Site_Installation_Folder_Required_Message" />
+        <Parameter Name="WebSiteIISSite" Type="IISSite" DefaultValue="Default" Required="True" Description="User_Local_Site_IIS_Site" RequiredMessage="User_Local_Site_IIS_Site_Required_Message" />
+        <Parameter Name="WebSiteVirtualDirectory" Type="Text" DefaultValue="Prosegur.Genesis.Web" Required="True" Description="User_Local_Site_Virtual_Directory" RequiredMessage="User_Local_Site_Virtual_Directory_Required_Message" />
+        <Parameter Name="WebSiteIISSiteApplicationPool" Type="IISApplicationPool" DefaultValue="" Required="True" Description="User_Local_Site_IIS_Site_Application_Pool" RequiredMessage="User_Local_Site_IIS_Site_Application_Pool_Required_Message" />
+      </ParametersSection>
+      <ParametersSection SectionName="Servicio [VersionGeneral]">
+        <Parameter Name="ServiceInstallDir" Type="LocalDirectory" DefaultValue="" Required="True" Description="User_Local_Service_Installation_Folder" RequiredMessage="User_Local_Site_Installation_Folder_Required_Message" />
+        <Parameter Name="SiteIISService" Type="IISSite" DefaultValue="Default" Required="True" Description="User_Local_Site_IIS_Site" RequiredMessage="User_Local_Site_IIS_Site_Required_Message" />
+        <Parameter Name="ServiceVirtualDirectory" Type="Text" DefaultValue="Prosegur.Genesis.Servicio" Required="True" Description="User_Local_Service_Virtual_Directory" RequiredMessage="User_Local_Site_Virtual_Directory_Required_Message" />
+        <Parameter Name="ServiceSiteIISSiteApplicationPool" Type="IISApplicationPool" DefaultValue="" Required="True" Description="User_Local_Site_IIS_Site_Application_Pool" RequiredMessage="User_Local_Site_IIS_Site_Application_Pool_Required_Message" />
+      </ParametersSection>
+      <ParametersSection SectionName="Instalación anterior del servicio">
+        <Parameter Name="PreviousInstallDir" Type="LocalDirectory" DefaultValue="[ServiceInstallDir]\[VersionAnteriorServicio]" Required="True" Description="[User_Local_Previous_Service_Installation_Folder_Part1] [VersionGeneral] [User_Local_Previous_Service_Installation_Folder_Part2] [VersionAnteriorServicio])." RequiredMessage="User_Local_Previous_Service_Installation_Folder_Required_Message" />
+      </ParametersSection>
+      <ParametersSection SectionName="Grants/Synonyms">
+        <Parameter Name="ListGrantsSynonyms" Type="ListaGeS" DefaultValue="" Required="False" Description="User_Local_Grants_Synonyms" RequiredMessage="User_Local_Grants_Synonyms_Required_Message" />
+      </ParametersSection>
+      <ParametersSection SectionName="Database">
+        <Parameter Name="OracleConnection" DBCFile="[PreviousInstallDir]\bin" InvalidDirectoryError="[User_Local_Database_OracleConnection_Invalid_Directory_Root] &quot;[PreviousInstallDir]&quot;." Type="ConnectionString" DefaultValue="" Required="True" Description="User_Local_Database" RequiredMessage="User_Local_Database_Required_Message" />
+      </ParametersSection>
+    </UserParameters>
+    <InstallationFiles>
+      <Package Name="IACWebFiles" Value="Prosegur.Genesis.IAC.[VersionIAC].zip" />
+      <Package Name="ReportesWebFiles" Value="Prosegur.Genesis.Reportes.[VersionReportes].zip" />
+      <Package Name="NuevoSaldosWebFiles" Value="Prosegur.Genesis.NuevoSaldos.[VersionNuevoSaldos].zip" />
+      <Package Name="ServiceFiles" Value="Prosegur.Genesis.Servicio.[VersionServicio].zip" />
+      <Package Name="WebFiles" Value="Prosegur.Genesis.Web.[VersionWeb].zip" />
+      <Package Name="GenesisBinaryFiles" Value="Prosegur.Genesis.Genesis.[VersionGenesis].zip" />
+      <File Name="Genesis" Value="Genesis.sql" />
+      <File Name="Reportes" Value="Reportes.sql" />
+      <File Name="GenesisGeS" Value="Genesis_GeS.sql" />
+      <File Name="ReportesGeS" Value="Reportes_GeS.sql" />
+      <File Name="CompileSchema" Value="CompileSchema.sql" />
+      <File Name="CompileSchemaVersao" Value="CompileSchemaVersao.sql" />
+    </InstallationFiles>
+  </Parameters>
+  <Installation>
+    <Actions>
+      <!--Site IAC -->
+      <ExtractPackage ActionName="[User_Installation_Message_CopyFiles_IAC] &quot;[IACSiteInstallDir]\[VersionGeneral]&quot;." PackageName="IACWebFiles" Destination="[IACSiteInstallDir]\[VersionGeneral]" Override="True" />
+      <CreateVirtualDirectory ActionName="[User_Installation_Message_CreateUpdate_VirtualDirectory] &quot;[IACSiteVirtualDirectory].[VersionIAC]&quot;." DirectorySite="[IACSiteIISSite]" ApplicationPoolName="[IACSiteIISSiteApplicationPool]" DirectoryAlias="[IACSiteVirtualDirectory].[VersionIAC]" DirectoryPath="[IACSiteInstallDir]\[VersionGeneral]" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_WebConfig] IAC." Source="[IACSiteInstallDir]\[VersionAnterior]\web.config" Destination="[IACSiteInstallDir]\[VersionGeneral]" Override="True" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_Conexoes] IAC." Source="[ServiceInstallDir]\[VersionAnterior]\bin\conexoes.dbc" Destination="[IACSiteInstallDir]\[VersionGeneral]\bin" Override="True" />
+      <!--Site REPORTES -->
+      <ExtractPackage ActionName="[User_Installation_Message_CopyFiles_Reportes] &quot;[ReportesSiteInstallDir]\[VersionGeneral]&quot;." PackageName="ReportesWebFiles" Destination="[ReportesSiteInstallDir]\[VersionGeneral]" Override="True" />
+      <CreateVirtualDirectory ActionName="[User_Installation_Message_CreateUpdate_VirtualDirectory] &quot;[ReportesSiteVirtualDirectory].[VersionReportes]&quot;." DirectorySite="[ReportesSiteIISSite]" ApplicationPoolName="[ReportesSiteIISSiteApplicationPool]" DirectoryAlias="[ReportesSiteVirtualDirectory].[VersionReportes]" DirectoryPath="[ReportesSiteInstallDir]\[VersionGeneral]" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_WebConfig] REPORTES." Source="[ReportesSiteInstallDir]\[VersionAnterior]\web.config" Destination="[ReportesSiteInstallDir]\[VersionGeneral]" Override="True" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_Conexoes] REPORTES." Source="[ServiceInstallDir]\[VersionAnterior]\bin\conexoes.dbc" Destination="[ReportesSiteInstallDir]\[VersionGeneral]\bin" Override="True" />
+      <!--Site NUEVO SALDOS -->
+      <ExtractPackage ActionName="[User_Installation_Message_CopyFiles_NuevoSaldos] &quot;[NuevoSaldosSiteInstallDir]\[VersionGeneral]&quot;." PackageName="NuevoSaldosWebFiles" Destination="[NuevoSaldosSiteInstallDir]\[VersionGeneral]" Override="True" />
+      <CreateVirtualDirectory ActionName="[User_Installation_Message_CreateUpdate_VirtualDirectory] &quot;[NuevoSaldosSiteVirtualDirectory].[VersionNuevoSaldos]&quot;." DirectorySite="[NuevoSaldosSiteIISSite]" ApplicationPoolName="[NuevoSaldosSiteIISSiteApplicationPool]" DirectoryAlias="[NuevoSaldosSiteVirtualDirectory].[VersionNuevoSaldos]" DirectoryPath="[NuevoSaldosSiteInstallDir]\[VersionGeneral]" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_WebConfig] NUEVO SALDOS." Source="[NuevoSaldosSiteInstallDir]\[VersionAnterior]\web.config" Destination="[NuevoSaldosSiteInstallDir]\[VersionGeneral]" Override="True" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_Conexoes] NUEVO SALDOS." Source="[ServiceInstallDir]\[VersionAnterior]\bin\conexoes.dbc" Destination="[NuevoSaldosSiteInstallDir]\[VersionGeneral]\bin" Override="True" />
+      <!--Servicio -->
+      <ExtractPackage ActionName="[User_Installation_Message_CopyFiles_Servicio] &quot;[ServiceInstallDir]\[VersionGeneral]&quot;." PackageName="ServiceFiles" Destination="[ServiceInstallDir]\[VersionGeneral]" Override="True" />
+      <CreateVirtualDirectory ActionName="[User_Installation_Message_CreateUpdate_VirtualDirectory] &quot;[ServiceVirtualDirectory].[VersionServicio]&quot;." DirectorySite="[SiteIISService]" ApplicationPoolName="[ServiceSiteIISSiteApplicationPool]" DirectoryAlias="[ServiceVirtualDirectory].[VersionServicio]" DirectoryPath="[ServiceInstallDir]\[VersionGeneral]" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_WebConfig] SERVICIO." Source="[ServiceInstallDir]\[VersionAnterior]\web.config" Destination="[ServiceInstallDir]\[VersionGeneral]" Override="True" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_Conexoes] SERVICIO." Source="[ServiceInstallDir]\[VersionAnterior]\bin\conexoes.dbc" Destination="[ServiceInstallDir]\[VersionGeneral]\bin" Override="True" />
+      <!--Site Web -->
+      <ExtractPackage ActionName="[User_Installation_Message_CopyFiles_Web] &quot;[WebSiteInstallDir]\[VersionGeneral]&quot;." PackageName="WebFiles" Destination="[WebSiteInstallDir]\[VersionGeneral]" Override="True" />
+      <CreateVirtualDirectory ActionName="[User_Installation_Message_CreateUpdate_VirtualDirectory] &quot;[WebSiteVirtualDirectory].[VersionWeb]&quot;." DirectorySite="[WebSiteIISSite]" ApplicationPoolName="[WebSiteIISSiteApplicationPool]" DirectoryAlias="[WebSiteVirtualDirectory].[VersionWeb]" DirectoryPath="[WebSiteInstallDir]\[VersionGeneral]" />
+      <CopyFile ActionName="[User_Installation_Message_Copy_WebConfig] WEB." Source="[WebSiteInstallDir]\[VersionAnterior]\web.config" Destination="[WebSiteInstallDir]\[VersionGeneral]" Override="True" />
+      <!--Criando Aplicação IAC-->
+      <PublishApplicationVersion ActionName="[User_Installation_Message_Publish_Application] IAC." VersionBuildCode="[BuildIAC]" VersionServiceUrl="[ServiceVirtualDirectory].[VersionIAC]/" VersionDate="[FechaLiberacionVersion]" VersionCode="[VersionIAC]" VersionContent="IAC" VersionWebSiteUrl="[IACSiteVirtualDirectory].[VersionIAC]/" Connection="CP" />
+      <!--Criando Aplicação REPORTES-->
+      <PublishApplicationVersion ActionName="[User_Installation_Message_Publish_Application] REPORTES." VersionBuildCode="[BuildReportes]" VersionServiceUrl="[ServiceVirtualDirectory].[VersionReportes]/" VersionDate="[FechaLiberacionVersion]" VersionCode="[VersionReportes]" VersionContent="Reportes" VersionWebSiteUrl="[ReportesSiteVirtualDirectory].[VersionReportes]/" Connection="CP" />
+      <!--Criando Aplicação NUEVO SALDOS-->
+      <PublishApplicationVersion ActionName="[User_Installation_Message_Publish_Application] NUEVO SALDOS." VersionBuildCode="[BuildNuevoSaldos]" VersionServiceUrl="[ServiceVirtualDirectory].[VersionNuevoSaldos]/" VersionDate="[FechaLiberacionVersion]" VersionCode="[VersionNuevoSaldos]" VersionContent="GenesisSaldos" VersionWebSiteUrl="[NuevoSaldosSiteVirtualDirectory].[VersionNuevoSaldos]/" Connection="CP" />
+      <!--Executa Scripts Grants e Synonyms-->
+      <!--Executa Scripts GENESIS-->
+      <SqlBatch ActionName="[User_Installation_Message_EjecucionScripts_Genesis_GeS]" FileName="GenesisGeS" Transaction="False" Connection="GENESIS" GeS="True" />
+      <!--Executa Scripts REPORTES-->
+      <SqlBatch ActionName="[User_Installation_Message_EjecucionScripts_Reportes_GeS]" FileName="ReportesGeS" Transaction="False" Connection="REPORTE" GeS="True" />
+      <!--Executa Scripts SEGURIDAD-->
+      <!--Executa Scripts GENESIS-->
+      <SqlBatch ActionName="[User_Installation_Message_EjecucionScripts_Genesis]" FileName="Genesis" Transaction="True" Connection="GENESIS" />
+      <!--Executa Scripts REPORTES-->
+      <SqlBatch ActionName="[User_Installation_Message_EjecucionScripts_Reportes]" FileName="Reportes" Transaction="True" Connection="REPORTE" />
+      <!--Executa Scripts SEGURIDAD-->
+      <!--Executa Scripts Compile Schema-->
+      <!--Executa Scripts GENESIS-->
+      <SqlBatch ActionName="[User_Installation_Message_EjecucionScripts_CompileSchema_Genesis]" FileName="CompileSchema" Transaction="True" Connection="GENESIS" />
+      <!--Executa Scripts REPORTES-->
+      <SqlBatch ActionName="[User_Installation_Message_EjecucionScripts_CompileSchema_Reportes]" FileName="CompileSchema" Transaction="True" Connection="REPORTE" />
+      <!--Executa Scripts Compile Schema Versão-->
+      <!--Executa Scripts GENESIS-->
+      <SqlBatch ActionName="[User_Installation_Message_EjecucionScripts_CompileSchema_Genesis_Version]" FileName="CompileSchemaVersao" Transaction="True" Connection="GENESIS" />
+      <!--Executa Scripts REPORTES-->
+      <SqlBatch ActionName="[User_Installation_Message_EjecucionScripts_CompileSchema_Reportes_Version]" FileName="CompileSchemaVersao" Transaction="True" Connection="REPORTE" />
+      <!--Servicio -->
+      <CreateVirtualDirectory Selected="True" ActionName="[User_Installation_Message_CreateUpdate_VirtualDirectory] &quot;Prosegur.Genesis.Servicio&quot;." DirectorySite="[SiteIISService]" ApplicationPoolName="[ServiceSiteIISSiteApplicationPool]" DirectoryAlias="Prosegur.Genesis.Servicio" DirectoryPath="[ServiceInstallDir]\[VersionGeneral]" />
+      <!--Site Web -->
+      <CreateVirtualDirectory Selected="True" ActionName="[User_Installation_Message_CreateUpdate_VirtualDirectory] &quot;Prosegur.Genesis.Web&quot;." DirectorySite="[WebSiteIISSite]" ApplicationPoolName="[WebSiteIISSiteApplicationPool]" DirectoryAlias="Prosegur.Genesis.Web" DirectoryPath="[WebSiteInstallDir]\[VersionGeneral]" />
+    </Actions>
+  </Installation>
+</InstallScript>

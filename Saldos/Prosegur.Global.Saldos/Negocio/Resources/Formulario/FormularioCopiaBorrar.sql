@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_Copia WHERE IdFormulario = :IdFormulario

@@ -1,0 +1,1 @@
+﻿select pd_cliente_idcliente_seq.nextval from dual

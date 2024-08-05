@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>1.65333cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.83854cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.49417cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox7">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Importe</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </RightBorder>
+                        <BackgroundColor>LightSteelBlue</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <ColSpan>2</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.54708cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="DIVISA">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!DIVISA.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>DIVISA</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="NUM_IMPORTE">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!NUM_IMPORTE.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <Format>#,0.00</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>NUM_IMPORTE</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <TablixHeader>
+                <Size>3.53008cm</Size>
+                <CellContents>
+                  <Textbox Name="Textbox14">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Precintos Contenedor</Value>
+                            <Style>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox13</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                      <TopBorder>
+                        <Color>Black</Color>
+                        <Style>Solid</Style>
+                        <Width>1pt</Width>
+                      </TopBorder>
+                      <BottomBorder>
+                        <Color>Black</Color>
+                        <Style>Solid</Style>
+                        <Width>1pt</Width>
+                      </BottomBorder>
+                      <LeftBorder>
+                        <Color>Black</Color>
+                        <Style>Solid</Style>
+                        <Width>1pt</Width>
+                      </LeftBorder>
+                      <RightBorder>
+                        <Color>Black</Color>
+                        <Style>Solid</Style>
+                        <Width>1pt</Width>
+                      </RightBorder>
+                      <BackgroundColor>LightSteelBlue</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>3.17437cm</Size>
+                    <CellContents>
+                      <Textbox Name="Textbox13">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Precintos Hijos</Value>
+                                <Style>
+                                  <FontSize>8pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox13</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </RightBorder>
+                          <BackgroundColor>LightSteelBlue</BackgroundColor>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>8.14855cm</Size>
+                        <CellContents>
+                          <Textbox Name="Textbox11">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Cuenta</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox11</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                              <TopBorder>
+                                <Color>Black</Color>
+                                <Style>Solid</Style>
+                                <Width>1pt</Width>
+                              </TopBorder>
+                              <BottomBorder>
+                                <Color>Black</Color>
+                                <Style>Solid</Style>
+                                <Width>1pt</Width>
+                              </BottomBorder>
+                              <LeftBorder>
+                                <Color>Black</Color>
+                                <Style>Solid</Style>
+                                <Width>1pt</Width>
+                              </LeftBorder>
+                              <RightBorder>
+                                <Color>Black</Color>
+                                <Style>Solid</Style>
+                                <Width>1pt</Width>
+                              </RightBorder>
+                              <BackgroundColor>LightSteelBlue</BackgroundColor>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="PRECINTOS">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!PRECINTOS.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!PRECINTOS.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>3.53008cm</Size>
+                    <CellContents>
+                      <Textbox Name="PRECINTOS1">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!PRECINTOS.Value</Value>
+                                <Style>
+                                  <FontSize>8pt</FontSize>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>PRECINTOS1</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Style>Solid</Style>
+                          </Border>
+                          <TopBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </TopBorder>
+                          <BottomBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </BottomBorder>
+                          <LeftBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </LeftBorder>
+                          <RightBorder>
+                            <Color>Black</Color>
+                            <Style>Solid</Style>
+                            <Width>1pt</Width>
+                          </RightBorder>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>3.17437cm</Size>
+                        <CellContents>
+                          <Textbox Name="PRECINTOS">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>=Fields!PRECINTOS_HIJOS_CONTENEDOR.Value +
+IIF(Fields!PRECINTOS_HIJOS_BULTO.Value &lt;&gt; Nothing, "|" + Fields!PRECINTOS_HIJOS_BULTO.Value, String.Empty) +
+IIF(Fields!PRECINTOS_HIJOS_REMESA.Value &lt;&gt; Nothing, "|" +Fields!PRECINTOS_HIJOS_REMESA.Value, String.Empty)</Value>
+                                    <Style>
+                                      <FontSize>8pt</FontSize>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>PRECINTOS</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Style>Solid</Style>
+                              </Border>
+                              <TopBorder>
+                                <Color>Black</Color>
+                                <Style>Solid</Style>
+                                <Width>1pt</Width>
+                              </TopBorder>
+                              <BottomBorder>
+                                <Color>Black</Color>
+                                <Style>Solid</Style>
+                                <Width>1pt</Width>
+                              </BottomBorder>
+                              <LeftBorder>
+                                <Color>Black</Color>
+                                <Style>Solid</Style>
+                                <Width>1pt</Width>
+                              </LeftBorder>
+                              <RightBorder>
+                                <Color>Black</Color>
+                                <Style>Solid</Style>
+                                <Width>1pt</Width>
+                              </RightBorder>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember>
+                          <Group Name="OID_CUENTA_OR">
+                            <GroupExpressions>
+                              <GroupExpression>=Fields!OID_CUENTA_OR.Value</GroupExpression>
+                              <GroupExpression>=Fields!OID_CUENTA_DE.Value</GroupExpression>
+                            </GroupExpressions>
+                          </Group>
+                          <SortExpressions>
+                            <SortExpression>
+                              <Value>=Fields!OID_CUENTA_OR.Value</Value>
+                            </SortExpression>
+                          </SortExpressions>
+                          <TablixHeader>
+                            <Size>4.16688cm</Size>
+                            <CellContents>
+                              <Textbox Name="Textbox12">
+                                <CanGrow>true</CanGrow>
+                                <KeepTogether>true</KeepTogether>
+                                <Paragraphs>
+                                  <Paragraph>
+                                    <TextRuns>
+                                      <TextRun>
+                                        <Value>=IIF(Fields!COD_CLIENTE_OR.Value &lt;&gt; Nothing, "De:" + Fields!COD_CLIENTE_OR.Value + " " + Fields!DES_CLIENTE_OR.Value, String.Empty)
++ IIF(Fields!COD_SUB_CLIENTE_OR.Value &lt;&gt; Nothing, " - " + Fields!COD_SUB_CLIENTE_OR.Value + " " + Fields!DES_SUB_CLIENTE_OR.Value, String.Empty)
++ IIF(Fields!COD_PTO_SERVICIO_OR.Value &lt;&gt; Nothing, " - " + Fields!COD_PTO_SERVICIO_OR.Value + " " + Fields!DES_PTO_SERVICIO_OR.Value, String.Empty) + VbCRLF + 
+IIF(Fields!COD_CLIENTE_DE.Value &lt;&gt; Nothing, "A:" + Fields!COD_CLIENTE_DE.Value + " " + Fields!DES_CLIENTE_DE.Value, String.Empty)
++ IIF(Fields!COD_SUB_CLIENTE_DE.Value &lt;&gt; Nothing, " - " + Fields!COD_SUB_CLIENTE_DE.Value + " " + Fields!DES_SUB_CLIENTE_DE.Value, String.Empty)
++ IIF(Fields!COD_PTO_SERVICIO_DE.Value &lt;&gt; Nothing, " - " + Fields!COD_PTO_SERVICIO_DE.Value + " " + Fields!DES_PTO_SERVICIO_DE.Value, String.Empty)</Value>
+                                        <Style>
+                                          <FontSize>8pt</FontSize>
+                                        </Style>
+                                      </TextRun>
+                                    </TextRuns>
+                                    <Style />
+                                  </Paragraph>
+                                </Paragraphs>
+                                <rd:DefaultName>Textbox12</rd:DefaultName>
+                                <Style>
+                                  <Border>
+                                    <Style>Solid</Style>
+                                  </Border>
+                                  <TopBorder>
+                                    <Color>Black</Color>
+                                    <Style>Solid</Style>
+                                    <Width>1pt</Width>
+                                  </TopBorder>
+                                  <BottomBorder>
+                                    <Color>Black</Color>
+                                    <Style>Solid</Style>
+                                    <Width>1pt</Width>
+                                  </BottomBorder>
+                                  <LeftBorder>
+                                    <Color>Black</Color>
+                                    <Style>Solid</Style>
+                                    <Width>1pt</Width>
+                                  </LeftBorder>
+                                  <RightBorder>
+                                    <Color>Black</Color>
+                                    <Style>Solid</Style>
+                                    <Width>1pt</Width>
+                                  </RightBorder>
+                                  <PaddingLeft>2pt</PaddingLeft>
+                                  <PaddingRight>2pt</PaddingRight>
+                                  <PaddingTop>2pt</PaddingTop>
+                                  <PaddingBottom>2pt</PaddingBottom>
+                                </Style>
+                              </Textbox>
+                            </CellContents>
+                          </TablixHeader>
+                          <TablixMembers>
+                            <TablixMember>
+                              <TablixHeader>
+                                <Size>3.98167cm</Size>
+                                <CellContents>
+                                  <Textbox Name="OID_CUENTA_OR">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>=IIF(Fields!COD_CLIENTE_OR.Value &lt;&gt; Nothing, "De:" + Fields!COD_CANAL_OR.Value + " " + Fields!DES_CANAL_OR.Value, String.Empty) + VbCRLF + 
+IIF(Fields!COD_CLIENTE_DE.Value &lt;&gt; Nothing, "A:" + Fields!COD_CANAL_DE.Value + " " + Fields!DES_CANAL_DE.Value, String.Empty)</Value>
+                                            <Style>
+                                              <FontSize>8pt</FontSize>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>OID_CUENTA_OR</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <TopBorder>
+                                        <Color>Black</Color>
+                                        <Style>Solid</Style>
+                                        <Width>1pt</Width>
+                                      </TopBorder>
+                                      <BottomBorder>
+                                        <Color>Black</Color>
+                                        <Style>Solid</Style>
+                                        <Width>1pt</Width>
+                                      </BottomBorder>
+                                      <LeftBorder>
+                                        <Color>Black</Color>
+                                        <Style>Solid</Style>
+                                        <Width>1pt</Width>
+                                      </LeftBorder>
+                                      <RightBorder>
+                                        <Color>Black</Color>
+                                        <Style>Solid</Style>
+                                        <Width>1pt</Width>
+                                      </RightBorder>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixHeader>
+                              <TablixMembers>
+                                <TablixMember>
+                                  <Group Name="Details" />
+                                </TablixMember>
+                              </TablixMembers>
+                            </TablixMember>
+                          </TablixMembers>
+                        </TablixMember>
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>ds_ListaContenedoresGrupo</DataSetName>
+        <Height>1.04125cm</Height>
+        <Width>18.34487cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>0.40994in</Height>
+    <Style />
+  </Body>
+  <Width>7.22239in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Reporte">
+      <DataSourceReference>REPORTES_PRE</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>5dfed308-a0f7-4135-903d-c063f131b1ec</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ds_ListaContenedoresGrupo">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT
+CO.COD_CONTENEDOR,
+(SELECT LISTAGG(COD_PRECINTO, ' | ') WITHIN GROUP(ORDER BY OID_CONTENEDOR) AS COD_PRECINTOS
+                         FROM RPGE_YPRECINTOXCONTENEDOR
+                        WHERE OID_CONTENEDOR = CO.OID_CONTENEDOR
+                        GROUP BY OID_CONTENEDOR) AS PRECINTOS,
+(SELECT LISTAGG(PREC1.COD_PRECINTO, ' | ') WITHIN GROUP(ORDER BY CO1.OID_CONTENEDOR_PADRE) AS COD_PRECINTOS
+                         FROM RPGE_YCONTENEDOR CO1
+                         INNER JOIN RPGE_YPRECINTOXCONTENEDOR PREC1 ON CO1.OID_CONTENEDOR = PREC1.OID_CONTENEDOR
+                        WHERE CO1.OID_CONTENEDOR_PADRE = CO.OID_CONTENEDOR
+                        GROUP BY CO1.OID_CONTENEDOR) AS PRECINTOS_HIJOS_CONTENEDOR,
+(SELECT LISTAGG(BUL.COD_PRECINTO, ' | ') WITHIN GROUP(ORDER BY BUL.OID_CONTENEDOR_PADRE) AS COD_PRECINTOS
+                         FROM RPGE_YBULTO BUL
+                         WHERE BUL.OID_CONTENEDOR_PADRE = CO.OID_CONTENEDOR
+                        GROUP BY BUL.OID_CONTENEDOR_PADRE) AS PRECINTOS_HIJOS_BULTO,
+(SELECT LISTAGG(REM.COD_EXTERNO , ' | ') WITHIN GROUP(ORDER BY REM.OID_CONTENEDOR_PADRE) AS COD_PRECINTOS
+                         FROM RPGE_YREMESA REM
+                         WHERE REM.OID_CONTENEDOR_PADRE = CO.OID_CONTENEDOR
+                        GROUP BY REM.OID_CONTENEDOR_PADRE) AS PRECINTOS_HIJOS_REMESA,
+CUE_OR.OID_CUENTA AS OID_CUENTA_OR,
+CUE_DE.OID_CUENTA AS OID_CUENTA_DE,
+CUE_OR.COD_CLIENTE AS COD_CLIENTE_OR,
+CUE_OR.DES_CLIENTE AS DES_CLIENTE_OR,
+CUE_OR.COD_SUBCLIENTE AS COD_SUB_CLIENTE_OR,
+CUE_OR.DES_SUBCLIENTE AS DES_SUB_CLIENTE_OR,
+CUE_OR.COD_PTO_SERVICIO AS COD_PTO_SERVICIO_OR,
+CUE_OR.DES_PTO_SERVICIO AS DES_PTO_SERVICIO_OR,
+CUE_OR.COD_CANAL AS COD_CANAL_OR,
+CUE_OR.DES_CANAL AS DES_CANAL_OR,
+CUE_DE.COD_CLIENTE AS COD_CLIENTE_DE,
+CUE_DE.DES_CLIENTE AS DES_CLIENTE_DE,
+CUE_DE.COD_SUBCLIENTE AS COD_SUB_CLIENTE_DE,
+CUE_DE.DES_SUBCLIENTE AS DES_SUB_CLIENTE_DE,
+CUE_DE.COD_PTO_SERVICIO AS COD_PTO_SERVICIO_DE,
+CUE_DE.DES_PTO_SERVICIO AS DES_PTO_SERVICIO_DE,
+CUE_DE.COD_CANAL AS COD_CANAL_DE,
+CUE_DE.DES_CANAL AS DES_CANAL_DE,
+DIV.DES_DIVISA AS DIVISA,
+SUM(EFD.NUM_IMPORTE) NUM_IMPORTE
+FROM RPGE_YGRUPO_DOCUMENTO GD
+INNER JOIN RPGE_YDOCUMENTO D ON GD.OID_GRUPO_DOCUMENTO = D.OID_GRUPO_DOCUMENTO
+INNER JOIN RPGE_YDOCUMENTOXELEMENTO DEL ON DEL.OID_DOCUMENTO = D.OID_DOCUMENTO
+INNER JOIN RPGE_YCONTENEDOR CO ON CO.OID_CONTENEDOR = DEL.OID_CONTENEDOR
+INNER JOIN RPGE_YEFECTIVOXDOCUMENTO EFD ON EFD.OID_DOCUMENTO = D.OID_DOCUMENTO
+INNER JOIN RPGE_YDIVISA DIV ON DIV.OID_DIVISA = EFD.OID_DIVISA
+INNER JOIN RPGE_YVCUENTA CUE_OR ON D.OID_CUENTA_ORIGEN = CUE_OR.OID_CUENTA
+INNER JOIN RPGE_YVCUENTA CUE_DE ON D.OID_CUENTA_DESTINO = CUE_DE.OID_CUENTA
+WHERE EFD.COD_NIVEL_DETALLE IN('D', 'T', 'G') 
+AND GD.COD_COMPROBANTE = :P_COD_COMPROBANTE
+GROUP BY CO.COD_CONTENEDOR,
+CO.OID_CONTENEDOR,
+CUE_OR.OID_CUENTA,
+CUE_DE.OID_CUENTA,
+CUE_OR.COD_CLIENTE,
+CUE_OR.DES_CLIENTE,
+CUE_OR.COD_SUBCLIENTE,
+CUE_OR.DES_SUBCLIENTE,
+CUE_OR.COD_PTO_SERVICIO,
+CUE_OR.DES_PTO_SERVICIO,
+CUE_OR.COD_CANAL,
+CUE_OR.DES_CANAL,
+CUE_DE.COD_CLIENTE,
+CUE_DE.DES_CLIENTE,
+CUE_DE.COD_SUBCLIENTE,
+CUE_DE.DES_SUBCLIENTE,
+CUE_DE.COD_PTO_SERVICIO,
+CUE_DE.DES_PTO_SERVICIO,
+CUE_DE.COD_CANAL,
+CUE_DE.DES_CANAL,
+DIV.DES_DIVISA 
+
+UNION
+
+SELECT 
+CO.COD_CONTENEDOR,
+(SELECT LISTAGG(COD_PRECINTO, ' | ') WITHIN GROUP(ORDER BY OID_CONTENEDOR) AS COD_PRECINTOS
+                         FROM RPGE_YPRECINTOXCONTENEDOR
+                        WHERE OID_CONTENEDOR = CO.OID_CONTENEDOR
+                        GROUP BY OID_CONTENEDOR) AS PRECINTOS,
+(SELECT LISTAGG(PREC1.COD_PRECINTO, ' | ') WITHIN GROUP(ORDER BY CO1.OID_CONTENEDOR_PADRE) AS COD_PRECINTOS
+                         FROM RPGE_YCONTENEDOR CO1
+                         INNER JOIN RPGE_YPRECINTOXCONTENEDOR PREC1 ON CO1.OID_CONTENEDOR = PREC1.OID_CONTENEDOR
+                        WHERE CO1.OID_CONTENEDOR_PADRE = CO.OID_CONTENEDOR
+                        GROUP BY CO1.OID_CONTENEDOR) AS PRECINTOS_HIJOS_CONTENEDOR,
+(SELECT LISTAGG(BUL.COD_PRECINTO, ' | ') WITHIN GROUP(ORDER BY BUL.OID_CONTENEDOR_PADRE) AS COD_PRECINTOS
+                         FROM RPGE_YBULTO BUL
+                         WHERE BUL.OID_CONTENEDOR_PADRE = CO.OID_CONTENEDOR
+                        GROUP BY BUL.OID_CONTENEDOR_PADRE) AS PRECINTOS_HIJOS_BULTO,
+(SELECT LISTAGG(REM.COD_EXTERNO , ' | ') WITHIN GROUP(ORDER BY REM.OID_CONTENEDOR_PADRE) AS COD_PRECINTOS
+                         FROM RPGE_YREMESA REM
+                         WHERE REM.OID_CONTENEDOR_PADRE = CO.OID_CONTENEDOR
+                        GROUP BY REM.OID_CONTENEDOR_PADRE) AS PRECINTOS_HIJOS_REMESA,
+CUE_OR.OID_CUENTA AS OID_CUENTA_OR,
+CUE_DE.OID_CUENTA AS OID_CUENTA_DE,
+CUE_OR.COD_CLIENTE AS COD_CLIENTE_OR,
+CUE_OR.DES_CLIENTE AS DES_CLIENTE_OR,
+CUE_OR.COD_SUBCLIENTE AS COD_SUB_CLIENTE_OR,
+CUE_OR.DES_SUBCLIENTE AS DES_SUB_CLIENTE_OR,
+CUE_OR.COD_PTO_SERVICIO AS COD_PTO_SERVICIO_OR,
+CUE_OR.DES_PTO_SERVICIO AS DES_PTO_SERVICIO_OR,
+CUE_OR.COD_CANAL AS COD_CANAL_OR,
+CUE_OR.DES_CANAL AS DES_CANAL_OR,
+CUE_DE.COD_CLIENTE AS COD_CLIENTE_DE,
+CUE_DE.DES_CLIENTE AS DES_CLIENTE_DE,
+CUE_DE.COD_SUBCLIENTE AS COD_SUB_CLIENTE_DE,
+CUE_DE.DES_SUBCLIENTE AS DES_SUB_CLIENTE_DE,
+CUE_DE.COD_PTO_SERVICIO AS COD_PTO_SERVICIO_DE,
+CUE_DE.DES_PTO_SERVICIO AS DES_PTO_SERVICIO_DE,
+CUE_DE.COD_CANAL AS COD_CANAL_DE,
+CUE_DE.DES_CANAL AS DES_CANAL_DE,
+MPG.DES_MEDIO_PAGO || ' ' || DIV.DES_DIVISA AS DIVISA,
+SUM(MPD.NUM_IMPORTE) NUM_IMPORTE
+FROM RPGE_YGRUPO_DOCUMENTO GD
+INNER JOIN RPGE_YDOCUMENTO D ON GD.OID_GRUPO_DOCUMENTO = D.OID_GRUPO_DOCUMENTO
+INNER JOIN RPGE_YDOCUMENTOXELEMENTO DEL ON DEL.OID_DOCUMENTO = D.OID_DOCUMENTO
+INNER JOIN RPGE_YCONTENEDOR CO ON CO.OID_CONTENEDOR = DEL.OID_CONTENEDOR
+INNER JOIN RPGE_YMEDIO_PAGOXDOCUMENTO MPD ON MPD.OID_DOCUMENTO = D.OID_DOCUMENTO
+INNER JOIN RPGE_YMEDIO_PAGO MPG ON MPD.OID_MEDIO_PAGO = MPG.OID_MEDIO_PAGO
+INNER JOIN RPGE_YDIVISA DIV ON DIV.OID_DIVISA = MPD.OID_DIVISA
+INNER JOIN RPGE_YVCUENTA CUE_OR ON D.OID_CUENTA_ORIGEN = CUE_OR.OID_CUENTA
+INNER JOIN RPGE_YVCUENTA CUE_DE ON D.OID_CUENTA_DESTINO = CUE_DE.OID_CUENTA
+WHERE MPD.COD_NIVEL_DETALLE IN('D','T')  
+AND GD.COD_COMPROBANTE = :P_COD_COMPROBANTE
+GROUP BY CO.COD_CONTENEDOR,
+CO.OID_CONTENEDOR,
+CUE_OR.OID_CUENTA,
+CUE_DE.OID_CUENTA,
+CUE_OR.COD_CLIENTE,
+CUE_OR.DES_CLIENTE,
+CUE_OR.COD_SUBCLIENTE,
+CUE_OR.DES_SUBCLIENTE,
+CUE_OR.COD_PTO_SERVICIO,
+CUE_OR.DES_PTO_SERVICIO,
+CUE_OR.COD_CANAL,
+CUE_OR.DES_CANAL,
+CUE_DE.COD_CLIENTE,
+CUE_DE.DES_CLIENTE,
+CUE_DE.COD_SUBCLIENTE,
+CUE_DE.DES_SUBCLIENTE,
+CUE_DE.COD_PTO_SERVICIO,
+CUE_DE.DES_PTO_SERVICIO,
+CUE_DE.COD_CANAL,
+CUE_DE.DES_CANAL,
+DIV.DES_DIVISA,
+MPG.DES_MEDIO_PAGO</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="COD_CONTENEDOR">
+          <DataField>COD_CONTENEDOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRECINTOS">
+          <DataField>PRECINTOS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRECINTOS_HIJOS_CONTENEDOR">
+          <DataField>PRECINTOS_HIJOS_CONTENEDOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRECINTOS_HIJOS_BULTO">
+          <DataField>PRECINTOS_HIJOS_BULTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRECINTOS_HIJOS_REMESA">
+          <DataField>PRECINTOS_HIJOS_REMESA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_CLIENTE_OR">
+          <DataField>COD_CLIENTE_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OID_CUENTA_OR">
+          <DataField>OID_CUENTA_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_CLIENTE_OR">
+          <DataField>DES_CLIENTE_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OID_CUENTA_DE">
+          <DataField>OID_CUENTA_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_SUB_CLIENTE_OR">
+          <DataField>COD_SUB_CLIENTE_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_SUB_CLIENTE_OR">
+          <DataField>DES_SUB_CLIENTE_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_PTO_SERVICIO_OR">
+          <DataField>COD_PTO_SERVICIO_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_PTO_SERVICIO_OR">
+          <DataField>DES_PTO_SERVICIO_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_CANAL_OR">
+          <DataField>COD_CANAL_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_CANAL_OR">
+          <DataField>DES_CANAL_OR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DIVISA">
+          <DataField>DIVISA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_CLIENTE_DE">
+          <DataField>COD_CLIENTE_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NUM_IMPORTE">
+          <DataField>NUM_IMPORTE</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DES_CLIENTE_DE">
+          <DataField>DES_CLIENTE_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_SUB_CLIENTE_DE">
+          <DataField>COD_SUB_CLIENTE_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_SUB_CLIENTE_DE">
+          <DataField>DES_SUB_CLIENTE_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_PTO_SERVICIO_DE">
+          <DataField>COD_PTO_SERVICIO_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_PTO_SERVICIO_DE">
+          <DataField>DES_PTO_SERVICIO_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COD_CANAL_DE">
+          <DataField>COD_CANAL_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DES_CANAL_DE">
+          <DataField>DES_CANAL_DE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="P_COD_COMPROBANTE">
+      <DataType>String</DataType>
+      <Prompt>P COD COMPROBANTE</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>7a3ca760-f1ad-4767-b682-300ff59be77a</rd:ReportID>
+</Report>

@@ -1,0 +1,22 @@
+﻿.valignMiddle 
+{
+    /*top: 50% !important;*/
+}
+.page{
+	min-height:0px;
+}
+.page .logo {	
+	margin:-70px 0 3% 25%;
+	float:none;
+}
+.versionAplicacionLista 
+{
+    float:left;
+    text-align:right;
+}
+.versionAplicacionLista .logo {	
+	margin:0px 0 0% 25%;
+}
+.page .loginbox .form .button.login {
+	margin-left:37px;	
+}

@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_Bulto WHERE IdDocumento = :IdDocumento

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:amqp="http://www.mulesoft.org/schema/mule/amqp"
+	xmlns:validation="http://www.mulesoft.org/schema/mule/validation"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd
+http://www.mulesoft.org/schema/mule/amqp http://www.mulesoft.org/schema/mule/amqp/current/mule-amqp.xsd">
+	<sub-flow name="getBilling" doc:id="f5e6e97c-d03f-49e3-a835-5a474d6c82c9" >
+		<set-variable value="#[%dw 2.0&#10;output application/java&#10;--- &#10;upper(attributes.uriParams.countryCode)]" doc:name="Set CodPais" doc:id="98a9bb75-0de3-4208-ada4-cb1a03bea1c1" variableName="CodPais" />
+		<set-variable doc:name="Set Token" doc:id="239f8b3f-4dee-46f6-a585-e4243e4c96dd" variableName="Token" value="#[p('servicio.' ++ vars.CodPais ++ '.token')]" />
+		<try doc:name="Try" doc:id="4afa30a3-5113-4126-b7e8-bd1676094b07" >
+			<flow-ref doc:name="RecuperarSaldosAcuerdo" doc:id="50c46664-4ac2-4328-a0a6-38ddafe6e606" name="RecuperarSaldosAcuerdo" />
+			<error-handler >
+				<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="8f9baff0-0149-43ce-ab7a-2e7fe376aa60" >
+					<set-payload value="#[error.description]" doc:name="Set Payload" doc:id="905c5d32-afcb-45e0-add7-abdf193ce6b5" />
+				</on-error-propagate>
+			</error-handler>
+		</try>
+		<choice doc:name="Choice" doc:id="1033500c-9f6b-45c7-8f66-532cfdc62e3a">
+			<when expression="#[vars.CodResultado == 0]">
+				<ee:transform doc:name="Exito To JSON" doc:id="24c465fb-d591-49ae-bdbe-8059c1ed5280">
+					<ee:message>
+						<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+ns ns0 Integracion
+ns ns01 urn:RecuperarSaldosAcuerdo
+---
+{
+	apiVersion: "1.0",
+	systemCode: "genesis-producto",
+	eventType: "cash-today",
+	countryCode: vars.CodPais,
+	serviceUniqueId: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].@SourceReferenceId default "",
+	contractId: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#ContractId,
+	serviceOrderId: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#ServiceOrderId,
+	serviceOrderCode: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#ServiceOrderCode,
+	productCode: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#ProductCode,
+	servicePointCode: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#CodigoPuntoServicio,
+	date: if(!isEmpty(payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#CashIns))
+	(
+		payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#CashIns[0].ns01#FechaHoraFin as DateTime default null
+	)
+	else if(!isEmpty(payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#ShipOuts))
+	(
+		payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#ShipOuts[0].ns01#FechaHoraFin as DateTime default null
+	)
+	else if(!isEmpty(payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#Acreditaciones))
+	(
+		payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#Acreditaciones[0].ns01#FechaHoraAcreditacion as DateTime default null
+	)
+	else (null),
+	(cashIn: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#CashIns.*ns01#CashIn map ( cashIn , indexOfCashIn ) -> {
+			amount: cashIn.ns01#Total as Number default 0,
+			currency: cashIn.ns01#Divisa default "",
+			merchandiseType: cashIn.ns01#TipoMercancia as Number default 0,
+			transactionCount: cashIn.ns01#CantidadTransacciones as Number default 0
+	})
+	if(!isEmpty(payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#CashIns))
+	,
+	(
+		shipOut: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#ShipOuts.*ns01#ShipOut map ( shipOut , indexOfShipOut ) -> {
+			amount: shipOut.ns01#Total as Number default 0,
+			currency: shipOut.ns01#Divisa default "",
+			merchandiseType: shipOut.ns01#TipoMercancia as Number default 0,
+			transactionCount: shipOut.ns01#CantidadTransacciones as Number default 0
+	})
+	if(!isEmpty(payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#ShipOuts))
+	,
+	(
+		earlyValue: payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#Acreditaciones.*ns01#Acreditacion map ( acreditacion , indexOfAcreditacion ) -> {
+			earlyValueAdmissionDate: acreditacion.ns01#FechaHoraInicioVigencia as DateTime default null,
+			currency: acreditacion.ns01#Divisa default "",
+			earlyValueAmount: acreditacion.ns01#TotalAcreditacion as Number default 0,
+			transactionsAmount: acreditacion.ns01#TotalTransacciones as Number default 0,
+			commissionAmount: acreditacion.ns01#TotalComision as Number default 0
+	})
+	if(!isEmpty(payload.body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#PuntosServicio[0].ns01#Acreditaciones))
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<otherwise>
+				<ee:transform doc:name="Error To JSON" doc:id="91029cd2-663b-4e7d-a345-50f855b83e32">
+					<ee:message>
+						<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+ns ns0 Integracion
+ns ns01 urn:RecuperarSaldosAcuerdo
+---
+{
+	description: payload.Body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#Resultado.ns01#Descripcion,
+	details: payload.Body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#Resultado.ns01#Detalles.*ns01#Detalle.@Descripcion
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<set-variable value="400" doc:name="httpStatus" doc:id="279050de-42aa-4a56-a68a-2e281c6a3427" variableName="httpStatus" />
+			</otherwise>
+		</choice>
+		<logger level="INFO" doc:name="Logger" doc:id="006e7488-3b71-47a5-9f71-6c8a5f466970" message="#[payload]" />
+	</sub-flow>
+	<sub-flow name="RecuperarSaldosAcuerdo" doc:id="04b0a5d6-f4d4-4d59-bea5-4da9d28b32ec">
+		<ee:transform doc:name="To XML" doc:id="1901a6a5-99c5-4ecd-8f29-e188f5a06d6e">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+ns ns0 Integracion
+ns ns01 urn:RecuperarSaldosAcuerdo
+---
+{
+	ns0#RecuperarSaldosAcuerdo: {
+		ns01#peticion: {
+			ns01#Configuracion @(Usuario: "API-billing" , Token: vars.Token): null,
+			ns01#CodigoPais: vars.CodPais,
+			ns01#SourceReferenceId: attributes.uriParams.serviceUniqueId
+		}
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<choice doc:name="Choice" doc:id="24b470a9-fd2a-4b3e-9a97-2e02684fa33d">
+			<when expression='vars.CodPais == "DE"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_DE" doc:id="d0bdfa4d-eb17-4f80-88fe-8f3eaa1301dc" config-ref="Integracion_DE" />
+			
+</when>
+            <when expression='vars.CodPais == "AR"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_AR" doc:id="408f1e83-15a2-4bbc-baed-9a56bc1f6482" config-ref="Integracion_AR" />
+			</when>
+            <when expression='vars.CodPais == "AU"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_AU" doc:id="7d55675d-1bc3-4635-b43b-73043949f8be" config-ref="Integracion_AU" />
+			
+</when>
+            <when expression='vars.CodPais == "BR"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_BR" doc:id="0ba20fdc-24d6-4e08-bd92-ed1cb61742c8" config-ref="Integracion_BR" />
+			
+</when>
+            <when expression='vars.CodPais == "CL"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_CL" doc:id="a729a76a-7d73-4468-b7b0-cac3f7ed225a" config-ref="Integracion_CL" />
+			</when>
+            <when expression='vars.CodPais == "CO"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_CO" doc:id="d937b8d3-b346-4d67-8822-7575ce5723c7" config-ref="Integracion_CO" />
+			</when>
+            <when expression='vars.CodPais == "CR"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_CR" doc:id="b14813f9-878b-41ba-a442-c87d13943c7e" config-ref="Integracion_CR" />
+			</when>
+            <when expression='vars.CodPais == "EC"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_EC" doc:id="873d66eb-8622-4111-b942-c4ad92832f3e" config-ref="Integracion_EC" />
+			</when>
+            <when expression='vars.CodPais == "SV"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_SV" doc:id="dbe4b757-af26-4993-818a-3c35ce264ca1" config-ref="Integracion_SV" />
+			</when>
+            <when expression='vars.CodPais == "ES"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_ES" doc:id="990a73ea-3151-4a8d-a977-94801da73239" config-ref="Integracion_ES" />
+			</when>
+            <when expression='vars.CodPais == "PH"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_PH" doc:id="9af1e586-0b10-43aa-bd08-01f3a1c1d668" config-ref="Integracion_PH" />
+			</when>
+            <when expression='vars.CodPais == "FR"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_FR" doc:id="3c3288a6-d288-4969-b331-4ece2eb614e3" config-ref="Integracion_FR" />
+			</when>
+            <when expression='vars.CodPais == "GT"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_GT" doc:id="f564a5df-da97-4f47-9642-b1b054b676c5" config-ref="Integracion_GT" />
+			</when>
+            <when expression='vars.CodPais == "HN"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_HN" doc:id="43e2545c-e417-44f8-982c-c529c7f7a853" config-ref="Integracion_HN" />
+			</when>
+            <when expression='vars.CodPais == "IN"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_IN" doc:id="4e5491d5-91db-4ad4-b391-f1e5897f8acd" config-ref="Integracion_IN" />
+			</when>
+            <when expression='vars.CodPais == "MX"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_MX" doc:id="50f085d6-b3cd-4e40-b96e-765cde4715eb" config-ref="Integracion_MX" />
+			</when>
+            <when expression='vars.CodPais == "NI"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_NI" doc:id="97dccb4e-350e-4333-a294-1f607d9b4f06" config-ref="Integracion_NI" />
+			</when>
+            <when expression='vars.CodPais == "PY"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_PY" doc:id="ad16a40a-4063-4b09-aa87-a6d76874ea0f" config-ref="Integracion_PY" />
+			</when>
+            <when expression='vars.CodPais == "PE"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_PE" doc:id="5f82ab17-c4e9-429c-8ed0-b2934a434e75" config-ref="Integracion_PE" />
+			</when>
+            <when expression='vars.CodPais == "PT"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_PT" doc:id="89afd478-9af1-4a8c-b771-f63b221ef3a2" config-ref="Integracion_PT" />
+			</when>
+            <when expression='vars.CodPais == "UY"'>
+				<wsc:consume operation="RecuperarSaldosAcuerdo" doc:name="RecuperarSaldosAcuerdo_UY" doc:id="f1d08914-e999-4838-97f9-a1e7cb6220b0" config-ref="Integracion_UY" />
+			</when>
+		
+</choice>
+		<set-variable value="#[%dw 2.0&#10;ns ns0 Integracion&#10;ns ns01 urn:RecuperarSaldosAcuerdo&#10;---&#10;payload.Body.ns0#RecuperarSaldosAcuerdoResponse.ns01#RecuperarSaldosAcuerdoResult.ns01#Resultado.ns01#Tipo as Number]" doc:name="CodResultado" doc:id="7bc14e5c-2596-4dc6-93dc-71ab579fd649" variableName="CodResultado" />
+	
+</sub-flow>
+	<sub-flow name="onlineNotificationEventOp" doc:id="c27f3652-d1b8-4d04-a63e-6c6d5c1802ab" >
+		<set-variable value="#[%dw 2.0&#10;output application/java&#10;--- &#10;upper(payload.context.country)]" doc:name="Set CodPais" doc:id="1fd81432-9033-4da1-bc0d-9bcf74b17931" variableName="CodPais" />
+		<ee:transform doc:name="To XML" doc:id="f1865c64-701a-4e4d-aae7-c508a0bafab0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+ns ns0 http://xmlns.services.prosegur.com/corp/notifications/online/event
+---
+{
+	ns0#request: {
+		ns0#source: payload.source,
+		ns0#idTran: payload.idTran,
+		ns0#integration: payload.integration,
+		ns0#dateTime: payload.dateTime as DateTime,
+		ns0#object: {
+			ns0#sourceId: payload.object.sourceId,
+			ns0#operation: payload.object.operation,
+			(payload.object.attributes map ( attribute , indexOfAttribute ) -> {
+				ns0#attributes: {
+					ns0#name: attribute.name,
+					ns0#value: attribute.value
+				}
+			})
+		},
+		ns0#context: {
+			ns0#country: payload.context.country,
+			ns0#region: payload.context.region
+		}
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<try doc:name="Try" doc:id="f1e53cb4-070d-4c34-b1d0-039f99ebf49b" >
+			<choice doc:name="Choice" doc:id="e300a959-90e5-4760-a664-294b94c618e4">
+		    <when expression='vars.CodPais == "DE"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_DE" doc:id="d8251af6-dac6-48fe-9a84-fa1e33c2299a" config-ref="Notificacion_DE" />
+		    </when>
+		    <when expression='vars.CodPais == "AR"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_AR" doc:id="1fe88140-0e51-409e-a18e-a571e7959191" config-ref="Notificacion_AR" />
+		    </when>
+		    <when expression='vars.CodPais == "AU"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_AU" doc:id="7b1945e8-0f6a-4b69-b2d9-2ffcc85e61b2" config-ref="Notificacion_AU" />
+		    </when>
+		    <when expression='vars.CodPais == "BR"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_BR" doc:id="841c5479-3fff-4a11-b9a2-20f6af95f68f" config-ref="Notificacion_BR" />
+		    
+</when>
+		    <when expression='vars.CodPais == "CL"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_CL" doc:id="ba54f451-c418-43f6-bb25-27c9d8266f3d" config-ref="Notificacion_CL" />
+		    
+</when>
+		    <when expression='vars.CodPais == "CO"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_CO" doc:id="82d21023-3192-48ec-911a-8b2fe223ec77" config-ref="Notificacion_CO" />
+		    
+</when>
+		    <when expression='vars.CodPais == "CR"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_CR" doc:id="4f446902-0e37-4f87-98c0-b40853e3f98f" config-ref="Notificacion_CR" />
+		    
+</when>
+		    <when expression='vars.CodPais == "EC"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_EC" doc:id="7628e7f1-2cb3-41a9-9e88-b2a3a95e7573" config-ref="Notificacion_EC" />
+		    
+</when>
+		    <when expression='vars.CodPais == "SV"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_SV" doc:id="9b78ad62-2e6e-4776-b48f-1c1b6cb188ba" config-ref="Notificacion_SV" />
+		    </when>
+		    <when expression='vars.CodPais == "ES"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_ES" doc:id="72399587-ce07-4862-9e8d-248cc4f6f1e4" config-ref="Notificacion_ES" />
+		    
+</when>
+		    <when expression='vars.CodPais == "PH"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_PH" doc:id="2ea91cf3-460a-4d24-bd47-2b8785229c02" config-ref="Notificacion_PH" />
+		    </when>
+		    <when expression='vars.CodPais == "FR"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_FR" doc:id="616014ff-d2ce-44f2-90fa-03e4bf7dd122" config-ref="Notificacion_FR" />
+		    </when>
+		    <when expression='vars.CodPais == "GT"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_GT" doc:id="5b3bcfd7-20db-473b-9316-7a7c92a544e0" config-ref="Notificacion_GT" />
+		    </when>
+		    <when expression='vars.CodPais == "HN"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_HN" doc:id="39a47e93-75a5-4c24-9c45-bb4496b5d716" config-ref="Notificacion_HN" />
+		    </when>
+		    <when expression='vars.CodPais == "IN"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_IN" doc:id="6fe226a9-b691-4dbd-8a3b-b5b7f498c630" config-ref="Notificacion_IN" />
+		    </when>
+		    <when expression='vars.CodPais == "MX"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_MX" doc:id="51f0368d-eeb1-4d6e-ac6f-b47653b35808" config-ref="Notificacion_MX" />
+		    </when>
+		    <when expression='vars.CodPais == "NI"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_NI" doc:id="e7c3d349-84b0-40e5-86c1-b2bb958b61e1" config-ref="Notificacion_NI" />
+		    </when>
+		    <when expression='vars.CodPais == "PY"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_PY" doc:id="b29178b1-aa12-4553-976c-ba1705054dca" config-ref="Notificacion_PY" />
+		    </when>
+		    <when expression='vars.CodPais == "PE"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_PE" doc:id="65006840-d0ad-480e-9abc-6d7ddac21442" config-ref="Notificacion_PE" />
+		    </when>
+		    <when expression='vars.CodPais == "PT"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_PT" doc:id="82313ad7-0d4a-4abe-90b5-d24efe803db5" config-ref="Notificacion_PT" />
+		    </when>
+		    <when expression='vars.CodPais == "UY"'>
+		        <wsc:consume operation="onlineNotificationEventOp" doc:name="onlineNotificationEventOp_UY" doc:id="823d3afc-d397-464e-a4d0-880891cc1b0b" config-ref="Notificacion_UY" />
+		    </when>
+		</choice>
+			<ee:transform doc:name="Transform Message" doc:id="37b30dba-5887-41b6-936b-28f633b0abac">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+ns ns0 http://xmlns.services.prosegur.com/corp/notifications/online/event
+---
+{
+	statusCode: payload.body.ns0#response.ns0#statusCode default "",
+	statusDescription: payload.body.ns0#response.ns0#statusDescription default ""
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+			<error-handler >
+				<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="9a190e0a-ae4e-441e-bee7-de3c7b43a914" type="WSC:TIMEOUT">
+					<set-payload value='#[%dw 2.0&#10;output application/json&#10;---&#10;{&#10;	statusCode: "500",&#10;	statusDescription: error.description&#10;}]' doc:name="Set Payload" doc:id="bf05295d-21ae-4edd-8dcc-96f94d68c3de" />
+<set-variable value="500" doc:name="httpStatus" doc:id="dc5240f3-c2f8-40b9-bbd4-bc8048f79cee" variableName="httpStatus" />
+				</on-error-continue>
+				<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="ea6a7be8-7df2-47ff-978a-655b28f1f339" type="WSC:BAD_REQUEST">
+					<set-payload value='#[%dw 2.0&#10;output application/json&#10;---&#10;{&#10;	statusCode: "400",&#10;	statusDescription: "Bad request"&#10;}]' doc:name="Set Payload" doc:id="fe5fbfd8-e9c9-455f-906c-08c4e174d1d5" />
+					<set-variable value="400" doc:name="httpStatus" doc:id="a92362ec-460e-4687-b1d3-7dc4cc5005a5" variableName="httpStatus" />
+				</on-error-continue>
+				<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="f49ee7f6-0bc7-42f1-8c65-86597401ab1c" type="ANY">
+					<set-payload value='#[%dw 2.0&#10;output application/json&#10;---&#10;{&#10;	statusCode: "200",&#10;	statusDescription: "Success"&#10;}]' doc:name="Set Payload" doc:id="d28246ab-4904-4925-94b0-aa15c2b8376a" />
+				</on-error-continue>
+			</error-handler>
+		</try>
+		<logger level="INFO" doc:name="Logger" doc:id="bf879d6e-be8f-401b-a433-973c7603353f" />
+	</sub-flow>
+</mule>

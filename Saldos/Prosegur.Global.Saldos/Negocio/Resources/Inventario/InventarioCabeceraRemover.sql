@@ -1,0 +1,1 @@
+﻿delete from inventariocabecera where idinventario = :idinventario

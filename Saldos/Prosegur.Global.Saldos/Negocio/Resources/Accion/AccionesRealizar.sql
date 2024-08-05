@@ -1,0 +1,1 @@
+﻿SELECT IdAccion as Id, Descripcion, Codigo FROM PD_Accion

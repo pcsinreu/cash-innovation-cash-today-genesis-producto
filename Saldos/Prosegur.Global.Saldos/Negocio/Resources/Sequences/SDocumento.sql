@@ -1,0 +1,1 @@
+﻿select PD_DOCUMENTOCABECERA_IDDOCUMEN.nextval from dual

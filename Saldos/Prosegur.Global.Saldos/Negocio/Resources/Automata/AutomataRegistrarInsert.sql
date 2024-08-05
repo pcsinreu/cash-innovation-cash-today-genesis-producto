@@ -1,0 +1,28 @@
+﻿INSERT INTO PD_Automata
+  (IdAutomata,
+   IdFormulario,
+   RutaDeTrabajo,
+   IdUsuario,
+   ArchivosPorTurno,
+   Exportador,
+   Descripcion,
+   IdEstadoAExportar,
+   RutaDeCadena,
+   FormatoExportacion,
+   DiasAProcesar,
+   Grupo,
+   Orden)
+VALUES
+  (:IdAutomata,
+   :IdFormulario,
+   :RutaDeTrabajo,
+   :IdUsuario,
+   :ArchivosPorTurno,
+   :Exportador,
+   :Descripcion,
+   :IdEstadoAExportar,
+   :RutaDeCadena,
+   :FormatoExportacion,
+   :DiasAProcesar,
+   :Grupo,
+   :Orden)

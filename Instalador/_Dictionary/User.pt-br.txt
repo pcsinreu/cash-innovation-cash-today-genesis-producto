@@ -1,0 +1,71 @@
+﻿User_Form_Welcome_Text_Welcome_Message							= Bem vindo a instalação da aplicação Genesis.[\nl]Para continuar clique no botão 'Continuar'.
+
+User_Local_Site_Installation_Folder								= Selecione o diretório para instalação.
+User_Local_Site_Installation_Folder_Required_Message			= É obrigatório selecionar um diretório para instalação.
+
+User_Local_Site_IIS_Site										= Selecione o site IIS onde estará a aplicação.
+User_Local_Site_IIS_Site_Required_Message						= É obrigatório selecionar o site IIS onde estará a aplicação.
+
+User_Local_Site_Virtual_Directory								= Informe o diretório virtual da aplicação.
+User_Local_Site_Virtual_Directory_Required_Message				= É obrigatório informar o diretório virtual da aplicação.
+
+User_Local_Site_IIS_Site_Application_Pool						= Selecione o pool de aplicações.
+User_Local_Site_IIS_Site_Application_Pool_Required_Message		= É obrigatório selecionar o o pool de aplicações.
+
+User_Local_Service_Installation_Folder							= Selecione o diretório para instalação.
+User_Local_Service_Installation_Folder_Required_Message			= É obrigatório selecionar um diretório para instalação.
+
+User_Local_Service_IIS_Site										= Informe o site do IIS a ser utilizado.
+User_Local_Service_IIS_Site_Required_Message					= É obrigatório selecionar um site para instalação.
+
+User_Local_Service_Virtual_Directory							= Informe o nome do diretório virtual a ser criado.
+User_Local_Service_Virtual_Directory_Required_Message			= É obrigatório informar o diretório virtual a ser criado.
+
+User_Local_Database												= Confira na listagem abaixo os dados de conexões para a execução dos scripts
+User_Local_Database_Required_Message							= É obrigatório configurar os dados de conexão para a execução dos scripts
+User_Local_Database_OracleConnection_Invalid_Directory_Root		= Diretório raiz do arquivo de conexões inválido 
+
+User_Local_URL_Seguridad_Site									= URL Serviço Administração de Permissões
+User_Local_URL_Seguridad_Site_Message							= É obrigatório informar a URL do Serviço de Administração de Permissões
+
+User_Local_Previous_Service_Installation_Folder_Part1			= Selecione o diretório onde está instalado a versão anterior do serviço 
+User_Local_Previous_Service_Installation_Folder_Part2			=  (Versão 
+User_Local_Previous_Service_Installation_Folder_Required_Message	= É obrigatório informar o diretório raiz da versão anterior do serviço instalado.
+
+User_Installation_Message_CopyFiles_IAC							= Copiar os arquivos da aplicação IAC para o destino 
+User_Installation_Message_CopyFiles_Reportes					= Copiar os arquivos da aplicação REPORTES para o destino 
+User_Installation_Message_CopyFiles_Saldos						= Copiar os arquivos da aplicação SALDOS para o destino
+User_Installation_Message_CopyFiles_CargaPrevia					= Copiar os arquivos da aplicação Carga Prévia para o destino  
+User_Installation_Message_CopyFiles_ConsultaLocal				= Copiar los archivos de la aplicación Consulta Local para o destino  
+User_Installation_Message_CopyFiles_NuevoSaldos					= Copiar os arquivos da aplicação Nuevo Saldos para o destino 
+User_Installation_Message_CopyFiles_Servicio					= Copiar os arquivos do serviço GENESIS para o destino 
+User_Installation_Message_CopyFiles_Web							= Copiar os arquivos do aplicação GENESIS para o destino 
+User_Installation_Message_CreateUpdate_VirtualDirectory			= Criar/Atualizar no IIS o diretório virtual 
+User_Installation_Message_Publish_Application					= Guardar no AdminPermisos os dados da nova versão da aplicação 
+User_Installation_Message_EjecucionScripts_Salidas				= Executar os scripts no banco de dados do SALIDAS
+User_Installation_Message_EjecucionScripts_Conteo				= Executar os scripts no banco de dados do CONTEO
+User_Installation_Message_EjecucionScripts_Saldos				= Executar os scripts no banco de dados do SALDOS
+User_Installation_Message_EjecucionScripts_Reportes				= Executar os scripts no banco de dados do REPORTES
+User_Installation_Message_EjecucionScripts_Genesis				= Executar os scripts no banco de dados do GENESIS
+User_Installation_Message_EjecucionScripts_ATM					= Executar os scripts no banco de dados do ATM
+User_Installation_Message_EjecucionScripts_Dashboard				= Executar os scripts no banco de dados do DASHBOARD
+User_Installation_Message_Copy_WebConfig						= Copiar WEB.CONFIG da versão anterior para nova versão da aplicação 
+User_Installation_Message_Copy_Conexoes							= Copiar CONEXOES.DBC da versão anterior para nova versão da aplicação 
+User_Installation_Message_EjecucionScripts_CompileSchema_Salidas				= Compile Schema SALIDAS
+User_Installation_Message_EjecucionScripts_CompileSchema_Conteo				= Compile Schema CONTEO
+User_Installation_Message_EjecucionScripts_CompileSchema_Saldos				= Compile Schema SALDOS
+User_Installation_Message_EjecucionScripts_CompileSchema_Reportes				= Compile Schema REPORTES
+User_Installation_Message_EjecucionScripts_CompileSchema_Genesis				= Compile Schema GENESIS
+User_Installation_Message_EjecucionScripts_CompileSchema_ATM					= Compile Schema ATM
+User_Installation_Message_EjecucionScripts_CompileSchema_Dashboard				= Compile Schema DASHBOARD
+
+User_Local_Grants_Synonyms					= Grants e Synonimos que serão criados.
+
+User_Installation_Message_EjecucionScripts_Salidas_GeS			= Executar os Grants/Synonyms no banco de dados do SALIDAS
+User_Installation_Message_EjecucionScripts_Conteo_GeS			= Executar os Grants/Synonyms no banco de dados do CONTEO
+User_Installation_Message_EjecucionScripts_Genesis_GeS			= Executar os Grants/Synonyms no banco de dados do GENESIS
+User_Installation_Message_EjecucionScripts_Reportes_GeS				= Executar os Grants/Synonyms no banco de dados do REPORTES
+User_Installation_Message_EjecucionScripts_ATM_GeS				= Executar os Grants/Synonyms no banco de dados do ATM
+
+User_Local_Previous_Version_Installation							= Informe a versão anterior dos Web Sites
+User_Local_Previous_Version_Installation_Required_Message			= É obrigatório a versão anterior dos Web Sites.

@@ -1,0 +1,3 @@
+﻿SELECT FYH_ACTUALIZACION
+  FROM GEPR_TMORFOLOGIA
+ WHERE oid_morfologia = []oid_morfologia

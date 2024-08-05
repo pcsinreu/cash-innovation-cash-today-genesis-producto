@@ -1,0 +1,1 @@
+﻿UPDATE PD_Usuario SET Bloqueado = 1 WHERE IdUsuario = :IdUsuario

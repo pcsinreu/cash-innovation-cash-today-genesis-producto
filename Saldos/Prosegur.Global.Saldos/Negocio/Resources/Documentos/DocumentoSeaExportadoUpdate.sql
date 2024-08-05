@@ -1,0 +1,1 @@
+﻿UPDATE PD_DocumentoCabecera SET Exportado = 1 WHERE IdDocumento = :IdDocumento

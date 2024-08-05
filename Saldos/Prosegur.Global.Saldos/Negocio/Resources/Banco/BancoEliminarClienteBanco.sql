@@ -1,0 +1,1 @@
+﻿DELETE PD_Banco WHERE IdBanco = :IdBanco

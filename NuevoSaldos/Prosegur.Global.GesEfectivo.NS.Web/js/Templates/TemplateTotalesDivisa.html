@@ -1,0 +1,33 @@
+﻿<script id="TemplateTotalesDivisa" type="text/x-handlebars-template">
+    <table id="{{IdControle}}_TotalesDivisa" class="ui-datatable ui-datatable-data-middle" >
+        <tr>
+            <th style="width: 10px;"><input type="checkbox" id="check" /></th>
+            <th>{{Dicionario.Divisa}}</th>
+            <th>{{Dicionario.TotalGeneral}}</th>
+            <th>{{Dicionario.TotalEfectivo}}</th>
+            <th>{{Dicionario.TotalOtroValor}}</th>
+            <th>{{Dicionario.TotalCheque}}</th>
+            <th>{{Dicionario.TotalTarjeta}}</th>
+            <th>{{Dicionario.TotalTicket}}</th>
+        </tr>
+        {{#each Divisas}}
+        <tr>
+            <td>
+                {{#if Remover}}
+                <input type="checkbox" id="checkRemover" indice="{{@index}}" checked />
+                {{else}}
+                <input type="checkbox" id="checkRemover" indice="{{@index}}" />
+                {{/if}}
+            </td>
+            <td>{{#SelectDivisa Identificador}}{{/SelectDivisa}}</td>
+            <td>{{#TotalGeneral this}}{{/TotalGeneral}}</td>
+            <td><input type="text" value="{{#TotalEfectivo ValoresTotalesEfectivo}}{{/TotalEfectivo}}" /></td>
+            <td><input type="text" value="{{#TotalMedioPago ValoresTotalesTipoMedioPago Tipo='otrovalor'}}{{/TotalMedioPago}}" /></td>
+            <td><input type="text" value="{{#TotalMedioPago ValoresTotalesTipoMedioPago Tipo='cheque'}}{{/TotalMedioPago}}" /></td>
+            <td><input type="text" value="{{#TotalMedioPago ValoresTotalesTipoMedioPago Tipo='tarjeta'}}{{/TotalMedioPago}}" /></td>
+            <td><input type="text" value="{{#TotalMedioPago ValoresTotalesTipoMedioPago Tipo='ticket'}}{{/TotalMedioPago}}" /></td>
+        </tr>
+        {{/each}}
+    </table>
+    <input type="button" value="Remover" onclick="Remover('{{IdControle}}')" />
+</script>

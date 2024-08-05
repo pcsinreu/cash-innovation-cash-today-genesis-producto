@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>4.78719cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>7.24927cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>6.21708cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="txtOrigen2">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>TIPO ELEMENTO</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <LeftBorder>
+                          <Style>Solid</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </RightBorder>
+                        <BackgroundColor>#c6d9f1</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="txtOrigen3">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>PRECINTOS</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <LeftBorder>
+                          <Style>Solid</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </RightBorder>
+                        <BackgroundColor>#c6d9f1</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="txtOrigen4">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>FORMATO OBJETO</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <TopBorder>
+                          <Style>Solid</Style>
+                        </TopBorder>
+                        <LeftBorder>
+                          <Style>Solid</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>Solid</Style>
+                          <Width>0.5pt</Width>
+                        </RightBorder>
+                        <BackgroundColor>#c6d9f1</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.5cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="TIPO_ELEMENTO">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!TIPO_ELEMENTO.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>TIPO_ELEMENTO</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="PRECINTOS">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!PRECINTOS.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>PRECINTOS</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                    <rd:Selected>true</rd:Selected>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="FORMATO">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=IIF(Fields!FORMATO.Value Is Nothing, "-", Fields!FORMATO.Value)</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>FORMATO</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>ds_ElementosHijosContenedor</DataSetName>
+        <Height>1.1cm</Height>
+        <Width>18.25354cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>0.43307in</Height>
+    <Style />
+  </Body>
+  <Width>7.18643in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Reporte">
+      <DataSourceReference>REPORTES_PRE</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>372f686b-9fb9-4cc5-96dc-3684d6deb6f0</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ds_ElementosHijosContenedor">
+      <Query>
+        <DataSourceName>Reporte</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name=":P_COD_COMPROBANTE">
+            <Value>=Parameters!P_COD_COMPROBANTE.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT DISTINCT 'Contenedor' AS TIPO_ELEMENTO,
+TIPO_FORMATO.DES_VALOR AS FORMATO,
+(SELECT LISTAGG(COD_PRECINTO, ' | ') WITHIN GROUP(ORDER BY OID_CONTENEDOR) AS COD_PRECINTOS
+                         FROM RPGE_YPRECINTOXCONTENEDOR
+                        WHERE OID_CONTENEDOR = CH.OID_CONTENEDOR
+                        GROUP BY OID_CONTENEDOR) AS PRECINTOS
+FROM RPGE_YDOCUMENTOXELEMENTO DE
+INNER JOIN RPGE_YDOCUMENTO D ON D.OID_DOCUMENTO = DE.OID_DOCUMENTO
+INNER JOIN RPGE_YCONTENEDOR C ON C.OID_CONTENEDOR = DE.OID_CONTENEDOR
+INNER JOIN RPGE_YCONTENEDOR CH ON CH.OID_CONTENEDOR_PADRE = DE.OID_CONTENEDOR
+INNER JOIN (SELECT LV.DES_VALOR, LVL.OID_CONTENEDOR
+               FROM RPGE_YLISTA_VALORXELEMENTO LVL
+              INNER JOIN RPGE_YLISTA_VALOR LV
+                 ON LV.OID_LISTA_VALOR = LVL.OID_LISTA_VALOR
+                AND LV.OID_LISTA_TIPO = LVL.OID_LISTA_TIPO
+              INNER JOIN RPGE_YLISTA_TIPO LT
+                 ON LT.OID_LISTA_TIPO = LV.OID_LISTA_TIPO
+                AND LT.COD_TIPO = '01') TIPO_SERVICIO
+    ON TIPO_SERVICIO.OID_CONTENEDOR = C.OID_CONTENEDOR
+ INNER JOIN (SELECT LV.DES_VALOR, LVL.OID_CONTENEDOR
+               FROM RPGE_YLISTA_VALORXELEMENTO LVL
+              INNER JOIN RPGE_YLISTA_VALOR LV
+                 ON LV.OID_LISTA_VALOR = LVL.OID_LISTA_VALOR
+                AND LV.OID_LISTA_TIPO = LVL.OID_LISTA_TIPO
+              INNER JOIN RPGE_YLISTA_TIPO LT
+                 ON LT.OID_LISTA_TIPO = LV.OID_LISTA_TIPO
+                AND LT.COD_TIPO = '05') TIPO_FORMATO ON TIPO_FORMATO.OID_CONTENEDOR = C.OID_CONTENEDOR
+                WHERE D.COD_COMPROBANTE = :P_COD_COMPROBANTE
+                
+UNION
+
+SELECT DISTINCT 'Remesa' AS TIPO_ELEMENTO,
+TIPO_FORMATO.DES_VALOR AS FORMATO,
+R.COD_EXTERNO AS PRECINTOS
+FROM RPGE_YDOCUMENTOXELEMENTO DE
+INNER JOIN RPGE_YDOCUMENTO D ON D.OID_DOCUMENTO = DE.OID_DOCUMENTO
+INNER JOIN RPGE_YCONTENEDOR C ON C.OID_CONTENEDOR = DE.OID_CONTENEDOR
+INNER JOIN RPGE_YREMESA R ON R.OID_CONTENEDOR_PADRE = C.OID_CONTENEDOR
+INNER JOIN (SELECT LV.DES_VALOR, LVL.OID_REMESA
+               FROM RPGE_YLISTA_VALORXELEMENTO LVL
+              INNER JOIN RPGE_YLISTA_VALOR LV
+                 ON LV.OID_LISTA_VALOR = LVL.OID_LISTA_VALOR
+                AND LV.OID_LISTA_TIPO = LVL.OID_LISTA_TIPO
+              INNER JOIN RPGE_YLISTA_TIPO LT
+                 ON LT.OID_LISTA_TIPO = LV.OID_LISTA_TIPO
+                AND LT.COD_TIPO = '01') TIPO_SERVICIO
+    ON TIPO_SERVICIO.OID_REMESA = R.OID_REMESA
+ INNER JOIN (SELECT LV.DES_VALOR, LVL.OID_REMESA
+               FROM RPGE_YLISTA_VALORXELEMENTO LVL
+              INNER JOIN RPGE_YLISTA_VALOR LV
+                 ON LV.OID_LISTA_VALOR = LVL.OID_LISTA_VALOR
+                AND LV.OID_LISTA_TIPO = LVL.OID_LISTA_TIPO
+              INNER JOIN RPGE_YLISTA_TIPO LT
+                 ON LT.OID_LISTA_TIPO = LV.OID_LISTA_TIPO
+                AND LT.COD_TIPO = '05') TIPO_FORMATO ON TIPO_FORMATO.OID_REMESA = R.OID_REMESA
+                WHERE D.COD_COMPROBANTE = :P_COD_COMPROBANTE                
+UNION
+
+SELECT DISTINCT 'Bulto' AS TIPO_ELEMENTO,
+TIPO_FORMATO.DES_VALOR AS FORMATO,
+B.COD_PRECINTO AS PRECINTOS
+FROM RPGE_YDOCUMENTOXELEMENTO DE
+INNER JOIN RPGE_YDOCUMENTO D ON D.OID_DOCUMENTO = DE.OID_DOCUMENTO
+INNER JOIN RPGE_YCONTENEDOR C ON C.OID_CONTENEDOR = DE.OID_CONTENEDOR
+INNER JOIN RPGE_YBULTO B ON B.OID_CONTENEDOR_PADRE = C.OID_CONTENEDOR
+INNER JOIN (SELECT LV.DES_VALOR, LVL.OID_BULTO
+               FROM RPGE_YLISTA_VALORXELEMENTO LVL
+              INNER JOIN RPGE_YLISTA_VALOR LV
+                 ON LV.OID_LISTA_VALOR = LVL.OID_LISTA_VALOR
+                AND LV.OID_LISTA_TIPO = LVL.OID_LISTA_TIPO
+              INNER JOIN RPGE_YLISTA_TIPO LT
+                 ON LT.OID_LISTA_TIPO = LV.OID_LISTA_TIPO
+                AND LT.COD_TIPO = '01') TIPO_SERVICIO
+    ON TIPO_SERVICIO.OID_BULTO = B.OID_BULTO
+ INNER JOIN (SELECT LV.DES_VALOR, LVL.OID_BULTO
+               FROM RPGE_YLISTA_VALORXELEMENTO LVL
+              INNER JOIN RPGE_YLISTA_VALOR LV
+                 ON LV.OID_LISTA_VALOR = LVL.OID_LISTA_VALOR
+                AND LV.OID_LISTA_TIPO = LVL.OID_LISTA_TIPO
+              INNER JOIN RPGE_YLISTA_TIPO LT
+                 ON LT.OID_LISTA_TIPO = LV.OID_LISTA_TIPO
+                AND LT.COD_TIPO = '05') TIPO_FORMATO ON TIPO_FORMATO.OID_BULTO = B.OID_BULTO
+                WHERE D.COD_COMPROBANTE = :P_COD_COMPROBANTE</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="TIPO_ELEMENTO">
+          <DataField>TIPO_ELEMENTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRECINTOS">
+          <DataField>PRECINTOS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FORMATO">
+          <DataField>FORMATO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="P_COD_COMPROBANTE">
+      <DataType>String</DataType>
+      <Prompt>P COD COMPROBANTE</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>7f92fd0b-7030-426c-b798-dbbb418f9eb4</rd:ReportID>
+</Report>

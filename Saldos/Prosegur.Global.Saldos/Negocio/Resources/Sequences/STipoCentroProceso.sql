@@ -1,0 +1,1 @@
+﻿select pd_tipocentroproceso_idtipocen.nextval from dual

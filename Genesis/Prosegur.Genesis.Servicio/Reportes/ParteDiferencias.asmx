@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="ParteDiferencias.asmx.vb" Class="Prosegur.Global.GesEfectivo.Reportes.Servicio.ParteDiferencias" %>

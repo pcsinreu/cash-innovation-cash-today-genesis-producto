@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://prosegur.com/switch/crearPeriodosAcreditacion/crearPeriodosAcreditacionImpl/FicherosFechaValor/ServiciosInvocacion/SI__BR__FV__Creacion__Periodos/Principal" xmlns:ns0="http://prosegur.com/switch/crearPeriodosAcreditacion" name="Untitled" targetNamespace="http://prosegur.com/switch/crearPeriodosAcreditacion/crearPeriodosAcreditacionImpl/FicherosFechaValor/ServiciosInvocacion/SI__BR__FV__Creacion__Periodos/Principal" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns="http://prosegur.com/switch/crearPeriodosAcreditacion" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://prosegur.com/switch/crearPeriodosAcreditacion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="crearPeriodosAcreditacionType">
+        <xs:sequence>
+          <xs:element ref="ns0:CodigoDelegacion" />
+          <xs:element ref="ns0:CodigoPlanta" />
+          <xs:element ref="ns0:CodigoSector" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="CodigoDelegacion" type="xs:string" />
+      <xs:element name="CodigoPlanta" type="xs:string" />
+      <xs:element name="CodigoSector" type="xs:string" />
+      <xs:element name="crearPeriodosAcreditacion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="peticion" type="ns0:crearPeriodosAcreditacionType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="crearPeriodosAcreditacionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CodigoError" type="xs:string" />
+            <xs:element minOccurs="0" name="MensajeError" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="crearPeriodosAcreditacionRequest">
+    <wsdl:part name="crearPeriodosAcreditacion" element="ns0:crearPeriodosAcreditacion" />
+  </wsdl:message>
+  <wsdl:message name="crearPeriodosAcreditacionResponse">
+    <wsdl:part name="crearPeriodosAcreditacionResponse" element="ns0:crearPeriodosAcreditacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PortType">
+    <wsdl:operation name="crearPeriodosAcreditacion">
+      <wsdl:input message="tns:crearPeriodosAcreditacionRequest" />
+      <wsdl:output message="tns:crearPeriodosAcreditacionResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="S__crearPeriodosAcreditacionBinding" type="tns:PortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="crearPeriodosAcreditacion">
+      <soap:operation soapAction="/switchClientes/crearPeriodosAcreditacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="crearPeriodosAcreditacion" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="crearPeriodosAcreditacionResponse" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SI__BR__FV__Creacion__Periodos">
+    <wsdl:port name="S__crearPeriodosAcreditacion" binding="tns:S__crearPeriodosAcreditacionBinding">
+      <soap:address location="http://esdc1srh00009:10000/switchClientes/crearPeriodosAcreditacion" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1 @@
+﻿select PD_ESPECIE_IDESPECIE_SEQ.nextval from dual

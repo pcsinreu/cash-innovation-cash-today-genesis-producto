@@ -1,0 +1,11 @@
+BEGIN
+
+    DELETE 
+    FROM SAPR_TCALCULO_MEDIO_PAGO;
+
+    COMMIT;
+
+    
+
+END;
+/

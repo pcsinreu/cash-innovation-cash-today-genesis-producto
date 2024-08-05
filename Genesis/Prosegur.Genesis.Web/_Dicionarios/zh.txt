@@ -1,0 +1,48 @@
+﻿//--------------------------------------------------------------------------------------
+// GENERICOS
+//--------------------------------------------------------------------------------------
+gen_selecione                                             =选择
+err_campo_obligatorio					                  = 该字段{0}是必需的。
+msg_producidoError								= Se ha producido un error:&nbsp;
+msg_loading										= Por favor, espere un momento mientras el sistema está:&nbsp;
+msg_redirecionando							= Redireccionando...
+
+//--------------------------------------------------------------------------------------
+// CONTROLES
+//--------------------------------------------------------------------------------------
+gen_btnLogin                                              = 注册
+gen_btnCancelar                                           = 取消
+gen_msg_camporequerido                                    = 字段'{0}“是强制性的！
+
+Default_lblUsuario                                        = 用户
+Default_lblSenha                                          = 密码
+Default_lblPais                                           = 国家
+Default_sessao_expirada                                   = Session过期，请重新登录。
+
+//--------------------------------------------------------------------------------------
+// TOKEN
+//--------------------------------------------------------------------------------------
+tkn_tokenutil_token_invalida                              = 无效的令牌
+tkn_creartokenacceso_erro_serializar                      = 序列化权限时出错
+tkn_creartokenacceso_erro_gerartoken                      = 错误生成令牌
+
+//--------------------------------------------------------------------------------------
+// LOGIN
+//--------------------------------------------------------------------------------------
+lgn_usuario_nao_autenticado							      = 无法对用户进行认证。检查用户名和密码进入。
+lgn_usuario_aplicacionversion_noencontrada			      = 有没有版本的应用程序的用户。
+lgn_sesion_activa									      = 作为一个有效的会话存在无法登录的用户。
+000_msgerrogenerico									      = 在应用程序中有一个错误。
+mdl_msg_sempermissao								      = 未经许可的用户！
+lgn_lblversion                                            = 版本
+lgn_lblbuild                                              = 建立
+
+
+msg_obtenerDelegaciones									= Obtenendo delegaciones.
+msg_cargarDelegaciones									= Cargando lista de delegaciones.
+msg_cargarPlantas										= Cargando lista de plantas.
+msg_iniciarSesion										= Validando usuário.
+msg_obtenerAplicaciones 								= Obtenendo aplicaciones.
+msg_crearToken											= Creando Token.
+msg_obtenerPaises										= 获取国家/地区。
+msg_cargarPaises										= 正在加载国家/地区列表。

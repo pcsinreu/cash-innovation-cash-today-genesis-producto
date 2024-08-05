@@ -1,0 +1,23 @@
+﻿update gepr_tdireccion
+    set oid_tabla_genesis = []oid_tabla_genesis,
+        cod_tipo_tabla_genesis = []cod_tipo_tabla_genesis,
+        des_pais = []des_pais,
+        des_provincia = []des_provincia,
+        des_ciudad = []des_ciudad,
+        des_numero_telefono = []des_numero_telefono,
+        des_email = []des_email,
+        cod_fiscal = []cod_fiscal,
+        cod_postal = []cod_postal,
+        des_direccion_linea_1 = []des_direccion_linea_1,
+        des_direccion_linea_2 = []des_direccion_linea_2,
+        des_campo_adicional_1 = []des_campo_adicional_1,
+        des_campo_adicional_2 = []des_campo_adicional_2,
+        des_campo_adicional_3 = []des_campo_adicional_3,
+        des_categoria_adicional_1 = []des_categoria_adicional_1,
+        des_categoria_adicional_2 = []des_categoria_adicional_2,
+        des_categoria_adicional_3 = []des_categoria_adicional_3,
+        gmt_creacion = []gmt_creacion,
+        des_usuario_creacion = []des_usuario_creacion,
+        gmt_modificacion = []gmt_modificacion,
+        des_usuario_modificacion = []des_usuario_modificacion
+    where oid_direccion = []oid_direccion

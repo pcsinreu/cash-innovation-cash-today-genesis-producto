@@ -1,0 +1,1 @@
+﻿DELETE FROM PD_AutomataCentroProceso WHERE IdAutomata = :IdAutomata

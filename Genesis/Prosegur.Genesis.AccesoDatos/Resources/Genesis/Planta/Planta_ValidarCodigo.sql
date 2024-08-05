@@ -1,0 +1,5 @@
+﻿    SELECT P.OID_PLANTA AS IDENTIFICADOR
+      FROM GEPR_TPLANTA P
+	  {0}
+     WHERE P.Bol_Activo = 1
+      {1}  

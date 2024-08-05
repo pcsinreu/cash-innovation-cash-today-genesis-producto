@@ -1,0 +1,84 @@
+﻿Installer_Error_Title											= Prosegur Installer - Error
+Installer_Error_File_Not_Found									= No fue posible encontrar el archivo '{0}'.
+Installer_Error_Wrong_Script_Engine_Defined						= Versión incorrecta de la engine de script.[\nl]Versión definida: '{0}'.[\nl]Versión esperada: '{1}'.
+Installer_Error_Invalid_Xml_Element								= Elemento XML inválido: '{0}'.
+Installer_Error_Invalid_Xml_Attribute							= Atributo XML '{0}' inválido.
+Installer_Error_Missing_Required_Xml_Attribute					= Atributo XML '{0}' es obligatorio.
+Installer_Error_Unrecognized_Installation_Parameter				= Parámetro de instalación no conocido: '{0}'.
+Installer_Error_Action											= Ocurrió un error en la ejecución de la acción '{0}'.[\nl][\nl]Abortar la instalación?[\nl][\nl]{1}
+Installer_Error_Action_Result									= Resultado del mensaje: '{0}'.
+Installer_Error_VersionWebSiteUrl_VersionPackage				= Es obligatorio informar un de los dos atributos: VersionPackage, VersionWebSiteUrl.
+Installer_Error_Invalid_Xml_Attribute_Value						= El valor '{0}' es inválido para el Atributo XML '{1}'.
+
+Installer_Message_Undefined										= No definido
+Installer_Message_Error											= Error: {0}
+Installer_Message_File_Exists									= Archivo ya existe.
+Installer_Message_Using_Existing_Virtual_Directory				= Utilizando la carpeta virtual existente '{0}'.
+Installer_Message_Using_Existing_Application_Pool				= Utilizando el POOL existente '{0}'.
+
+Installer_Log_InUseScriptFile									= Archivo del script utilizado: '{0}'
+Installer_Log_Loading_Script_File								= Cargando el archivo del script.
+Installer_Log_Script_File_Loaded								= Archivo del script cargado.
+Installer_Log_Script_File_Load_Aborted							= El cargamento del archivo de script fue abortado.
+Installer_Log_Parsing_Script_File								= Analizando el script.
+Installer_Log_Script_File_Parsed								= Script Analizado.
+Installer_Log_Script_File_Parse_Aborted							= El análisis del script fue abortada.
+Installer_Log_Parsing_Script_Element							= Analizando el elemento '{0}'.
+Installer_Log_Reparsing_Script_Element							= Evaluando el elemento '{0}'.
+Installer_Log_Parsing_Script_Unknow_Element						= Elemento desconocido.
+Installer_Log_Parsing_Script_Ignoring_Element					= Elemento ignorado.
+Installer_Log_Context_Begin										= Inicio - {0}
+Installer_Log_Context_End										= Fin - {0}
+Installer_Log_Validating_Possible_Xml_Attributes				= Validando los posibles atributos '{0}'.
+Installer_Log_Enforcing_Required_Xml_Attributes					= Validando los atributos necesarios '{0}'.
+Installer_Log_Parsing_Script_Get_Attribute						= Recuperando valor del atributo '{0}' con valor padrón: '{1}'. Formatear valor compuesto: {2}.
+Installer_Log_Parsing_Script_Get_Attribute_Value				= Valor recuperado: '{0}'.
+Installer_Log_Parsing_Script_Get_Attribute_Composed_Value		= Valor compuesto: '{0}'.
+
+Installer_Parameter_LocalDirectory_Browse						= Procurar
+Installer_Parameter_ConnectionString_Grid_ConnectionColumn		= Conexión
+Installer_Parameter_ConnectionString_Grid_UsernameColumn		= Usuario
+Installer_Parameter_ConnectionString_Grid_EditColumn			= Cambiar
+
+Installer_Form_Welcome_Title									= Instalación del {0} - Versión {1} – Bien venido
+Installer_Form_Welcome_Button_Next								= Siguiente
+Installer_Log_Showing_Welcome									= Exhibiendo pantalla de inicio.
+Installer_Log_Showing_Welcome_Result							= Resultado de la pantalla: '{0}'.
+
+Installer_Form_Parameters_Title									= Configuración de parámetros
+Installer_Form_Parameters_Button_Previous						= Anterior
+Installer_Form_Parameters_Button_Next							= Siguiente
+Installer_Log_Showing_Parameters								= Exhibiendo la pantalla de configuración de parámetros de usuario.
+Installer_Log_Showing_Parameters_Result							= Resultado de la pantalla: '{0}'.
+Installer_Log_Selecting_Actions									= Exhibiendo la pantalla de selección de acciones de instalación.
+Installer_Log_Selecting_Actions_Result							= Resultado de la pantalla: '{0}'.
+
+Installer_Form_Installation_Title								= Instalando...
+Installer_Form_Installation_Label_General_Installation			= Ejecutando el paso {0} de {1}. '{2}'.
+Installer_Form_Installation_Installation_Complete				= Instalación exitosa.
+Installer_Log_Showing_Installation								= Exhibiendo la pantalla de instalación.
+Installer_Form_Installation_Thread								= Exhibiendo Thread de Instalación.
+Installer_Form_Installation_Action_Execute						= Ejecutando acción {0}.
+Installer_Form_Installation_Action_Execute_Parameter			= Parámetro {0}: {1}.
+Installer_Form_Installation_Action_Copy_File					= Copiando archivo '{0}' para '{1}'.
+Installer_Form_Installation_Action_Extract_File					= Descomprimiendo el archivo '{0}'.
+Installer_Form_Installation_Action_Extract_File_Overriding		= Remplazando el archivo '{0}'.
+Installer_Form_Installation_Action_Extract_File_Skipping		= Ignorando la descomprensión del archivo '{0}'. Archivo ya existente.
+Installer_Form_Installation_Action_Create_Directory				= Creando la carpeta '{0}'.
+Installer_Form_Installation_Action_Skipped						= Ignorando la acción: {0}.
+Installer_Form_Installation_Action_Create_Virtual_Directory		= Creando la carpeta virtual '{0}'.
+Installer_Form_Installation_Action_Create_Application_Pool		= Creando el POOL de las aplicaciones '{0}'.
+
+Installer_Form_Actions_Title									= Selección de acciones del instalador
+Installer_Form_Actions_Group_Actions							= Acciones
+Installer_Form_Actions_Button_Install							= Instalar
+Installer_Form_Actions_Button_Previous							= Anterior
+Installer_Form_Actions_Selected_Actions							= Acciones seleccionadas: '{0}'.
+
+Installer_Form_ConnectionConfiguration_Error_Title				= Error
+Installer_Form_ConnectionConfiguration_Label_Username			= Usuario:
+Installer_Form_ConnectionConfiguration_Label_Password			= Seña:
+Installer_Form_ConnectionConfiguration_Button_OK				= OK
+Installer_Form_ConnectionConfiguration_Button_Cancel			= Cancelar
+
+CP_msg_AplicacionVersion_CrearAplicacionVersion_AplicacionNoEncontrada = Aplicación '{0}' no encontrada. Por favor revisar los parámetros de instalación.

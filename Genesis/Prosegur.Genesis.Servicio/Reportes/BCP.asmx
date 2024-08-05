@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="BCP.asmx.vb" Class="Prosegur.Global.GesEfectivo.Reportes.Servicio.BCP" %>
